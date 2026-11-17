@@ -2,9 +2,17 @@ name: Data ophalen en deployen
 on:
   schedule:
     - cron: "7 * * * *"   # elk uur op :07
-  workflow_dispatch:
+  workflow_dispatch:      # handmatig starten via het tabblad Actions
   push:
     branches: [main]
+
+permissions:
+  contents: write         # nodig om de opgehaalde data terug te zetten in de repository
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -19,11 +27,14 @@ jobs:
         run: |
           git config user.name "waterweer-bot"
           git config user.email "bot@waterweer.nl"
-          git add data/metingen data/rws-catalogus.json || true
-          git diff --cached --quiet || git commit -m "data: update $(date -u +%FT%TZ)" && git push || true
+          git add data/metingen
+          if ! git diff --cached --quiet; then
+            git commit -m "data: update $(date -u +%FT%TZ)"
+            git push || echo "Push van data mislukt, deploy gaat door"
+          fi
       - run: npm run build
       - name: Deploy naar Netlify
-        run: npx netlify-cli deploy --prod --dir=dist --site="$NETLIFY_SITE_ID" --auth="$NETLIFY_AUTH_TOKEN"
+        run: npx --yes netlify-cli@latest deploy --prod --dir=dist --site="$NETLIFY_SITE_ID" --auth="$NETLIFY_AUTH_TOKEN"
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
