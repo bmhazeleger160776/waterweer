@@ -1,7 +1,7 @@
 {
  "slug": "hoek-van-holland",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-17T22:38:32.735Z",
+ "bijgewerkt": "2026-11-17T23:54:09.960Z",
  "fouten": [],
  "getij": {
   "meetpunt": "hoekvanholland",
@@ -5000,14 +5000,14 @@
   "meetpunt": "hoekvanholland",
   "meetpuntNaam": "Hoek van Holland",
   "eenheid": "°C",
-  "t": "2026-11-17T22:20:00.000Z",
+  "t": "2026-11-17T23:30:00.000Z",
   "v": 11.5
  },
  "waterstand": {
   "meetpunt": "hoekvanholland",
   "meetpuntNaam": "Hoek van Holland",
   "eenheid": "cm NAP",
-  "t": "2026-11-17T22:20:00.000Z",
-  "v": 79
+  "t": "2026-11-17T23:40:00.000Z",
+  "v": 60
  }
 }
