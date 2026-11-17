@@ -1,0 +1,15 @@
+{
+  "name": "waterweer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "fetch-data": "node scripts/fetch-rws.mjs",
+    "sample-data": "node scripts/make-sample.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.4.12"
+  }
+}

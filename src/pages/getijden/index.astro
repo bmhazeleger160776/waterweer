@@ -1,0 +1,18 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import Base from "../../layouts/Base.astro";
+const root = process.cwd();
+const locaties = JSON.parse(fs.readFileSync(path.join(root, "data/locaties.json"), "utf8"))
+  .filter((l) => l.rws?.getij && fs.existsSync(path.join(root, `data/metingen/${l.slug}.json`)));
+const perRegio = Object.groupBy(locaties, (l) => l.regio);
+---
+<Base title="Getijden Nederland – eb en vloed per plaats" description="Getijtabellen met hoog- en laagwater voor de hele Nederlandse kust, per plaats en elk uur bijgewerkt." canonical="/getijden/">
+  <h1>Getijden per plaats</h1>
+  {Object.entries(perRegio).map(([regio, lijst]) => (
+    <>
+      <h2>{regio}</h2>
+      <ul>{lijst.map((l) => <li><a href={`/getijden/${l.slug}`}>Getijden {l.naam}</a></li>)}</ul>
+    </>
+  ))}
+</Base>

@@ -1,0 +1,14 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import Base from "../layouts/Base.astro";
+const root = process.cwd();
+const locaties = JSON.parse(fs.readFileSync(path.join(root, "data/locaties.json"), "utf8"))
+  .filter((l) => l.rws?.getij && fs.existsSync(path.join(root, `data/metingen/${l.slug}.json`)));
+---
+<Base title="Waterweer – getijden, watertemperatuur en waterstanden in Nederland" description="Actuele getijden, eb en vloed, watertemperatuur en waterstanden voor de Nederlandse kust, meren en rivieren. Elk uur bijgewerkt met data van Rijkswaterstaat." canonical="/">
+  <h1>Getijden en watertemperatuur in Nederland</h1>
+  <p>Actuele getijden, watertemperatuur en waterstanden per kustplaats, meer en rivier. Elk uur bijgewerkt met open data van Rijkswaterstaat.</p>
+  <h2>Locaties</h2>
+  <ul>{locaties.map((l) => <li><a href={`/getijden/${l.slug}`}>Getijden {l.naam}</a> <span class="muted">({l.regio})</span></li>)}</ul>
+</Base>

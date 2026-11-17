@@ -1,0 +1,188 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import Base from "../../layouts/Base.astro";
+import GetijGrafiek from "../../components/GetijGrafiek.astro";
+import { tijd, dag, dagKort, datumKey, meter, graden, metTijd } from "../../lib/format.js";
+
+export function getStaticPaths() {
+  const root = process.cwd();
+  const locaties = JSON.parse(fs.readFileSync(path.join(root, "data/locaties.json"), "utf8"));
+  return locaties
+    .filter((l) => l.rws?.getij && fs.existsSync(path.join(root, `data/metingen/${l.slug}.json`)))
+    .map((loc) => ({
+      params: { slug: loc.slug },
+      props: {
+        loc,
+        data: JSON.parse(fs.readFileSync(path.join(root, `data/metingen/${loc.slug}.json`), "utf8")),
+        metPagina: locaties.filter((l) => l.rws?.getij && fs.existsSync(path.join(root, `data/metingen/${l.slug}.json`))).map((l) => l.slug),
+        alle: locaties,
+      },
+    }));
+}
+
+const { loc, data, metPagina, alle } = Astro.props;
+const nu = data.bijgewerkt;
+const ext = data.getij?.extremen ?? [];
+const volgendHW = ext.find((e) => e.soort === "HW" && e.t >= nu);
+const volgendLW = ext.find((e) => e.soort === "LW" && e.t >= nu);
+const eerste = [volgendHW, volgendLW].filter(Boolean).sort((a, b) => a.t.localeCompare(b.t));
+const vandaagKey = datumKey(nu);
+const vandaag = ext.filter((e) => datumKey(e.t) === vandaagKey);
+
+// 7-dagentabel
+const perDag = new Map();
+for (const e of ext) {
+  const k = datumKey(e.t);
+  if (k < vandaagKey) continue;
+  if (!perDag.has(k)) perDag.set(k, { iso: e.t, HW: [], LW: [] });
+  perDag.get(k)[e.soort].push(e);
+}
+const dagen = [...perDag.values()].slice(0, 7);
+
+// Gemeten vs voorspeld: verschil zegt iets over wind-opzet
+let afwijking = null;
+if (data.waterstand && data.getij?.reeks?.length) {
+  const tm = Date.parse(data.waterstand.t);
+  const dichtst = data.getij.reeks.reduce((a, b) => (Math.abs(Date.parse(b.t) - tm) < Math.abs(Date.parse(a.t) - tm) ? b : a));
+  if (Math.abs(Date.parse(dichtst.t) - tm) < 30 * 60e3) afwijking = Math.round(data.waterstand.v - dichtst.v);
+}
+
+const temp = data.temperatuur;
+const tempBij = temp && loc.rws?.temperatuur?.km > 2 ? (temp.meetpuntNaam || loc.rws.temperatuur.naam) : null;
+const tempOordeel = !temp ? null
+  : temp.v < 15 ? "Koud water: zonder wetsuit raak je snel onderkoeld."
+  : temp.v < 18 ? "Fris water, prima voor een korte duik."
+  : temp.v < 21 ? "Aangename temperatuur om te zwemmen."
+  : "Warm zeewater voor Nederlandse begrippen.";
+
+const getijVerschil = (() => {
+  const hw = vandaag.filter((e) => e.soort === "HW"), lw = vandaag.filter((e) => e.soort === "LW");
+  if (!hw.length || !lw.length) return null;
+  return Math.round(Math.max(...hw.map((e) => e.v)) - Math.min(...lw.map((e) => e.v)));
+})();
+
+const titel = `Getijden ${loc.naam} vandaag – eb, vloed en watertemperatuur`;
+const omschrijving = volgendHW
+  ? `Hoogwater ${loc.naam}: ${dagKort(volgendHW.t)} om ${tijd(volgendHW.t)}. Getijtabel voor 7 dagen, actuele watertemperatuur en waterstand, elk uur bijgewerkt.`
+  : `Getijden, eb en vloed en watertemperatuur in ${loc.naam}, elk uur bijgewerkt met data van Rijkswaterstaat.`;
+
+const faq = [
+  volgendHW && {
+    v: `Wanneer is het hoogwater in ${loc.naam}?`,
+    a: `Het volgende hoogwater in ${loc.naam} is ${dag(volgendHW.t)} om ${tijd(volgendHW.t)} (${meter(volgendHW.v)}).${volgendLW ? ` Het volgende laagwater is om ${tijd(volgendLW.t)} (${meter(volgendLW.v)}).` : ""}`,
+  },
+  temp && {
+    v: `Wat is de watertemperatuur in ${loc.naam}?`,
+    a: `De laatst gemeten watertemperatuur is ${graden(temp.v)} (gemeten ${metTijd(temp.t)}). ${tempOordeel}`,
+  },
+  getijVerschil && {
+    v: `Hoe groot is het verschil tussen eb en vloed in ${loc.naam}?`,
+    a: `Vandaag is het verschil tussen het hoogste hoogwater en het laagste laagwater ongeveer ${(getijVerschil / 100).toFixed(1).replace(".", ",")} meter. Bij springtij is dat groter, bij doodtij kleiner.`,
+  },
+].filter(Boolean);
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${Astro.site}` },
+      { "@type": "ListItem", position: 2, name: "Getijden", item: `${Astro.site}getijden/` },
+      { "@type": "ListItem", position: 3, name: loc.naam, item: `${Astro.site}getijden/${loc.slug}` },
+    ],
+  },
+  {
+    "@context": "https://schema.org", "@type": "FAQPage",
+    mainEntity: faq.map((f) => ({ "@type": "Question", name: f.v, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+  },
+];
+const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
+---
+<Base title={titel} description={omschrijving} canonical={`/getijden/${loc.slug}`} jsonLd={jsonLd}>
+  <nav class="kruimel muted"><a href="/">Home</a> › <a href="/getijden/">Getijden</a> › {loc.regio} › {loc.naam}</nav>
+
+  {data.voorbeeld && (
+    <p class="melding">Dit is <strong>voorbeelddata</strong> (gesimuleerd getij). Draai <code>npm run fetch-data</code> voor echte data van Rijkswaterstaat.</p>
+  )}
+
+  <h1>Getijden {loc.naam}</h1>
+  <p class="lead">
+    {eerste[0] && <>Eerstvolgend {eerste[0].soort === "HW" ? "hoogwater" : "laagwater"}: <strong>{tijd(eerste[0].t)}</strong>{datumKey(eerste[0].t) !== vandaagKey && <> ({dagKort(eerste[0].t)})</>}. </>}
+    {eerste[1] && <>Daarna {eerste[1].soort === "HW" ? "hoogwater" : "laagwater"} om <strong>{tijd(eerste[1].t)}</strong>{datumKey(eerste[1].t) !== vandaagKey && <> ({dagKort(eerste[1].t)})</>}. </>}
+    {temp && <>Watertemperatuur: <strong>{graden(temp.v)}</strong>.</>}
+  </p>
+  <p class="muted bijgewerkt">Bijgewerkt {dag(nu)} om {tijd(nu)} · bron: Rijkswaterstaat, meetpunt {loc.rws.getij?.naam ?? data.getij?.meetpunt}</p>
+
+  <section class="kaarten">
+    {eerste.map((e) => <div class="kaart"><span class="label">Volgend {e.soort === "HW" ? "hoogwater" : "laagwater"}</span><span class="waarde">{tijd(e.t)}</span><span class="sub">{dagKort(e.t)} · {meter(e.v)}</span></div>)}
+    {temp && <div class="kaart"><span class="label">Watertemperatuur</span><span class="waarde">{graden(temp.v)}</span><span class="sub">gemeten {metTijd(temp.t)}{tempBij && <> · bij {tempBij}</>}</span></div>}
+    {data.waterstand && <div class="kaart"><span class="label">Waterstand nu</span><span class="waarde klein-waarde">{meter(data.waterstand.v)}</span>
+      <span class="sub">{afwijking === null ? `gemeten ${tijd(data.waterstand.t)}` : afwijking === 0 ? "precies volgens voorspelling" : `${Math.abs(afwijking)} cm ${afwijking > 0 ? "hoger" : "lager"} dan voorspeld`}</span></div>}
+  </section>
+
+  {data.getij && <GetijGrafiek reeks={data.getij.reeks} extremen={ext} nu={nu} />}
+
+  <h2>Getijtabel {loc.naam} – komende 7 dagen</h2>
+  <div class="tabelwrap">
+    <table>
+      <thead><tr><th>Dag</th><th>Hoogwater</th><th>Laagwater</th></tr></thead>
+      <tbody>
+        {dagen.map((d) => (
+          <tr>
+            <td>{dagKort(d.iso)}</td>
+            <td>{d.HW.map((e) => <div>{tijd(e.t)} <span class="muted">{meter(e.v)}</span></div>)}</td>
+            <td>{d.LW.map((e) => <div>{tijd(e.t)} <span class="muted">{meter(e.v)}</span></div>)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="muted klein">Hoogte ten opzichte van NAP. Wind en luchtdruk kunnen de werkelijke waterstand tientallen centimeters laten afwijken.</p>
+
+  {loc.intro && <><h2>Over het water bij {loc.naam}</h2><p>{loc.intro}</p></>}
+
+  {temp && (
+    <>
+      <h2>Watertemperatuur {loc.naam}</h2>
+      <p>Het water bij {loc.naam} is nu {graden(temp.v)}{tempBij && <> (gemeten bij {tempBij}, het dichtstbijzijnde meetpunt van Rijkswaterstaat)</>}. {tempOordeel}</p>
+    </>
+  )}
+
+  <h2>Veelgestelde vragen</h2>
+  {faq.map((f) => <details><summary>{f.v}</summary><p>{f.a}</p></details>)}
+
+  {loc.dichtbij?.length > 0 && (
+    <>
+      <h2>Getijden in de buurt</h2>
+      <ul class="buren">
+        {loc.dichtbij.map((s) => metPagina.includes(s)
+          ? <li><a href={`/getijden/${s}`}>{naamVan(s)}</a></li>
+          : <li class="muted">{naamVan(s)} (binnenkort)</li>)}
+      </ul>
+    </>
+  )}
+</Base>
+
+<style>
+  .kruimel { font-size: .85rem; margin-top: 18px; }
+  .kruimel a { color: var(--muted); }
+  .melding { background: var(--warn-soft); color: var(--warn); border: 1px solid #f0d49c; border-radius: 10px; padding: 10px 14px; margin: 16px 0 0; font-size: .92rem; }
+  .lead { font-size: 1.1rem; margin: 4px 0; }
+  .bijgewerkt { font-size: .85rem; margin: 0 0 18px; }
+  .kaarten { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 16px; }
+  .kaart { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; }
+  .kaart .label { font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  .kaart .waarde { font-size: clamp(1.4rem, 5vw, 1.7rem); font-weight: 700; line-height: 1.2; margin: 4px 0 2px; }
+  .kaart .klein-waarde { font-size: 1.35rem; padding: 4px 0 3px; }
+  .kaart .sub { font-size: .85rem; color: var(--muted); }
+  .tabelwrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); background: #fbfdfe; }
+  td:first-child { white-space: nowrap; font-weight: 600; }
+  tr:last-child td { border-bottom: 0; }
+  .klein { font-size: .85rem; }
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  summary { cursor: pointer; font-weight: 600; }
+  .buren { display: flex; flex-wrap: wrap; gap: 8px 18px; padding: 0; list-style: none; }
+</style>

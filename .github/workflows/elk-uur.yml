@@ -1,0 +1,29 @@
+name: Data ophalen en deployen
+on:
+  schedule:
+    - cron: "7 * * * *"   # elk uur op :07
+  workflow_dispatch:
+  push:
+    branches: [main]
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - name: RWS-data ophalen
+        run: npm run fetch-data
+      - name: Laatste geldige data bewaren
+        run: |
+          git config user.name "waterweer-bot"
+          git config user.email "bot@waterweer.nl"
+          git add data/metingen data/rws-catalogus.json || true
+          git diff --cached --quiet || git commit -m "data: update $(date -u +%FT%TZ)" && git push || true
+      - run: npm run build
+      - name: Deploy naar Netlify
+        run: npx netlify-cli deploy --prod --dir=dist --site="$NETLIFY_SITE_ID" --auth="$NETLIFY_AUTH_TOKEN"
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

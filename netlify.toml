@@ -1,0 +1,10 @@
+# De site wordt elk uur in GitHub Actions gebouwd en naar Netlify gedeployed
+# (zie .github/workflows/elk-uur.yml). Deze instellingen gelden als je toch via Netlify bouwt.
+[build]
+  command = "npm run fetch-data && npm run build"
+  publish = "dist"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=600"

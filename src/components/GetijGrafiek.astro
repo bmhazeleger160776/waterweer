@@ -1,0 +1,68 @@
+---
+// Getijcurve voor de komende 36 uur, met hoog-/laagwater gemarkeerd en een lijn voor "nu".
+import { tijd, meter } from "../lib/format.js";
+const { reeks, extremen, nu } = Astro.props;
+const t0 = Date.parse(nu) - 3 * 3600e3;
+const t1 = t0 + 36 * 3600e3;
+const punten = reeks.filter((p) => { const t = Date.parse(p.t); return t >= t0 && t <= t1; });
+const ext = extremen.filter((e) => { const t = Date.parse(e.t); return t >= t0 && t <= t1; });
+const W = 760, H = 260, L = 56, R = 16, T = 28, B = 36;
+const vmin = Math.min(...punten.map((p) => p.v)) - 30;
+const vmax = Math.max(...punten.map((p) => p.v)) + 40;
+const X = (t) => L + ((Date.parse(t) - t0) / (t1 - t0)) * (W - L - R);
+const Y = (v) => T + (1 - (v - vmin) / (vmax - vmin)) * (H - T - B);
+const lijn = punten.map((p, i) => `${i ? "L" : "M"}${X(p.t).toFixed(1)} ${Y(p.v).toFixed(1)}`).join(" ");
+const vlak = `${lijn} L${X(punten.at(-1).t).toFixed(1)} ${H - B} L${X(punten[0].t).toFixed(1)} ${H - B} Z`;
+const ticks = [];
+for (let v = Math.ceil(vmin / 100) * 100; v <= vmax; v += 100) ticks.push(v);
+const uren = [];
+const eerste = new Date(t0); eerste.setUTCMinutes(0, 0, 0);
+for (let t = eerste.getTime() + 3600e3; t < t1; t += 3600e3) {
+  const u = Number(new Intl.DateTimeFormat("nl-NL", { timeZone: "Europe/Amsterdam", hour: "numeric" }).format(t));
+  if (u % 6 === 0) uren.push({ t: new Date(t).toISOString(), u });
+}
+const xNu = X(nu);
+---
+<figure class="grafiek">
+  <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Getijcurve voor de komende 36 uur">
+    {ticks.map((v) => (
+      <g>
+        <line x1={L} x2={W - R} y1={Y(v)} y2={Y(v)} class={v === 0 ? "nul" : "grid"} />
+        <text x={L - 8} y={Y(v) + 4} text-anchor="end" class="as">{v === 0 ? "NAP" : `${v > 0 ? "+" : "−"}${Math.abs(v / 100)} m`}</text>
+      </g>
+    ))}
+    {uren.map((h) => (
+      <g>
+        <line x1={X(h.t)} x2={X(h.t)} y1={T} y2={H - B} class="grid" />
+        <text x={X(h.t)} y={H - B + 18} text-anchor="middle" class="as">{h.u === 0 ? "0:00" : `${h.u}:00`}</text>
+      </g>
+    ))}
+    <path d={vlak} class="vlak" />
+    <path d={lijn} class="lijn" />
+    <line x1={xNu} x2={xNu} y1={T - 6} y2={H - B} class="nu" />
+    <text x={xNu + 6} y={T + 4} class="nutekst">nu</text>
+    {ext.map((e) => (
+      <g>
+        <circle cx={X(e.t)} cy={Y(e.v)} r="4" class={e.soort === "HW" ? "hw" : "lw"} />
+        <text x={X(e.t)} y={e.soort === "HW" ? Y(e.v) - 10 : Y(e.v) + 18} text-anchor="middle" class="label">
+          {e.soort} {tijd(e.t)}
+        </text>
+      </g>
+    ))}
+  </svg>
+  <figcaption class="muted">Astronomisch getij in m t.o.v. NAP, komende 36 uur (tijden in Nederlandse tijd).</figcaption>
+</figure>
+<style>
+  .grafiek { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
+  svg { width: 100%; height: auto; display: block; }
+  .grid { stroke: var(--line); stroke-width: 1; }
+  .nul { stroke: #a9bccb; stroke-width: 1; }
+  .as { fill: var(--muted); font-size: 12px; }
+  .lijn { fill: none; stroke: var(--accent); stroke-width: 2.5; }
+  .vlak { fill: var(--accent-soft); }
+  .nu { stroke: var(--ink); stroke-width: 1.25; stroke-dasharray: 4 4; }
+  .nutekst { fill: var(--ink); font-size: 12px; font-weight: 600; }
+  .hw { fill: var(--accent); } .lw { fill: #fff; stroke: var(--accent); stroke-width: 2; }
+  .label { fill: var(--ink); font-size: 12px; font-weight: 600; }
+  figcaption { font-size: .85rem; margin-top: 6px; }
+</style>
