@@ -1,7 +1,7 @@
 {
  "slug": "zierikzee",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T10:25:40.546Z",
+ "bijgewerkt": "2026-11-18T10:34:23.937Z",
  "fouten": [],
  "getij": {
   "meetpunt": "stavenisse",
@@ -5043,7 +5043,7 @@
   "meetpunt": "stavenisse",
   "meetpuntNaam": "Stavenisse",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T10:00:00.000Z",
-  "v": 120
+  "t": "2026-11-18T10:10:00.000Z",
+  "v": 113
  }
 }

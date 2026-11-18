@@ -1,7 +1,7 @@
 {
  "slug": "cadzand",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T10:25:36.585Z",
+ "bijgewerkt": "2026-11-18T10:34:20.942Z",
  "fouten": [],
  "getij": {
   "meetpunt": "cadzand.2",
@@ -5043,7 +5043,7 @@
   "meetpunt": "cadzand.1",
   "meetpuntNaam": "Cadzand, 1",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T10:10:00.000Z",
-  "v": 49
+  "t": "2026-11-18T10:20:00.000Z",
+  "v": 38
  }
 }
