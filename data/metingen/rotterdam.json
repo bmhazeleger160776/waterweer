@@ -1,7 +1,7 @@
 {
  "slug": "rotterdam",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T18:59:07.477Z",
+ "bijgewerkt": "2026-11-18T20:02:22.547Z",
  "fouten": [],
  "getij": {
   "meetpunt": "parksluis",
@@ -5020,7 +5020,7 @@
   "meetpunt": "rotterdam.lekhaven",
   "meetpuntNaam": "Rotterdam, Lekhaven",
   "eenheid": "°C",
-  "t": "2026-11-18T18:30:00.000Z",
+  "t": "2026-11-18T19:40:00.000Z",
   "v": 9.8
  },
  "waterstand": {
