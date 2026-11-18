@@ -66,9 +66,9 @@ const getijVerschil = (() => {
   return Math.round(Math.max(...hw.map((e) => e.v)) - Math.min(...lw.map((e) => e.v)));
 })();
 
-const titel = `Getijden ${loc.naam} vandaag – eb, vloed en watertemperatuur`;
+const titel = data.waterstand ? `Getijden en waterstand ${loc.naam} vandaag – eb, vloed en watertemperatuur` : `Getijden ${loc.naam} vandaag – eb, vloed en watertemperatuur`;
 const omschrijving = volgendHW
-  ? `Hoogwater ${loc.naam}: ${dagKort(volgendHW.t)} om ${tijd(volgendHW.t)}. Getijtabel voor 7 dagen, watertemperatuur${data.golf ? ", golfhoogte en wind" : " en waterstand"}, elk uur bijgewerkt.`
+  ? `Hoogwater ${loc.naam}: ${dagKort(volgendHW.t)} om ${tijd(volgendHW.t)}. Getijtabel voor 7 dagen, actuele waterstand, watertemperatuur${data.golf ? ", golfhoogte en wind" : ""}, elk uur bijgewerkt.`
   : `Getijden, eb en vloed en watertemperatuur in ${loc.naam}, elk uur bijgewerkt met data van Rijkswaterstaat.`;
 
 const faq = [
@@ -83,6 +83,10 @@ const faq = [
   getijVerschil && {
     v: `Hoe groot is het verschil tussen eb en vloed in ${loc.naam}?`,
     a: `Vandaag is het verschil tussen het hoogste hoogwater en het laagste laagwater ongeveer ${(getijVerschil / 100).toFixed(1).replace(".", ",")} meter. Bij springtij is dat groter, bij doodtij kleiner.`,
+  },
+  data.waterstand && {
+    v: `Wat is de waterstand in ${loc.naam} nu?`,
+    a: `De laatst gemeten waterstand in ${loc.naam} is ${meter(data.waterstand.v)} (${metTijd(data.waterstand.t)}).${afwijking === null || afwijking === 0 ? "" : ` Dat is ${Math.abs(afwijking)} cm ${afwijking > 0 ? "hoger" : "lager"} dan het astronomische getij voorspelt.`} Door eb en vloed verandert de waterstand de hele dag.`,
   },
   golf && {
     v: `Hoe hoog zijn de golven bij ${loc.naam}?`,
@@ -172,6 +176,15 @@ const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
   </div>
   <p class="muted klein">Hoogte in meters ten opzichte van NAP. Wind en luchtdruk kunnen de werkelijke waterstand tientallen centimeters laten afwijken.</p>
   {jaartabellen.length > 0 && <p class="jaarlink">{jaartabellen.map((j) => <a href={`/getijden/${loc.slug}/${j}`}>Getijtabel {loc.naam} {j} (heel jaar, printbaar) →</a>)}</p>}
+
+  {data.waterstand && (
+    <>
+      <h2>Waterstand {loc.naam} nu</h2>
+      <p>De gemeten waterstand bij {loc.naam} is nu <strong>{meter(data.waterstand.v)}</strong> (gemeten {metTijd(data.waterstand.t)}).
+        {afwijking !== null && (afwijking === 0 ? <> Dat is precies wat het astronomische getij voorspelt.</> : <> Dat is {Math.abs(afwijking)} cm {afwijking > 0 ? "hoger" : "lager"} dan het astronomische getij voorspelt{Math.abs(afwijking) >= 20 ? (afwijking > 0 ? ", meestal door wind die het water opstuwt" : ", meestal door aflandige wind") : ""}.</>)}
+        {" "}Door eb en vloed gaat de waterstand twee keer per dag op en neer: de getijtabel hierboven laat zien wanneer het water op zijn hoogst en laagst staat. <a href="/uitleg/nap">Wat betekent NAP?</a></p>
+    </>
+  )}
 
   {loc.intro && <><h2>Over het water bij {loc.naam}</h2><p>{loc.intro}</p></>}
 

@@ -165,6 +165,22 @@ async function verloop(stationCode, dagen = 7) {
   return reeks;
 }
 
+// Waterstandverwachting van Rijkswaterstaat (ProcesType "verwachting"), als uurwaarden vanaf nu.
+// Niet elk meetpunt heeft een verwachting; dan geeft dit een lege lijst.
+async function verwachting(stationCode, dagen = 14) {
+  const res = await post(P.waarnemingen, {
+    Locatie: { Code: stationCode },
+    AquoPlusWaarnemingMetadata: { AquoMetadata: { Compartiment: { Code: "OW" }, Grootheid: { Code: "WATHTE" }, ProcesType: "verwachting" } },
+    Periode: { Begindatumtijd: iso(new Date(Date.now() - 3600e3)), Einddatumtijd: iso(new Date(Date.now() + dagen * 864e5)) },
+  });
+  const perUur = new Map();
+  for (const m of metingen(res)) {
+    if (m.v === null || m.v < -2000 || m.v > 4000) continue;
+    perUur.set(m.t.slice(0, 13), { t: m.t.slice(0, 13) + ":00:00.000Z", v: Math.round(m.v) });
+  }
+  return [...perUur.values()].sort((a, b) => a.t.localeCompare(b.t));
+}
+
 // Metingen van de afgelopen uren als { t, v }; bij meerdere reeksen (bijv. frequentiebanden)
 // nemen we de reeks met de meest recente waarde.
 async function recent(stationCode, compartiment, grootheid, uren = 24) {
@@ -253,6 +269,11 @@ async function locatie(loc) {
   if (!loc.rws.getij && loc.rws.waterstand && data.waterstand) {
     try { data.waterstand.reeks = await verloop(rwsCode(loc.rws.waterstand)); }
     catch (e) { data.fouten.push(`verloop: ${e.message}`); }
+    try {
+      const vw = await verwachting(rwsCode(loc.rws.waterstand));
+      if (vw.length >= 12) data.waterstand.verwachting = vw;
+      else delete data.waterstand.verwachting;
+    } catch { delete data.waterstand.verwachting; }
   }
   fs.writeFileSync(bestand, JSON.stringify(data, null, 1));
   console.log(`${loc.slug}: ${data.fouten.length ? "met fouten -> " + data.fouten.join(" | ") : "ok"}`);

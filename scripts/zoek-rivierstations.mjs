@@ -70,6 +70,18 @@ async function laatste(stationCode) {
   return beste;
 }
 
+async function verwachtingDagen(stationCode) {
+  const nu = Date.now();
+  const res = await post("/ONLINEWAARNEMINGENSERVICES/OphalenWaarnemingen", {
+    Locatie: { Code: stationCode },
+    AquoPlusWaarnemingMetadata: { AquoMetadata: { Compartiment: { Code: "OW" }, Grootheid: { Code: "WATHTE" }, ProcesType: "verwachting" } },
+    Periode: { Begindatumtijd: new Date(nu).toISOString().replace("Z", "+00:00"), Einddatumtijd: new Date(nu + 14 * 864e5).toISOString().replace("Z", "+00:00") },
+  }, 90_000);
+  let laatst = null;
+  for (const w of get(res, "WaarnemingenLijst") ?? []) for (const m of get(w, "MetingenLijst") ?? []) { const t = get(m, "Tijdstip"); if (t && (!laatst || t > laatst)) laatst = t; }
+  return laatst ? Math.round((Date.parse(laatst) - nu) / 864e5 * 10) / 10 : 0;
+}
+
 console.log("Catalogus ophalen (kan een minuut duren)...");
 const cat = await post("/METADATASERVICES/OphalenCatalogus", { CatalogusFilter: { Grootheden: true, Compartimenten: true, Groeperingen: true, ProcesTypes: true } });
 const metas = new Map((get(cat, "AquoMetadataLijst") ?? []).map((m) => [mid(m, "aquometadata"), m]));
@@ -111,12 +123,22 @@ for (const p of NIEUW) {
     intro: p.intro,
   };
   if (bestaand) Object.assign(bestaand, entry); else locaties.push(entry);
-  regels.push(`  ✓  ${p.naam.padEnd(13)} ${gekozen.naam} (${entry.rws.waterstand.km} km) · ${Math.round(gekozen.laatste.v)} cm NAP`);
+  let vw = "geen verwachting";
+  try { const d = await verwachtingDagen(gekozen.code); if (d > 0) vw = `verwachting ${d} dagen`; } catch {}
+  regels.push(`  ✓  ${p.naam.padEnd(13)} ${gekozen.naam} (${entry.rws.waterstand.km} km) · ${Math.round(gekozen.laatste.v)} cm NAP · ${vw}`);
 }
 
 // "In de buurt": de drie dichtstbijzijnde rivier-/meerplaatsen
 const rivieren = locaties.filter((l) => !l.rws?.getij && l.rws?.waterstand);
 for (const l of rivieren) l.dichtbij = rivieren.filter((o) => o !== l).sort((a, b) => km(l, a) - km(l, b)).slice(0, 3).map((o) => o.slug);
+
+for (const slug of ["lobith", "nijmegen", "deventer"]) {
+  const l = locaties.find((x) => x.slug === slug);
+  if (!l?.rws?.waterstand?.code) continue;
+  let vw = "geen verwachting";
+  try { const d = await verwachtingDagen(l.rws.waterstand.code); if (d > 0) vw = `verwachting ${d} dagen`; } catch (e) { vw = "fout: " + e.message.slice(0, 50); }
+  regels.push(`  ·  ${l.naam.padEnd(13)} (bestaand) ${vw}`);
+}
 
 fs.writeFileSync(LOC_PAD, JSON.stringify(locaties, null, 2) + "\n");
 console.log(regels.join("\n"));

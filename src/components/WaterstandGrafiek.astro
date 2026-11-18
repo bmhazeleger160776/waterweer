@@ -1,10 +1,12 @@
 ---
 // Verloop van de gemeten waterstand (uurwaarden), standaard de laatste 7 dagen.
 import { meter } from "../lib/format.js";
-const { reeks, hero = false } = Astro.props;
+const { reeks, verwachting = [], hero = false } = Astro.props;
 const W = 760, H = 240, L = 64, R = 16, T = 20, B = 34;
-const t0 = Date.parse(reeks[0].t), t1 = Date.parse(reeks.at(-1).t);
-const vals = reeks.map((p) => p.v);
+const vw = verwachting.filter((p) => Date.parse(p.t) > Date.parse(reeks.at(-1).t));
+const alle = [...reeks, ...vw];
+const t0 = Date.parse(reeks[0].t), t1 = Date.parse(alle.at(-1).t);
+const vals = alle.map((p) => p.v);
 const span = Math.max(Math.max(...vals) - Math.min(...vals), 40);
 const mid = (Math.max(...vals) + Math.min(...vals)) / 2;
 const vmin = mid - span * 0.65, vmax = mid + span * 0.65;
@@ -17,11 +19,12 @@ const ticks = [];
 for (let v = Math.ceil(vmin / stap) * stap; v <= vmax; v += stap) ticks.push(v);
 const fmt = new Intl.DateTimeFormat("nl-NL", { timeZone: "Europe/Amsterdam", weekday: "short", day: "numeric" });
 const uurFmt = new Intl.DateTimeFormat("nl-NL", { timeZone: "Europe/Amsterdam", hour: "numeric" });
-const dagen = reeks.filter((p) => Number(uurFmt.format(new Date(p.t))) === 0);
+const dagen = alle.filter((p) => Number(uurFmt.format(new Date(p.t))) === 0);
+const lijnVw = vw.length ? [reeks.at(-1), ...vw].map((p, i) => `${i ? "L" : "M"}${X(p.t).toFixed(1)} ${Y(p.v).toFixed(1)}`).join(" ") : null;
 const laatste = reeks.at(-1);
 ---
 <figure class:list={["grafiek", { hero }]}>
-  <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Verloop van de waterstand in de afgelopen dagen">
+  <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={vw.length ? "Verloop van de waterstand in de afgelopen dagen en de verwachting" : "Verloop van de waterstand in de afgelopen dagen"}>
     {ticks.map((v) => (
       <g>
         <line x1={L} x2={W - R} y1={Y(v)} y2={Y(v)} class="grid" />
@@ -36,9 +39,12 @@ const laatste = reeks.at(-1);
     ))}
     <path d={vlak} class="vlak" />
     <path d={lijn} class="lijn" />
+    {lijnVw && <path d={lijnVw} class="lijn vw" />}
+    {lijnVw && <text x={X(reeks.at(-1).t) + 6} y={T + 10} class="as">verwachting →</text>}
+    {lijnVw && <line x1={X(reeks.at(-1).t)} x2={X(reeks.at(-1).t)} y1={T} y2={H - B} class="nu" />}
     <circle cx={X(laatste.t)} cy={Y(laatste.v)} r="4.5" class="punt" />
   </svg>
-  <figcaption class="muted">Gemeten waterstand in m t.o.v. NAP, uurwaarden van de afgelopen 7 dagen. Laatste meting: {meter(laatste.v)}.</figcaption>
+  <figcaption class="muted">Gemeten waterstand in m t.o.v. NAP, uurwaarden van de afgelopen 7 dagen{vw.length ? <> en de verwachting van Rijkswaterstaat (stippellijn)</> : ""}. Laatste meting: {meter(laatste.v)}.</figcaption>
 </figure>
 <style>
   .grafiek { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
@@ -47,6 +53,8 @@ const laatste = reeks.at(-1);
   .as { fill: var(--muted); font-size: 12px; }
   .lijn { fill: none; stroke: var(--accent); stroke-width: 2.5; }
   .vlak { fill: var(--accent-soft); }
+  .vw { stroke-dasharray: 6 5; }
+  .nu { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 4; }
   .punt { fill: var(--accent); stroke: #fff; stroke-width: 2; }
   figcaption { font-size: .85rem; margin-top: 6px; }
   .hero { background: transparent; border: 0; padding: 0; }
@@ -54,6 +62,7 @@ const laatste = reeks.at(-1);
   .hero .as { fill: var(--on-accent); }
   .hero .lijn { stroke: #fff; }
   .hero .vlak { fill: rgba(255,255,255,.14); }
+  .hero .nu { stroke: var(--sun); }
   .hero .punt { fill: var(--sun); stroke: var(--accent); }
   .hero figcaption { color: var(--on-accent); }
 </style>

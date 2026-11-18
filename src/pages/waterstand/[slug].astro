@@ -3,7 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import Base from "../../layouts/Base.astro";
 import WaterstandGrafiek from "../../components/WaterstandGrafiek.astro";
-import { tijd, dag, meter, graden, metTijd } from "../../lib/format.js";
+import { tijd, dag, dagKort, meter, graden, metTijd } from "../../lib/format.js";
 
 export function getStaticPaths() {
   const root = process.cwd();
@@ -29,16 +29,24 @@ const delta = ws && dagGeleden && Math.abs(Date.parse(dagGeleden.t) - (nu - 864e
 const trend = delta === null ? null : Math.abs(delta) < 5 ? "stabiel" : delta > 0 ? "stijgend" : "dalend";
 const weekMin = reeks.length ? reeks.reduce((a, b) => (b.v < a.v ? b : a)) : null;
 const weekMax = reeks.length ? reeks.reduce((a, b) => (b.v > a.v ? b : a)) : null;
+const vw = (ws?.verwachting ?? []).filter((p) => nu && Date.parse(p.t) > nu);
+const dagFmt = new Intl.DateTimeFormat("nl-NL", { timeZone: "Europe/Amsterdam", weekday: "long", day: "numeric", month: "long" });
+const dagKey = (t) => new Intl.DateTimeFormat("sv-SE", { timeZone: "Europe/Amsterdam" }).format(new Date(t));
+const vwDagen = [...vw.reduce((m, p) => { const k = dagKey(p.t); const d = m.get(k) ?? { t: p.t, min: p.v, max: p.v }; d.min = Math.min(d.min, p.v); d.max = Math.max(d.max, p.v); return m.set(k, d); }, new Map()).values()];
+const vwPiek = vw.length ? vw.reduce((a, b) => (b.v > a.v ? b : a)) : null;
+const vwEind = vw.at(-1);
+const vwTrend = ws && vwEind ? (Math.abs(vwEind.v - ws.v) < 10 ? "ongeveer gelijk blijven" : vwEind.v > ws.v ? `stijgen naar ${meter(vwEind.v)}` : `dalen naar ${meter(vwEind.v)}`) : null;
 const temp = data.temperatuur;
 const tempBij = temp && loc.rws?.temperatuur?.km > 2 ? (temp.meetpuntNaam || loc.rws.temperatuur.naam) : null;
 const isMeer = loc.type === "meer";
 const opRivier = loc.rivier && !isMeer ? ` (${loc.rivier})` : "";
-const titel = `Waterstand ${loc.naam}${opRivier} vandaag – actueel ${isMeer ? "peil" : "en verloop"}`;
+const titel = `Waterstand ${loc.naam}${opRivier} vandaag – actueel ${isMeer ? "peil" : vw.length ? "en verwachting" : "en verloop"}`;
 const omschrijving = ws
   ? `Waterstand ${loc.naam}: ${meter(ws.v)} (gemeten ${tijd(ws.t)})${trend ? `, ${trend}` : ""}. Verloop van de afgelopen 7 dagen, elk uur bijgewerkt met data van Rijkswaterstaat.`
   : `Actuele waterstand ${loc.naam}, elk uur bijgewerkt met data van Rijkswaterstaat.`;
 const faq = [
   ws && { v: `Wat is de waterstand bij ${loc.naam}?`, a: `De laatst gemeten waterstand bij ${loc.naam} is ${meter(ws.v)} (${dag(ws.t)} om ${tijd(ws.t)}).${delta !== null ? ` Dat is ${Math.abs(delta)} cm ${delta >= 0 ? "hoger" : "lager"} dan 24 uur eerder.` : ""}` },
+  vwTrend && { v: `Wat is de verwachting voor de waterstand bij ${loc.naam}?`, a: `Volgens de verwachting van Rijkswaterstaat zal de waterstand bij ${loc.naam} tot ${dagFmt.format(new Date(vwEind.t))} ${vwTrend}.${vwPiek && vwPiek.v > ws.v + 10 ? ` Het hoogste punt wordt verwacht op ${dagFmt.format(new Date(vwPiek.t))}: ${meter(vwPiek.v)}.` : ""} Verwachtingen kunnen nog veranderen.` },
   weekMin && { v: `Hoe veranderde de waterstand de afgelopen week?`, a: `De afgelopen 7 dagen lag de waterstand tussen ${meter(weekMin.v)} en ${meter(weekMax.v)}.` },
   temp && { v: `Wat is de watertemperatuur bij ${loc.naam}?`, a: `De laatst gemeten watertemperatuur is ${graden(temp.v)}${tempBij ? ` (gemeten bij ${tempBij})` : ""}.` },
 ].filter(Boolean);
@@ -74,7 +82,7 @@ const jsonLd = [
           </div>
         )}
       </div>
-      {reeks.length >= 24 && <WaterstandGrafiek hero reeks={reeks} />}
+      {reeks.length >= 24 && <WaterstandGrafiek hero reeks={reeks} verwachting={vw} />}
     </section>
   )}
 
@@ -83,6 +91,18 @@ const jsonLd = [
     {weekMax && <div class="kaart"><span class="label">Hoogste deze week</span><span class="waarde">{meter(weekMax.v).replace(" NAP", "")}</span><span class="sub">t.o.v. NAP</span></div>}
     {temp && <div class="kaart"><span class="label">Watertemperatuur</span><span class="waarde">{graden(temp.v)}</span><span class="sub">gemeten {metTijd(temp.t)}{tempBij && <> · bij {tempBij}</>}</span></div>}
   </section>
+
+  {vwDagen.length > 0 && (
+    <>
+      <h2>Verwachting waterstand {loc.naam}</h2>
+      <p>Rijkswaterstaat verwacht dat de waterstand bij {loc.naam} tot {dagFmt.format(new Date(vwEind.t))} zal {vwTrend}.{vwPiek && vwPiek.v > ws.v + 10 && <> Het hoogste punt: <strong>{meter(vwPiek.v)}</strong> op {dagFmt.format(new Date(vwPiek.t))}.</>}</p>
+      <div class="tabelwrap"><table class="vwtabel">
+        <thead><tr><th>Dag</th><th>Laagste</th><th>Hoogste</th></tr></thead>
+        <tbody>{vwDagen.map((d) => <tr><td>{dagKort(d.t)}</td><td>{meter(d.min).replace(" NAP", "")}</td><td>{meter(d.max).replace(" NAP", "")}</td></tr>)}</tbody>
+      </table></div>
+      <p class="muted klein">Verwachte waterstand in m t.o.v. NAP, bron: Rijkswaterstaat. Een verwachting wordt minder zeker naarmate ze verder vooruit kijkt.</p>
+    </>
+  )}
 
   {loc.intro && <><h2>Over het water bij {loc.naam}</h2><p>{loc.intro}</p></>}
 
@@ -118,6 +138,12 @@ const jsonLd = [
   .kaart .waarde { font-size: clamp(1.35rem, 5vw, 1.65rem); font-weight: 700; line-height: 1.2; margin: 6px 0 2px; font-variant-numeric: tabular-nums; }
   .kaart .sub { font-size: .82rem; color: var(--muted); }
   .klein { font-size: .85rem; }
+  .tabelwrap { overflow-x: auto; }
+  .vwtabel { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; font-variant-numeric: tabular-nums; }
+  .vwtabel th, .vwtabel td { white-space: nowrap; text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+  .vwtabel th { font-size: .8rem; font-weight: 600; color: var(--muted); background: #f8fbfd; }
+  .vwtabel tr:last-child td { border-bottom: 0; }
+  .vwtabel td:first-child { font-weight: 600; }
   .meer { margin-top: 18px; font-weight: 600; }
   details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 8px; }
   summary { cursor: pointer; font-weight: 600; }
