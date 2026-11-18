@@ -1,13 +1,13 @@
 {
  "slug": "keizersveer",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T16:05:30.535Z",
+ "bijgewerkt": "2026-11-18T16:17:46.638Z",
  "fouten": [],
  "waterstand": {
   "meetpunt": "hank.bergschemaas",
   "meetpuntNaam": "Keizersveer",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T15:40:00.000Z",
+  "t": "2026-11-18T15:50:00.000Z",
   "v": 107,
   "reeks": [
    {
@@ -878,6 +878,10 @@
    },
    {
     "t": "2026-11-20T15:00:00.000Z",
+    "v": 91
+   },
+   {
+    "t": "2026-11-20T16:00:00.000Z",
     "v": 91
    }
   ]

@@ -1,7 +1,7 @@
 {
  "slug": "zandvoort",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T16:04:57.714Z",
+ "bijgewerkt": "2026-11-18T16:17:15.060Z",
  "fouten": [],
  "getij": {
   "meetpunt": "ijgeul.1",
@@ -5032,8 +5032,8 @@
   "meetpunt": "ijmuiden.havenhoofd.zuid",
   "meetpuntNaam": "IJmuiden, havenhoofd, zuid",
   "km": 9.9,
-  "t": "2026-11-18T15:40:00.000Z",
-  "snelheid": 6.7,
-  "richting": 297
+  "t": "2026-11-18T15:50:00.000Z",
+  "snelheid": 6,
+  "richting": 280
  }
 }
