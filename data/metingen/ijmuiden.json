@@ -1,7 +1,7 @@
 {
  "slug": "ijmuiden",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T10:34:19.508Z",
+ "bijgewerkt": "2026-11-18T10:44:05.437Z",
  "fouten": [],
  "getij": {
   "meetpunt": "ijmuiden.buitenhaven",
@@ -4827,8 +4827,8 @@
   "meetpunt": "ijmuiden.buitenhaven",
   "meetpuntNaam": "IJmuiden, buitenhaven",
   "eenheid": "°C",
-  "t": "2026-11-18T10:00:00.000Z",
-  "v": 10.4
+  "t": "2026-11-18T10:20:00.000Z",
+  "v": 10.5
  },
  "waterstand": {
   "meetpunt": "ijmuiden.buitenhaven",

@@ -1,7 +1,7 @@
 {
  "slug": "vlieland",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T10:34:23.353Z",
+ "bijgewerkt": "2026-11-18T10:44:09.440Z",
  "fouten": [],
  "getij": {
   "meetpunt": "vlieland.haven",
@@ -5048,7 +5048,7 @@
   "meetpunt": "vlieland.haven",
   "meetpuntNaam": "Vlieland, haven",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T10:10:00.000Z",
-  "v": 91
+  "t": "2026-11-18T10:30:00.000Z",
+  "v": 98
  }
 }
