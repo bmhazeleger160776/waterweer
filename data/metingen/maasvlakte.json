@@ -1,7 +1,7 @@
 {
  "slug": "maasvlakte",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T02:56:15.343Z",
+ "bijgewerkt": "2026-11-18T03:59:28.863Z",
  "fouten": [],
  "getij": {
   "meetpunt": "maasvlakte.amaliahaven",
@@ -5024,14 +5024,14 @@
   "meetpunt": "hoekvanholland",
   "meetpuntNaam": "Hoek van Holland",
   "eenheid": "°C",
-  "t": "2026-11-18T02:30:00.000Z",
-  "v": 11.5
+  "t": "2026-11-18T03:40:00.000Z",
+  "v": 11.4
  },
  "waterstand": {
   "meetpunt": "maasvlakte.amaliahaven",
   "meetpuntNaam": "Maasvlakte Amaliahaven",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T02:30:00.000Z",
-  "v": 31
+  "t": "2026-11-18T03:40:00.000Z",
+  "v": 50
  }
 }
