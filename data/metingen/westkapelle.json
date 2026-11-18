@@ -1,7 +1,7 @@
 {
  "slug": "westkapelle",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T08:23:15.928Z",
+ "bijgewerkt": "2026-11-18T09:14:18.681Z",
  "fouten": [],
  "getij": {
   "meetpunt": "westkapelle",
@@ -5020,14 +5020,14 @@
   "meetpunt": "vlaktevanderaan",
   "meetpuntNaam": "Vlakte van de Raan",
   "eenheid": "°C",
-  "t": "2026-11-18T08:00:00.000Z",
-  "v": 10
+  "t": "2026-11-18T09:00:00.000Z",
+  "v": 9.9
  },
  "waterstand": {
   "meetpunt": "westkapelle",
   "meetpuntNaam": "Westkapelle",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T08:00:00.000Z",
-  "v": 158
+  "t": "2026-11-18T09:00:00.000Z",
+  "v": 118
  }
 }
