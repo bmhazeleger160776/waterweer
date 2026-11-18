@@ -16,6 +16,7 @@ const url = canonical ? site + canonical : undefined;
     <meta property="og:type" content="website" />
     {url && <meta property="og:url" content={url} />}
     <meta property="og:locale" content="nl_NL" />
+    <script is:inline defer src="https://cloud.umami.is/script.js" data-website-id="4cd52cee-8cf8-4952-a4bc-baa2ebedfb28" data-domains="waterweer.nl"></script>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     {jsonLd.map((obj) => <script type="application/ld+json" set:html={JSON.stringify(obj)} />)}
     <style is:global>
