@@ -1,14 +1,14 @@
 {
  "slug": "zaltbommel",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T11:58:11.616Z",
+ "bijgewerkt": "2026-11-18T12:01:19.519Z",
  "fouten": [],
  "waterstand": {
   "meetpunt": "zaltbommel",
   "meetpuntNaam": "Zaltbommel",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T11:20:00.000Z",
-  "v": 140,
+  "t": "2026-11-18T11:40:00.000Z",
+  "v": 141,
   "reeks": [
    {
     "t": "2026-11-11T12:00:00.000Z",
@@ -680,7 +680,7 @@
    },
    {
     "t": "2026-11-18T11:00:00.000Z",
-    "v": 142
+    "v": 141
    }
   ],
   "verwachting": [

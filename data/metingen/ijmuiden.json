@@ -1,7 +1,7 @@
 {
  "slug": "ijmuiden",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T11:57:37.599Z",
+ "bijgewerkt": "2026-11-18T12:00:52.894Z",
  "fouten": [],
  "getij": {
   "meetpunt": "ijmuiden.buitenhaven",
@@ -5042,8 +5042,8 @@
   "meetpunt": "ijgeul.1",
   "meetpuntNaam": "IJGeul, 1",
   "km": 2.5,
-  "t": "2026-11-18T11:30:00.000Z",
-  "v": 190,
+  "t": "2026-11-18T11:40:00.000Z",
+  "v": 184,
   "min24": 55,
   "max24": 366,
   "periode": 5

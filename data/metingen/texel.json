@@ -1,7 +1,7 @@
 {
  "slug": "texel",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T11:57:24.478Z",
+ "bijgewerkt": "2026-11-18T12:00:42.562Z",
  "fouten": [],
  "getij": {
   "meetpunt": "texel.oudeschild",
@@ -5072,8 +5072,8 @@
   "meetpunt": "texel.hors",
   "meetpuntNaam": "Texelhors",
   "km": 10,
-  "t": "2026-11-18T11:20:00.000Z",
-  "snelheid": 13.1,
+  "t": "2026-11-18T11:30:00.000Z",
+  "snelheid": 12.2,
   "richting": 292
  }
 }

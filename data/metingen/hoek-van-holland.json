@@ -1,7 +1,7 @@
 {
  "slug": "hoek-van-holland",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T11:57:34.555Z",
+ "bijgewerkt": "2026-11-18T12:00:50.472Z",
  "fouten": [],
  "getij": {
   "meetpunt": "hoekvanholland",
@@ -4980,8 +4980,8 @@
   "meetpunt": "hoekvanholland",
   "meetpuntNaam": "Hoek van Holland",
   "km": 0.3,
-  "t": "2026-11-18T11:20:00.000Z",
-  "snelheid": 9.2,
+  "t": "2026-11-18T11:30:00.000Z",
+  "snelheid": 9.1,
   "richting": 296
  }
 }

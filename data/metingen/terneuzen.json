@@ -1,7 +1,7 @@
 {
  "slug": "terneuzen",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T11:57:54.733Z",
+ "bijgewerkt": "2026-11-18T12:01:06.376Z",
  "fouten": [],
  "getij": {
   "meetpunt": "terneuzen",
@@ -5043,7 +5043,7 @@
   "meetpunt": "terneuzen",
   "meetpuntNaam": "Terneuzen",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T11:30:00.000Z",
-  "v": 12
+  "t": "2026-11-18T11:40:00.000Z",
+  "v": 1
  }
 }

@@ -1,7 +1,7 @@
 {
  "slug": "egmond-aan-zee",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T11:57:29.659Z",
+ "bijgewerkt": "2026-11-18T12:00:46.640Z",
  "fouten": [
   "golf: geen recente meting"
  ],
@@ -5037,7 +5037,7 @@
   "meetpunt": "ijmuiden.noordersluis.west",
   "meetpuntNaam": "IJmuiden, noordersluis, west",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T11:30:00.000Z",
+  "t": "2026-11-18T11:40:00.000Z",
   "v": 82
  },
  "wind": {
