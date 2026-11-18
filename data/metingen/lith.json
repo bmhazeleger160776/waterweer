@@ -1,14 +1,14 @@
 {
  "slug": "lith",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T15:55:18.641Z",
+ "bijgewerkt": "2026-11-18T16:05:28.456Z",
  "fouten": [],
  "waterstand": {
   "meetpunt": "lith.beneden",
   "meetpuntNaam": "Lith beneden",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T15:30:00.000Z",
-  "v": 157,
+  "t": "2026-11-18T15:40:00.000Z",
+  "v": 158,
   "reeks": [
    {
     "t": "2026-11-11T16:00:00.000Z",
@@ -680,7 +680,7 @@
    },
    {
     "t": "2026-11-18T15:00:00.000Z",
-    "v": 157
+    "v": 158
    }
   ],
   "verwachting": [
@@ -878,7 +878,7 @@
    },
    {
     "t": "2026-11-20T15:00:00.000Z",
-    "v": 158
+    "v": 159
    }
   ]
  }

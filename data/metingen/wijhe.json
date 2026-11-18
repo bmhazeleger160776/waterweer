@@ -1,13 +1,13 @@
 {
  "slug": "wijhe",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T15:55:11.878Z",
+ "bijgewerkt": "2026-11-18T16:05:21.826Z",
  "fouten": [],
  "waterstand": {
   "meetpunt": "wijhe",
   "meetpuntNaam": "Wijhe",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T15:20:00.000Z",
+  "t": "2026-11-18T15:40:00.000Z",
   "v": 23,
   "reeks": [
    {

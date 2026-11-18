@@ -1,7 +1,7 @@
 {
  "slug": "oostkapelle",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T15:54:57.103Z",
+ "bijgewerkt": "2026-11-18T16:05:07.473Z",
  "fouten": [],
  "getij": {
   "meetpunt": "oosterschelde.11",
@@ -5030,18 +5030,18 @@
   "meetpunt": "oosterschelde.11",
   "meetpuntNaam": "Oosterschelde, 11",
   "km": 8.5,
-  "t": "2026-11-18T15:30:00.000Z",
+  "t": "2026-11-18T15:40:00.000Z",
   "v": 147,
   "min24": 111,
   "max24": 195,
-  "periode": 4.6
+  "periode": 4.7
  },
  "wind": {
   "meetpunt": "oosterschelde.4",
   "meetpuntNaam": "Oosterschelde, 4",
   "km": 14.1,
   "t": "2026-11-18T15:40:00.000Z",
-  "snelheid": 5.4,
-  "richting": 249
+  "snelheid": 5.8,
+  "richting": 246
  }
 }
