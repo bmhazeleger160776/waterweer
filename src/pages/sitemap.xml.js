@@ -14,7 +14,7 @@ export function GET({ site }) {
   const urls = ["/", "/getijden/", "/getijden/zeeland", "/getijden/zuid-holland", "/getijden/noord-holland", "/getijden/wadden", ...locaties.map((l) => `/getijden/${l.slug}`), ...jaarUrls, ...(rivieren.length ? ["/waterstand/"] : []), ...rivieren.map((l) => `/waterstand/${l.slug}`), "/uitleg/", "/uitleg/eb-en-vloed", "/uitleg/springtij-en-doodtij", "/uitleg/wadlopen", "/uitleg/nap", "/widget/"];
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((u) => `  <url><loc>${base}${u}</loc><lastmod>${nu}</lastmod></url>`).join("\n")}
+${urls.map((u) => (/^\/(uitleg|widget)/.test(u) || /\/\d{4}$/.test(u) ? `  <url><loc>${base}${u}</loc></url>` : `  <url><loc>${base}${u}</loc><lastmod>${nu}</lastmod></url>`)).join("\n")}
 </urlset>`;
   return new Response(xml, { headers: { "Content-Type": "application/xml" } });
 }

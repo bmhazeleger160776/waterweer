@@ -66,7 +66,7 @@ const getijVerschil = (() => {
   return Math.round(Math.max(...hw.map((e) => e.v)) - Math.min(...lw.map((e) => e.v)));
 })();
 
-const titel = data.waterstand ? `Getijden en waterstand ${loc.naam} vandaag – eb, vloed en watertemperatuur` : `Getijden ${loc.naam} vandaag – eb, vloed en watertemperatuur`;
+const titel = data.waterstand ? `Getijden & waterstand ${loc.naam} – eb, vloed, watertemperatuur` : `Getijden ${loc.naam} vandaag – eb, vloed en watertemperatuur`;
 const omschrijving = volgendHW
   ? `Hoogwater ${loc.naam}: ${dagKort(volgendHW.t)} om ${tijd(volgendHW.t)}. Getijtabel voor 7 dagen, actuele waterstand, watertemperatuur${data.golf ? ", golfhoogte en wind" : ""}, elk uur bijgewerkt.`
   : `Getijden, eb en vloed en watertemperatuur in ${loc.naam}, elk uur bijgewerkt met data van Rijkswaterstaat.`;
