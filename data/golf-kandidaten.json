@@ -1,1968 +1,4367 @@
 {
- "vlissingen": {
-  "golf": [
-   {
-    "code": "vlissingen.honte",
-    "naam": "Vlissingen Honte",
-    "km": 6.7
-   },
-   {
-    "code": "honte.kaloot",
-    "naam": "Honte, Kaloot",
-    "km": 8.0
-   },
-   {
-    "code": "vaarwaterlangshoofdplaat",
-    "naam": "Vaarwater langs Hoofdplaat",
-    "km": 8.9
-   },
-   {
-    "code": "vaarwaterlangshoofdplaat.4",
-    "naam": "Vaarwater langs Hoofdplaat, punt 04",
-    "km": 9.2
-   },
-   {
-    "code": "wielingen.noord",
-    "naam": "Wielingen, noord",
-    "km": 12.5
-   },
-   {
-    "code": "westkapelle",
-    "naam": "Westkapelle",
-    "km": 13.9
-   },
-   {
-    "code": "terneuzen.pasvanterneuzen.1",
-    "naam": "Terneuzen Pas van Terneuzen boei",
-    "km": 14.0
-   },
-   {
-    "code": "pasvanterneuzen",
-    "naam": "Pas van Terneuzen",
-    "km": 15.0
-   }
-  ],
-  "wind": [
-   {
-    "code": "vlissingen",
-    "naam": "Vlissingen",
-    "km": 0.3
-   },
-   {
-    "code": "cadzand.1",
-    "naam": "Cadzand, 1",
-    "km": 16.7
-   },
-   {
-    "code": "terneuzen.westsluis",
-    "naam": "Terneuzen, westsluis",
-    "km": 19.1
-   },
-   {
-    "code": "kats.zandkreeksluis.buiten",
-    "naam": "Kats Zandkreeksluis buiten",
-    "km": 21.4
-   },
-   {
-    "code": "wilhelminadorp",
-    "naam": "Wilhelminadorp",
-    "km": 22.0
-   },
-   {
-    "code": "oosterschelde.4",
-    "naam": "Oosterschelde, 4",
-    "km": 24.6
-   },
-   {
-    "code": "vlaktevanderaan",
-    "naam": "Vlakte van de Raan",
-    "km": 25.4
-   },
-   {
-    "code": "hansweert",
-    "naam": "Hansweert",
-    "km": 27.8
-   }
-  ]
- },
- "scheveningen": {
-  "golf": [
-   {
-    "code": "zandmotor.boei.zuid",
-    "naam": "Zandmotor, boei, zuid",
-    "km": 6.4
-   },
-   {
-    "code": "zandmoter.boei.noord",
-    "naam": "Zandmoter, boei, noord",
-    "km": 10.0
-   },
-   {
-    "code": "hollandsekust.zuid.alpha",
-    "naam": "Hollandse Kust Zuid platform Alpha",
-    "km": 14.8
-   },
-   {
-    "code": "hoekvanholland.benoordendenoorderdam",
-    "naam": "Hoek van Holland, benoorden de Noorderdam",
-    "km": 17.8
-   },
-   {
-    "code": "hoekvanholland.maeslantkering.beneden.noord",
-    "naam": "Hoek van Holland, Maeslantkering, Beneden, noord",
-    "km": 18.1
-   },
-   {
-    "code": "hoekvanholland.splitsingsdam",
-    "naam": "Hoek van Holland, splitsingsdam",
-    "km": 18.3
-   },
-   {
-    "code": "noordwijk.meetpost",
-    "naam": "Noordwijk, meetpost",
-    "km": 18.5
-   },
-   {
-    "code": "noordwijk.2kmuitdekust.flachsee",
-    "naam": "Noordwijk, 2 km uit de kust Flachsee",
-    "km": 19.0
-   }
-  ],
-  "wind": [
-   {
-    "code": "hollandsekust.zuid.alpha.1",
-    "naam": "Hollandse Kust Zuid platform Alpha 1",
-    "km": 14.8
-   },
-   {
-    "code": "hollandsekust.zuid.alpha.2",
-    "naam": "Hollandse Kust Zuid platform Alpha 2",
-    "km": 14.8
-   },
-   {
-    "code": "hoekvanholland",
-    "naam": "Hoek van Holland",
-    "km": 17.7
-   },
-   {
-    "code": "hoekvanholland.maeslantkering",
-    "naam": "Hoek van Holland Maeslantkering",
-    "km": 18.6
-   },
-   {
-    "code": "hoekvanholland.lagelicht",
-    "naam": "Hoek van Holland, lage licht",
-    "km": 19.0
-   },
-   {
-    "code": "rotterdam.luchthaven",
-    "naam": "Rotterdam, luchthaven",
-    "km": 21.3
-   },
-   {
-    "code": "botlek.geulhaven",
-    "naam": "Botlek Geulhaven",
-    "km": 24.1
-   },
-   {
-    "code": "stellendam.haringvlietsluizen.schuif1",
-    "naam": "Stellendam, Haringvlietsluizen, schuif 1",
-    "km": 33.5
-   }
-  ]
- },
- "texel": {
-  "golf": [
-   {
-    "code": "denhoorntexel.waddenzee.gatvandestier",
-    "naam": "Den Hoorn Texel Waddenzee Gat van de Stier",
-    "km": 4.7
-   },
-   {
-    "code": "malzwin.boei1",
-    "naam": "Malzwin, boei 1",
-    "km": 8.6
-   },
-   {
-    "code": "denhelder.waddenzee.mondingnieuwehaven",
-    "naam": "Den Helder Waddenzee Monding Nieuwe Haven",
-    "km": 8.9
-   },
-   {
-    "code": "breesem.boei1",
-    "naam": "Breesem, boei 1",
-    "km": 15.5
-   },
-   {
-    "code": "breezanddijk.buitenboei1",
-    "naam": "Breezanddijk, buiten boei 1",
-    "km": 22.8
-   }
-  ],
-  "wind": [
-   {
-    "code": "texel.hors",
-    "naam": "Texelhors",
-    "km": 10.0
-   },
-   {
-    "code": "denhelder.dekooy",
-    "naam": "Den Helder, De Kooy",
-    "km": 13.6
-   },
-   {
-    "code": "vlieland.west",
-    "naam": "Vlieland, west",
-    "km": 23.6
-   },
-   {
-    "code": "stavoren.ijsselmeer",
-    "naam": "Stavoren IJsselmeer",
-    "km": 37.9
-   }
-  ]
- },
- "katwijk": {
-  "golf": [
-   {
-    "code": "noordwijk.2kmuitdekust.flachsee",
-    "naam": "Noordwijk, 2 km uit de kust Flachsee",
-    "km": 5.8
-   },
-   {
-    "code": "noordwijk.meetpost",
-    "naam": "Noordwijk, meetpost",
-    "km": 10.3
-   },
-   {
-    "code": "hollandsekust.zuid.alpha",
-    "naam": "Hollandse Kust Zuid platform Alpha",
-    "km": 13.9
-   },
-   {
-    "code": "zandmotor.boei.zuid",
-    "naam": "Zandmotor, boei, zuid",
-    "km": 19.9
-   },
-   {
-    "code": "hollandsekust.zuid.windparkzuid",
-    "naam": "Hollandse Kust, Zuid Windpark Zuid",
-    "km": 21.6
-   },
-   {
-    "code": "zandmoter.boei.noord",
-    "naam": "Zandmoter, boei, noord",
-    "km": 23.6
-   }
-  ],
-  "wind": [
-   {
-    "code": "hollandsekust.zuid.alpha.1",
-    "naam": "Hollandse Kust Zuid platform Alpha 1",
-    "km": 13.9
-   },
-   {
-    "code": "hollandsekust.zuid.alpha.2",
-    "naam": "Hollandse Kust Zuid platform Alpha 2",
-    "km": 13.9
-   },
-   {
-    "code": "rotterdam.luchthaven",
-    "naam": "Rotterdam, luchthaven",
-    "km": 28.4
-   },
-   {
-    "code": "ijgeul.1",
-    "naam": "IJGeul, 1",
-    "km": 30.1
-   },
-   {
-    "code": "ijmuiden.havenhoofd.zuid",
-    "naam": "IJmuiden, havenhoofd, zuid",
-    "km": 30.4
-   },
-   {
-    "code": "ijmuiden.buitenhaven",
-    "naam": "IJmuiden, buitenhaven",
-    "km": 30.8
-   },
-   {
-    "code": "hoekvanholland",
-    "naam": "Hoek van Holland",
-    "km": 31.3
-   },
-   {
-    "code": "hoekvanholland.maeslantkering",
-    "naam": "Hoek van Holland Maeslantkering",
-    "km": 31.9
-   }
-  ]
- },
- "noordwijk": {
-  "golf": [
-   {
-    "code": "noordwijk.2kmuitdekust.flachsee",
-    "naam": "Noordwijk, 2 km uit de kust Flachsee",
-    "km": 1.8
-   },
-   {
-    "code": "noordwijk.meetpost",
-    "naam": "Noordwijk, meetpost",
-    "km": 9.6
-   },
-   {
-    "code": "hollandsekust.zuid.alpha",
-    "naam": "Hollandse Kust Zuid platform Alpha",
-    "km": 15.6
-   },
-   {
-    "code": "hollandsekust.zuid.windparkzuid",
-    "naam": "Hollandse Kust, Zuid Windpark Zuid",
-    "km": 23.1
-   },
-   {
-    "code": "zandmotor.boei.zuid",
-    "naam": "Zandmotor, boei, zuid",
-    "km": 24.3
-   }
-  ],
-  "wind": [
-   {
-    "code": "hollandsekust.zuid.alpha.1",
-    "naam": "Hollandse Kust Zuid platform Alpha 1",
-    "km": 15.6
-   },
-   {
-    "code": "hollandsekust.zuid.alpha.2",
-    "naam": "Hollandse Kust Zuid platform Alpha 2",
-    "km": 15.6
-   },
-   {
-    "code": "ijgeul.1",
-    "naam": "IJGeul, 1",
-    "km": 25.6
-   },
-   {
-    "code": "ijmuiden.havenhoofd.zuid",
-    "naam": "IJmuiden, havenhoofd, zuid",
-    "km": 25.9
-   },
-   {
-    "code": "ijmuiden.buitenhaven",
-    "naam": "IJmuiden, buitenhaven",
-    "km": 26.3
-   },
-   {
-    "code": "rotterdam.luchthaven",
-    "naam": "Rotterdam, luchthaven",
-    "km": 32.3
-   },
-   {
-    "code": "hoekvanholland",
-    "naam": "Hoek van Holland",
-    "km": 35.8
-   },
-   {
-    "code": "hoekvanholland.maeslantkering",
-    "naam": "Hoek van Holland Maeslantkering",
-    "km": 36.5
-   }
-  ]
- },
- "terschelling": {
-  "golf": [
-   {
-    "code": "stortemelk.oost",
-    "naam": "Stortemelk, oost",
-    "km": 8.9
-   },
-   {
-    "code": "pannengat.boei1",
-    "naam": "Pannengat, boei 1",
-    "km": 13.1
-   },
-   {
-    "code": "stortemelk.west",
-    "naam": "Stortemelk, west",
-    "km": 15.5
-   },
-   {
-    "code": "amelanderzeegat.1.1",
-    "naam": "Amelander zeegat, 1 .1",
-    "km": 23.8
-   },
-   {
-    "code": "amelanderzeegat.6.1",
-    "naam": "Amelander zeegat, 6 .1",
-    "km": 23.9
-   },
-   {
-    "code": "amelanderzeegat.1.2",
-    "naam": "Amelander zeegat, 1 .2",
-    "km": 24.0
-   }
-  ],
-  "wind": [
-   {
-    "code": "terschelling.hoorn",
-    "naam": "Terschelling, Hoorn",
-    "km": 9.0
-   },
-   {
-    "code": "terschelling.noordzee",
-    "naam": "Terschelling, Noordzee",
-    "km": 11.8
-   },
-   {
-    "code": "vlieland.west",
-    "naam": "Vlieland, west",
-    "km": 23.6
-   },
-   {
-    "code": "l9",
-    "naam": "L9",
-    "km": 33.1
-   },
-   {
-    "code": "ameland.nes",
-    "naam": "Ameland, Nes",
-    "km": 36.6
-   }
-  ]
- },
- "egmond-aan-zee": {
-  "golf": [
-   {
-    "code": "hollandsekust.noord.deelgebied",
-    "naam": "Hollandse kust, noord , deelgebied",
-    "km": 15.0
-   },
-   {
-    "code": "ijmuiden.5a",
-    "naam": "IJmuiden, 05 A",
-    "km": 16.1
-   },
-   {
-    "code": "petten.meetraai11",
-    "naam": "Petten, meetraai 11",
-    "km": 16.8
-   },
-   {
-    "code": "petten.meetraai8",
-    "naam": "Petten, meetraai 08",
-    "km": 16.8
-   },
-   {
-    "code": "petten.meetraai7",
-    "naam": "Petten, meetraai 07",
-    "km": 16.9
-   },
-   {
-    "code": "petten.meetraai67",
-    "naam": "Petten, meetraai 67",
-    "km": 16.9
-   },
-   {
-    "code": "petten.meetraai675",
-    "naam": "Petten, meetraai 675",
-    "km": 16.9
-   },
-   {
-    "code": "petten.meetraai6",
-    "naam": "Petten, meetraai 06",
-    "km": 16.9
-   }
-  ],
-  "wind": [
-   {
-    "code": "ijmuiden.buitenhaven",
-    "naam": "IJmuiden, buitenhaven",
-    "km": 18.1
-   },
-   {
-    "code": "ijmuiden.havenhoofd.zuid",
-    "naam": "IJmuiden, havenhoofd, zuid",
-    "km": 18.4
-   },
-   {
-    "code": "ijgeul.1",
-    "naam": "IJGeul, 1",
-    "km": 18.8
-   },
-   {
-    "code": "hollandsekust.noord.alpha",
-    "naam": "Hollandse Kust Noord Alpha",
-    "km": 23.9
-   },
-   {
-    "code": "berkhout",
-    "naam": "Berkhout",
-    "km": 24.3
-   },
-   {
-    "code": "denhelder.dekooy",
-    "naam": "Den Helder, De Kooy",
-    "km": 35.4
-   },
-   {
-    "code": "wijdenes",
-    "naam": "Wijdenes",
-    "km": 36.4
-   }
-  ]
- },
- "zoutelande": {
-  "golf": [
-   {
-    "code": "westkapelle",
-    "naam": "Westkapelle",
-    "km": 3.6
-   },
-   {
-    "code": "domburg",
-    "naam": "Domburg",
-    "km": 8.2
-   },
-   {
-    "code": "wielingen.noord",
-    "naam": "Wielingen, noord",
-    "km": 8.7
-   },
-   {
-    "code": "oosterschelde.10",
-    "naam": "Oosterschelde, 10",
-    "km": 11.7
-   },
-   {
-    "code": "domburgerrassen",
-    "naam": "Domburger Rassen",
-    "km": 14.4
-   },
-   {
-    "code": "cadzand.1",
-    "naam": "Cadzand, 1",
-    "km": 14.4
-   },
-   {
-    "code": "cadzand.2",
-    "naam": "Cadzand, 2",
-    "km": 15.2
-   },
-   {
-    "code": "oosterschelde.11",
-    "naam": "Oosterschelde, 11",
-    "km": 15.9
-   }
-  ],
-  "wind": [
-   {
-    "code": "vlissingen",
-    "naam": "Vlissingen",
-    "km": 10.5
-   },
-   {
-    "code": "cadzand.1",
-    "naam": "Cadzand, 1",
-    "km": 14.4
-   },
-   {
-    "code": "vlaktevanderaan",
-    "naam": "Vlakte van de Raan",
-    "km": 16.4
-   },
-   {
-    "code": "oosterschelde.4",
-    "naam": "Oosterschelde, 4",
-    "km": 22.7
-   },
-   {
-    "code": "kats.zandkreeksluis.buiten",
-    "naam": "Kats Zandkreeksluis buiten",
-    "km": 26.7
-   },
-   {
-    "code": "wilhelminadorp",
-    "naam": "Wilhelminadorp",
-    "km": 28.0
-   },
-   {
-    "code": "terneuzen.westsluis",
-    "naam": "Terneuzen, westsluis",
-    "km": 29.4
-   },
-   {
-    "code": "brouwersdam.brouwershavensegat.2",
-    "naam": "Brouwersdam Brouwershavense Gat 2",
-    "km": 31.2
-   }
-  ]
- },
- "hoek-van-holland": {
-  "golf": [
-   {
-    "code": "hoekvanholland.splitsingsdam",
-    "naam": "Hoek van Holland, splitsingsdam",
-    "km": 0.9
-   },
-   {
-    "code": "beerkanaal",
-    "naam": "Beerkanaal",
-    "km": 1.8
-   },
-   {
-    "code": "hoekvanholland.benoordendenoorderdam",
-    "naam": "Hoek van Holland, benoorden de Noorderdam",
-    "km": 3.5
-   },
-   {
-    "code": "hoekvanholland.maeslantkering.beneden.noord",
-    "naam": "Hoek van Holland, Maeslantkering, Beneden, noord",
-    "km": 3.7
-   },
-   {
-    "code": "waterweg.mondingnabijdezuidwal",
-    "naam": "Waterweg, monding nabij de Zuidwal",
-    "km": 4.9
-   },
-   {
-    "code": "maasmond.stroommeetpaal",
-    "naam": "Maasmond, stroommeetpaal",
-    "km": 7.8
-   },
-   {
-    "code": "zandmoter.boei.noord",
-    "naam": "Zandmoter, boei, noord",
-    "km": 8.0
-   },
-   {
-    "code": "maasgeul.2",
-    "naam": "Maasgeul 2",
-    "km": 8.1
-   }
-  ],
-  "wind": [
-   {
-    "code": "hoekvanholland",
-    "naam": "Hoek van Holland",
-    "km": 0.3
-   },
-   {
-    "code": "hoekvanholland.lagelicht",
-    "naam": "Hoek van Holland, lage licht",
-    "km": 2.6
-   },
-   {
-    "code": "hoekvanholland.maeslantkering",
-    "naam": "Hoek van Holland Maeslantkering",
-    "km": 4.0
-   },
-   {
-    "code": "botlek.geulhaven",
-    "naam": "Botlek Geulhaven",
-    "km": 16.4
-   },
-   {
-    "code": "stellendam.haringvlietsluizen.schuif1",
-    "naam": "Stellendam, Haringvlietsluizen, schuif 1",
-    "km": 16.6
-   },
-   {
-    "code": "rotterdam.luchthaven",
-    "naam": "Rotterdam, luchthaven",
-    "km": 22.7
-   },
-   {
-    "code": "hollandsekust.zuid.alpha.1",
-    "naam": "Hollandse Kust Zuid platform Alpha 1",
-    "km": 28.5
-   },
-   {
-    "code": "hollandsekust.zuid.alpha.2",
-    "naam": "Hollandse Kust Zuid platform Alpha 2",
-    "km": 28.5
-   }
-  ]
- },
- "wijk-aan-zee": {
-  "golf": [
-   {
-    "code": "ijgeul.1",
-    "naam": "IJGeul, 1",
-    "km": 5.9
-   },
-   {
-    "code": "ijmuiden.5a",
-    "naam": "IJmuiden, 05 A",
-    "km": 13.1
-   },
-   {
-    "code": "ijgeul.3",
-    "naam": "IJgeul, 3",
-    "km": 19.6
-   },
-   {
-    "code": "ijgeul.2",
-    "naam": "IJgeul, 2",
-    "km": 21.8
-   }
-  ],
-  "wind": [
-   {
-    "code": "ijmuiden.buitenhaven",
-    "naam": "IJmuiden, buitenhaven",
-    "km": 4.1
-   },
-   {
-    "code": "ijmuiden.havenhoofd.zuid",
-    "naam": "IJmuiden, havenhoofd, zuid",
-    "km": 5.1
-   },
-   {
-    "code": "ijgeul.1",
-    "naam": "IJGeul, 1",
-    "km": 5.9
-   },
-   {
-    "code": "hollandsekust.noord.alpha",
-    "naam": "Hollandse Kust Noord Alpha",
-    "km": 30.3
-   },
-   {
-    "code": "berkhout",
-    "naam": "Berkhout",
-    "km": 31.7
-   },
-   {
-    "code": "hollandsekust.zuid.alpha.1",
-    "naam": "Hollandse Kust Zuid platform Alpha 1",
-    "km": 39.3
-   },
-   {
-    "code": "hollandsekust.zuid.alpha.2",
-    "naam": "Hollandse Kust Zuid platform Alpha 2",
-    "km": 39.3
-   }
-  ]
- },
- "ijmuiden": {
-  "golf": [
-   {
-    "code": "ijgeul.1",
-    "naam": "IJGeul, 1",
-    "km": 2.5
-   },
-   {
-    "code": "ijmuiden.5a",
-    "naam": "IJmuiden, 05 A",
-    "km": 13.2
-   },
-   {
-    "code": "ijgeul.3",
-    "naam": "IJgeul, 3",
-    "km": 17.5
-   },
-   {
-    "code": "ijgeul.2",
-    "naam": "IJgeul, 2",
-    "km": 19.8
-   }
-  ],
-  "wind": [
-   {
-    "code": "ijmuiden.buitenhaven",
-    "naam": "IJmuiden, buitenhaven",
-    "km": 0.1
-   },
-   {
-    "code": "ijmuiden.havenhoofd.zuid",
-    "naam": "IJmuiden, havenhoofd, zuid",
-    "km": 1.5
-   },
-   {
-    "code": "ijgeul.1",
-    "naam": "IJGeul, 1",
-    "km": 2.5
-   },
-   {
-    "code": "hollandsekust.noord.alpha",
-    "naam": "Hollandse Kust Noord Alpha",
-    "km": 31.6
-   },
-   {
-    "code": "hollandsekust.zuid.alpha.1",
-    "naam": "Hollandse Kust Zuid platform Alpha 1",
-    "km": 35.2
-   },
-   {
-    "code": "hollandsekust.zuid.alpha.2",
-    "naam": "Hollandse Kust Zuid platform Alpha 2",
-    "km": 35.2
-   },
-   {
-    "code": "berkhout",
-    "naam": "Berkhout",
-    "km": 35.6
-   }
-  ]
- },
- "renesse": {
-  "golf": [
-   {
-    "code": "krabbengat",
-    "naam": "Krabbengat",
-    "km": 7.9
-   },
-   {
-    "code": "oosterscheldekering.hammen",
-    "naam": "Oosterscheldekering buiten, Hammen",
-    "km": 9.0
-   },
-   {
-    "code": "brouwershavenschegat.5",
-    "naam": "Brouwershavensche Gat, 05",
-    "km": 10.0
-   },
-   {
-    "code": "oosterschelde.4",
-    "naam": "Oosterschelde, 4",
-    "km": 10.1
-   },
-   {
-    "code": "oosterscheldekering.schaar",
-    "naam": "Oosterscheldekering buiten, Schaar",
-    "km": 10.3
-   },
-   {
-    "code": "brouwersdam.brouwershavensegat.2",
-    "naam": "Brouwersdam Brouwershavense Gat 2",
-    "km": 10.5
-   },
-   {
-    "code": "roggenplaat",
-    "naam": "Roggenplaat",
-    "km": 11.1
-   },
-   {
-    "code": "oosterschelde.12",
-    "naam": "Oosterschelde, 12",
-    "km": 13.5
-   }
-  ],
-  "wind": [
-   {
-    "code": "oosterschelde.4",
-    "naam": "Oosterschelde, 4",
-    "km": 10.1
-   },
-   {
-    "code": "brouwersdam.brouwershavensegat.2",
-    "naam": "Brouwersdam Brouwershavense Gat 2",
-    "km": 10.5
-   },
-   {
-    "code": "zierikzee.zeelandbrug",
-    "naam": "Zierikzee Zeelandbrug",
-    "km": 15.8
-   },
-   {
-    "code": "goeree.lichteiland",
-    "naam": "Goeree, lichteiland",
-    "km": 22.1
-   },
-   {
-    "code": "kats.zandkreeksluis.buiten",
-    "naam": "Kats Zandkreeksluis buiten",
-    "km": 22.2
-   },
-   {
-    "code": "stavenisse",
-    "naam": "Stavenisse",
-    "km": 22.4
-   },
-   {
-    "code": "stellendam.haringvlietsluizen.schuif1",
-    "naam": "Stellendam, Haringvlietsluizen, schuif 1",
-    "km": 22.8
-   },
-   {
-    "code": "bruinisse.grevelingensluis",
-    "naam": "Bruinisse Grevelingensluis",
-    "km": 24.0
-   }
-  ]
- },
- "cadzand": {
-  "golf": [
-   {
-    "code": "cadzand.2",
-    "naam": "Cadzand, 2",
-    "km": 0.8
-   },
-   {
-    "code": "cadzand.1",
-    "naam": "Cadzand, 1",
-    "km": 2.0
-   },
-   {
-    "code": "wielingen.noord",
-    "naam": "Wielingen, noord",
-    "km": 6.7
-   },
-   {
-    "code": "westkapelle",
-    "naam": "Westkapelle",
-    "km": 16.7
-   },
-   {
-    "code": "vlaktevanderaan.deurloo",
-    "naam": "Vlakte van de Raan Deurloo",
-    "km": 17.3
-   },
-   {
-    "code": "vlaktevanderaan.2",
-    "naam": "Vlakte van de Raan, punt 02",
-    "km": 17.3
-   },
-   {
-    "code": "vaarwaterlangshoofdplaat",
-    "naam": "Vaarwater langs Hoofdplaat",
-    "km": 19.9
-   },
-   {
-    "code": "vaarwaterlangshoofdplaat.4",
-    "naam": "Vaarwater langs Hoofdplaat, punt 04",
-    "km": 19.9
-   }
-  ],
-  "wind": [
-   {
-    "code": "cadzand.1",
-    "naam": "Cadzand, 1",
-    "km": 2.0
-   },
-   {
-    "code": "vlissingen",
-    "naam": "Vlissingen",
-    "km": 16.7
-   },
-   {
-    "code": "vlaktevanderaan",
-    "naam": "Vlakte van de Raan",
-    "km": 17.4
-   },
-   {
-    "code": "terneuzen.westsluis",
-    "naam": "Terneuzen, westsluis",
-    "km": 30.1
-   },
-   {
-    "code": "oosterschelde.4",
-    "naam": "Oosterschelde, 4",
-    "km": 37.7
-   },
-   {
-    "code": "kats.zandkreeksluis.buiten",
-    "naam": "Kats Zandkreeksluis buiten",
-    "km": 37.8
-   },
-   {
-    "code": "wilhelminadorp",
-    "naam": "Wilhelminadorp",
-    "km": 38.4
-   }
-  ]
- },
- "ameland": {
-  "golf": [
-   {
-    "code": "ameland.nes",
-    "naam": "Ameland, Nes",
-    "km": 1.5
-   },
-   {
-    "code": "dantziggat.pietscheveplaat.zuid",
-    "naam": "Dantziggat Piet Scheveplaat zuid",
-    "km": 6.8
-   },
-   {
-    "code": "amelanderzeegat.5.1",
-    "naam": "Amelander zeegat, 5 .1",
-    "km": 7.3
-   },
-   {
-    "code": "amelanderzeegat.5.2",
-    "naam": "Amelander zeegat, 5 .2",
-    "km": 7.3
-   },
-   {
-    "code": "amelanderzeegat.6.2",
-    "naam": "Amelander zeegat, 6 .2",
-    "km": 7.4
-   },
-   {
-    "code": "holwerd.vaargeul",
-    "naam": "Holwerd vaargeul",
-    "km": 8.5
-   },
-   {
-    "code": "amelanderzeegat.4.1",
-    "naam": "Amelander zeegat, 4 .1",
-    "km": 9.0
-   },
-   {
-    "code": "amelanderzeegat.4.2",
-    "naam": "Amelander zeegat, 4 .2",
-    "km": 9.4
-   }
-  ],
-  "wind": [
-   {
-    "code": "ameland.nes",
-    "naam": "Ameland, Nes",
-    "km": 1.5
-   },
-   {
-    "code": "amelandwestgat",
-    "naam": "Ameland Westgat platform",
-    "km": 12.4
-   },
-   {
-    "code": "wierumergronden",
-    "naam": "Wierumergronden",
-    "km": 14.8
-   },
-   {
-    "code": "lauwersoog.waddenzee",
-    "naam": "Lauwersoog, Waddenzee",
-    "km": 28.1
-   },
-   {
-    "code": "terschelling.hoorn",
-    "naam": "Terschelling, Hoorn",
-    "km": 28.9
-   },
-   {
-    "code": "terschelling.noordzee",
-    "naam": "Terschelling, Noordzee",
-    "km": 29.2
-   }
-  ]
- },
- "domburg": {
-  "golf": [
-   {
-    "code": "domburg",
-    "naam": "Domburg",
-    "km": 1.2
-   },
-   {
-    "code": "oosterschelde.10",
-    "naam": "Oosterschelde, 10",
-    "km": 5.0
-   },
-   {
-    "code": "westkapelle",
-    "naam": "Westkapelle",
-    "km": 6.1
-   },
-   {
-    "code": "oosterschelde.11",
-    "naam": "Oosterschelde, 11",
-    "km": 8.7
-   },
-   {
-    "code": "domburgerrassen",
-    "naam": "Domburger Rassen",
-    "km": 9.0
-   },
-   {
-    "code": "oosterschelde.9",
-    "naam": "Oosterschelde, 09",
-    "km": 13.3
-   },
-   {
-    "code": "middeldiep",
-    "naam": "Middeldiep",
-    "km": 13.5
-   },
-   {
-    "code": "oosterscheldekering.roompot",
-    "naam": "Oosterscheldekering buiten Roompot",
-    "km": 13.5
-   }
-  ],
-  "wind": [
-   {
-    "code": "vlissingen",
-    "naam": "Vlissingen",
-    "km": 15.5
-   },
-   {
-    "code": "oosterschelde.4",
-    "naam": "Oosterschelde, 4",
-    "km": 17.0
-   },
-   {
-    "code": "vlaktevanderaan",
-    "naam": "Vlakte van de Raan",
-    "km": 18.7
-   },
-   {
-    "code": "cadzand.1",
-    "naam": "Cadzand, 1",
-    "km": 21.3
-   },
-   {
-    "code": "brouwersdam.brouwershavensegat.2",
-    "naam": "Brouwersdam Brouwershavense Gat 2",
-    "km": 24.0
-   },
-   {
-    "code": "kats.zandkreeksluis.buiten",
-    "naam": "Kats Zandkreeksluis buiten",
-    "km": 25.2
-   },
-   {
-    "code": "wilhelminadorp",
-    "naam": "Wilhelminadorp",
-    "km": 27.2
-   },
-   {
-    "code": "zierikzee.zeelandbrug",
-    "naam": "Zierikzee Zeelandbrug",
-    "km": 30.0
-   }
-  ]
- },
- "westkapelle": {
-  "golf": [
-   {
-    "code": "westkapelle",
-    "naam": "Westkapelle",
-    "km": 0.9
-   },
-   {
-    "code": "domburg",
-    "naam": "Domburg",
-    "km": 5.7
-   },
-   {
-    "code": "oosterschelde.10",
-    "naam": "Oosterschelde, 10",
-    "km": 8.4
-   },
-   {
-    "code": "domburgerrassen",
-    "naam": "Domburger Rassen",
-    "km": 10.3
-   },
-   {
-    "code": "wielingen.noord",
-    "naam": "Wielingen, noord",
-    "km": 11.0
-   },
-   {
-    "code": "oosterschelde.11",
-    "naam": "Oosterschelde, 11",
-    "km": 12.9
-   },
-   {
-    "code": "vlaktevanderaan.deurloo",
-    "naam": "Vlakte van de Raan Deurloo",
-    "km": 14.0
-   },
-   {
-    "code": "vlaktevanderaan.2",
-    "naam": "Vlakte van de Raan, punt 02",
-    "km": 14.0
-   }
-  ],
-  "wind": [
-   {
-    "code": "vlaktevanderaan",
-    "naam": "Vlakte van de Raan",
-    "km": 14.0
-   },
-   {
-    "code": "vlissingen",
-    "naam": "Vlissingen",
-    "km": 14.7
-   },
-   {
-    "code": "cadzand.1",
-    "naam": "Cadzand, 1",
-    "km": 16.3
-   },
-   {
-    "code": "oosterschelde.4",
-    "naam": "Oosterschelde, 4",
-    "km": 22.3
-   },
-   {
-    "code": "kats.zandkreeksluis.buiten",
-    "naam": "Kats Zandkreeksluis buiten",
-    "km": 29.0
-   },
-   {
-    "code": "brouwersdam.brouwershavensegat.2",
-    "naam": "Brouwersdam Brouwershavense Gat 2",
-    "km": 29.1
-   },
-   {
-    "code": "wilhelminadorp",
-    "naam": "Wilhelminadorp",
-    "km": 30.6
-   },
-   {
-    "code": "borsselealpha",
-    "naam": "Borssele Windpark Alpha platform",
-    "km": 32.5
-   }
-  ]
- },
- "den-helder": {
-  "golf": [
-   {
-    "code": "denhelder.waddenzee.mondingnieuwehaven",
-    "naam": "Den Helder Waddenzee Monding Nieuwe Haven",
-    "km": 3.3
-   },
-   {
-    "code": "denhoorntexel.waddenzee.gatvandestier",
-    "naam": "Den Hoorn Texel Waddenzee Gat van de Stier",
-    "km": 6.8
-   },
-   {
-    "code": "malzwin.boei1",
-    "naam": "Malzwin, boei 1",
-    "km": 14.4
-   },
-   {
-    "code": "petten.meetraai2",
-    "naam": "Petten, meetraai 02",
-    "km": 21.5
-   },
-   {
-    "code": "petten.meetraai1",
-    "naam": "Petten, meetraai 01",
-    "km": 21.6
-   },
-   {
-    "code": "petten.meetraai3",
-    "naam": "Petten, meetraai 03",
-    "km": 22.3
-   },
-   {
-    "code": "petten.meetraai16",
-    "naam": "Petten, meetraai 16",
-    "km": 22.3
-   },
-   {
-    "code": "petten.meetraai18",
-    "naam": "Petten, meetraai 18",
-    "km": 22.3
-   }
-  ],
-  "wind": [
-   {
-    "code": "texel.hors",
-    "naam": "Texelhors",
-    "km": 3.7
-   },
-   {
-    "code": "denhelder.dekooy",
-    "naam": "Den Helder, De Kooy",
-    "km": 5.4
-   },
-   {
-    "code": "vlieland.west",
-    "naam": "Vlieland, west",
-    "km": 33.5
-   },
-   {
-    "code": "berkhout",
-    "naam": "Berkhout",
-    "km": 38.5
-   }
-  ]
- },
- "vlieland": {
-  "golf": [
-   {
-    "code": "stortemelk.oost",
-    "naam": "Stortemelk, oost",
-    "km": 3.8
-   },
-   {
-    "code": "stortemelk.west",
-    "naam": "Stortemelk, west",
-    "km": 5.4
-   },
-   {
-    "code": "pannengat.boei1",
-    "naam": "Pannengat, boei 1",
-    "km": 10.1
-   },
-   {
-    "code": "breesem.boei1",
-    "naam": "Breesem, boei 1",
-    "km": 19.9
-   }
-  ],
-  "wind": [
-   {
-    "code": "vlieland.west",
-    "naam": "Vlieland, west",
-    "km": 11.2
-   },
-   {
-    "code": "terschelling.hoorn",
-    "naam": "Terschelling, Hoorn",
-    "km": 21.5
-   },
-   {
-    "code": "terschelling.noordzee",
-    "naam": "Terschelling, Noordzee",
-    "km": 24.2
-   },
-   {
-    "code": "l9",
-    "naam": "L9",
-    "km": 36.3
-   }
-  ]
- },
- "zandvoort": {
-  "golf": [
-   {
-    "code": "ijgeul.1",
-    "naam": "IJGeul, 1",
-    "km": 9.9
-   },
-   {
-    "code": "noordwijk.2kmuitdekust.flachsee",
-    "naam": "Noordwijk, 2 km uit de kust Flachsee",
-    "km": 15.5
-   },
-   {
-    "code": "noordwijk.meetpost",
-    "naam": "Noordwijk, meetpost",
-    "km": 19.3
-   },
-   {
-    "code": "ijgeul.3",
-    "naam": "IJgeul, 3",
-    "km": 19.9
-   },
-   {
-    "code": "ijmuiden.5a",
-    "naam": "IJmuiden, 05 A",
-    "km": 20.4
-   },
-   {
-    "code": "ijgeul.2",
-    "naam": "IJgeul, 2",
-    "km": 21.8
-   }
-  ],
-  "wind": [
-   {
-    "code": "ijmuiden.havenhoofd.zuid",
-    "naam": "IJmuiden, havenhoofd, zuid",
-    "km": 9.9
-   },
-   {
-    "code": "ijgeul.1",
-    "naam": "IJGeul, 1",
-    "km": 9.9
-   },
-   {
-    "code": "ijmuiden.buitenhaven",
-    "naam": "IJmuiden, buitenhaven",
-    "km": 10.0
-   },
-   {
-    "code": "hollandsekust.zuid.alpha.1",
-    "naam": "Hollandse Kust Zuid platform Alpha 1",
-    "km": 27.3
-   },
-   {
-    "code": "hollandsekust.zuid.alpha.2",
-    "naam": "Hollandse Kust Zuid platform Alpha 2",
-    "km": 27.3
-   },
-   {
-    "code": "hollandsekust.noord.alpha",
-    "naam": "Hollandse Kust Noord Alpha",
-    "km": 39.1
-   }
-  ]
- },
- "schiermonnikoog": {
-  "golf": [
-   {
-    "code": "schiermonnikoog.waddenzee",
-    "naam": "Schiermonnikoog, Waddenzee",
-    "km": 2.8
-   },
-   {
-    "code": "kuipersplaat.boei",
-    "naam": "Kuipersplaat, boei",
-    "km": 5.3
-   },
-   {
-    "code": "zoutkamperlaag.boei",
-    "naam": "Zoutkamperlaag, boei",
-    "km": 6.1
-   },
-   {
-    "code": "lauwersdamboei",
-    "naam": "Lauwersdam boei",
-    "km": 6.9
-   },
-   {
-    "code": "schiermonnikoog.westgat",
-    "naam": "Schiermonnikoog, Westgat",
-    "km": 10.0
-   },
-   {
-    "code": "wierumerwad",
-    "naam": "Wierumerwad",
-    "km": 10.4
-   },
-   {
-    "code": "schiermonnikoog.noord",
-    "naam": "Schiermonnikoog, noord",
-    "km": 12.7
-   },
-   {
-    "code": "ameland.westgat",
-    "naam": "Ameland, Westgat",
-    "km": 14.8
-   }
-  ],
-  "wind": [
-   {
-    "code": "lauwersoog.waddenzee",
-    "naam": "Lauwersoog, Waddenzee",
-    "km": 8.2
-   },
-   {
-    "code": "wierumergronden",
-    "naam": "Wierumergronden",
-    "km": 14.2
-   },
-   {
-    "code": "amelandwestgat",
-    "naam": "Ameland Westgat platform",
-    "km": 14.8
-   },
-   {
-    "code": "huibertgat",
-    "naam": "Huibertgat",
-    "km": 18.6
-   },
-   {
-    "code": "ameland.nes",
-    "naam": "Ameland, Nes",
-    "km": 27.4
-   },
-   {
-    "code": "uithuizerwad",
-    "naam": "Uithuizerwad",
-    "km": 38.7
-   }
-  ]
- },
- "maasvlakte": {
-  "golf": [
-   {
-    "code": "maasvlakte.ruim1kmuitdekust",
-    "naam": "Maasvlakte, ruim1 km uit de kust",
-    "km": 2.6
-   },
-   {
-    "code": "maasmond.stroommeetpaal",
-    "naam": "Maasmond, stroommeetpaal",
-    "km": 3.6
-   },
-   {
-    "code": "waterweg.mondingnabijdezuidwal",
-    "naam": "Waterweg, monding nabij de Zuidwal",
-    "km": 3.8
-   },
-   {
-    "code": "maasgeul.2",
-    "naam": "Maasgeul 2",
-    "km": 3.8
-   },
-   {
-    "code": "beerkanaal",
-    "naam": "Beerkanaal",
-    "km": 6.1
-   },
-   {
-    "code": "hoekvanholland.benoordendenoorderdam",
-    "naam": "Hoek van Holland, benoorden de Noorderdam",
-    "km": 6.3
-   },
-   {
-    "code": "hoekvanholland.splitsingsdam",
-    "naam": "Hoek van Holland, splitsingsdam",
-    "km": 7.4
-   },
-   {
-    "code": "haringvlietmond",
-    "naam": "Haringvlietmond",
-    "km": 8.9
-   }
-  ],
-  "wind": [
-   {
-    "code": "hoekvanholland.lagelicht",
-    "naam": "Hoek van Holland, lage licht",
-    "km": 5.4
-   },
-   {
-    "code": "hoekvanholland",
-    "naam": "Hoek van Holland",
-    "km": 7.7
-   },
-   {
-    "code": "hoekvanholland.maeslantkering",
-    "naam": "Hoek van Holland Maeslantkering",
-    "km": 10.3
-   },
-   {
-    "code": "stellendam.haringvlietsluizen.schuif1",
-    "naam": "Stellendam, Haringvlietsluizen, schuif 1",
-    "km": 14.1
-   },
-   {
-    "code": "botlek.geulhaven",
-    "naam": "Botlek Geulhaven",
-    "km": 22.0
-   },
-   {
-    "code": "goeree.lichteiland",
-    "naam": "Goeree, lichteiland",
-    "km": 23.7
-   },
-   {
-    "code": "rotterdam.luchthaven",
-    "naam": "Rotterdam, luchthaven",
-    "km": 30.0
-   },
-   {
-    "code": "hollandsekust.zuid.alpha.1",
-    "naam": "Hollandse Kust Zuid platform Alpha 1",
-    "km": 32.8
-   }
-  ]
- },
- "ouddorp": {
-  "golf": [
-   {
-    "code": "haringvlietmond",
-    "naam": "Haringvlietmond",
-    "km": 8.0
-   },
-   {
-    "code": "haringvlietsluizen.buiten",
-    "naam": "Haringvlietsluizen, buiten",
-    "km": 9.3
-   },
-   {
-    "code": "haringvlietsluizen.1km.noordwest",
-    "naam": "Haringvlietsluizen, 1 km, noordwest",
-    "km": 9.6
-   },
-   {
-    "code": "brouwershavenschegat.5",
-    "naam": "Brouwershavensche Gat, 05",
-    "km": 10.1
-   },
-   {
-    "code": "maasvlakte.ruim1kmuitdekust",
-    "naam": "Maasvlakte, ruim1 km uit de kust",
-    "km": 13.9
-   },
-   {
-    "code": "maasmond.stroommeetpaal",
-    "naam": "Maasmond, stroommeetpaal",
-    "km": 19.7
-   },
-   {
-    "code": "maasgeul.2",
-    "naam": "Maasgeul 2",
-    "km": 19.8
-   },
-   {
-    "code": "goeree.lichteiland",
-    "naam": "Goeree, lichteiland",
-    "km": 19.9
-   }
-  ],
-  "wind": [
-   {
-    "code": "stellendam.haringvlietsluizen.schuif1",
-    "naam": "Stellendam, Haringvlietsluizen, schuif 1",
-    "km": 10.0
-   },
-   {
-    "code": "goeree.lichteiland",
-    "naam": "Goeree, lichteiland",
-    "km": 19.9
-   },
-   {
-    "code": "brouwersdam.brouwershavensegat.2",
-    "naam": "Brouwersdam Brouwershavense Gat 2",
-    "km": 20.8
-   },
-   {
-    "code": "hoekvanholland.lagelicht",
-    "naam": "Hoek van Holland, lage licht",
-    "km": 21.0
-   },
-   {
-    "code": "bruinisse.grevelingensluis",
-    "naam": "Bruinisse Grevelingensluis",
-    "km": 21.7
-   },
-   {
-    "code": "zierikzee.zeelandbrug",
-    "naam": "Zierikzee Zeelandbrug",
-    "km": 21.8
-   },
-   {
-    "code": "hoekvanholland",
-    "naam": "Hoek van Holland",
-    "km": 22.2
-   },
-   {
-    "code": "hoekvanholland.maeslantkering",
-    "naam": "Hoek van Holland Maeslantkering",
-    "km": 22.3
-   }
-  ]
- },
- "castricum-aan-zee": {
-  "golf": [
-   {
-    "code": "ijgeul.1",
-    "naam": "IJGeul, 1",
-    "km": 11.9
-   },
-   {
-    "code": "ijmuiden.5a",
-    "naam": "IJmuiden, 05 A",
-    "km": 12.9
-   },
-   {
-    "code": "ijgeul.3",
-    "naam": "IJgeul, 3",
-    "km": 22.1
-   },
-   {
-    "code": "hollandsekust.noord.deelgebied",
-    "naam": "Hollandse kust, noord , deelgebied",
-    "km": 22.2
-   },
-   {
-    "code": "petten.meetraai11",
-    "naam": "Petten, meetraai 11",
-    "km": 24.1
-   },
-   {
-    "code": "petten.meetraai8",
-    "naam": "Petten, meetraai 08",
-    "km": 24.1
-   },
-   {
-    "code": "petten.meetraai7",
-    "naam": "Petten, meetraai 07",
-    "km": 24.1
-   },
-   {
-    "code": "petten.meetraai67",
-    "naam": "Petten, meetraai 67",
-    "km": 24.2
-   }
-  ],
-  "wind": [
-   {
-    "code": "ijmuiden.buitenhaven",
-    "naam": "IJmuiden, buitenhaven",
-    "km": 10.9
-   },
-   {
-    "code": "ijmuiden.havenhoofd.zuid",
-    "naam": "IJmuiden, havenhoofd, zuid",
-    "km": 11.4
-   },
-   {
-    "code": "ijgeul.1",
-    "naam": "IJGeul, 1",
-    "km": 11.9
-   },
-   {
-    "code": "hollandsekust.noord.alpha",
-    "naam": "Hollandse Kust Noord Alpha",
-    "km": 26.6
-   },
-   {
-    "code": "berkhout",
-    "naam": "Berkhout",
-    "km": 27.2
-   },
-   {
-    "code": "wijdenes",
-    "naam": "Wijdenes",
-    "km": 38.5
-   }
-  ]
- },
- "oostkapelle": {
-  "golf": [
-   {
-    "code": "domburg",
-    "naam": "Domburg",
-    "km": 3.6
-   },
-   {
-    "code": "oosterschelde.10",
-    "naam": "Oosterschelde, 10",
-    "km": 6.1
-   },
-   {
-    "code": "oosterschelde.11",
-    "naam": "Oosterschelde, 11",
-    "km": 8.5
-   },
-   {
-    "code": "westkapelle",
-    "naam": "Westkapelle",
-    "km": 8.8
-   },
-   {
-    "code": "oosterschelde.9",
-    "naam": "Oosterschelde, 09",
-    "km": 10.4
-   },
-   {
-    "code": "oosterscheldekering.roompot",
-    "naam": "Oosterscheldekering buiten Roompot",
-    "km": 10.5
-   },
-   {
-    "code": "domburgerrassen",
-    "naam": "Domburger Rassen",
-    "km": 10.6
-   },
-   {
-    "code": "oosterschelde.roompotsluis.buiten",
-    "naam": "Oosterschelde Roompotsluis buiten",
-    "km": 11.1
-   }
-  ],
-  "wind": [
-   {
-    "code": "oosterschelde.4",
-    "naam": "Oosterschelde, 4",
-    "km": 14.1
-   },
-   {
-    "code": "vlissingen",
-    "naam": "Vlissingen",
-    "km": 15.4
-   },
-   {
-    "code": "vlaktevanderaan",
-    "naam": "Vlakte van de Raan",
-    "km": 21.7
-   },
-   {
-    "code": "brouwersdam.brouwershavensegat.2",
-    "naam": "Brouwersdam Brouwershavense Gat 2",
-    "km": 22.1
-   },
-   {
-    "code": "kats.zandkreeksluis.buiten",
-    "naam": "Kats Zandkreeksluis buiten",
-    "km": 22.6
-   },
-   {
-    "code": "cadzand.1",
-    "naam": "Cadzand, 1",
-    "km": 23.5
-   },
-   {
-    "code": "wilhelminadorp",
-    "naam": "Wilhelminadorp",
-    "km": 24.7
-   },
-   {
-    "code": "zierikzee.zeelandbrug",
-    "naam": "Zierikzee Zeelandbrug",
-    "km": 27.1
-   }
-  ]
- },
- "callantsoog": {
-  "golf": [
-   {
-    "code": "petten.meetraai2",
-    "naam": "Petten, meetraai 02",
-    "km": 7.9
-   },
-   {
-    "code": "petten.meetraai3",
-    "naam": "Petten, meetraai 03",
-    "km": 8.0
-   },
-   {
-    "code": "petten.meetraai16",
-    "naam": "Petten, meetraai 16",
-    "km": 8.1
-   },
-   {
-    "code": "petten.meetraai18",
-    "naam": "Petten, meetraai 18",
-    "km": 8.1
-   },
-   {
-    "code": "petten.meetraai17",
-    "naam": "Petten, meetraai 17",
-    "km": 8.1
-   },
-   {
-    "code": "petten.meetraai611",
-    "naam": "Petten, meetraai 611",
-    "km": 8.1
-   },
-   {
-    "code": "petten.meetraai675",
-    "naam": "Petten, meetraai 675",
-    "km": 8.1
-   },
-   {
-    "code": "petten.meetraai6",
-    "naam": "Petten, meetraai 06",
-    "km": 8.1
-   }
-  ],
-  "wind": [
-   {
-    "code": "denhelder.dekooy",
-    "naam": "Den Helder, De Kooy",
-    "km": 11.1
-   },
-   {
-    "code": "texel.hors",
-    "naam": "Texelhors",
-    "km": 17.3
-   },
-   {
-    "code": "berkhout",
-    "naam": "Berkhout",
-    "km": 28.6
-   },
-   {
-    "code": "hollandsekust.noord.alpha",
-    "naam": "Hollandse Kust Noord Alpha",
-    "km": 31.2
-   },
-   {
-    "code": "wijdenes",
-    "naam": "Wijdenes",
-    "km": 39.0
-   }
-  ]
- },
- "burgh-haamstede": {
-  "golf": [
-   {
-    "code": "krabbengat",
-    "naam": "Krabbengat",
-    "km": 4.1
-   },
-   {
-    "code": "oosterscheldekering.hammen",
-    "naam": "Oosterscheldekering buiten, Hammen",
-    "km": 4.6
-   },
-   {
-    "code": "oosterschelde.4",
-    "naam": "Oosterschelde, 4",
-    "km": 5.7
-   },
-   {
-    "code": "oosterscheldekering.schaar",
-    "naam": "Oosterscheldekering buiten, Schaar",
-    "km": 6.0
-   },
-   {
-    "code": "roggenplaat",
-    "naam": "Roggenplaat",
-    "km": 8.4
-   },
-   {
-    "code": "oosterschelde.roompotsluis.buiten",
-    "naam": "Oosterschelde Roompotsluis buiten",
-    "km": 9.8
-   },
-   {
-    "code": "oosterschelde.9",
-    "naam": "Oosterschelde, 09",
-    "km": 9.8
-   },
-   {
-    "code": "oosterschelde.12",
-    "naam": "Oosterschelde, 12",
-    "km": 10.2
-   }
-  ],
-  "wind": [
-   {
-    "code": "oosterschelde.4",
-    "naam": "Oosterschelde, 4",
-    "km": 5.7
-   },
-   {
-    "code": "brouwersdam.brouwershavensegat.2",
-    "naam": "Brouwersdam Brouwershavense Gat 2",
-    "km": 10.7
-   },
-   {
-    "code": "zierikzee.zeelandbrug",
-    "naam": "Zierikzee Zeelandbrug",
-    "km": 14.9
-   },
-   {
-    "code": "kats.zandkreeksluis.buiten",
-    "naam": "Kats Zandkreeksluis buiten",
-    "km": 19.3
-   },
-   {
-    "code": "stavenisse",
-    "naam": "Stavenisse",
-    "km": 21.7
-   },
-   {
-    "code": "wilhelminadorp",
-    "naam": "Wilhelminadorp",
-    "km": 21.9
-   },
-   {
-    "code": "bruinisse.grevelingensluis",
-    "naam": "Bruinisse Grevelingensluis",
-    "km": 25.1
-   },
-   {
-    "code": "goeree.lichteiland",
-    "naam": "Goeree, lichteiland",
-    "km": 25.4
-   }
-  ]
- }
+  "vlissingen": {
+    "golf": [
+      {
+        "code": "vlissingen.honte",
+        "naam": "Vlissingen Honte",
+        "km": 6.7
+      },
+      {
+        "code": "honte.kaloot",
+        "naam": "Honte, Kaloot",
+        "km": 8
+      },
+      {
+        "code": "vaarwaterlangshoofdplaat",
+        "naam": "Vaarwater langs Hoofdplaat",
+        "km": 8.9
+      },
+      {
+        "code": "vaarwaterlangshoofdplaat.4",
+        "naam": "Vaarwater langs Hoofdplaat, punt 04",
+        "km": 9.2
+      },
+      {
+        "code": "wielingen.noord",
+        "naam": "Wielingen, noord",
+        "km": 12.5
+      },
+      {
+        "code": "westkapelle",
+        "naam": "Westkapelle",
+        "km": 13.9
+      },
+      {
+        "code": "terneuzen.pasvanterneuzen.1",
+        "naam": "Terneuzen Pas van Terneuzen boei",
+        "km": 14
+      },
+      {
+        "code": "pasvanterneuzen",
+        "naam": "Pas van Terneuzen",
+        "km": 15
+      }
+    ],
+    "wind": [
+      {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 0.3
+      },
+      {
+        "code": "cadzand.1",
+        "naam": "Cadzand, 1",
+        "km": 16.7
+      },
+      {
+        "code": "terneuzen.westsluis",
+        "naam": "Terneuzen, westsluis",
+        "km": 19.1
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 21.4
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 22
+      },
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 24.6
+      },
+      {
+        "code": "vlaktevanderaan",
+        "naam": "Vlakte van de Raan",
+        "km": 25.4
+      },
+      {
+        "code": "hansweert",
+        "naam": "Hansweert",
+        "km": 27.8
+      }
+    ]
+  },
+  "scheveningen": {
+    "golf": [
+      {
+        "code": "zandmotor.boei.zuid",
+        "naam": "Zandmotor, boei, zuid",
+        "km": 6.4
+      },
+      {
+        "code": "zandmoter.boei.noord",
+        "naam": "Zandmoter, boei, noord",
+        "km": 10
+      },
+      {
+        "code": "hollandsekust.zuid.alpha",
+        "naam": "Hollandse Kust Zuid platform Alpha",
+        "km": 14.8
+      },
+      {
+        "code": "hoekvanholland.benoordendenoorderdam",
+        "naam": "Hoek van Holland, benoorden de Noorderdam",
+        "km": 17.8
+      },
+      {
+        "code": "hoekvanholland.maeslantkering.beneden.noord",
+        "naam": "Hoek van Holland, Maeslantkering, Beneden, noord",
+        "km": 18.1
+      },
+      {
+        "code": "hoekvanholland.splitsingsdam",
+        "naam": "Hoek van Holland, splitsingsdam",
+        "km": 18.3
+      },
+      {
+        "code": "noordwijk.meetpost",
+        "naam": "Noordwijk, meetpost",
+        "km": 18.5
+      },
+      {
+        "code": "noordwijk.2kmuitdekust.flachsee",
+        "naam": "Noordwijk, 2 km uit de kust Flachsee",
+        "km": 19
+      }
+    ],
+    "wind": [
+      {
+        "code": "hollandsekust.zuid.alpha.1",
+        "naam": "Hollandse Kust Zuid platform Alpha 1",
+        "km": 14.8
+      },
+      {
+        "code": "hollandsekust.zuid.alpha.2",
+        "naam": "Hollandse Kust Zuid platform Alpha 2",
+        "km": 14.8
+      },
+      {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 17.7
+      },
+      {
+        "code": "hoekvanholland.maeslantkering",
+        "naam": "Hoek van Holland Maeslantkering",
+        "km": 18.6
+      },
+      {
+        "code": "hoekvanholland.lagelicht",
+        "naam": "Hoek van Holland, lage licht",
+        "km": 19
+      },
+      {
+        "code": "rotterdam.luchthaven",
+        "naam": "Rotterdam, luchthaven",
+        "km": 21.3
+      },
+      {
+        "code": "botlek.geulhaven",
+        "naam": "Botlek Geulhaven",
+        "km": 24.1
+      },
+      {
+        "code": "stellendam.haringvlietsluizen.schuif1",
+        "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+        "km": 33.5
+      }
+    ]
+  },
+  "texel": {
+    "golf": [
+      {
+        "code": "denhoorntexel.waddenzee.gatvandestier",
+        "naam": "Den Hoorn Texel Waddenzee Gat van de Stier",
+        "km": 4.7
+      },
+      {
+        "code": "malzwin.boei1",
+        "naam": "Malzwin, boei 1",
+        "km": 8.6
+      },
+      {
+        "code": "denhelder.waddenzee.mondingnieuwehaven",
+        "naam": "Den Helder Waddenzee Monding Nieuwe Haven",
+        "km": 8.9
+      },
+      {
+        "code": "breesem.boei1",
+        "naam": "Breesem, boei 1",
+        "km": 15.5
+      },
+      {
+        "code": "breezanddijk.buitenboei1",
+        "naam": "Breezanddijk, buiten boei 1",
+        "km": 22.8
+      }
+    ],
+    "wind": [
+      {
+        "code": "texel.hors",
+        "naam": "Texelhors",
+        "km": 10
+      },
+      {
+        "code": "denhelder.dekooy",
+        "naam": "Den Helder, De Kooy",
+        "km": 13.6
+      },
+      {
+        "code": "vlieland.west",
+        "naam": "Vlieland, west",
+        "km": 23.6
+      },
+      {
+        "code": "stavoren.ijsselmeer",
+        "naam": "Stavoren IJsselmeer",
+        "km": 37.9
+      }
+    ]
+  },
+  "katwijk": {
+    "golf": [
+      {
+        "code": "noordwijk.2kmuitdekust.flachsee",
+        "naam": "Noordwijk, 2 km uit de kust Flachsee",
+        "km": 5.8
+      },
+      {
+        "code": "noordwijk.meetpost",
+        "naam": "Noordwijk, meetpost",
+        "km": 10.3
+      },
+      {
+        "code": "hollandsekust.zuid.alpha",
+        "naam": "Hollandse Kust Zuid platform Alpha",
+        "km": 13.9
+      },
+      {
+        "code": "zandmotor.boei.zuid",
+        "naam": "Zandmotor, boei, zuid",
+        "km": 19.9
+      },
+      {
+        "code": "hollandsekust.zuid.windparkzuid",
+        "naam": "Hollandse Kust, Zuid Windpark Zuid",
+        "km": 21.6
+      },
+      {
+        "code": "zandmoter.boei.noord",
+        "naam": "Zandmoter, boei, noord",
+        "km": 23.6
+      }
+    ],
+    "wind": [
+      {
+        "code": "hollandsekust.zuid.alpha.1",
+        "naam": "Hollandse Kust Zuid platform Alpha 1",
+        "km": 13.9
+      },
+      {
+        "code": "hollandsekust.zuid.alpha.2",
+        "naam": "Hollandse Kust Zuid platform Alpha 2",
+        "km": 13.9
+      },
+      {
+        "code": "rotterdam.luchthaven",
+        "naam": "Rotterdam, luchthaven",
+        "km": 28.4
+      },
+      {
+        "code": "ijgeul.1",
+        "naam": "IJGeul, 1",
+        "km": 30.1
+      },
+      {
+        "code": "ijmuiden.havenhoofd.zuid",
+        "naam": "IJmuiden, havenhoofd, zuid",
+        "km": 30.4
+      },
+      {
+        "code": "ijmuiden.buitenhaven",
+        "naam": "IJmuiden, buitenhaven",
+        "km": 30.8
+      },
+      {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 31.3
+      },
+      {
+        "code": "hoekvanholland.maeslantkering",
+        "naam": "Hoek van Holland Maeslantkering",
+        "km": 31.9
+      }
+    ]
+  },
+  "noordwijk": {
+    "golf": [
+      {
+        "code": "noordwijk.2kmuitdekust.flachsee",
+        "naam": "Noordwijk, 2 km uit de kust Flachsee",
+        "km": 1.8
+      },
+      {
+        "code": "noordwijk.meetpost",
+        "naam": "Noordwijk, meetpost",
+        "km": 9.6
+      },
+      {
+        "code": "hollandsekust.zuid.alpha",
+        "naam": "Hollandse Kust Zuid platform Alpha",
+        "km": 15.6
+      },
+      {
+        "code": "hollandsekust.zuid.windparkzuid",
+        "naam": "Hollandse Kust, Zuid Windpark Zuid",
+        "km": 23.1
+      },
+      {
+        "code": "zandmotor.boei.zuid",
+        "naam": "Zandmotor, boei, zuid",
+        "km": 24.3
+      }
+    ],
+    "wind": [
+      {
+        "code": "hollandsekust.zuid.alpha.1",
+        "naam": "Hollandse Kust Zuid platform Alpha 1",
+        "km": 15.6
+      },
+      {
+        "code": "hollandsekust.zuid.alpha.2",
+        "naam": "Hollandse Kust Zuid platform Alpha 2",
+        "km": 15.6
+      },
+      {
+        "code": "ijgeul.1",
+        "naam": "IJGeul, 1",
+        "km": 25.6
+      },
+      {
+        "code": "ijmuiden.havenhoofd.zuid",
+        "naam": "IJmuiden, havenhoofd, zuid",
+        "km": 25.9
+      },
+      {
+        "code": "ijmuiden.buitenhaven",
+        "naam": "IJmuiden, buitenhaven",
+        "km": 26.3
+      },
+      {
+        "code": "rotterdam.luchthaven",
+        "naam": "Rotterdam, luchthaven",
+        "km": 32.3
+      },
+      {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 35.8
+      },
+      {
+        "code": "hoekvanholland.maeslantkering",
+        "naam": "Hoek van Holland Maeslantkering",
+        "km": 36.5
+      }
+    ]
+  },
+  "terschelling": {
+    "golf": [
+      {
+        "code": "stortemelk.oost",
+        "naam": "Stortemelk, oost",
+        "km": 8.9
+      },
+      {
+        "code": "pannengat.boei1",
+        "naam": "Pannengat, boei 1",
+        "km": 13.1
+      },
+      {
+        "code": "stortemelk.west",
+        "naam": "Stortemelk, west",
+        "km": 15.5
+      },
+      {
+        "code": "amelanderzeegat.1.1",
+        "naam": "Amelander zeegat, 1 .1",
+        "km": 23.8
+      },
+      {
+        "code": "amelanderzeegat.6.1",
+        "naam": "Amelander zeegat, 6 .1",
+        "km": 23.9
+      },
+      {
+        "code": "amelanderzeegat.1.2",
+        "naam": "Amelander zeegat, 1 .2",
+        "km": 24
+      }
+    ],
+    "wind": [
+      {
+        "code": "terschelling.hoorn",
+        "naam": "Terschelling, Hoorn",
+        "km": 9
+      },
+      {
+        "code": "terschelling.noordzee",
+        "naam": "Terschelling, Noordzee",
+        "km": 11.8
+      },
+      {
+        "code": "vlieland.west",
+        "naam": "Vlieland, west",
+        "km": 23.6
+      },
+      {
+        "code": "l9",
+        "naam": "L9",
+        "km": 33.1
+      },
+      {
+        "code": "ameland.nes",
+        "naam": "Ameland, Nes",
+        "km": 36.6
+      }
+    ]
+  },
+  "egmond-aan-zee": {
+    "golf": [
+      {
+        "code": "hollandsekust.noord.deelgebied",
+        "naam": "Hollandse kust, noord , deelgebied",
+        "km": 15
+      },
+      {
+        "code": "ijmuiden.5a",
+        "naam": "IJmuiden, 05 A",
+        "km": 16.1
+      },
+      {
+        "code": "petten.meetraai11",
+        "naam": "Petten, meetraai 11",
+        "km": 16.8
+      },
+      {
+        "code": "petten.meetraai8",
+        "naam": "Petten, meetraai 08",
+        "km": 16.8
+      },
+      {
+        "code": "petten.meetraai7",
+        "naam": "Petten, meetraai 07",
+        "km": 16.9
+      },
+      {
+        "code": "petten.meetraai67",
+        "naam": "Petten, meetraai 67",
+        "km": 16.9
+      },
+      {
+        "code": "petten.meetraai675",
+        "naam": "Petten, meetraai 675",
+        "km": 16.9
+      },
+      {
+        "code": "petten.meetraai6",
+        "naam": "Petten, meetraai 06",
+        "km": 16.9
+      }
+    ],
+    "wind": [
+      {
+        "code": "ijmuiden.buitenhaven",
+        "naam": "IJmuiden, buitenhaven",
+        "km": 18.1
+      },
+      {
+        "code": "ijmuiden.havenhoofd.zuid",
+        "naam": "IJmuiden, havenhoofd, zuid",
+        "km": 18.4
+      },
+      {
+        "code": "ijgeul.1",
+        "naam": "IJGeul, 1",
+        "km": 18.8
+      },
+      {
+        "code": "hollandsekust.noord.alpha",
+        "naam": "Hollandse Kust Noord Alpha",
+        "km": 23.9
+      },
+      {
+        "code": "berkhout",
+        "naam": "Berkhout",
+        "km": 24.3
+      },
+      {
+        "code": "denhelder.dekooy",
+        "naam": "Den Helder, De Kooy",
+        "km": 35.4
+      },
+      {
+        "code": "wijdenes",
+        "naam": "Wijdenes",
+        "km": 36.4
+      }
+    ]
+  },
+  "zoutelande": {
+    "golf": [
+      {
+        "code": "westkapelle",
+        "naam": "Westkapelle",
+        "km": 3.6
+      },
+      {
+        "code": "domburg",
+        "naam": "Domburg",
+        "km": 8.2
+      },
+      {
+        "code": "wielingen.noord",
+        "naam": "Wielingen, noord",
+        "km": 8.7
+      },
+      {
+        "code": "oosterschelde.10",
+        "naam": "Oosterschelde, 10",
+        "km": 11.7
+      },
+      {
+        "code": "domburgerrassen",
+        "naam": "Domburger Rassen",
+        "km": 14.4
+      },
+      {
+        "code": "cadzand.1",
+        "naam": "Cadzand, 1",
+        "km": 14.4
+      },
+      {
+        "code": "cadzand.2",
+        "naam": "Cadzand, 2",
+        "km": 15.2
+      },
+      {
+        "code": "oosterschelde.11",
+        "naam": "Oosterschelde, 11",
+        "km": 15.9
+      }
+    ],
+    "wind": [
+      {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 10.5
+      },
+      {
+        "code": "cadzand.1",
+        "naam": "Cadzand, 1",
+        "km": 14.4
+      },
+      {
+        "code": "vlaktevanderaan",
+        "naam": "Vlakte van de Raan",
+        "km": 16.4
+      },
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 22.7
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 26.7
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 28
+      },
+      {
+        "code": "terneuzen.westsluis",
+        "naam": "Terneuzen, westsluis",
+        "km": 29.4
+      },
+      {
+        "code": "brouwersdam.brouwershavensegat.2",
+        "naam": "Brouwersdam Brouwershavense Gat 2",
+        "km": 31.2
+      }
+    ]
+  },
+  "hoek-van-holland": {
+    "golf": [
+      {
+        "code": "hoekvanholland.splitsingsdam",
+        "naam": "Hoek van Holland, splitsingsdam",
+        "km": 0.9
+      },
+      {
+        "code": "beerkanaal",
+        "naam": "Beerkanaal",
+        "km": 1.8
+      },
+      {
+        "code": "hoekvanholland.benoordendenoorderdam",
+        "naam": "Hoek van Holland, benoorden de Noorderdam",
+        "km": 3.5
+      },
+      {
+        "code": "hoekvanholland.maeslantkering.beneden.noord",
+        "naam": "Hoek van Holland, Maeslantkering, Beneden, noord",
+        "km": 3.7
+      },
+      {
+        "code": "waterweg.mondingnabijdezuidwal",
+        "naam": "Waterweg, monding nabij de Zuidwal",
+        "km": 4.9
+      },
+      {
+        "code": "maasmond.stroommeetpaal",
+        "naam": "Maasmond, stroommeetpaal",
+        "km": 7.8
+      },
+      {
+        "code": "zandmoter.boei.noord",
+        "naam": "Zandmoter, boei, noord",
+        "km": 8
+      },
+      {
+        "code": "maasgeul.2",
+        "naam": "Maasgeul 2",
+        "km": 8.1
+      }
+    ],
+    "wind": [
+      {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 0.3
+      },
+      {
+        "code": "hoekvanholland.lagelicht",
+        "naam": "Hoek van Holland, lage licht",
+        "km": 2.6
+      },
+      {
+        "code": "hoekvanholland.maeslantkering",
+        "naam": "Hoek van Holland Maeslantkering",
+        "km": 4
+      },
+      {
+        "code": "botlek.geulhaven",
+        "naam": "Botlek Geulhaven",
+        "km": 16.4
+      },
+      {
+        "code": "stellendam.haringvlietsluizen.schuif1",
+        "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+        "km": 16.6
+      },
+      {
+        "code": "rotterdam.luchthaven",
+        "naam": "Rotterdam, luchthaven",
+        "km": 22.7
+      },
+      {
+        "code": "hollandsekust.zuid.alpha.1",
+        "naam": "Hollandse Kust Zuid platform Alpha 1",
+        "km": 28.5
+      },
+      {
+        "code": "hollandsekust.zuid.alpha.2",
+        "naam": "Hollandse Kust Zuid platform Alpha 2",
+        "km": 28.5
+      }
+    ]
+  },
+  "wijk-aan-zee": {
+    "golf": [
+      {
+        "code": "ijgeul.1",
+        "naam": "IJGeul, 1",
+        "km": 5.9
+      },
+      {
+        "code": "ijmuiden.5a",
+        "naam": "IJmuiden, 05 A",
+        "km": 13.1
+      },
+      {
+        "code": "ijgeul.3",
+        "naam": "IJgeul, 3",
+        "km": 19.6
+      },
+      {
+        "code": "ijgeul.2",
+        "naam": "IJgeul, 2",
+        "km": 21.8
+      }
+    ],
+    "wind": [
+      {
+        "code": "ijmuiden.buitenhaven",
+        "naam": "IJmuiden, buitenhaven",
+        "km": 4.1
+      },
+      {
+        "code": "ijmuiden.havenhoofd.zuid",
+        "naam": "IJmuiden, havenhoofd, zuid",
+        "km": 5.1
+      },
+      {
+        "code": "ijgeul.1",
+        "naam": "IJGeul, 1",
+        "km": 5.9
+      },
+      {
+        "code": "hollandsekust.noord.alpha",
+        "naam": "Hollandse Kust Noord Alpha",
+        "km": 30.3
+      },
+      {
+        "code": "berkhout",
+        "naam": "Berkhout",
+        "km": 31.7
+      },
+      {
+        "code": "hollandsekust.zuid.alpha.1",
+        "naam": "Hollandse Kust Zuid platform Alpha 1",
+        "km": 39.3
+      },
+      {
+        "code": "hollandsekust.zuid.alpha.2",
+        "naam": "Hollandse Kust Zuid platform Alpha 2",
+        "km": 39.3
+      }
+    ]
+  },
+  "ijmuiden": {
+    "golf": [
+      {
+        "code": "ijgeul.1",
+        "naam": "IJGeul, 1",
+        "km": 2.5
+      },
+      {
+        "code": "ijmuiden.5a",
+        "naam": "IJmuiden, 05 A",
+        "km": 13.2
+      },
+      {
+        "code": "ijgeul.3",
+        "naam": "IJgeul, 3",
+        "km": 17.5
+      },
+      {
+        "code": "ijgeul.2",
+        "naam": "IJgeul, 2",
+        "km": 19.8
+      }
+    ],
+    "wind": [
+      {
+        "code": "ijmuiden.buitenhaven",
+        "naam": "IJmuiden, buitenhaven",
+        "km": 0.1
+      },
+      {
+        "code": "ijmuiden.havenhoofd.zuid",
+        "naam": "IJmuiden, havenhoofd, zuid",
+        "km": 1.5
+      },
+      {
+        "code": "ijgeul.1",
+        "naam": "IJGeul, 1",
+        "km": 2.5
+      },
+      {
+        "code": "hollandsekust.noord.alpha",
+        "naam": "Hollandse Kust Noord Alpha",
+        "km": 31.6
+      },
+      {
+        "code": "hollandsekust.zuid.alpha.1",
+        "naam": "Hollandse Kust Zuid platform Alpha 1",
+        "km": 35.2
+      },
+      {
+        "code": "hollandsekust.zuid.alpha.2",
+        "naam": "Hollandse Kust Zuid platform Alpha 2",
+        "km": 35.2
+      },
+      {
+        "code": "berkhout",
+        "naam": "Berkhout",
+        "km": 35.6
+      }
+    ]
+  },
+  "renesse": {
+    "golf": [
+      {
+        "code": "krabbengat",
+        "naam": "Krabbengat",
+        "km": 7.9
+      },
+      {
+        "code": "oosterscheldekering.hammen",
+        "naam": "Oosterscheldekering buiten, Hammen",
+        "km": 9
+      },
+      {
+        "code": "brouwershavenschegat.5",
+        "naam": "Brouwershavensche Gat, 05",
+        "km": 10
+      },
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 10.1
+      },
+      {
+        "code": "oosterscheldekering.schaar",
+        "naam": "Oosterscheldekering buiten, Schaar",
+        "km": 10.3
+      },
+      {
+        "code": "brouwersdam.brouwershavensegat.2",
+        "naam": "Brouwersdam Brouwershavense Gat 2",
+        "km": 10.5
+      },
+      {
+        "code": "roggenplaat",
+        "naam": "Roggenplaat",
+        "km": 11.1
+      },
+      {
+        "code": "oosterschelde.12",
+        "naam": "Oosterschelde, 12",
+        "km": 13.5
+      }
+    ],
+    "wind": [
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 10.1
+      },
+      {
+        "code": "brouwersdam.brouwershavensegat.2",
+        "naam": "Brouwersdam Brouwershavense Gat 2",
+        "km": 10.5
+      },
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 15.8
+      },
+      {
+        "code": "goeree.lichteiland",
+        "naam": "Goeree, lichteiland",
+        "km": 22.1
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 22.2
+      },
+      {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 22.4
+      },
+      {
+        "code": "stellendam.haringvlietsluizen.schuif1",
+        "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+        "km": 22.8
+      },
+      {
+        "code": "bruinisse.grevelingensluis",
+        "naam": "Bruinisse Grevelingensluis",
+        "km": 24
+      }
+    ]
+  },
+  "cadzand": {
+    "golf": [
+      {
+        "code": "cadzand.2",
+        "naam": "Cadzand, 2",
+        "km": 0.8
+      },
+      {
+        "code": "cadzand.1",
+        "naam": "Cadzand, 1",
+        "km": 2
+      },
+      {
+        "code": "wielingen.noord",
+        "naam": "Wielingen, noord",
+        "km": 6.7
+      },
+      {
+        "code": "westkapelle",
+        "naam": "Westkapelle",
+        "km": 16.7
+      },
+      {
+        "code": "vlaktevanderaan.deurloo",
+        "naam": "Vlakte van de Raan Deurloo",
+        "km": 17.3
+      },
+      {
+        "code": "vlaktevanderaan.2",
+        "naam": "Vlakte van de Raan, punt 02",
+        "km": 17.3
+      },
+      {
+        "code": "vaarwaterlangshoofdplaat",
+        "naam": "Vaarwater langs Hoofdplaat",
+        "km": 19.9
+      },
+      {
+        "code": "vaarwaterlangshoofdplaat.4",
+        "naam": "Vaarwater langs Hoofdplaat, punt 04",
+        "km": 19.9
+      }
+    ],
+    "wind": [
+      {
+        "code": "cadzand.1",
+        "naam": "Cadzand, 1",
+        "km": 2
+      },
+      {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 16.7
+      },
+      {
+        "code": "vlaktevanderaan",
+        "naam": "Vlakte van de Raan",
+        "km": 17.4
+      },
+      {
+        "code": "terneuzen.westsluis",
+        "naam": "Terneuzen, westsluis",
+        "km": 30.1
+      },
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 37.7
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 37.8
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 38.4
+      }
+    ]
+  },
+  "ameland": {
+    "golf": [
+      {
+        "code": "ameland.nes",
+        "naam": "Ameland, Nes",
+        "km": 1.5
+      },
+      {
+        "code": "dantziggat.pietscheveplaat.zuid",
+        "naam": "Dantziggat Piet Scheveplaat zuid",
+        "km": 6.8
+      },
+      {
+        "code": "amelanderzeegat.5.1",
+        "naam": "Amelander zeegat, 5 .1",
+        "km": 7.3
+      },
+      {
+        "code": "amelanderzeegat.5.2",
+        "naam": "Amelander zeegat, 5 .2",
+        "km": 7.3
+      },
+      {
+        "code": "amelanderzeegat.6.2",
+        "naam": "Amelander zeegat, 6 .2",
+        "km": 7.4
+      },
+      {
+        "code": "holwerd.vaargeul",
+        "naam": "Holwerd vaargeul",
+        "km": 8.5
+      },
+      {
+        "code": "amelanderzeegat.4.1",
+        "naam": "Amelander zeegat, 4 .1",
+        "km": 9
+      },
+      {
+        "code": "amelanderzeegat.4.2",
+        "naam": "Amelander zeegat, 4 .2",
+        "km": 9.4
+      }
+    ],
+    "wind": [
+      {
+        "code": "ameland.nes",
+        "naam": "Ameland, Nes",
+        "km": 1.5
+      },
+      {
+        "code": "amelandwestgat",
+        "naam": "Ameland Westgat platform",
+        "km": 12.4
+      },
+      {
+        "code": "wierumergronden",
+        "naam": "Wierumergronden",
+        "km": 14.8
+      },
+      {
+        "code": "lauwersoog.waddenzee",
+        "naam": "Lauwersoog, Waddenzee",
+        "km": 28.1
+      },
+      {
+        "code": "terschelling.hoorn",
+        "naam": "Terschelling, Hoorn",
+        "km": 28.9
+      },
+      {
+        "code": "terschelling.noordzee",
+        "naam": "Terschelling, Noordzee",
+        "km": 29.2
+      }
+    ]
+  },
+  "domburg": {
+    "golf": [
+      {
+        "code": "domburg",
+        "naam": "Domburg",
+        "km": 1.2
+      },
+      {
+        "code": "oosterschelde.10",
+        "naam": "Oosterschelde, 10",
+        "km": 5
+      },
+      {
+        "code": "westkapelle",
+        "naam": "Westkapelle",
+        "km": 6.1
+      },
+      {
+        "code": "oosterschelde.11",
+        "naam": "Oosterschelde, 11",
+        "km": 8.7
+      },
+      {
+        "code": "domburgerrassen",
+        "naam": "Domburger Rassen",
+        "km": 9
+      },
+      {
+        "code": "oosterschelde.9",
+        "naam": "Oosterschelde, 09",
+        "km": 13.3
+      },
+      {
+        "code": "middeldiep",
+        "naam": "Middeldiep",
+        "km": 13.5
+      },
+      {
+        "code": "oosterscheldekering.roompot",
+        "naam": "Oosterscheldekering buiten Roompot",
+        "km": 13.5
+      }
+    ],
+    "wind": [
+      {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 15.5
+      },
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 17
+      },
+      {
+        "code": "vlaktevanderaan",
+        "naam": "Vlakte van de Raan",
+        "km": 18.7
+      },
+      {
+        "code": "cadzand.1",
+        "naam": "Cadzand, 1",
+        "km": 21.3
+      },
+      {
+        "code": "brouwersdam.brouwershavensegat.2",
+        "naam": "Brouwersdam Brouwershavense Gat 2",
+        "km": 24
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 25.2
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 27.2
+      },
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 30
+      }
+    ]
+  },
+  "westkapelle": {
+    "golf": [
+      {
+        "code": "westkapelle",
+        "naam": "Westkapelle",
+        "km": 0.9
+      },
+      {
+        "code": "domburg",
+        "naam": "Domburg",
+        "km": 5.7
+      },
+      {
+        "code": "oosterschelde.10",
+        "naam": "Oosterschelde, 10",
+        "km": 8.4
+      },
+      {
+        "code": "domburgerrassen",
+        "naam": "Domburger Rassen",
+        "km": 10.3
+      },
+      {
+        "code": "wielingen.noord",
+        "naam": "Wielingen, noord",
+        "km": 11
+      },
+      {
+        "code": "oosterschelde.11",
+        "naam": "Oosterschelde, 11",
+        "km": 12.9
+      },
+      {
+        "code": "vlaktevanderaan.deurloo",
+        "naam": "Vlakte van de Raan Deurloo",
+        "km": 14
+      },
+      {
+        "code": "vlaktevanderaan.2",
+        "naam": "Vlakte van de Raan, punt 02",
+        "km": 14
+      }
+    ],
+    "wind": [
+      {
+        "code": "vlaktevanderaan",
+        "naam": "Vlakte van de Raan",
+        "km": 14
+      },
+      {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 14.7
+      },
+      {
+        "code": "cadzand.1",
+        "naam": "Cadzand, 1",
+        "km": 16.3
+      },
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 22.3
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 29
+      },
+      {
+        "code": "brouwersdam.brouwershavensegat.2",
+        "naam": "Brouwersdam Brouwershavense Gat 2",
+        "km": 29.1
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 30.6
+      },
+      {
+        "code": "borsselealpha",
+        "naam": "Borssele Windpark Alpha platform",
+        "km": 32.5
+      }
+    ]
+  },
+  "den-helder": {
+    "golf": [
+      {
+        "code": "denhelder.waddenzee.mondingnieuwehaven",
+        "naam": "Den Helder Waddenzee Monding Nieuwe Haven",
+        "km": 3.3
+      },
+      {
+        "code": "denhoorntexel.waddenzee.gatvandestier",
+        "naam": "Den Hoorn Texel Waddenzee Gat van de Stier",
+        "km": 6.8
+      },
+      {
+        "code": "malzwin.boei1",
+        "naam": "Malzwin, boei 1",
+        "km": 14.4
+      },
+      {
+        "code": "petten.meetraai2",
+        "naam": "Petten, meetraai 02",
+        "km": 21.5
+      },
+      {
+        "code": "petten.meetraai1",
+        "naam": "Petten, meetraai 01",
+        "km": 21.6
+      },
+      {
+        "code": "petten.meetraai3",
+        "naam": "Petten, meetraai 03",
+        "km": 22.3
+      },
+      {
+        "code": "petten.meetraai16",
+        "naam": "Petten, meetraai 16",
+        "km": 22.3
+      },
+      {
+        "code": "petten.meetraai18",
+        "naam": "Petten, meetraai 18",
+        "km": 22.3
+      }
+    ],
+    "wind": [
+      {
+        "code": "texel.hors",
+        "naam": "Texelhors",
+        "km": 3.7
+      },
+      {
+        "code": "denhelder.dekooy",
+        "naam": "Den Helder, De Kooy",
+        "km": 5.4
+      },
+      {
+        "code": "vlieland.west",
+        "naam": "Vlieland, west",
+        "km": 33.5
+      },
+      {
+        "code": "berkhout",
+        "naam": "Berkhout",
+        "km": 38.5
+      }
+    ]
+  },
+  "vlieland": {
+    "golf": [
+      {
+        "code": "stortemelk.oost",
+        "naam": "Stortemelk, oost",
+        "km": 3.8
+      },
+      {
+        "code": "stortemelk.west",
+        "naam": "Stortemelk, west",
+        "km": 5.4
+      },
+      {
+        "code": "pannengat.boei1",
+        "naam": "Pannengat, boei 1",
+        "km": 10.1
+      },
+      {
+        "code": "breesem.boei1",
+        "naam": "Breesem, boei 1",
+        "km": 19.9
+      }
+    ],
+    "wind": [
+      {
+        "code": "vlieland.west",
+        "naam": "Vlieland, west",
+        "km": 11.2
+      },
+      {
+        "code": "terschelling.hoorn",
+        "naam": "Terschelling, Hoorn",
+        "km": 21.5
+      },
+      {
+        "code": "terschelling.noordzee",
+        "naam": "Terschelling, Noordzee",
+        "km": 24.2
+      },
+      {
+        "code": "l9",
+        "naam": "L9",
+        "km": 36.3
+      }
+    ]
+  },
+  "zandvoort": {
+    "golf": [
+      {
+        "code": "ijgeul.1",
+        "naam": "IJGeul, 1",
+        "km": 9.9
+      },
+      {
+        "code": "noordwijk.2kmuitdekust.flachsee",
+        "naam": "Noordwijk, 2 km uit de kust Flachsee",
+        "km": 15.5
+      },
+      {
+        "code": "noordwijk.meetpost",
+        "naam": "Noordwijk, meetpost",
+        "km": 19.3
+      },
+      {
+        "code": "ijgeul.3",
+        "naam": "IJgeul, 3",
+        "km": 19.9
+      },
+      {
+        "code": "ijmuiden.5a",
+        "naam": "IJmuiden, 05 A",
+        "km": 20.4
+      },
+      {
+        "code": "ijgeul.2",
+        "naam": "IJgeul, 2",
+        "km": 21.8
+      }
+    ],
+    "wind": [
+      {
+        "code": "ijmuiden.havenhoofd.zuid",
+        "naam": "IJmuiden, havenhoofd, zuid",
+        "km": 9.9
+      },
+      {
+        "code": "ijgeul.1",
+        "naam": "IJGeul, 1",
+        "km": 9.9
+      },
+      {
+        "code": "ijmuiden.buitenhaven",
+        "naam": "IJmuiden, buitenhaven",
+        "km": 10
+      },
+      {
+        "code": "hollandsekust.zuid.alpha.1",
+        "naam": "Hollandse Kust Zuid platform Alpha 1",
+        "km": 27.3
+      },
+      {
+        "code": "hollandsekust.zuid.alpha.2",
+        "naam": "Hollandse Kust Zuid platform Alpha 2",
+        "km": 27.3
+      },
+      {
+        "code": "hollandsekust.noord.alpha",
+        "naam": "Hollandse Kust Noord Alpha",
+        "km": 39.1
+      }
+    ]
+  },
+  "schiermonnikoog": {
+    "golf": [
+      {
+        "code": "schiermonnikoog.waddenzee",
+        "naam": "Schiermonnikoog, Waddenzee",
+        "km": 2.8
+      },
+      {
+        "code": "kuipersplaat.boei",
+        "naam": "Kuipersplaat, boei",
+        "km": 5.3
+      },
+      {
+        "code": "zoutkamperlaag.boei",
+        "naam": "Zoutkamperlaag, boei",
+        "km": 6.1
+      },
+      {
+        "code": "lauwersdamboei",
+        "naam": "Lauwersdam boei",
+        "km": 6.9
+      },
+      {
+        "code": "schiermonnikoog.westgat",
+        "naam": "Schiermonnikoog, Westgat",
+        "km": 10
+      },
+      {
+        "code": "wierumerwad",
+        "naam": "Wierumerwad",
+        "km": 10.4
+      },
+      {
+        "code": "schiermonnikoog.noord",
+        "naam": "Schiermonnikoog, noord",
+        "km": 12.7
+      },
+      {
+        "code": "ameland.westgat",
+        "naam": "Ameland, Westgat",
+        "km": 14.8
+      }
+    ],
+    "wind": [
+      {
+        "code": "lauwersoog.waddenzee",
+        "naam": "Lauwersoog, Waddenzee",
+        "km": 8.2
+      },
+      {
+        "code": "wierumergronden",
+        "naam": "Wierumergronden",
+        "km": 14.2
+      },
+      {
+        "code": "amelandwestgat",
+        "naam": "Ameland Westgat platform",
+        "km": 14.8
+      },
+      {
+        "code": "huibertgat",
+        "naam": "Huibertgat",
+        "km": 18.6
+      },
+      {
+        "code": "ameland.nes",
+        "naam": "Ameland, Nes",
+        "km": 27.4
+      },
+      {
+        "code": "uithuizerwad",
+        "naam": "Uithuizerwad",
+        "km": 38.7
+      }
+    ]
+  },
+  "maasvlakte": {
+    "golf": [
+      {
+        "code": "maasvlakte.ruim1kmuitdekust",
+        "naam": "Maasvlakte, ruim1 km uit de kust",
+        "km": 2.6
+      },
+      {
+        "code": "maasmond.stroommeetpaal",
+        "naam": "Maasmond, stroommeetpaal",
+        "km": 3.6
+      },
+      {
+        "code": "waterweg.mondingnabijdezuidwal",
+        "naam": "Waterweg, monding nabij de Zuidwal",
+        "km": 3.8
+      },
+      {
+        "code": "maasgeul.2",
+        "naam": "Maasgeul 2",
+        "km": 3.8
+      },
+      {
+        "code": "beerkanaal",
+        "naam": "Beerkanaal",
+        "km": 6.1
+      },
+      {
+        "code": "hoekvanholland.benoordendenoorderdam",
+        "naam": "Hoek van Holland, benoorden de Noorderdam",
+        "km": 6.3
+      },
+      {
+        "code": "hoekvanholland.splitsingsdam",
+        "naam": "Hoek van Holland, splitsingsdam",
+        "km": 7.4
+      },
+      {
+        "code": "haringvlietmond",
+        "naam": "Haringvlietmond",
+        "km": 8.9
+      }
+    ],
+    "wind": [
+      {
+        "code": "hoekvanholland.lagelicht",
+        "naam": "Hoek van Holland, lage licht",
+        "km": 5.4
+      },
+      {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 7.7
+      },
+      {
+        "code": "hoekvanholland.maeslantkering",
+        "naam": "Hoek van Holland Maeslantkering",
+        "km": 10.3
+      },
+      {
+        "code": "stellendam.haringvlietsluizen.schuif1",
+        "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+        "km": 14.1
+      },
+      {
+        "code": "botlek.geulhaven",
+        "naam": "Botlek Geulhaven",
+        "km": 22
+      },
+      {
+        "code": "goeree.lichteiland",
+        "naam": "Goeree, lichteiland",
+        "km": 23.7
+      },
+      {
+        "code": "rotterdam.luchthaven",
+        "naam": "Rotterdam, luchthaven",
+        "km": 30
+      },
+      {
+        "code": "hollandsekust.zuid.alpha.1",
+        "naam": "Hollandse Kust Zuid platform Alpha 1",
+        "km": 32.8
+      }
+    ]
+  },
+  "ouddorp": {
+    "golf": [
+      {
+        "code": "haringvlietmond",
+        "naam": "Haringvlietmond",
+        "km": 8
+      },
+      {
+        "code": "haringvlietsluizen.buiten",
+        "naam": "Haringvlietsluizen, buiten",
+        "km": 9.3
+      },
+      {
+        "code": "haringvlietsluizen.1km.noordwest",
+        "naam": "Haringvlietsluizen, 1 km, noordwest",
+        "km": 9.6
+      },
+      {
+        "code": "brouwershavenschegat.5",
+        "naam": "Brouwershavensche Gat, 05",
+        "km": 10.1
+      },
+      {
+        "code": "maasvlakte.ruim1kmuitdekust",
+        "naam": "Maasvlakte, ruim1 km uit de kust",
+        "km": 13.9
+      },
+      {
+        "code": "maasmond.stroommeetpaal",
+        "naam": "Maasmond, stroommeetpaal",
+        "km": 19.7
+      },
+      {
+        "code": "maasgeul.2",
+        "naam": "Maasgeul 2",
+        "km": 19.8
+      },
+      {
+        "code": "goeree.lichteiland",
+        "naam": "Goeree, lichteiland",
+        "km": 19.9
+      }
+    ],
+    "wind": [
+      {
+        "code": "stellendam.haringvlietsluizen.schuif1",
+        "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+        "km": 10
+      },
+      {
+        "code": "goeree.lichteiland",
+        "naam": "Goeree, lichteiland",
+        "km": 19.9
+      },
+      {
+        "code": "brouwersdam.brouwershavensegat.2",
+        "naam": "Brouwersdam Brouwershavense Gat 2",
+        "km": 20.8
+      },
+      {
+        "code": "hoekvanholland.lagelicht",
+        "naam": "Hoek van Holland, lage licht",
+        "km": 21
+      },
+      {
+        "code": "bruinisse.grevelingensluis",
+        "naam": "Bruinisse Grevelingensluis",
+        "km": 21.7
+      },
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 21.8
+      },
+      {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 22.2
+      },
+      {
+        "code": "hoekvanholland.maeslantkering",
+        "naam": "Hoek van Holland Maeslantkering",
+        "km": 22.3
+      }
+    ]
+  },
+  "castricum-aan-zee": {
+    "golf": [
+      {
+        "code": "ijgeul.1",
+        "naam": "IJGeul, 1",
+        "km": 11.9
+      },
+      {
+        "code": "ijmuiden.5a",
+        "naam": "IJmuiden, 05 A",
+        "km": 12.9
+      },
+      {
+        "code": "ijgeul.3",
+        "naam": "IJgeul, 3",
+        "km": 22.1
+      },
+      {
+        "code": "hollandsekust.noord.deelgebied",
+        "naam": "Hollandse kust, noord , deelgebied",
+        "km": 22.2
+      },
+      {
+        "code": "petten.meetraai11",
+        "naam": "Petten, meetraai 11",
+        "km": 24.1
+      },
+      {
+        "code": "petten.meetraai8",
+        "naam": "Petten, meetraai 08",
+        "km": 24.1
+      },
+      {
+        "code": "petten.meetraai7",
+        "naam": "Petten, meetraai 07",
+        "km": 24.1
+      },
+      {
+        "code": "petten.meetraai67",
+        "naam": "Petten, meetraai 67",
+        "km": 24.2
+      }
+    ],
+    "wind": [
+      {
+        "code": "ijmuiden.buitenhaven",
+        "naam": "IJmuiden, buitenhaven",
+        "km": 10.9
+      },
+      {
+        "code": "ijmuiden.havenhoofd.zuid",
+        "naam": "IJmuiden, havenhoofd, zuid",
+        "km": 11.4
+      },
+      {
+        "code": "ijgeul.1",
+        "naam": "IJGeul, 1",
+        "km": 11.9
+      },
+      {
+        "code": "hollandsekust.noord.alpha",
+        "naam": "Hollandse Kust Noord Alpha",
+        "km": 26.6
+      },
+      {
+        "code": "berkhout",
+        "naam": "Berkhout",
+        "km": 27.2
+      },
+      {
+        "code": "wijdenes",
+        "naam": "Wijdenes",
+        "km": 38.5
+      }
+    ]
+  },
+  "oostkapelle": {
+    "golf": [
+      {
+        "code": "domburg",
+        "naam": "Domburg",
+        "km": 3.6
+      },
+      {
+        "code": "oosterschelde.10",
+        "naam": "Oosterschelde, 10",
+        "km": 6.1
+      },
+      {
+        "code": "oosterschelde.11",
+        "naam": "Oosterschelde, 11",
+        "km": 8.5
+      },
+      {
+        "code": "westkapelle",
+        "naam": "Westkapelle",
+        "km": 8.8
+      },
+      {
+        "code": "oosterschelde.9",
+        "naam": "Oosterschelde, 09",
+        "km": 10.4
+      },
+      {
+        "code": "oosterscheldekering.roompot",
+        "naam": "Oosterscheldekering buiten Roompot",
+        "km": 10.5
+      },
+      {
+        "code": "domburgerrassen",
+        "naam": "Domburger Rassen",
+        "km": 10.6
+      },
+      {
+        "code": "oosterschelde.roompotsluis.buiten",
+        "naam": "Oosterschelde Roompotsluis buiten",
+        "km": 11.1
+      }
+    ],
+    "wind": [
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 14.1
+      },
+      {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 15.4
+      },
+      {
+        "code": "vlaktevanderaan",
+        "naam": "Vlakte van de Raan",
+        "km": 21.7
+      },
+      {
+        "code": "brouwersdam.brouwershavensegat.2",
+        "naam": "Brouwersdam Brouwershavense Gat 2",
+        "km": 22.1
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 22.6
+      },
+      {
+        "code": "cadzand.1",
+        "naam": "Cadzand, 1",
+        "km": 23.5
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 24.7
+      },
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 27.1
+      }
+    ]
+  },
+  "callantsoog": {
+    "golf": [
+      {
+        "code": "petten.meetraai2",
+        "naam": "Petten, meetraai 02",
+        "km": 7.9
+      },
+      {
+        "code": "petten.meetraai3",
+        "naam": "Petten, meetraai 03",
+        "km": 8
+      },
+      {
+        "code": "petten.meetraai16",
+        "naam": "Petten, meetraai 16",
+        "km": 8.1
+      },
+      {
+        "code": "petten.meetraai18",
+        "naam": "Petten, meetraai 18",
+        "km": 8.1
+      },
+      {
+        "code": "petten.meetraai17",
+        "naam": "Petten, meetraai 17",
+        "km": 8.1
+      },
+      {
+        "code": "petten.meetraai611",
+        "naam": "Petten, meetraai 611",
+        "km": 8.1
+      },
+      {
+        "code": "petten.meetraai675",
+        "naam": "Petten, meetraai 675",
+        "km": 8.1
+      },
+      {
+        "code": "petten.meetraai6",
+        "naam": "Petten, meetraai 06",
+        "km": 8.1
+      }
+    ],
+    "wind": [
+      {
+        "code": "denhelder.dekooy",
+        "naam": "Den Helder, De Kooy",
+        "km": 11.1
+      },
+      {
+        "code": "texel.hors",
+        "naam": "Texelhors",
+        "km": 17.3
+      },
+      {
+        "code": "berkhout",
+        "naam": "Berkhout",
+        "km": 28.6
+      },
+      {
+        "code": "hollandsekust.noord.alpha",
+        "naam": "Hollandse Kust Noord Alpha",
+        "km": 31.2
+      },
+      {
+        "code": "wijdenes",
+        "naam": "Wijdenes",
+        "km": 39
+      }
+    ]
+  },
+  "burgh-haamstede": {
+    "golf": [
+      {
+        "code": "krabbengat",
+        "naam": "Krabbengat",
+        "km": 4.1
+      },
+      {
+        "code": "oosterscheldekering.hammen",
+        "naam": "Oosterscheldekering buiten, Hammen",
+        "km": 4.6
+      },
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 5.7
+      },
+      {
+        "code": "oosterscheldekering.schaar",
+        "naam": "Oosterscheldekering buiten, Schaar",
+        "km": 6
+      },
+      {
+        "code": "roggenplaat",
+        "naam": "Roggenplaat",
+        "km": 8.4
+      },
+      {
+        "code": "oosterschelde.roompotsluis.buiten",
+        "naam": "Oosterschelde Roompotsluis buiten",
+        "km": 9.8
+      },
+      {
+        "code": "oosterschelde.9",
+        "naam": "Oosterschelde, 09",
+        "km": 9.8
+      },
+      {
+        "code": "oosterschelde.12",
+        "naam": "Oosterschelde, 12",
+        "km": 10.2
+      }
+    ],
+    "wind": [
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 5.7
+      },
+      {
+        "code": "brouwersdam.brouwershavensegat.2",
+        "naam": "Brouwersdam Brouwershavense Gat 2",
+        "km": 10.7
+      },
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 14.9
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 19.3
+      },
+      {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 21.7
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 21.9
+      },
+      {
+        "code": "bruinisse.grevelingensluis",
+        "naam": "Bruinisse Grevelingensluis",
+        "km": 25.1
+      },
+      {
+        "code": "goeree.lichteiland",
+        "naam": "Goeree, lichteiland",
+        "km": 25.4
+      }
+    ]
+  },
+  "vrouwenpolder": {
+    "golf": [
+      {
+        "code": "oosterscheldekering.roompot",
+        "naam": "Oosterscheldekering buiten Roompot",
+        "km": 5
+      },
+      {
+        "code": "oosterschelde.roompotsluis.buiten",
+        "naam": "Oosterschelde Roompotsluis buiten",
+        "km": 5.7
+      },
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 9.2
+      },
+      {
+        "code": "oosterscheldekering.schaar",
+        "naam": "Oosterscheldekering buiten, Schaar",
+        "km": 9.4
+      },
+      {
+        "code": "oosterscheldekering.hammen",
+        "naam": "Oosterscheldekering buiten, Hammen",
+        "km": 10.6
+      },
+      {
+        "code": "oosterschelde.11",
+        "naam": "Oosterschelde, 11",
+        "km": 10.9
+      },
+      {
+        "code": "roggenplaat",
+        "naam": "Roggenplaat",
+        "km": 14.5
+      },
+      {
+        "code": "domburgerrassen",
+        "naam": "Domburger Rassen",
+        "km": 15.1
+      }
+    ],
+    "wind": [
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 9.2
+      },
+      {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 16.5
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 17.8
+      },
+      {
+        "code": "brouwersdam.brouwershavensegat.2",
+        "naam": "Brouwersdam Brouwershavense Gat 2",
+        "km": 19.6
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 20.1
+      },
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 21.5
+      },
+      {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 27.1
+      },
+      {
+        "code": "vlaktevanderaan",
+        "naam": "Vlakte van de Raan",
+        "km": 27.3
+      }
+    ]
+  },
+  "dishoek": {
+    "golf": [
+      {
+        "code": "wielingen.noord",
+        "naam": "Wielingen, noord",
+        "km": 8.8
+      },
+      {
+        "code": "vlissingen.honte",
+        "naam": "Vlissingen Honte",
+        "km": 12.6
+      },
+      {
+        "code": "honte.kaloot",
+        "naam": "Honte, Kaloot",
+        "km": 14
+      },
+      {
+        "code": "cadzand.1",
+        "naam": "Cadzand, 1",
+        "km": 14.3
+      },
+      {
+        "code": "cadzand.2",
+        "naam": "Cadzand, 2",
+        "km": 14.8
+      },
+      {
+        "code": "vaarwaterlangshoofdplaat",
+        "naam": "Vaarwater langs Hoofdplaat",
+        "km": 15.1
+      },
+      {
+        "code": "vaarwaterlangshoofdplaat.4",
+        "naam": "Vaarwater langs Hoofdplaat, punt 04",
+        "km": 15.4
+      },
+      {
+        "code": "domburgerrassen",
+        "naam": "Domburger Rassen",
+        "km": 18.1
+      }
+    ],
+    "wind": [
+      {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 6.6
+      },
+      {
+        "code": "cadzand.1",
+        "naam": "Cadzand, 1",
+        "km": 14.3
+      },
+      {
+        "code": "vlaktevanderaan",
+        "naam": "Vlakte van de Raan",
+        "km": 19.6
+      },
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 23.2
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 24.5
+      },
+      {
+        "code": "terneuzen.westsluis",
+        "naam": "Terneuzen, westsluis",
+        "km": 25.6
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 25.6
+      },
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 32.2
+      }
+    ]
+  },
+  "nieuwvliet": {
+    "golf": [
+      {
+        "code": "cadzand.2",
+        "naam": "Cadzand, 2",
+        "km": 5.5
+      },
+      {
+        "code": "cadzand.1",
+        "naam": "Cadzand, 1",
+        "km": 6
+      },
+      {
+        "code": "wielingen.noord",
+        "naam": "Wielingen, noord",
+        "km": 6.2
+      },
+      {
+        "code": "vaarwaterlangshoofdplaat",
+        "naam": "Vaarwater langs Hoofdplaat",
+        "km": 15.1
+      },
+      {
+        "code": "vaarwaterlangshoofdplaat.4",
+        "naam": "Vaarwater langs Hoofdplaat, punt 04",
+        "km": 15.1
+      },
+      {
+        "code": "vlissingen.honte",
+        "naam": "Vlissingen Honte",
+        "km": 17.5
+      },
+      {
+        "code": "honte.kaloot",
+        "naam": "Honte, Kaloot",
+        "km": 18.3
+      },
+      {
+        "code": "vlaktevanderaan.deurloo",
+        "naam": "Vlakte van de Raan Deurloo",
+        "km": 19.9
+      }
+    ],
+    "wind": [
+      {
+        "code": "cadzand.1",
+        "naam": "Cadzand, 1",
+        "km": 6
+      },
+      {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 12
+      },
+      {
+        "code": "vlaktevanderaan",
+        "naam": "Vlakte van de Raan",
+        "km": 19.9
+      },
+      {
+        "code": "terneuzen.westsluis",
+        "naam": "Terneuzen, westsluis",
+        "km": 25.5
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 33.2
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 33.7
+      },
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 34.5
+      },
+      {
+        "code": "hansweert",
+        "naam": "Hansweert",
+        "km": 38.3
+      }
+    ]
+  },
+  "kamperland": {
+    "golf": [
+      {
+        "code": "oosterscheldekering.roompot",
+        "naam": "Oosterscheldekering buiten Roompot",
+        "km": 4.1
+      },
+      {
+        "code": "oosterschelde.roompotsluis.buiten",
+        "naam": "Oosterschelde Roompotsluis buiten",
+        "km": 5.1
+      },
+      {
+        "code": "oosterscheldekering.schaar",
+        "naam": "Oosterscheldekering buiten, Schaar",
+        "km": 8.1
+      },
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 8.9
+      },
+      {
+        "code": "oosterscheldekering.hammen",
+        "naam": "Oosterscheldekering buiten, Hammen",
+        "km": 9.5
+      },
+      {
+        "code": "roggenplaat",
+        "naam": "Roggenplaat",
+        "km": 10.3
+      },
+      {
+        "code": "vlissingen.honte",
+        "naam": "Vlissingen Honte",
+        "km": 15.4
+      },
+      {
+        "code": "honte.kaloot",
+        "naam": "Honte, Kaloot",
+        "km": 16.4
+      }
+    ],
+    "wind": [
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 8.9
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 11.5
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 13.8
+      },
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 16.2
+      },
+      {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 16.3
+      },
+      {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 21.2
+      },
+      {
+        "code": "brouwersdam.brouwershavensegat.2",
+        "naam": "Brouwersdam Brouwershavense Gat 2",
+        "km": 22
+      },
+      {
+        "code": "hansweert",
+        "naam": "Hansweert",
+        "km": 25.1
+      }
+    ]
+  },
+  "westenschouwen": {
+    "golf": [
+      {
+        "code": "oosterscheldekering.hammen",
+        "naam": "Oosterscheldekering buiten, Hammen",
+        "km": 1.8
+      },
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 1.9
+      },
+      {
+        "code": "oosterscheldekering.schaar",
+        "naam": "Oosterscheldekering buiten, Schaar",
+        "km": 2.8
+      },
+      {
+        "code": "oosterschelde.roompotsluis.buiten",
+        "naam": "Oosterschelde Roompotsluis buiten",
+        "km": 6.1
+      },
+      {
+        "code": "oosterscheldekering.roompot",
+        "naam": "Oosterscheldekering buiten Roompot",
+        "km": 7.2
+      },
+      {
+        "code": "roggenplaat",
+        "naam": "Roggenplaat",
+        "km": 8.3
+      },
+      {
+        "code": "brouwersdam.brouwershavensegat.2",
+        "naam": "Brouwersdam Brouwershavense Gat 2",
+        "km": 11.8
+      },
+      {
+        "code": "oosterschelde.11",
+        "naam": "Oosterschelde, 11",
+        "km": 15.5
+      }
+    ],
+    "wind": [
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 1.9
+      },
+      {
+        "code": "brouwersdam.brouwershavensegat.2",
+        "naam": "Brouwersdam Brouwershavense Gat 2",
+        "km": 11.8
+      },
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 15.8
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 18
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 20.6
+      },
+      {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 22.5
+      },
+      {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 26.5
+      },
+      {
+        "code": "bruinisse.grevelingensluis",
+        "naam": "Bruinisse Grevelingensluis",
+        "km": 27.3
+      }
+    ]
+  },
+  "brouwersdam": {
+    "golf": [
+      {
+        "code": "roggenplaat",
+        "naam": "Roggenplaat",
+        "km": 13.9
+      },
+      {
+        "code": "oosterscheldekering.hammen",
+        "naam": "Oosterscheldekering buiten, Hammen",
+        "km": 14.7
+      },
+      {
+        "code": "haringvlietsluizen.buiten",
+        "naam": "Haringvlietsluizen, buiten",
+        "km": 15.2
+      },
+      {
+        "code": "oosterscheldekering.schaar",
+        "naam": "Oosterscheldekering buiten, Schaar",
+        "km": 15.9
+      },
+      {
+        "code": "haringvlietmond",
+        "naam": "Haringvlietmond",
+        "km": 16
+      },
+      {
+        "code": "brouwersdam.brouwershavensegat.2",
+        "naam": "Brouwersdam Brouwershavense Gat 2",
+        "km": 16.1
+      },
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 16.1
+      },
+      {
+        "code": "keeten",
+        "naam": "Keeten",
+        "km": 18.6
+      }
+    ],
+    "wind": [
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 15.2
+      },
+      {
+        "code": "brouwersdam.brouwershavensegat.2",
+        "naam": "Brouwersdam Brouwershavense Gat 2",
+        "km": 16.1
+      },
+      {
+        "code": "stellendam.haringvlietsluizen.schuif1",
+        "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+        "km": 16.1
+      },
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 16.1
+      },
+      {
+        "code": "bruinisse.grevelingensluis",
+        "naam": "Bruinisse Grevelingensluis",
+        "km": 19.6
+      },
+      {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 20.7
+      },
+      {
+        "code": "goeree.lichteiland",
+        "naam": "Goeree, lichteiland",
+        "km": 22.4
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 24
+      }
+    ]
+  },
+  "bruinisse": {
+    "golf": [
+      {
+        "code": "stavenisse.keeten",
+        "naam": "Stavenisse, keeten",
+        "km": 8.7
+      },
+      {
+        "code": "keeten",
+        "naam": "Keeten",
+        "km": 10.7
+      },
+      {
+        "code": "haringvlietsluizen.buiten",
+        "naam": "Haringvlietsluizen, buiten",
+        "km": 18.9
+      },
+      {
+        "code": "roggenplaat",
+        "naam": "Roggenplaat",
+        "km": 19.8
+      },
+      {
+        "code": "marollegat",
+        "naam": "Marollegat",
+        "km": 21.5
+      },
+      {
+        "code": "hansweert.2",
+        "naam": "Hansweert, punt 02",
+        "km": 24.8
+      },
+      {
+        "code": "hansweert",
+        "naam": "Hansweert",
+        "km": 24.9
+      }
+    ],
+    "wind": [
+      {
+        "code": "bruinisse.grevelingensluis",
+        "naam": "Bruinisse Grevelingensluis",
+        "km": 0.6
+      },
+      {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 9.4
+      },
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 12.6
+      },
+      {
+        "code": "tholen.bergsediepsluis",
+        "naam": "Tholen Bergsediepsluis",
+        "km": 17.8
+      },
+      {
+        "code": "stellendam.haringvlietsluizen.schuif1",
+        "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+        "km": 19.5
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 20.8
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 20.9
+      },
+      {
+        "code": "marollegat",
+        "naam": "Marollegat",
+        "km": 21.5
+      }
+    ]
+  },
+  "zeelandbrug": {
+    "golf": [
+      {
+        "code": "keeten",
+        "naam": "Keeten",
+        "km": 0.2
+      },
+      {
+        "code": "stavenisse.keeten",
+        "naam": "Stavenisse, keeten",
+        "km": 3.5
+      },
+      {
+        "code": "roggenplaat",
+        "naam": "Roggenplaat",
+        "km": 11.5
+      },
+      {
+        "code": "hansweert.2",
+        "naam": "Hansweert, punt 02",
+        "km": 17.7
+      },
+      {
+        "code": "hansweert",
+        "naam": "Hansweert",
+        "km": 17.9
+      },
+      {
+        "code": "oosterscheldekering.schaar",
+        "naam": "Oosterscheldekering buiten, Schaar",
+        "km": 18.1
+      },
+      {
+        "code": "oosterscheldekering.hammen",
+        "naam": "Oosterscheldekering buiten, Hammen",
+        "km": 18.2
+      },
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 19.6
+      }
+    ],
+    "wind": [
+      {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 2.8
+      },
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 4.2
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 10
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 10.4
+      },
+      {
+        "code": "bruinisse.grevelingensluis",
+        "naam": "Bruinisse Grevelingensluis",
+        "km": 11.3
+      },
+      {
+        "code": "hansweert",
+        "naam": "Hansweert",
+        "km": 17.9
+      },
+      {
+        "code": "tholen.bergsediepsluis",
+        "naam": "Tholen Bergsediepsluis",
+        "km": 17.9
+      },
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 19.6
+      }
+    ]
+  },
+  "colijnsplaat": {
+    "golf": [
+      {
+        "code": "roggenplaat",
+        "naam": "Roggenplaat",
+        "km": 5.2
+      },
+      {
+        "code": "keeten",
+        "naam": "Keeten",
+        "km": 8.1
+      },
+      {
+        "code": "oosterscheldekering.schaar",
+        "naam": "Oosterscheldekering buiten, Schaar",
+        "km": 10.8
+      },
+      {
+        "code": "oosterscheldekering.hammen",
+        "naam": "Oosterscheldekering buiten, Hammen",
+        "km": 11.2
+      },
+      {
+        "code": "stavenisse.keeten",
+        "naam": "Stavenisse, keeten",
+        "km": 11.6
+      },
+      {
+        "code": "oosterschelde.roompotsluis.buiten",
+        "naam": "Oosterschelde Roompotsluis buiten",
+        "km": 11.8
+      },
+      {
+        "code": "oosterscheldekering.roompot",
+        "naam": "Oosterscheldekering buiten Roompot",
+        "km": 11.8
+      },
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 12.3
+      }
+    ],
+    "wind": [
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 5.8
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 6.3
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 8.6
+      },
+      {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 10.8
+      },
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 12.3
+      },
+      {
+        "code": "bruinisse.grevelingensluis",
+        "naam": "Bruinisse Grevelingensluis",
+        "km": 18.6
+      },
+      {
+        "code": "hansweert",
+        "naam": "Hansweert",
+        "km": 20
+      },
+      {
+        "code": "brouwersdam.brouwershavensegat.2",
+        "naam": "Brouwersdam Brouwershavense Gat 2",
+        "km": 24.2
+      }
+    ]
+  },
+  "burghsluis": {
+    "golf": [
+      {
+        "code": "oosterscheldekering.hammen",
+        "naam": "Oosterscheldekering buiten, Hammen",
+        "km": 3.5
+      },
+      {
+        "code": "oosterscheldekering.schaar",
+        "naam": "Oosterscheldekering buiten, Schaar",
+        "km": 4.7
+      },
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 5.1
+      },
+      {
+        "code": "roggenplaat",
+        "naam": "Roggenplaat",
+        "km": 5.8
+      },
+      {
+        "code": "oosterschelde.roompotsluis.buiten",
+        "naam": "Oosterschelde Roompotsluis buiten",
+        "km": 8.5
+      },
+      {
+        "code": "oosterscheldekering.roompot",
+        "naam": "Oosterscheldekering buiten Roompot",
+        "km": 9.6
+      },
+      {
+        "code": "brouwersdam.brouwershavensegat.2",
+        "naam": "Brouwersdam Brouwershavense Gat 2",
+        "km": 13.3
+      },
+      {
+        "code": "keeten",
+        "naam": "Keeten",
+        "km": 16.6
+      }
+    ],
+    "wind": [
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 5.1
+      },
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 12.6
+      },
+      {
+        "code": "brouwersdam.brouwershavensegat.2",
+        "naam": "Brouwersdam Brouwershavense Gat 2",
+        "km": 13.3
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 16.8
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 19.3
+      },
+      {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 19.5
+      },
+      {
+        "code": "bruinisse.grevelingensluis",
+        "naam": "Bruinisse Grevelingensluis",
+        "km": 23.5
+      },
+      {
+        "code": "stellendam.haringvlietsluizen.schuif1",
+        "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+        "km": 26.9
+      }
+    ]
+  },
+  "borssele": {
+    "golf": [
+      {
+        "code": "honte.kaloot",
+        "naam": "Honte, Kaloot",
+        "km": 2.3
+      },
+      {
+        "code": "vlissingen.honte",
+        "naam": "Vlissingen Honte",
+        "km": 3.8
+      },
+      {
+        "code": "vaarwaterlangshoofdplaat",
+        "naam": "Vaarwater langs Hoofdplaat",
+        "km": 6
+      },
+      {
+        "code": "pasvanterneuzen",
+        "naam": "Pas van Terneuzen",
+        "km": 6.1
+      },
+      {
+        "code": "vaarwaterlangshoofdplaat.4",
+        "naam": "Vaarwater langs Hoofdplaat, punt 04",
+        "km": 6.2
+      },
+      {
+        "code": "terneuzen.pasvanterneuzen.1",
+        "naam": "Terneuzen Pas van Terneuzen boei",
+        "km": 6.4
+      },
+      {
+        "code": "pasvanterneuzen.nabijboei18",
+        "naam": "Pas van Terneuzen, nabij boei 18",
+        "km": 8.7
+      },
+      {
+        "code": "hansweert.2overloop",
+        "naam": "Hansweert, 2 overloop",
+        "km": 13.4
+      }
+    ],
+    "wind": [
+      {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 9.8
+      },
+      {
+        "code": "terneuzen.westsluis",
+        "naam": "Terneuzen, westsluis",
+        "km": 10.3
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 16.1
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 16.7
+      },
+      {
+        "code": "hansweert",
+        "naam": "Hansweert",
+        "km": 18.5
+      },
+      {
+        "code": "cadzand.1",
+        "naam": "Cadzand, 1",
+        "km": 25.6
+      },
+      {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 26.9
+      },
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 26.9
+      }
+    ]
+  },
+  "walsoorden": {
+    "golf": [
+      {
+        "code": "nieuwnamen.overloopvanvalkenisse",
+        "naam": "Nieuwnamen Overloop van Valkenisse",
+        "km": 7.1
+      },
+      {
+        "code": "valkenisse.overloop.nabijboei65a",
+        "naam": "Valkenisse, overloop, nabij boei 65A",
+        "km": 7.2
+      },
+      {
+        "code": "hansweert",
+        "naam": "Hansweert",
+        "km": 7.8
+      },
+      {
+        "code": "hansweert.2",
+        "naam": "Hansweert, punt 02",
+        "km": 7.9
+      },
+      {
+        "code": "griete",
+        "naam": "Griete",
+        "km": 8
+      },
+      {
+        "code": "hansweert.2overloop",
+        "naam": "Hansweert, 2 overloop",
+        "km": 8.2
+      },
+      {
+        "code": "rilland.bath",
+        "naam": "Rilland, Bath",
+        "km": 12.3
+      },
+      {
+        "code": "bath.2",
+        "naam": "Bath, punt 02",
+        "km": 12.3
+      }
+    ],
+    "wind": [
+      {
+        "code": "hansweert",
+        "naam": "Hansweert",
+        "km": 7.8
+      },
+      {
+        "code": "marollegat",
+        "naam": "Marollegat",
+        "km": 15.5
+      },
+      {
+        "code": "terneuzen.westsluis",
+        "naam": "Terneuzen, westsluis",
+        "km": 16
+      },
+      {
+        "code": "tholen.bergsediepsluis",
+        "naam": "Tholen Bergsediepsluis",
+        "km": 17.4
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 19.3
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 21.9
+      },
+      {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 24.3
+      },
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 28.8
+      }
+    ]
+  },
+  "goese-sas": {
+    "golf": [
+      {
+        "code": "keeten",
+        "naam": "Keeten",
+        "km": 8.1
+      },
+      {
+        "code": "stavenisse.keeten",
+        "naam": "Stavenisse, keeten",
+        "km": 9.2
+      },
+      {
+        "code": "hansweert.2",
+        "naam": "Hansweert, punt 02",
+        "km": 11.2
+      },
+      {
+        "code": "hansweert",
+        "naam": "Hansweert",
+        "km": 11.3
+      },
+      {
+        "code": "roggenplaat",
+        "naam": "Roggenplaat",
+        "km": 14
+      },
+      {
+        "code": "hansweert.2overloop",
+        "naam": "Hansweert, 2 overloop",
+        "km": 18.1
+      },
+      {
+        "code": "griete",
+        "naam": "Griete",
+        "km": 18.4
+      },
+      {
+        "code": "oosterscheldekering.roompot",
+        "naam": "Oosterscheldekering buiten Roompot",
+        "km": 19
+      }
+    ],
+    "wind": [
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 3.3
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 4.8
+      },
+      {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 8.5
+      },
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 10.1
+      },
+      {
+        "code": "hansweert",
+        "naam": "Hansweert",
+        "km": 11.3
+      },
+      {
+        "code": "tholen.bergsediepsluis",
+        "naam": "Tholen Bergsediepsluis",
+        "km": 17.3
+      },
+      {
+        "code": "bruinisse.grevelingensluis",
+        "naam": "Bruinisse Grevelingensluis",
+        "km": 18.4
+      },
+      {
+        "code": "marollegat",
+        "naam": "Marollegat",
+        "km": 19.5
+      }
+    ]
+  },
+  "sint-annaland": {
+    "golf": [
+      {
+        "code": "stavenisse.keeten",
+        "naam": "Stavenisse, keeten",
+        "km": 6.6
+      },
+      {
+        "code": "keeten",
+        "naam": "Keeten",
+        "km": 10
+      },
+      {
+        "code": "marollegat",
+        "naam": "Marollegat",
+        "km": 15.5
+      },
+      {
+        "code": "hansweert.2",
+        "naam": "Hansweert, punt 02",
+        "km": 19.5
+      },
+      {
+        "code": "hansweert",
+        "naam": "Hansweert",
+        "km": 19.7
+      },
+      {
+        "code": "roggenplaat",
+        "naam": "Roggenplaat",
+        "km": 21.2
+      },
+      {
+        "code": "bath.2",
+        "naam": "Bath, punt 02",
+        "km": 24.2
+      },
+      {
+        "code": "rilland.bath",
+        "naam": "Rilland, Bath",
+        "km": 24.3
+      }
+    ],
+    "wind": [
+      {
+        "code": "bruinisse.grevelingensluis",
+        "naam": "Bruinisse Grevelingensluis",
+        "km": 6.6
+      },
+      {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 7.4
+      },
+      {
+        "code": "tholen.bergsediepsluis",
+        "naam": "Tholen Bergsediepsluis",
+        "km": 11.7
+      },
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 13.5
+      },
+      {
+        "code": "marollegat",
+        "naam": "Marollegat",
+        "km": 15.5
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 18.1
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 18.7
+      },
+      {
+        "code": "hansweert",
+        "naam": "Hansweert",
+        "km": 19.7
+      }
+    ]
+  },
+  "bergse-diepsluis": {
+    "golf": [
+      {
+        "code": "marollegat",
+        "naam": "Marollegat",
+        "km": 3.4
+      },
+      {
+        "code": "bath.2",
+        "naam": "Bath, punt 02",
+        "km": 11.9
+      },
+      {
+        "code": "rilland.bath",
+        "naam": "Rilland, Bath",
+        "km": 12
+      },
+      {
+        "code": "valkenisse.overloop.nabijboei65a",
+        "naam": "Valkenisse, overloop, nabij boei 65A",
+        "km": 16
+      },
+      {
+        "code": "nieuwnamen.overloopvanvalkenisse",
+        "naam": "Nieuwnamen Overloop van Valkenisse",
+        "km": 16.1
+      },
+      {
+        "code": "hansweert.2",
+        "naam": "Hansweert, punt 02",
+        "km": 16.2
+      },
+      {
+        "code": "hansweert",
+        "naam": "Hansweert",
+        "km": 16.3
+      },
+      {
+        "code": "stavenisse.keeten",
+        "naam": "Stavenisse, keeten",
+        "km": 17.1
+      }
+    ],
+    "wind": [
+      {
+        "code": "tholen.bergsediepsluis",
+        "naam": "Tholen Bergsediepsluis",
+        "km": 2.7
+      },
+      {
+        "code": "marollegat",
+        "naam": "Marollegat",
+        "km": 3.4
+      },
+      {
+        "code": "hansweert",
+        "naam": "Hansweert",
+        "km": 16.3
+      },
+      {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 17.6
+      },
+      {
+        "code": "bruinisse.grevelingensluis",
+        "naam": "Bruinisse Grevelingensluis",
+        "km": 19.5
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 22.8
+      },
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 24.4
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 24.7
+      }
+    ]
+  },
+  "tholen": {
+    "golf": [
+      {
+        "code": "marollegat",
+        "naam": "Marollegat",
+        "km": 6.3
+      },
+      {
+        "code": "bath.2",
+        "naam": "Bath, punt 02",
+        "km": 14.8
+      },
+      {
+        "code": "rilland.bath",
+        "naam": "Rilland, Bath",
+        "km": 14.9
+      },
+      {
+        "code": "stavenisse.keeten",
+        "naam": "Stavenisse, keeten",
+        "km": 15.7
+      },
+      {
+        "code": "hansweert.2",
+        "naam": "Hansweert, punt 02",
+        "km": 17.7
+      },
+      {
+        "code": "hansweert",
+        "naam": "Hansweert",
+        "km": 17.9
+      },
+      {
+        "code": "valkenisse.overloop.nabijboei65a",
+        "naam": "Valkenisse, overloop, nabij boei 65A",
+        "km": 18.9
+      },
+      {
+        "code": "nieuwnamen.overloopvanvalkenisse",
+        "naam": "Nieuwnamen Overloop van Valkenisse",
+        "km": 18.9
+      }
+    ],
+    "wind": [
+      {
+        "code": "tholen.bergsediepsluis",
+        "naam": "Tholen Bergsediepsluis",
+        "km": 3.8
+      },
+      {
+        "code": "marollegat",
+        "naam": "Marollegat",
+        "km": 6.3
+      },
+      {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 16.3
+      },
+      {
+        "code": "bruinisse.grevelingensluis",
+        "naam": "Bruinisse Grevelingensluis",
+        "km": 17
+      },
+      {
+        "code": "hansweert",
+        "naam": "Hansweert",
+        "km": 17.9
+      },
+      {
+        "code": "wilhelminadorp",
+        "naam": "Wilhelminadorp",
+        "km": 22.9
+      },
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 23.1
+      },
+      {
+        "code": "kats.zandkreeksluis.buiten",
+        "naam": "Kats Zandkreeksluis buiten",
+        "km": 24.6
+      }
+    ]
+  },
+  "kijkduin": {
+    "golf": [
+      {
+        "code": "zandmotor.boei.zuid",
+        "naam": "Zandmotor, boei, zuid",
+        "km": 1.7
+      },
+      {
+        "code": "zandmoter.boei.noord",
+        "naam": "Zandmoter, boei, noord",
+        "km": 4.6
+      },
+      {
+        "code": "hoekvanholland.maeslantkering.beneden.noord",
+        "naam": "Hoek van Holland, Maeslantkering, Beneden, noord",
+        "km": 12.8
+      },
+      {
+        "code": "maasmond.stroommeetpaal",
+        "naam": "Maasmond, stroommeetpaal",
+        "km": 16.7
+      },
+      {
+        "code": "maasgeul.2",
+        "naam": "Maasgeul 2",
+        "km": 16.8
+      },
+      {
+        "code": "hollandsekust.zuid.alpha",
+        "naam": "Hollandse Kust Zuid platform Alpha",
+        "km": 18.4
+      },
+      {
+        "code": "hollandsekust.zuid.windparkzuid",
+        "naam": "Hollandse Kust, Zuid Windpark Zuid",
+        "km": 21.6
+      },
+      {
+        "code": "noordwijk.meetpost",
+        "naam": "Noordwijk, meetpost",
+        "km": 23.4
+      }
+    ],
+    "wind": [
+      {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 12.2
+      },
+      {
+        "code": "hoekvanholland.maeslantkering",
+        "naam": "Hoek van Holland Maeslantkering",
+        "km": 13.3
+      },
+      {
+        "code": "hoekvanholland.lagelicht",
+        "naam": "Hoek van Holland, lage licht",
+        "km": 13.4
+      },
+      {
+        "code": "hollandsekust.zuid.alpha.1",
+        "naam": "Hollandse Kust Zuid platform Alpha 1",
+        "km": 18.4
+      },
+      {
+        "code": "hollandsekust.zuid.alpha.2",
+        "naam": "Hollandse Kust Zuid platform Alpha 2",
+        "km": 18.4
+      },
+      {
+        "code": "rotterdam.luchthaven",
+        "naam": "Rotterdam, luchthaven",
+        "km": 20.6
+      },
+      {
+        "code": "botlek.geulhaven",
+        "naam": "Botlek Geulhaven",
+        "km": 20.6
+      },
+      {
+        "code": "stellendam.haringvlietsluizen.schuif1",
+        "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+        "km": 28.1
+      }
+    ]
+  },
+  "monster": {
+    "golf": [
+      {
+        "code": "zandmoter.boei.noord",
+        "naam": "Zandmoter, boei, noord",
+        "km": 2.3
+      },
+      {
+        "code": "zandmotor.boei.zuid",
+        "naam": "Zandmotor, boei, zuid",
+        "km": 5.6
+      },
+      {
+        "code": "hoekvanholland.maeslantkering.beneden.noord",
+        "naam": "Hoek van Holland, Maeslantkering, Beneden, noord",
+        "km": 7.6
+      },
+      {
+        "code": "maasmond.stroommeetpaal",
+        "naam": "Maasmond, stroommeetpaal",
+        "km": 11.1
+      },
+      {
+        "code": "maasgeul.2",
+        "naam": "Maasgeul 2",
+        "km": 11.3
+      },
+      {
+        "code": "haringvlietmond",
+        "naam": "Haringvlietmond",
+        "km": 21.3
+      },
+      {
+        "code": "hollandsekust.zuid.alpha",
+        "naam": "Hollandse Kust Zuid platform Alpha",
+        "km": 23
+      },
+      {
+        "code": "haringvlietsluizen.buiten",
+        "naam": "Haringvlietsluizen, buiten",
+        "km": 23.4
+      }
+    ],
+    "wind": [
+      {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 6.2
+      },
+      {
+        "code": "hoekvanholland.lagelicht",
+        "naam": "Hoek van Holland, lage licht",
+        "km": 7.4
+      },
+      {
+        "code": "hoekvanholland.maeslantkering",
+        "naam": "Hoek van Holland Maeslantkering",
+        "km": 8.1
+      },
+      {
+        "code": "botlek.geulhaven",
+        "naam": "Botlek Geulhaven",
+        "km": 18.3
+      },
+      {
+        "code": "rotterdam.luchthaven",
+        "naam": "Rotterdam, luchthaven",
+        "km": 21.6
+      },
+      {
+        "code": "stellendam.haringvlietsluizen.schuif1",
+        "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+        "km": 22.4
+      },
+      {
+        "code": "hollandsekust.zuid.alpha.1",
+        "naam": "Hollandse Kust Zuid platform Alpha 1",
+        "km": 23
+      },
+      {
+        "code": "hollandsekust.zuid.alpha.2",
+        "naam": "Hollandse Kust Zuid platform Alpha 2",
+        "km": 23
+      }
+    ]
+  },
+  "rockanje": {
+    "golf": [
+      {
+        "code": "haringvlietsluizen.buiten",
+        "naam": "Haringvlietsluizen, buiten",
+        "km": 5.2
+      },
+      {
+        "code": "haringvlietmond",
+        "naam": "Haringvlietmond",
+        "km": 7
+      },
+      {
+        "code": "hoekvanholland.maeslantkering.beneden.noord",
+        "naam": "Hoek van Holland, Maeslantkering, Beneden, noord",
+        "km": 12.9
+      },
+      {
+        "code": "maasmond.stroommeetpaal",
+        "naam": "Maasmond, stroommeetpaal",
+        "km": 13.1
+      },
+      {
+        "code": "maasgeul.2",
+        "naam": "Maasgeul 2",
+        "km": 13.3
+      },
+      {
+        "code": "zandmoter.boei.noord",
+        "naam": "Zandmoter, boei, noord",
+        "km": 21.2
+      },
+      {
+        "code": "zandmotor.boei.zuid",
+        "naam": "Zandmotor, boei, zuid",
+        "km": 24.7
+      },
+      {
+        "code": "eurogeul.e13",
+        "naam": "Eurogeul, E13",
+        "km": 24.8
+      }
+    ],
+    "wind": [
+      {
+        "code": "stellendam.haringvlietsluizen.schuif1",
+        "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+        "km": 4.6
+      },
+      {
+        "code": "hoekvanholland.lagelicht",
+        "naam": "Hoek van Holland, lage licht",
+        "km": 12.3
+      },
+      {
+        "code": "hoekvanholland.maeslantkering",
+        "naam": "Hoek van Holland Maeslantkering",
+        "km": 12.5
+      },
+      {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 12.9
+      },
+      {
+        "code": "botlek.geulhaven",
+        "naam": "Botlek Geulhaven",
+        "km": 19.5
+      },
+      {
+        "code": "bruinisse.grevelingensluis",
+        "naam": "Bruinisse Grevelingensluis",
+        "km": 23.6
+      },
+      {
+        "code": "goeree.lichteiland",
+        "naam": "Goeree, lichteiland",
+        "km": 25.4
+      },
+      {
+        "code": "zierikzee.zeelandbrug",
+        "naam": "Zierikzee Zeelandbrug",
+        "km": 28.5
+      }
+    ]
+  },
+  "europoort": {
+    "golf": [
+      {
+        "code": "hoekvanholland.maeslantkering.beneden.noord",
+        "naam": "Hoek van Holland, Maeslantkering, Beneden, noord",
+        "km": 2
+      },
+      {
+        "code": "maasmond.stroommeetpaal",
+        "naam": "Maasmond, stroommeetpaal",
+        "km": 9.9
+      },
+      {
+        "code": "maasgeul.2",
+        "naam": "Maasgeul 2",
+        "km": 10.3
+      },
+      {
+        "code": "zandmoter.boei.noord",
+        "naam": "Zandmoter, boei, noord",
+        "km": 11
+      },
+      {
+        "code": "zandmotor.boei.zuid",
+        "naam": "Zandmotor, boei, zuid",
+        "km": 14.2
+      },
+      {
+        "code": "haringvlietsluizen.buiten",
+        "naam": "Haringvlietsluizen, buiten",
+        "km": 14.8
+      },
+      {
+        "code": "haringvlietmond",
+        "naam": "Haringvlietmond",
+        "km": 15.1
+      }
+    ],
+    "wind": [
+      {
+        "code": "hoekvanholland.maeslantkering",
+        "naam": "Hoek van Holland Maeslantkering",
+        "km": 1.8
+      },
+      {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 3.2
+      },
+      {
+        "code": "hoekvanholland.lagelicht",
+        "naam": "Hoek van Holland, lage licht",
+        "km": 5.1
+      },
+      {
+        "code": "botlek.geulhaven",
+        "naam": "Botlek Geulhaven",
+        "km": 13.8
+      },
+      {
+        "code": "stellendam.haringvlietsluizen.schuif1",
+        "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+        "km": 13.8
+      },
+      {
+        "code": "rotterdam.luchthaven",
+        "naam": "Rotterdam, luchthaven",
+        "km": 21.5
+      },
+      {
+        "code": "bruinisse.grevelingensluis",
+        "naam": "Bruinisse Grevelingensluis",
+        "km": 31.6
+      },
+      {
+        "code": "hollandsekust.zuid.alpha.1",
+        "naam": "Hollandse Kust Zuid platform Alpha 1",
+        "km": 31.7
+      }
+    ]
+  },
+  "maassluis": {
+    "golf": [
+      {
+        "code": "hoekvanholland.maeslantkering.beneden.noord",
+        "naam": "Hoek van Holland, Maeslantkering, Beneden, noord",
+        "km": 7.5
+      },
+      {
+        "code": "zandmoter.boei.noord",
+        "naam": "Zandmoter, boei, noord",
+        "km": 15.8
+      },
+      {
+        "code": "haringvlietsluizen.buiten",
+        "naam": "Haringvlietsluizen, buiten",
+        "km": 17.2
+      },
+      {
+        "code": "zandmotor.boei.zuid",
+        "naam": "Zandmotor, boei, zuid",
+        "km": 17.6
+      },
+      {
+        "code": "maasmond.stroommeetpaal",
+        "naam": "Maasmond, stroommeetpaal",
+        "km": 18.5
+      },
+      {
+        "code": "maasgeul.2",
+        "naam": "Maasgeul 2",
+        "km": 18.9
+      },
+      {
+        "code": "haringvlietmond",
+        "naam": "Haringvlietmond",
+        "km": 21.9
+      }
+    ],
+    "wind": [
+      {
+        "code": "botlek.geulhaven",
+        "naam": "Botlek Geulhaven",
+        "km": 5.2
+      },
+      {
+        "code": "hoekvanholland.maeslantkering",
+        "naam": "Hoek van Holland Maeslantkering",
+        "km": 7.4
+      },
+      {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 11.1
+      },
+      {
+        "code": "hoekvanholland.lagelicht",
+        "naam": "Hoek van Holland, lage licht",
+        "km": 13.5
+      },
+      {
+        "code": "rotterdam.luchthaven",
+        "naam": "Rotterdam, luchthaven",
+        "km": 14.1
+      },
+      {
+        "code": "stellendam.haringvlietsluizen.schuif1",
+        "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+        "km": 16.2
+      },
+      {
+        "code": "bruinisse.grevelingensluis",
+        "naam": "Bruinisse Grevelingensluis",
+        "km": 29.9
+      },
+      {
+        "code": "hollandsekust.zuid.alpha.1",
+        "naam": "Hollandse Kust Zuid platform Alpha 1",
+        "km": 35.2
+      }
+    ]
+  },
+  "krimpen-aan-den-ijssel": {
+    "golf": [],
+    "wind": [
+      {
+        "code": "rotterdam.luchthaven",
+        "naam": "Rotterdam, luchthaven",
+        "km": 10.6
+      },
+      {
+        "code": "botlek.geulhaven",
+        "naam": "Botlek Geulhaven",
+        "km": 19.6
+      },
+      {
+        "code": "hoekvanholland.maeslantkering",
+        "naam": "Hoek van Holland Maeslantkering",
+        "km": 30.1
+      },
+      {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 33.2
+      },
+      {
+        "code": "hoekvanholland.lagelicht",
+        "naam": "Hoek van Holland, lage licht",
+        "km": 35.9
+      },
+      {
+        "code": "stellendam.haringvlietsluizen.schuif1",
+        "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+        "km": 38.2
+      }
+    ]
+  },
+  "bergen-aan-zee": {
+    "golf": [
+      {
+        "code": "hollandsekust.noord.deelgebied",
+        "naam": "Hollandse kust, noord , deelgebied",
+        "km": 10.7
+      },
+      {
+        "code": "petten.meetraai11",
+        "naam": "Petten, meetraai 11",
+        "km": 12.4
+      },
+      {
+        "code": "petten.meetraai8",
+        "naam": "Petten, meetraai 08",
+        "km": 12.4
+      },
+      {
+        "code": "petten.meetraai7",
+        "naam": "Petten, meetraai 07",
+        "km": 12.5
+      },
+      {
+        "code": "petten.meetraai67",
+        "naam": "Petten, meetraai 67",
+        "km": 12.5
+      },
+      {
+        "code": "petten.meetraai675",
+        "naam": "Petten, meetraai 675",
+        "km": 12.5
+      },
+      {
+        "code": "petten.meetraai6",
+        "naam": "Petten, meetraai 06",
+        "km": 12.5
+      },
+      {
+        "code": "petten.meetraai611",
+        "naam": "Petten, meetraai 611",
+        "km": 12.5
+      }
+    ],
+    "wind": [
+      {
+        "code": "ijmuiden.buitenhaven",
+        "naam": "IJmuiden, buitenhaven",
+        "km": 22.5
+      },
+      {
+        "code": "ijmuiden.havenhoofd.zuid",
+        "naam": "IJmuiden, havenhoofd, zuid",
+        "km": 22.8
+      },
+      {
+        "code": "hollandsekust.noord.alpha",
+        "naam": "Hollandse Kust Noord Alpha",
+        "km": 22.9
+      },
+      {
+        "code": "ijgeul.1",
+        "naam": "IJGeul, 1",
+        "km": 23
+      },
+      {
+        "code": "berkhout",
+        "naam": "Berkhout",
+        "km": 23.9
+      },
+      {
+        "code": "denhelder.dekooy",
+        "naam": "Den Helder, De Kooy",
+        "km": 31.2
+      },
+      {
+        "code": "wijdenes",
+        "naam": "Wijdenes",
+        "km": 36.4
+      },
+      {
+        "code": "texel.hors",
+        "naam": "Texelhors",
+        "km": 37.8
+      }
+    ]
+  },
+  "petten": {
+    "golf": [
+      {
+        "code": "petten.meetraai11",
+        "naam": "Petten, meetraai 11",
+        "km": 0.4
+      },
+      {
+        "code": "petten.meetraai8",
+        "naam": "Petten, meetraai 08",
+        "km": 0.4
+      },
+      {
+        "code": "petten.meetraai7",
+        "naam": "Petten, meetraai 07",
+        "km": 0.5
+      },
+      {
+        "code": "petten.meetraai67",
+        "naam": "Petten, meetraai 67",
+        "km": 0.5
+      },
+      {
+        "code": "petten.meetraai675",
+        "naam": "Petten, meetraai 675",
+        "km": 0.5
+      },
+      {
+        "code": "petten.meetraai6",
+        "naam": "Petten, meetraai 06",
+        "km": 0.5
+      },
+      {
+        "code": "petten.meetraai611",
+        "naam": "Petten, meetraai 611",
+        "km": 0.5
+      },
+      {
+        "code": "petten.meetraai18",
+        "naam": "Petten, meetraai 18",
+        "km": 0.6
+      }
+    ],
+    "wind": [
+      {
+        "code": "denhelder.dekooy",
+        "naam": "Den Helder, De Kooy",
+        "km": 19.4
+      },
+      {
+        "code": "berkhout",
+        "naam": "Berkhout",
+        "km": 25.3
+      },
+      {
+        "code": "texel.hors",
+        "naam": "Texelhors",
+        "km": 25.7
+      },
+      {
+        "code": "hollandsekust.noord.alpha",
+        "naam": "Hollandse Kust Noord Alpha",
+        "km": 25.9
+      },
+      {
+        "code": "ijmuiden.buitenhaven",
+        "naam": "IJmuiden, buitenhaven",
+        "km": 34.5
+      },
+      {
+        "code": "ijmuiden.havenhoofd.zuid",
+        "naam": "IJmuiden, havenhoofd, zuid",
+        "km": 34.8
+      },
+      {
+        "code": "ijgeul.1",
+        "naam": "IJGeul, 1",
+        "km": 35
+      },
+      {
+        "code": "wijdenes",
+        "naam": "Wijdenes",
+        "km": 37.2
+      }
+    ]
+  },
+  "julianadorp": {
+    "golf": [
+      {
+        "code": "denhelder.waddenzee.mondingnieuwehaven",
+        "naam": "Den Helder Waddenzee Monding Nieuwe Haven",
+        "km": 9.7
+      },
+      {
+        "code": "petten.meetraai2",
+        "naam": "Petten, meetraai 02",
+        "km": 13.5
+      },
+      {
+        "code": "denhoorntexel.waddenzee.gatvandestier",
+        "naam": "Den Hoorn Texel Waddenzee Gat van de Stier",
+        "km": 14
+      },
+      {
+        "code": "petten.meetraai3",
+        "naam": "Petten, meetraai 03",
+        "km": 14.2
+      },
+      {
+        "code": "petten.meetraai16",
+        "naam": "Petten, meetraai 16",
+        "km": 14.3
+      },
+      {
+        "code": "petten.meetraai18",
+        "naam": "Petten, meetraai 18",
+        "km": 14.3
+      },
+      {
+        "code": "petten.meetraai17",
+        "naam": "Petten, meetraai 17",
+        "km": 14.3
+      },
+      {
+        "code": "petten.meetraai611",
+        "naam": "Petten, meetraai 611",
+        "km": 14.3
+      }
+    ],
+    "wind": [
+      {
+        "code": "denhelder.dekooy",
+        "naam": "Den Helder, De Kooy",
+        "km": 5.9
+      },
+      {
+        "code": "texel.hors",
+        "naam": "Texelhors",
+        "km": 11.1
+      },
+      {
+        "code": "berkhout",
+        "naam": "Berkhout",
+        "km": 32.8
+      },
+      {
+        "code": "hollandsekust.noord.alpha",
+        "naam": "Hollandse Kust Noord Alpha",
+        "km": 35.7
+      }
+    ]
+  },
+  "den-oever": {
+    "golf": [
+      {
+        "code": "malzwin.boei1",
+        "naam": "Malzwin, boei 1",
+        "km": 8.5
+      },
+      {
+        "code": "oudezeug.ijsselmeer.midden.noord.meetpaal49",
+        "naam": "Oude Zeug, IJsselmeer , midden, noord, meetpaal 49",
+        "km": 8.7
+      },
+      {
+        "code": "oudezeug.ijsselmeer.midden.noord.meetpaal48",
+        "naam": "Oude Zeug, IJsselmeer , midden, noord, meetpaal 48",
+        "km": 8.8
+      },
+      {
+        "code": "oudezeug.ijsselmeer.midden.noord.meetpaal47",
+        "naam": "Oude Zeug, IJsselmeer , midden, noord, meetpaal 47",
+        "km": 12.9
+      },
+      {
+        "code": "breezanddijk.buitenboei1",
+        "naam": "Breezanddijk, buiten boei 1",
+        "km": 13.5
+      },
+      {
+        "code": "denhoorntexel.waddenzee.gatvandestier",
+        "naam": "Den Hoorn Texel Waddenzee Gat van de Stier",
+        "km": 15.6
+      },
+      {
+        "code": "denhelder.waddenzee.mondingnieuwehaven",
+        "naam": "Den Helder Waddenzee Monding Nieuwe Haven",
+        "km": 16.6
+      },
+      {
+        "code": "breesem.boei1",
+        "naam": "Breesem, boei 1",
+        "km": 20.2
+      }
+    ],
+    "wind": [
+      {
+        "code": "denhelder.dekooy",
+        "naam": "Den Helder, De Kooy",
+        "km": 16.7
+      },
+      {
+        "code": "stavoren.ijsselmeer",
+        "naam": "Stavoren IJsselmeer",
+        "km": 21.5
+      },
+      {
+        "code": "texel.hors",
+        "naam": "Texelhors",
+        "km": 22.1
+      },
+      {
+        "code": "berkhout",
+        "naam": "Berkhout",
+        "km": 32
+      },
+      {
+        "code": "wijdenes",
+        "naam": "Wijdenes",
+        "km": 34.8
+      },
+      {
+        "code": "vlieland.west",
+        "naam": "Vlieland, west",
+        "km": 35.8
+      }
+    ]
+  },
+  "oudeschild": {
+    "golf": [
+      {
+        "code": "denhoorntexel.waddenzee.gatvandestier",
+        "naam": "Den Hoorn Texel Waddenzee Gat van de Stier",
+        "km": 4.7
+      },
+      {
+        "code": "malzwin.boei1",
+        "naam": "Malzwin, boei 1",
+        "km": 8.7
+      },
+      {
+        "code": "denhelder.waddenzee.mondingnieuwehaven",
+        "naam": "Den Helder Waddenzee Monding Nieuwe Haven",
+        "km": 8.9
+      },
+      {
+        "code": "breesem.boei1",
+        "naam": "Breesem, boei 1",
+        "km": 15.5
+      },
+      {
+        "code": "breezanddijk.buitenboei1",
+        "naam": "Breezanddijk, buiten boei 1",
+        "km": 22.8
+      }
+    ],
+    "wind": [
+      {
+        "code": "texel.hors",
+        "naam": "Texelhors",
+        "km": 10
+      },
+      {
+        "code": "denhelder.dekooy",
+        "naam": "Den Helder, De Kooy",
+        "km": 13.6
+      },
+      {
+        "code": "vlieland.west",
+        "naam": "Vlieland, west",
+        "km": 23.7
+      },
+      {
+        "code": "stavoren.ijsselmeer",
+        "naam": "Stavoren IJsselmeer",
+        "km": 38.1
+      }
+    ]
+  },
+  "eemshaven": {
+    "golf": [
+      {
+        "code": "eemshaven.doekegat",
+        "naam": "Eemshaven, Doekegat",
+        "km": 1.9
+      },
+      {
+        "code": "eemshaven.waddenzee",
+        "naam": "Eemshaven, Waddenzee",
+        "km": 3
+      },
+      {
+        "code": "uithuizerwad",
+        "naam": "Uithuizerwad",
+        "km": 5.9
+      },
+      {
+        "code": "bochtvanwatum.noord",
+        "naam": "Bocht van Watum, noord",
+        "km": 6.3
+      },
+      {
+        "code": "oudewestereems.zuid",
+        "naam": "Oude Westereems, zuid",
+        "km": 8.3
+      },
+      {
+        "code": "oude.westereems.noord.boei.1",
+        "naam": "Oude Westereems noord boei 1",
+        "km": 12.6
+      },
+      {
+        "code": "oudewestereems.noord.boei",
+        "naam": "Oude Westereems, noord, boei",
+        "km": 12.6
+      },
+      {
+        "code": "bochtvanwatum.zuid",
+        "naam": "Bocht van Watum, zuid",
+        "km": 15.5
+      }
+    ],
+    "wind": [
+      {
+        "code": "eemshaven.waddenzee",
+        "naam": "Eemshaven, Waddenzee",
+        "km": 3
+      },
+      {
+        "code": "uithuizerwad",
+        "naam": "Uithuizerwad",
+        "km": 5.9
+      },
+      {
+        "code": "huibertgat",
+        "naam": "Huibertgat",
+        "km": 32
+      },
+      {
+        "code": "nieuwbeerta",
+        "naam": "Nieuw Beerta",
+        "km": 36.4
+      }
+    ]
+  },
+  "kornwerderzand": {
+    "golf": [
+      {
+        "code": "kornwerderzand.buitenboei3",
+        "naam": "Kornwerderzand, buiten boei 3",
+        "km": 2.7
+      },
+      {
+        "code": "kornwerderzand.buitenboei2",
+        "naam": "Kornwerderzand, buiten boei 2",
+        "km": 3.1
+      },
+      {
+        "code": "kornwerderzand.buitenboei1",
+        "naam": "Kornwerderzand, buiten boei 1",
+        "km": 3.5
+      },
+      {
+        "code": "breezanddijk.buitenboei1",
+        "naam": "Breezanddijk, buiten boei 1",
+        "km": 12
+      },
+      {
+        "code": "oudezeug.ijsselmeer.midden.noord.meetpaal47",
+        "naam": "Oude Zeug, IJsselmeer , midden, noord, meetpaal 47",
+        "km": 19.4
+      },
+      {
+        "code": "breesem.boei1",
+        "naam": "Breesem, boei 1",
+        "km": 20.3
+      },
+      {
+        "code": "pannengat.boei1",
+        "naam": "Pannengat, boei 1",
+        "km": 21.4
+      }
+    ],
+    "wind": [
+      {
+        "code": "stavoren.ijsselmeer",
+        "naam": "Stavoren IJsselmeer",
+        "km": 24.3
+      },
+      {
+        "code": "vlieland.west",
+        "naam": "Vlieland, west",
+        "km": 34.4
+      },
+      {
+        "code": "terschelling.hoorn",
+        "naam": "Terschelling, Hoorn",
+        "km": 35.6
+      },
+      {
+        "code": "rotterdamsehoek.ijsselmeer",
+        "naam": "Rotterdamsehoek IJsselmeer",
+        "km": 38.7
+      }
+    ]
+  },
+  "holwerd": {
+    "golf": [
+      {
+        "code": "holwerd.vaargeul",
+        "naam": "Holwerd vaargeul",
+        "km": 0.2
+      },
+      {
+        "code": "dantziggat.pietscheveplaat.zuid",
+        "naam": "Dantziggat Piet Scheveplaat zuid",
+        "km": 6.1
+      },
+      {
+        "code": "amelanderzeegat.6.2",
+        "naam": "Amelander zeegat, 6 .2",
+        "km": 7.9
+      },
+      {
+        "code": "ameland.nes",
+        "naam": "Ameland, Nes",
+        "km": 8.6
+      },
+      {
+        "code": "amelandwestgat",
+        "naam": "Ameland Westgat platform",
+        "km": 11
+      },
+      {
+        "code": "ameland.westgat",
+        "naam": "Ameland, Westgat",
+        "km": 11
+      },
+      {
+        "code": "amelanderzeegat.5.1",
+        "naam": "Amelander zeegat, 5 .1",
+        "km": 12.1
+      },
+      {
+        "code": "amelanderzeegat.5.2",
+        "naam": "Amelander zeegat, 5 .2",
+        "km": 12.2
+      }
+    ],
+    "wind": [
+      {
+        "code": "ameland.nes",
+        "naam": "Ameland, Nes",
+        "km": 8.6
+      },
+      {
+        "code": "amelandwestgat",
+        "naam": "Ameland Westgat platform",
+        "km": 11
+      },
+      {
+        "code": "wierumergronden",
+        "naam": "Wierumergronden",
+        "km": 13.9
+      },
+      {
+        "code": "lauwersoog.waddenzee",
+        "naam": "Lauwersoog, Waddenzee",
+        "km": 21
+      },
+      {
+        "code": "terschelling.hoorn",
+        "naam": "Terschelling, Hoorn",
+        "km": 35.5
+      },
+      {
+        "code": "terschelling.noordzee",
+        "naam": "Terschelling, Noordzee",
+        "km": 36.6
+      },
+      {
+        "code": "huibertgat",
+        "naam": "Huibertgat",
+        "km": 39.4
+      }
+    ]
+  }
 }

@@ -1,0 +1,5616 @@
+[
+ {
+  "slug": "vrouwenpolder",
+  "naam": "Vrouwenpolder",
+  "regio": "Zeeland",
+  "type": "kust",
+  "lat": 51.59,
+  "lon": 3.612,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "oosterschelde.roompotsluis.binnen",
+     "naam": "Oosterschelde Roompotsluis binnen",
+     "km": 6.1
+    },
+    {
+     "code": "oosterschelde.roompotsluis.buiten",
+     "naam": "Oosterschelde Roompotsluis buiten",
+     "km": 5.7
+    },
+    {
+     "code": "oosterschelde.11",
+     "naam": "Oosterschelde, 11",
+     "km": 10.9
+    },
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 9.2
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "kamperland.schotsman",
+     "naam": "Kamperland, Schotsman",
+     "km": 2.4
+    },
+    {
+     "code": "vrouwenpolder.breezand.badstrand",
+     "naam": "Vrouwenpolder, Breezand, badstrand",
+     "km": 0.6
+    },
+    {
+     "code": "veersegat.dam.meerzijde.badstrand",
+     "naam": "Veersegat, Dam, meerzijde, badstrand",
+     "km": 1.3
+    },
+    {
+     "code": "veersegat.dam",
+     "naam": "Veersegat, dam",
+     "km": 2.2
+    },
+    {
+     "code": "kamperland.schotsman.ruiterplaat",
+     "naam": "Kamperland, Schotsman, Ruiterplaat",
+     "km": 2.4
+    },
+    {
+     "code": "schotsmancampenswegbadstrand",
+     "naam": "Schotsman Campensweg badstrand",
+     "km": 3.1
+    },
+    {
+     "code": "vrouwenpolder",
+     "naam": "Vrouwenpolder",
+     "km": 3.4
+    },
+    {
+     "code": "kamperland.debanjaard.badstrand",
+     "naam": "Kamperland, De Banjaard, badstrand",
+     "km": 3.6
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "kamperland.schotsman",
+     "naam": "Kamperland, Schotsman",
+     "km": 2.4
+    },
+    {
+     "code": "kamperland.schotsman.ruiterplaat",
+     "naam": "Kamperland, Schotsman, Ruiterplaat",
+     "km": 2.4
+    },
+    {
+     "code": "oranjezon",
+     "naam": "Oranjezon",
+     "km": 2.7
+    },
+    {
+     "code": "oosterschelde.roompotsluis.binnen",
+     "naam": "Oosterschelde Roompotsluis binnen",
+     "km": 6.1
+    },
+    {
+     "code": "oostkapelle",
+     "naam": "Oostkapelle",
+     "km": 3.9
+    },
+    {
+     "code": "oosterschelde.9",
+     "naam": "Oosterschelde, 09",
+     "km": 5.2
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "oosterscheldekering.roompot",
+     "naam": "Oosterscheldekering buiten Roompot",
+     "km": 5.0
+    },
+    {
+     "code": "oosterschelde.roompotsluis.buiten",
+     "naam": "Oosterschelde Roompotsluis buiten",
+     "km": 5.7
+    },
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 9.2
+    },
+    {
+     "code": "oosterscheldekering.schaar",
+     "naam": "Oosterscheldekering buiten, Schaar",
+     "km": 9.4
+    },
+    {
+     "code": "oosterscheldekering.hammen",
+     "naam": "Oosterscheldekering buiten, Hammen",
+     "km": 10.6
+    },
+    {
+     "code": "oosterschelde.11",
+     "naam": "Oosterschelde, 11",
+     "km": 10.9
+    },
+    {
+     "code": "roggenplaat",
+     "naam": "Roggenplaat",
+     "km": 14.5
+    },
+    {
+     "code": "domburgerrassen",
+     "naam": "Domburger Rassen",
+     "km": 15.1
+    }
+   ],
+   "wind": [
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 9.2
+    },
+    {
+     "code": "vlissingen",
+     "naam": "Vlissingen",
+     "km": 16.5
+    },
+    {
+     "code": "kats.zandkreeksluis.buiten",
+     "naam": "Kats Zandkreeksluis buiten",
+     "km": 17.8
+    },
+    {
+     "code": "brouwersdam.brouwershavensegat.2",
+     "naam": "Brouwersdam Brouwershavense Gat 2",
+     "km": 19.6
+    },
+    {
+     "code": "wilhelminadorp",
+     "naam": "Wilhelminadorp",
+     "km": 20.1
+    },
+    {
+     "code": "zierikzee.zeelandbrug",
+     "naam": "Zierikzee Zeelandbrug",
+     "km": 21.5
+    },
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 27.1
+    },
+    {
+     "code": "vlaktevanderaan",
+     "naam": "Vlakte van de Raan",
+     "km": 27.3
+    }
+   ]
+  },
+  "intro": "Vrouwenpolder ligt op de noordpunt van Walcheren, tussen de Noordzee en het Veerse Meer. Het brede strand loopt door tot aan de Veerse Gatdam. Aan de Noordzeekant is er gewoon eb en vloed; het Veerse Meer heeft een vast peil en dus geen getij.",
+  "regioSlug": "zeeland"
+ },
+ {
+  "slug": "dishoek",
+  "naam": "Dishoek",
+  "regio": "Zeeland",
+  "type": "kust",
+  "lat": 51.476,
+  "lon": 3.522,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "vlissingen",
+     "naam": "Vlissingen",
+     "km": 6.6
+    },
+    {
+     "code": "westkapelle",
+     "naam": "Westkapelle",
+     "km": 7.6
+    },
+    {
+     "code": "breskens.veerhaven",
+     "naam": "Breskens, Veerhaven",
+     "km": 8.3
+    },
+    {
+     "code": "cadzand.2",
+     "naam": "Cadzand, 2",
+     "km": 14.8
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "zoutelande.dishoek.badstrand",
+     "naam": "Zoutelande, Dishoek, badstrand",
+     "km": 0.6
+    },
+    {
+     "code": "vlissingen.nollebadstrand",
+     "naam": "Vlissingen, Nolle badstrand",
+     "km": 3.5
+    },
+    {
+     "code": "vlissingen",
+     "naam": "Vlissingen",
+     "km": 6.6
+    },
+    {
+     "code": "zoutelande.smidshoekje.badstrand",
+     "naam": "Zoutelande, Smidshoekje, badstrand",
+     "km": 3.8
+    },
+    {
+     "code": "vlissingen.roeiershoofd",
+     "naam": "Vlissingen, Roeiershoofd",
+     "km": 5.3
+    },
+    {
+     "code": "vlissingen.keersluisbrug",
+     "naam": "Vlissingen, keersluisbrug",
+     "km": 5.3
+    },
+    {
+     "code": "midderburg.draaibrug",
+     "naam": "Midderburg, draaibrug",
+     "km": 6.9
+    },
+    {
+     "code": "vlissingen.boeissvh",
+     "naam": "Vlissingen, boei SSVH",
+     "km": 7.7
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "vlissingen",
+     "naam": "Vlissingen",
+     "km": 6.6
+    },
+    {
+     "code": "westkapelle",
+     "naam": "Westkapelle",
+     "km": 7.6
+    },
+    {
+     "code": "breskens.handelshaven",
+     "naam": "Breskens, Handelshaven",
+     "km": 9.3
+    },
+    {
+     "code": "breskens.veerhaven",
+     "naam": "Breskens, Veerhaven",
+     "km": 8.3
+    },
+    {
+     "code": "breskens",
+     "naam": "Breskens",
+     "km": 9.0
+    },
+    {
+     "code": "cadzand.1",
+     "naam": "Cadzand, 1",
+     "km": 14.3
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "wielingen.noord",
+     "naam": "Wielingen, noord",
+     "km": 8.8
+    },
+    {
+     "code": "vlissingen.honte",
+     "naam": "Vlissingen Honte",
+     "km": 12.6
+    },
+    {
+     "code": "honte.kaloot",
+     "naam": "Honte, Kaloot",
+     "km": 14.0
+    },
+    {
+     "code": "cadzand.1",
+     "naam": "Cadzand, 1",
+     "km": 14.3
+    },
+    {
+     "code": "cadzand.2",
+     "naam": "Cadzand, 2",
+     "km": 14.8
+    },
+    {
+     "code": "vaarwaterlangshoofdplaat",
+     "naam": "Vaarwater langs Hoofdplaat",
+     "km": 15.1
+    },
+    {
+     "code": "vaarwaterlangshoofdplaat.4",
+     "naam": "Vaarwater langs Hoofdplaat, punt 04",
+     "km": 15.4
+    },
+    {
+     "code": "domburgerrassen",
+     "naam": "Domburger Rassen",
+     "km": 18.1
+    }
+   ],
+   "wind": [
+    {
+     "code": "vlissingen",
+     "naam": "Vlissingen",
+     "km": 6.6
+    },
+    {
+     "code": "cadzand.1",
+     "naam": "Cadzand, 1",
+     "km": 14.3
+    },
+    {
+     "code": "vlaktevanderaan",
+     "naam": "Vlakte van de Raan",
+     "km": 19.6
+    },
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 23.2
+    },
+    {
+     "code": "kats.zandkreeksluis.buiten",
+     "naam": "Kats Zandkreeksluis buiten",
+     "km": 24.5
+    },
+    {
+     "code": "terneuzen.westsluis",
+     "naam": "Terneuzen, westsluis",
+     "km": 25.6
+    },
+    {
+     "code": "wilhelminadorp",
+     "naam": "Wilhelminadorp",
+     "km": 25.6
+    },
+    {
+     "code": "zierikzee.zeelandbrug",
+     "naam": "Zierikzee Zeelandbrug",
+     "km": 32.2
+    }
+   ]
+  },
+  "intro": "Dishoek is een kleine badplaats tussen Vlissingen en Zoutelande, met een strand aan de voet van hoge duinen. Hier gaat de Westerschelde over in de Noordzee, en de stroming langs de kust kan sterk zijn. Zwem daarom alleen bij de bewaakte posten.",
+  "regioSlug": "zeeland"
+ },
+ {
+  "slug": "nieuwvliet",
+  "naam": "Nieuwvliet",
+  "regio": "Zeeland",
+  "type": "kust",
+  "lat": 51.383,
+  "lon": 3.455,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "cadzand.2",
+     "naam": "Cadzand, 2",
+     "km": 5.5
+    },
+    {
+     "code": "breskens.veerhaven",
+     "naam": "Breskens, Veerhaven",
+     "km": 7.0
+    },
+    {
+     "code": "vlissingen",
+     "naam": "Vlissingen",
+     "km": 12.0
+    },
+    {
+     "code": "westkapelle",
+     "naam": "Westkapelle",
+     "km": 15.4
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "nieuwvlietbad.oost.badstrand",
+     "naam": "Nieuwvliet-Bad, oost, badstrand",
+     "km": 1.2
+    },
+    {
+     "code": "breskens.nieuwesluis.badstrand",
+     "naam": "Breskens, Nieuwesluis, badstrand",
+     "km": 3.9
+    },
+    {
+     "code": "cadzand.badstrand",
+     "naam": "Cadzand, badstrand",
+     "km": 4.5
+    },
+    {
+     "code": "hetzwinduinlaanbadstrand",
+     "naam": "het Zwin Duinlaan badstrand",
+     "km": 5.9
+    },
+    {
+     "code": "breskens.fortfrederikhendrik",
+     "naam": "Breskens, Fort Frederik Hendrik",
+     "km": 6.2
+    },
+    {
+     "code": "appelzak.1kmuitdekust",
+     "naam": "Appelzak, 1 km uit de kust",
+     "km": 6.2
+    },
+    {
+     "code": "appelzak.2kmuitdekust",
+     "naam": "Appelzak, 2 km uit de kust",
+     "km": 7.2
+    },
+    {
+     "code": "wielingen",
+     "naam": "Wielingen",
+     "km": 7.3
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "cadzand.1",
+     "naam": "Cadzand, 1",
+     "km": 6.0
+    },
+    {
+     "code": "breskens.handelshaven",
+     "naam": "Breskens, Handelshaven",
+     "km": 7.8
+    },
+    {
+     "code": "cadzand.2",
+     "naam": "Cadzand, 2",
+     "km": 5.5
+    },
+    {
+     "code": "breskens.veerhaven",
+     "naam": "Breskens, Veerhaven",
+     "km": 7.0
+    },
+    {
+     "code": "breskens",
+     "naam": "Breskens",
+     "km": 7.8
+    },
+    {
+     "code": "vlissingen",
+     "naam": "Vlissingen",
+     "km": 12.0
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "cadzand.2",
+     "naam": "Cadzand, 2",
+     "km": 5.5
+    },
+    {
+     "code": "cadzand.1",
+     "naam": "Cadzand, 1",
+     "km": 6.0
+    },
+    {
+     "code": "wielingen.noord",
+     "naam": "Wielingen, noord",
+     "km": 6.2
+    },
+    {
+     "code": "vaarwaterlangshoofdplaat",
+     "naam": "Vaarwater langs Hoofdplaat",
+     "km": 15.1
+    },
+    {
+     "code": "vaarwaterlangshoofdplaat.4",
+     "naam": "Vaarwater langs Hoofdplaat, punt 04",
+     "km": 15.1
+    },
+    {
+     "code": "vlissingen.honte",
+     "naam": "Vlissingen Honte",
+     "km": 17.5
+    },
+    {
+     "code": "honte.kaloot",
+     "naam": "Honte, Kaloot",
+     "km": 18.3
+    },
+    {
+     "code": "vlaktevanderaan.deurloo",
+     "naam": "Vlakte van de Raan Deurloo",
+     "km": 19.9
+    }
+   ],
+   "wind": [
+    {
+     "code": "cadzand.1",
+     "naam": "Cadzand, 1",
+     "km": 6.0
+    },
+    {
+     "code": "vlissingen",
+     "naam": "Vlissingen",
+     "km": 12.0
+    },
+    {
+     "code": "vlaktevanderaan",
+     "naam": "Vlakte van de Raan",
+     "km": 19.9
+    },
+    {
+     "code": "terneuzen.westsluis",
+     "naam": "Terneuzen, westsluis",
+     "km": 25.5
+    },
+    {
+     "code": "kats.zandkreeksluis.buiten",
+     "naam": "Kats Zandkreeksluis buiten",
+     "km": 33.2
+    },
+    {
+     "code": "wilhelminadorp",
+     "naam": "Wilhelminadorp",
+     "km": 33.7
+    },
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 34.5
+    },
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 38.3
+    }
+   ]
+  },
+  "intro": "Nieuwvliet-Bad ligt in Zeeuws-Vlaanderen tussen Cadzand en Groede, met veel campings achter de duinen. Het strand is breed en vlak, zodat je goed ziet hoe ver het water bij eb terugtrekt. De getijden komen van het meetpunt bij Cadzand.",
+  "regioSlug": "zeeland"
+ },
+ {
+  "slug": "kamperland",
+  "naam": "Kamperland",
+  "regio": "Zeeland",
+  "type": "oosterschelde",
+  "lat": 51.575,
+  "lon": 3.7,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "oosterschelde.roompotsluis.binnen",
+     "naam": "Oosterschelde Roompotsluis binnen",
+     "km": 4.9
+    },
+    {
+     "code": "oosterschelde.roompotsluis.buiten",
+     "naam": "Oosterschelde Roompotsluis buiten",
+     "km": 5.1
+    },
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 8.9
+    },
+    {
+     "code": "kats.zandkreeksluis",
+     "naam": "Kats, Zandkreeksluis",
+     "km": 11.9
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "kamperland.schotsman",
+     "naam": "Kamperland, Schotsman",
+     "km": 4.0
+    },
+    {
+     "code": "kamperland.sintfelixweg.badstrand",
+     "naam": "Kamperland, Sint Felixweg, badstrand",
+     "km": 2.6
+    },
+    {
+     "code": "kamperland.deroompot.badstrand",
+     "naam": "Kamperland, De Roompot, badstrand",
+     "km": 2.9
+    },
+    {
+     "code": "wissenkerke",
+     "naam": "Wissenkerke",
+     "km": 3.3
+    },
+    {
+     "code": "kamperland.debanjaard.badstrand",
+     "naam": "Kamperland, De Banjaard, badstrand",
+     "km": 3.4
+    },
+    {
+     "code": "schotsmancampenswegbadstrand",
+     "naam": "Schotsman Campensweg badstrand",
+     "km": 3.5
+    },
+    {
+     "code": "veere.havenmond",
+     "naam": "Veere, havenmond",
+     "km": 3.5
+    },
+    {
+     "code": "wissenkerke.boei7",
+     "naam": "Wissenkerke, boei 7",
+     "km": 3.6
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "kamperland.schotsman",
+     "naam": "Kamperland, Schotsman",
+     "km": 4.0
+    },
+    {
+     "code": "oosterschelde.roompotsluis.binnen",
+     "naam": "Oosterschelde Roompotsluis binnen",
+     "km": 4.9
+    },
+    {
+     "code": "kamperland.schotsman.ruiterplaat",
+     "naam": "Kamperland, Schotsman, Ruiterplaat",
+     "km": 4.0
+    },
+    {
+     "code": "veere",
+     "naam": "Veere",
+     "km": 4.3
+    },
+    {
+     "code": "vlietepolder",
+     "naam": "Vlietepolder",
+     "km": 4.5
+    },
+    {
+     "code": "roompot.bekken",
+     "naam": "Roompot, bekken",
+     "km": 4.8
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "oosterscheldekering.roompot",
+     "naam": "Oosterscheldekering buiten Roompot",
+     "km": 4.1
+    },
+    {
+     "code": "oosterschelde.roompotsluis.buiten",
+     "naam": "Oosterschelde Roompotsluis buiten",
+     "km": 5.1
+    },
+    {
+     "code": "oosterscheldekering.schaar",
+     "naam": "Oosterscheldekering buiten, Schaar",
+     "km": 8.1
+    },
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 8.9
+    },
+    {
+     "code": "oosterscheldekering.hammen",
+     "naam": "Oosterscheldekering buiten, Hammen",
+     "km": 9.5
+    },
+    {
+     "code": "roggenplaat",
+     "naam": "Roggenplaat",
+     "km": 10.3
+    },
+    {
+     "code": "vlissingen.honte",
+     "naam": "Vlissingen Honte",
+     "km": 15.4
+    },
+    {
+     "code": "honte.kaloot",
+     "naam": "Honte, Kaloot",
+     "km": 16.4
+    }
+   ],
+   "wind": [
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 8.9
+    },
+    {
+     "code": "kats.zandkreeksluis.buiten",
+     "naam": "Kats Zandkreeksluis buiten",
+     "km": 11.5
+    },
+    {
+     "code": "wilhelminadorp",
+     "naam": "Wilhelminadorp",
+     "km": 13.8
+    },
+    {
+     "code": "zierikzee.zeelandbrug",
+     "naam": "Zierikzee Zeelandbrug",
+     "km": 16.2
+    },
+    {
+     "code": "vlissingen",
+     "naam": "Vlissingen",
+     "km": 16.3
+    },
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 21.2
+    },
+    {
+     "code": "brouwersdam.brouwershavensegat.2",
+     "naam": "Brouwersdam Brouwershavense Gat 2",
+     "km": 22.0
+    },
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 25.1
+    }
+   ]
+  },
+  "intro": "Kamperland ligt op Noord-Beveland, tussen de Oosterschelde en het Veerse Meer. Aan de Oosterscheldekant is er gewoon eb en vloed, terwijl het Veerse Meer een vast peil heeft. Bij laagwater komen langs de Oosterschelde zandplaten en slikken droog te liggen.",
+  "regioSlug": "zeeland"
+ },
+ {
+  "slug": "westenschouwen",
+  "naam": "Westenschouwen",
+  "regio": "Zeeland",
+  "type": "kust",
+  "lat": 51.672,
+  "lon": 3.7,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 1.9
+    },
+    {
+     "code": "oosterschelde.14",
+     "naam": "Oosterschelde, 14",
+     "km": 5.6
+    },
+    {
+     "code": "oosterschelde.roompotsluis.binnen",
+     "naam": "Oosterschelde Roompotsluis binnen",
+     "km": 6.1
+    },
+    {
+     "code": "oosterschelde.roompotsluis.buiten",
+     "naam": "Oosterschelde Roompotsluis buiten",
+     "km": 6.1
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 1.9
+    },
+    {
+     "code": "westerschouwen.rotondebadstrand",
+     "naam": "Westerschouwen, Rotonde badstrand",
+     "km": 0.3
+    },
+    {
+     "code": "burghsluis.tussen.westboutenburghsluis",
+     "naam": "Burghsluis, tussen, westbout en Burghsluis",
+     "km": 2.8
+    },
+    {
+     "code": "neeltjejans.badstrand",
+     "naam": "Neeltje Jans, badstrand",
+     "km": 3.3
+    },
+    {
+     "code": "oliegeul",
+     "naam": "Oliegeul",
+     "km": 3.5
+    },
+    {
+     "code": "hammen.west",
+     "naam": "Hammen, west",
+     "km": 3.8
+    },
+    {
+     "code": "nieuwhaamstede.badstrand",
+     "naam": "Nieuw Haamstede, badstrand",
+     "km": 4.1
+    },
+    {
+     "code": "nieuwhaamstede.vuurtorenpad.badstrand",
+     "naam": "Nieuw Haamstede, Vuurtorenpad, badstrand",
+     "km": 4.8
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 1.9
+    },
+    {
+     "code": "oosterschelde.14",
+     "naam": "Oosterschelde, 14",
+     "km": 5.6
+    },
+    {
+     "code": "oosterschelde.roompotsluis.binnen",
+     "naam": "Oosterschelde Roompotsluis binnen",
+     "km": 6.1
+    },
+    {
+     "code": "binnenschaar",
+     "naam": "Binnen Schaar",
+     "km": 3.4
+    },
+    {
+     "code": "neeltjejans.buitenhaven",
+     "naam": "Neeltje Jans, Buitenhaven",
+     "km": 3.6
+    },
+    {
+     "code": "burghsluis",
+     "naam": "Burghsluis",
+     "km": 3.9
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "oosterscheldekering.hammen",
+     "naam": "Oosterscheldekering buiten, Hammen",
+     "km": 1.8
+    },
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 1.9
+    },
+    {
+     "code": "oosterscheldekering.schaar",
+     "naam": "Oosterscheldekering buiten, Schaar",
+     "km": 2.8
+    },
+    {
+     "code": "oosterschelde.roompotsluis.buiten",
+     "naam": "Oosterschelde Roompotsluis buiten",
+     "km": 6.1
+    },
+    {
+     "code": "oosterscheldekering.roompot",
+     "naam": "Oosterscheldekering buiten Roompot",
+     "km": 7.2
+    },
+    {
+     "code": "roggenplaat",
+     "naam": "Roggenplaat",
+     "km": 8.3
+    },
+    {
+     "code": "brouwersdam.brouwershavensegat.2",
+     "naam": "Brouwersdam Brouwershavense Gat 2",
+     "km": 11.8
+    },
+    {
+     "code": "oosterschelde.11",
+     "naam": "Oosterschelde, 11",
+     "km": 15.5
+    }
+   ],
+   "wind": [
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 1.9
+    },
+    {
+     "code": "brouwersdam.brouwershavensegat.2",
+     "naam": "Brouwersdam Brouwershavense Gat 2",
+     "km": 11.8
+    },
+    {
+     "code": "zierikzee.zeelandbrug",
+     "naam": "Zierikzee Zeelandbrug",
+     "km": 15.8
+    },
+    {
+     "code": "kats.zandkreeksluis.buiten",
+     "naam": "Kats Zandkreeksluis buiten",
+     "km": 18.0
+    },
+    {
+     "code": "wilhelminadorp",
+     "naam": "Wilhelminadorp",
+     "km": 20.6
+    },
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 22.5
+    },
+    {
+     "code": "vlissingen",
+     "naam": "Vlissingen",
+     "km": 26.5
+    },
+    {
+     "code": "bruinisse.grevelingensluis",
+     "naam": "Bruinisse Grevelingensluis",
+     "km": 27.3
+    }
+   ]
+  },
+  "intro": "Westenschouwen ligt op de westpunt van Schouwen-Duiveland, waar de Oosterscheldekering begint. Het strand ligt aan de monding van de Oosterschelde, en door het getij staat er vlak bij de kering een sterke stroming. Zwem daar dus niet, maar blijf bij het strand aan de Noordzeekant.",
+  "regioSlug": "zeeland"
+ },
+ {
+  "slug": "brouwersdam",
+  "naam": "Brouwersdam",
+  "regio": "Zeeland",
+  "type": "kust",
+  "lat": 51.76,
+  "lon": 3.855,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "brouwersdam.brouwershavensegat.8",
+     "naam": "Brouwersdam Brouwershavense Gat 8",
+     "km": 3.2
+    },
+    {
+     "code": "haringvliet.10",
+     "naam": "Haringvliet, punt 10",
+     "km": 11.4
+    },
+    {
+     "code": "oosterschelde.14",
+     "naam": "Oosterschelde, 14",
+     "km": 13.0
+    },
+    {
+     "code": "stellendam.buitenhaven",
+     "naam": "Stellendam, buitenhaven",
+     "km": 14.4
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "brouwershavensche.gat.08",
+     "naam": "Brouwershavensche Gat 08",
+     "km": 3.2
+    },
+    {
+     "code": "brouwersdam.kabbelaarsbank",
+     "naam": "Brouwersdam, Kabbelaarsbank",
+     "km": 0.8
+    },
+    {
+     "code": "kabbelaarsbank.grevelingen",
+     "naam": "Kabbelaarsbank, Grevelingen",
+     "km": 1.0
+    },
+    {
+     "code": "scharendijke.diepeput",
+     "naam": "Scharendijke, diepe put",
+     "km": 2.0
+    },
+    {
+     "code": "scharendijke.repart",
+     "naam": "Scharendijke, Repart",
+     "km": 2.8
+    },
+    {
+     "code": "denossebadstrand",
+     "naam": "Den Osse badstrand",
+     "km": 2.9
+    },
+    {
+     "code": "denosse",
+     "naam": "Den Osse",
+     "km": 2.9
+    },
+    {
+     "code": "westrepart.badstrand",
+     "naam": "West Repart, badstrand",
+     "km": 2.9
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "brouwershavensche.gat.08",
+     "naam": "Brouwershavensche Gat 08",
+     "km": 3.2
+    },
+    {
+     "code": "brouwersdam.binnen",
+     "naam": "Brouwersdam, binnen",
+     "km": 2.3
+    },
+    {
+     "code": "brouwersdam.spui.binnen.schuif6",
+     "naam": "Brouwersdam spuisluis binnen schuif6",
+     "km": 2.3
+    },
+    {
+     "code": "brouwersdam.spui.buiten.schuif2",
+     "naam": "Brouwersdam spuisluis buiten schuif2",
+     "km": 2.4
+    },
+    {
+     "code": "brouwersdam.buiten",
+     "naam": "Brouwersdam, buiten",
+     "km": 2.4
+    },
+    {
+     "code": "brouwersdam.brouwershavensegat.8",
+     "naam": "Brouwersdam Brouwershavense Gat 8",
+     "km": 3.2
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "roggenplaat",
+     "naam": "Roggenplaat",
+     "km": 13.9
+    },
+    {
+     "code": "oosterscheldekering.hammen",
+     "naam": "Oosterscheldekering buiten, Hammen",
+     "km": 14.7
+    },
+    {
+     "code": "haringvlietsluizen.buiten",
+     "naam": "Haringvlietsluizen, buiten",
+     "km": 15.2
+    },
+    {
+     "code": "oosterscheldekering.schaar",
+     "naam": "Oosterscheldekering buiten, Schaar",
+     "km": 15.9
+    },
+    {
+     "code": "haringvlietmond",
+     "naam": "Haringvlietmond",
+     "km": 16.0
+    },
+    {
+     "code": "brouwersdam.brouwershavensegat.2",
+     "naam": "Brouwersdam Brouwershavense Gat 2",
+     "km": 16.1
+    },
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 16.1
+    },
+    {
+     "code": "keeten",
+     "naam": "Keeten",
+     "km": 18.6
+    }
+   ],
+   "wind": [
+    {
+     "code": "zierikzee.zeelandbrug",
+     "naam": "Zierikzee Zeelandbrug",
+     "km": 15.2
+    },
+    {
+     "code": "brouwersdam.brouwershavensegat.2",
+     "naam": "Brouwersdam Brouwershavense Gat 2",
+     "km": 16.1
+    },
+    {
+     "code": "stellendam.haringvlietsluizen.schuif1",
+     "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+     "km": 16.1
+    },
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 16.1
+    },
+    {
+     "code": "bruinisse.grevelingensluis",
+     "naam": "Bruinisse Grevelingensluis",
+     "km": 19.6
+    },
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 20.7
+    },
+    {
+     "code": "goeree.lichteiland",
+     "naam": "Goeree, lichteiland",
+     "km": 22.4
+    },
+    {
+     "code": "kats.zandkreeksluis.buiten",
+     "naam": "Kats Zandkreeksluis buiten",
+     "km": 24.0
+    }
+   ]
+  },
+  "intro": "De Brouwersdam sluit het Grevelingenmeer af van de Noordzee en is een van de bekendste plekken van Nederland voor kitesurfen en windsurfen. Aan de Noordzeekant is er gewoon eb en vloed. Het Grevelingenmeer aan de andere kant van de dam heeft bijna geen getij.",
+  "regioSlug": "zeeland"
+ },
+ {
+  "slug": "bruinisse",
+  "naam": "Bruinisse",
+  "regio": "Zeeland",
+  "type": "oosterschelde",
+  "lat": 51.662,
+  "lon": 4.092,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "krammersluizen.west",
+     "naam": "Krammersluizen west",
+     "km": 3.6
+    },
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 9.4
+    },
+    {
+     "code": "sintannaland.havensteiger",
+     "naam": "Sint Annaland, Haven Steiger",
+     "km": 6.6
+    },
+    {
+     "code": "yerseke",
+     "naam": "Yerseke",
+     "km": 17.4
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "bruinisse.binnen",
+     "naam": "Bruinisse, binnen",
+     "km": 0.6
+    },
+    {
+     "code": "bruinisse.werkhaven.badstrand",
+     "naam": "Bruinisse, werkhaven, badstrand",
+     "km": 0.8
+    },
+    {
+     "code": "bruinisse",
+     "naam": "Bruinisse",
+     "km": 1.1
+    },
+    {
+     "code": "zijpe",
+     "naam": "Zijpe",
+     "km": 2.0
+    },
+    {
+     "code": "krammersluizen",
+     "naam": "Krammersluizen",
+     "km": 2.5
+    },
+    {
+     "code": "bruinisse.krammersluizen.krammernoord",
+     "naam": "Bruinisse Krammersluizen Krammer Noord",
+     "km": 2.6
+    },
+    {
+     "code": "grevelingendam.badstrand",
+     "naam": "Grevelingendam, badstrand",
+     "km": 2.6
+    },
+    {
+     "code": "herkingen",
+     "naam": "Herkingen",
+     "km": 3.2
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "krammer",
+     "naam": "Krammer",
+     "km": 0.5
+    },
+    {
+     "code": "bruinisse.binnen",
+     "naam": "Bruinisse, binnen",
+     "km": 0.6
+    },
+    {
+     "code": "bruinisse",
+     "naam": "Bruinisse",
+     "km": 1.1
+    },
+    {
+     "code": "bruinisse.krammersluis.oosterschelde.2",
+     "naam": "Bruinisse Krammersluis, Oosterschelde",
+     "km": 3.5
+    },
+    {
+     "code": "krammersluizen.west",
+     "naam": "Krammersluizen west",
+     "km": 3.6
+    },
+    {
+     "code": "philipsdam.west",
+     "naam": "Philipsdam, west",
+     "km": 4.0
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "stavenisse.keeten",
+     "naam": "Stavenisse, keeten",
+     "km": 8.7
+    },
+    {
+     "code": "keeten",
+     "naam": "Keeten",
+     "km": 10.7
+    },
+    {
+     "code": "haringvlietsluizen.buiten",
+     "naam": "Haringvlietsluizen, buiten",
+     "km": 18.9
+    },
+    {
+     "code": "roggenplaat",
+     "naam": "Roggenplaat",
+     "km": 19.8
+    },
+    {
+     "code": "marollegat",
+     "naam": "Marollegat",
+     "km": 21.5
+    },
+    {
+     "code": "hansweert.2",
+     "naam": "Hansweert, punt 02",
+     "km": 24.8
+    },
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 24.9
+    }
+   ],
+   "wind": [
+    {
+     "code": "bruinisse.grevelingensluis",
+     "naam": "Bruinisse Grevelingensluis",
+     "km": 0.6
+    },
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 9.4
+    },
+    {
+     "code": "zierikzee.zeelandbrug",
+     "naam": "Zierikzee Zeelandbrug",
+     "km": 12.6
+    },
+    {
+     "code": "tholen.bergsediepsluis",
+     "naam": "Tholen Bergsediepsluis",
+     "km": 17.8
+    },
+    {
+     "code": "stellendam.haringvlietsluizen.schuif1",
+     "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+     "km": 19.5
+    },
+    {
+     "code": "kats.zandkreeksluis.buiten",
+     "naam": "Kats Zandkreeksluis buiten",
+     "km": 20.8
+    },
+    {
+     "code": "wilhelminadorp",
+     "naam": "Wilhelminadorp",
+     "km": 20.9
+    },
+    {
+     "code": "marollegat",
+     "naam": "Marollegat",
+     "km": 21.5
+    }
+   ]
+  },
+  "intro": "Bruinisse ligt in het oosten van Schouwen-Duiveland, tussen de Oosterschelde en het Grevelingenmeer. Het dorp is bekend om de watersport en de mosselcultuur. Het getij komt van het meetpunt bij de Krammersluizen, vlak bij het dorp.",
+  "regioSlug": "zeeland"
+ },
+ {
+  "slug": "zeelandbrug",
+  "naam": "Zeelandbrug",
+  "regio": "Zeeland",
+  "type": "oosterschelde",
+  "lat": 51.605,
+  "lon": 3.965,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 2.8
+    },
+    {
+     "code": "kats.zandkreeksluis",
+     "naam": "Kats, Zandkreeksluis",
+     "km": 9.7
+    },
+    {
+     "code": "sintannaland.havensteiger",
+     "naam": "Sint Annaland, Haven Steiger",
+     "km": 10.0
+    },
+    {
+     "code": "yerseke",
+     "naam": "Yerseke",
+     "km": 13.4
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "keeten",
+     "naam": "Keeten",
+     "km": 0.2
+    },
+    {
+     "code": "ouwerkerk.hoekvanouwerkerk.badstrand",
+     "naam": "Ouwerkerk, Hoek van Ouwerkerk, badstrand",
+     "km": 1.3
+    },
+    {
+     "code": "stavenisse.badstrand",
+     "naam": "Stavenisse, badstrand",
+     "km": 2.9
+    },
+    {
+     "code": "stavenisse.keeten",
+     "naam": "Stavenisse, keeten",
+     "km": 3.5
+    },
+    {
+     "code": "keeten.boeikt22.slikkenvanviane",
+     "naam": "Keeten, boei Kt22, Slikken van Viane",
+     "km": 5.2
+    },
+    {
+     "code": "zierikzee",
+     "naam": "Zierikzee",
+     "km": 5.6
+    },
+    {
+     "code": "zierikzee.deval",
+     "naam": "Zierikzee, De Val",
+     "km": 5.8
+    },
+    {
+     "code": "wilhelminadorp.galgenplaat",
+     "naam": "Wilhelminadorp, Galgenplaat",
+     "km": 6.7
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 2.8
+    },
+    {
+     "code": "zeelandbrug.noord",
+     "naam": "Zeelandbrug, noord",
+     "km": 4.5
+    },
+    {
+     "code": "zierikzee",
+     "naam": "Zierikzee",
+     "km": 5.6
+    },
+    {
+     "code": "colijnsplaat",
+     "naam": "Colijnsplaat",
+     "km": 7.3
+    },
+    {
+     "code": "kats.zandkreeksluis",
+     "naam": "Kats, Zandkreeksluis",
+     "km": 9.7
+    },
+    {
+     "code": "katsbinnen",
+     "naam": "Kats binnen",
+     "km": 9.8
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "keeten",
+     "naam": "Keeten",
+     "km": 0.2
+    },
+    {
+     "code": "stavenisse.keeten",
+     "naam": "Stavenisse, keeten",
+     "km": 3.5
+    },
+    {
+     "code": "roggenplaat",
+     "naam": "Roggenplaat",
+     "km": 11.5
+    },
+    {
+     "code": "hansweert.2",
+     "naam": "Hansweert, punt 02",
+     "km": 17.7
+    },
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 17.9
+    },
+    {
+     "code": "oosterscheldekering.schaar",
+     "naam": "Oosterscheldekering buiten, Schaar",
+     "km": 18.1
+    },
+    {
+     "code": "oosterscheldekering.hammen",
+     "naam": "Oosterscheldekering buiten, Hammen",
+     "km": 18.2
+    },
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 19.6
+    }
+   ],
+   "wind": [
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 2.8
+    },
+    {
+     "code": "zierikzee.zeelandbrug",
+     "naam": "Zierikzee Zeelandbrug",
+     "km": 4.2
+    },
+    {
+     "code": "kats.zandkreeksluis.buiten",
+     "naam": "Kats Zandkreeksluis buiten",
+     "km": 10.0
+    },
+    {
+     "code": "wilhelminadorp",
+     "naam": "Wilhelminadorp",
+     "km": 10.4
+    },
+    {
+     "code": "bruinisse.grevelingensluis",
+     "naam": "Bruinisse Grevelingensluis",
+     "km": 11.3
+    },
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 17.9
+    },
+    {
+     "code": "tholen.bergsediepsluis",
+     "naam": "Tholen Bergsediepsluis",
+     "km": 17.9
+    },
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 19.6
+    }
+   ]
+  },
+  "intro": "De Zeelandbrug verbindt Schouwen-Duiveland met Noord-Beveland en is met ruim 5 kilometer de langste brug van Nederland. Onder de brug stroomt het water bij elk getij met kracht door. Duikers en vissers letten daarom op de kentering: het korte moment rond hoog- en laagwater waarop de stroming stilvalt.",
+  "regioSlug": "zeeland"
+ },
+ {
+  "slug": "colijnsplaat",
+  "naam": "Colijnsplaat",
+  "regio": "Zeeland",
+  "type": "oosterschelde",
+  "lat": 51.6,
+  "lon": 3.848,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "kats.zandkreeksluis",
+     "naam": "Kats, Zandkreeksluis",
+     "km": 6.3
+    },
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 10.8
+    },
+    {
+     "code": "oosterschelde.roompotsluis.binnen",
+     "naam": "Oosterschelde Roompotsluis binnen",
+     "km": 11.2
+    },
+    {
+     "code": "oosterschelde.roompotsluis.buiten",
+     "naam": "Oosterschelde Roompotsluis buiten",
+     "km": 11.8
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "colijnsplaat.badstrand",
+     "naam": "Colijnsplaat, badstrand",
+     "km": 0.6
+    },
+    {
+     "code": "colijnsplaat",
+     "naam": "Colijnsplaat",
+     "km": 0.8
+    },
+    {
+     "code": "zierikzee.deval",
+     "naam": "Zierikzee, De Val",
+     "km": 4.4
+    },
+    {
+     "code": "kortgene.schapendijk.badstrand",
+     "naam": "Kortgene, Schapendijk, badstrand",
+     "km": 5.0
+    },
+    {
+     "code": "nunnenplaatje.zuidwest",
+     "naam": "Nunnenplaatje, zuidwest",
+     "km": 5.1
+    },
+    {
+     "code": "kortgene.gebrokendak",
+     "naam": "Kortgene, Gebroken Dak",
+     "km": 5.3
+    },
+    {
+     "code": "hammen.boeih2",
+     "naam": "Hammen, boei H2",
+     "km": 6.1
+    },
+    {
+     "code": "wolphaartsdijk",
+     "naam": "Wolphaartsdijk",
+     "km": 6.2
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "colijnsplaat",
+     "naam": "Colijnsplaat",
+     "km": 0.8
+    },
+    {
+     "code": "zeelandbrug.noord",
+     "naam": "Zeelandbrug, noord",
+     "km": 5.2
+    },
+    {
+     "code": "katsbinnen",
+     "naam": "Kats binnen",
+     "km": 6.3
+    },
+    {
+     "code": "kats.zandkreeksluis.kolk1",
+     "naam": "Kast Zanskreeksluis kolk1",
+     "km": 6.3
+    },
+    {
+     "code": "kats.zandkreeksluis",
+     "naam": "Kats, Zandkreeksluis",
+     "km": 6.3
+    },
+    {
+     "code": "zierikzee",
+     "naam": "Zierikzee",
+     "km": 6.4
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "roggenplaat",
+     "naam": "Roggenplaat",
+     "km": 5.2
+    },
+    {
+     "code": "keeten",
+     "naam": "Keeten",
+     "km": 8.1
+    },
+    {
+     "code": "oosterscheldekering.schaar",
+     "naam": "Oosterscheldekering buiten, Schaar",
+     "km": 10.8
+    },
+    {
+     "code": "oosterscheldekering.hammen",
+     "naam": "Oosterscheldekering buiten, Hammen",
+     "km": 11.2
+    },
+    {
+     "code": "stavenisse.keeten",
+     "naam": "Stavenisse, keeten",
+     "km": 11.6
+    },
+    {
+     "code": "oosterschelde.roompotsluis.buiten",
+     "naam": "Oosterschelde Roompotsluis buiten",
+     "km": 11.8
+    },
+    {
+     "code": "oosterscheldekering.roompot",
+     "naam": "Oosterscheldekering buiten Roompot",
+     "km": 11.8
+    },
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 12.3
+    }
+   ],
+   "wind": [
+    {
+     "code": "zierikzee.zeelandbrug",
+     "naam": "Zierikzee Zeelandbrug",
+     "km": 5.8
+    },
+    {
+     "code": "kats.zandkreeksluis.buiten",
+     "naam": "Kats Zandkreeksluis buiten",
+     "km": 6.3
+    },
+    {
+     "code": "wilhelminadorp",
+     "naam": "Wilhelminadorp",
+     "km": 8.6
+    },
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 10.8
+    },
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 12.3
+    },
+    {
+     "code": "bruinisse.grevelingensluis",
+     "naam": "Bruinisse Grevelingensluis",
+     "km": 18.6
+    },
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 20.0
+    },
+    {
+     "code": "brouwersdam.brouwershavensegat.2",
+     "naam": "Brouwersdam Brouwershavense Gat 2",
+     "km": 24.2
+    }
+   ]
+  },
+  "intro": "Colijnsplaat is een havendorp op Noord-Beveland aan de Oosterschelde, vlak bij de Zeelandbrug. In de haven liggen nog vissersschepen, en de dijk is populair bij vissers en wandelaars. Bij laagwater vallen langs de oever slikken droog.",
+  "regioSlug": "zeeland"
+ },
+ {
+  "slug": "burghsluis",
+  "naam": "Burghsluis",
+  "regio": "Zeeland",
+  "type": "oosterschelde",
+  "lat": 51.68,
+  "lon": 3.755,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "oosterschelde.14",
+     "naam": "Oosterschelde, 14",
+     "km": 7.0
+    },
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 5.1
+    },
+    {
+     "code": "oosterschelde.roompotsluis.binnen",
+     "naam": "Oosterschelde Roompotsluis binnen",
+     "km": 8.3
+    },
+    {
+     "code": "brouwersdam.brouwershavensegat.8",
+     "naam": "Brouwersdam Brouwershavense Gat 8",
+     "km": 8.5
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "hammen.west",
+     "naam": "Hammen, west",
+     "km": 0.9
+    },
+    {
+     "code": "burghsluis.tussen.westboutenburghsluis",
+     "naam": "Burghsluis, tussen, westbout en Burghsluis",
+     "km": 1.3
+    },
+    {
+     "code": "hammen.boeih16.plompetoren",
+     "naam": "Hammen, boei H16, Plompetoren",
+     "km": 1.4
+    },
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 5.1
+    },
+    {
+     "code": "oliegeul",
+     "naam": "Oliegeul",
+     "km": 3.4
+    },
+    {
+     "code": "westerschouwen.rotondebadstrand",
+     "naam": "Westerschouwen, Rotonde badstrand",
+     "km": 3.8
+    },
+    {
+     "code": "roggenplaatgeulwest",
+     "naam": "Roggenplaat geul west",
+     "km": 3.8
+    },
+    {
+     "code": "neeltjejans.badstrand",
+     "naam": "Neeltje Jans, badstrand",
+     "km": 5.3
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "burghsluis",
+     "naam": "Burghsluis",
+     "km": 0.5
+    },
+    {
+     "code": "binnenschaar",
+     "naam": "Binnen Schaar",
+     "km": 3.8
+    },
+    {
+     "code": "oosterschelde.14",
+     "naam": "Oosterschelde, 14",
+     "km": 7.0
+    },
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 5.1
+    },
+    {
+     "code": "oosterschelde.roompotsluis.binnen",
+     "naam": "Oosterschelde Roompotsluis binnen",
+     "km": 8.3
+    },
+    {
+     "code": "neeltjejans.buitenhaven",
+     "naam": "Neeltje Jans, Buitenhaven",
+     "km": 5.8
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "oosterscheldekering.hammen",
+     "naam": "Oosterscheldekering buiten, Hammen",
+     "km": 3.5
+    },
+    {
+     "code": "oosterscheldekering.schaar",
+     "naam": "Oosterscheldekering buiten, Schaar",
+     "km": 4.7
+    },
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 5.1
+    },
+    {
+     "code": "roggenplaat",
+     "naam": "Roggenplaat",
+     "km": 5.8
+    },
+    {
+     "code": "oosterschelde.roompotsluis.buiten",
+     "naam": "Oosterschelde Roompotsluis buiten",
+     "km": 8.5
+    },
+    {
+     "code": "oosterscheldekering.roompot",
+     "naam": "Oosterscheldekering buiten Roompot",
+     "km": 9.6
+    },
+    {
+     "code": "brouwersdam.brouwershavensegat.2",
+     "naam": "Brouwersdam Brouwershavense Gat 2",
+     "km": 13.3
+    },
+    {
+     "code": "keeten",
+     "naam": "Keeten",
+     "km": 16.6
+    }
+   ],
+   "wind": [
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 5.1
+    },
+    {
+     "code": "zierikzee.zeelandbrug",
+     "naam": "Zierikzee Zeelandbrug",
+     "km": 12.6
+    },
+    {
+     "code": "brouwersdam.brouwershavensegat.2",
+     "naam": "Brouwersdam Brouwershavense Gat 2",
+     "km": 13.3
+    },
+    {
+     "code": "kats.zandkreeksluis.buiten",
+     "naam": "Kats Zandkreeksluis buiten",
+     "km": 16.8
+    },
+    {
+     "code": "wilhelminadorp",
+     "naam": "Wilhelminadorp",
+     "km": 19.3
+    },
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 19.5
+    },
+    {
+     "code": "bruinisse.grevelingensluis",
+     "naam": "Bruinisse Grevelingensluis",
+     "km": 23.5
+    },
+    {
+     "code": "stellendam.haringvlietsluizen.schuif1",
+     "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+     "km": 26.9
+    }
+   ]
+  },
+  "intro": "Burghsluis is een kleine haven aan de zuidkant van Schouwen, aan de Oosterschelde. De oever is in trek bij duikers en vissers, die rekening houden met de stroming van het getij. Bij laagwater valt een deel van de oever droog.",
+  "regioSlug": "zeeland"
+ },
+ {
+  "slug": "borssele",
+  "naam": "Borssele",
+  "regio": "Zeeland",
+  "type": "westerschelde",
+  "lat": 51.415,
+  "lon": 3.735,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "gatvanborssele",
+     "naam": "Gat van Borssele",
+     "km": 1.6
+    },
+    {
+     "code": "vlissingen",
+     "naam": "Vlissingen",
+     "km": 9.8
+    },
+    {
+     "code": "terneuzen",
+     "naam": "Terneuzen",
+     "km": 10.6
+    },
+    {
+     "code": "breskens.veerhaven",
+     "naam": "Breskens, Veerhaven",
+     "km": 12.9
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "borssele.badstrand",
+     "naam": "Borssele, badstrand",
+     "km": 1.9
+    },
+    {
+     "code": "borssele.noordnol",
+     "naam": "Borssele, Noordnol",
+     "km": 2.3
+    },
+    {
+     "code": "honte",
+     "naam": "Honte",
+     "km": 2.3
+    },
+    {
+     "code": "vaarwaterlangshoofdplaat",
+     "naam": "Vaarwater langs Hoofdplaat",
+     "km": 6.0
+    },
+    {
+     "code": "hoofdplaat",
+     "naam": "Hoofdplaat",
+     "km": 6.2
+    },
+    {
+     "code": "ritthem.fortrammekens.badstrand",
+     "naam": "Ritthem, Fort Rammekens, badstrand",
+     "km": 6.8
+    },
+    {
+     "code": "vlissingen",
+     "naam": "Vlissingen",
+     "km": 9.8
+    },
+    {
+     "code": "terneuzen.westsluis.buiten",
+     "naam": "Terneuzen, westsluis, buiten",
+     "km": 10.2
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "borssele",
+     "naam": "Borssele",
+     "km": 0.5
+    },
+    {
+     "code": "gatvanborssele",
+     "naam": "Gat van Borssele",
+     "km": 1.6
+    },
+    {
+     "code": "vlissingen",
+     "naam": "Vlissingen",
+     "km": 9.8
+    },
+    {
+     "code": "terneuzen",
+     "naam": "Terneuzen",
+     "km": 10.6
+    },
+    {
+     "code": "breskens.handelshaven",
+     "naam": "Breskens, Handelshaven",
+     "km": 11.9
+    },
+    {
+     "code": "terneuzen.westsluis.buiten",
+     "naam": "Terneuzen, westsluis, buiten",
+     "km": 10.2
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "honte.kaloot",
+     "naam": "Honte, Kaloot",
+     "km": 2.3
+    },
+    {
+     "code": "vlissingen.honte",
+     "naam": "Vlissingen Honte",
+     "km": 3.8
+    },
+    {
+     "code": "vaarwaterlangshoofdplaat",
+     "naam": "Vaarwater langs Hoofdplaat",
+     "km": 6.0
+    },
+    {
+     "code": "pasvanterneuzen",
+     "naam": "Pas van Terneuzen",
+     "km": 6.1
+    },
+    {
+     "code": "vaarwaterlangshoofdplaat.4",
+     "naam": "Vaarwater langs Hoofdplaat, punt 04",
+     "km": 6.2
+    },
+    {
+     "code": "terneuzen.pasvanterneuzen.1",
+     "naam": "Terneuzen Pas van Terneuzen boei",
+     "km": 6.4
+    },
+    {
+     "code": "pasvanterneuzen.nabijboei18",
+     "naam": "Pas van Terneuzen, nabij boei 18",
+     "km": 8.7
+    },
+    {
+     "code": "hansweert.2overloop",
+     "naam": "Hansweert, 2 overloop",
+     "km": 13.4
+    }
+   ],
+   "wind": [
+    {
+     "code": "vlissingen",
+     "naam": "Vlissingen",
+     "km": 9.8
+    },
+    {
+     "code": "terneuzen.westsluis",
+     "naam": "Terneuzen, westsluis",
+     "km": 10.3
+    },
+    {
+     "code": "wilhelminadorp",
+     "naam": "Wilhelminadorp",
+     "km": 16.1
+    },
+    {
+     "code": "kats.zandkreeksluis.buiten",
+     "naam": "Kats Zandkreeksluis buiten",
+     "km": 16.7
+    },
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 18.5
+    },
+    {
+     "code": "cadzand.1",
+     "naam": "Cadzand, 1",
+     "km": 25.6
+    },
+    {
+     "code": "oosterschelde.4",
+     "naam": "Oosterschelde, 4",
+     "km": 26.9
+    },
+    {
+     "code": "zierikzee.zeelandbrug",
+     "naam": "Zierikzee Zeelandbrug",
+     "km": 26.9
+    }
+   ]
+  },
+  "intro": "Borssele ligt aan de Westerschelde, in de buurt van het strandje bij de Kaloot. Over de Westerschelde varen grote zeeschepen naar Vlissingen en Antwerpen. Het verschil tussen eb en vloed is hier groter dan aan de Noordzeekust.",
+  "regioSlug": "zeeland"
+ },
+ {
+  "slug": "walsoorden",
+  "naam": "Walsoorden",
+  "regio": "Zeeland",
+  "type": "westerschelde",
+  "lat": 51.38,
+  "lon": 4.035,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "walsoorden",
+     "naam": "Walsoorden",
+     "km": 2.1
+    },
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 7.8
+    },
+    {
+     "code": "kloosterzande.baalhoek",
+     "naam": "Kloosterzande, Baalhoek",
+     "km": 4.9
+    },
+    {
+     "code": "ossenisse",
+     "naam": "Ossenisse",
+     "km": 5.7
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "lamswaarde.boei59",
+     "naam": "Lamswaarde, boei 59",
+     "km": 2.1
+    },
+    {
+     "code": "ossenisse",
+     "naam": "Ossenisse",
+     "km": 5.7
+    },
+    {
+     "code": "perkpolder.badstrand",
+     "naam": "Perkpolder, badstrand",
+     "km": 2.7
+    },
+    {
+     "code": "zuidergat.boei44",
+     "naam": "Zuidergat, boei 44",
+     "km": 3.6
+    },
+    {
+     "code": "schaarvanwaarde.boeisvw3",
+     "naam": "Schaar van Waarde, boei SVW3",
+     "km": 3.8
+    },
+    {
+     "code": "kloosterzande.baalhoek",
+     "naam": "Kloosterzande, Baalhoek",
+     "km": 4.9
+    },
+    {
+     "code": "valkenisse.boei65",
+     "naam": "Valkenisse, boei 65",
+     "km": 5.6
+    },
+    {
+     "code": "hansweert.geul",
+     "naam": "Hansweert, geul",
+     "km": 6.4
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "walsoorden",
+     "naam": "Walsoorden",
+     "km": 2.1
+    },
+    {
+     "code": "perkpolder.walsoorden",
+     "naam": "Perkpolder, Walsoorden",
+     "km": 2.4
+    },
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 7.8
+    },
+    {
+     "code": "kloosterzande.baalhoek",
+     "naam": "Kloosterzande, Baalhoek",
+     "km": 4.9
+    },
+    {
+     "code": "ossenisse",
+     "naam": "Ossenisse",
+     "km": 5.7
+    },
+    {
+     "code": "schaarvandenoord",
+     "naam": "Schaar van de Noord",
+     "km": 9.0
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "nieuwnamen.overloopvanvalkenisse",
+     "naam": "Nieuwnamen Overloop van Valkenisse",
+     "km": 7.1
+    },
+    {
+     "code": "valkenisse.overloop.nabijboei65a",
+     "naam": "Valkenisse, overloop, nabij boei 65A",
+     "km": 7.2
+    },
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 7.8
+    },
+    {
+     "code": "hansweert.2",
+     "naam": "Hansweert, punt 02",
+     "km": 7.9
+    },
+    {
+     "code": "griete",
+     "naam": "Griete",
+     "km": 8.0
+    },
+    {
+     "code": "hansweert.2overloop",
+     "naam": "Hansweert, 2 overloop",
+     "km": 8.2
+    },
+    {
+     "code": "rilland.bath",
+     "naam": "Rilland, Bath",
+     "km": 12.3
+    },
+    {
+     "code": "bath.2",
+     "naam": "Bath, punt 02",
+     "km": 12.3
+    }
+   ],
+   "wind": [
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 7.8
+    },
+    {
+     "code": "marollegat",
+     "naam": "Marollegat",
+     "km": 15.5
+    },
+    {
+     "code": "terneuzen.westsluis",
+     "naam": "Terneuzen, westsluis",
+     "km": 16.0
+    },
+    {
+     "code": "tholen.bergsediepsluis",
+     "naam": "Tholen Bergsediepsluis",
+     "km": 17.4
+    },
+    {
+     "code": "wilhelminadorp",
+     "naam": "Wilhelminadorp",
+     "km": 19.3
+    },
+    {
+     "code": "kats.zandkreeksluis.buiten",
+     "naam": "Kats Zandkreeksluis buiten",
+     "km": 21.9
+    },
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 24.3
+    },
+    {
+     "code": "zierikzee.zeelandbrug",
+     "naam": "Zierikzee Zeelandbrug",
+     "km": 28.8
+    }
+   ]
+  },
+  "intro": "Walsoorden is een havendorp in Zeeuws-Vlaanderen aan de Westerschelde, tegenover Hansweert. Het getijverschil is hier een van de grootste van Nederland: ruim 4 meter tussen hoog- en laagwater. Vanaf de dijk zie je de grote zeeschepen op weg naar Antwerpen.",
+  "regioSlug": "zeeland"
+ },
+ {
+  "slug": "goese-sas",
+  "naam": "Goese Sas",
+  "regio": "Zeeland",
+  "type": "oosterschelde",
+  "lat": 51.538,
+  "lon": 3.928,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "kats.zandkreeksluis",
+     "naam": "Kats, Zandkreeksluis",
+     "km": 4.4
+    },
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 8.5
+    },
+    {
+     "code": "yerseke",
+     "naam": "Yerseke",
+     "km": 10.8
+    },
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 11.3
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "wilhelminadorp.galgenplaat",
+     "naam": "Wilhelminadorp, Galgenplaat",
+     "km": 1.3
+    },
+    {
+     "code": "zandkreek",
+     "naam": "Zandkreek",
+     "km": 1.5
+    },
+    {
+     "code": "zandkreek.boeiz1",
+     "naam": "Zandkreek, boei Z1",
+     "km": 2.3
+    },
+    {
+     "code": "zandkreeksluis.inloop.2",
+     "naam": "Zandkreeksluis, inloop, punt 02",
+     "km": 4.1
+    },
+    {
+     "code": "katseveer.badstrand",
+     "naam": "Katseveer, badstrand",
+     "km": 4.1
+    },
+    {
+     "code": "kats.zandkreeksluis",
+     "naam": "Kats, Zandkreeksluis",
+     "km": 4.4
+    },
+    {
+     "code": "katsbinnen",
+     "naam": "Kats binnen",
+     "km": 4.6
+    },
+    {
+     "code": "zandkreeksluis.binnen",
+     "naam": "Zandkreeksluis, binnen",
+     "km": 4.6
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "kats.zandkreeksluis",
+     "naam": "Kats, Zandkreeksluis",
+     "km": 4.4
+    },
+    {
+     "code": "katsbinnen",
+     "naam": "Kats binnen",
+     "km": 4.6
+    },
+    {
+     "code": "kats.zandkreeksluis.kolk1",
+     "naam": "Kast Zanskreeksluis kolk1",
+     "km": 4.6
+    },
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 8.5
+    },
+    {
+     "code": "yerseke",
+     "naam": "Yerseke",
+     "km": 10.8
+    },
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 11.3
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "keeten",
+     "naam": "Keeten",
+     "km": 8.1
+    },
+    {
+     "code": "stavenisse.keeten",
+     "naam": "Stavenisse, keeten",
+     "km": 9.2
+    },
+    {
+     "code": "hansweert.2",
+     "naam": "Hansweert, punt 02",
+     "km": 11.2
+    },
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 11.3
+    },
+    {
+     "code": "roggenplaat",
+     "naam": "Roggenplaat",
+     "km": 14.0
+    },
+    {
+     "code": "hansweert.2overloop",
+     "naam": "Hansweert, 2 overloop",
+     "km": 18.1
+    },
+    {
+     "code": "griete",
+     "naam": "Griete",
+     "km": 18.4
+    },
+    {
+     "code": "oosterscheldekering.roompot",
+     "naam": "Oosterscheldekering buiten Roompot",
+     "km": 19.0
+    }
+   ],
+   "wind": [
+    {
+     "code": "wilhelminadorp",
+     "naam": "Wilhelminadorp",
+     "km": 3.3
+    },
+    {
+     "code": "kats.zandkreeksluis.buiten",
+     "naam": "Kats Zandkreeksluis buiten",
+     "km": 4.8
+    },
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 8.5
+    },
+    {
+     "code": "zierikzee.zeelandbrug",
+     "naam": "Zierikzee Zeelandbrug",
+     "km": 10.1
+    },
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 11.3
+    },
+    {
+     "code": "tholen.bergsediepsluis",
+     "naam": "Tholen Bergsediepsluis",
+     "km": 17.3
+    },
+    {
+     "code": "bruinisse.grevelingensluis",
+     "naam": "Bruinisse Grevelingensluis",
+     "km": 18.4
+    },
+    {
+     "code": "marollegat",
+     "naam": "Marollegat",
+     "km": 19.5
+    }
+   ]
+  },
+  "intro": "Het Goese Sas is de sluis waar het havenkanaal van Goes in de Oosterschelde uitkomt, bij Wilhelminadorp. Aan de Oosterscheldekant is er gewoon eb en vloed, in het kanaal niet. Bij laagwater vallen de slikken langs de dijk droog.",
+  "regioSlug": "zeeland"
+ },
+ {
+  "slug": "sint-annaland",
+  "naam": "Sint-Annaland",
+  "regio": "Zeeland",
+  "type": "oosterschelde",
+  "lat": 51.608,
+  "lon": 4.11,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "sintannaland.havensteiger",
+     "naam": "Sint Annaland, Haven Steiger",
+     "km": 0.5
+    },
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 7.4
+    },
+    {
+     "code": "krammersluizen.west",
+     "naam": "Krammersluizen west",
+     "km": 6.2
+    },
+    {
+     "code": "yerseke",
+     "naam": "Yerseke",
+     "km": 11.6
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "sintannaland.badstrand",
+     "naam": "Sint Annaland, Badstrand",
+     "km": 0.4
+    },
+    {
+     "code": "krabbenkreek",
+     "naam": "Krabbenkreek",
+     "km": 0.4
+    },
+    {
+     "code": "zijpe",
+     "naam": "Zijpe",
+     "km": 4.2
+    },
+    {
+     "code": "sintphilipsland.badstrand",
+     "naam": "Sint Philipsland, badstrand",
+     "km": 4.3
+    },
+    {
+     "code": "keeten.boeikt22.slikkenvanviane",
+     "naam": "Keeten, boei Kt22, Slikken van Viane",
+     "km": 5.1
+    },
+    {
+     "code": "bruinisse",
+     "naam": "Bruinisse",
+     "km": 5.3
+    },
+    {
+     "code": "sintphilipsland.slaak.zuid",
+     "naam": "Sint Philipsland Slaak zuid",
+     "km": 5.6
+    },
+    {
+     "code": "sintphilipsland.slaak.oost",
+     "naam": "Sint Philipsland Slaak oost",
+     "km": 5.9
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "sintannaland.oosterschelde",
+     "naam": "Sint Annaland haven",
+     "km": 0.5
+    },
+    {
+     "code": "sintannaland.havensteiger",
+     "naam": "Sint Annaland, Haven Steiger",
+     "km": 0.5
+    },
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 7.4
+    },
+    {
+     "code": "bruinisse",
+     "naam": "Bruinisse",
+     "km": 5.3
+    },
+    {
+     "code": "slaakdambrug",
+     "naam": "Slaakdambrug",
+     "km": 5.7
+    },
+    {
+     "code": "bruinisse.krammersluis.oosterschelde.2",
+     "naam": "Bruinisse Krammersluis, Oosterschelde",
+     "km": 6.1
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "stavenisse.keeten",
+     "naam": "Stavenisse, keeten",
+     "km": 6.6
+    },
+    {
+     "code": "keeten",
+     "naam": "Keeten",
+     "km": 10.0
+    },
+    {
+     "code": "marollegat",
+     "naam": "Marollegat",
+     "km": 15.5
+    },
+    {
+     "code": "hansweert.2",
+     "naam": "Hansweert, punt 02",
+     "km": 19.5
+    },
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 19.7
+    },
+    {
+     "code": "roggenplaat",
+     "naam": "Roggenplaat",
+     "km": 21.2
+    },
+    {
+     "code": "bath.2",
+     "naam": "Bath, punt 02",
+     "km": 24.2
+    },
+    {
+     "code": "rilland.bath",
+     "naam": "Rilland, Bath",
+     "km": 24.3
+    }
+   ],
+   "wind": [
+    {
+     "code": "bruinisse.grevelingensluis",
+     "naam": "Bruinisse Grevelingensluis",
+     "km": 6.6
+    },
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 7.4
+    },
+    {
+     "code": "tholen.bergsediepsluis",
+     "naam": "Tholen Bergsediepsluis",
+     "km": 11.7
+    },
+    {
+     "code": "zierikzee.zeelandbrug",
+     "naam": "Zierikzee Zeelandbrug",
+     "km": 13.5
+    },
+    {
+     "code": "marollegat",
+     "naam": "Marollegat",
+     "km": 15.5
+    },
+    {
+     "code": "wilhelminadorp",
+     "naam": "Wilhelminadorp",
+     "km": 18.1
+    },
+    {
+     "code": "kats.zandkreeksluis.buiten",
+     "naam": "Kats Zandkreeksluis buiten",
+     "km": 18.7
+    },
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 19.7
+    }
+   ]
+  },
+  "intro": "Sint-Annaland ligt op Tholen aan de Oosterschelde, met een jachthaven en een klein strandje. Het getijmeetpunt staat in de haven zelf, dus de tijden gelden precies voor het dorp. Bij laagwater komen er langs de dijk slikken droog te liggen.",
+  "regioSlug": "zeeland"
+ },
+ {
+  "slug": "bergse-diepsluis",
+  "naam": "Bergse Diepsluis",
+  "regio": "Zeeland",
+  "type": "oosterschelde",
+  "lat": 51.507,
+  "lon": 4.212,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "marollegat",
+     "naam": "Marollegat",
+     "km": 3.4
+    },
+    {
+     "code": "tholen.bergsediepsluis.buiten",
+     "naam": "Tholen, Bergse Diepsluis, buiten",
+     "km": 3.2
+    },
+    {
+     "code": "yerseke",
+     "naam": "Yerseke",
+     "km": 9.5
+    },
+    {
+     "code": "rilland.bath",
+     "naam": "Rilland, Bath",
+     "km": 12.0
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "marollegat",
+     "naam": "Marollegat",
+     "km": 3.4
+    },
+    {
+     "code": "tholen.nieuwehaven.boeinh7",
+     "naam": "Tholen, Nieuwe Haven, boei NH7",
+     "km": 0.7
+    },
+    {
+     "code": "molenplaat.midden",
+     "naam": "Molenplaat, midden",
+     "km": 1.2
+    },
+    {
+     "code": "oesterdam.speelmansplaten.badstrand",
+     "naam": "Oesterdam, Speelmansplaten, badstrand",
+     "km": 2.0
+    },
+    {
+     "code": "rilland.bathsespuikanaal.inloop",
+     "naam": "Rilland, Bathse Spuikanaal, inloop",
+     "km": 5.0
+    },
+    {
+     "code": "bergsediepsluis.noord",
+     "naam": "Bergse Diepsluis, noord",
+     "km": 2.8
+    },
+    {
+     "code": "binnenschelde",
+     "naam": "Binnenschelde",
+     "km": 3.1
+    },
+    {
+     "code": "oesterdam.westzijde.badstrand",
+     "naam": "Oesterdam, westzijde, badstrand",
+     "km": 3.2
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "razernijpolder",
+     "naam": "Razernijpolder",
+     "km": 0.4
+    },
+    {
+     "code": "marollegat",
+     "naam": "Marollegat",
+     "km": 3.4
+    },
+    {
+     "code": "bergenopzoom.noord",
+     "naam": "Bergen op Zoom, noord",
+     "km": 2.6
+    },
+    {
+     "code": "tholen.bergsediepsluis.buiten",
+     "naam": "Tholen, Bergse Diepsluis, buiten",
+     "km": 3.2
+    },
+    {
+     "code": "rilland.bathsespuikanaal.inloop",
+     "naam": "Rilland, Bathse Spuikanaal, inloop",
+     "km": 5.0
+    },
+    {
+     "code": "lodijksegat",
+     "naam": "Lodijkse Gat",
+     "km": 6.0
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "marollegat",
+     "naam": "Marollegat",
+     "km": 3.4
+    },
+    {
+     "code": "bath.2",
+     "naam": "Bath, punt 02",
+     "km": 11.9
+    },
+    {
+     "code": "rilland.bath",
+     "naam": "Rilland, Bath",
+     "km": 12.0
+    },
+    {
+     "code": "valkenisse.overloop.nabijboei65a",
+     "naam": "Valkenisse, overloop, nabij boei 65A",
+     "km": 16.0
+    },
+    {
+     "code": "nieuwnamen.overloopvanvalkenisse",
+     "naam": "Nieuwnamen Overloop van Valkenisse",
+     "km": 16.1
+    },
+    {
+     "code": "hansweert.2",
+     "naam": "Hansweert, punt 02",
+     "km": 16.2
+    },
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 16.3
+    },
+    {
+     "code": "stavenisse.keeten",
+     "naam": "Stavenisse, keeten",
+     "km": 17.1
+    }
+   ],
+   "wind": [
+    {
+     "code": "tholen.bergsediepsluis",
+     "naam": "Tholen Bergsediepsluis",
+     "km": 2.7
+    },
+    {
+     "code": "marollegat",
+     "naam": "Marollegat",
+     "km": 3.4
+    },
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 16.3
+    },
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 17.6
+    },
+    {
+     "code": "bruinisse.grevelingensluis",
+     "naam": "Bruinisse Grevelingensluis",
+     "km": 19.5
+    },
+    {
+     "code": "wilhelminadorp",
+     "naam": "Wilhelminadorp",
+     "km": 22.8
+    },
+    {
+     "code": "zierikzee.zeelandbrug",
+     "naam": "Zierikzee Zeelandbrug",
+     "km": 24.4
+    },
+    {
+     "code": "kats.zandkreeksluis.buiten",
+     "naam": "Kats Zandkreeksluis buiten",
+     "km": 24.7
+    }
+   ]
+  },
+  "intro": "De Bergse Diepsluis is de sluis voor de recreatievaart in de Oesterdam, bij Tholen. Hier vaar je van de Oosterschelde, met eb en vloed, naar het Zoommeer, dat een vast peil heeft. Voor schippers is het getij belangrijk bij het plannen van de doorvaart.",
+  "regioSlug": "zeeland"
+ },
+ {
+  "slug": "tholen",
+  "naam": "Tholen",
+  "regio": "Zeeland",
+  "type": "oosterschelde",
+  "lat": 51.533,
+  "lon": 4.215,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "marollegat",
+     "naam": "Marollegat",
+     "km": 6.3
+    },
+    {
+     "code": "tholen.bergsediepsluis.buiten",
+     "naam": "Tholen, Bergse Diepsluis, buiten",
+     "km": 4.2
+    },
+    {
+     "code": "yerseke",
+     "naam": "Yerseke",
+     "km": 10.1
+    },
+    {
+     "code": "sintannaland.havensteiger",
+     "naam": "Sint Annaland, Haven Steiger",
+     "km": 10.7
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "tholen.nieuwehaven.boeinh7",
+     "naam": "Tholen, Nieuwe Haven, boei NH7",
+     "km": 2.3
+    },
+    {
+     "code": "marollegat",
+     "naam": "Marollegat",
+     "km": 6.3
+    },
+    {
+     "code": "bergsediepsluis.noord",
+     "naam": "Bergse Diepsluis, noord",
+     "km": 3.7
+    },
+    {
+     "code": "molenplaat.midden",
+     "naam": "Molenplaat, midden",
+     "km": 3.9
+    },
+    {
+     "code": "oesterdam.speelmansplaten.badstrand",
+     "naam": "Oesterdam, Speelmansplaten, badstrand",
+     "km": 4.1
+    },
+    {
+     "code": "rilland.bathsespuikanaal.inloop",
+     "naam": "Rilland, Bathse Spuikanaal, inloop",
+     "km": 7.8
+    },
+    {
+     "code": "binnenschelde",
+     "naam": "Binnenschelde",
+     "km": 5.1
+    },
+    {
+     "code": "nieuwvossemeer",
+     "naam": "Nieuw-Vossemeer",
+     "km": 5.8
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "razernijpolder",
+     "naam": "Razernijpolder",
+     "km": 3.0
+    },
+    {
+     "code": "marollegat",
+     "naam": "Marollegat",
+     "km": 6.3
+    },
+    {
+     "code": "bergenopzoom.noord",
+     "naam": "Bergen op Zoom, noord",
+     "km": 3.8
+    },
+    {
+     "code": "tholen.bergsediepsluis.buiten",
+     "naam": "Tholen, Bergse Diepsluis, buiten",
+     "km": 4.2
+    },
+    {
+     "code": "nieuwvossemeer",
+     "naam": "Nieuw-Vossemeer",
+     "km": 5.8
+    },
+    {
+     "code": "lodijksegat",
+     "naam": "Lodijkse Gat",
+     "km": 6.4
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "marollegat",
+     "naam": "Marollegat",
+     "km": 6.3
+    },
+    {
+     "code": "bath.2",
+     "naam": "Bath, punt 02",
+     "km": 14.8
+    },
+    {
+     "code": "rilland.bath",
+     "naam": "Rilland, Bath",
+     "km": 14.9
+    },
+    {
+     "code": "stavenisse.keeten",
+     "naam": "Stavenisse, keeten",
+     "km": 15.7
+    },
+    {
+     "code": "hansweert.2",
+     "naam": "Hansweert, punt 02",
+     "km": 17.7
+    },
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 17.9
+    },
+    {
+     "code": "valkenisse.overloop.nabijboei65a",
+     "naam": "Valkenisse, overloop, nabij boei 65A",
+     "km": 18.9
+    },
+    {
+     "code": "nieuwnamen.overloopvanvalkenisse",
+     "naam": "Nieuwnamen Overloop van Valkenisse",
+     "km": 18.9
+    }
+   ],
+   "wind": [
+    {
+     "code": "tholen.bergsediepsluis",
+     "naam": "Tholen Bergsediepsluis",
+     "km": 3.8
+    },
+    {
+     "code": "marollegat",
+     "naam": "Marollegat",
+     "km": 6.3
+    },
+    {
+     "code": "stavenisse",
+     "naam": "Stavenisse",
+     "km": 16.3
+    },
+    {
+     "code": "bruinisse.grevelingensluis",
+     "naam": "Bruinisse Grevelingensluis",
+     "km": 17.0
+    },
+    {
+     "code": "hansweert",
+     "naam": "Hansweert",
+     "km": 17.9
+    },
+    {
+     "code": "wilhelminadorp",
+     "naam": "Wilhelminadorp",
+     "km": 22.9
+    },
+    {
+     "code": "zierikzee.zeelandbrug",
+     "naam": "Zierikzee Zeelandbrug",
+     "km": 23.1
+    },
+    {
+     "code": "kats.zandkreeksluis.buiten",
+     "naam": "Kats Zandkreeksluis buiten",
+     "km": 24.6
+    }
+   ]
+  },
+  "intro": "De vestingstad Tholen ligt aan de oostkant van de Oosterschelde, vlak bij Bergen op Zoom. In het oosten van de Oosterschelde is het getijverschil groter dan bij de monding. Langs de dijken vallen bij laagwater grote slikken droog.",
+  "regioSlug": "zeeland"
+ },
+ {
+  "slug": "kijkduin",
+  "naam": "Kijkduin",
+  "regio": "Zuid-Holland",
+  "type": "kust",
+  "lat": 52.068,
+  "lon": 4.218,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "scheveningen",
+     "naam": "Scheveningen",
+     "km": 4.6
+    },
+    {
+     "code": "hoekvanholland",
+     "naam": "Hoek van Holland",
+     "km": 12.2
+    },
+    {
+     "code": "hoekvanholland.maeslantkering.beneden.noord",
+     "naam": "Hoek van Holland, Maeslantkering, Beneden, noord",
+     "km": 12.8
+    },
+    {
+     "code": "scheurhaven",
+     "naam": "Scheurhaven",
+     "km": 12.9
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "kijkduin",
+     "naam": "Kijkduin",
+     "km": 0.3
+    },
+    {
+     "code": "scheveningen.zuiderstrand",
+     "naam": "Scheveningen, Zuiderstrand",
+     "km": 3.3
+    },
+    {
+     "code": "scheveningen.gemaalschouteverversingskanaal",
+     "naam": "Scheveningen, Gemaal Schoute verversingskanaal",
+     "km": 4.1
+    },
+    {
+     "code": "terheijde.1kmuitdekust",
+     "naam": "Ter Heijde, 1 km uit de kust",
+     "km": 4.2
+    },
+    {
+     "code": "terheijde.2kmuitdekust",
+     "naam": "Ter Heijde, 2 km uit de kust",
+     "km": 4.3
+    },
+    {
+     "code": "scheveningen.buitenhaven",
+     "naam": "Scheveningen, buitenhaven",
+     "km": 4.4
+    },
+    {
+     "code": "terheijde.4kmuitdekust",
+     "naam": "Ter Heijde, 4 km uit de kust",
+     "km": 5.2
+    },
+    {
+     "code": "scheveningen.vuurtorenbadstrand",
+     "naam": "Scheveningen, vuurtoren badstrand",
+     "km": 5.6
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "scheveningen",
+     "naam": "Scheveningen",
+     "km": 4.6
+    },
+    {
+     "code": "hoekvanholland",
+     "naam": "Hoek van Holland",
+     "km": 12.2
+    },
+    {
+     "code": "hoekvanholland.benoordendenoorderdam",
+     "naam": "Hoek van Holland, benoorden de Noorderdam",
+     "km": 12.3
+    },
+    {
+     "code": "hoekvanholland.splitsingsdam",
+     "naam": "Hoek van Holland, splitsingsdam",
+     "km": 12.7
+    },
+    {
+     "code": "hoekvanholland.maeslantkering.beneden.noord",
+     "naam": "Hoek van Holland, Maeslantkering, Beneden, noord",
+     "km": 12.8
+    },
+    {
+     "code": "scheurhaven",
+     "naam": "Scheurhaven",
+     "km": 12.9
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "zandmotor.boei.zuid",
+     "naam": "Zandmotor, boei, zuid",
+     "km": 1.7
+    },
+    {
+     "code": "zandmoter.boei.noord",
+     "naam": "Zandmoter, boei, noord",
+     "km": 4.6
+    },
+    {
+     "code": "hoekvanholland.maeslantkering.beneden.noord",
+     "naam": "Hoek van Holland, Maeslantkering, Beneden, noord",
+     "km": 12.8
+    },
+    {
+     "code": "maasmond.stroommeetpaal",
+     "naam": "Maasmond, stroommeetpaal",
+     "km": 16.7
+    },
+    {
+     "code": "maasgeul.2",
+     "naam": "Maasgeul 2",
+     "km": 16.8
+    },
+    {
+     "code": "hollandsekust.zuid.alpha",
+     "naam": "Hollandse Kust Zuid platform Alpha",
+     "km": 18.4
+    },
+    {
+     "code": "hollandsekust.zuid.windparkzuid",
+     "naam": "Hollandse Kust, Zuid Windpark Zuid",
+     "km": 21.6
+    },
+    {
+     "code": "noordwijk.meetpost",
+     "naam": "Noordwijk, meetpost",
+     "km": 23.4
+    }
+   ],
+   "wind": [
+    {
+     "code": "hoekvanholland",
+     "naam": "Hoek van Holland",
+     "km": 12.2
+    },
+    {
+     "code": "hoekvanholland.maeslantkering",
+     "naam": "Hoek van Holland Maeslantkering",
+     "km": 13.3
+    },
+    {
+     "code": "hoekvanholland.lagelicht",
+     "naam": "Hoek van Holland, lage licht",
+     "km": 13.4
+    },
+    {
+     "code": "hollandsekust.zuid.alpha.1",
+     "naam": "Hollandse Kust Zuid platform Alpha 1",
+     "km": 18.4
+    },
+    {
+     "code": "hollandsekust.zuid.alpha.2",
+     "naam": "Hollandse Kust Zuid platform Alpha 2",
+     "km": 18.4
+    },
+    {
+     "code": "rotterdam.luchthaven",
+     "naam": "Rotterdam, luchthaven",
+     "km": 20.6
+    },
+    {
+     "code": "botlek.geulhaven",
+     "naam": "Botlek Geulhaven",
+     "km": 20.6
+    },
+    {
+     "code": "stellendam.haringvlietsluizen.schuif1",
+     "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+     "km": 28.1
+    }
+   ]
+  },
+  "intro": "Kijkduin is de rustige badplaats van Den Haag, ten zuiden van Scheveningen. Het strand is breed en ligt aan de rand van de duinen. De getijden komen van het meetpunt Scheveningen, een paar kilometer verderop.",
+  "regioSlug": "zuid-holland"
+ },
+ {
+  "slug": "monster",
+  "naam": "Monster",
+  "regio": "Zuid-Holland",
+  "type": "kust",
+  "lat": 52.027,
+  "lon": 4.16,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "hoekvanholland",
+     "naam": "Hoek van Holland",
+     "km": 6.2
+    },
+    {
+     "code": "scheurhaven",
+     "naam": "Scheurhaven",
+     "km": 7.3
+    },
+    {
+     "code": "beerkanaal",
+     "naam": "Beerkanaal",
+     "km": 7.6
+    },
+    {
+     "code": "hoekvanholland.maeslantkering.beneden.noord",
+     "naam": "Hoek van Holland, Maeslantkering, Beneden, noord",
+     "km": 7.6
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "zandmotor.monsterterheijde",
+     "naam": "Zandmotor, Monster Ter Heijde",
+     "km": 0.4
+    },
+    {
+     "code": "terheijde.1kmuitdekust",
+     "naam": "Ter Heijde, 1 km uit de kust",
+     "km": 2.2
+    },
+    {
+     "code": "terheijde.2kmuitdekust",
+     "naam": "Ter Heijde, 2 km uit de kust",
+     "km": 2.8
+    },
+    {
+     "code": "hoekvanholland",
+     "naam": "Hoek van Holland",
+     "km": 6.2
+    },
+    {
+     "code": "terheijde.4kmuitdekust",
+     "naam": "Ter Heijde, 4 km uit de kust",
+     "km": 4.5
+    },
+    {
+     "code": "hoekvanholland.badstrand",
+     "naam": "Hoek van Holland, badstrand",
+     "km": 6.2
+    },
+    {
+     "code": "hoekvanholland.zuidoever",
+     "naam": "Hoek van Holland, zuidoever",
+     "km": 6.3
+    },
+    {
+     "code": "kijkduin",
+     "naam": "Kijkduin",
+     "km": 6.3
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "hoekvanholland",
+     "naam": "Hoek van Holland",
+     "km": 6.2
+    },
+    {
+     "code": "hoekvanholland.benoordendenoorderdam",
+     "naam": "Hoek van Holland, benoorden de Noorderdam",
+     "km": 6.4
+    },
+    {
+     "code": "hoekvanholland.splitsingsdam",
+     "naam": "Hoek van Holland, splitsingsdam",
+     "km": 6.8
+    },
+    {
+     "code": "scheurhaven",
+     "naam": "Scheurhaven",
+     "km": 7.3
+    },
+    {
+     "code": "beerkanaal",
+     "naam": "Beerkanaal",
+     "km": 7.6
+    },
+    {
+     "code": "hoekvanholland.maeslantkering.beneden.noord",
+     "naam": "Hoek van Holland, Maeslantkering, Beneden, noord",
+     "km": 7.6
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "zandmoter.boei.noord",
+     "naam": "Zandmoter, boei, noord",
+     "km": 2.3
+    },
+    {
+     "code": "zandmotor.boei.zuid",
+     "naam": "Zandmotor, boei, zuid",
+     "km": 5.6
+    },
+    {
+     "code": "hoekvanholland.maeslantkering.beneden.noord",
+     "naam": "Hoek van Holland, Maeslantkering, Beneden, noord",
+     "km": 7.6
+    },
+    {
+     "code": "maasmond.stroommeetpaal",
+     "naam": "Maasmond, stroommeetpaal",
+     "km": 11.1
+    },
+    {
+     "code": "maasgeul.2",
+     "naam": "Maasgeul 2",
+     "km": 11.3
+    },
+    {
+     "code": "haringvlietmond",
+     "naam": "Haringvlietmond",
+     "km": 21.3
+    },
+    {
+     "code": "hollandsekust.zuid.alpha",
+     "naam": "Hollandse Kust Zuid platform Alpha",
+     "km": 23.0
+    },
+    {
+     "code": "haringvlietsluizen.buiten",
+     "naam": "Haringvlietsluizen, buiten",
+     "km": 23.4
+    }
+   ],
+   "wind": [
+    {
+     "code": "hoekvanholland",
+     "naam": "Hoek van Holland",
+     "km": 6.2
+    },
+    {
+     "code": "hoekvanholland.lagelicht",
+     "naam": "Hoek van Holland, lage licht",
+     "km": 7.4
+    },
+    {
+     "code": "hoekvanholland.maeslantkering",
+     "naam": "Hoek van Holland Maeslantkering",
+     "km": 8.1
+    },
+    {
+     "code": "botlek.geulhaven",
+     "naam": "Botlek Geulhaven",
+     "km": 18.3
+    },
+    {
+     "code": "rotterdam.luchthaven",
+     "naam": "Rotterdam, luchthaven",
+     "km": 21.6
+    },
+    {
+     "code": "stellendam.haringvlietsluizen.schuif1",
+     "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+     "km": 22.4
+    },
+    {
+     "code": "hollandsekust.zuid.alpha.1",
+     "naam": "Hollandse Kust Zuid platform Alpha 1",
+     "km": 23.0
+    },
+    {
+     "code": "hollandsekust.zuid.alpha.2",
+     "naam": "Hollandse Kust Zuid platform Alpha 2",
+     "km": 23.0
+    }
+   ]
+  },
+  "intro": "Monster ligt aan de Westlandse kust, tussen Kijkduin en Hoek van Holland, in de buurt van de Zandmotor. Het strand is breed en rustig. Bij harde wind kan het water hoger komen dan het getij voorspelt.",
+  "regioSlug": "zuid-holland"
+ },
+ {
+  "slug": "rockanje",
+  "naam": "Rockanje",
+  "regio": "Zuid-Holland",
+  "type": "kust",
+  "lat": 51.875,
+  "lon": 4.03,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "stellendam.buitenhaven",
+     "naam": "Stellendam, buitenhaven",
+     "km": 5.3
+    },
+    {
+     "code": "maasvlakte.hartelhaven",
+     "naam": "Maasvlakte, Hartelhaven",
+     "km": 6.1
+    },
+    {
+     "code": "mississippihaven",
+     "naam": "Mississippihaven",
+     "km": 6.7
+    },
+    {
+     "code": "maasvlakte.amaliahaven",
+     "naam": "Maasvlakte Amaliahaven",
+     "km": 10.0
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "rockanje.2eslag",
+     "naam": "Rockanje, 2e Slag",
+     "km": 1.5
+    },
+    {
+     "code": "stellendam.buiten",
+     "naam": "Stellendam, buiten",
+     "km": 4.9
+    },
+    {
+     "code": "slijkgat.boeisg18",
+     "naam": "Slijkgat, boei SG18",
+     "km": 2.7
+    },
+    {
+     "code": "slijkgat.boeisg14",
+     "naam": "Slijkgat, boei SG14",
+     "km": 3.7
+    },
+    {
+     "code": "oostvoorne.badstrand",
+     "naam": "Oostvoorne, badstrand",
+     "km": 4.2
+    },
+    {
+     "code": "hellevloetsluis.hellecat.badstrand",
+     "naam": "Hellevloetsluis, Hellecat, badstrand",
+     "km": 4.9
+    },
+    {
+     "code": "haringvlietsluizen.buiten",
+     "naam": "Haringvlietsluizen, buiten",
+     "km": 5.2
+    },
+    {
+     "code": "haringvlietsluizen",
+     "naam": "Haringvlietsluizen",
+     "km": 5.4
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "haringvlietsluizen.1km.noordwest",
+     "naam": "Haringvlietsluizen, 1 km, noordwest",
+     "km": 2.9
+    },
+    {
+     "code": "haringvlietsluizen.binnen.noord",
+     "naam": "Haringvlietsluizen, binnen, noord",
+     "km": 4.6
+    },
+    {
+     "code": "haringvlietsluizen.binnen",
+     "naam": "Haringvlietsluizen, binnen",
+     "km": 4.7
+    },
+    {
+     "code": "goedereede.noordzee.meetpaal",
+     "naam": "Goedereede, Noordzee, meetpaal",
+     "km": 4.9
+    },
+    {
+     "code": "haringvlietsluizen.buiten",
+     "naam": "Haringvlietsluizen, buiten",
+     "km": 5.2
+    },
+    {
+     "code": "stellendam.buitenhaven",
+     "naam": "Stellendam, buitenhaven",
+     "km": 5.3
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "haringvlietsluizen.buiten",
+     "naam": "Haringvlietsluizen, buiten",
+     "km": 5.2
+    },
+    {
+     "code": "haringvlietmond",
+     "naam": "Haringvlietmond",
+     "km": 7.0
+    },
+    {
+     "code": "hoekvanholland.maeslantkering.beneden.noord",
+     "naam": "Hoek van Holland, Maeslantkering, Beneden, noord",
+     "km": 12.9
+    },
+    {
+     "code": "maasmond.stroommeetpaal",
+     "naam": "Maasmond, stroommeetpaal",
+     "km": 13.1
+    },
+    {
+     "code": "maasgeul.2",
+     "naam": "Maasgeul 2",
+     "km": 13.3
+    },
+    {
+     "code": "zandmoter.boei.noord",
+     "naam": "Zandmoter, boei, noord",
+     "km": 21.2
+    },
+    {
+     "code": "zandmotor.boei.zuid",
+     "naam": "Zandmotor, boei, zuid",
+     "km": 24.7
+    },
+    {
+     "code": "eurogeul.e13",
+     "naam": "Eurogeul, E13",
+     "km": 24.8
+    }
+   ],
+   "wind": [
+    {
+     "code": "stellendam.haringvlietsluizen.schuif1",
+     "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+     "km": 4.6
+    },
+    {
+     "code": "hoekvanholland.lagelicht",
+     "naam": "Hoek van Holland, lage licht",
+     "km": 12.3
+    },
+    {
+     "code": "hoekvanholland.maeslantkering",
+     "naam": "Hoek van Holland Maeslantkering",
+     "km": 12.5
+    },
+    {
+     "code": "hoekvanholland",
+     "naam": "Hoek van Holland",
+     "km": 12.9
+    },
+    {
+     "code": "botlek.geulhaven",
+     "naam": "Botlek Geulhaven",
+     "km": 19.5
+    },
+    {
+     "code": "bruinisse.grevelingensluis",
+     "naam": "Bruinisse Grevelingensluis",
+     "km": 23.6
+    },
+    {
+     "code": "goeree.lichteiland",
+     "naam": "Goeree, lichteiland",
+     "km": 25.4
+    },
+    {
+     "code": "zierikzee.zeelandbrug",
+     "naam": "Zierikzee Zeelandbrug",
+     "km": 28.5
+    }
+   ]
+  },
+  "intro": "Rockanje ligt op Voorne, aan de Noordzee tussen de Maasvlakte en Goeree. Het strand is breed en loopt geleidelijk af, wat het populair maakt bij gezinnen. Bij laagwater ligt een groot deel van het strand droog.",
+  "regioSlug": "zuid-holland"
+ },
+ {
+  "slug": "europoort",
+  "naam": "Europoort",
+  "regio": "Zuid-Holland",
+  "type": "getijrivier",
+  "lat": 51.95,
+  "lon": 4.135,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "hoekvanholland",
+     "naam": "Hoek van Holland",
+     "km": 3.2
+    },
+    {
+     "code": "beneluxhaven",
+     "naam": "Beneluxhaven",
+     "km": 0.9
+    },
+    {
+     "code": "rotterdam.dintelhaven",
+     "naam": "Rotterdam, Dintelhaven",
+     "km": 1.1
+    },
+    {
+     "code": "scheurhaven",
+     "naam": "Scheurhaven",
+     "km": 1.4
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "hoekvanholland",
+     "naam": "Hoek van Holland",
+     "km": 3.2
+    },
+    {
+     "code": "4epetroleumhaven",
+     "naam": "4e Petroleumhaven",
+     "km": 0.5
+    },
+    {
+     "code": "suurhofbrug.noordzijde",
+     "naam": "Suurhofbrug, noordzijde",
+     "km": 2.3
+    },
+    {
+     "code": "hoekvanholland.noordoever",
+     "naam": "Hoek van Holland, noordoever",
+     "km": 3.4
+    },
+    {
+     "code": "oostvoorne",
+     "naam": "Oostvoorne",
+     "km": 3.5
+    },
+    {
+     "code": "hoekvanholland.midden",
+     "naam": "Hoek van Holland, midden",
+     "km": 3.5
+    },
+    {
+     "code": "hoekvanholland.zuidoever",
+     "naam": "Hoek van Holland, zuidoever",
+     "km": 3.6
+    },
+    {
+     "code": "suurhofbrug",
+     "naam": "Suurhofbrug",
+     "km": 3.8
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "hoekvanholland",
+     "naam": "Hoek van Holland",
+     "km": 3.2
+    },
+    {
+     "code": "beneluxhaven",
+     "naam": "Beneluxhaven",
+     "km": 0.9
+    },
+    {
+     "code": "rotterdam.dintelhaven",
+     "naam": "Rotterdam, Dintelhaven",
+     "km": 1.1
+    },
+    {
+     "code": "scheurhaven",
+     "naam": "Scheurhaven",
+     "km": 1.4
+    },
+    {
+     "code": "hoekvanholland.maeslantkering.beneden.noord",
+     "naam": "Hoek van Holland, Maeslantkering, Beneden, noord",
+     "km": 2.0
+    },
+    {
+     "code": "suurhofbrug.noordzijde",
+     "naam": "Suurhofbrug, noordzijde",
+     "km": 2.3
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "hoekvanholland.maeslantkering.beneden.noord",
+     "naam": "Hoek van Holland, Maeslantkering, Beneden, noord",
+     "km": 2.0
+    },
+    {
+     "code": "maasmond.stroommeetpaal",
+     "naam": "Maasmond, stroommeetpaal",
+     "km": 9.9
+    },
+    {
+     "code": "maasgeul.2",
+     "naam": "Maasgeul 2",
+     "km": 10.3
+    },
+    {
+     "code": "zandmoter.boei.noord",
+     "naam": "Zandmoter, boei, noord",
+     "km": 11.0
+    },
+    {
+     "code": "zandmotor.boei.zuid",
+     "naam": "Zandmotor, boei, zuid",
+     "km": 14.2
+    },
+    {
+     "code": "haringvlietsluizen.buiten",
+     "naam": "Haringvlietsluizen, buiten",
+     "km": 14.8
+    },
+    {
+     "code": "haringvlietmond",
+     "naam": "Haringvlietmond",
+     "km": 15.1
+    }
+   ],
+   "wind": [
+    {
+     "code": "hoekvanholland.maeslantkering",
+     "naam": "Hoek van Holland Maeslantkering",
+     "km": 1.8
+    },
+    {
+     "code": "hoekvanholland",
+     "naam": "Hoek van Holland",
+     "km": 3.2
+    },
+    {
+     "code": "hoekvanholland.lagelicht",
+     "naam": "Hoek van Holland, lage licht",
+     "km": 5.1
+    },
+    {
+     "code": "botlek.geulhaven",
+     "naam": "Botlek Geulhaven",
+     "km": 13.8
+    },
+    {
+     "code": "stellendam.haringvlietsluizen.schuif1",
+     "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+     "km": 13.8
+    },
+    {
+     "code": "rotterdam.luchthaven",
+     "naam": "Rotterdam, luchthaven",
+     "km": 21.5
+    },
+    {
+     "code": "bruinisse.grevelingensluis",
+     "naam": "Bruinisse Grevelingensluis",
+     "km": 31.6
+    },
+    {
+     "code": "hollandsekust.zuid.alpha.1",
+     "naam": "Hollandse Kust Zuid platform Alpha 1",
+     "km": 31.7
+    }
+   ]
+  },
+  "intro": "Europoort is het havengebied tussen Rozenburg en de Maasvlakte, aan de Nieuwe Waterweg en het Calandkanaal. Het getij komt hier vrijwel direct uit zee binnen, dus de tijden liggen dicht bij die van Hoek van Holland. Voor de scheepvaart is de waterstand hier belangrijk.",
+  "regioSlug": "zuid-holland"
+ },
+ {
+  "slug": "maassluis",
+  "naam": "Maassluis",
+  "regio": "Zuid-Holland",
+  "type": "getijrivier",
+  "lat": 51.918,
+  "lon": 4.25,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "maassluis",
+     "naam": "Maassluis",
+     "km": 0.1
+    },
+    {
+     "code": "rozenburgsesluis.noordzijde",
+     "naam": "Rozenburgsesluis, noordzijde",
+     "km": 2.9
+    },
+    {
+     "code": "europoort.harmsenbrug",
+     "naam": "Europoort, Harmsenbrug",
+     "km": 3.2
+    },
+    {
+     "code": "rozenburgsesluis.zuidzijde",
+     "naam": "Rozenburgsesluis, zuidzijde",
+     "km": 3.3
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "maassluis",
+     "naam": "Maassluis",
+     "km": 0.1
+    },
+    {
+     "code": "7epetroleumhaven",
+     "naam": "7e Petroleumhaven",
+     "km": 2.6
+    },
+    {
+     "code": "europoort.harmsenbrug",
+     "naam": "Europoort, Harmsenbrug",
+     "km": 3.2
+    },
+    {
+     "code": "nieuwewaterweg.meetboeinw2",
+     "naam": "Nieuwe Waterweg, meetboei NW2",
+     "km": 3.8
+    },
+    {
+     "code": "poortershaven.ro",
+     "naam": "Poortershaven, ro",
+     "km": 4.1
+    },
+    {
+     "code": "hoogvliet",
+     "naam": "Hoogvliet",
+     "km": 6.8
+    },
+    {
+     "code": "europoort.hartelkering",
+     "naam": "Europoort, Hartelkering",
+     "km": 7.1
+    },
+    {
+     "code": "vlaardingen",
+     "naam": "Vlaardingen",
+     "km": 7.1
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "maassluis",
+     "naam": "Maassluis",
+     "km": 0.1
+    },
+    {
+     "code": "rozenburgsesluis.noordzijde",
+     "naam": "Rozenburgsesluis, noordzijde",
+     "km": 2.9
+    },
+    {
+     "code": "europoort.harmsenbrug",
+     "naam": "Europoort, Harmsenbrug",
+     "km": 3.2
+    },
+    {
+     "code": "rozenburgsesluis.zuidzijde",
+     "naam": "Rozenburgsesluis, zuidzijde",
+     "km": 3.3
+    },
+    {
+     "code": "brielle",
+     "naam": "Brielle",
+     "km": 5.1
+    },
+    {
+     "code": "botlek.geulhaven",
+     "naam": "Botlek Geulhaven",
+     "km": 5.2
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "hoekvanholland.maeslantkering.beneden.noord",
+     "naam": "Hoek van Holland, Maeslantkering, Beneden, noord",
+     "km": 7.5
+    },
+    {
+     "code": "zandmoter.boei.noord",
+     "naam": "Zandmoter, boei, noord",
+     "km": 15.8
+    },
+    {
+     "code": "haringvlietsluizen.buiten",
+     "naam": "Haringvlietsluizen, buiten",
+     "km": 17.2
+    },
+    {
+     "code": "zandmotor.boei.zuid",
+     "naam": "Zandmotor, boei, zuid",
+     "km": 17.6
+    },
+    {
+     "code": "maasmond.stroommeetpaal",
+     "naam": "Maasmond, stroommeetpaal",
+     "km": 18.5
+    },
+    {
+     "code": "maasgeul.2",
+     "naam": "Maasgeul 2",
+     "km": 18.9
+    },
+    {
+     "code": "haringvlietmond",
+     "naam": "Haringvlietmond",
+     "km": 21.9
+    }
+   ],
+   "wind": [
+    {
+     "code": "botlek.geulhaven",
+     "naam": "Botlek Geulhaven",
+     "km": 5.2
+    },
+    {
+     "code": "hoekvanholland.maeslantkering",
+     "naam": "Hoek van Holland Maeslantkering",
+     "km": 7.4
+    },
+    {
+     "code": "hoekvanholland",
+     "naam": "Hoek van Holland",
+     "km": 11.1
+    },
+    {
+     "code": "hoekvanholland.lagelicht",
+     "naam": "Hoek van Holland, lage licht",
+     "km": 13.5
+    },
+    {
+     "code": "rotterdam.luchthaven",
+     "naam": "Rotterdam, luchthaven",
+     "km": 14.1
+    },
+    {
+     "code": "stellendam.haringvlietsluizen.schuif1",
+     "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+     "km": 16.2
+    },
+    {
+     "code": "bruinisse.grevelingensluis",
+     "naam": "Bruinisse Grevelingensluis",
+     "km": 29.9
+    },
+    {
+     "code": "hollandsekust.zuid.alpha.1",
+     "naam": "Hollandse Kust Zuid platform Alpha 1",
+     "km": 35.2
+    }
+   ]
+  },
+  "intro": "Maassluis ligt aan de Nieuwe Waterweg, tussen Rotterdam en Hoek van Holland. Elke dag varen hier grote zeeschepen langs. Het getij is goed merkbaar: hoogwater komt hier iets later dan in Hoek van Holland.",
+  "regioSlug": "zuid-holland"
+ },
+ {
+  "slug": "krimpen-aan-den-ijssel",
+  "naam": "Krimpen aan den IJssel",
+  "regio": "Zuid-Holland",
+  "type": "getijrivier",
+  "lat": 51.917,
+  "lon": 4.595,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "krimpenaandeijssel.hollandscheijssel",
+     "naam": "Krimpen aan de IJssel, Hollandsche IJssel",
+     "km": 1.1
+    },
+    {
+     "code": "krimpenaandelek.lek",
+     "naam": "Krimpen aan de Lek, Lek",
+     "km": 3.7
+    },
+    {
+     "code": "parksluis",
+     "naam": "Parksluis",
+     "km": 9.0
+    },
+    {
+     "code": "rotterdam.nieuwemaas.boerengat",
+     "naam": "Rotterdam, Nieuwe Maas, Boerengat",
+     "km": 6.5
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "hollandscheijssel.17",
+     "naam": "Hollandsche IJssel, 17",
+     "km": 0.7
+    },
+    {
+     "code": "kinderdijk.lek",
+     "naam": "Kinderdijk Lek",
+     "km": 3.8
+    },
+    {
+     "code": "hollandscheijssel.18",
+     "naam": "Hollandsche IJssel, 18",
+     "km": 1.1
+    },
+    {
+     "code": "krimpenaandeijssel.hollandscheijssel",
+     "naam": "Krimpen aan de IJssel, Hollandsche IJssel",
+     "km": 1.1
+    },
+    {
+     "code": "hollandscheijssel.16",
+     "naam": "Hollandsche IJssel, 16",
+     "km": 1.1
+    },
+    {
+     "code": "hollandscheijssel.15",
+     "naam": "Hollandsche IJssel, 15",
+     "km": 1.7
+    },
+    {
+     "code": "hollandscheijssel.19",
+     "naam": "Hollandsche IJssel, 19",
+     "km": 2.0
+    },
+    {
+     "code": "nieuwemaas.992",
+     "naam": "Nieuwe Maas, 992",
+     "km": 2.0
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "krimpenaandeijssel.hollandscheijssel",
+     "naam": "Krimpen aan de IJssel, Hollandsche IJssel",
+     "km": 1.1
+    },
+    {
+     "code": "krimpenaandeijssel.km15.ro",
+     "naam": "Krimpen aan de IJssel, km 15, ro",
+     "km": 1.4
+    },
+    {
+     "code": "krimpenaandelek.lek",
+     "naam": "Krimpen aan de Lek, Lek",
+     "km": 3.7
+    },
+    {
+     "code": "hollandseijssel.km12.ntb",
+     "naam": "Hollandse IJssel, km 12, ntb",
+     "km": 4.2
+    },
+    {
+     "code": "rotterdam.ijzerwerkerkade",
+     "naam": "Rotterdam IJzerwerkerkade",
+     "km": 5.6
+    },
+    {
+     "code": "rotterdam.kuip",
+     "naam": "Rotterdam Kuip",
+     "km": 5.6
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [],
+   "wind": [
+    {
+     "code": "rotterdam.luchthaven",
+     "naam": "Rotterdam, luchthaven",
+     "km": 10.6
+    },
+    {
+     "code": "botlek.geulhaven",
+     "naam": "Botlek Geulhaven",
+     "km": 19.6
+    },
+    {
+     "code": "hoekvanholland.maeslantkering",
+     "naam": "Hoek van Holland Maeslantkering",
+     "km": 30.1
+    },
+    {
+     "code": "hoekvanholland",
+     "naam": "Hoek van Holland",
+     "km": 33.2
+    },
+    {
+     "code": "hoekvanholland.lagelicht",
+     "naam": "Hoek van Holland, lage licht",
+     "km": 35.9
+    },
+    {
+     "code": "stellendam.haringvlietsluizen.schuif1",
+     "naam": "Stellendam, Haringvlietsluizen, schuif 1",
+     "km": 38.2
+    }
+   ]
+  },
+  "intro": "Krimpen aan den IJssel ligt waar de Hollandse IJssel in de Nieuwe Maas uitkomt, bij de Algerakering. Die stormvloedkering gaat dicht als het water extreem hoog dreigt te worden. Het getij uit zee is hier nog duidelijk merkbaar.",
+  "regioSlug": "zuid-holland"
+ },
+ {
+  "slug": "bergen-aan-zee",
+  "naam": "Bergen aan Zee",
+  "regio": "Noord-Holland",
+  "type": "kust",
+  "lat": 52.66,
+  "lon": 4.628,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "petten.zuid",
+     "naam": "Petten, zuid",
+     "km": 12.6
+    },
+    {
+     "code": "ijmuiden.buitenhaven",
+     "naam": "IJmuiden, buitenhaven",
+     "km": 22.5
+    },
+    {
+     "code": "ijgeul.1",
+     "naam": "IJGeul, 1",
+     "km": 23.0
+    },
+    {
+     "code": "ijmuiden.noordersluis.west",
+     "naam": "IJmuiden, noordersluis, west",
+     "km": 21.4
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "bergenaanzee",
+     "naam": "Bergen aan Zee",
+     "km": 0.2
+    },
+    {
+     "code": "egmondaanzee.1kmuitdekust",
+     "naam": "Egmond aan Zee,  1 km uit de kust",
+     "km": 4.7
+    },
+    {
+     "code": "egmondaanzee.badstrand",
+     "naam": "Egmond aan Zee, badstrand",
+     "km": 4.7
+    },
+    {
+     "code": "egmondaanzee.2kmuitdekust",
+     "naam": "Egmond aan Zee,  2 km uit de kust",
+     "km": 4.8
+    },
+    {
+     "code": "egmondaanzee.4kmuitdekust",
+     "naam": "Egmond aan Zee,  4 km uit de kust",
+     "km": 5.6
+    },
+    {
+     "code": "camperduin",
+     "naam": "Camperduin",
+     "km": 6.0
+    },
+    {
+     "code": "hollandsekust.noord.deelgebied",
+     "naam": "Hollandse kust, noord , deelgebied",
+     "km": 10.7
+    },
+    {
+     "code": "egmondaanzee.10kmuitdekust",
+     "naam": "Egmond aan Zee,  10 km uit de kust",
+     "km": 10.8
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "hollandsekust.noord.deelgebied",
+     "naam": "Hollandse kust, noord , deelgebied",
+     "km": 10.7
+    },
+    {
+     "code": "petten.meetraai8",
+     "naam": "Petten, meetraai 08",
+     "km": 12.4
+    },
+    {
+     "code": "petten.meetraai7",
+     "naam": "Petten, meetraai 07",
+     "km": 12.5
+    },
+    {
+     "code": "petten.meetraai67",
+     "naam": "Petten, meetraai 67",
+     "km": 12.5
+    },
+    {
+     "code": "petten.meetraai6",
+     "naam": "Petten, meetraai 06",
+     "km": 12.5
+    },
+    {
+     "code": "petten.meetraai18",
+     "naam": "Petten, meetraai 18",
+     "km": 12.5
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "hollandsekust.noord.deelgebied",
+     "naam": "Hollandse kust, noord , deelgebied",
+     "km": 10.7
+    },
+    {
+     "code": "petten.meetraai11",
+     "naam": "Petten, meetraai 11",
+     "km": 12.4
+    },
+    {
+     "code": "petten.meetraai8",
+     "naam": "Petten, meetraai 08",
+     "km": 12.4
+    },
+    {
+     "code": "petten.meetraai7",
+     "naam": "Petten, meetraai 07",
+     "km": 12.5
+    },
+    {
+     "code": "petten.meetraai67",
+     "naam": "Petten, meetraai 67",
+     "km": 12.5
+    },
+    {
+     "code": "petten.meetraai675",
+     "naam": "Petten, meetraai 675",
+     "km": 12.5
+    },
+    {
+     "code": "petten.meetraai6",
+     "naam": "Petten, meetraai 06",
+     "km": 12.5
+    },
+    {
+     "code": "petten.meetraai611",
+     "naam": "Petten, meetraai 611",
+     "km": 12.5
+    }
+   ],
+   "wind": [
+    {
+     "code": "ijmuiden.buitenhaven",
+     "naam": "IJmuiden, buitenhaven",
+     "km": 22.5
+    },
+    {
+     "code": "ijmuiden.havenhoofd.zuid",
+     "naam": "IJmuiden, havenhoofd, zuid",
+     "km": 22.8
+    },
+    {
+     "code": "hollandsekust.noord.alpha",
+     "naam": "Hollandse Kust Noord Alpha",
+     "km": 22.9
+    },
+    {
+     "code": "ijgeul.1",
+     "naam": "IJGeul, 1",
+     "km": 23.0
+    },
+    {
+     "code": "berkhout",
+     "naam": "Berkhout",
+     "km": 23.9
+    },
+    {
+     "code": "denhelder.dekooy",
+     "naam": "Den Helder, De Kooy",
+     "km": 31.2
+    },
+    {
+     "code": "wijdenes",
+     "naam": "Wijdenes",
+     "km": 36.4
+    },
+    {
+     "code": "texel.hors",
+     "naam": "Texelhors",
+     "km": 37.8
+    }
+   ]
+  },
+  "intro": "Bergen aan Zee is een kleine badplaats aan de Noord-Hollandse kust, tussen Egmond en Schoorl, midden in de duinen. Er staat hier geen getijmeetpunt: de tijden komen van Petten, zo'n 12 kilometer noordelijker, en kunnen in Bergen aan Zee enkele minuten afwijken.",
+  "regioSlug": "noord-holland"
+ },
+ {
+  "slug": "petten",
+  "naam": "Petten",
+  "regio": "Noord-Holland",
+  "type": "kust",
+  "lat": 52.767,
+  "lon": 4.66,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "petten.zuid",
+     "naam": "Petten, zuid",
+     "km": 0.9
+    },
+    {
+     "code": "denhelder.marsdiep",
+     "naam": "Den Helder, Marsdiep",
+     "km": 22.7
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "petten.strand",
+     "naam": "Petten, strand",
+     "km": 1.0
+    },
+    {
+     "code": "sintmaartenszee",
+     "naam": "Sint Maartenszee",
+     "km": 3.1
+    },
+    {
+     "code": "hollandsekust.noord.deelgebied",
+     "naam": "Hollandse kust, noord , deelgebied",
+     "km": 4.1
+    },
+    {
+     "code": "camperduin",
+     "naam": "Camperduin",
+     "km": 6.1
+    },
+    {
+     "code": "petten.5kmuitdekust",
+     "naam": "Petten, 5 km uit de kust",
+     "km": 7.8
+    },
+    {
+     "code": "callantsoog",
+     "naam": "Callantsoog",
+     "km": 8.1
+    },
+    {
+     "code": "callantsoog.1kmuitdekust",
+     "naam": "Callantsoog, 01 km uit de kust",
+     "km": 10.8
+    },
+    {
+     "code": "callantsoog.2kmuitdekust",
+     "naam": "Callantsoog, 2 km uit de kust",
+     "km": 10.9
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "petten.meetraai8",
+     "naam": "Petten, meetraai 08",
+     "km": 0.4
+    },
+    {
+     "code": "petten.meetraai7",
+     "naam": "Petten, meetraai 07",
+     "km": 0.5
+    },
+    {
+     "code": "petten.meetraai67",
+     "naam": "Petten, meetraai 67",
+     "km": 0.5
+    },
+    {
+     "code": "petten.meetraai6",
+     "naam": "Petten, meetraai 06",
+     "km": 0.5
+    },
+    {
+     "code": "petten.meetraai18",
+     "naam": "Petten, meetraai 18",
+     "km": 0.6
+    },
+    {
+     "code": "petten.meetraai17",
+     "naam": "Petten, meetraai 17",
+     "km": 0.6
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "petten.meetraai11",
+     "naam": "Petten, meetraai 11",
+     "km": 0.4
+    },
+    {
+     "code": "petten.meetraai8",
+     "naam": "Petten, meetraai 08",
+     "km": 0.4
+    },
+    {
+     "code": "petten.meetraai7",
+     "naam": "Petten, meetraai 07",
+     "km": 0.5
+    },
+    {
+     "code": "petten.meetraai67",
+     "naam": "Petten, meetraai 67",
+     "km": 0.5
+    },
+    {
+     "code": "petten.meetraai675",
+     "naam": "Petten, meetraai 675",
+     "km": 0.5
+    },
+    {
+     "code": "petten.meetraai6",
+     "naam": "Petten, meetraai 06",
+     "km": 0.5
+    },
+    {
+     "code": "petten.meetraai611",
+     "naam": "Petten, meetraai 611",
+     "km": 0.5
+    },
+    {
+     "code": "petten.meetraai18",
+     "naam": "Petten, meetraai 18",
+     "km": 0.6
+    }
+   ],
+   "wind": [
+    {
+     "code": "denhelder.dekooy",
+     "naam": "Den Helder, De Kooy",
+     "km": 19.4
+    },
+    {
+     "code": "berkhout",
+     "naam": "Berkhout",
+     "km": 25.3
+    },
+    {
+     "code": "texel.hors",
+     "naam": "Texelhors",
+     "km": 25.7
+    },
+    {
+     "code": "hollandsekust.noord.alpha",
+     "naam": "Hollandse Kust Noord Alpha",
+     "km": 25.9
+    },
+    {
+     "code": "ijmuiden.buitenhaven",
+     "naam": "IJmuiden, buitenhaven",
+     "km": 34.5
+    },
+    {
+     "code": "ijmuiden.havenhoofd.zuid",
+     "naam": "IJmuiden, havenhoofd, zuid",
+     "km": 34.8
+    },
+    {
+     "code": "ijgeul.1",
+     "naam": "IJGeul, 1",
+     "km": 35.0
+    },
+    {
+     "code": "wijdenes",
+     "naam": "Wijdenes",
+     "km": 37.2
+    }
+   ]
+  },
+  "intro": "Petten ligt achter de Hondsbossche Duinen, waar vroeger de bekende zeewering lag. In 2015 is voor de dijk een breed strand met nieuwe duinen aangelegd. Het getijmeetpunt Petten-zuid staat vlak bij het dorp.",
+  "regioSlug": "noord-holland"
+ },
+ {
+  "slug": "julianadorp",
+  "naam": "Julianadorp aan Zee",
+  "regio": "Noord-Holland",
+  "type": "kust",
+  "lat": 52.895,
+  "lon": 4.712,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "denhelder.marsdiep",
+     "naam": "Den Helder, Marsdiep",
+     "km": 8.0
+    },
+    {
+     "code": "petten.zuid",
+     "naam": "Petten, zuid",
+     "km": 14.2
+    },
+    {
+     "code": "texel.oudeschild",
+     "naam": "Texel, Oudeschild",
+     "km": 18.5
+    },
+    {
+     "code": "denoever.waddenzee.voorhaven",
+     "naam": "Den Oever, Waddenzee voorhaven",
+     "km": 22.7
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "julianadorp",
+     "naam": "Julianadorp",
+     "km": 0.5
+    },
+    {
+     "code": "grootekeeten",
+     "naam": "Groote Keeten",
+     "km": 3.5
+    },
+    {
+     "code": "callantsoog.1kmuitdekust",
+     "naam": "Callantsoog, 01 km uit de kust",
+     "km": 4.0
+    },
+    {
+     "code": "callantsoog.2kmuitdekust",
+     "naam": "Callantsoog, 2 km uit de kust",
+     "km": 4.3
+    },
+    {
+     "code": "huisduinen",
+     "naam": "Huisduinen",
+     "km": 4.6
+    },
+    {
+     "code": "denhelder.marsdiep",
+     "naam": "Den Helder, Marsdiep",
+     "km": 8.0
+    },
+    {
+     "code": "schulpengatii",
+     "naam": "Schulpengat II",
+     "km": 5.2
+    },
+    {
+     "code": "callantsoog.4kmuitdekust",
+     "naam": "Callantsoog, 4 km uit de kust",
+     "km": 5.5
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "denhelder.marsdiep",
+     "naam": "Den Helder, Marsdiep",
+     "km": 8.0
+    },
+    {
+     "code": "texel.westgat",
+     "naam": "Texel, Westgat",
+     "km": 6.8
+    },
+    {
+     "code": "oostoever",
+     "naam": "Oostoever",
+     "km": 6.9
+    },
+    {
+     "code": "denhelder.veersteiger",
+     "naam": "Den Helder, veersteiger",
+     "km": 8.8
+    },
+    {
+     "code": "petten",
+     "naam": "Petten",
+     "km": 12.3
+    },
+    {
+     "code": "petten.meetraai3",
+     "naam": "Petten, meetraai 03",
+     "km": 14.2
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "denhelder.waddenzee.mondingnieuwehaven",
+     "naam": "Den Helder Waddenzee Monding Nieuwe Haven",
+     "km": 9.7
+    },
+    {
+     "code": "petten.meetraai2",
+     "naam": "Petten, meetraai 02",
+     "km": 13.5
+    },
+    {
+     "code": "denhoorntexel.waddenzee.gatvandestier",
+     "naam": "Den Hoorn Texel Waddenzee Gat van de Stier",
+     "km": 14.0
+    },
+    {
+     "code": "petten.meetraai3",
+     "naam": "Petten, meetraai 03",
+     "km": 14.2
+    },
+    {
+     "code": "petten.meetraai16",
+     "naam": "Petten, meetraai 16",
+     "km": 14.3
+    },
+    {
+     "code": "petten.meetraai18",
+     "naam": "Petten, meetraai 18",
+     "km": 14.3
+    },
+    {
+     "code": "petten.meetraai17",
+     "naam": "Petten, meetraai 17",
+     "km": 14.3
+    },
+    {
+     "code": "petten.meetraai611",
+     "naam": "Petten, meetraai 611",
+     "km": 14.3
+    }
+   ],
+   "wind": [
+    {
+     "code": "denhelder.dekooy",
+     "naam": "Den Helder, De Kooy",
+     "km": 5.9
+    },
+    {
+     "code": "texel.hors",
+     "naam": "Texelhors",
+     "km": 11.1
+    },
+    {
+     "code": "berkhout",
+     "naam": "Berkhout",
+     "km": 32.8
+    },
+    {
+     "code": "hollandsekust.noord.alpha",
+     "naam": "Hollandse Kust Noord Alpha",
+     "km": 35.7
+    }
+   ]
+  },
+  "intro": "Julianadorp aan Zee ligt tussen Den Helder en Callantsoog, met een breed strand en veel vakantieparken achter de duinen. De getijden komen van Den Helder, waar het Marsdiep de Noordzee met de Waddenzee verbindt.",
+  "regioSlug": "noord-holland"
+ },
+ {
+  "slug": "den-oever",
+  "naam": "Den Oever",
+  "regio": "Wadden",
+  "type": "kust",
+  "lat": 52.935,
+  "lon": 5.035,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "denoever.waddenzee.voorhaven",
+     "naam": "Den Oever, Waddenzee voorhaven",
+     "km": 0.8
+    },
+    {
+     "code": "texel.oudeschild",
+     "naam": "Texel, Oudeschild",
+     "km": 16.9
+    },
+    {
+     "code": "denhelder.marsdiep",
+     "naam": "Den Helder, Marsdiep",
+     "km": 19.7
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "denoever.zuiderhaven.strand",
+     "naam": "Den Oever, zuiderhaven, Strand",
+     "km": 0.5
+    },
+    {
+     "code": "denoever.waddenzee.voorhaven.kolk",
+     "naam": "Den Oever, Waddenzee voorhaven kolk",
+     "km": 0.8
+    },
+    {
+     "code": "denoever.spuisluizen",
+     "naam": "Den Oever, spuisluizen",
+     "km": 1.0
+    },
+    {
+     "code": "denoever.ijsselmeer.binnenhaven",
+     "naam": "Den Oever, IJsselmeer binnenhaven",
+     "km": 1.0
+    },
+    {
+     "code": "denoever.spuisluis.binnen",
+     "naam": "Den Oever, spuisluis, binnen",
+     "km": 1.2
+    },
+    {
+     "code": "denoever.ijsselmeer.stevinsluizen.zuid",
+     "naam": "Den Oever Stevinsluizen zuid",
+     "km": 1.3
+    },
+    {
+     "code": "denoever.ijsselmeer.vaargeul",
+     "naam": "Den Oever IJsselmeer Vaargeul",
+     "km": 4.6
+    },
+    {
+     "code": "denoever",
+     "naam": "Den Oever",
+     "km": 4.6
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "denoever.waddenzee.voorhaven",
+     "naam": "Den Oever, Waddenzee voorhaven",
+     "km": 0.8
+    },
+    {
+     "code": "denoever.ijsselmeer.binnenhaven",
+     "naam": "Den Oever, IJsselmeer binnenhaven",
+     "km": 1.0
+    },
+    {
+     "code": "oudezeug.ijsselmeer.midden.noord.meetpaal49",
+     "naam": "Oude Zeug, IJsselmeer , midden, noord, meetpaal 49",
+     "km": 8.7
+    },
+    {
+     "code": "oudezeug.ijsselmeer.midden.noord.meetpaal48",
+     "naam": "Oude Zeug, IJsselmeer , midden, noord, meetpaal 48",
+     "km": 8.8
+    },
+    {
+     "code": "breezanddijk",
+     "naam": "Breezanddijk",
+     "km": 11.8
+    },
+    {
+     "code": "oudezeug.ijsselmeer.midden.noord.meetpaal47",
+     "naam": "Oude Zeug, IJsselmeer , midden, noord, meetpaal 47",
+     "km": 12.9
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "malzwin.boei1",
+     "naam": "Malzwin, boei 1",
+     "km": 8.5
+    },
+    {
+     "code": "oudezeug.ijsselmeer.midden.noord.meetpaal49",
+     "naam": "Oude Zeug, IJsselmeer , midden, noord, meetpaal 49",
+     "km": 8.7
+    },
+    {
+     "code": "oudezeug.ijsselmeer.midden.noord.meetpaal48",
+     "naam": "Oude Zeug, IJsselmeer , midden, noord, meetpaal 48",
+     "km": 8.8
+    },
+    {
+     "code": "oudezeug.ijsselmeer.midden.noord.meetpaal47",
+     "naam": "Oude Zeug, IJsselmeer , midden, noord, meetpaal 47",
+     "km": 12.9
+    },
+    {
+     "code": "breezanddijk.buitenboei1",
+     "naam": "Breezanddijk, buiten boei 1",
+     "km": 13.5
+    },
+    {
+     "code": "denhoorntexel.waddenzee.gatvandestier",
+     "naam": "Den Hoorn Texel Waddenzee Gat van de Stier",
+     "km": 15.6
+    },
+    {
+     "code": "denhelder.waddenzee.mondingnieuwehaven",
+     "naam": "Den Helder Waddenzee Monding Nieuwe Haven",
+     "km": 16.6
+    },
+    {
+     "code": "breesem.boei1",
+     "naam": "Breesem, boei 1",
+     "km": 20.2
+    }
+   ],
+   "wind": [
+    {
+     "code": "denhelder.dekooy",
+     "naam": "Den Helder, De Kooy",
+     "km": 16.7
+    },
+    {
+     "code": "stavoren.ijsselmeer",
+     "naam": "Stavoren IJsselmeer",
+     "km": 21.5
+    },
+    {
+     "code": "texel.hors",
+     "naam": "Texelhors",
+     "km": 22.1
+    },
+    {
+     "code": "berkhout",
+     "naam": "Berkhout",
+     "km": 32.0
+    },
+    {
+     "code": "wijdenes",
+     "naam": "Wijdenes",
+     "km": 34.8
+    },
+    {
+     "code": "vlieland.west",
+     "naam": "Vlieland, west",
+     "km": 35.8
+    }
+   ]
+  },
+  "intro": "Den Oever ligt aan het begin van de Afsluitdijk, met een vissershaven en de spuisluizen naar de Waddenzee. Bij laagwater lozen die sluizen water uit het IJsselmeer op de Waddenzee. Aan de Waddenkant is er gewoon eb en vloed.",
+  "regioSlug": "wadden"
+ },
+ {
+  "slug": "oudeschild",
+  "naam": "Oudeschild",
+  "regio": "Wadden",
+  "type": "kust",
+  "lat": 53.04,
+  "lon": 4.85,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "texel.oudeschild",
+     "naam": "Texel, Oudeschild",
+     "km": 0.1
+    },
+    {
+     "code": "denhelder.marsdiep",
+     "naam": "Den Helder, Marsdiep",
+     "km": 11.0
+    },
+    {
+     "code": "texel.noordzee",
+     "naam": "Texel, Noordzee",
+     "km": 11.9
+    },
+    {
+     "code": "denoever.waddenzee.voorhaven",
+     "naam": "Den Oever, Waddenzee voorhaven",
+     "km": 17.8
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "denhoorntexel.waddenzee.gatvandestier",
+     "naam": "Den Hoorn Texel Waddenzee Gat van de Stier",
+     "km": 4.7
+    },
+    {
+     "code": "texelstroom",
+     "naam": "Texelstroom",
+     "km": 2.8
+    },
+    {
+     "code": "malzwin",
+     "naam": "Malzwin",
+     "km": 6.2
+    },
+    {
+     "code": "denhelder.marsdiep",
+     "naam": "Den Helder, Marsdiep",
+     "km": 11.0
+    },
+    {
+     "code": "malzwin.boei1",
+     "naam": "Malzwin, boei 1",
+     "km": 8.7
+    },
+    {
+     "code": "malzwin.marinehaven",
+     "naam": "Malzwin, marinehaven",
+     "km": 8.9
+    },
+    {
+     "code": "denhelder.waddenzee.mondingnieuwehaven",
+     "naam": "Den Helder Waddenzee Monding Nieuwe Haven",
+     "km": 8.9
+    },
+    {
+     "code": "bleekersvallei",
+     "naam": "Bleekersvallei",
+     "km": 9.0
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "texel.oudeschild",
+     "naam": "Texel, Oudeschild",
+     "km": 0.1
+    },
+    {
+     "code": "denhelder.marsdiep",
+     "naam": "Den Helder, Marsdiep",
+     "km": 11.0
+    },
+    {
+     "code": "denhelder.veersteiger",
+     "naam": "Den Helder, veersteiger",
+     "km": 9.8
+    },
+    {
+     "code": "texel.noordzee",
+     "naam": "Texel, Noordzee",
+     "km": 11.9
+    },
+    {
+     "code": "oostoever",
+     "naam": "Oostoever",
+     "km": 12.4
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "denhoorntexel.waddenzee.gatvandestier",
+     "naam": "Den Hoorn Texel Waddenzee Gat van de Stier",
+     "km": 4.7
+    },
+    {
+     "code": "malzwin.boei1",
+     "naam": "Malzwin, boei 1",
+     "km": 8.7
+    },
+    {
+     "code": "denhelder.waddenzee.mondingnieuwehaven",
+     "naam": "Den Helder Waddenzee Monding Nieuwe Haven",
+     "km": 8.9
+    },
+    {
+     "code": "breesem.boei1",
+     "naam": "Breesem, boei 1",
+     "km": 15.5
+    },
+    {
+     "code": "breezanddijk.buitenboei1",
+     "naam": "Breezanddijk, buiten boei 1",
+     "km": 22.8
+    }
+   ],
+   "wind": [
+    {
+     "code": "texel.hors",
+     "naam": "Texelhors",
+     "km": 10.0
+    },
+    {
+     "code": "denhelder.dekooy",
+     "naam": "Den Helder, De Kooy",
+     "km": 13.6
+    },
+    {
+     "code": "vlieland.west",
+     "naam": "Vlieland, west",
+     "km": 23.7
+    },
+    {
+     "code": "stavoren.ijsselmeer",
+     "naam": "Stavoren IJsselmeer",
+     "km": 38.1
+    }
+   ]
+  },
+  "intro": "Oudeschild is de haven van Texel aan de Waddenzee, met vissersschepen en een jachthaven. Het getijmeetpunt van Texel staat hier, dus de tijden gelden precies voor de haven. Aan het Noordzeestrand van Texel kunnen ze iets afwijken.",
+  "regioSlug": "wadden"
+ },
+ {
+  "slug": "eemshaven",
+  "naam": "Eemshaven",
+  "regio": "Wadden",
+  "type": "kust",
+  "lat": 53.448,
+  "lon": 6.833,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "eemshaven.haven",
+     "naam": "Eemshaven, haven",
+     "km": 0.3
+    },
+    {
+     "code": "eemshaven.waddenzee",
+     "naam": "Eemshaven, Waddenzee",
+     "km": 3.0
+    },
+    {
+     "code": "dukegat",
+     "naam": "Dukegat",
+     "km": 6.4
+    },
+    {
+     "code": "delfzijl",
+     "naam": "Delfzijl",
+     "km": 14.8
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "eemshaven.waddenzee",
+     "naam": "Eemshaven, Waddenzee",
+     "km": 3.0
+    },
+    {
+     "code": "eemshaven.haven",
+     "naam": "Eemshaven, haven",
+     "km": 0.3
+    },
+    {
+     "code": "doekegat",
+     "naam": "Doekegat",
+     "km": 2.3
+    },
+    {
+     "code": "eemscentrale",
+     "naam": "Eemscentrale",
+     "km": 3.4
+    },
+    {
+     "code": "robbenplaat",
+     "naam": "Robbenplaat",
+     "km": 4.2
+    },
+    {
+     "code": "ranselgat.zuid",
+     "naam": "Ranselgat, zuid",
+     "km": 5.3
+    },
+    {
+     "code": "oostfriesegaatje.noord",
+     "naam": "Oostfriese Gaatje, noord",
+     "km": 5.8
+    },
+    {
+     "code": "uithuizerwad",
+     "naam": "Uithuizerwad",
+     "km": 5.9
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "eemshaven.haven",
+     "naam": "Eemshaven, haven",
+     "km": 0.3
+    },
+    {
+     "code": "eemshaven.doekegat",
+     "naam": "Eemshaven, Doekegat",
+     "km": 1.9
+    },
+    {
+     "code": "eemshaven.waddenzee",
+     "naam": "Eemshaven, Waddenzee",
+     "km": 3.0
+    },
+    {
+     "code": "uithuizerwad",
+     "naam": "Uithuizerwad",
+     "km": 5.9
+    },
+    {
+     "code": "hond.noord",
+     "naam": "Hond, noord",
+     "km": 7.4
+    },
+    {
+     "code": "oudewestereems",
+     "naam": "Oude Westereems",
+     "km": 10.5
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "eemshaven.doekegat",
+     "naam": "Eemshaven, Doekegat",
+     "km": 1.9
+    },
+    {
+     "code": "eemshaven.waddenzee",
+     "naam": "Eemshaven, Waddenzee",
+     "km": 3.0
+    },
+    {
+     "code": "uithuizerwad",
+     "naam": "Uithuizerwad",
+     "km": 5.9
+    },
+    {
+     "code": "bochtvanwatum.noord",
+     "naam": "Bocht van Watum, noord",
+     "km": 6.3
+    },
+    {
+     "code": "oudewestereems.zuid",
+     "naam": "Oude Westereems, zuid",
+     "km": 8.3
+    },
+    {
+     "code": "oude.westereems.noord.boei.1",
+     "naam": "Oude Westereems noord boei 1",
+     "km": 12.6
+    },
+    {
+     "code": "oudewestereems.noord.boei",
+     "naam": "Oude Westereems, noord, boei",
+     "km": 12.6
+    },
+    {
+     "code": "bochtvanwatum.zuid",
+     "naam": "Bocht van Watum, zuid",
+     "km": 15.5
+    }
+   ],
+   "wind": [
+    {
+     "code": "eemshaven.waddenzee",
+     "naam": "Eemshaven, Waddenzee",
+     "km": 3.0
+    },
+    {
+     "code": "uithuizerwad",
+     "naam": "Uithuizerwad",
+     "km": 5.9
+    },
+    {
+     "code": "huibertgat",
+     "naam": "Huibertgat",
+     "km": 32.0
+    },
+    {
+     "code": "nieuwbeerta",
+     "naam": "Nieuw Beerta",
+     "km": 36.4
+    }
+   ]
+  },
+  "intro": "Eemshaven ligt in het noorden van Groningen, aan de Eems en de Waddenzee. Vanuit de haven varen veerboten naar Borkum. Het getijverschil is hier groter dan aan de westkant van de Waddenzee.",
+  "regioSlug": "wadden"
+ },
+ {
+  "slug": "kornwerderzand",
+  "naam": "Kornwerderzand",
+  "regio": "Wadden",
+  "type": "kust",
+  "lat": 53.072,
+  "lon": 5.338,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "kornwerderzand.waddenzee.buitenhaven",
+     "naam": "Kornwerderzand Waddenzee buitenhaven",
+     "km": 0.4
+    },
+    {
+     "code": "harlingen.waddenzee",
+     "naam": "Harlingen, Waddenzee",
+     "km": 12.5
+    },
+    {
+     "code": "vlieland.haven",
+     "naam": "Vlieland, haven",
+     "km": 29.8
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "kornwerderzand.waddenzee.voorhaven.kolk",
+     "naam": "Kornwerderzand, Waddenzee voorhaven kolk",
+     "km": 0.2
+    },
+    {
+     "code": "kornwerderzand.voorhaven",
+     "naam": "Kornwerderzand, Voorhaven",
+     "km": 0.2
+    },
+    {
+     "code": "kornwerderzand.waddenzee.buitenhaven",
+     "naam": "Kornwerderzand Waddenzee buitenhaven",
+     "km": 0.4
+    },
+    {
+     "code": "kornwerderzand.ijsselmeer.binnenhaven",
+     "naam": "Kornwerderzand, IJsselmeer binnenhaven",
+     "km": 0.4
+    },
+    {
+     "code": "kornwerderzand.ijsselmeer.spui",
+     "naam": "Kornwerderzand IJsselmeer spui",
+     "km": 0.8
+    },
+    {
+     "code": "kornwerderzand.ijsselmeer.spuihavenzuid",
+     "naam": "Kornwerderzand Spuihaven zuid",
+     "km": 0.8
+    },
+    {
+     "code": "boontjes",
+     "naam": "Boontjes",
+     "km": 1.4
+    },
+    {
+     "code": "kornwerderzand.ijsselmeer.vaargeul",
+     "naam": "Kornwerderzand IJsselmeer vaargeul",
+     "km": 2.6
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "kornwerderzand.waddenzee.buitenhaven",
+     "naam": "Kornwerderzand Waddenzee buitenhaven",
+     "km": 0.4
+    },
+    {
+     "code": "kornwerderzand.ijsselmeer.binnenhaven",
+     "naam": "Kornwerderzand, IJsselmeer binnenhaven",
+     "km": 0.4
+    },
+    {
+     "code": "harlingen.waddenzee",
+     "naam": "Harlingen, Waddenzee",
+     "km": 12.5
+    },
+    {
+     "code": "omdraai",
+     "naam": "Omdraai",
+     "km": 10.5
+    },
+    {
+     "code": "pollendam",
+     "naam": "Pollendam",
+     "km": 13.4
+    },
+    {
+     "code": "breezanddijk",
+     "naam": "Breezanddijk",
+     "km": 13.8
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "kornwerderzand.buitenboei3",
+     "naam": "Kornwerderzand, buiten boei 3",
+     "km": 2.7
+    },
+    {
+     "code": "kornwerderzand.buitenboei2",
+     "naam": "Kornwerderzand, buiten boei 2",
+     "km": 3.1
+    },
+    {
+     "code": "kornwerderzand.buitenboei1",
+     "naam": "Kornwerderzand, buiten boei 1",
+     "km": 3.5
+    },
+    {
+     "code": "breezanddijk.buitenboei1",
+     "naam": "Breezanddijk, buiten boei 1",
+     "km": 12.0
+    },
+    {
+     "code": "oudezeug.ijsselmeer.midden.noord.meetpaal47",
+     "naam": "Oude Zeug, IJsselmeer , midden, noord, meetpaal 47",
+     "km": 19.4
+    },
+    {
+     "code": "breesem.boei1",
+     "naam": "Breesem, boei 1",
+     "km": 20.3
+    },
+    {
+     "code": "pannengat.boei1",
+     "naam": "Pannengat, boei 1",
+     "km": 21.4
+    }
+   ],
+   "wind": [
+    {
+     "code": "stavoren.ijsselmeer",
+     "naam": "Stavoren IJsselmeer",
+     "km": 24.3
+    },
+    {
+     "code": "vlieland.west",
+     "naam": "Vlieland, west",
+     "km": 34.4
+    },
+    {
+     "code": "terschelling.hoorn",
+     "naam": "Terschelling, Hoorn",
+     "km": 35.6
+    },
+    {
+     "code": "rotterdamsehoek.ijsselmeer",
+     "naam": "Rotterdamsehoek IJsselmeer",
+     "km": 38.7
+    }
+   ]
+  },
+  "intro": "Kornwerderzand ligt aan de Friese kant van de Afsluitdijk, met de Lorentzsluizen tussen het IJsselmeer en de Waddenzee. Aan de Waddenkant is er gewoon eb en vloed, terwijl het IJsselmeer een geregeld peil heeft.",
+  "regioSlug": "wadden"
+ },
+ {
+  "slug": "holwerd",
+  "naam": "Holwerd",
+  "regio": "Wadden",
+  "type": "kust",
+  "lat": 53.4,
+  "lon": 5.88,
+  "kandidaten": {
+   "getij": [
+    {
+     "code": "holwerd.veersteiger",
+     "naam": "Holwerd, Veersteiger",
+     "km": 0.5
+    },
+    {
+     "code": "ameland.nes",
+     "naam": "Ameland, Nes",
+     "km": 8.6
+    },
+    {
+     "code": "wierumergronden",
+     "naam": "Wierumergronden",
+     "km": 13.9
+    },
+    {
+     "code": "lauwersoog.waddenzee",
+     "naam": "Lauwersoog, Waddenzee",
+     "km": 21.0
+    }
+   ],
+   "temperatuur": [
+    {
+     "code": "holwerd.vaargeul",
+     "naam": "Holwerd vaargeul",
+     "km": 0.2
+    },
+    {
+     "code": "holwerd.veersteiger",
+     "naam": "Holwerd, Veersteiger",
+     "km": 0.5
+    },
+    {
+     "code": "ameland.nes",
+     "naam": "Ameland, Nes",
+     "km": 8.6
+    },
+    {
+     "code": "dantziggat.pietscheveplaat.zuid",
+     "naam": "Dantziggat Piet Scheveplaat zuid",
+     "km": 6.1
+    },
+    {
+     "code": "holwerderbalg",
+     "naam": "Holwerderbalg",
+     "km": 7.4
+    },
+    {
+     "code": "badstrandburen.ameland",
+     "naam": "Badstrand Buren, Ameland",
+     "km": 8.5
+    },
+    {
+     "code": "ameland.nes.badstrand",
+     "naam": "Ameland, Nes, badstrand",
+     "km": 9.7
+    },
+    {
+     "code": "dantziggat",
+     "naam": "Dantziggat",
+     "km": 10.1
+    }
+   ],
+   "waterstand": [
+    {
+     "code": "holwerd.vaargeul",
+     "naam": "Holwerd vaargeul",
+     "km": 0.2
+    },
+    {
+     "code": "holwerd.veersteiger",
+     "naam": "Holwerd, Veersteiger",
+     "km": 0.5
+    },
+    {
+     "code": "zuiderspruit",
+     "naam": "Zuiderspruit",
+     "km": 4.0
+    },
+    {
+     "code": "ameland.nes",
+     "naam": "Ameland, Nes",
+     "km": 8.6
+    },
+    {
+     "code": "dantziggat.pietscheveplaat.zuid",
+     "naam": "Dantziggat Piet Scheveplaat zuid",
+     "km": 6.1
+    },
+    {
+     "code": "holwerderbalg",
+     "naam": "Holwerderbalg",
+     "km": 7.4
+    }
+   ]
+  },
+  "golfwind": {
+   "golf": [
+    {
+     "code": "holwerd.vaargeul",
+     "naam": "Holwerd vaargeul",
+     "km": 0.2
+    },
+    {
+     "code": "dantziggat.pietscheveplaat.zuid",
+     "naam": "Dantziggat Piet Scheveplaat zuid",
+     "km": 6.1
+    },
+    {
+     "code": "amelanderzeegat.6.2",
+     "naam": "Amelander zeegat, 6 .2",
+     "km": 7.9
+    },
+    {
+     "code": "ameland.nes",
+     "naam": "Ameland, Nes",
+     "km": 8.6
+    },
+    {
+     "code": "amelandwestgat",
+     "naam": "Ameland Westgat platform",
+     "km": 11.0
+    },
+    {
+     "code": "ameland.westgat",
+     "naam": "Ameland, Westgat",
+     "km": 11.0
+    },
+    {
+     "code": "amelanderzeegat.5.1",
+     "naam": "Amelander zeegat, 5 .1",
+     "km": 12.1
+    },
+    {
+     "code": "amelanderzeegat.5.2",
+     "naam": "Amelander zeegat, 5 .2",
+     "km": 12.2
+    }
+   ],
+   "wind": [
+    {
+     "code": "ameland.nes",
+     "naam": "Ameland, Nes",
+     "km": 8.6
+    },
+    {
+     "code": "amelandwestgat",
+     "naam": "Ameland Westgat platform",
+     "km": 11.0
+    },
+    {
+     "code": "wierumergronden",
+     "naam": "Wierumergronden",
+     "km": 13.9
+    },
+    {
+     "code": "lauwersoog.waddenzee",
+     "naam": "Lauwersoog, Waddenzee",
+     "km": 21.0
+    },
+    {
+     "code": "terschelling.hoorn",
+     "naam": "Terschelling, Hoorn",
+     "km": 35.5
+    },
+    {
+     "code": "terschelling.noordzee",
+     "naam": "Terschelling, Noordzee",
+     "km": 36.6
+    },
+    {
+     "code": "huibertgat",
+     "naam": "Huibertgat",
+     "km": 39.4
+    }
+   ]
+  },
+  "intro": "Holwerd is het vertrekpunt van de veerboot naar Ameland. Bij laagwater valt hier een groot deel van het wad droog, en de boot vaart door een uitgebaggerde geul. Ook wadlooptochten vertrekken vanaf de Friese kust bij Holwerd.",
+  "regioSlug": "wadden"
+ }
+]

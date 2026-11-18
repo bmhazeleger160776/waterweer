@@ -53,9 +53,9 @@
     },
     "dichtbij": [
       "breskens",
-      "zoutelande",
-      "westkapelle",
-      "domburg"
+      "dishoek",
+      "borssele",
+      "zoutelande"
     ],
     "regioSlug": "zeeland",
     "intro": "Vlissingen ligt aan de monding van de Westerschelde. Het getijverschil hoort hier bij de grootste van Nederland, dus eb en vloed maken op het strand veel verschil."
@@ -85,10 +85,10 @@
       }
     },
     "dichtbij": [
+      "kijkduin",
+      "monster",
       "katwijk",
-      "hoek-van-holland",
-      "noordwijk",
-      "maasvlakte"
+      "hoek-van-holland"
     ],
     "regioSlug": "zuid-holland",
     "intro": "Scheveningen is de drukste badplaats van Nederland, met de Pier, een boulevard en een haven. Langs de Hollandse kust is het getijverschil kleiner dan in Zeeland, maar bij laagwater is het strand merkbaar breder. Zwem bij harde wind alleen bij de bewaakte posten, want dan kunnen er muien staan."
@@ -118,10 +118,10 @@
       }
     },
     "dichtbij": [
+      "oudeschild",
       "den-helder",
-      "callantsoog",
-      "vlieland",
-      "harlingen"
+      "den-oever",
+      "julianadorp"
     ],
     "regioSlug": "wadden",
     "intro": "Texel heeft aan de westkant een lang Noordzeestrand en aan de oostkant de Waddenzee. Het getijmeetpunt ligt bij Oudeschild, aan de Waddenkant. Aan het Noordzeestrand vallen hoog- en laagwater op iets andere tijden, dus gebruik de tijden hier als richtlijn."
@@ -153,8 +153,8 @@
     "dichtbij": [
       "noordwijk",
       "scheveningen",
-      "zandvoort",
-      "ijmuiden"
+      "kijkduin",
+      "zandvoort"
     ],
     "regioSlug": "zuid-holland",
     "intro": "Katwijk ligt waar de Oude Rijn via de uitwateringssluizen in zee stroomt. De getijden komen van meetpunt Scheveningen, iets zuidelijker aan dezelfde kust. Kom je voor een strandwandeling, dan is rond laagwater het strand het breedst."
@@ -187,7 +187,7 @@
       "katwijk",
       "zandvoort",
       "scheveningen",
-      "ijmuiden"
+      "kijkduin"
     ],
     "regioSlug": "zuid-holland",
     "intro": "Noordwijk heeft een lang, breed zandstrand met een boulevard vol strandpaviljoens. De getijden voor Noordwijk komen van meetpunt Scheveningen, iets zuidelijker aan dezelfde kust, dus de tijden liggen dicht bij elkaar."
@@ -214,8 +214,8 @@
     "dichtbij": [
       "vlieland",
       "harlingen",
-      "ameland",
-      "texel"
+      "kornwerderzand",
+      "ameland"
     ],
     "regioSlug": "wadden",
     "intro": "Terschelling heeft aan de Noordzeekant een breed strand en aan de Waddenkant de haven van West-Terschelling. De getijden komen van het meetpunt bij West-Terschelling. Aan het Noordzeestrand kunnen de tijden iets afwijken. Wadlopen kan alleen rond laagwater en altijd met een erkende gids."
@@ -245,10 +245,10 @@
       }
     },
     "dichtbij": [
+      "bergen-aan-zee",
       "castricum-aan-zee",
       "wijk-aan-zee",
-      "ijmuiden",
-      "callantsoog"
+      "petten"
     ],
     "regioSlug": "noord-holland",
     "intro": "Egmond aan Zee is een badplaats met een vuurtoren direct aan de boulevard. De getijden komen van het meetpunt IJmuiden, zuidelijker aan dezelfde kust, dus de tijden liggen dicht bij elkaar."
@@ -278,10 +278,10 @@
       }
     },
     "dichtbij": [
+      "krimpen-aan-den-ijssel",
+      "maassluis",
       "dordrecht",
-      "hoek-van-holland",
-      "scheveningen",
-      "maasvlakte"
+      "europoort"
     ],
     "regioSlug": "zuid-holland",
     "intro": "Ook midden in Rotterdam is de Nieuwe Maas nog een getijdenrivier: het water gaat twee keer per dag op en neer. Het verschil is kleiner dan aan de kust en hangt ook af van hoeveel water de rivieren afvoeren. Het meetpunt ligt bij de Parksluizen, vlak bij de Euromast."
@@ -311,10 +311,10 @@
       }
     },
     "dichtbij": [
+      "kornwerderzand",
       "terschelling",
       "vlieland",
-      "ameland",
-      "texel"
+      "den-oever"
     ],
     "regioSlug": "wadden",
     "intro": "Harlingen is een havenstad aan de Waddenzee, met veerboten naar Vlieland en Terschelling. De getijden komen van het meetpunt in de Waddenzee bij de haven. Hoogwater valt hier enkele uren later dan aan de Noord-Hollandse kust."
@@ -344,10 +344,10 @@
       }
     },
     "dichtbij": [
+      "dishoek",
       "westkapelle",
       "domburg",
-      "oostkapelle",
-      "vlissingen"
+      "oostkapelle"
     ],
     "regioSlug": "zeeland",
     "intro": "Zoutelande ligt op Walcheren, aan een van de weinige Nederlandse stranden die op het zuidwesten liggen. Daardoor is het er vaak zonnig en beschut. Het getijverschil is groot, net als elders aan de Zeeuwse kust. De getijden komen van meetpunt Westkapelle."
@@ -377,10 +377,10 @@
       }
     },
     "dichtbij": [
+      "europoort",
+      "monster",
       "maasvlakte",
-      "scheveningen",
-      "ouddorp",
-      "rotterdam"
+      "maassluis"
     ],
     "regioSlug": "zuid-holland",
     "intro": "Hoek van Holland ligt aan de monding van de Nieuwe Waterweg, de toegang tot de Rotterdamse haven. Grote zeeschepen varen hier vlak langs het strand. Zwem niet bij de pieren, want bij de havenmond is de stroming sterk."
@@ -406,9 +406,9 @@
     },
     "dichtbij": [
       "yerseke",
+      "goese-sas",
       "stavenisse",
-      "hansweert",
-      "zierikzee"
+      "hansweert"
     ],
     "regioSlug": "zeeland",
     "intro": "Wemeldinge ligt aan de Oosterschelde, bij de ingang van het Kanaal door Zuid-Beveland. Het getij in de Oosterschelde loopt hier ongehinderd in en uit, want de Oosterscheldekering gaat alleen bij storm dicht. De getijden komen van meetpunt Yerseke."
@@ -505,9 +505,9 @@
     },
     "dichtbij": [
       "burgh-haamstede",
-      "neeltje-jans",
-      "ouddorp",
-      "zierikzee"
+      "burghsluis",
+      "brouwersdam",
+      "westenschouwen"
     ],
     "regioSlug": "zeeland",
     "intro": "Renesse op Schouwen-Duiveland heeft een breed Noordzeestrand en ligt vlak bij de Brouwersdam, een bekende plek voor kite- en windsurfers. De getijden komen van het meetpunt bij de Brouwersdam."
@@ -538,9 +538,9 @@
     },
     "dichtbij": [
       "vlissingen",
-      "cadzand",
-      "zoutelande",
-      "westkapelle"
+      "nieuwvliet",
+      "dishoek",
+      "cadzand"
     ],
     "regioSlug": "zeeland",
     "intro": "Breskens ligt in Zeeuws-Vlaanderen aan de Westerschelde, tegenover Vlissingen, waar een fiets- en voetveer naartoe vaart. Grote zeeschepen op weg naar Antwerpen varen hier vlak langs. Het verschil tussen eb en vloed is groot."
@@ -570,10 +570,10 @@
       }
     },
     "dichtbij": [
+      "bergse-diepsluis",
+      "tholen",
       "yerseke",
-      "hansweert",
-      "wemeldinge",
-      "stavenisse"
+      "hansweert"
     ],
     "regioSlug": "zeeland",
     "intro": "De Oesterdam ligt in het oostelijkste deel van de Oosterschelde, bij Tholen en Bergen op Zoom. Omdat de Oosterschelde hier smal uitloopt, is het verschil tussen eb en vloed aan deze kant groter dan bij de monding. De getijden komen van meetpunt Marollegat."
@@ -603,10 +603,10 @@
       }
     },
     "dichtbij": [
+      "nieuwvliet",
       "breskens",
-      "zoutelande",
-      "vlissingen",
-      "westkapelle"
+      "dishoek",
+      "zoutelande"
     ],
     "regioSlug": "zeeland",
     "intro": "Cadzand ligt in Zeeuws-Vlaanderen, vlak bij de monding van de Westerschelde. Het strand staat bekend om de fossiele haaientanden die je er vindt. Zoek bij laagwater: dan ligt er het meeste strand vrij."
@@ -659,9 +659,9 @@
       }
     },
     "dichtbij": [
+      "holwerd",
       "schiermonnikoog",
       "lauwersoog",
-      "harlingen",
       "terschelling"
     ],
     "regioSlug": "wadden",
@@ -695,7 +695,7 @@
       "oostkapelle",
       "westkapelle",
       "zoutelande",
-      "vlissingen"
+      "vrouwenpolder"
     ],
     "regioSlug": "zeeland",
     "intro": "Domburg is een van de oudste badplaatsen van Zeeland, op de kust van Walcheren. Het getijverschil is hier groot, dus het strand verandert flink tussen eb en vloed. Zwem niet vlak bij de paalhoofden, want daar staat vaak stroming."
@@ -728,7 +728,7 @@
       "zoutelande",
       "domburg",
       "oostkapelle",
-      "vlissingen"
+      "dishoek"
     ],
     "regioSlug": "zeeland",
     "intro": "Westkapelle ligt op de westpunt van Walcheren, achter de hoge Westkappelse Zeedijk. De vuurtoren staat midden in het dorp. Het getijverschil is groot, dus bij laagwater ligt er een breed strand voor de dijk."
@@ -758,10 +758,10 @@
       }
     },
     "dichtbij": [
+      "julianadorp",
       "texel",
-      "callantsoog",
-      "egmond-aan-zee",
-      "vlieland"
+      "oudeschild",
+      "callantsoog"
     ],
     "regioSlug": "noord-holland",
     "intro": "Bij Den Helder stroomt het water door het Marsdiep tussen de Noordzee en de Waddenzee, de vaarroute van de veerboot naar Texel. Door dat zeegat kan de stroming hier sterk zijn. Getijden en watertemperatuur komen van het meetpunt in het Marsdiep zelf."
@@ -788,8 +788,8 @@
     "dichtbij": [
       "terschelling",
       "harlingen",
-      "texel",
-      "den-helder"
+      "kornwerderzand",
+      "texel"
     ],
     "regioSlug": "wadden",
     "intro": "Vlieland is het rustigste Waddeneiland: bezoekers mogen er geen auto meenemen. De boot komt aan in Oost-Vlieland. De getijden komen van het meetpunt in de haven. Aan het Noordzeestrand kunnen de tijden iets afwijken."
@@ -852,10 +852,10 @@
       }
     },
     "dichtbij": [
+      "zeelandbrug",
+      "colijnsplaat",
       "stavenisse",
-      "burgh-haamstede",
-      "renesse",
-      "neeltje-jans"
+      "burghsluis"
     ],
     "regioSlug": "zeeland",
     "intro": "Zierikzee is een oude havenstad op Schouwen-Duiveland, vlak bij de Zeelandbrug over de Oosterschelde. De getijden komen van meetpunt Stavenisse, aan de overkant van de Oosterschelde."
@@ -915,8 +915,8 @@
     "dichtbij": [
       "wemeldinge",
       "hansweert",
-      "stavenisse",
-      "oesterdam"
+      "goese-sas",
+      "stavenisse"
     ],
     "regioSlug": "zeeland",
     "intro": "Yerseke is het centrum van de Nederlandse mossel- en oesterkweek, aan de Oosterschelde. Bij laagwater vallen rond het dorp platen droog. Het getijverschil is hier groter dan aan de monding van de Oosterschelde."
@@ -946,10 +946,10 @@
       }
     },
     "dichtbij": [
+      "borssele",
+      "walsoorden",
       "hansweert",
-      "vlissingen",
-      "breskens",
-      "yerseke"
+      "vlissingen"
     ],
     "regioSlug": "zeeland",
     "intro": "Terneuzen ligt aan de Westerschelde, bij de zeesluizen van het kanaal naar Gent. Zeeschepen op weg naar Antwerpen varen hier vlak langs de boulevard. Het verschil tussen eb en vloed is hier groter dan aan de Zeeuwse Noordzeekust."
@@ -979,10 +979,10 @@
       }
     },
     "dichtbij": [
+      "eemshaven",
       "lauwersoog",
       "schiermonnikoog",
-      "ameland",
-      "harlingen"
+      "holwerd"
     ],
     "regioSlug": "wadden",
     "intro": "Delfzijl ligt aan de Eems, in het oosten van de Waddenzee. Het getijverschil is hier veel groter dan bij de westelijke Waddeneilanden, en hoogwater valt uren later dan in Den Helder. Aan de dijk ligt het stadsstrand Marconi."
@@ -1013,9 +1013,9 @@
     },
     "dichtbij": [
       "schiermonnikoog",
+      "holwerd",
       "ameland",
-      "delfzijl",
-      "harlingen"
+      "eemshaven"
     ],
     "regioSlug": "wadden",
     "intro": "Vanuit Lauwersoog vertrekt de veerboot naar Schiermonnikoog. De haven ligt aan de Waddenzee, bij het Lauwersmeer. Langs deze kust vertrekken ook veel wadlooptochten, altijd rond laagwater."
@@ -1046,9 +1046,9 @@
     },
     "dichtbij": [
       "lauwersoog",
+      "holwerd",
       "ameland",
-      "delfzijl",
-      "harlingen"
+      "eemshaven"
     ],
     "regioSlug": "wadden",
     "intro": "Schiermonnikoog is het kleinste bewoonde Waddeneiland en grotendeels nationaal park. Het strand aan de Noordzeekant is zeer breed. De getijden komen van het meetpunt aan de Waddenkant, dus aan het Noordzeestrand kunnen de tijden iets afwijken."
@@ -1079,9 +1079,9 @@
     },
     "dichtbij": [
       "hoek-van-holland",
-      "ouddorp",
-      "scheveningen",
-      "renesse"
+      "europoort",
+      "rockanje",
+      "monster"
     ],
     "regioSlug": "zuid-holland",
     "intro": "De Maasvlakte is het uiterste puntje van de Rotterdamse haven, aangelegd in zee. Het strand van de Maasvlakte is ruim en rustig en trekt kitesurfers en vissers. De getijden komen van het meetpunt in de Amaliahaven."
@@ -1111,10 +1111,10 @@
       }
     },
     "dichtbij": [
+      "brouwersdam",
+      "rockanje",
       "renesse",
-      "maasvlakte",
-      "burgh-haamstede",
-      "zierikzee"
+      "maasvlakte"
     ],
     "regioSlug": "zuid-holland",
     "intro": "Ouddorp op Goeree-Overflakkee heeft brede stranden aan de Noordzee, bij de Brouwersdam. Het is een bekende plek voor kitesurfen. De getijden komen van een meetpunt voor de kust bij het Haringvliet."
@@ -1147,7 +1147,7 @@
       "wijk-aan-zee",
       "egmond-aan-zee",
       "ijmuiden",
-      "zandvoort"
+      "bergen-aan-zee"
     ],
     "regioSlug": "noord-holland",
     "intro": "Castricum aan Zee is een kleine badplaats midden in het Noord-Hollands Duinreservaat. De getijden komen van meetpunt IJmuiden, zuidelijker aan dezelfde kust, dus de tijden liggen dicht bij elkaar."
@@ -1177,10 +1177,10 @@
       }
     },
     "dichtbij": [
+      "krimpen-aan-den-ijssel",
       "rotterdam",
-      "hoek-van-holland",
-      "scheveningen",
-      "katwijk"
+      "maassluis",
+      "europoort"
     ],
     "regioSlug": "zuid-holland",
     "intro": "Dordrecht ligt helemaal omringd door water, waar de Oude Maas, de Beneden-Merwede en de Noord samenkomen. Het getij is hier nog goed merkbaar, al is het verschil tussen eb en vloed veel kleiner dan aan zee. Bij hoge rivierafvoer en storm kan het water rond de oude binnenstad hoog komen."
@@ -1211,9 +1211,9 @@
     },
     "dichtbij": [
       "domburg",
+      "vrouwenpolder",
       "westkapelle",
-      "zoutelande",
-      "neeltje-jans"
+      "zoutelande"
     ],
     "regioSlug": "zeeland",
     "intro": "Oostkapelle ligt aan de noordkust van Walcheren, met strand achter een brede duinenrij. De getijden komen van een meetpunt voor de kust bij de monding van de Oosterschelde."
@@ -1238,10 +1238,10 @@
       }
     },
     "dichtbij": [
+      "zeelandbrug",
+      "sint-annaland",
       "wemeldinge",
-      "zierikzee",
-      "yerseke",
-      "hansweert"
+      "goese-sas"
     ],
     "regioSlug": "zeeland",
     "intro": "Stavenisse ligt aan de noordkant van Tholen, aan de Oosterschelde. Rijkswaterstaat heeft hier een eigen getijmeetpunt. Het getijverschil is groter dan bij de monding van de Oosterschelde."
@@ -1271,10 +1271,10 @@
       }
     },
     "dichtbij": [
+      "julianadorp",
+      "petten",
       "den-helder",
-      "texel",
-      "egmond-aan-zee",
-      "castricum-aan-zee"
+      "bergen-aan-zee"
     ],
     "regioSlug": "noord-holland",
     "intro": "Callantsoog is een badplaats aan de kop van Noord-Holland, naast natuurgebied het Zwanenwater. Het getijverschil is hier klein vergeleken met Zeeland. De getijden komen van meetpunt Den Helder in het Marsdiep."
@@ -1304,10 +1304,10 @@
       }
     },
     "dichtbij": [
-      "burgh-haamstede",
-      "renesse",
-      "oostkapelle",
-      "zierikzee"
+      "westenschouwen",
+      "kamperland",
+      "burghsluis",
+      "vrouwenpolder"
     ],
     "regioSlug": "zeeland",
     "intro": "Neeltje Jans is het werkeiland midden in de Oosterscheldekering. Door de openingen in de kering stroomt het getij de Oosterschelde in en uit. Alleen bij zware storm gaan de schuiven dicht."
@@ -1337,10 +1337,10 @@
       }
     },
     "dichtbij": [
+      "burghsluis",
+      "westenschouwen",
       "renesse",
-      "neeltje-jans",
-      "zierikzee",
-      "ouddorp"
+      "neeltje-jans"
     ],
     "regioSlug": "zeeland",
     "intro": "Burgh-Haamstede ligt op de westpunt van Schouwen-Duiveland, met brede stranden aan de Noordzee en de vuurtoren Westhoofd. De getijden komen van een meetpunt bij de monding van de Oosterschelde."
@@ -1371,9 +1371,9 @@
     },
     "dichtbij": [
       "yerseke",
+      "walsoorden",
       "wemeldinge",
-      "oesterdam",
-      "stavenisse"
+      "goese-sas"
     ],
     "regioSlug": "zeeland",
     "intro": "Hansweert ligt aan de Westerschelde, bij de sluizen van het Kanaal door Zuid-Beveland. Schepen tussen Antwerpen en Rotterdam komen hier langs. Diep in de Westerschelde is het verschil tussen eb en vloed een van de grootste van Nederland."
@@ -1790,6 +1790,986 @@
       "heesbeen",
       "schoonhoven",
       "zaltbommel"
+    ]
+  },
+  {
+    "slug": "vrouwenpolder",
+    "naam": "Vrouwenpolder",
+    "type": "kust",
+    "regio": "Zeeland",
+    "regioSlug": "zeeland",
+    "lat": 51.59,
+    "lon": 3.612,
+    "rws": {
+      "getij": {
+        "code": "oosterschelde.roompotsluis.binnen",
+        "naam": "Oosterschelde Roompotsluis binnen",
+        "km": 6.1
+      },
+      "temperatuur": {
+        "code": "kamperland.schotsman",
+        "naam": "Kamperland, Schotsman",
+        "km": 2.4
+      },
+      "waterstand": {
+        "code": "oosterschelde.roompotsluis.binnen",
+        "naam": "Oosterschelde Roompotsluis binnen",
+        "km": 6.1
+      }
+    },
+    "intro": "Vrouwenpolder ligt op de noordpunt van Walcheren, tussen de Noordzee en het Veerse Meer. Het brede strand loopt door tot aan de Veerse Gatdam. Aan de Noordzeekant is er gewoon eb en vloed; het Veerse Meer heeft een vast peil en dus geen getij.",
+    "dichtbij": [
+      "oostkapelle",
+      "kamperland",
+      "neeltje-jans",
+      "domburg"
+    ]
+  },
+  {
+    "slug": "dishoek",
+    "naam": "Dishoek",
+    "type": "kust",
+    "regio": "Zeeland",
+    "regioSlug": "zeeland",
+    "lat": 51.476,
+    "lon": 3.522,
+    "rws": {
+      "getij": {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 6.6
+      },
+      "temperatuur": {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 6.6
+      },
+      "waterstand": {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 6.6
+      }
+    },
+    "intro": "Dishoek is een kleine badplaats tussen Vlissingen en Zoutelande, met een strand aan de voet van hoge duinen. Hier gaat de Westerschelde over in de Noordzee, en de stroming langs de kust kan sterk zijn. Zwem daarom alleen bij de bewaakte posten.",
+    "dichtbij": [
+      "zoutelande",
+      "vlissingen",
+      "westkapelle",
+      "breskens"
+    ]
+  },
+  {
+    "slug": "nieuwvliet",
+    "naam": "Nieuwvliet",
+    "type": "kust",
+    "regio": "Zeeland",
+    "regioSlug": "zeeland",
+    "lat": 51.383,
+    "lon": 3.455,
+    "rws": {
+      "getij": {
+        "code": "cadzand.2",
+        "naam": "Cadzand, 2",
+        "km": 5.5
+      },
+      "waterstand": {
+        "code": "cadzand.1",
+        "naam": "Cadzand, 1",
+        "km": 6
+      },
+      "temperatuur": {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 12.0
+      }
+    },
+    "intro": "Nieuwvliet-Bad ligt in Zeeuws-Vlaanderen tussen Cadzand en Groede, met veel campings achter de duinen. Het strand is breed en vlak, zodat je goed ziet hoe ver het water bij eb terugtrekt. De getijden komen van het meetpunt bij Cadzand.",
+    "dichtbij": [
+      "cadzand",
+      "breskens",
+      "dishoek",
+      "vlissingen"
+    ]
+  },
+  {
+    "slug": "kamperland",
+    "naam": "Kamperland",
+    "type": "oosterschelde",
+    "regio": "Zeeland",
+    "regioSlug": "zeeland",
+    "lat": 51.575,
+    "lon": 3.7,
+    "rws": {
+      "getij": {
+        "code": "oosterschelde.roompotsluis.binnen",
+        "naam": "Oosterschelde Roompotsluis binnen",
+        "km": 4.9
+      },
+      "temperatuur": {
+        "code": "kamperland.schotsman",
+        "naam": "Kamperland, Schotsman",
+        "km": 4
+      },
+      "waterstand": {
+        "code": "oosterschelde.roompotsluis.binnen",
+        "naam": "Oosterschelde Roompotsluis binnen",
+        "km": 4.9
+      }
+    },
+    "intro": "Kamperland ligt op Noord-Beveland, tussen de Oosterschelde en het Veerse Meer. Aan de Oosterscheldekant is er gewoon eb en vloed, terwijl het Veerse Meer een vast peil heeft. Bij laagwater komen langs de Oosterschelde zandplaten en slikken droog te liggen.",
+    "dichtbij": [
+      "neeltje-jans",
+      "vrouwenpolder",
+      "colijnsplaat",
+      "westenschouwen"
+    ]
+  },
+  {
+    "slug": "westenschouwen",
+    "naam": "Westenschouwen",
+    "type": "kust",
+    "regio": "Zeeland",
+    "regioSlug": "zeeland",
+    "lat": 51.672,
+    "lon": 3.7,
+    "rws": {
+      "getij": {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 1.9
+      },
+      "temperatuur": {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 1.9
+      },
+      "waterstand": {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 1.9
+      }
+    },
+    "intro": "Westenschouwen ligt op de westpunt van Schouwen-Duiveland, waar de Oosterscheldekering begint. Het strand ligt aan de monding van de Oosterschelde, en door het getij staat er vlak bij de kering een sterke stroming. Zwem daar dus niet, maar blijf bij het strand aan de Noordzeekant.",
+    "dichtbij": [
+      "burghsluis",
+      "burgh-haamstede",
+      "neeltje-jans",
+      "renesse"
+    ]
+  },
+  {
+    "slug": "brouwersdam",
+    "naam": "Brouwersdam",
+    "type": "kust",
+    "regio": "Zeeland",
+    "regioSlug": "zeeland",
+    "lat": 51.76,
+    "lon": 3.855,
+    "rws": {
+      "getij": {
+        "code": "brouwersdam.brouwershavensegat.8",
+        "naam": "Brouwersdam Brouwershavense Gat 8",
+        "km": 3.2
+      },
+      "temperatuur": {
+        "code": "brouwershavensche.gat.08",
+        "naam": "Brouwershavensche Gat 08",
+        "km": 3.2
+      },
+      "waterstand": {
+        "code": "brouwershavensche.gat.08",
+        "naam": "Brouwershavensche Gat 08",
+        "km": 3.2
+      }
+    },
+    "intro": "De Brouwersdam sluit het Grevelingenmeer af van de Noordzee en is een van de bekendste plekken van Nederland voor kitesurfen en windsurfen. Aan de Noordzeekant is er gewoon eb en vloed. Het Grevelingenmeer aan de andere kant van de dam heeft bijna geen getij.",
+    "dichtbij": [
+      "renesse",
+      "ouddorp",
+      "burgh-haamstede",
+      "burghsluis"
+    ]
+  },
+  {
+    "slug": "bruinisse",
+    "naam": "Bruinisse",
+    "type": "oosterschelde",
+    "regio": "Zeeland",
+    "regioSlug": "zeeland",
+    "lat": 51.662,
+    "lon": 4.092,
+    "rws": {
+      "getij": {
+        "code": "krammersluizen.west",
+        "naam": "Krammersluizen west",
+        "km": 3.6
+      },
+      "waterstand": {
+        "code": "bruinisse.krammersluis.oosterschelde.2",
+        "naam": "Bruinisse Krammersluis, Oosterschelde",
+        "km": 3.5
+      },
+      "temperatuur": {
+        "code": "bommenede",
+        "naam": "Bommenede",
+        "km": 11.8
+      }
+    },
+    "intro": "Bruinisse ligt in het oosten van Schouwen-Duiveland, tussen de Oosterschelde en het Grevelingenmeer. Het dorp is bekend om de watersport en de mosselcultuur. Het getij komt van het meetpunt bij de Krammersluizen, vlak bij het dorp.",
+    "dichtbij": [
+      "sint-annaland",
+      "stavenisse",
+      "zeelandbrug",
+      "zierikzee"
+    ]
+  },
+  {
+    "slug": "zeelandbrug",
+    "naam": "Zeelandbrug",
+    "type": "oosterschelde",
+    "regio": "Zeeland",
+    "regioSlug": "zeeland",
+    "lat": 51.605,
+    "lon": 3.965,
+    "rws": {
+      "getij": {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 2.8
+      },
+      "waterstand": {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 2.8
+      },
+      "temperatuur": {
+        "code": "bommenede",
+        "naam": "Bommenede",
+        "km": 14.9
+      }
+    },
+    "intro": "De Zeelandbrug verbindt Schouwen-Duiveland met Noord-Beveland en is met ruim 5 kilometer de langste brug van Nederland. Onder de brug stroomt het water bij elk getij met kracht door. Duikers en vissers letten daarom op de kentering: het korte moment rond hoog- en laagwater waarop de stroming stilvalt.",
+    "dichtbij": [
+      "stavenisse",
+      "zierikzee",
+      "goese-sas",
+      "colijnsplaat"
+    ]
+  },
+  {
+    "slug": "colijnsplaat",
+    "naam": "Colijnsplaat",
+    "type": "oosterschelde",
+    "regio": "Zeeland",
+    "regioSlug": "zeeland",
+    "lat": 51.6,
+    "lon": 3.848,
+    "rws": {
+      "getij": {
+        "code": "kats.zandkreeksluis",
+        "naam": "Kats, Zandkreeksluis",
+        "km": 6.3
+      },
+      "waterstand": {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 10.8
+      }
+    },
+    "intro": "Colijnsplaat is een havendorp op Noord-Beveland aan de Oosterschelde, vlak bij de Zeelandbrug. In de haven liggen nog vissersschepen, en de dijk is populair bij vissers en wandelaars. Bij laagwater vallen langs de oever slikken droog.",
+    "dichtbij": [
+      "zierikzee",
+      "zeelandbrug",
+      "goese-sas",
+      "kamperland"
+    ]
+  },
+  {
+    "slug": "burghsluis",
+    "naam": "Burghsluis",
+    "type": "oosterschelde",
+    "regio": "Zeeland",
+    "regioSlug": "zeeland",
+    "lat": 51.68,
+    "lon": 3.755,
+    "rws": {
+      "getij": {
+        "code": "oosterschelde.14",
+        "naam": "Oosterschelde, 14",
+        "km": 7
+      },
+      "temperatuur": {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 5.1
+      },
+      "waterstand": {
+        "code": "oosterschelde.14",
+        "naam": "Oosterschelde, 14",
+        "km": 7
+      }
+    },
+    "intro": "Burghsluis is een kleine haven aan de zuidkant van Schouwen, aan de Oosterschelde. De oever is in trek bij duikers en vissers, die rekening houden met de stroming van het getij. Bij laagwater valt een deel van de oever droog.",
+    "dichtbij": [
+      "burgh-haamstede",
+      "westenschouwen",
+      "renesse",
+      "neeltje-jans"
+    ]
+  },
+  {
+    "slug": "borssele",
+    "naam": "Borssele",
+    "type": "westerschelde",
+    "regio": "Zeeland",
+    "regioSlug": "zeeland",
+    "lat": 51.415,
+    "lon": 3.735,
+    "rws": {
+      "getij": {
+        "code": "gatvanborssele",
+        "naam": "Gat van Borssele",
+        "km": 1.6
+      },
+      "temperatuur": {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 9.8
+      },
+      "waterstand": {
+        "code": "borssele",
+        "naam": "Borssele",
+        "km": 0.5
+      }
+    },
+    "intro": "Borssele ligt aan de Westerschelde, in de buurt van het strandje bij de Kaloot. Over de Westerschelde varen grote zeeschepen naar Vlissingen en Antwerpen. Het verschil tussen eb en vloed is hier groter dan aan de Noordzeekust.",
+    "dichtbij": [
+      "vlissingen",
+      "terneuzen",
+      "breskens",
+      "dishoek"
+    ]
+  },
+  {
+    "slug": "walsoorden",
+    "naam": "Walsoorden",
+    "type": "westerschelde",
+    "regio": "Zeeland",
+    "regioSlug": "zeeland",
+    "lat": 51.38,
+    "lon": 4.035,
+    "rws": {
+      "getij": {
+        "code": "walsoorden",
+        "naam": "Walsoorden",
+        "km": 2.1
+      },
+      "temperatuur": {
+        "code": "ossenisse",
+        "naam": "Ossenisse",
+        "km": 5.7
+      },
+      "waterstand": {
+        "code": "walsoorden",
+        "naam": "Walsoorden",
+        "km": 2.1
+      }
+    },
+    "intro": "Walsoorden is een havendorp in Zeeuws-Vlaanderen aan de Westerschelde, tegenover Hansweert. Het getijverschil is hier een van de grootste van Nederland: ruim 4 meter tussen hoog- en laagwater. Vanaf de dijk zie je de grote zeeschepen op weg naar Antwerpen.",
+    "dichtbij": [
+      "hansweert",
+      "yerseke",
+      "terneuzen",
+      "wemeldinge"
+    ]
+  },
+  {
+    "slug": "goese-sas",
+    "naam": "Goese Sas",
+    "type": "oosterschelde",
+    "regio": "Zeeland",
+    "regioSlug": "zeeland",
+    "lat": 51.538,
+    "lon": 3.928,
+    "rws": {
+      "getij": {
+        "code": "kats.zandkreeksluis",
+        "naam": "Kats, Zandkreeksluis",
+        "km": 4.4
+      },
+      "waterstand": {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 8.5
+      }
+    },
+    "intro": "Het Goese Sas is de sluis waar het havenkanaal van Goes in de Oosterschelde uitkomt, bij Wilhelminadorp. Aan de Oosterscheldekant is er gewoon eb en vloed, in het kanaal niet. Bij laagwater vallen de slikken langs de dijk droog.",
+    "dichtbij": [
+      "wemeldinge",
+      "zeelandbrug",
+      "stavenisse",
+      "colijnsplaat"
+    ]
+  },
+  {
+    "slug": "sint-annaland",
+    "naam": "Sint-Annaland",
+    "type": "oosterschelde",
+    "regio": "Zeeland",
+    "regioSlug": "zeeland",
+    "lat": 51.608,
+    "lon": 4.11,
+    "rws": {
+      "getij": {
+        "code": "sintannaland.havensteiger",
+        "naam": "Sint Annaland, Haven Steiger",
+        "km": 0.5
+      },
+      "temperatuur": {
+        "code": "sintphilipsland.slaak.zuid",
+        "naam": "Sint Philipsland Slaak zuid",
+        "km": 5.6
+      },
+      "waterstand": {
+        "code": "sintannaland.oosterschelde",
+        "naam": "Sint Annaland haven",
+        "km": 0.5
+      }
+    },
+    "intro": "Sint-Annaland ligt op Tholen aan de Oosterschelde, met een jachthaven en een klein strandje. Het getijmeetpunt staat in de haven zelf, dus de tijden gelden precies voor het dorp. Bij laagwater komen er langs de dijk slikken droog te liggen.",
+    "dichtbij": [
+      "bruinisse",
+      "stavenisse",
+      "zeelandbrug",
+      "tholen"
+    ]
+  },
+  {
+    "slug": "bergse-diepsluis",
+    "naam": "Bergse Diepsluis",
+    "type": "oosterschelde",
+    "regio": "Zeeland",
+    "regioSlug": "zeeland",
+    "lat": 51.507,
+    "lon": 4.212,
+    "rws": {
+      "getij": {
+        "code": "marollegat",
+        "naam": "Marollegat",
+        "km": 3.4
+      },
+      "temperatuur": {
+        "code": "marollegat",
+        "naam": "Marollegat",
+        "km": 3.4
+      },
+      "waterstand": {
+        "code": "marollegat",
+        "naam": "Marollegat",
+        "km": 3.4
+      }
+    },
+    "intro": "De Bergse Diepsluis is de sluis voor de recreatievaart in de Oesterdam, bij Tholen. Hier vaar je van de Oosterschelde, met eb en vloed, naar het Zoommeer, dat een vast peil heeft. Voor schippers is het getij belangrijk bij het plannen van de doorvaart.",
+    "dichtbij": [
+      "tholen",
+      "oesterdam",
+      "yerseke",
+      "sint-annaland"
+    ]
+  },
+  {
+    "slug": "tholen",
+    "naam": "Tholen",
+    "type": "oosterschelde",
+    "regio": "Zeeland",
+    "regioSlug": "zeeland",
+    "lat": 51.533,
+    "lon": 4.215,
+    "rws": {
+      "getij": {
+        "code": "marollegat",
+        "naam": "Marollegat",
+        "km": 6.3
+      },
+      "temperatuur": {
+        "code": "marollegat",
+        "naam": "Marollegat",
+        "km": 6.3
+      },
+      "waterstand": {
+        "code": "marollegat",
+        "naam": "Marollegat",
+        "km": 6.3
+      }
+    },
+    "intro": "De vestingstad Tholen ligt aan de oostkant van de Oosterschelde, vlak bij Bergen op Zoom. In het oosten van de Oosterschelde is het getijverschil groter dan bij de monding. Langs de dijken vallen bij laagwater grote slikken droog.",
+    "dichtbij": [
+      "bergse-diepsluis",
+      "oesterdam",
+      "sint-annaland",
+      "yerseke"
+    ]
+  },
+  {
+    "slug": "kijkduin",
+    "naam": "Kijkduin",
+    "type": "kust",
+    "regio": "Zuid-Holland",
+    "regioSlug": "zuid-holland",
+    "lat": 52.068,
+    "lon": 4.218,
+    "rws": {
+      "getij": {
+        "code": "scheveningen",
+        "naam": "Scheveningen",
+        "km": 4.6
+      },
+      "waterstand": {
+        "code": "scheveningen",
+        "naam": "Scheveningen",
+        "km": 4.6
+      },
+      "temperatuur": {
+        "code": "hollandsekust.zuid.alpha",
+        "naam": "Hollandse Kust Zuid platform Alpha",
+        "km": 18.4
+      }
+    },
+    "intro": "Kijkduin is de rustige badplaats van Den Haag, ten zuiden van Scheveningen. Het strand is breed en ligt aan de rand van de duinen. De getijden komen van het meetpunt Scheveningen, een paar kilometer verderop.",
+    "dichtbij": [
+      "scheveningen",
+      "monster",
+      "hoek-van-holland",
+      "europoort"
+    ]
+  },
+  {
+    "slug": "monster",
+    "naam": "Monster",
+    "type": "kust",
+    "regio": "Zuid-Holland",
+    "regioSlug": "zuid-holland",
+    "lat": 52.027,
+    "lon": 4.16,
+    "rws": {
+      "getij": {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 6.2
+      },
+      "temperatuur": {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 6.2
+      },
+      "waterstand": {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 6.2
+      }
+    },
+    "intro": "Monster ligt aan de Westlandse kust, tussen Kijkduin en Hoek van Holland, in de buurt van de Zandmotor. Het strand is breed en rustig. Bij harde wind kan het water hoger komen dan het getij voorspelt.",
+    "dichtbij": [
+      "hoek-van-holland",
+      "kijkduin",
+      "europoort",
+      "scheveningen"
+    ]
+  },
+  {
+    "slug": "rockanje",
+    "naam": "Rockanje",
+    "type": "kust",
+    "regio": "Zuid-Holland",
+    "regioSlug": "zuid-holland",
+    "lat": 51.875,
+    "lon": 4.03,
+    "rws": {
+      "getij": {
+        "code": "stellendam.buitenhaven",
+        "naam": "Stellendam, buitenhaven",
+        "km": 5.3
+      },
+      "temperatuur": {
+        "code": "stellendam.buiten",
+        "naam": "Stellendam, buiten",
+        "km": 4.9
+      },
+      "waterstand": {
+        "code": "stellendam.buitenhaven",
+        "naam": "Stellendam, buitenhaven",
+        "km": 5.3
+      }
+    },
+    "intro": "Rockanje ligt op Voorne, aan de Noordzee tussen de Maasvlakte en Goeree. Het strand is breed en loopt geleidelijk af, wat het populair maakt bij gezinnen. Bij laagwater ligt een groot deel van het strand droog.",
+    "dichtbij": [
+      "maasvlakte",
+      "ouddorp",
+      "europoort",
+      "hoek-van-holland"
+    ]
+  },
+  {
+    "slug": "europoort",
+    "naam": "Europoort",
+    "type": "getijrivier",
+    "regio": "Zuid-Holland",
+    "regioSlug": "zuid-holland",
+    "lat": 51.95,
+    "lon": 4.135,
+    "rws": {
+      "getij": {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 3.2
+      },
+      "temperatuur": {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 3.2
+      },
+      "waterstand": {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 3.2
+      }
+    },
+    "intro": "Europoort is het havengebied tussen Rozenburg en de Maasvlakte, aan de Nieuwe Waterweg en het Calandkanaal. Het getij komt hier vrijwel direct uit zee binnen, dus de tijden liggen dicht bij die van Hoek van Holland. Voor de scheepvaart is de waterstand hier belangrijk.",
+    "dichtbij": [
+      "hoek-van-holland",
+      "maasvlakte",
+      "maassluis",
+      "monster"
+    ]
+  },
+  {
+    "slug": "maassluis",
+    "naam": "Maassluis",
+    "type": "getijrivier",
+    "regio": "Zuid-Holland",
+    "regioSlug": "zuid-holland",
+    "lat": 51.918,
+    "lon": 4.25,
+    "rws": {
+      "getij": {
+        "code": "maassluis",
+        "naam": "Maassluis",
+        "km": 0.1
+      },
+      "waterstand": {
+        "code": "maassluis",
+        "naam": "Maassluis",
+        "km": 0.1
+      },
+      "temperatuur": {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 11.1
+      }
+    },
+    "intro": "Maassluis ligt aan de Nieuwe Waterweg, tussen Rotterdam en Hoek van Holland. Elke dag varen hier grote zeeschepen langs. Het getij is goed merkbaar: hoogwater komt hier iets later dan in Hoek van Holland.",
+    "dichtbij": [
+      "europoort",
+      "hoek-van-holland",
+      "monster",
+      "rockanje"
+    ]
+  },
+  {
+    "slug": "krimpen-aan-den-ijssel",
+    "naam": "Krimpen aan den IJssel",
+    "type": "getijrivier",
+    "regio": "Zuid-Holland",
+    "regioSlug": "zuid-holland",
+    "lat": 51.917,
+    "lon": 4.595,
+    "rws": {
+      "getij": {
+        "code": "krimpenaandeijssel.hollandscheijssel",
+        "naam": "Krimpen aan de IJssel, Hollandsche IJssel",
+        "km": 1.1
+      },
+      "temperatuur": {
+        "code": "kinderdijk.lek",
+        "naam": "Kinderdijk Lek",
+        "km": 3.8
+      },
+      "waterstand": {
+        "code": "krimpenaandeijssel.hollandscheijssel",
+        "naam": "Krimpen aan de IJssel, Hollandsche IJssel",
+        "km": 1.1
+      }
+    },
+    "intro": "Krimpen aan den IJssel ligt waar de Hollandse IJssel in de Nieuwe Maas uitkomt, bij de Algerakering. Die stormvloedkering gaat dicht als het water extreem hoog dreigt te worden. Het getij uit zee is hier nog duidelijk merkbaar.",
+    "dichtbij": [
+      "rotterdam",
+      "dordrecht",
+      "maassluis",
+      "scheveningen"
+    ]
+  },
+  {
+    "slug": "bergen-aan-zee",
+    "naam": "Bergen aan Zee",
+    "type": "kust",
+    "regio": "Noord-Holland",
+    "regioSlug": "noord-holland",
+    "lat": 52.66,
+    "lon": 4.628,
+    "rws": {
+      "getij": {
+        "code": "ijmuiden.buitenhaven",
+        "naam": "IJmuiden, buitenhaven",
+        "km": 22.5
+      },
+      "waterstand": {
+        "code": "ijmuiden.buitenhaven",
+        "naam": "IJmuiden, buitenhaven",
+        "km": 22.5
+      },
+      "temperatuur": {
+        "code": "velsen.velserkom",
+        "naam": "Velserkom",
+        "km": 21.4
+      }
+    },
+    "intro": "Bergen aan Zee is een kleine badplaats aan de Noord-Hollandse kust, tussen Egmond en Schoorl, midden in de duinen. Er staat hier geen getijmeetpunt: de tijden komen van IJmuiden, ruim 20 kilometer zuidelijker. In Bergen aan Zee valt hoogwater daardoor meestal wat later dan de tabel aangeeft.",
+    "dichtbij": [
+      "egmond-aan-zee",
+      "castricum-aan-zee",
+      "petten",
+      "wijk-aan-zee"
+    ]
+  },
+  {
+    "slug": "petten",
+    "naam": "Petten",
+    "type": "kust",
+    "regio": "Noord-Holland",
+    "regioSlug": "noord-holland",
+    "lat": 52.767,
+    "lon": 4.66,
+    "rws": {
+      "getij": {
+        "code": "denhelder.marsdiep",
+        "naam": "Den Helder, Marsdiep",
+        "km": 22.7
+      },
+      "waterstand": {
+        "code": "denhelder.marsdiep",
+        "naam": "Den Helder, Marsdiep",
+        "km": 22.7
+      },
+      "temperatuur": {
+        "code": "denhelder.marsdiep",
+        "naam": "Den Helder, Marsdiep",
+        "km": 22.7
+      }
+    },
+    "intro": "Petten ligt achter de Hondsbossche Duinen, waar vroeger de bekende zeewering lag. In 2015 is voor de dijk een breed strand met nieuwe duinen aangelegd. De getijden komen van Den Helder; omdat dat zo'n 20 kilometer noordelijker ligt, kunnen de tijden in Petten wat afwijken.",
+    "dichtbij": [
+      "callantsoog",
+      "bergen-aan-zee",
+      "julianadorp",
+      "egmond-aan-zee"
+    ]
+  },
+  {
+    "slug": "julianadorp",
+    "naam": "Julianadorp aan Zee",
+    "type": "kust",
+    "regio": "Noord-Holland",
+    "regioSlug": "noord-holland",
+    "lat": 52.895,
+    "lon": 4.712,
+    "rws": {
+      "getij": {
+        "code": "denhelder.marsdiep",
+        "naam": "Den Helder, Marsdiep",
+        "km": 8
+      },
+      "temperatuur": {
+        "code": "denhelder.marsdiep",
+        "naam": "Den Helder, Marsdiep",
+        "km": 8
+      },
+      "waterstand": {
+        "code": "denhelder.marsdiep",
+        "naam": "Den Helder, Marsdiep",
+        "km": 8
+      }
+    },
+    "intro": "Julianadorp aan Zee ligt tussen Den Helder en Callantsoog, met een breed strand en veel vakantieparken achter de duinen. De getijden komen van Den Helder, waar het Marsdiep de Noordzee met de Waddenzee verbindt.",
+    "dichtbij": [
+      "callantsoog",
+      "den-helder",
+      "petten",
+      "texel"
+    ]
+  },
+  {
+    "slug": "den-oever",
+    "naam": "Den Oever",
+    "type": "kust",
+    "regio": "Wadden",
+    "regioSlug": "wadden",
+    "lat": 52.935,
+    "lon": 5.035,
+    "rws": {
+      "getij": {
+        "code": "denoever.waddenzee.voorhaven",
+        "naam": "Den Oever, Waddenzee voorhaven",
+        "km": 0.8
+      },
+      "temperatuur": {
+        "code": "denoever.waddenzee.voorhaven.kolk",
+        "naam": "Den Oever, Waddenzee voorhaven kolk",
+        "km": 0.8
+      },
+      "waterstand": {
+        "code": "denoever.waddenzee.voorhaven",
+        "naam": "Den Oever, Waddenzee voorhaven",
+        "km": 0.8
+      }
+    },
+    "intro": "Den Oever ligt aan het begin van de Afsluitdijk, met een vissershaven en de spuisluizen naar de Waddenzee. Bij laagwater lozen die sluizen water uit het IJsselmeer op de Waddenzee. Aan de Waddenkant is er gewoon eb en vloed.",
+    "dichtbij": [
+      "texel",
+      "oudeschild",
+      "den-helder",
+      "julianadorp"
+    ]
+  },
+  {
+    "slug": "oudeschild",
+    "naam": "Oudeschild",
+    "type": "kust",
+    "regio": "Wadden",
+    "regioSlug": "wadden",
+    "lat": 53.04,
+    "lon": 4.85,
+    "rws": {
+      "getij": {
+        "code": "texel.oudeschild",
+        "naam": "Texel, Oudeschild",
+        "km": 0.1
+      },
+      "temperatuur": {
+        "code": "denhoorntexel.waddenzee.gatvandestier",
+        "naam": "Den Hoorn Texel Waddenzee Gat van de Stier",
+        "km": 4.7
+      },
+      "waterstand": {
+        "code": "texel.oudeschild",
+        "naam": "Texel, Oudeschild",
+        "km": 0.1
+      }
+    },
+    "intro": "Oudeschild is de haven van Texel aan de Waddenzee, met vissersschepen en een jachthaven. Het getijmeetpunt van Texel staat hier, dus de tijden gelden precies voor de haven. Aan het Noordzeestrand van Texel kunnen ze iets afwijken.",
+    "dichtbij": [
+      "texel",
+      "den-helder",
+      "den-oever",
+      "julianadorp"
+    ]
+  },
+  {
+    "slug": "eemshaven",
+    "naam": "Eemshaven",
+    "type": "kust",
+    "regio": "Wadden",
+    "regioSlug": "wadden",
+    "lat": 53.448,
+    "lon": 6.833,
+    "rws": {
+      "getij": {
+        "code": "eemshaven.haven",
+        "naam": "Eemshaven, haven",
+        "km": 0.3
+      },
+      "temperatuur": {
+        "code": "eemshaven.waddenzee",
+        "naam": "Eemshaven, Waddenzee",
+        "km": 3
+      },
+      "waterstand": {
+        "code": "uithuizerwad",
+        "naam": "Uithuizerwad",
+        "km": 5.9
+      }
+    },
+    "intro": "Eemshaven ligt in het noorden van Groningen, aan de Eems en de Waddenzee. Vanuit de haven varen veerboten naar Borkum. Het getijverschil is hier groter dan aan de westkant van de Waddenzee.",
+    "dichtbij": [
+      "delfzijl",
+      "lauwersoog",
+      "schiermonnikoog",
+      "holwerd"
+    ]
+  },
+  {
+    "slug": "kornwerderzand",
+    "naam": "Kornwerderzand",
+    "type": "kust",
+    "regio": "Wadden",
+    "regioSlug": "wadden",
+    "lat": 53.072,
+    "lon": 5.338,
+    "rws": {
+      "getij": {
+        "code": "kornwerderzand.waddenzee.buitenhaven",
+        "naam": "Kornwerderzand Waddenzee buitenhaven",
+        "km": 0.4
+      },
+      "temperatuur": {
+        "code": "kornwerderzand.waddenzee.voorhaven.kolk",
+        "naam": "Kornwerderzand, Waddenzee voorhaven kolk",
+        "km": 0.2
+      },
+      "waterstand": {
+        "code": "kornwerderzand.waddenzee.buitenhaven",
+        "naam": "Kornwerderzand Waddenzee buitenhaven",
+        "km": 0.4
+      }
+    },
+    "intro": "Kornwerderzand ligt aan de Friese kant van de Afsluitdijk, met de Lorentzsluizen tussen het IJsselmeer en de Waddenzee. Aan de Waddenkant is er gewoon eb en vloed, terwijl het IJsselmeer een geregeld peil heeft.",
+    "dichtbij": [
+      "harlingen",
+      "den-oever",
+      "vlieland",
+      "texel"
+    ]
+  },
+  {
+    "slug": "holwerd",
+    "naam": "Holwerd",
+    "type": "kust",
+    "regio": "Wadden",
+    "regioSlug": "wadden",
+    "lat": 53.4,
+    "lon": 5.88,
+    "rws": {
+      "getij": {
+        "code": "holwerd.veersteiger",
+        "naam": "Holwerd, Veersteiger",
+        "km": 0.5
+      },
+      "temperatuur": {
+        "code": "holwerd.vaargeul",
+        "naam": "Holwerd vaargeul",
+        "km": 0.2
+      },
+      "waterstand": {
+        "code": "holwerd.vaargeul",
+        "naam": "Holwerd vaargeul",
+        "km": 0.2
+      }
+    },
+    "intro": "Holwerd is het vertrekpunt van de veerboot naar Ameland. Bij laagwater valt hier een groot deel van het wad droog, en de boot vaart door een uitgebaggerde geul. Ook wadlooptochten vertrekken vanaf de Friese kust bij Holwerd.",
+    "dichtbij": [
+      "ameland",
+      "schiermonnikoog",
+      "lauwersoog",
+      "harlingen"
     ]
   }
 ]
