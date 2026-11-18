@@ -1,1360 +1,1374 @@
 [
- {
-  "slug": "lobith",
-  "naam": "Lobith",
-  "type": "rivier",
-  "regio": "Rivieren",
-  "lat": 51.862,
-  "lon": 6.118,
-  "rws": {
-   "temperatuur": {
-    "code": "lobith.ponton",
-    "naam": "Lobith, ponton",
-    "km": 2.0
-   },
-   "waterstand": {
-    "code": "lobith.bovenrijn.tolkamer",
-    "naam": "Lobith, Bovenrijn, Tolkamer",
-    "km": 1.8
-   }
+  {
+    "slug": "lobith",
+    "naam": "Lobith",
+    "type": "rivier",
+    "regio": "Rivieren",
+    "lat": 51.862,
+    "lon": 6.118,
+    "rws": {
+      "temperatuur": {
+        "code": "lobith.ponton",
+        "naam": "Lobith, ponton",
+        "km": 2.0
+      },
+      "waterstand": {
+        "code": "lobith.bovenrijn.tolkamer",
+        "naam": "Lobith, Bovenrijn, Tolkamer",
+        "km": 1.8
+      }
+    },
+    "dichtbij": [
+      "nijmegen",
+      "deventer"
+    ],
+    "regioSlug": "rivieren"
   },
-  "dichtbij": [
-   "nijmegen",
-   "deventer"
-  ],
-  "regioSlug": "rivieren"
- },
- {
-  "slug": "vlissingen",
-  "naam": "Vlissingen",
-  "type": "kust",
-  "regio": "Zeeland",
-  "lat": 51.442,
-  "lon": 3.596,
-  "rws": {
-   "getij": {
-    "code": "vlissingen",
+  {
+    "slug": "vlissingen",
     "naam": "Vlissingen",
-    "km": 0.3
-   },
-   "temperatuur": {
-    "code": "vlissingen",
-    "naam": "Vlissingen",
-    "km": 0.3
-   },
-   "waterstand": {
-    "code": "vlissingen",
-    "naam": "Vlissingen",
-    "km": 0.3
-   }
+    "type": "kust",
+    "regio": "Zeeland",
+    "lat": 51.442,
+    "lon": 3.596,
+    "rws": {
+      "getij": {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 0.3
+      },
+      "temperatuur": {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 0.3
+      },
+      "waterstand": {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 0.3
+      }
+    },
+    "dichtbij": [
+      "breskens",
+      "zoutelande",
+      "westkapelle",
+      "domburg"
+    ],
+    "regioSlug": "zeeland",
+    "intro": "Vlissingen ligt aan de monding van de Westerschelde. Het getijverschil hoort hier bij de grootste van Nederland, dus eb en vloed maken op het strand veel verschil."
   },
-  "dichtbij": [
-   "breskens",
-   "zoutelande",
-   "westkapelle",
-   "domburg"
-  ],
-  "regioSlug": "zeeland",
-  "intro": "Vlissingen ligt aan de monding van de Westerschelde. Het getijverschil hoort hier bij de grootste van Nederland, dus eb en vloed maken op het strand veel verschil."
- },
- {
-  "slug": "scheveningen",
-  "naam": "Scheveningen",
-  "type": "kust",
-  "regio": "Zuid-Holland",
-  "lat": 52.107,
-  "lon": 4.27,
-  "rws": {
-   "getij": {
-    "code": "scheveningen",
+  {
+    "slug": "scheveningen",
     "naam": "Scheveningen",
-    "km": 1.0
-   },
-   "temperatuur": {
-    "code": "hollandsekust.zuid.alpha",
-    "naam": "Hollandse Kust Zuid platform Alpha",
-    "km": 14.9
-   },
-   "waterstand": {
-    "code": "scheveningen",
-    "naam": "Scheveningen",
-    "km": 1.0
-   }
+    "type": "kust",
+    "regio": "Zuid-Holland",
+    "lat": 52.107,
+    "lon": 4.27,
+    "rws": {
+      "getij": {
+        "code": "scheveningen",
+        "naam": "Scheveningen",
+        "km": 1.0
+      },
+      "temperatuur": {
+        "code": "hollandsekust.zuid.alpha",
+        "naam": "Hollandse Kust Zuid platform Alpha",
+        "km": 14.9
+      },
+      "waterstand": {
+        "code": "scheveningen",
+        "naam": "Scheveningen",
+        "km": 1.0
+      }
+    },
+    "dichtbij": [
+      "katwijk",
+      "hoek-van-holland",
+      "noordwijk",
+      "maasvlakte"
+    ],
+    "regioSlug": "zuid-holland",
+    "intro": "Scheveningen is de drukste badplaats van Nederland, met de Pier, een boulevard en een haven. Langs de Hollandse kust is het getijverschil kleiner dan in Zeeland, maar bij laagwater is het strand merkbaar breder. Zwem bij harde wind alleen bij de bewaakte posten, want dan kunnen er muien staan."
   },
-  "dichtbij": [
-   "katwijk",
-   "hoek-van-holland",
-   "noordwijk",
-   "maasvlakte"
-  ],
-  "regioSlug": "zuid-holland"
- },
- {
-  "slug": "texel",
-  "naam": "Texel",
-  "type": "kust",
-  "regio": "Wadden",
-  "lat": 53.04,
-  "lon": 4.85,
-  "rws": {
-   "getij": {
-    "code": "texel.oudeschild",
-    "naam": "Texel, Oudeschild",
-    "km": 0.1
-   },
-   "temperatuur": {
-    "code": "denhoorntexel.waddenzee.gatvandestier",
-    "naam": "Den Hoorn Texel Waddenzee Gat van de Stier",
-    "km": 4.7
-   },
-   "waterstand": {
-    "code": "texel.oudeschild",
-    "naam": "Texel, Oudeschild",
-    "km": 0.1
-   }
+  {
+    "slug": "texel",
+    "naam": "Texel",
+    "type": "kust",
+    "regio": "Wadden",
+    "lat": 53.04,
+    "lon": 4.85,
+    "rws": {
+      "getij": {
+        "code": "texel.oudeschild",
+        "naam": "Texel, Oudeschild",
+        "km": 0.1
+      },
+      "temperatuur": {
+        "code": "denhoorntexel.waddenzee.gatvandestier",
+        "naam": "Den Hoorn Texel Waddenzee Gat van de Stier",
+        "km": 4.7
+      },
+      "waterstand": {
+        "code": "texel.oudeschild",
+        "naam": "Texel, Oudeschild",
+        "km": 0.1
+      }
+    },
+    "dichtbij": [
+      "den-helder",
+      "callantsoog",
+      "vlieland",
+      "harlingen"
+    ],
+    "regioSlug": "wadden",
+    "intro": "Texel heeft aan de westkant een lang Noordzeestrand en aan de oostkant de Waddenzee. Het getijmeetpunt ligt bij Oudeschild, aan de Waddenkant. Aan het Noordzeestrand vallen hoog- en laagwater op iets andere tijden, dus gebruik de tijden hier als richtlijn."
   },
-  "dichtbij": [
-   "den-helder",
-   "callantsoog",
-   "vlieland",
-   "harlingen"
-  ],
-  "regioSlug": "wadden"
- },
- {
-  "slug": "katwijk",
-  "naam": "Katwijk",
-  "type": "kust",
-  "regio": "Zuid-Holland",
-  "lat": 52.203,
-  "lon": 4.395,
-  "rws": {
-   "getij": {
-    "code": "scheveningen",
-    "naam": "Scheveningen",
-    "km": 14.7
-   },
-   "temperatuur": {
-    "code": "hollandsekust.zuid.alpha",
-    "naam": "Hollandse Kust Zuid platform Alpha",
-    "km": 14.0
-   },
-   "waterstand": {
-    "code": "hollandsekust.zuid.alpha",
-    "naam": "Hollandse Kust Zuid platform Alpha",
-    "km": 14.0
-   }
+  {
+    "slug": "katwijk",
+    "naam": "Katwijk",
+    "type": "kust",
+    "regio": "Zuid-Holland",
+    "lat": 52.203,
+    "lon": 4.395,
+    "rws": {
+      "getij": {
+        "code": "scheveningen",
+        "naam": "Scheveningen",
+        "km": 14.7
+      },
+      "temperatuur": {
+        "code": "hollandsekust.zuid.alpha",
+        "naam": "Hollandse Kust Zuid platform Alpha",
+        "km": 14.0
+      },
+      "waterstand": {
+        "code": "hollandsekust.zuid.alpha",
+        "naam": "Hollandse Kust Zuid platform Alpha",
+        "km": 14.0
+      }
+    },
+    "dichtbij": [
+      "noordwijk",
+      "scheveningen",
+      "zandvoort",
+      "ijmuiden"
+    ],
+    "regioSlug": "zuid-holland",
+    "intro": "Katwijk ligt waar de Oude Rijn via de uitwateringssluizen in zee stroomt. De getijden komen van meetpunt Scheveningen, iets zuidelijker aan dezelfde kust. Kom je voor een strandwandeling, dan is rond laagwater het strand het breedst."
   },
-  "dichtbij": [
-   "noordwijk",
-   "scheveningen",
-   "zandvoort",
-   "ijmuiden"
-  ],
-  "regioSlug": "zuid-holland"
- },
- {
-  "slug": "noordwijk",
-  "naam": "Noordwijk",
-  "type": "kust",
-  "regio": "Zuid-Holland",
-  "lat": 52.24,
-  "lon": 4.425,
-  "rws": {
-   "getij": {
-    "code": "scheveningen",
-    "naam": "Scheveningen",
-    "km": 19.2
-   },
-   "temperatuur": {
-    "code": "hollandsekust.zuid.alpha",
-    "naam": "Hollandse Kust Zuid platform Alpha",
-    "km": 15.7
-   },
-   "waterstand": {
-    "code": "hollandsekust.zuid.alpha",
-    "naam": "Hollandse Kust Zuid platform Alpha",
-    "km": 15.7
-   }
+  {
+    "slug": "noordwijk",
+    "naam": "Noordwijk",
+    "type": "kust",
+    "regio": "Zuid-Holland",
+    "lat": 52.24,
+    "lon": 4.425,
+    "rws": {
+      "getij": {
+        "code": "scheveningen",
+        "naam": "Scheveningen",
+        "km": 19.2
+      },
+      "temperatuur": {
+        "code": "hollandsekust.zuid.alpha",
+        "naam": "Hollandse Kust Zuid platform Alpha",
+        "km": 15.7
+      },
+      "waterstand": {
+        "code": "hollandsekust.zuid.alpha",
+        "naam": "Hollandse Kust Zuid platform Alpha",
+        "km": 15.7
+      }
+    },
+    "dichtbij": [
+      "katwijk",
+      "zandvoort",
+      "scheveningen",
+      "ijmuiden"
+    ],
+    "regioSlug": "zuid-holland",
+    "intro": "Noordwijk heeft een lang, breed zandstrand met een boulevard vol strandpaviljoens. De getijden voor Noordwijk komen van meetpunt Scheveningen, iets zuidelijker aan dezelfde kust, dus de tijden liggen dicht bij elkaar."
   },
-  "dichtbij": [
-   "katwijk",
-   "zandvoort",
-   "scheveningen",
-   "ijmuiden"
-  ],
-  "regioSlug": "zuid-holland"
- },
- {
-  "slug": "terschelling",
-  "naam": "Terschelling",
-  "type": "kust",
-  "regio": "Wadden",
-  "lat": 53.36,
-  "lon": 5.22,
-  "rws": {
-   "getij": {
-    "code": "terschelling.west",
-    "naam": "Terschelling, west",
-    "km": 0.3
-   },
-   "waterstand": {
-    "code": "terschelling.west",
-    "naam": "Terschelling, west",
-    "km": 0.3
-   }
+  {
+    "slug": "terschelling",
+    "naam": "Terschelling",
+    "type": "kust",
+    "regio": "Wadden",
+    "lat": 53.36,
+    "lon": 5.22,
+    "rws": {
+      "getij": {
+        "code": "terschelling.west",
+        "naam": "Terschelling, west",
+        "km": 0.3
+      },
+      "waterstand": {
+        "code": "terschelling.west",
+        "naam": "Terschelling, west",
+        "km": 0.3
+      }
+    },
+    "dichtbij": [
+      "vlieland",
+      "harlingen",
+      "ameland",
+      "texel"
+    ],
+    "regioSlug": "wadden",
+    "intro": "Terschelling heeft aan de Noordzeekant een breed strand en aan de Waddenkant de haven van West-Terschelling. De getijden komen van het meetpunt bij West-Terschelling. Aan het Noordzeestrand kunnen de tijden iets afwijken. Wadlopen kan alleen rond laagwater en altijd met een erkende gids."
   },
-  "dichtbij": [
-   "vlieland",
-   "harlingen",
-   "ameland",
-   "texel"
-  ],
-  "regioSlug": "wadden"
- },
- {
-  "slug": "egmond-aan-zee",
-  "naam": "Egmond aan Zee",
-  "type": "kust",
-  "regio": "Noord-Holland",
-  "lat": 52.62,
-  "lon": 4.625,
-  "rws": {
-   "getij": {
-    "code": "ijmuiden.buitenhaven",
-    "naam": "IJmuiden, buitenhaven",
-    "km": 18.1
-   },
-   "temperatuur": {
-    "code": "velsen.velserkom",
-    "naam": "Velserkom",
-    "km": 17.0
-   },
-   "waterstand": {
-    "code": "ijmuiden.noordersluis.west",
-    "naam": "IJmuiden, noordersluis, west",
-    "km": 17.0
-   }
+  {
+    "slug": "egmond-aan-zee",
+    "naam": "Egmond aan Zee",
+    "type": "kust",
+    "regio": "Noord-Holland",
+    "lat": 52.62,
+    "lon": 4.625,
+    "rws": {
+      "getij": {
+        "code": "ijmuiden.buitenhaven",
+        "naam": "IJmuiden, buitenhaven",
+        "km": 18.1
+      },
+      "temperatuur": {
+        "code": "velsen.velserkom",
+        "naam": "Velserkom",
+        "km": 17.0
+      },
+      "waterstand": {
+        "code": "ijmuiden.noordersluis.west",
+        "naam": "IJmuiden, noordersluis, west",
+        "km": 17.0
+      }
+    },
+    "dichtbij": [
+      "castricum-aan-zee",
+      "wijk-aan-zee",
+      "ijmuiden",
+      "callantsoog"
+    ],
+    "regioSlug": "noord-holland",
+    "intro": "Egmond aan Zee is een badplaats met een vuurtoren direct aan de boulevard. De getijden komen van het meetpunt IJmuiden, zuidelijker aan dezelfde kust, dus de tijden liggen dicht bij elkaar."
   },
-  "dichtbij": [
-   "castricum-aan-zee",
-   "wijk-aan-zee",
-   "ijmuiden",
-   "callantsoog"
-  ],
-  "regioSlug": "noord-holland"
- },
- {
-  "slug": "rotterdam",
-  "naam": "Rotterdam",
-  "type": "getijrivier",
-  "regio": "Zuid-Holland",
-  "lat": 51.905,
-  "lon": 4.48,
-  "rws": {
-   "getij": {
-    "code": "parksluis",
-    "naam": "Parksluis",
-    "km": 1.1
-   },
-   "temperatuur": {
-    "code": "rotterdam.lekhaven",
-    "naam": "Rotterdam, Lekhaven",
-    "km": 3.5
-   },
-   "waterstand": {
-    "code": "parksluis",
-    "naam": "Parksluis",
-    "km": 1.1
-   }
+  {
+    "slug": "rotterdam",
+    "naam": "Rotterdam",
+    "type": "getijrivier",
+    "regio": "Zuid-Holland",
+    "lat": 51.905,
+    "lon": 4.48,
+    "rws": {
+      "getij": {
+        "code": "parksluis",
+        "naam": "Parksluis",
+        "km": 1.1
+      },
+      "temperatuur": {
+        "code": "rotterdam.lekhaven",
+        "naam": "Rotterdam, Lekhaven",
+        "km": 3.5
+      },
+      "waterstand": {
+        "code": "parksluis",
+        "naam": "Parksluis",
+        "km": 1.1
+      }
+    },
+    "dichtbij": [
+      "dordrecht",
+      "hoek-van-holland",
+      "scheveningen",
+      "maasvlakte"
+    ],
+    "regioSlug": "zuid-holland"
   },
-  "dichtbij": [
-   "dordrecht",
-   "hoek-van-holland",
-   "scheveningen",
-   "maasvlakte"
-  ],
-  "regioSlug": "zuid-holland"
- },
- {
-  "slug": "harlingen",
-  "naam": "Harlingen",
-  "type": "kust",
-  "regio": "Wadden",
-  "lat": 53.175,
-  "lon": 5.41,
-  "rws": {
-   "getij": {
-    "code": "harlingen.waddenzee",
-    "naam": "Harlingen, Waddenzee",
-    "km": 0.1
-   },
-   "temperatuur": {
-    "code": "kornwerderzand.waddenzee.voorhaven.kolk",
-    "naam": "Kornwerderzand, Waddenzee voorhaven kolk",
-    "km": 12.7
-   },
-   "waterstand": {
-    "code": "harlingen.waddenzee",
-    "naam": "Harlingen, Waddenzee",
-    "km": 0.1
-   }
+  {
+    "slug": "harlingen",
+    "naam": "Harlingen",
+    "type": "kust",
+    "regio": "Wadden",
+    "lat": 53.175,
+    "lon": 5.41,
+    "rws": {
+      "getij": {
+        "code": "harlingen.waddenzee",
+        "naam": "Harlingen, Waddenzee",
+        "km": 0.1
+      },
+      "temperatuur": {
+        "code": "kornwerderzand.waddenzee.voorhaven.kolk",
+        "naam": "Kornwerderzand, Waddenzee voorhaven kolk",
+        "km": 12.7
+      },
+      "waterstand": {
+        "code": "harlingen.waddenzee",
+        "naam": "Harlingen, Waddenzee",
+        "km": 0.1
+      }
+    },
+    "dichtbij": [
+      "terschelling",
+      "vlieland",
+      "ameland",
+      "texel"
+    ],
+    "regioSlug": "wadden"
   },
-  "dichtbij": [
-   "terschelling",
-   "vlieland",
-   "ameland",
-   "texel"
-  ],
-  "regioSlug": "wadden"
- },
- {
-  "slug": "zoutelande",
-  "naam": "Zoutelande",
-  "type": "kust",
-  "regio": "Zeeland",
-  "lat": 51.5,
-  "lon": 3.48,
-  "rws": {
-   "getij": {
-    "code": "westkapelle",
-    "naam": "Westkapelle",
-    "km": 3.7
-   },
-   "temperatuur": {
-    "code": "vlissingen",
-    "naam": "Vlissingen",
-    "km": 10.5
-   },
-   "waterstand": {
-    "code": "westkapelle",
-    "naam": "Westkapelle",
-    "km": 3.7
-   }
+  {
+    "slug": "zoutelande",
+    "naam": "Zoutelande",
+    "type": "kust",
+    "regio": "Zeeland",
+    "lat": 51.5,
+    "lon": 3.48,
+    "rws": {
+      "getij": {
+        "code": "westkapelle",
+        "naam": "Westkapelle",
+        "km": 3.7
+      },
+      "temperatuur": {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 10.5
+      },
+      "waterstand": {
+        "code": "westkapelle",
+        "naam": "Westkapelle",
+        "km": 3.7
+      }
+    },
+    "dichtbij": [
+      "westkapelle",
+      "domburg",
+      "oostkapelle",
+      "vlissingen"
+    ],
+    "regioSlug": "zeeland"
   },
-  "dichtbij": [
-   "westkapelle",
-   "domburg",
-   "oostkapelle",
-   "vlissingen"
-  ],
-  "regioSlug": "zeeland"
- },
- {
-  "slug": "hoek-van-holland",
-  "naam": "Hoek van Holland",
-  "type": "kust",
-  "regio": "Zuid-Holland",
-  "lat": 51.98,
-  "lon": 4.12,
-  "rws": {
-   "getij": {
-    "code": "hoekvanholland",
+  {
+    "slug": "hoek-van-holland",
     "naam": "Hoek van Holland",
-    "km": 0.3
-   },
-   "temperatuur": {
-    "code": "hoekvanholland",
-    "naam": "Hoek van Holland",
-    "km": 0.3
-   },
-   "waterstand": {
-    "code": "hoekvanholland",
-    "naam": "Hoek van Holland",
-    "km": 0.3
-   }
+    "type": "kust",
+    "regio": "Zuid-Holland",
+    "lat": 51.98,
+    "lon": 4.12,
+    "rws": {
+      "getij": {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 0.3
+      },
+      "temperatuur": {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 0.3
+      },
+      "waterstand": {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 0.3
+      }
+    },
+    "dichtbij": [
+      "maasvlakte",
+      "scheveningen",
+      "ouddorp",
+      "rotterdam"
+    ],
+    "regioSlug": "zuid-holland",
+    "intro": "Hoek van Holland ligt aan de monding van de Nieuwe Waterweg, de toegang tot de Rotterdamse haven. Grote zeeschepen varen hier vlak langs het strand. Zwem niet bij de pieren, want bij de havenmond is de stroming sterk."
   },
-  "dichtbij": [
-   "maasvlakte",
-   "scheveningen",
-   "ouddorp",
-   "rotterdam"
-  ],
-  "regioSlug": "zuid-holland"
- },
- {
-  "slug": "wemeldinge",
-  "naam": "Wemeldinge",
-  "type": "oosterschelde",
-  "regio": "Zeeland",
-  "lat": 51.52,
-  "lon": 4.0,
-  "rws": {
-   "getij": {
-    "code": "yerseke",
-    "naam": "Yerseke",
-    "km": 5.4
-   },
-   "waterstand": {
-    "code": "yerseke",
-    "naam": "Yerseke",
-    "km": 5.4
-   }
+  {
+    "slug": "wemeldinge",
+    "naam": "Wemeldinge",
+    "type": "oosterschelde",
+    "regio": "Zeeland",
+    "lat": 51.52,
+    "lon": 4.0,
+    "rws": {
+      "getij": {
+        "code": "yerseke",
+        "naam": "Yerseke",
+        "km": 5.4
+      },
+      "waterstand": {
+        "code": "yerseke",
+        "naam": "Yerseke",
+        "km": 5.4
+      }
+    },
+    "dichtbij": [
+      "yerseke",
+      "stavenisse",
+      "hansweert",
+      "zierikzee"
+    ],
+    "regioSlug": "zeeland"
   },
-  "dichtbij": [
-   "yerseke",
-   "stavenisse",
-   "hansweert",
-   "zierikzee"
-  ],
-  "regioSlug": "zeeland"
- },
- {
-  "slug": "wijk-aan-zee",
-  "naam": "Wijk aan Zee",
-  "type": "kust",
-  "regio": "Noord-Holland",
-  "lat": 52.493,
-  "lon": 4.59,
-  "rws": {
-   "getij": {
-    "code": "ijmuiden.buitenhaven",
-    "naam": "IJmuiden, buitenhaven",
-    "km": 4.1
-   },
-   "temperatuur": {
-    "code": "velsen.velserkom",
-    "naam": "Velserkom",
-    "km": 3.6
-   },
-   "waterstand": {
-    "code": "ijmuiden.noordersluis.west",
-    "naam": "IJmuiden, noordersluis, west",
-    "km": 3.0
-   }
+  {
+    "slug": "wijk-aan-zee",
+    "naam": "Wijk aan Zee",
+    "type": "kust",
+    "regio": "Noord-Holland",
+    "lat": 52.493,
+    "lon": 4.59,
+    "rws": {
+      "getij": {
+        "code": "ijmuiden.buitenhaven",
+        "naam": "IJmuiden, buitenhaven",
+        "km": 4.1
+      },
+      "temperatuur": {
+        "code": "velsen.velserkom",
+        "naam": "Velserkom",
+        "km": 3.6
+      },
+      "waterstand": {
+        "code": "ijmuiden.noordersluis.west",
+        "naam": "IJmuiden, noordersluis, west",
+        "km": 3.0
+      }
+    },
+    "dichtbij": [
+      "ijmuiden",
+      "castricum-aan-zee",
+      "zandvoort",
+      "egmond-aan-zee"
+    ],
+    "regioSlug": "noord-holland"
   },
-  "dichtbij": [
-   "ijmuiden",
-   "castricum-aan-zee",
-   "zandvoort",
-   "egmond-aan-zee"
-  ],
-  "regioSlug": "noord-holland"
- },
- {
-  "slug": "ijmuiden",
-  "naam": "IJmuiden",
-  "type": "kust",
-  "regio": "Noord-Holland",
-  "lat": 52.462,
-  "lon": 4.555,
-  "rws": {
-   "getij": {
-    "code": "ijmuiden.buitenhaven",
-    "naam": "IJmuiden, buitenhaven",
-    "km": 0.1
-   },
-   "temperatuur": {
-    "code": "ijmuiden.buitenhaven",
-    "naam": "IJmuiden, buitenhaven",
-    "km": 0.1
-   },
-   "waterstand": {
-    "code": "ijmuiden.buitenhaven",
-    "naam": "IJmuiden, buitenhaven",
-    "km": 0.1
-   }
+  {
+    "slug": "ijmuiden",
+    "naam": "IJmuiden",
+    "type": "kust",
+    "regio": "Noord-Holland",
+    "lat": 52.462,
+    "lon": 4.555,
+    "rws": {
+      "getij": {
+        "code": "ijmuiden.buitenhaven",
+        "naam": "IJmuiden, buitenhaven",
+        "km": 0.1
+      },
+      "temperatuur": {
+        "code": "ijmuiden.buitenhaven",
+        "naam": "IJmuiden, buitenhaven",
+        "km": 0.1
+      },
+      "waterstand": {
+        "code": "ijmuiden.buitenhaven",
+        "naam": "IJmuiden, buitenhaven",
+        "km": 0.1
+      }
+    },
+    "dichtbij": [
+      "wijk-aan-zee",
+      "zandvoort",
+      "castricum-aan-zee",
+      "egmond-aan-zee"
+    ],
+    "regioSlug": "noord-holland",
+    "intro": "IJmuiden ligt bij de pieren van het Noordzeekanaal, met een van de grootste zeesluizen ter wereld. Het strand ten zuiden van de pieren is populair bij kitesurfers. Getijden en watertemperatuur komen van het meetpunt in de buitenhaven."
   },
-  "dichtbij": [
-   "wijk-aan-zee",
-   "zandvoort",
-   "castricum-aan-zee",
-   "egmond-aan-zee"
-  ],
-  "regioSlug": "noord-holland"
- },
- {
-  "slug": "renesse",
-  "naam": "Renesse",
-  "type": "kust",
-  "regio": "Zeeland",
-  "lat": 51.735,
-  "lon": 3.765,
-  "rws": {
-   "getij": {
-    "code": "brouwersdam.brouwershavensegat.8",
-    "naam": "Brouwersdam Brouwershavense Gat 8",
-    "km": 3.7
-   },
-   "temperatuur": {
-    "code": "brouwershavensche.gat.08",
-    "naam": "Brouwershavensche Gat 08",
-    "km": 3.7
-   },
-   "waterstand": {
-    "code": "brouwershavensche.gat.08",
-    "naam": "Brouwershavensche Gat 08",
-    "km": 3.7
-   }
+  {
+    "slug": "renesse",
+    "naam": "Renesse",
+    "type": "kust",
+    "regio": "Zeeland",
+    "lat": 51.735,
+    "lon": 3.765,
+    "rws": {
+      "getij": {
+        "code": "brouwersdam.brouwershavensegat.8",
+        "naam": "Brouwersdam Brouwershavense Gat 8",
+        "km": 3.7
+      },
+      "temperatuur": {
+        "code": "brouwershavensche.gat.08",
+        "naam": "Brouwershavensche Gat 08",
+        "km": 3.7
+      },
+      "waterstand": {
+        "code": "brouwershavensche.gat.08",
+        "naam": "Brouwershavensche Gat 08",
+        "km": 3.7
+      }
+    },
+    "dichtbij": [
+      "burgh-haamstede",
+      "neeltje-jans",
+      "ouddorp",
+      "zierikzee"
+    ],
+    "regioSlug": "zeeland",
+    "intro": "Renesse op Schouwen-Duiveland heeft een breed Noordzeestrand en ligt vlak bij de Brouwersdam, een bekende plek voor kite- en windsurfers. De getijden komen van het meetpunt bij de Brouwersdam."
   },
-  "dichtbij": [
-   "burgh-haamstede",
-   "neeltje-jans",
-   "ouddorp",
-   "zierikzee"
-  ],
-  "regioSlug": "zeeland"
- },
- {
-  "slug": "breskens",
-  "naam": "Breskens",
-  "type": "westerschelde",
-  "regio": "Zeeland",
-  "lat": 51.398,
-  "lon": 3.555,
-  "rws": {
-   "getij": {
-    "code": "breskens.veerhaven",
-    "naam": "Breskens, Veerhaven",
-    "km": 0.7
-   },
-   "temperatuur": {
-    "code": "vlissingen",
-    "naam": "Vlissingen",
-    "km": 5.8
-   },
-   "waterstand": {
-    "code": "breskens.handelshaven",
-    "naam": "Breskens, Handelshaven",
-    "km": 0.8
-   }
+  {
+    "slug": "breskens",
+    "naam": "Breskens",
+    "type": "westerschelde",
+    "regio": "Zeeland",
+    "lat": 51.398,
+    "lon": 3.555,
+    "rws": {
+      "getij": {
+        "code": "breskens.veerhaven",
+        "naam": "Breskens, Veerhaven",
+        "km": 0.7
+      },
+      "temperatuur": {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 5.8
+      },
+      "waterstand": {
+        "code": "breskens.handelshaven",
+        "naam": "Breskens, Handelshaven",
+        "km": 0.8
+      }
+    },
+    "dichtbij": [
+      "vlissingen",
+      "cadzand",
+      "zoutelande",
+      "westkapelle"
+    ],
+    "regioSlug": "zeeland"
   },
-  "dichtbij": [
-   "vlissingen",
-   "cadzand",
-   "zoutelande",
-   "westkapelle"
-  ],
-  "regioSlug": "zeeland"
- },
- {
-  "slug": "oesterdam",
-  "naam": "Oesterdam",
-  "type": "oosterschelde",
-  "regio": "Zeeland",
-  "lat": 51.47,
-  "lon": 4.215,
-  "rws": {
-   "getij": {
-    "code": "marollegat",
-    "naam": "Marollegat",
-    "km": 1.8
-   },
-   "temperatuur": {
-    "code": "rilland.bathsespuikanaal.inloop",
-    "naam": "Rilland, Bathse Spuikanaal, inloop",
-    "km": 1.1
-   },
-   "waterstand": {
-    "code": "marollegat",
-    "naam": "Marollegat",
-    "km": 1.8
-   }
+  {
+    "slug": "oesterdam",
+    "naam": "Oesterdam",
+    "type": "oosterschelde",
+    "regio": "Zeeland",
+    "lat": 51.47,
+    "lon": 4.215,
+    "rws": {
+      "getij": {
+        "code": "marollegat",
+        "naam": "Marollegat",
+        "km": 1.8
+      },
+      "temperatuur": {
+        "code": "rilland.bathsespuikanaal.inloop",
+        "naam": "Rilland, Bathse Spuikanaal, inloop",
+        "km": 1.1
+      },
+      "waterstand": {
+        "code": "marollegat",
+        "naam": "Marollegat",
+        "km": 1.8
+      }
+    },
+    "dichtbij": [
+      "yerseke",
+      "hansweert",
+      "wemeldinge",
+      "stavenisse"
+    ],
+    "regioSlug": "zeeland"
   },
-  "dichtbij": [
-   "yerseke",
-   "hansweert",
-   "wemeldinge",
-   "stavenisse"
-  ],
-  "regioSlug": "zeeland"
- },
- {
-  "slug": "cadzand",
-  "naam": "Cadzand",
-  "type": "kust",
-  "regio": "Zeeland",
-  "lat": 51.375,
-  "lon": 3.385,
-  "rws": {
-   "getij": {
-    "code": "cadzand.2",
-    "naam": "Cadzand, 2",
-    "km": 0.8
-   },
-   "temperatuur": {
-    "code": "vlissingen",
-    "naam": "Vlissingen",
-    "km": 16.7
-   },
-   "waterstand": {
-    "code": "cadzand.1",
-    "naam": "Cadzand, 1",
-    "km": 2.0
-   }
+  {
+    "slug": "cadzand",
+    "naam": "Cadzand",
+    "type": "kust",
+    "regio": "Zeeland",
+    "lat": 51.375,
+    "lon": 3.385,
+    "rws": {
+      "getij": {
+        "code": "cadzand.2",
+        "naam": "Cadzand, 2",
+        "km": 0.8
+      },
+      "temperatuur": {
+        "code": "vlissingen",
+        "naam": "Vlissingen",
+        "km": 16.7
+      },
+      "waterstand": {
+        "code": "cadzand.1",
+        "naam": "Cadzand, 1",
+        "km": 2.0
+      }
+    },
+    "dichtbij": [
+      "breskens",
+      "zoutelande",
+      "vlissingen",
+      "westkapelle"
+    ],
+    "regioSlug": "zeeland",
+    "intro": "Cadzand ligt in Zeeuws-Vlaanderen, vlak bij de monding van de Westerschelde. Het strand staat bekend om de fossiele haaientanden die je er vindt. Zoek bij laagwater: dan ligt er het meeste strand vrij."
   },
-  "dichtbij": [
-   "breskens",
-   "zoutelande",
-   "vlissingen",
-   "westkapelle"
-  ],
-  "regioSlug": "zeeland"
- },
- {
-  "slug": "deventer",
-  "naam": "Deventer",
-  "type": "rivier",
-  "regio": "Rivieren",
-  "lat": 52.255,
-  "lon": 6.155,
-  "rws": {
-   "waterstand": {
-    "code": "deventer",
+  {
+    "slug": "deventer",
     "naam": "Deventer",
-    "km": 0.4
-   }
+    "type": "rivier",
+    "regio": "Rivieren",
+    "lat": 52.255,
+    "lon": 6.155,
+    "rws": {
+      "waterstand": {
+        "code": "deventer",
+        "naam": "Deventer",
+        "km": 0.4
+      }
+    },
+    "dichtbij": [
+      "lobith",
+      "nijmegen"
+    ],
+    "regioSlug": "rivieren"
   },
-  "dichtbij": [
-   "lobith",
-   "nijmegen"
-  ],
-  "regioSlug": "rivieren"
- },
- {
-  "slug": "ameland",
-  "naam": "Ameland",
-  "type": "kust",
-  "regio": "Wadden",
-  "lat": 53.44,
-  "lon": 5.775,
-  "rws": {
-   "getij": {
-    "code": "ameland.nes",
-    "naam": "Ameland, Nes",
-    "km": 1.5
-   },
-   "temperatuur": {
-    "code": "ameland.nes",
-    "naam": "Ameland, Nes",
-    "km": 1.5
-   },
-   "waterstand": {
-    "code": "ameland.nes",
-    "naam": "Ameland, Nes",
-    "km": 1.5
-   }
+  {
+    "slug": "ameland",
+    "naam": "Ameland",
+    "type": "kust",
+    "regio": "Wadden",
+    "lat": 53.44,
+    "lon": 5.775,
+    "rws": {
+      "getij": {
+        "code": "ameland.nes",
+        "naam": "Ameland, Nes",
+        "km": 1.5
+      },
+      "temperatuur": {
+        "code": "ameland.nes",
+        "naam": "Ameland, Nes",
+        "km": 1.5
+      },
+      "waterstand": {
+        "code": "ameland.nes",
+        "naam": "Ameland, Nes",
+        "km": 1.5
+      }
+    },
+    "dichtbij": [
+      "schiermonnikoog",
+      "lauwersoog",
+      "harlingen",
+      "terschelling"
+    ],
+    "regioSlug": "wadden",
+    "intro": "Ameland heeft een lang Noordzeestrand en aan de zuidkant de Waddenzee. Het getijmeetpunt ligt bij Nes, aan de Waddenkant, dus aan het Noordzeestrand kunnen de tijden iets afwijken. Wadlopen kan alleen rond laagwater en altijd met een erkende gids."
   },
-  "dichtbij": [
-   "schiermonnikoog",
-   "lauwersoog",
-   "harlingen",
-   "terschelling"
-  ],
-  "regioSlug": "wadden"
- },
- {
-  "slug": "domburg",
-  "naam": "Domburg",
-  "type": "kust",
-  "regio": "Zeeland",
-  "lat": 51.565,
-  "lon": 3.495,
-  "rws": {
-   "getij": {
-    "code": "westkapelle",
+  {
+    "slug": "domburg",
+    "naam": "Domburg",
+    "type": "kust",
+    "regio": "Zeeland",
+    "lat": 51.565,
+    "lon": 3.495,
+    "rws": {
+      "getij": {
+        "code": "westkapelle",
+        "naam": "Westkapelle",
+        "km": 6.2
+      },
+      "temperatuur": {
+        "code": "kamperland.schotsman",
+        "naam": "Kamperland, Schotsman",
+        "km": 10.4
+      },
+      "waterstand": {
+        "code": "westkapelle",
+        "naam": "Westkapelle",
+        "km": 6.2
+      }
+    },
+    "dichtbij": [
+      "oostkapelle",
+      "westkapelle",
+      "zoutelande",
+      "vlissingen"
+    ],
+    "regioSlug": "zeeland",
+    "intro": "Domburg is een van de oudste badplaatsen van Zeeland, op de kust van Walcheren. Het getijverschil is hier groot, dus het strand verandert flink tussen eb en vloed. Zwem niet vlak bij de paalhoofden, want daar staat vaak stroming."
+  },
+  {
+    "slug": "westkapelle",
     "naam": "Westkapelle",
-    "km": 6.2
-   },
-   "temperatuur": {
-    "code": "kamperland.schotsman",
-    "naam": "Kamperland, Schotsman",
-    "km": 10.4
-   },
-   "waterstand": {
-    "code": "westkapelle",
-    "naam": "Westkapelle",
-    "km": 6.2
-   }
+    "type": "kust",
+    "regio": "Zeeland",
+    "lat": 51.53,
+    "lon": 3.44,
+    "rws": {
+      "getij": {
+        "code": "westkapelle",
+        "naam": "Westkapelle",
+        "km": 1.0
+      },
+      "temperatuur": {
+        "code": "vlaktevanderaan",
+        "naam": "Vlakte van de Raan",
+        "km": 14.0
+      },
+      "waterstand": {
+        "code": "westkapelle",
+        "naam": "Westkapelle",
+        "km": 1.0
+      }
+    },
+    "dichtbij": [
+      "zoutelande",
+      "domburg",
+      "oostkapelle",
+      "vlissingen"
+    ],
+    "regioSlug": "zeeland"
   },
-  "dichtbij": [
-   "oostkapelle",
-   "westkapelle",
-   "zoutelande",
-   "vlissingen"
-  ],
-  "regioSlug": "zeeland"
- },
- {
-  "slug": "westkapelle",
-  "naam": "Westkapelle",
-  "type": "kust",
-  "regio": "Zeeland",
-  "lat": 51.53,
-  "lon": 3.44,
-  "rws": {
-   "getij": {
-    "code": "westkapelle",
-    "naam": "Westkapelle",
-    "km": 1.0
-   },
-   "temperatuur": {
-    "code": "vlaktevanderaan",
-    "naam": "Vlakte van de Raan",
-    "km": 14.0
-   },
-   "waterstand": {
-    "code": "westkapelle",
-    "naam": "Westkapelle",
-    "km": 1.0
-   }
+  {
+    "slug": "den-helder",
+    "naam": "Den Helder",
+    "type": "kust",
+    "regio": "Noord-Holland",
+    "lat": 52.965,
+    "lon": 4.745,
+    "rws": {
+      "getij": {
+        "code": "denhelder.marsdiep",
+        "naam": "Den Helder, Marsdiep",
+        "km": 0.1
+      },
+      "temperatuur": {
+        "code": "denhelder.marsdiep",
+        "naam": "Den Helder, Marsdiep",
+        "km": 0.1
+      },
+      "waterstand": {
+        "code": "denhelder.marsdiep",
+        "naam": "Den Helder, Marsdiep",
+        "km": 0.1
+      }
+    },
+    "dichtbij": [
+      "texel",
+      "callantsoog",
+      "egmond-aan-zee",
+      "vlieland"
+    ],
+    "regioSlug": "noord-holland",
+    "intro": "Bij Den Helder stroomt het water door het Marsdiep tussen de Noordzee en de Waddenzee, de vaarroute van de veerboot naar Texel. Door dat zeegat kan de stroming hier sterk zijn. Getijden en watertemperatuur komen van het meetpunt in het Marsdiep zelf."
   },
-  "dichtbij": [
-   "zoutelande",
-   "domburg",
-   "oostkapelle",
-   "vlissingen"
-  ],
-  "regioSlug": "zeeland"
- },
- {
-  "slug": "den-helder",
-  "naam": "Den Helder",
-  "type": "kust",
-  "regio": "Noord-Holland",
-  "lat": 52.965,
-  "lon": 4.745,
-  "rws": {
-   "getij": {
-    "code": "denhelder.marsdiep",
-    "naam": "Den Helder, Marsdiep",
-    "km": 0.1
-   },
-   "temperatuur": {
-    "code": "denhelder.marsdiep",
-    "naam": "Den Helder, Marsdiep",
-    "km": 0.1
-   },
-   "waterstand": {
-    "code": "denhelder.marsdiep",
-    "naam": "Den Helder, Marsdiep",
-    "km": 0.1
-   }
+  {
+    "slug": "vlieland",
+    "naam": "Vlieland",
+    "type": "kust",
+    "regio": "Wadden",
+    "lat": 53.295,
+    "lon": 5.065,
+    "rws": {
+      "getij": {
+        "code": "vlieland.haven",
+        "naam": "Vlieland, haven",
+        "km": 1.8
+      },
+      "waterstand": {
+        "code": "vlieland.haven",
+        "naam": "Vlieland, haven",
+        "km": 1.8
+      }
+    },
+    "dichtbij": [
+      "terschelling",
+      "harlingen",
+      "texel",
+      "den-helder"
+    ],
+    "regioSlug": "wadden"
   },
-  "dichtbij": [
-   "texel",
-   "callantsoog",
-   "egmond-aan-zee",
-   "vlieland"
-  ],
-  "regioSlug": "noord-holland"
- },
- {
-  "slug": "vlieland",
-  "naam": "Vlieland",
-  "type": "kust",
-  "regio": "Wadden",
-  "lat": 53.295,
-  "lon": 5.065,
-  "rws": {
-   "getij": {
-    "code": "vlieland.haven",
-    "naam": "Vlieland, haven",
-    "km": 1.8
-   },
-   "waterstand": {
-    "code": "vlieland.haven",
-    "naam": "Vlieland, haven",
-    "km": 1.8
-   }
+  {
+    "slug": "zandvoort",
+    "naam": "Zandvoort",
+    "type": "kust",
+    "regio": "Noord-Holland",
+    "lat": 52.375,
+    "lon": 4.525,
+    "rws": {
+      "getij": {
+        "code": "ijgeul.1",
+        "naam": "IJGeul, 1",
+        "km": 9.9
+      },
+      "temperatuur": {
+        "code": "ijmuiden.buitenhaven",
+        "naam": "IJmuiden, buitenhaven",
+        "km": 10.0
+      },
+      "waterstand": {
+        "code": "ijgeul.1",
+        "naam": "IJGeul, 1",
+        "km": 9.9
+      }
+    },
+    "dichtbij": [
+      "ijmuiden",
+      "wijk-aan-zee",
+      "noordwijk",
+      "castricum-aan-zee"
+    ],
+    "regioSlug": "noord-holland",
+    "intro": "Zandvoort is het strand van Amsterdam en Haarlem, met een breed zandstrand en duinen erachter. De getijden komen van het meetpunt IJgeul voor de kust bij IJmuiden. Het getijverschil langs de Noord-Hollandse kust is gematigd, maar bij laagwater heb je duidelijk meer strand."
   },
-  "dichtbij": [
-   "terschelling",
-   "harlingen",
-   "texel",
-   "den-helder"
-  ],
-  "regioSlug": "wadden"
- },
- {
-  "slug": "zandvoort",
-  "naam": "Zandvoort",
-  "type": "kust",
-  "regio": "Noord-Holland",
-  "lat": 52.375,
-  "lon": 4.525,
-  "rws": {
-   "getij": {
-    "code": "ijgeul.1",
-    "naam": "IJGeul, 1",
-    "km": 9.9
-   },
-   "temperatuur": {
-    "code": "ijmuiden.buitenhaven",
-    "naam": "IJmuiden, buitenhaven",
-    "km": 10.0
-   },
-   "waterstand": {
-    "code": "ijgeul.1",
-    "naam": "IJGeul, 1",
-    "km": 9.9
-   }
+  {
+    "slug": "zierikzee",
+    "naam": "Zierikzee",
+    "type": "oosterschelde",
+    "regio": "Zeeland",
+    "lat": 51.648,
+    "lon": 3.918,
+    "rws": {
+      "getij": {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 8.1
+      },
+      "temperatuur": {
+        "code": "bommenede",
+        "naam": "Bommenede",
+        "km": 10.8
+      },
+      "waterstand": {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 8.1
+      }
+    },
+    "dichtbij": [
+      "stavenisse",
+      "burgh-haamstede",
+      "renesse",
+      "neeltje-jans"
+    ],
+    "regioSlug": "zeeland"
   },
-  "dichtbij": [
-   "ijmuiden",
-   "wijk-aan-zee",
-   "noordwijk",
-   "castricum-aan-zee"
-  ],
-  "regioSlug": "noord-holland"
- },
- {
-  "slug": "zierikzee",
-  "naam": "Zierikzee",
-  "type": "oosterschelde",
-  "regio": "Zeeland",
-  "lat": 51.648,
-  "lon": 3.918,
-  "rws": {
-   "getij": {
-    "code": "stavenisse",
-    "naam": "Stavenisse",
-    "km": 8.1
-   },
-   "temperatuur": {
-    "code": "bommenede",
-    "naam": "Bommenede",
-    "km": 10.8
-   },
-   "waterstand": {
-    "code": "stavenisse",
-    "naam": "Stavenisse",
-    "km": 8.1
-   }
+  {
+    "slug": "ijsselmeer",
+    "naam": "IJsselmeer",
+    "type": "meer",
+    "regio": "IJsselmeer",
+    "lat": 52.75,
+    "lon": 5.35,
+    "rws": {
+      "temperatuur": {
+        "code": "andijk",
+        "naam": "Andijk",
+        "km": 5.7
+      },
+      "waterstand": {
+        "code": "krabbersgat.ijsselmeer",
+        "naam": "Krabbersgat, IJsselmeer",
+        "km": 7.7
+      }
+    },
+    "dichtbij": [
+      "callantsoog",
+      "texel",
+      "harlingen",
+      "den-helder"
+    ],
+    "regioSlug": "ijsselmeer"
   },
-  "dichtbij": [
-   "stavenisse",
-   "burgh-haamstede",
-   "renesse",
-   "neeltje-jans"
-  ],
-  "regioSlug": "zeeland"
- },
- {
-  "slug": "ijsselmeer",
-  "naam": "IJsselmeer",
-  "type": "meer",
-  "regio": "IJsselmeer",
-  "lat": 52.75,
-  "lon": 5.35,
-  "rws": {
-   "temperatuur": {
-    "code": "andijk",
-    "naam": "Andijk",
-    "km": 5.7
-   },
-   "waterstand": {
-    "code": "krabbersgat.ijsselmeer",
-    "naam": "Krabbersgat, IJsselmeer",
-    "km": 7.7
-   }
-  },
-  "dichtbij": [
-   "callantsoog",
-   "texel",
-   "harlingen",
-   "den-helder"
-  ],
-  "regioSlug": "ijsselmeer"
- },
- {
-  "slug": "yerseke",
-  "naam": "Yerseke",
-  "type": "oosterschelde",
-  "regio": "Zeeland",
-  "lat": 51.495,
-  "lon": 4.05,
-  "rws": {
-   "getij": {
-    "code": "yerseke",
+  {
+    "slug": "yerseke",
     "naam": "Yerseke",
-    "km": 2.1
-   },
-   "temperatuur": {
-    "code": "marollegat",
-    "naam": "Marollegat",
-    "km": 10.1
-   },
-   "waterstand": {
-    "code": "yerseke",
-    "naam": "Yerseke",
-    "km": 2.1
-   }
+    "type": "oosterschelde",
+    "regio": "Zeeland",
+    "lat": 51.495,
+    "lon": 4.05,
+    "rws": {
+      "getij": {
+        "code": "yerseke",
+        "naam": "Yerseke",
+        "km": 2.1
+      },
+      "temperatuur": {
+        "code": "marollegat",
+        "naam": "Marollegat",
+        "km": 10.1
+      },
+      "waterstand": {
+        "code": "yerseke",
+        "naam": "Yerseke",
+        "km": 2.1
+      }
+    },
+    "dichtbij": [
+      "wemeldinge",
+      "hansweert",
+      "stavenisse",
+      "oesterdam"
+    ],
+    "regioSlug": "zeeland"
   },
-  "dichtbij": [
-   "wemeldinge",
-   "hansweert",
-   "stavenisse",
-   "oesterdam"
-  ],
-  "regioSlug": "zeeland"
- },
- {
-  "slug": "terneuzen",
-  "naam": "Terneuzen",
-  "type": "westerschelde",
-  "regio": "Zeeland",
-  "lat": 51.338,
-  "lon": 3.825,
-  "rws": {
-   "getij": {
-    "code": "terneuzen",
+  {
+    "slug": "terneuzen",
     "naam": "Terneuzen",
-    "km": 0.4
-   },
-   "temperatuur": {
-    "code": "terneuzen.westsluis.buiten",
-    "naam": "Terneuzen, westsluis, buiten",
-    "km": 0.9
-   },
-   "waterstand": {
-    "code": "terneuzen",
-    "naam": "Terneuzen",
-    "km": 0.4
-   }
+    "type": "westerschelde",
+    "regio": "Zeeland",
+    "lat": 51.338,
+    "lon": 3.825,
+    "rws": {
+      "getij": {
+        "code": "terneuzen",
+        "naam": "Terneuzen",
+        "km": 0.4
+      },
+      "temperatuur": {
+        "code": "terneuzen.westsluis.buiten",
+        "naam": "Terneuzen, westsluis, buiten",
+        "km": 0.9
+      },
+      "waterstand": {
+        "code": "terneuzen",
+        "naam": "Terneuzen",
+        "km": 0.4
+      }
+    },
+    "dichtbij": [
+      "hansweert",
+      "vlissingen",
+      "breskens",
+      "yerseke"
+    ],
+    "regioSlug": "zeeland"
   },
-  "dichtbij": [
-   "hansweert",
-   "vlissingen",
-   "breskens",
-   "yerseke"
-  ],
-  "regioSlug": "zeeland"
- },
- {
-  "slug": "delfzijl",
-  "naam": "Delfzijl",
-  "type": "kust",
-  "regio": "Wadden",
-  "lat": 53.33,
-  "lon": 6.93,
-  "rws": {
-   "getij": {
-    "code": "delfzijl",
+  {
+    "slug": "delfzijl",
     "naam": "Delfzijl",
-    "km": 0.2
-   },
-   "temperatuur": {
-    "code": "eemshaven.waddenzee",
-    "naam": "Eemshaven, Waddenzee",
-    "km": 17.6
-   },
-   "waterstand": {
-    "code": "delfzijl",
-    "naam": "Delfzijl",
-    "km": 0.2
-   }
+    "type": "kust",
+    "regio": "Wadden",
+    "lat": 53.33,
+    "lon": 6.93,
+    "rws": {
+      "getij": {
+        "code": "delfzijl",
+        "naam": "Delfzijl",
+        "km": 0.2
+      },
+      "temperatuur": {
+        "code": "eemshaven.waddenzee",
+        "naam": "Eemshaven, Waddenzee",
+        "km": 17.6
+      },
+      "waterstand": {
+        "code": "delfzijl",
+        "naam": "Delfzijl",
+        "km": 0.2
+      }
+    },
+    "dichtbij": [
+      "lauwersoog",
+      "schiermonnikoog",
+      "ameland",
+      "harlingen"
+    ],
+    "regioSlug": "wadden"
   },
-  "dichtbij": [
-   "lauwersoog",
-   "schiermonnikoog",
-   "ameland",
-   "harlingen"
-  ],
-  "regioSlug": "wadden"
- },
- {
-  "slug": "lauwersoog",
-  "naam": "Lauwersoog",
-  "type": "kust",
-  "regio": "Wadden",
-  "lat": 53.41,
-  "lon": 6.205,
-  "rws": {
-   "getij": {
-    "code": "lauwersoog.waddenzee",
-    "naam": "Lauwersoog, Waddenzee",
-    "km": 0.6
-   },
-   "temperatuur": {
-    "code": "schiermonnikoog.noord",
-    "naam": "Schiermonnikoog, noord",
-    "km": 20.7
-   },
-   "waterstand": {
-    "code": "lauwersoog.waddenzee",
-    "naam": "Lauwersoog, Waddenzee",
-    "km": 0.6
-   }
+  {
+    "slug": "lauwersoog",
+    "naam": "Lauwersoog",
+    "type": "kust",
+    "regio": "Wadden",
+    "lat": 53.41,
+    "lon": 6.205,
+    "rws": {
+      "getij": {
+        "code": "lauwersoog.waddenzee",
+        "naam": "Lauwersoog, Waddenzee",
+        "km": 0.6
+      },
+      "temperatuur": {
+        "code": "schiermonnikoog.noord",
+        "naam": "Schiermonnikoog, noord",
+        "km": 20.7
+      },
+      "waterstand": {
+        "code": "lauwersoog.waddenzee",
+        "naam": "Lauwersoog, Waddenzee",
+        "km": 0.6
+      }
+    },
+    "dichtbij": [
+      "schiermonnikoog",
+      "ameland",
+      "delfzijl",
+      "harlingen"
+    ],
+    "regioSlug": "wadden"
   },
-  "dichtbij": [
-   "schiermonnikoog",
-   "ameland",
-   "delfzijl",
-   "harlingen"
-  ],
-  "regioSlug": "wadden"
- },
- {
-  "slug": "schiermonnikoog",
-  "naam": "Schiermonnikoog",
-  "type": "kust",
-  "regio": "Wadden",
-  "lat": 53.48,
-  "lon": 6.165,
-  "rws": {
-   "getij": {
-    "code": "schiermonnikoog.waddenzee",
-    "naam": "Schiermonnikoog, Waddenzee",
-    "km": 2.8
-   },
-   "temperatuur": {
-    "code": "schiermonnikoog.noord",
-    "naam": "Schiermonnikoog, noord",
-    "km": 12.8
-   },
-   "waterstand": {
-    "code": "schiermonnikoog.waddenzee",
-    "naam": "Schiermonnikoog, Waddenzee",
-    "km": 2.8
-   }
+  {
+    "slug": "schiermonnikoog",
+    "naam": "Schiermonnikoog",
+    "type": "kust",
+    "regio": "Wadden",
+    "lat": 53.48,
+    "lon": 6.165,
+    "rws": {
+      "getij": {
+        "code": "schiermonnikoog.waddenzee",
+        "naam": "Schiermonnikoog, Waddenzee",
+        "km": 2.8
+      },
+      "temperatuur": {
+        "code": "schiermonnikoog.noord",
+        "naam": "Schiermonnikoog, noord",
+        "km": 12.8
+      },
+      "waterstand": {
+        "code": "schiermonnikoog.waddenzee",
+        "naam": "Schiermonnikoog, Waddenzee",
+        "km": 2.8
+      }
+    },
+    "dichtbij": [
+      "lauwersoog",
+      "ameland",
+      "delfzijl",
+      "harlingen"
+    ],
+    "regioSlug": "wadden"
   },
-  "dichtbij": [
-   "lauwersoog",
-   "ameland",
-   "delfzijl",
-   "harlingen"
-  ],
-  "regioSlug": "wadden"
- },
- {
-  "slug": "maasvlakte",
-  "naam": "Maasvlakte",
-  "type": "kust",
-  "regio": "Zuid-Holland",
-  "lat": 51.96,
-  "lon": 4.01,
-  "rws": {
-   "getij": {
-    "code": "maasvlakte.amaliahaven",
-    "naam": "Maasvlakte Amaliahaven",
-    "km": 1.1
-   },
-   "temperatuur": {
-    "code": "hoekvanholland",
-    "naam": "Hoek van Holland",
-    "km": 7.8
-   },
-   "waterstand": {
-    "code": "maasvlakte.amaliahaven",
-    "naam": "Maasvlakte Amaliahaven",
-    "km": 1.1
-   }
+  {
+    "slug": "maasvlakte",
+    "naam": "Maasvlakte",
+    "type": "kust",
+    "regio": "Zuid-Holland",
+    "lat": 51.96,
+    "lon": 4.01,
+    "rws": {
+      "getij": {
+        "code": "maasvlakte.amaliahaven",
+        "naam": "Maasvlakte Amaliahaven",
+        "km": 1.1
+      },
+      "temperatuur": {
+        "code": "hoekvanholland",
+        "naam": "Hoek van Holland",
+        "km": 7.8
+      },
+      "waterstand": {
+        "code": "maasvlakte.amaliahaven",
+        "naam": "Maasvlakte Amaliahaven",
+        "km": 1.1
+      }
+    },
+    "dichtbij": [
+      "hoek-van-holland",
+      "ouddorp",
+      "scheveningen",
+      "renesse"
+    ],
+    "regioSlug": "zuid-holland"
   },
-  "dichtbij": [
-   "hoek-van-holland",
-   "ouddorp",
-   "scheveningen",
-   "renesse"
-  ],
-  "regioSlug": "zuid-holland"
- },
- {
-  "slug": "ouddorp",
-  "naam": "Ouddorp",
-  "type": "kust",
-  "regio": "Zuid-Holland",
-  "lat": 51.825,
-  "lon": 3.91,
-  "rws": {
-   "getij": {
-    "code": "haringvliet.10",
-    "naam": "Haringvliet, punt 10",
-    "km": 5.4
-   },
-   "temperatuur": {
-    "code": "stellendam.buiten",
-    "naam": "Stellendam, buiten",
-    "km": 9.2
-   },
-   "waterstand": {
-    "code": "haringvliet.10",
-    "naam": "Haringvliet, punt 10",
-    "km": 5.4
-   }
+  {
+    "slug": "ouddorp",
+    "naam": "Ouddorp",
+    "type": "kust",
+    "regio": "Zuid-Holland",
+    "lat": 51.825,
+    "lon": 3.91,
+    "rws": {
+      "getij": {
+        "code": "haringvliet.10",
+        "naam": "Haringvliet, punt 10",
+        "km": 5.4
+      },
+      "temperatuur": {
+        "code": "stellendam.buiten",
+        "naam": "Stellendam, buiten",
+        "km": 9.2
+      },
+      "waterstand": {
+        "code": "haringvliet.10",
+        "naam": "Haringvliet, punt 10",
+        "km": 5.4
+      }
+    },
+    "dichtbij": [
+      "renesse",
+      "maasvlakte",
+      "burgh-haamstede",
+      "zierikzee"
+    ],
+    "regioSlug": "zuid-holland"
   },
-  "dichtbij": [
-   "renesse",
-   "maasvlakte",
-   "burgh-haamstede",
-   "zierikzee"
-  ],
-  "regioSlug": "zuid-holland"
- },
- {
-  "slug": "castricum-aan-zee",
-  "naam": "Castricum aan Zee",
-  "type": "kust",
-  "regio": "Noord-Holland",
-  "lat": 52.555,
-  "lon": 4.61,
-  "rws": {
-   "getij": {
-    "code": "ijmuiden.buitenhaven",
-    "naam": "IJmuiden, buitenhaven",
-    "km": 10.9
-   },
-   "temperatuur": {
-    "code": "velsen.velserkom",
-    "naam": "Velserkom",
-    "km": 9.8
-   },
-   "waterstand": {
-    "code": "ijmuiden.noordersluis.west",
-    "naam": "IJmuiden, noordersluis, west",
-    "km": 9.7
-   }
+  {
+    "slug": "castricum-aan-zee",
+    "naam": "Castricum aan Zee",
+    "type": "kust",
+    "regio": "Noord-Holland",
+    "lat": 52.555,
+    "lon": 4.61,
+    "rws": {
+      "getij": {
+        "code": "ijmuiden.buitenhaven",
+        "naam": "IJmuiden, buitenhaven",
+        "km": 10.9
+      },
+      "temperatuur": {
+        "code": "velsen.velserkom",
+        "naam": "Velserkom",
+        "km": 9.8
+      },
+      "waterstand": {
+        "code": "ijmuiden.noordersluis.west",
+        "naam": "IJmuiden, noordersluis, west",
+        "km": 9.7
+      }
+    },
+    "dichtbij": [
+      "wijk-aan-zee",
+      "egmond-aan-zee",
+      "ijmuiden",
+      "zandvoort"
+    ],
+    "regioSlug": "noord-holland"
   },
-  "dichtbij": [
-   "wijk-aan-zee",
-   "egmond-aan-zee",
-   "ijmuiden",
-   "zandvoort"
-  ],
-  "regioSlug": "noord-holland"
- },
- {
-  "slug": "dordrecht",
-  "naam": "Dordrecht",
-  "type": "getijrivier",
-  "regio": "Zuid-Holland",
-  "lat": 51.815,
-  "lon": 4.67,
-  "rws": {
-   "getij": {
-    "code": "dordrecht.oudemaas.benedenmerwede",
-    "naam": "Dordrecht Oude Maas, Beneden Merwede",
-    "km": 0.6
-   },
-   "temperatuur": {
-    "code": "kinderdijk.lek",
-    "naam": "Kinderdijk Lek",
-    "km": 8.7
-   },
-   "waterstand": {
-    "code": "dordrecht.oudemaas.benedenmerwede",
-    "naam": "Dordrecht Oude Maas, Beneden Merwede",
-    "km": 0.6
-   }
+  {
+    "slug": "dordrecht",
+    "naam": "Dordrecht",
+    "type": "getijrivier",
+    "regio": "Zuid-Holland",
+    "lat": 51.815,
+    "lon": 4.67,
+    "rws": {
+      "getij": {
+        "code": "dordrecht.oudemaas.benedenmerwede",
+        "naam": "Dordrecht Oude Maas, Beneden Merwede",
+        "km": 0.6
+      },
+      "temperatuur": {
+        "code": "kinderdijk.lek",
+        "naam": "Kinderdijk Lek",
+        "km": 8.7
+      },
+      "waterstand": {
+        "code": "dordrecht.oudemaas.benedenmerwede",
+        "naam": "Dordrecht Oude Maas, Beneden Merwede",
+        "km": 0.6
+      }
+    },
+    "dichtbij": [
+      "rotterdam",
+      "hoek-van-holland",
+      "scheveningen",
+      "katwijk"
+    ],
+    "regioSlug": "zuid-holland"
   },
-  "dichtbij": [
-   "rotterdam",
-   "hoek-van-holland",
-   "scheveningen",
-   "katwijk"
-  ],
-  "regioSlug": "zuid-holland"
- },
- {
-  "slug": "oostkapelle",
-  "naam": "Oostkapelle",
-  "type": "kust",
-  "regio": "Zeeland",
-  "lat": 51.575,
-  "lon": 3.535,
-  "rws": {
-   "getij": {
-    "code": "oosterschelde.11",
-    "naam": "Oosterschelde, 11",
-    "km": 8.5
-   },
-   "temperatuur": {
-    "code": "kamperland.schotsman",
-    "naam": "Kamperland, Schotsman",
-    "km": 7.5
-   },
-   "waterstand": {
-    "code": "kamperland.schotsman",
-    "naam": "Kamperland, Schotsman",
-    "km": 7.5
-   }
+  {
+    "slug": "oostkapelle",
+    "naam": "Oostkapelle",
+    "type": "kust",
+    "regio": "Zeeland",
+    "lat": 51.575,
+    "lon": 3.535,
+    "rws": {
+      "getij": {
+        "code": "oosterschelde.11",
+        "naam": "Oosterschelde, 11",
+        "km": 8.5
+      },
+      "temperatuur": {
+        "code": "kamperland.schotsman",
+        "naam": "Kamperland, Schotsman",
+        "km": 7.5
+      },
+      "waterstand": {
+        "code": "kamperland.schotsman",
+        "naam": "Kamperland, Schotsman",
+        "km": 7.5
+      }
+    },
+    "dichtbij": [
+      "domburg",
+      "westkapelle",
+      "zoutelande",
+      "neeltje-jans"
+    ],
+    "regioSlug": "zeeland"
   },
-  "dichtbij": [
-   "domburg",
-   "westkapelle",
-   "zoutelande",
-   "neeltje-jans"
-  ],
-  "regioSlug": "zeeland"
- },
- {
-  "slug": "stavenisse",
-  "naam": "Stavenisse",
-  "type": "oosterschelde",
-  "regio": "Zeeland",
-  "lat": 51.59,
-  "lon": 4.01,
-  "rws": {
-   "getij": {
-    "code": "stavenisse",
+  {
+    "slug": "stavenisse",
     "naam": "Stavenisse",
-    "km": 1.0
-   },
-   "waterstand": {
-    "code": "stavenisse",
-    "naam": "Stavenisse",
-    "km": 1.0
-   }
+    "type": "oosterschelde",
+    "regio": "Zeeland",
+    "lat": 51.59,
+    "lon": 4.01,
+    "rws": {
+      "getij": {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 1.0
+      },
+      "waterstand": {
+        "code": "stavenisse",
+        "naam": "Stavenisse",
+        "km": 1.0
+      }
+    },
+    "dichtbij": [
+      "wemeldinge",
+      "zierikzee",
+      "yerseke",
+      "hansweert"
+    ],
+    "regioSlug": "zeeland"
   },
-  "dichtbij": [
-   "wemeldinge",
-   "zierikzee",
-   "yerseke",
-   "hansweert"
-  ],
-  "regioSlug": "zeeland"
- },
- {
-  "slug": "callantsoog",
-  "naam": "Callantsoog",
-  "type": "kust",
-  "regio": "Noord-Holland",
-  "lat": 52.84,
-  "lon": 4.695,
-  "rws": {
-   "getij": {
-    "code": "denhelder.marsdiep",
-    "naam": "Den Helder, Marsdiep",
-    "km": 14.2
-   },
-   "temperatuur": {
-    "code": "denhelder.marsdiep",
-    "naam": "Den Helder, Marsdiep",
-    "km": 14.2
-   },
-   "waterstand": {
-    "code": "denhelder.marsdiep",
-    "naam": "Den Helder, Marsdiep",
-    "km": 14.2
-   }
+  {
+    "slug": "callantsoog",
+    "naam": "Callantsoog",
+    "type": "kust",
+    "regio": "Noord-Holland",
+    "lat": 52.84,
+    "lon": 4.695,
+    "rws": {
+      "getij": {
+        "code": "denhelder.marsdiep",
+        "naam": "Den Helder, Marsdiep",
+        "km": 14.2
+      },
+      "temperatuur": {
+        "code": "denhelder.marsdiep",
+        "naam": "Den Helder, Marsdiep",
+        "km": 14.2
+      },
+      "waterstand": {
+        "code": "denhelder.marsdiep",
+        "naam": "Den Helder, Marsdiep",
+        "km": 14.2
+      }
+    },
+    "dichtbij": [
+      "den-helder",
+      "texel",
+      "egmond-aan-zee",
+      "castricum-aan-zee"
+    ],
+    "regioSlug": "noord-holland"
   },
-  "dichtbij": [
-   "den-helder",
-   "texel",
-   "egmond-aan-zee",
-   "castricum-aan-zee"
-  ],
-  "regioSlug": "noord-holland"
- },
- {
-  "slug": "neeltje-jans",
-  "naam": "Neeltje Jans",
-  "type": "oosterschelde",
-  "regio": "Zeeland",
-  "lat": 51.63,
-  "lon": 3.7,
-  "rws": {
-   "getij": {
-    "code": "oosterschelde.roompotsluis.binnen",
-    "naam": "Oosterschelde Roompotsluis binnen",
-    "km": 1.6
-   },
-   "temperatuur": {
-    "code": "oosterschelde.4",
-    "naam": "Oosterschelde, 4",
-    "km": 2.8
-   },
-   "waterstand": {
-    "code": "oosterschelde.roompotsluis.binnen",
-    "naam": "Oosterschelde Roompotsluis binnen",
-    "km": 1.6
-   }
+  {
+    "slug": "neeltje-jans",
+    "naam": "Neeltje Jans",
+    "type": "oosterschelde",
+    "regio": "Zeeland",
+    "lat": 51.63,
+    "lon": 3.7,
+    "rws": {
+      "getij": {
+        "code": "oosterschelde.roompotsluis.binnen",
+        "naam": "Oosterschelde Roompotsluis binnen",
+        "km": 1.6
+      },
+      "temperatuur": {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 2.8
+      },
+      "waterstand": {
+        "code": "oosterschelde.roompotsluis.binnen",
+        "naam": "Oosterschelde Roompotsluis binnen",
+        "km": 1.6
+      }
+    },
+    "dichtbij": [
+      "burgh-haamstede",
+      "renesse",
+      "oostkapelle",
+      "zierikzee"
+    ],
+    "regioSlug": "zeeland"
   },
-  "dichtbij": [
-   "burgh-haamstede",
-   "renesse",
-   "oostkapelle",
-   "zierikzee"
-  ],
-  "regioSlug": "zeeland"
- },
- {
-  "slug": "burgh-haamstede",
-  "naam": "Burgh-Haamstede",
-  "type": "kust",
-  "regio": "Zeeland",
-  "lat": 51.7,
-  "lon": 3.735,
-  "rws": {
-   "getij": {
-    "code": "oosterschelde.14",
-    "naam": "Oosterschelde, 14",
-    "km": 4.6
-   },
-   "temperatuur": {
-    "code": "oosterschelde.4",
-    "naam": "Oosterschelde, 4",
-    "km": 5.8
-   },
-   "waterstand": {
-    "code": "oosterschelde.14",
-    "naam": "Oosterschelde, 14",
-    "km": 4.6
-   }
+  {
+    "slug": "burgh-haamstede",
+    "naam": "Burgh-Haamstede",
+    "type": "kust",
+    "regio": "Zeeland",
+    "lat": 51.7,
+    "lon": 3.735,
+    "rws": {
+      "getij": {
+        "code": "oosterschelde.14",
+        "naam": "Oosterschelde, 14",
+        "km": 4.6
+      },
+      "temperatuur": {
+        "code": "oosterschelde.4",
+        "naam": "Oosterschelde, 4",
+        "km": 5.8
+      },
+      "waterstand": {
+        "code": "oosterschelde.14",
+        "naam": "Oosterschelde, 14",
+        "km": 4.6
+      }
+    },
+    "dichtbij": [
+      "renesse",
+      "neeltje-jans",
+      "zierikzee",
+      "ouddorp"
+    ],
+    "regioSlug": "zeeland"
   },
-  "dichtbij": [
-   "renesse",
-   "neeltje-jans",
-   "zierikzee",
-   "ouddorp"
-  ],
-  "regioSlug": "zeeland"
- },
- {
-  "slug": "hansweert",
-  "naam": "Hansweert",
-  "type": "westerschelde",
-  "regio": "Zeeland",
-  "lat": 51.445,
-  "lon": 4.0,
-  "rws": {
-   "getij": {
-    "code": "hansweert",
+  {
+    "slug": "hansweert",
     "naam": "Hansweert",
-    "km": 0.2
-   },
-   "temperatuur": {
-    "code": "ossenisse",
-    "naam": "Ossenisse",
-    "km": 4.7
-   },
-   "waterstand": {
-    "code": "hansweert",
-    "naam": "Hansweert",
-    "km": 0.2
-   }
+    "type": "westerschelde",
+    "regio": "Zeeland",
+    "lat": 51.445,
+    "lon": 4.0,
+    "rws": {
+      "getij": {
+        "code": "hansweert",
+        "naam": "Hansweert",
+        "km": 0.2
+      },
+      "temperatuur": {
+        "code": "ossenisse",
+        "naam": "Ossenisse",
+        "km": 4.7
+      },
+      "waterstand": {
+        "code": "hansweert",
+        "naam": "Hansweert",
+        "km": 0.2
+      }
+    },
+    "dichtbij": [
+      "yerseke",
+      "wemeldinge",
+      "oesterdam",
+      "stavenisse"
+    ],
+    "regioSlug": "zeeland"
   },
-  "dichtbij": [
-   "yerseke",
-   "wemeldinge",
-   "oesterdam",
-   "stavenisse"
-  ],
-  "regioSlug": "zeeland"
- },
- {
-  "slug": "nijmegen",
-  "naam": "Nijmegen",
-  "type": "rivier",
-  "regio": "Rivieren",
-  "lat": 51.85,
-  "lon": 5.865,
-  "rws": {
-   "temperatuur": {
-    "code": "grave.boven",
-    "naam": "Grave, boven",
-    "km": 13.0
-   },
-   "waterstand": {
-    "code": "nijmegen.waal",
-    "naam": "Nijmegen, Waal",
-    "km": 0.8
-   }
-  },
-  "dichtbij": [
-   "lobith",
-   "deventer"
-  ],
-  "regioSlug": "rivieren"
- }
+  {
+    "slug": "nijmegen",
+    "naam": "Nijmegen",
+    "type": "rivier",
+    "regio": "Rivieren",
+    "lat": 51.85,
+    "lon": 5.865,
+    "rws": {
+      "temperatuur": {
+        "code": "grave.boven",
+        "naam": "Grave, boven",
+        "km": 13.0
+      },
+      "waterstand": {
+        "code": "nijmegen.waal",
+        "naam": "Nijmegen, Waal",
+        "km": 0.8
+      }
+    },
+    "dichtbij": [
+      "lobith",
+      "deventer"
+    ],
+    "regioSlug": "rivieren"
+  }
 ]
