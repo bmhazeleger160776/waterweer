@@ -1,7 +1,7 @@
 {
  "slug": "callantsoog",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T14:59:50.394Z",
+ "bijgewerkt": "2026-11-18T15:06:19.869Z",
  "fouten": [
   "golf: geen recente meting"
  ],
@@ -5052,8 +5052,8 @@
   "meetpunt": "denhelder.dekooy",
   "meetpuntNaam": "Den Helder, De Kooy",
   "km": 11.1,
-  "t": "2026-11-18T14:20:00.000Z",
-  "snelheid": 5.9,
-  "richting": 297
+  "t": "2026-11-18T14:40:00.000Z",
+  "snelheid": 4.6,
+  "richting": 295
  }
 }

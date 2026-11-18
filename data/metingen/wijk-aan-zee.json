@@ -1,7 +1,7 @@
 {
  "slug": "wijk-aan-zee",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T14:59:27.210Z",
+ "bijgewerkt": "2026-11-18T15:05:52.232Z",
  "fouten": [],
  "getij": {
   "meetpunt": "ijmuiden.buitenhaven",
@@ -5035,8 +5035,8 @@
   "meetpunt": "ijmuiden.noordersluis.west",
   "meetpuntNaam": "IJmuiden, noordersluis, west",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T14:30:00.000Z",
-  "v": 32
+  "t": "2026-11-18T14:40:00.000Z",
+  "v": 33
  },
  "golf": {
   "meetpunt": "ijgeul.1",
@@ -5054,6 +5054,6 @@
   "km": 4.1,
   "t": "2026-11-18T14:30:00.000Z",
   "snelheid": 7.5,
-  "richting": 291
+  "richting": 295
  }
 }

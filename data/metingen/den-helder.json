@@ -1,7 +1,7 @@
 {
  "slug": "den-helder",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T14:59:37.063Z",
+ "bijgewerkt": "2026-11-18T15:06:04.392Z",
  "fouten": [],
  "getij": {
   "meetpunt": "denhelder.marsdiep",
@@ -5054,7 +5054,7 @@
   "v": 22,
   "min24": 16,
   "max24": 82,
-  "periode": 2.9
+  "periode": 2.8
  },
  "wind": {
   "meetpunt": "texel.hors",

@@ -1,13 +1,13 @@
 {
  "slug": "venlo",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T15:00:10.040Z",
+ "bijgewerkt": "2026-11-18T15:06:39.697Z",
  "fouten": [],
  "waterstand": {
   "meetpunt": "venlo",
   "meetpuntNaam": "Venlo",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T14:30:00.000Z",
+  "t": "2026-11-18T14:50:00.000Z",
   "v": 1162,
   "reeks": [
    {

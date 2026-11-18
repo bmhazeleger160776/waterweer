@@ -1,7 +1,7 @@
 {
  "slug": "ijmuiden",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T14:59:28.356Z",
+ "bijgewerkt": "2026-11-18T15:05:53.549Z",
  "fouten": [],
  "getij": {
   "meetpunt": "ijmuiden.buitenhaven",
@@ -5054,6 +5054,6 @@
   "km": 0.1,
   "t": "2026-11-18T14:30:00.000Z",
   "snelheid": 7.5,
-  "richting": 291
+  "richting": 295
  }
 }
