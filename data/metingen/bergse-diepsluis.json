@@ -1,7 +1,7 @@
 {
  "slug": "bergse-diepsluis",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T17:14:04.625Z",
+ "bijgewerkt": "2026-11-18T19:00:21.839Z",
  "fouten": [],
  "getij": {
   "meetpunt": "marollegat",
@@ -5032,32 +5032,32 @@
   "meetpunt": "marollegat",
   "meetpuntNaam": "Marollegat",
   "eenheid": "°C",
-  "t": "2026-11-18T16:50:00.000Z",
-  "v": 8.5
+  "t": "2026-11-18T18:30:00.000Z",
+  "v": 8.7
  },
  "waterstand": {
   "meetpunt": "marollegat",
   "meetpuntNaam": "Marollegat",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T16:40:00.000Z",
-  "v": 22
+  "t": "2026-11-18T18:30:00.000Z",
+  "v": 124
  },
  "golf": {
   "meetpunt": "rilland.bath",
   "meetpuntNaam": "Rilland, Bath",
   "km": 12,
-  "t": "2026-11-18T16:50:00.000Z",
-  "v": 18,
-  "min24": 18,
+  "t": "2026-11-18T18:30:00.000Z",
+  "v": 16,
+  "min24": 15,
   "max24": 47,
-  "periode": 2.9
+  "periode": 3
  },
  "wind": {
   "meetpunt": "tholen.bergsediepsluis",
   "meetpuntNaam": "Tholen Bergsediepsluis",
   "km": 2.7,
-  "t": "2026-11-18T16:50:00.000Z",
-  "snelheid": 8.1,
-  "richting": 227
+  "t": "2026-11-18T18:40:00.000Z",
+  "snelheid": 8.6,
+  "richting": 218
  }
 }
