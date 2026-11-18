@@ -1,7 +1,7 @@
 {
  "slug": "zierikzee",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T20:02:35.699Z",
+ "bijgewerkt": "2026-11-18T20:58:28.567Z",
  "fouten": [],
  "getij": {
   "meetpunt": "stavenisse",
@@ -4879,14 +4879,14 @@
   "meetpunt": "bommenede",
   "meetpuntNaam": "Bommenede",
   "eenheid": "°C",
-  "t": "2026-11-18T19:40:00.000Z",
+  "t": "2026-11-18T20:30:00.000Z",
   "v": 8.6
  },
  "waterstand": {
   "meetpunt": "stavenisse",
   "meetpuntNaam": "Stavenisse",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T19:30:00.000Z",
-  "v": 171
+  "t": "2026-11-18T20:30:00.000Z",
+  "v": 185
  }
 }
