@@ -1,7 +1,7 @@
 {
  "slug": "ijsselmeer",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T10:34:24.298Z",
+ "bijgewerkt": "2026-11-18T10:44:10.421Z",
  "fouten": [],
  "temperatuur": {
   "meetpunt": "andijk",
@@ -14,8 +14,8 @@
   "meetpunt": "krabbersgat.ijsselmeer",
   "meetpuntNaam": "Krabbersgat, IJsselmeer",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T10:10:00.000Z",
-  "v": -29,
+  "t": "2026-11-18T10:20:00.000Z",
+  "v": -30,
   "reeks": [
    {
     "t": "2026-11-11T10:00:00.000Z",
@@ -691,7 +691,7 @@
    },
    {
     "t": "2026-11-18T10:00:00.000Z",
-    "v": -29
+    "v": -30
    }
   ]
  }
