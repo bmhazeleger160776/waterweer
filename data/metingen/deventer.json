@@ -1,13 +1,13 @@
 {
  "slug": "deventer",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T05:05:31.769Z",
+ "bijgewerkt": "2026-11-18T06:13:04.836Z",
  "fouten": [],
  "waterstand": {
   "meetpunt": "deventer",
   "meetpuntNaam": "Deventer",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T04:40:00.000Z",
-  "v": 83
+  "t": "2026-11-18T05:50:00.000Z",
+  "v": 85
  }
 }

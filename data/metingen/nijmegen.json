@@ -1,20 +1,20 @@
 {
  "slug": "nijmegen",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T05:05:43.817Z",
+ "bijgewerkt": "2026-11-18T06:13:15.517Z",
  "fouten": [],
  "temperatuur": {
   "meetpunt": "grave.boven",
   "meetpuntNaam": "Grave, boven",
   "eenheid": "°C",
-  "t": "2026-11-18T04:50:00.000Z",
+  "t": "2026-11-18T05:50:00.000Z",
   "v": 8.5
  },
  "waterstand": {
   "meetpunt": "nijmegen.waal",
   "meetpuntNaam": "Nijmegen, Waal",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T04:40:00.000Z",
+  "t": "2026-11-18T05:50:00.000Z",
   "v": 482
  }
 }

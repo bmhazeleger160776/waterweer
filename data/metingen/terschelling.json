@@ -1,7 +1,7 @@
 {
  "slug": "terschelling",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T05:05:24.937Z",
+ "bijgewerkt": "2026-11-18T06:12:59.025Z",
  "fouten": [],
  "getij": {
   "meetpunt": "terschelling.west",
@@ -5052,7 +5052,7 @@
   "meetpunt": "terschelling.west",
   "meetpuntNaam": "Terschelling, west",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T04:40:00.000Z",
-  "v": 78
+  "t": "2026-11-18T05:50:00.000Z",
+  "v": 49
  }
 }
