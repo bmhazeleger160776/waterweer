@@ -1,7 +1,7 @@
 {
  "slug": "schiermonnikoog",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-17T23:54:19.066Z",
+ "bijgewerkt": "2026-11-18T01:18:35.354Z",
  "fouten": [],
  "getij": {
   "meetpunt": "schiermonnikoog.waddenzee",
@@ -5036,14 +5036,14 @@
   "meetpunt": "schiermonnikoog.noord",
   "meetpuntNaam": "Schiermonnikoog, noord",
   "eenheid": "°C",
-  "t": "2026-11-17T23:30:00.000Z",
-  "v": 10.6
+  "t": "2026-11-18T01:00:00.000Z",
+  "v": 10.7
  },
  "waterstand": {
   "meetpunt": "schiermonnikoog.waddenzee",
   "meetpuntNaam": "Schiermonnikoog, Waddenzee",
   "eenheid": "cm NAP",
-  "t": "2026-11-17T23:30:00.000Z",
-  "v": 72
+  "t": "2026-11-18T00:50:00.000Z",
+  "v": 105
  }
 }

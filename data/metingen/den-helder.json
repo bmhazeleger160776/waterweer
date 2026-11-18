@@ -1,7 +1,7 @@
 {
  "slug": "den-helder",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-17T23:54:15.090Z",
+ "bijgewerkt": "2026-11-18T01:18:32.252Z",
  "fouten": [],
  "getij": {
   "meetpunt": "denhelder.marsdiep",
@@ -4895,14 +4895,14 @@
   "meetpunt": "denhelder.marsdiep",
   "meetpuntNaam": "Den Helder, Marsdiep",
   "eenheid": "°C",
-  "t": "2026-11-17T23:30:00.000Z",
-  "v": 9.7
+  "t": "2026-11-18T01:00:00.000Z",
+  "v": 9.8
  },
  "waterstand": {
   "meetpunt": "denhelder.marsdiep",
   "meetpuntNaam": "Den Helder, Marsdiep",
   "eenheid": "cm NAP",
-  "t": "2026-11-17T23:40:00.000Z",
-  "v": 122
+  "t": "2026-11-18T01:00:00.000Z",
+  "v": 120
  }
 }

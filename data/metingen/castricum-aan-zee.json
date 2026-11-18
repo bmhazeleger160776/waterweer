@@ -1,7 +1,7 @@
 {
  "slug": "castricum-aan-zee",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-17T23:54:20.466Z",
+ "bijgewerkt": "2026-11-18T01:18:36.556Z",
  "fouten": [],
  "getij": {
   "meetpunt": "ijmuiden.buitenhaven",
@@ -5040,14 +5040,14 @@
   "meetpunt": "velsen.velserkom",
   "meetpuntNaam": "Velserkom",
   "eenheid": "°C",
-  "t": "2026-11-17T23:30:00.000Z",
+  "t": "2026-11-18T01:00:00.000Z",
   "v": 10.5
  },
  "waterstand": {
   "meetpunt": "ijmuiden.noordersluis.west",
   "meetpuntNaam": "IJmuiden, noordersluis, west",
   "eenheid": "cm NAP",
-  "t": "2026-11-17T23:40:00.000Z",
-  "v": 96
+  "t": "2026-11-18T01:00:00.000Z",
+  "v": 85
  }
 }
