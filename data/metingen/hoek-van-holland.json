@@ -1,7 +1,7 @@
 {
  "slug": "hoek-van-holland",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T10:03:46.602Z",
+ "bijgewerkt": "2026-11-18T10:07:50.617Z",
  "fouten": [],
  "getij": {
   "meetpunt": "hoekvanholland",
@@ -4963,7 +4963,7 @@
   "meetpunt": "hoekvanholland",
   "meetpuntNaam": "Hoek van Holland",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T09:40:00.000Z",
-  "v": 112
+  "t": "2026-11-18T09:50:00.000Z",
+  "v": 108
  }
 }

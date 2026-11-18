@@ -1,7 +1,7 @@
 {
  "slug": "hansweert",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T10:03:58.235Z",
+ "bijgewerkt": "2026-11-18T10:08:06.892Z",
  "fouten": [],
  "getij": {
   "meetpunt": "hansweert",
@@ -5039,7 +5039,7 @@
   "meetpunt": "hansweert",
   "meetpuntNaam": "Hansweert",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T09:40:00.000Z",
-  "v": 143
+  "t": "2026-11-18T09:50:00.000Z",
+  "v": 132
  }
 }
