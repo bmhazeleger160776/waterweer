@@ -1,0 +1,87 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import Base from "../layouts/Base.astro";
+import { REGIOS } from "../lib/regios.js";
+import { tijd, dagKort, datumKey, graden } from "../lib/format.js";
+
+const { regioSlug } = Astro.props;
+const regio = REGIOS[regioSlug];
+const root = process.cwd();
+const rijen = JSON.parse(fs.readFileSync(path.join(root, "data/locaties.json"), "utf8"))
+  .filter((l) => l.regioSlug === regioSlug && l.rws?.getij && fs.existsSync(path.join(root, `data/metingen/${l.slug}.json`)))
+  .map((l) => {
+    const d = JSON.parse(fs.readFileSync(path.join(root, `data/metingen/${l.slug}.json`), "utf8"));
+    const ext = d.getij?.extremen ?? [];
+    const nu = d.bijgewerkt;
+    return {
+      l, nu,
+      hw: ext.find((e) => e.soort === "HW" && e.t >= nu),
+      lw: ext.find((e) => e.soort === "LW" && e.t >= nu),
+      temp: d.temperatuur,
+    };
+  })
+  .sort((a, b) => a.l.naam.localeCompare(b.l.naam, "nl"));
+
+const bijgewerkt = rijen.map((r) => r.nu).sort().at(-1);
+const vandaagKey = bijgewerkt ? datumKey(bijgewerkt) : null;
+const wanneer = (e) => e ? `${tijd(e.t)}${datumKey(e.t) !== vandaagKey ? ` (${dagKort(e.t)})` : ""}` : "–";
+const temps = rijen.filter((r) => r.temp).map((r) => r.temp.v);
+const andere = Object.entries(REGIOS).filter(([s]) => s !== regioSlug);
+
+const jsonLd = [{
+  "@context": "https://schema.org", "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${Astro.site}` },
+    { "@type": "ListItem", position: 2, name: "Getijden", item: `${Astro.site}getijden/` },
+    { "@type": "ListItem", position: 3, name: regio.naam, item: `${Astro.site}getijden/${regioSlug}` },
+  ],
+}];
+const omschrijving = `Hoog- en laagwater vandaag voor ${rijen.length} plaatsen in ${regio.naam === "Wadden" ? "het Waddengebied" : regio.naam}, met watertemperatuur. Elk uur bijgewerkt met data van Rijkswaterstaat.`;
+---
+<Base title={regio.titel} description={omschrijving} canonical={`/getijden/${regioSlug}`} jsonLd={jsonLd}>
+  <nav class="kruimel muted"><a href="/">Home</a> › <a href="/getijden/">Getijden</a> › {regio.naam}</nav>
+  <h1>{regio.h1}</h1>
+  <p>{regio.intro}</p>
+  {bijgewerkt && <p class="muted klein">Bijgewerkt om {tijd(bijgewerkt)} · bron: Rijkswaterstaat</p>}
+
+  <div class="tabelwrap">
+    <table>
+      <thead><tr><th>Plaats</th><th>Hoogwater</th><th>Laagwater</th><th>Water</th></tr></thead>
+      <tbody>
+        {rijen.map((r) => (
+          <tr>
+            <td><a href={`/getijden/${r.l.slug}`}>{r.l.naam}</a></td>
+            <td>{wanneer(r.hw)}</td>
+            <td>{wanneer(r.lw)}</td>
+            <td>{r.temp ? graden(r.temp.v) : <span class="muted">–</span>}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="muted klein">Eerstvolgend hoog- en laagwater per plaats. Klik op een plaats voor de getijtabel van 7 dagen. Watertemperatuur komt van het dichtstbijzijnde meetpunt.</p>
+
+  {temps.length > 0 && (
+    <>
+      <h2>Watertemperatuur {regio.naam === "Wadden" ? "Waddenzee" : regio.naam}</h2>
+      <p>Het zeewater in deze regio is nu tussen {graden(Math.min(...temps))} en {graden(Math.max(...temps))}, gemeten bij {temps.length} meetpunten van Rijkswaterstaat.</p>
+    </>
+  )}
+
+  <h2>Andere regio's</h2>
+  <ul class="buren">{andere.map(([s, r]) => <li><a href={`/getijden/${s}`}>{r.h1}</a></li>)}</ul>
+</Base>
+
+<style>
+  .kruimel { font-size: .85rem; margin-top: 18px; }
+  .kruimel a { color: var(--muted); }
+  .klein { font-size: .85rem; }
+  .tabelwrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+  th { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); background: #fbfdfe; }
+  td:first-child { font-weight: 600; }
+  tr:last-child td { border-bottom: 0; }
+  .buren { display: flex; flex-wrap: wrap; gap: 8px 18px; padding: 0; list-style: none; }
+</style>

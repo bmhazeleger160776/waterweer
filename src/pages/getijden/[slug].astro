@@ -88,7 +88,8 @@ const jsonLd = [
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: `${Astro.site}` },
       { "@type": "ListItem", position: 2, name: "Getijden", item: `${Astro.site}getijden/` },
-      { "@type": "ListItem", position: 3, name: loc.naam, item: `${Astro.site}getijden/${loc.slug}` },
+      { "@type": "ListItem", position: 3, name: loc.regio, item: `${Astro.site}getijden/${loc.regioSlug}` },
+      { "@type": "ListItem", position: 4, name: loc.naam, item: `${Astro.site}getijden/${loc.slug}` },
     ],
   },
   {
@@ -99,7 +100,7 @@ const jsonLd = [
 const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
 ---
 <Base title={titel} description={omschrijving} canonical={`/getijden/${loc.slug}`} jsonLd={jsonLd}>
-  <nav class="kruimel muted"><a href="/">Home</a> › <a href="/getijden/">Getijden</a> › {loc.regio} › {loc.naam}</nav>
+  <nav class="kruimel muted"><a href="/">Home</a> › <a href="/getijden/">Getijden</a> › <a href={`/getijden/${loc.regioSlug}`}>{loc.regio}</a> › {loc.naam}</nav>
 
   {data.voorbeeld && (
     <p class="melding">Dit is <strong>voorbeelddata</strong> (gesimuleerd getij). Draai <code>npm run fetch-data</code> voor echte data van Rijkswaterstaat.</p>

@@ -2,6 +2,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import Base from "../../layouts/Base.astro";
+import { REGIOS } from "../../lib/regios.js";
+const regioSlug = (naam) => Object.entries(REGIOS).find(([, r]) => r.naam === naam)?.[0];
 const root = process.cwd();
 const locaties = JSON.parse(fs.readFileSync(path.join(root, "data/locaties.json"), "utf8"))
   .filter((l) => l.rws?.getij && fs.existsSync(path.join(root, `data/metingen/${l.slug}.json`)));
@@ -11,7 +13,7 @@ const perRegio = Object.groupBy(locaties, (l) => l.regio);
   <h1>Getijden per plaats</h1>
   {Object.entries(perRegio).map(([regio, lijst]) => (
     <>
-      <h2>{regio}</h2>
+      <h2>{regioSlug(regio) ? <a href={`/getijden/${regioSlug(regio)}`}>{REGIOS[regioSlug(regio)].h1}</a> : regio}</h2>
       <ul>{lijst.map((l) => <li><a href={`/getijden/${l.slug}`}>Getijden {l.naam}</a></li>)}</ul>
     </>
   ))}
