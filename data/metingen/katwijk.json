@@ -1,7 +1,7 @@
 {
  "slug": "katwijk",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T16:16:54.733Z",
+ "bijgewerkt": "2026-11-18T17:12:59.258Z",
  "fouten": [],
  "getij": {
   "meetpunt": "scheveningen",
@@ -5020,32 +5020,32 @@
   "meetpunt": "hollandsekust.zuid.alpha",
   "meetpuntNaam": "Hollandse Kust Zuid platform Alpha",
   "eenheid": "°C",
-  "t": "2026-11-18T15:50:00.000Z",
-  "v": 11.9
+  "t": "2026-11-18T16:50:00.000Z",
+  "v": 11.8
  },
  "waterstand": {
   "meetpunt": "hollandsekust.zuid.alpha",
   "meetpuntNaam": "Hollandse Kust Zuid platform Alpha",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T15:50:00.000Z",
-  "v": 19
+  "t": "2026-11-18T16:50:00.000Z",
+  "v": 28
  },
  "golf": {
   "meetpunt": "hollandsekust.zuid.alpha",
   "meetpuntNaam": "Hollandse Kust Zuid platform Alpha",
   "km": 13.9,
-  "t": "2026-11-18T15:50:00.000Z",
-  "v": 191,
+  "t": "2026-11-18T16:40:00.000Z",
+  "v": 183,
   "min24": 176,
-  "max24": 325,
-  "periode": 5.5
+  "max24": 307,
+  "periode": 5.2
  },
  "wind": {
   "meetpunt": "hollandsekust.zuid.alpha.1",
   "meetpuntNaam": "Hollandse Kust Zuid platform Alpha 1",
   "km": 13.9,
-  "t": "2026-11-18T15:50:00.000Z",
-  "snelheid": 7.2,
-  "richting": 288
+  "t": "2026-11-18T17:00:00.000Z",
+  "snelheid": 0.5,
+  "richting": 326
  }
 }
