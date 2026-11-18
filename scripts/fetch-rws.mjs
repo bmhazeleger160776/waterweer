@@ -16,6 +16,8 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const LOCATIES = JSON.parse(fs.readFileSync(path.join(ROOT, "data/locaties.json"), "utf8"));
 const OUT = path.join(ROOT, "data/metingen");
+const KANDIDATEN_PAD = path.join(ROOT, "data/golf-kandidaten.json");
+const KANDIDATEN = fs.existsSync(KANDIDATEN_PAD) ? JSON.parse(fs.readFileSync(KANDIDATEN_PAD, "utf8")) : {};
 
 const BASE = "https://ddapi20-waterwebservices.rijkswaterstaat.nl";
 const P = {
@@ -163,6 +165,64 @@ async function verloop(stationCode, dagen = 7) {
   return reeks;
 }
 
+// Metingen van de afgelopen uren als { t, v }; bij meerdere reeksen (bijv. frequentiebanden)
+// nemen we de reeks met de meest recente waarde.
+async function recent(stationCode, compartiment, grootheid, uren = 24) {
+  const res = await post(P.waarnemingen, {
+    Locatie: { Code: stationCode },
+    AquoPlusWaarnemingMetadata: { AquoMetadata: { Compartiment: { Code: compartiment }, Grootheid: { Code: grootheid }, ProcesType: "meting" } },
+    Periode: { Begindatumtijd: iso(new Date(Date.now() - uren * 3600e3)), Einddatumtijd: iso(new Date()) },
+  });
+  let beste = [];
+  for (const w of get(res, "WaarnemingenLijst") || []) {
+    const lijst = (get(w, "MetingenLijst") || [])
+      .map((m) => ({ t: new Date(get(m, "Tijdstip")).toISOString(), v: get(get(m, "Meetwaarde") || {}, "Waarde_Numeriek") }))
+      .filter((m) => typeof m.v === "number" && m.v < 9e8)
+      .sort((a, b) => a.t.localeCompare(b.t));
+    if (lijst.length && (!beste.length || lijst.at(-1).t > beste.at(-1).t)) beste = lijst;
+  }
+  return beste;
+}
+
+const vers = (lijst, uren = 6) => lijst.length && Date.now() - Date.parse(lijst.at(-1).t) < uren * 3600e3;
+
+// Golfhoogte en wind: probeer eerst het meetpunt van de vorige keer, dan de dichtstbijzijnde kandidaten.
+async function golfEnWind(slug, vorig) {
+  const kand = KANDIDATEN[slug];
+  if (!kand) return {};
+  const uit = {};
+  const volgorde = (lijst, vorigCode) => {
+    const v = lijst.find((k) => k.code === vorigCode);
+    return [...(v ? [v] : []), ...lijst.filter((k) => k.code !== vorigCode)].slice(0, 8);
+  };
+  for (const k of volgorde(kand.golf, vorig.golf?.meetpunt)) {
+    try {
+      const hm0 = await recent(k.code, "OW", "Hm0");
+      if (!vers(hm0)) continue;
+      const vals = hm0.map((m) => m.v);
+      uit.golf = { meetpunt: k.code, meetpuntNaam: k.naam, km: k.km, t: hm0.at(-1).t, v: Math.round(hm0.at(-1).v), min24: Math.round(Math.min(...vals)), max24: Math.round(Math.max(...vals)) };
+      try {
+        const per = await recent(k.code, "OW", "Tm02", 3);
+        if (vers(per)) uit.golf.periode = Math.round(per.at(-1).v * 10) / 10;
+      } catch {}
+      break;
+    } catch {}
+  }
+  for (const k of volgorde(kand.wind, vorig.wind?.meetpunt)) {
+    try {
+      const shd = await recent(k.code, "LT", "WINDSHD", 3);
+      if (!vers(shd, 3)) continue;
+      uit.wind = { meetpunt: k.code, meetpuntNaam: k.naam, km: k.km, t: shd.at(-1).t, snelheid: Math.round(shd.at(-1).v * 10) / 10 };
+      try {
+        const rtg = await recent(k.code, "LT", "WINDRTG", 3);
+        if (vers(rtg, 3)) uit.wind.richting = Math.round(rtg.at(-1).v);
+      } catch {}
+      break;
+    } catch {}
+  }
+  return uit;
+}
+
 async function locatie(loc) {
   const bestand = path.join(OUT, `${loc.slug}.json`);
   const vorig = fs.existsSync(bestand) ? JSON.parse(fs.readFileSync(bestand, "utf8")) : {};
@@ -179,6 +239,16 @@ async function locatie(loc) {
     try {
       data[thema] = { meetpunt: rwsCode(loc.rws[thema]), meetpuntNaam: loc.rws[thema].naam, eenheid, ...(await laatste(rwsCode(loc.rws[thema]), grootheid)) };
     } catch (e) { data.fouten.push(`${thema}: ${e.message}`); }
+  }
+  if (KANDIDATEN[loc.slug]) {
+    const gw = await golfEnWind(loc.slug, vorig);
+    for (const k of ["golf", "wind"]) {
+      if (gw[k]) data[k] = gw[k];
+      else {
+        data.fouten.push(`${k}: geen recente meting`);
+        if (data[k] && Date.now() - Date.parse(data[k].t) > 24 * 3600e3) delete data[k];
+      }
+    }
   }
   if (!loc.rws.getij && loc.rws.waterstand && data.waterstand) {
     try { data.waterstand.reeks = await verloop(rwsCode(loc.rws.waterstand)); }

@@ -1,0 +1,45 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import Base from "../../layouts/Base.astro";
+const root = process.cwd();
+const locaties = JSON.parse(fs.readFileSync(path.join(root, "data/locaties.json"), "utf8"))
+  .filter((l) => l.rws?.getij && fs.existsSync(path.join(root, `data/metingen/${l.slug}.json`)))
+  .sort((a, b) => a.naam.localeCompare(b.naam, "nl"));
+const opties = locaties.map((l) => ({ slug: l.slug, naam: l.naam }));
+---
+<Base title="Gratis getijden-widget voor je website – waterweer.nl" description="Zet de actuele getijden en watertemperatuur gratis op je eigen website. Voor campings, strandpaviljoens, hengelsport, surfscholen en vakantiehuizen. Elk uur bijgewerkt." canonical="/widget/">
+  <h1>Gratis getijden-widget voor je website</h1>
+  <p>Laat je bezoekers zien wanneer het hoog- en laagwater is, met de actuele watertemperatuur. Handig voor campings, strandpaviljoens, vakantiehuizen, surfscholen en hengelsportwinkels. De widget is gratis, wordt elk uur bijgewerkt met data van Rijkswaterstaat en gebruikt geen cookies.</p>
+
+  <h2>1. Kies een plaats</h2>
+  <select id="plaats">{opties.map((o) => <option value={o.slug} selected={o.slug === "vlissingen"}>{o.naam}</option>)}</select>
+
+  <h2>2. Voorbeeld</h2>
+  <iframe id="voorbeeld" src="/widget/vlissingen" width="300" height="200" style="border:0" title="Voorbeeld getijden-widget" loading="lazy"></iframe>
+
+  <h2>3. Kopieer de code</h2>
+  <p>Plak deze code in je website, op de plek waar de widget moet komen. In WordPress gebruik je daarvoor een blok "Aangepaste HTML".</p>
+  <textarea id="code" rows="5" readonly></textarea>
+  <p><button type="button" id="kopieer">Code kopiëren</button> <span id="gekopieerd" class="muted"></span></p>
+
+  <script define:vars={{ opties }}>
+    const sel = document.getElementById("plaats"), code = document.getElementById("code"), vb = document.getElementById("voorbeeld");
+    const maak = () => {
+      const o = opties.find((x) => x.slug === sel.value);
+      vb.src = `/widget/${o.slug}`;
+      code.value = `<iframe src="https://waterweer.nl/widget/${o.slug}" width="300" height="200" style="border:0" title="Getijden ${o.naam}" loading="lazy"></iframe>\n<p style="font:12px sans-serif;margin:4px 0"><a href="https://waterweer.nl/getijden/${o.slug}">Getijden ${o.naam}</a> via waterweer.nl</p>`;
+    };
+    sel.addEventListener("change", maak);
+    document.getElementById("kopieer").addEventListener("click", async () => {
+      try { await navigator.clipboard.writeText(code.value); document.getElementById("gekopieerd").textContent = "Gekopieerd!"; }
+      catch { code.select(); }
+    });
+    maak();
+  </script>
+</Base>
+<style>
+  select { font: inherit; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); }
+  textarea { width: 100%; font: 13px/1.4 ui-monospace, monospace; padding: 10px; border: 1px solid var(--line); border-radius: 8px; }
+  button { font: inherit; padding: 8px 14px; border: 0; border-radius: 8px; background: var(--accent); color: #fff; cursor: pointer; }
+</style>

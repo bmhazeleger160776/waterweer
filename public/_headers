@@ -1,0 +1,6 @@
+/agenda/*
+  Content-Type: text/calendar; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/widget/*
+  Cache-Control: public, max-age=600

@@ -105,9 +105,9 @@ async function station(code, jaar) {
 
 // Per run hooguit 6 minuten; wat dan nog ontbreekt, komt in de volgende run.
 const DEADLINE = Date.now() + 6 * 60e3;
-// Vanaf oktober het volgende jaar, daarvoor het lopende jaar.
+// Altijd het lopende jaar (nodig voor de agenda's); vanaf oktober ook het volgende jaar.
 const nu = new Date();
-const jaren = process.argv[2] ? [Number(process.argv[2])] : [nu.getUTCMonth() >= 9 ? nu.getUTCFullYear() + 1 : nu.getUTCFullYear()];
+const jaren = process.argv[2] ? [Number(process.argv[2])] : nu.getUTCMonth() >= 9 ? [nu.getUTCFullYear() + 1, nu.getUTCFullYear()] : [nu.getUTCFullYear()];
 const codes = [...new Set(LOCATIES.map((l) => l.rws?.getij?.code).filter(Boolean))];
 try {
   for (const jaar of jaren) {

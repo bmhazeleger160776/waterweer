@@ -1,0 +1,63 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import { extremenTussen } from "../../lib/jaar.js";
+import { graden } from "../../lib/format.js";
+
+export function getStaticPaths() {
+  const root = process.cwd();
+  return JSON.parse(fs.readFileSync(path.join(root, "data/locaties.json"), "utf8"))
+    .filter((l) => l.rws?.getij && fs.existsSync(path.join(root, `data/metingen/${l.slug}.json`)))
+    .map((loc) => ({ params: { slug: loc.slug }, props: { loc, data: JSON.parse(fs.readFileSync(path.join(root, `data/metingen/${loc.slug}.json`), "utf8")) } }));
+}
+const { loc, data } = Astro.props;
+const nu = Date.parse(data.bijgewerkt);
+// Ruim genoeg vooruit; het script hieronder verbergt wat al voorbij is
+const ext = extremenTussen(loc.rws.getij.code, data.getij?.extremen, new Date(nu - 3600e3).toISOString(), new Date(nu + 4 * 864e5).toISOString())
+  .map((e) => ({ t: e.t, v: e.v, s: e.soort }));
+const url = `https://waterweer.nl/getijden/${loc.slug}`;
+---
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Getijden {loc.naam} – waterweer.nl</title>
+  <base target="_blank" />
+  <style>
+    body { margin: 0; font: 14px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #0f2230; background: #fff; }
+    .w { border: 1px solid #dbe5ec; border-radius: 10px; padding: 12px 14px; }
+    h1 { font-size: 15px; margin: 0 0 8px; }
+    table { width: 100%; border-collapse: collapse; }
+    td { padding: 4px 0; border-bottom: 1px solid #eef3f6; }
+    td.h { text-align: right; color: #557083; }
+    tr:last-child td { border-bottom: 0; }
+    .t { margin-top: 8px; color: #557083; }
+    .bron { margin-top: 8px; font-size: 12px; }
+    a { color: #0b6fa4; }
+  </style>
+</head>
+<body>
+  <div class="w">
+    <h1>Getijden {loc.naam}</h1>
+    <table id="tabel"></table>
+    {data.temperatuur && <div class="t">Watertemperatuur: <strong>{graden(data.temperatuur.v)}</strong></div>}
+    <div class="bron"><a href={url}>Meer getijden {loc.naam}</a> · waterweer.nl</div>
+  </div>
+  <script define:vars={{ ext }}>
+    const tz = { timeZone: "Europe/Amsterdam" };
+    const dag = new Intl.DateTimeFormat("nl-NL", { ...tz, weekday: "short" });
+    const tijd = new Intl.DateTimeFormat("nl-NL", { ...tz, hour: "2-digit", minute: "2-digit" });
+    const vandaag = new Intl.DateTimeFormat("en-CA", tz).format(new Date());
+    const dk = new Intl.DateTimeFormat("en-CA", tz);
+    const m = (cm) => `${cm >= 0 ? "+" : "−"}${(Math.abs(cm) / 100).toFixed(2).replace(".", ",")} m`;
+    const komend = ext.filter((e) => Date.parse(e.t) > Date.now()).slice(0, 4);
+    document.getElementById("tabel").innerHTML = komend.map((e) => {
+      const d = new Date(e.t);
+      const wanneer = dk.format(d) === vandaag ? "" : ` (${dag.format(d)})`;
+      return `<tr><td>${e.s === "HW" ? "Hoogwater" : "Laagwater"}</td><td><strong>${tijd.format(d)}</strong>${wanneer}</td><td class="h">${m(e.v)}</td></tr>`;
+    }).join("");
+  </script>
+</body>
+</html>

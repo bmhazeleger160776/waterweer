@@ -4,6 +4,7 @@ import path from "node:path";
 import Base from "../../layouts/Base.astro";
 import GetijGrafiek from "../../components/GetijGrafiek.astro";
 import { jarenVoor } from "../../lib/jaar.js";
+import { beaufort, richting, richtingKort, golfMeter, golfOordeel } from "../../lib/weer.js";
 import { tijd, dag, dagKort, datumKey, meter, graden, metTijd } from "../../lib/format.js";
 
 export function getStaticPaths() {
@@ -50,6 +51,8 @@ if (data.waterstand && data.getij?.reeks?.length) {
 }
 
 const temp = data.temperatuur;
+const golf = data.golf, wind = data.wind;
+const windTekst = wind ? `${beaufort(wind.snelheid)} Bft${typeof wind.richting === "number" ? ` uit het ${richting(wind.richting)}` : ""}` : null;
 const tempBij = temp && loc.rws?.temperatuur?.km > 2 ? (temp.meetpuntNaam || loc.rws.temperatuur.naam) : null;
 const tempOordeel = !temp ? null
   : temp.v < 15 ? "Koud water: zonder wetsuit raak je snel onderkoeld."
@@ -65,7 +68,7 @@ const getijVerschil = (() => {
 
 const titel = `Getijden ${loc.naam} vandaag – eb, vloed en watertemperatuur`;
 const omschrijving = volgendHW
-  ? `Hoogwater ${loc.naam}: ${dagKort(volgendHW.t)} om ${tijd(volgendHW.t)}. Getijtabel voor 7 dagen, actuele watertemperatuur en waterstand, elk uur bijgewerkt.`
+  ? `Hoogwater ${loc.naam}: ${dagKort(volgendHW.t)} om ${tijd(volgendHW.t)}. Getijtabel voor 7 dagen, watertemperatuur${data.golf ? ", golfhoogte en wind" : " en waterstand"}, elk uur bijgewerkt.`
   : `Getijden, eb en vloed en watertemperatuur in ${loc.naam}, elk uur bijgewerkt met data van Rijkswaterstaat.`;
 
 const faq = [
@@ -80,6 +83,10 @@ const faq = [
   getijVerschil && {
     v: `Hoe groot is het verschil tussen eb en vloed in ${loc.naam}?`,
     a: `Vandaag is het verschil tussen het hoogste hoogwater en het laagste laagwater ongeveer ${(getijVerschil / 100).toFixed(1).replace(".", ",")} meter. Bij springtij is dat groter, bij doodtij kleiner.`,
+  },
+  golf && {
+    v: `Hoe hoog zijn de golven bij ${loc.naam}?`,
+    a: `De laatst gemeten golfhoogte bij ${golf.meetpuntNaam} is ${golfMeter(golf.v)} (${metTijd(golf.t)}). ${golfOordeel(golf.v)}${windTekst ? ` De wind is ${windTekst}.` : ""}`,
   },
 ].filter(Boolean);
 
@@ -99,6 +106,7 @@ const jsonLd = [
   },
 ];
 const jaartabellen = jarenVoor(loc.rws.getij.code);
+const agendaUrl = `waterweer.nl/agenda/${loc.slug}.ics`;
 const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
 ---
 <Base title={titel} description={omschrijving} canonical={`/getijden/${loc.slug}`} jsonLd={jsonLd}>
@@ -119,6 +127,8 @@ const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
   <section class="kaarten">
     {eerste.map((e) => <div class="kaart"><span class="label">Volgend {e.soort === "HW" ? "hoogwater" : "laagwater"}</span><span class="waarde">{tijd(e.t)}</span><span class="sub">{dagKort(e.t)} · {meter(e.v)}</span></div>)}
     {temp && <div class="kaart"><span class="label">Watertemperatuur</span><span class="waarde">{graden(temp.v)}</span><span class="sub">gemeten {metTijd(temp.t)}{tempBij && <> · bij {tempBij}</>}</span></div>}
+    {golf && <div class="kaart"><span class="label">Golfhoogte</span><span class="waarde">{golfMeter(golf.v)}</span><span class="sub">{golf.periode ? `periode ${String(golf.periode).replace(".", ",")} s · ` : ""}{tijd(golf.t)}</span></div>}
+    {wind && <div class="kaart"><span class="label">Wind</span><span class="waarde">{beaufort(wind.snelheid)} Bft{typeof wind.richting === "number" && <> {richtingKort(wind.richting)}</>}</span><span class="sub">{String(wind.snelheid).replace(".", ",")} m/s · {tijd(wind.t)}</span></div>}
     {data.waterstand && <div class="kaart"><span class="label">Waterstand nu</span><span class="waarde klein-waarde">{meter(data.waterstand.v)}</span>
       <span class="sub">{afwijking === null ? `gemeten ${tijd(data.waterstand.t)}` : afwijking === 0 ? "precies volgens voorspelling" : `${Math.abs(afwijking)} cm ${afwijking > 0 ? "hoger" : "lager"} dan voorspeld`}</span></div>}
   </section>
@@ -152,9 +162,29 @@ const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
     </>
   )}
 
+  {(golf || wind) && (
+    <>
+      <h2>Golven en wind bij {loc.naam}</h2>
+      <p>
+        {golf && <>De golfhoogte is nu <strong>{golfMeter(golf.v)}</strong>{golf.periode && <> met een golfperiode van {String(golf.periode).replace(".", ",")} seconden</>}. In de afgelopen 24 uur lag die tussen {golfMeter(golf.min24)} en {golfMeter(golf.max24)}. {golfOordeel(golf.v)} </>}
+        {wind && <>De wind is <strong>{windTekst}</strong> ({String(wind.snelheid).replace(".", ",")} m/s). </>}
+      </p>
+      <p class="muted klein">Gemeten door Rijkswaterstaat{golf && <>; golven bij {golf.meetpuntNaam} ({String(golf.km).replace(".", ",")} km)</>}{wind && <>; wind bij {wind.meetpuntNaam} ({String(wind.km).replace(".", ",")} km)</>}. Golfhoogte is de significante golfhoogte: de gemiddelde hoogte van de hoogste golven. Losse golven kunnen hoger zijn.</p>
+    </>
+  )}
+
+  <h2>Getijden {loc.naam} in je agenda</h2>
+  <p>Zet alle hoog- en laagwaters van {loc.naam} voor de komende drie maanden in je agenda. De agenda werkt zichzelf bij.</p>
+  <p class="agenda">
+    <a class="knop" href={`https://calendar.google.com/calendar/render?cid=${encodeURIComponent(`webcal://${agendaUrl}`)}`}>Google Agenda</a>
+    <a class="knop" href={`webcal://${agendaUrl}`}>iPhone, Mac of Outlook</a>
+  </p>
+  <p class="muted klein">Andere agenda? Abonneer je op dit adres: <code>https://{agendaUrl}</code></p>
+
   <h2>Veelgestelde vragen</h2>
   {faq.map((f) => <details><summary>{f.v}</summary><p>{f.a}</p></details>)}
 
+  <p class="meer muted">Eigen website, camping of strandpaviljoen? <a href="/widget/">Zet de getijden van {loc.naam} gratis op je site</a>.</p>
   <p class="meer muted">Meer weten? <a href="/uitleg/eb-en-vloed">Hoe werken eb en vloed?</a> · <a href="/uitleg/springtij-en-doodtij">Springtij en doodtij</a> · <a href="/uitleg/nap">Wat is NAP?</a>{loc.regioSlug === "wadden" && <> · <a href="/uitleg/wadlopen">Wadlopen</a></>}</p>
 
   {loc.dichtbij?.length > 0 && (
@@ -190,6 +220,9 @@ const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
   .klein { font-size: .85rem; }
   .jaarlink { font-weight: 600; }
   .meer { font-size: .92rem; margin-top: 20px; }
+  .agenda { display: flex; flex-wrap: wrap; gap: 8px; }
+  .knop { display: inline-block; padding: 8px 14px; border-radius: 8px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; }
+  code { font-size: .85em; word-break: break-all; }
   details { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
   summary { cursor: pointer; font-weight: 600; }
   .buren { display: flex; flex-wrap: wrap; gap: 8px 18px; padding: 0; list-style: none; }
