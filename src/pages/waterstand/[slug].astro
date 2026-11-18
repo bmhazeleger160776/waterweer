@@ -113,7 +113,7 @@ const jsonLd = [
 
   {zelfdeRivier.length > 0 && <><h2>Meer waterstanden {["IJssel", "Lek", "Waal", "Maas", "Rijn", "Nederrijn", "Bergsche Maas"].includes(loc.rivier) ? `langs de ${loc.rivier}` : ""}</h2><ul class="buren">{zelfdeRivier.map((l) => <li><a href={`/waterstand/${l.slug}`}>{l.naam}</a></li>)}</ul></>}
   {buren.length > 0 && <><h2>In de buurt</h2><ul class="buren">{buren.map((l) => <li><a href={`/waterstand/${l.slug}`}>{l.naam}{l.rivier && <span class="muted"> · {l.rivier}</span>}</a></li>)}</ul></>}
-  <p class="meer"><a href="/waterstand/">Alle waterstanden per rivier →</a></p>
+  <p class="meer"><a href="/waterstand/" data-umami-event="alle-waterstanden">Alle waterstanden per rivier →</a></p>
 </Base>
 
 <style>

@@ -175,7 +175,7 @@ const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
     </table>
   </div>
   <p class="muted klein">Hoogte in meters ten opzichte van NAP. Wind en luchtdruk kunnen de werkelijke waterstand tientallen centimeters laten afwijken.</p>
-  {jaartabellen.length > 0 && <p class="jaarlink">{jaartabellen.map((j) => <a href={`/getijden/${loc.slug}/${j}`}>Getijtabel {loc.naam} {j} (heel jaar, printbaar) →</a>)}</p>}
+  {jaartabellen.length > 0 && <p class="jaarlink">{jaartabellen.map((j) => <a href={`/getijden/${loc.slug}/${j}`} data-umami-event="jaartabel-openen" data-umami-event-plaats={loc.slug}>Getijtabel {loc.naam} {j} (heel jaar, printbaar) →</a>)}</p>}
 
   {data.waterstand && (
     <>
@@ -210,8 +210,8 @@ const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
   <h2>Getijden {loc.naam} in je agenda</h2>
   <p>Zet alle hoog- en laagwaters van {loc.naam} voor de komende drie maanden in je agenda. De agenda werkt zichzelf bij.</p>
   <p class="agenda">
-    <a class="knop" href={`https://calendar.google.com/calendar/render?cid=${encodeURIComponent(`webcal://${agendaUrl}`)}`}>Google Agenda</a>
-    <a class="knop licht" href={`webcal://${agendaUrl}`}>iPhone, Mac of Outlook</a>
+    <a class="knop" data-umami-event="agenda-toevoegen" data-umami-event-agenda="google" data-umami-event-plaats={loc.slug} href={`https://calendar.google.com/calendar/render?cid=${encodeURIComponent(`webcal://${agendaUrl}`)}`}>Google Agenda</a>
+    <a class="knop licht" data-umami-event="agenda-toevoegen" data-umami-event-agenda="ical" data-umami-event-plaats={loc.slug} href={`webcal://${agendaUrl}`}>iPhone, Mac of Outlook</a>
   </p>
   <p class="muted klein">Andere agenda? Abonneer je op dit adres: <code>https://{agendaUrl}</code></p>
   </section>
@@ -219,7 +219,7 @@ const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
   <h2>Veelgestelde vragen</h2>
   {faq.map((f) => <details><summary>{f.v}</summary><p>{f.a}</p></details>)}
 
-  <p class="meer muted">Eigen website, camping of strandpaviljoen? <a href="/widget/">Zet de getijden van {loc.naam} gratis op je site</a>.</p>
+  <p class="meer muted">Eigen website, camping of strandpaviljoen? <a href="/widget/" data-umami-event="widget-link" data-umami-event-plaats={loc.slug}>Zet de getijden van {loc.naam} gratis op je site</a>.</p>
   <p class="meer muted">Meer weten? <a href="/uitleg/eb-en-vloed">Hoe werken eb en vloed?</a> · <a href="/uitleg/springtij-en-doodtij">Springtij en doodtij</a> · <a href="/uitleg/nap">Wat is NAP?</a>{loc.regioSlug === "wadden" && <> · <a href="/uitleg/wadlopen">Wadlopen</a></>}</p>
 
   {loc.dichtbij?.length > 0 && (

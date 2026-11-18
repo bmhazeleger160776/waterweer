@@ -33,12 +33,12 @@ const regios = [
   </section>
 
   <h2>Getijden per regio</h2>
-  <ul class="regios">
+  <ul class="tegels">
     {regios.map((r) => (
       <li><a href={`/getijden/${r.slug}`}>
         <strong>{r.naam}</strong>
         <span class="muted">{r.tekst}</span>
-        <span class="aantal">{r.aantal} plaatsen →</span>
+        <span class="verder">{r.aantal} plaatsen →</span>
       </a></li>
     ))}
   </ul>
@@ -64,7 +64,9 @@ const regios = [
       const q = document.getElementById("plaats").value.trim().toLowerCase();
       const hit = zoek.find((z) => z.naam.toLowerCase() === q) || zoek.find((z) => z.naam.toLowerCase().startsWith(q));
       ev.preventDefault();
-      location.href = hit && q ? hit.url : "/getijden/";
+      const naar = hit && q ? hit.url : "/getijden/";
+      const meting = window.umami?.track("zoeken", { zoekterm: q.slice(0, 50), gevonden: hit && q ? "ja" : "nee" });
+      Promise.race([meting, new Promise((r) => setTimeout(r, 400))]).finally(() => { location.href = naar; });
     });
   </script>
 </Base>
@@ -78,17 +80,6 @@ const regios = [
   .zoekrij input { flex: 1; min-width: 0; min-height: 48px; padding: 0 14px; font: inherit; border: 0; border-radius: 12px; color: var(--ink); }
   .zoekrij input:focus { outline: 3px solid var(--sun); }
   .zoekrij button { min-height: 48px; padding: 0 18px; font: inherit; font-weight: 700; border: 0; border-radius: 12px; background: var(--sun); color: var(--ink); cursor: pointer; }
-  h2 a { color: var(--ink); text-decoration: none; }
-  h2 a:hover { color: var(--accent); }
-  .regios { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
-  .regios a { display: flex; flex-direction: column; gap: 4px; height: 100%; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; text-decoration: none; color: var(--ink); }
-  .regios a:hover { border-color: var(--accent); }
-  .regios strong { font-family: var(--kop); font-size: 1.15rem; }
-  .regios .muted { font-size: .88rem; }
-  .regios .aantal { margin-top: auto; padding-top: 6px; color: var(--accent); font-weight: 600; font-size: .88rem; }
-  .chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
-  .chips a { display: inline-block; padding: 8px 14px; background: var(--card); border: 1px solid var(--line); border-radius: 999px; text-decoration: none; font-weight: 500; }
-  .chips a:hover { border-color: var(--accent); }
   .uitleg { padding-left: 18px; }
   .uitleg li { margin: 4px 0; }
 </style>

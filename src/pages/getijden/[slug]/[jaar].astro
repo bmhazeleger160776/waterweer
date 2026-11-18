@@ -51,7 +51,7 @@ const jsonLd = [{
   <nav class="kruimel muted geen-print"><a href="/">Home</a> › <a href="/getijden/">Getijden</a> › <a href={`/getijden/${loc.slug}`}>{loc.naam}</a> › {jaar}</nav>
   <h1>Getijtabel {loc.naam} {jaar}</h1>
   <p>Alle hoog- en laagwaters van {jaar} voor {loc.naam}, berekend door Rijkswaterstaat (meetpunt {loc.rws.getij.naam}). Tijden in Nederlandse tijd, hoogtes in centimeters ten opzichte van NAP.{hoogste && <> Het hoogste astronomische hoogwater van het jaar valt op {new Intl.DateTimeFormat("nl-NL", { timeZone: "Europe/Amsterdam", day: "numeric", month: "long" }).format(new Date(hoogste[0]))} ({cm(hoogste[1])} cm).</>}</p>
-  <p class="geen-print acties"><a href={`/getijden/${loc.slug}`}>← Getijden {loc.naam} vandaag</a> · <button type="button" onclick="window.print()">Printen of opslaan als pdf</button></p>
+  <p class="geen-print acties"><a href={`/getijden/${loc.slug}`}>← Getijden {loc.naam} vandaag</a> · <button type="button" onclick="window.print()" data-umami-event="jaartabel-printen" data-umami-event-plaats={loc.slug}>Printen of opslaan als pdf</button></p>
   <nav class="maandnav geen-print">{maanden.map((m) => <a href={`#m${m.key}`}>{KORT[Number(m.key) - 1]}</a>)}</nav>
 
   {maanden.map((m) => (
@@ -75,18 +75,13 @@ const jsonLd = [{
 </Base>
 
 <style>
-  .kruimel { font-size: .85rem; margin-top: 18px; }
-  .kruimel a { color: var(--muted); }
   .acties button { font: inherit; color: var(--accent); background: none; border: 0; padding: 0; text-decoration: underline; cursor: pointer; }
   .maandnav { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 4px; position: sticky; top: 0; background: var(--bg); padding: 8px 0; z-index: 1; }
   .maandnav a { padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; background: var(--card); text-decoration: none; font-size: .9rem; }
-  table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); }
-  th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
-  th { font-size: .75rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  th, td { padding: 8px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
   td:first-child { white-space: nowrap; font-weight: 600; }
   .e { display: inline-block; margin-right: 14px; white-space: nowrap; }
   small { color: var(--muted); }
-  .klein { font-size: .85rem; }
   @media print {
     :global(header.site), :global(footer.site), .geen-print { display: none !important; }
     .maand { break-inside: avoid; }

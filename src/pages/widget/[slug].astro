@@ -25,6 +25,7 @@ const url = `https://waterweer.nl/getijden/${loc.slug}`;
   <meta name="robots" content="noindex" />
   <title>Getijden {loc.naam} – waterweer.nl</title>
   <base target="_blank" />
+  <script is:inline defer src="https://cloud.umami.is/script.js" data-website-id="4cd52cee-8cf8-4952-a4bc-baa2ebedfb28" data-domains="waterweer.nl"></script>
   <style>
     body { margin: 0; font: 14px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #0f2230; background: #fff; }
     .w { border: 1px solid #dbe5ec; border-radius: 10px; padding: 12px 14px; }
@@ -43,7 +44,7 @@ const url = `https://waterweer.nl/getijden/${loc.slug}`;
     <h1>Getijden {loc.naam}</h1>
     <table id="tabel"></table>
     {data.temperatuur && <div class="t">Watertemperatuur: <strong>{graden(data.temperatuur.v)}</strong></div>}
-    <div class="bron"><a href={url}>Meer getijden {loc.naam}</a> · waterweer.nl</div>
+    <div class="bron"><a href={url} data-umami-event="widget-doorklik" data-umami-event-plaats={loc.slug}>Meer getijden {loc.naam}</a> · waterweer.nl</div>
   </div>
   <script define:vars={{ ext }}>
     const tz = { timeZone: "Europe/Amsterdam" };

@@ -32,6 +32,7 @@ const opties = locaties.map((l) => ({ slug: l.slug, naam: l.naam }));
     };
     sel.addEventListener("change", maak);
     document.getElementById("kopieer").addEventListener("click", async () => {
+      window.umami?.track("widget-code-kopieren", { plaats: sel.value });
       try { await navigator.clipboard.writeText(code.value); document.getElementById("gekopieerd").textContent = "Gekopieerd!"; }
       catch { code.select(); }
     });

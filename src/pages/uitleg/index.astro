@@ -1,8 +1,24 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { UITLEG } from "../../lib/uitleg.js";
+const OMS = {
+  "eb-en-vloed": "Waarom het water twee keer per dag stijgt en daalt, en waarom de tijden elke dag opschuiven.",
+  "springtij-en-doodtij": "Hoe de stand van zon en maan het verschil tussen eb en vloed groter of kleiner maakt.",
+  wadlopen: "Wanneer je kunt wadlopen, waarom dat alleen rond laagwater kan en waarom je een gids nodig hebt.",
+  nap: "Wat de waterstanden in m NAP betekenen en waar het Normaal Amsterdams Peil vandaan komt.",
+};
 ---
 <Base title="Uitleg over getij, waterstanden en wadlopen" description="Korte, heldere uitleg over eb en vloed, springtij en doodtij, NAP en wadlopen, met actuele cijfers voor de Nederlandse kust." canonical="/uitleg/">
+  <nav class="kruimel muted"><a href="/">Home</a> › Uitleg</nav>
   <h1>Uitleg over getij en water</h1>
-  <ul>{UITLEG.map((u) => <li><a href={`/uitleg/${u.slug}`}>{u.titel}</a></li>)}</ul>
+  <p>Korte uitleg bij de getijden en waterstanden op deze site, met actuele cijfers van de Nederlandse kust.</p>
+  <ul class="tegels">
+    {UITLEG.map((u) => (
+      <li><a href={`/uitleg/${u.slug}`}>
+        <strong>{u.titel}</strong>
+        <span class="muted">{OMS[u.slug] ?? ""}</span>
+        <span class="verder">Lees verder →</span>
+      </a></li>
+    ))}
+  </ul>
 </Base>

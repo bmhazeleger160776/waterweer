@@ -18,16 +18,9 @@ const jsonLd = [
   <article class="uitleg"><slot /></article>
   {faq.length > 0 && <><h2>Veelgestelde vragen</h2>{faq.map((f) => <details><summary>{f.v}</summary><p>{f.a}</p></details>)}</>}
   <h2>Meer uitleg</h2>
-  <ul>{UITLEG.filter((u) => u.slug !== slug).map((u) => <li><a href={`/uitleg/${u.slug}`}>{u.titel}</a></li>)}</ul>
+  <ul class="chips">{UITLEG.filter((u) => u.slug !== slug).map((u) => <li><a href={`/uitleg/${u.slug}`}>{u.titel}</a></li>)}</ul>
 </Base>
 <style>
-  .kruimel { font-size: .85rem; margin-top: 18px; }
-  .kruimel a { color: var(--muted); }
-  .uitleg :global(table) { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); margin: 8px 0; }
-  .uitleg :global(th), .uitleg :global(td) { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); }
-  .uitleg :global(th) { font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
   .uitleg :global(.klein) { font-size: .85rem; color: var(--muted); }
   .uitleg :global(.kader) { background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; margin: 16px 0; }
-  details { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
-  summary { cursor: pointer; font-weight: 600; }
 </style>
