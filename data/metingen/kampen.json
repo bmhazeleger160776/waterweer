@@ -1,14 +1,14 @@
 {
  "slug": "kampen",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T12:01:27.469Z",
+ "bijgewerkt": "2026-11-18T12:04:22.857Z",
  "fouten": [],
  "waterstand": {
   "meetpunt": "kampen.ijssel",
   "meetpuntNaam": "Kampen, IJssel",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T11:30:00.000Z",
-  "v": -21,
+  "t": "2026-11-18T11:40:00.000Z",
+  "v": -20,
   "reeks": [
    {
     "t": "2026-11-11T12:00:00.000Z",
@@ -680,7 +680,7 @@
    },
    {
     "t": "2026-11-18T11:00:00.000Z",
-    "v": -21
+    "v": -19
    }
   ],
   "verwachting": [

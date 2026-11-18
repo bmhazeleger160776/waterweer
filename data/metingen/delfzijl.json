@@ -1,7 +1,7 @@
 {
  "slug": "delfzijl",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T12:01:06.844Z",
+ "bijgewerkt": "2026-11-18T12:04:02.922Z",
  "fouten": [],
  "getij": {
   "meetpunt": "delfzijl",
@@ -5040,7 +5040,7 @@
   "meetpunt": "eemshaven.waddenzee",
   "meetpuntNaam": "Eemshaven, Waddenzee",
   "eenheid": "°C",
-  "t": "2026-11-18T11:30:00.000Z",
+  "t": "2026-11-18T11:40:00.000Z",
   "v": 7.8
  },
  "waterstand": {

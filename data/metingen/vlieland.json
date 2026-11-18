@@ -1,7 +1,7 @@
 {
  "slug": "vlieland",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T12:01:02.295Z",
+ "bijgewerkt": "2026-11-18T12:03:58.250Z",
  "fouten": [],
  "getij": {
   "meetpunt": "vlieland.haven",
@@ -5059,14 +5059,14 @@
   "v": 173,
   "min24": 55,
   "max24": 213,
-  "periode": 4.2
+  "periode": 4.1
  },
  "wind": {
   "meetpunt": "vlieland.west",
   "meetpuntNaam": "Vlieland, west",
   "km": 11.2,
-  "t": "2026-11-18T11:20:00.000Z",
-  "snelheid": 13,
-  "richting": 300
+  "t": "2026-11-18T11:30:00.000Z",
+  "snelheid": 13.2,
+  "richting": 293
  }
 }

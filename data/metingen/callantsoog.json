@@ -1,7 +1,7 @@
 {
  "slug": "callantsoog",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T12:01:13.733Z",
+ "bijgewerkt": "2026-11-18T12:04:10.330Z",
  "fouten": [
   "golf: geen recente meting"
  ],
@@ -4901,6 +4901,6 @@
   "km": 11.1,
   "t": "2026-11-18T11:30:00.000Z",
   "snelheid": 7.7,
-  "richting": 290
+  "richting": 295
  }
 }
