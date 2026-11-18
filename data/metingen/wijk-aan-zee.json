@@ -1,7 +1,7 @@
 {
  "slug": "wijk-aan-zee",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T21:56:38.359Z",
+ "bijgewerkt": "2026-11-18T22:56:59.033Z",
  "fouten": [],
  "getij": {
   "meetpunt": "ijmuiden.buitenhaven",
@@ -4823,32 +4823,32 @@
   "meetpunt": "velsen.velserkom",
   "meetpuntNaam": "Velserkom",
   "eenheid": "°C",
-  "t": "2026-11-18T21:30:00.000Z",
+  "t": "2026-11-18T22:30:00.000Z",
   "v": 10.6
  },
  "waterstand": {
   "meetpunt": "ijmuiden.noordersluis.west",
   "meetpuntNaam": "IJmuiden, noordersluis, west",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T21:30:00.000Z",
-  "v": 121
+  "t": "2026-11-18T22:40:00.000Z",
+  "v": 102
  },
  "golf": {
   "meetpunt": "ijgeul.1",
   "meetpuntNaam": "IJGeul, 1",
   "km": 5.9,
-  "t": "2026-11-18T21:40:00.000Z",
-  "v": 142,
-  "min24": 135,
+  "t": "2026-11-18T22:40:00.000Z",
+  "v": 138,
+  "min24": 127,
   "max24": 350,
-  "periode": 5.2
+  "periode": 4.8
  },
  "wind": {
   "meetpunt": "ijmuiden.buitenhaven",
   "meetpuntNaam": "IJmuiden, buitenhaven",
   "km": 4.1,
-  "t": "2026-11-18T21:20:00.000Z",
-  "snelheid": 3,
-  "richting": 138
+  "t": "2026-11-18T22:20:00.000Z",
+  "snelheid": 5.1,
+  "richting": 187
  }
 }
