@@ -65,6 +65,8 @@ const jsonLd = [
   <h2>Veelgestelde vragen</h2>
   {faq.map((f) => <details><summary>{f.v}</summary><p>{f.a}</p></details>)}
 
+  <p class="muted">Wat betekent een waterstand in m NAP? Lees <a href="/uitleg/nap">wat NAP is</a>.</p>
+
   {andere.length > 0 && <><h2>Andere waterstanden</h2><ul class="buren">{andere.map((l) => <li><a href={`/waterstand/${l.slug}`}>{l.naam}</a></li>)}</ul></>}
 </Base>
 

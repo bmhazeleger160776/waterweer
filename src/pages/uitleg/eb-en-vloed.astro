@@ -1,0 +1,58 @@
+---
+import Uitleg from "../../layouts/Uitleg.astro";
+import { verschilTabel, getijgolf } from "../../lib/getijstats.js";
+import { tijd } from "../../lib/format.js";
+const tabel = verschilTabel();
+const m = (cm) => (cm / 100).toFixed(1).replace(".", ",") + " m";
+const golf = getijgolf([
+  { code: "vlissingen", naam: "Vlissingen", slug: "vlissingen" },
+  { code: "hoekvanholland", naam: "Hoek van Holland", slug: "hoek-van-holland" },
+  { code: "ijmuiden.buitenhaven", naam: "IJmuiden", slug: "ijmuiden" },
+  { code: "denhelder.marsdiep", naam: "Den Helder", slug: "den-helder" },
+  { code: "harlingen.waddenzee", naam: "Harlingen", slug: "harlingen" },
+  { code: "delfzijl", naam: "Delfzijl", slug: "delfzijl" },
+], tabel[0]?.v.jaar ? `${tabel[0].v.jaar}-03-01` : "");
+const grootste = tabel[0], kleinste = tabel.at(-1);
+const faq = [
+  { v: "Hoe vaak per dag is het hoogwater?", a: "Bijna overal aan de Nederlandse kust twee keer per dag. Omdat een getijperiode ongeveer 12 uur en 25 minuten duurt, valt hoogwater elke dag zo'n 50 minuten later dan de dag ervoor." },
+  { v: "Wat is het verschil tussen vloed en hoogwater?", a: "Vloed is de periode waarin het water stijgt. Hoogwater is het moment waarop het water zijn hoogste stand bereikt. Eb en laagwater zijn het omgekeerde: het dalen van het water en de laagste stand." },
+  grootste && { v: "Waar is het verschil tussen eb en vloed het grootst?", a: `In Zeeland, vooral in de Westerschelde. Bij ${grootste.l.naam} is het gemiddelde verschil ongeveer ${m(grootste.v.cm)}, bij ${kleinste.l.naam} maar ${m(kleinste.v.cm)}.` },
+].filter(Boolean);
+---
+<Uitleg slug="eb-en-vloed" title="Eb en vloed uitgelegd – hoe werkt het getij in Nederland?" description="Waarom is het twee keer per dag eb en vloed, waarom schuift hoogwater elke dag op en waar in Nederland is het getijverschil het grootst? Met actuele cijfers per plaats." faq={faq}>
+  <h1>Hoe werken eb en vloed?</h1>
+  <p>Aan de Nederlandse kust stijgt en daalt de zee twee keer per dag. Als het water stijgt heet dat <strong>vloed</strong>, als het daalt <strong>eb</strong>. Het hoogste punt is <strong>hoogwater</strong>, het laagste <strong>laagwater</strong>.</p>
+
+  <h2>Waardoor ontstaat het getij?</h2>
+  <p>Het getij ontstaat vooral door de aantrekkingskracht van de maan. Aan de kant van de aarde die naar de maan gericht is, wordt het zeewater een beetje naar de maan toe getrokken. Aan de andere kant ontstaat ook een bult water, doordat aarde en maan samen om een gemeenschappelijk zwaartepunt draaien. De aarde draait elke dag onder die twee bulten door. Daardoor krijg je twee keer per dag hoogwater en twee keer laagwater.</p>
+  <p>De zon doet hetzelfde, maar zwakker. Staan zon en maan op één lijn, dan versterken ze elkaar en is het verschil tussen eb en vloed groter: dat heet <a href="/uitleg/springtij-en-doodtij">springtij</a>.</p>
+
+  <h2>Waarom schuift hoogwater elke dag op?</h2>
+  <p>De maan draait zelf ook om de aarde. Daardoor duurt het niet 24 maar ongeveer 24 uur en 50 minuten voordat dezelfde plek weer recht onder de maan staat. Eén getijperiode, van hoogwater tot hoogwater, duurt dus gemiddeld zo'n 12 uur en 25 minuten. Hoogwater valt daarom elke dag ongeveer 50 minuten later dan de dag ervoor.</p>
+
+  <h2>De getijgolf langs de Nederlandse kust</h2>
+  <p>Het getij komt niet overal tegelijk. De getijgolf loopt vanuit het Kanaal langs de kust van zuid naar noord, en daarna door de Waddenzee naar het oosten.</p>
+  {golf.length > 2 && (
+    <div class="kader">
+      <p><strong>Voorbeeld: hoogwater op 1 maart {golf[0].t.slice(0, 4)}</strong></p>
+      <table><tbody>{golf.map((g) => <tr><td><a href={`/getijden/${g.slug}`}>{g.naam}</a></td><td>{tijd(g.t)}</td></tr>)}</tbody></table>
+      <p class="klein">Berekend getij van Rijkswaterstaat, in Nederlandse tijd.</p>
+    </div>
+  )}
+  <p>Hoogwater in Den Helder valt dus uren later dan in Vlissingen, en in Delfzijl nog veel later. Kijk daarom altijd naar de getijden van de plaats waar je bent.</p>
+
+  <h2>Waar is het verschil tussen eb en vloed het grootst?</h2>
+  <p>Het getijverschil verschilt sterk per plaats. In de trechtervormige Westerschelde wordt de getijgolf opgestuwd, waardoor het verschil daar het grootst is. Langs de Hollandse kust is het kleiner, en rond Den Helder het kleinst. In de Waddenzee neemt het richting het oosten weer toe.</p>
+  {tabel.length > 0 && (
+    <>
+      <table>
+        <thead><tr><th>Plaats</th><th>Gemiddeld verschil eb en vloed</th></tr></thead>
+        <tbody>{tabel.map(({ l, v }) => <tr><td><a href={`/getijden/${l.slug}`}>{l.naam}</a></td><td>{m(v.cm)}</td></tr>)}</tbody>
+      </table>
+      <p class="klein">Gemiddelde over {tabel[0].v.jaar}, berekend uit de getijvoorspelling van Rijkswaterstaat (dichtstbijzijnde meetpunt). Bij springtij is het verschil groter, bij doodtij kleiner.</p>
+    </>
+  )}
+
+  <h2>Wind en luchtdruk</h2>
+  <p>Getijtabellen geven het <em>astronomisch</em> getij: wat zon en maan veroorzaken. De echte waterstand kan daarvan afwijken. Bij harde wind uit het noordwesten wordt het water tegen de kust opgestuwd en kan het tientallen centimeters, bij storm zelfs meer dan een meter, hoger komen. Bij aflandige wind en hoge luchtdruk blijft het water juist lager. Op de pagina's per plaats zie je daarom ook de gemeten waterstand.</p>
+</Uitleg>

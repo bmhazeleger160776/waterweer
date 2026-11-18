@@ -1,0 +1,33 @@
+---
+import Base from "./Base.astro";
+import { UITLEG } from "../lib/uitleg.js";
+const { slug, title, description, faq = [] } = Astro.props;
+const pagina = UITLEG.find((u) => u.slug === slug);
+const jsonLd = [
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${Astro.site}` },
+    { "@type": "ListItem", position: 2, name: "Uitleg", item: `${Astro.site}uitleg/` },
+    { "@type": "ListItem", position: 3, name: pagina.kort, item: `${Astro.site}uitleg/${slug}` },
+  ] },
+  { "@context": "https://schema.org", "@type": "Article", headline: pagina.titel, inLanguage: "nl-NL", publisher: { "@type": "Organization", name: "waterweer.nl" } },
+  ...(faq.length ? [{ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.v, acceptedAnswer: { "@type": "Answer", text: f.a } })) }] : []),
+];
+---
+<Base title={title} description={description} canonical={`/uitleg/${slug}`} jsonLd={jsonLd}>
+  <nav class="kruimel muted"><a href="/">Home</a> › <a href="/uitleg/">Uitleg</a> › {pagina.kort}</nav>
+  <article class="uitleg"><slot /></article>
+  {faq.length > 0 && <><h2>Veelgestelde vragen</h2>{faq.map((f) => <details><summary>{f.v}</summary><p>{f.a}</p></details>)}</>}
+  <h2>Meer uitleg</h2>
+  <ul>{UITLEG.filter((u) => u.slug !== slug).map((u) => <li><a href={`/uitleg/${u.slug}`}>{u.titel}</a></li>)}</ul>
+</Base>
+<style>
+  .kruimel { font-size: .85rem; margin-top: 18px; }
+  .kruimel a { color: var(--muted); }
+  .uitleg :global(table) { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); margin: 8px 0; }
+  .uitleg :global(th), .uitleg :global(td) { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); }
+  .uitleg :global(th) { font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  .uitleg :global(.klein) { font-size: .85rem; color: var(--muted); }
+  .uitleg :global(.kader) { background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; margin: 16px 0; }
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  summary { cursor: pointer; font-weight: 600; }
+</style>

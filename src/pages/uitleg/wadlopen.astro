@@ -1,0 +1,28 @@
+---
+import Uitleg from "../../layouts/Uitleg.astro";
+const plaatsen = [["lauwersoog", "Lauwersoog"], ["schiermonnikoog", "Schiermonnikoog"], ["ameland", "Ameland"], ["harlingen", "Harlingen"], ["delfzijl", "Delfzijl"], ["terschelling", "Terschelling"]];
+const faq = [
+  { v: "Mag je zonder gids wadlopen?", a: "Doe het niet. Het water komt sneller terug dan je denkt, geulen lopen vol en bij mist raak je snel de weg kwijt. Bovendien is de Waddenzee een beschermd natuurgebied waar je niet overal zomaar mag lopen. Ga met een erkende wadloopgids of wadloopcentrum." },
+  { v: "Wanneer is het wadloopseizoen?", a: "De meeste wadlooptochten worden in het voorjaar en de zomer georganiseerd. Wadloopcentra plannen de tochten op dagen waarop het getij en het weer goed uitkomen." },
+  { v: "Hoe laat begint een wadlooptocht?", a: "Dat hangt af van het getij. Tochten beginnen meestal een paar uur voor laagwater, zodat je over de drooggevallen platen loopt terwijl het water nog zakt. De wadloopgids bepaalt de exacte tijd." },
+];
+---
+<Uitleg slug="wadlopen" title="Wadlopen en het getij – wanneer kan het en waar let je op?" description="Wadlopen kan alleen rond laagwater. Lees hoe het getij een wadlooptocht bepaalt, waarom je altijd met een gids gaat en waar je de getijden voor het Waddengebied vindt." faq={faq}>
+  <h1>Wadlopen: wanneer en hoe met het getij</h1>
+  <p>Bij laagwater valt een groot deel van de Waddenzee droog. Dan kun je over de wadplaten lopen, soms zelfs van de vaste wal naar een Waddeneiland. Dat heet wadlopen. Het getij bepaalt alles: wanneer je vertrekt, welke route kan en hoe lang je hebt.</p>
+
+  <h2>Ga altijd met een gids</h2>
+  <p>Het wad lijkt vlak en veilig, maar het water komt bij opkomend tij snel terug. Geulen die eerst droog lagen, lopen binnen korte tijd vol, en bij mist zie je de kust niet meer. Wadloopgidsen kennen de routes, de geulen en het getij. Ga daarom altijd mee met een erkende wadloopgids of een wadloopcentrum. Bekende vertrekpunten liggen langs de Friese en Groningse kust.</p>
+
+  <h2>Hoe het getij een tocht bepaalt</h2>
+  <ul>
+    <li><strong>Vertrek voor laagwater.</strong> Een tocht begint meestal een paar uur voor laagwater, terwijl het water nog zakt.</li>
+    <li><strong>Springtij of doodtij.</strong> Bij <a href="/uitleg/springtij-en-doodtij">springtij</a> valt er meer droog, maar komt het water ook harder terug.</li>
+    <li><strong>Wind.</strong> Bij harde westenwind blijft er meer water op het wad staan dan de getijtabel aangeeft. Daarom gaat een tocht soms op het laatste moment niet door.</li>
+  </ul>
+
+  <h2>Getijden in het Waddengebied</h2>
+  <p>Het getij verschilt flink binnen de Waddenzee: hoe verder naar het oosten, hoe later het laagwater en hoe groter het verschil tussen eb en vloed. Bekijk daarom de getijden van de plaats waar je vertrekt.</p>
+  <ul>{plaatsen.map(([s, n]) => <li><a href={`/getijden/${s}`}>Getijden {n}</a></li>)}</ul>
+  <p>Of bekijk het <a href="/getijden/wadden">overzicht van de Waddeneilanden en Waddenzee</a>.</p>
+</Uitleg>

@@ -1,0 +1,8 @@
+---
+import Base from "../../layouts/Base.astro";
+import { UITLEG } from "../../lib/uitleg.js";
+---
+<Base title="Uitleg over getij, waterstanden en wadlopen" description="Korte, heldere uitleg over eb en vloed, springtij en doodtij, NAP en wadlopen, met actuele cijfers voor de Nederlandse kust." canonical="/uitleg/">
+  <h1>Uitleg over getij en water</h1>
+  <ul>{UITLEG.map((u) => <li><a href={`/uitleg/${u.slug}`}>{u.titel}</a></li>)}</ul>
+</Base>

@@ -1,0 +1,22 @@
+---
+import Uitleg from "../../layouts/Uitleg.astro";
+const faq = [
+  { v: "Wat betekent NAP?", a: "NAP staat voor Normaal Amsterdams Peil. Het is het nulpunt waarmee in Nederland hoogtes en waterstanden worden gemeten." },
+  { v: "Wat betekent +1,50 m NAP?", a: "Dat het water 1 meter en 50 centimeter boven het NAP-nulpunt staat. Bij −1,20 m NAP staat het water 1 meter en 20 centimeter onder dat nulpunt." },
+  { v: "Is NAP hetzelfde als zeeniveau?", a: "Niet precies. NAP ligt ongeveer op het gemiddelde zeeniveau, maar het is een vaste afspraak: het nulpunt beweegt niet mee als de zeespiegel stijgt." },
+];
+---
+<Uitleg slug="nap" title="Wat is NAP? Normaal Amsterdams Peil uitgelegd" description="Wat betekent NAP en hoe lees je een waterstand als +1,50 m NAP? Korte uitleg over het Normaal Amsterdams Peil, het nulpunt voor alle Nederlandse waterstanden." faq={faq}>
+  <h1>Wat is NAP?</h1>
+  <p><strong>NAP</strong> staat voor <strong>Normaal Amsterdams Peil</strong>. Het is het nulpunt waarmee in Nederland hoogtes en waterstanden worden gemeten. Alle getijden en waterstanden op deze site staan in meters ten opzichte van NAP.</p>
+
+  <h2>Hoe lees je een waterstand?</h2>
+  <p>Een waterstand van <strong>+1,50 m NAP</strong> betekent dat het water anderhalve meter boven het nulpunt staat. Bij <strong>−1,20 m NAP</strong> staat het water 1,20 meter eronder. Aan de kust schommelt de waterstand door <a href="/uitleg/eb-en-vloed">eb en vloed</a> elke dag rond NAP. Op de rivieren ligt het water juist ver boven NAP: bij Lobith staat de Rijn meestal enkele meters boven het nulpunt. Zie de <a href="/waterstand/">waterstanden van de rivieren</a>.</p>
+
+  <h2>Waar komt NAP vandaan?</h2>
+  <p>NAP gaat terug op het Amsterdams Peil uit de 17e eeuw. Amsterdam liet toen de gemiddelde hoogwaterstand van het IJ vastleggen, als maat voor de hoogte van dijken. Later werd dit peil over het hele land doorgetrokken en kreeg het de naam Normaal Amsterdams Peil. Het nulpunt ligt ongeveer op het gemiddelde zeeniveau.</p>
+  <p>Ook buiten Nederland wordt NAP gebruikt als basis voor hoogtemetingen in Europa.</p>
+
+  <h2>NAP in het dagelijks leven</h2>
+  <p>Een groot deel van Nederland ligt onder NAP. Het laagste punt van het land ligt bijna 7 meter onder NAP, bij Nieuwerkerk aan den IJssel. In de NAP-passage in het Amsterdamse stadhuis kun je zien waar het nulpunt ligt en hoe hoog het water bij de watersnoodramp van 1953 kwam.</p>
+</Uitleg>

@@ -1,0 +1,40 @@
+---
+import Uitleg from "../../layouts/Uitleg.astro";
+import { springDood, gemiddeldVerschil } from "../../lib/getijstats.js";
+const vandaag = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Amsterdam" }).format(new Date());
+const lijst = springDood("vlissingen", vandaag, 8);
+const fmt = (k) => new Intl.DateTimeFormat("nl-NL", { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(k + "T12:00:00Z"));
+const m = (cm) => (cm / 100).toFixed(1).replace(".", ",") + " m";
+const dichtbij = lijst.length && (Date.parse(lijst[0].k) - Date.parse(vandaag)) < 16 * 864e5;
+const volgendeSpring = dichtbij ? lijst.find((x) => x.soort === "springtij") : null;
+const kop = dichtbij ? "Eerstvolgende springtij en doodtij" : `Springtij en doodtij begin ${lijst[0]?.k.slice(0, 4)}`;
+const faq = [
+  volgendeSpring && { v: "Wanneer is het weer springtij?", a: `Het eerstvolgende springtij in Vlissingen valt rond ${fmt(volgendeSpring.k)}. Langs de rest van de kust valt springtij rond dezelfde dagen.` },
+  { v: "Hoe vaak is het springtij?", a: "Ongeveer elke twee weken: rond volle maan en rond nieuwe maan. Daartussen, rond eerste en laatste kwartier, is het doodtij." },
+  { v: "Is springtij gevaarlijk?", a: "Springtij alleen niet: het hoogwater is dan hooguit enkele tientallen centimeters hoger dan normaal. Gevaarlijk wordt het als springtij samenvalt met een zware storm uit het noordwesten. Dat gebeurde bij de watersnoodramp van 1953." },
+].filter(Boolean);
+---
+<Uitleg slug="springtij-en-doodtij" title="Springtij en doodtij – wat is het en wanneer is het?" description="Wat is springtij, wat is doodtij en wanneer is het volgende springtij? Uitleg over de invloed van zon en maan, met de eerstvolgende data voor de Nederlandse kust." faq={faq}>
+  <h1>Wat is springtij en doodtij?</h1>
+  <p><strong>Springtij</strong> is het getij met een extra groot verschil tussen eb en vloed: het hoogwater is hoger en het laagwater lager dan normaal. Bij <strong>doodtij</strong> is het verschil juist klein. Ze wisselen elkaar ongeveer elke week af.</p>
+
+  <h2>Hoe ontstaat springtij?</h2>
+  <p>Zowel de maan als de zon trekken aan het zeewater. Bij nieuwe maan en bij volle maan staan zon, maan en aarde ongeveer op één lijn. De twee krachten versterken elkaar en het getij wordt groter: springtij. Bij eerste en laatste kwartier staan zon en maan haaks op elkaar en werken ze elkaar deels tegen: doodtij.</p>
+  <p>Aan de Nederlandse kust valt springtij niet precies op de dag van volle of nieuwe maan, maar enkele dagen later. De getijgolf heeft tijd nodig om vanuit de oceaan onze kust te bereiken.</p>
+  <p>Springtij heeft niets met de lente te maken. De naam komt van "springen" in de betekenis van opspringen of hoog oplopen.</p>
+
+  {lijst.length > 0 && (
+    <>
+      <h2>{kop}</h2>
+      <table>
+        <thead><tr><th>Datum</th><th>Soort</th><th>Verschil die dag in Vlissingen</th></tr></thead>
+        <tbody>{lijst.map((x) => <tr><td>{fmt(x.k)}</td><td>{x.soort}</td><td>{m(x.r)}</td></tr>)}</tbody>
+      </table>
+      <p class="klein">Dagen met het grootste en kleinste verschil tussen hoog- en laagwater in Vlissingen, berekend uit de getijvoorspelling van Rijkswaterstaat. Elders langs de kust valt springtij rond dezelfde dagen, maar is het verschil anders. Zie de <a href="/getijden/vlissingen">getijden van Vlissingen</a> of <a href="/getijden/">kies een andere plaats</a>.</p>
+    </>
+  )}
+
+  <h2>Springtij en storm</h2>
+  <p>Op zichzelf is springtij niet gevaarlijk. Maar valt springtij samen met een zware noordwesterstorm, dan kan het water uitzonderlijk hoog komen. Dat gebeurde in de nacht van 31 januari op 1 februari 1953, bij de watersnoodramp in Zeeland en Zuid-Holland. Daarom zijn de Deltawerken en de stormvloedkeringen gebouwd.</p>
+  <p>Voor strandwandelaars, vissers en wadlopers is springtij wel belangrijk om te weten: bij springtij komt het water verder het strand op en valt er bij laagwater meer droog.</p>
+</Uitleg>
