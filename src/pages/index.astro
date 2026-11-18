@@ -4,19 +4,91 @@ import path from "node:path";
 import Base from "../layouts/Base.astro";
 const root = process.cwd();
 const alle = JSON.parse(fs.readFileSync(path.join(root, "data/locaties.json"), "utf8"));
-const rivieren = alle.filter((l) => !l.rws?.getij && l.rws?.waterstand && fs.existsSync(path.join(root, `data/metingen/${l.slug}.json`)));
-const locaties = JSON.parse(fs.readFileSync(path.join(root, "data/locaties.json"), "utf8"))
-  .filter((l) => l.rws?.getij && fs.existsSync(path.join(root, `data/metingen/${l.slug}.json`)));
+const heeftData = (l) => fs.existsSync(path.join(root, `data/metingen/${l.slug}.json`));
+const rivieren = alle.filter((l) => !l.rws?.getij && l.rws?.waterstand && heeftData(l));
+const locaties = alle.filter((l) => l.rws?.getij && heeftData(l));
+const zoek = [
+  ...locaties.map((l) => ({ naam: `${l.naam}`, url: `/getijden/${l.slug}` })),
+  ...rivieren.map((l) => ({ naam: `${l.naam} (waterstand)`, url: `/waterstand/${l.slug}` })),
+];
+const regios = [
+  { slug: "zeeland", naam: "Zeeland", tekst: "Grootste getijverschil van Nederland" },
+  { slug: "zuid-holland", naam: "Zuid-Holland", tekst: "Scheveningen, Hoek van Holland en meer" },
+  { slug: "noord-holland", naam: "Noord-Holland", tekst: "Van IJmuiden tot Den Helder" },
+  { slug: "wadden", naam: "Wadden", tekst: "Eilanden, Waddenzee en wadlopen" },
+].map((r) => ({ ...r, aantal: locaties.filter((l) => l.regioSlug === r.slug).length }));
 ---
 <Base title="Waterweer – getijden, watertemperatuur en waterstanden in Nederland" description="Actuele getijden, eb en vloed, watertemperatuur en waterstanden voor de Nederlandse kust, meren en rivieren. Elk uur bijgewerkt met data van Rijkswaterstaat." canonical="/">
-  <h1>Getijden en watertemperatuur in Nederland</h1>
-  <p>Actuele getijden, watertemperatuur en waterstanden per kustplaats, meer en rivier. Elk uur bijgewerkt met open data van Rijkswaterstaat.</p>
+  <section class="intro">
+    <h1>Getijden en watertemperatuur in Nederland</h1>
+    <p>Eb, vloed, watertemperatuur, golven en waterstanden per kustplaats, meer en rivier. Elk uur bijgewerkt met open data van Rijkswaterstaat.</p>
+    <form class="zoek" action="/getijden/" method="get" role="search" id="zoekform">
+      <label for="plaats">Zoek een plaats</label>
+      <div class="zoekrij">
+        <input id="plaats" name="q" list="plaatsen" placeholder="Bijv. Texel of Vlissingen" autocomplete="off" />
+        <button type="submit">Bekijk</button>
+      </div>
+      <datalist id="plaatsen">{zoek.map((z) => <option value={z.naam} />)}</datalist>
+    </form>
+  </section>
+
   <h2>Getijden per regio</h2>
-  <ul><li><a href="/getijden/zeeland">Zeeland</a></li><li><a href="/getijden/zuid-holland">Zuid-Holland</a></li><li><a href="/getijden/noord-holland">Noord-Holland</a></li><li><a href="/getijden/wadden">Waddeneilanden en Waddenzee</a></li></ul>
-  {rivieren.length > 0 && <><h2><a href="/waterstand/">Waterstanden rivieren en IJsselmeer</a></h2>
-  <ul>{rivieren.map((l) => <li><a href={`/waterstand/${l.slug}`}>Waterstand {l.naam}</a></li>)}</ul></>}
-  <h2><a href="/uitleg/">Uitleg</a></h2>
-  <ul><li><a href="/uitleg/eb-en-vloed">Hoe werken eb en vloed?</a></li><li><a href="/uitleg/springtij-en-doodtij">Wat is springtij en doodtij?</a></li><li><a href="/uitleg/wadlopen">Wadlopen en het getij</a></li><li><a href="/uitleg/nap">Wat is NAP?</a></li></ul>
+  <ul class="regios">
+    {regios.map((r) => (
+      <li><a href={`/getijden/${r.slug}`}>
+        <strong>{r.naam}</strong>
+        <span class="muted">{r.tekst}</span>
+        <span class="aantal">{r.aantal} plaatsen →</span>
+      </a></li>
+    ))}
+  </ul>
+
   <h2>Getijden per plaats</h2>
-  <ul>{locaties.map((l) => <li><a href={`/getijden/${l.slug}`}>Getijden {l.naam}</a> <span class="muted">({l.regio})</span></li>)}</ul>
+  <ul class="chips">{locaties.map((l) => <li><a href={`/getijden/${l.slug}`}>{l.naam}</a></li>)}</ul>
+
+  {rivieren.length > 0 && <>
+    <h2><a href="/waterstand/">Waterstanden rivieren en IJsselmeer</a></h2>
+    <ul class="chips">{rivieren.map((l) => <li><a href={`/waterstand/${l.slug}`}>{l.naam}</a></li>)}</ul>
+  </>}
+
+  <h2><a href="/uitleg/">Uitleg</a></h2>
+  <ul class="uitleg">
+    <li><a href="/uitleg/eb-en-vloed">Hoe werken eb en vloed?</a></li>
+    <li><a href="/uitleg/springtij-en-doodtij">Wat is springtij en doodtij?</a></li>
+    <li><a href="/uitleg/wadlopen">Wadlopen en het getij</a></li>
+    <li><a href="/uitleg/nap">Wat is NAP?</a></li>
+  </ul>
+
+  <script is:inline define:vars={{ zoek }}>
+    document.getElementById("zoekform").addEventListener("submit", (ev) => {
+      const q = document.getElementById("plaats").value.trim().toLowerCase();
+      const hit = zoek.find((z) => z.naam.toLowerCase() === q) || zoek.find((z) => z.naam.toLowerCase().startsWith(q));
+      ev.preventDefault();
+      location.href = hit && q ? hit.url : "/getijden/";
+    });
+  </script>
 </Base>
+
+<style>
+  .intro { background: var(--accent); color: #fff; border-radius: 22px; padding: 28px 24px 26px; margin-top: 22px; }
+  .intro h1 { margin: 0 0 10px; }
+  .intro p { margin: 0 0 20px; color: var(--on-accent); max-width: 560px; }
+  .zoek label { display: block; font-weight: 600; font-size: .9rem; margin-bottom: 6px; }
+  .zoekrij { display: flex; gap: 8px; max-width: 520px; }
+  .zoekrij input { flex: 1; min-width: 0; min-height: 48px; padding: 0 14px; font: inherit; border: 0; border-radius: 12px; color: var(--ink); }
+  .zoekrij input:focus { outline: 3px solid var(--sun); }
+  .zoekrij button { min-height: 48px; padding: 0 18px; font: inherit; font-weight: 700; border: 0; border-radius: 12px; background: var(--sun); color: var(--ink); cursor: pointer; }
+  h2 a { color: var(--ink); text-decoration: none; }
+  h2 a:hover { color: var(--accent); }
+  .regios { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+  .regios a { display: flex; flex-direction: column; gap: 4px; height: 100%; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; text-decoration: none; color: var(--ink); }
+  .regios a:hover { border-color: var(--accent); }
+  .regios strong { font-family: var(--kop); font-size: 1.15rem; }
+  .regios .muted { font-size: .88rem; }
+  .regios .aantal { margin-top: auto; padding-top: 6px; color: var(--accent); font-weight: 600; font-size: .88rem; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
+  .chips a { display: inline-block; padding: 8px 14px; background: var(--card); border: 1px solid var(--line); border-radius: 999px; text-decoration: none; font-weight: 500; }
+  .chips a:hover { border-color: var(--accent); }
+  .uitleg { padding-left: 18px; }
+  .uitleg li { margin: 4px 0; }
+</style>

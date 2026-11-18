@@ -124,16 +124,36 @@ const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
   </p>
   <p class="muted bijgewerkt">Bijgewerkt {dag(nu)} om {tijd(nu)} · bron: Rijkswaterstaat, meetpunt {loc.rws.getij?.naam ?? data.getij?.meetpunt}</p>
 
-  <section class="kaarten">
-    {eerste.map((e) => <div class="kaart"><span class="label">Volgend {e.soort === "HW" ? "hoogwater" : "laagwater"}</span><span class="waarde">{tijd(e.t)}</span><span class="sub">{dagKort(e.t)} · {meter(e.v)}</span></div>)}
-    {temp && <div class="kaart"><span class="label">Watertemperatuur</span><span class="waarde">{graden(temp.v)}</span><span class="sub">gemeten {metTijd(temp.t)}{tempBij && <> · bij {tempBij}</>}</span></div>}
-    {golf && <div class="kaart"><span class="label">Golfhoogte</span><span class="waarde">{golfMeter(golf.v)}</span><span class="sub">{golf.periode ? `periode ${String(golf.periode).replace(".", ",")} s · ` : ""}{tijd(golf.t)}</span></div>}
-    {wind && <div class="kaart"><span class="label">Wind</span><span class="waarde">{beaufort(wind.snelheid)} Bft{typeof wind.richting === "number" && <> {richtingKort(wind.richting)}</>}</span><span class="sub">{String(wind.snelheid).replace(".", ",")} m/s · {tijd(wind.t)}</span></div>}
-    {data.waterstand && <div class="kaart"><span class="label">Waterstand nu</span><span class="waarde klein-waarde">{meter(data.waterstand.v)}</span>
-      <span class="sub">{afwijking === null ? `gemeten ${tijd(data.waterstand.t)}` : afwijking === 0 ? "precies volgens voorspelling" : `${Math.abs(afwijking)} cm ${afwijking > 0 ? "hoger" : "lager"} dan voorspeld`}</span></div>}
+  <section class="hero" aria-label={`Getij ${loc.naam} nu`}>
+    {eerste[0] && (
+      <>
+        <p class="status">Nu: {eerste[0].soort === "HW" ? "opkomend water" : "afgaand water"}</p>
+        <div class="hero-top">
+          <div>
+            <p class="hlabel">Volgend {eerste[0].soort === "HW" ? "hoogwater" : "laagwater"}</p>
+            <p class="hgroot">{tijd(eerste[0].t)}</p>
+            <p class="hsub">{datumKey(eerste[0].t) !== vandaagKey && <span>{dagKort(eerste[0].t)} · </span>}<span>{meter(eerste[0].v)}</span></p>
+          </div>
+          {eerste[1] && (
+            <div class="rechts">
+              <p class="hlabel">Daarna {eerste[1].soort === "HW" ? "hoogwater" : "laagwater"}</p>
+              <p class="hmidden">{tijd(eerste[1].t)}</p>
+              <p class="hsub">{datumKey(eerste[1].t) !== vandaagKey && <span>{dagKort(eerste[1].t)} · </span>}<span>{meter(eerste[1].v)}</span></p>
+            </div>
+          )}
+        </div>
+      </>
+    )}
+    {data.getij && <GetijGrafiek hero reeks={data.getij.reeks} extremen={ext} nu={nu} />}
   </section>
 
-  {data.getij && <GetijGrafiek reeks={data.getij.reeks} extremen={ext} nu={nu} />}
+  <section class="kaarten">
+    {temp && <div class="kaart"><span class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4a2 2 0 0 1 4 0v10a4 4 0 1 1-4 0z"/><path d="M12 9v7"/></svg>Watertemperatuur</span><span class="waarde">{graden(temp.v)}</span><span class="sub">gemeten {metTijd(temp.t)}{tempBij && <> · bij {tempBij}</>}</span></div>}
+    {golf && <div class="kaart"><span class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 15c2.5-3 5-3 7.5 0s5 3 7.5 0 3.5-2 5-1"/><path d="M2 9c2.5-3 5-3 7.5 0s5 3 7.5 0 3.5-2 5-1"/></svg>Golfhoogte</span><span class="waarde">{golfMeter(golf.v)}</span><span class="sub">{golf.periode ? `periode ${String(golf.periode).replace(".", ",")} s · ` : ""}{tijd(golf.t)}</span></div>}
+    {wind && <div class="kaart"><span class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h11a3 3 0 1 0-3-3"/><path d="M3 12h16a3 3 0 1 1-3 3"/><path d="M3 16h7"/></svg>Wind</span><span class="waarde">{beaufort(wind.snelheid)} Bft{typeof wind.richting === "number" && <> {richtingKort(wind.richting)}</>}</span><span class="sub">{String(wind.snelheid).replace(".", ",")} m/s · {tijd(wind.t)}</span></div>}
+    {data.waterstand && <div class="kaart"><span class="label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18"/><path d="M8 7h4M8 11h4M8 15h4"/><path d="M3 18c3-2 6-2 9 0s6 2 9 0"/></svg>Waterstand nu</span><span class="waarde">{meter(data.waterstand.v)}</span>
+      <span class="sub">{afwijking === null ? `gemeten ${tijd(data.waterstand.t)}` : afwijking === 0 ? "precies volgens voorspelling" : `${Math.abs(afwijking)} cm ${afwijking > 0 ? "hoger" : "lager"} dan voorspeld`}</span></div>}
+  </section>
 
   <h2>Getijtabel {loc.naam} – komende 7 dagen</h2>
   <div class="tabelwrap">
@@ -143,14 +163,14 @@ const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
         {dagen.map((d) => (
           <tr>
             <td>{dagKort(d.iso)}</td>
-            <td>{d.HW.map((e) => <div>{tijd(e.t)} <span class="muted">{meter(e.v)}</span></div>)}</td>
-            <td>{d.LW.map((e) => <div>{tijd(e.t)} <span class="muted">{meter(e.v)}</span></div>)}</td>
+            <td>{d.HW.map((e) => <div class="ext"><strong>{tijd(e.t)}</strong> <span class="muted">{meter(e.v).replace(" NAP", "")}</span></div>)}</td>
+            <td>{d.LW.map((e) => <div class="ext"><strong>{tijd(e.t)}</strong> <span class="muted">{meter(e.v).replace(" NAP", "")}</span></div>)}</td>
           </tr>
         ))}
       </tbody>
     </table>
   </div>
-  <p class="muted klein">Hoogte ten opzichte van NAP. Wind en luchtdruk kunnen de werkelijke waterstand tientallen centimeters laten afwijken.</p>
+  <p class="muted klein">Hoogte in meters ten opzichte van NAP. Wind en luchtdruk kunnen de werkelijke waterstand tientallen centimeters laten afwijken.</p>
   {jaartabellen.length > 0 && <p class="jaarlink">{jaartabellen.map((j) => <a href={`/getijden/${loc.slug}/${j}`}>Getijtabel {loc.naam} {j} (heel jaar, printbaar) →</a>)}</p>}
 
   {loc.intro && <><h2>Over het water bij {loc.naam}</h2><p>{loc.intro}</p></>}
@@ -173,13 +193,15 @@ const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
     </>
   )}
 
+  <section class="agendablok">
   <h2>Getijden {loc.naam} in je agenda</h2>
   <p>Zet alle hoog- en laagwaters van {loc.naam} voor de komende drie maanden in je agenda. De agenda werkt zichzelf bij.</p>
   <p class="agenda">
     <a class="knop" href={`https://calendar.google.com/calendar/render?cid=${encodeURIComponent(`webcal://${agendaUrl}`)}`}>Google Agenda</a>
-    <a class="knop" href={`webcal://${agendaUrl}`}>iPhone, Mac of Outlook</a>
+    <a class="knop licht" href={`webcal://${agendaUrl}`}>iPhone, Mac of Outlook</a>
   </p>
   <p class="muted klein">Andere agenda? Abonneer je op dit adres: <code>https://{agendaUrl}</code></p>
+  </section>
 
   <h2>Veelgestelde vragen</h2>
   {faq.map((f) => <details><summary>{f.v}</summary><p>{f.a}</p></details>)}
@@ -203,27 +225,60 @@ const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
   .kruimel { font-size: .85rem; margin-top: 18px; }
   .kruimel a { color: var(--muted); }
   .melding { background: var(--warn-soft); color: var(--warn); border: 1px solid #f0d49c; border-radius: 10px; padding: 10px 14px; margin: 16px 0 0; font-size: .92rem; }
-  .lead { font-size: 1.1rem; margin: 4px 0; }
-  .bijgewerkt { font-size: .85rem; margin: 0 0 18px; }
-  .kaarten { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 16px; }
-  .kaart { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; }
-  .kaart .label { font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
-  .kaart .waarde { font-size: clamp(1.4rem, 5vw, 1.7rem); font-weight: 700; line-height: 1.2; margin: 4px 0 2px; }
-  .kaart .klein-waarde { font-size: 1.35rem; padding: 4px 0 3px; }
-  .kaart .sub { font-size: .85rem; color: var(--muted); }
-  .tabelwrap { overflow-x: auto; }
-  table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
-  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
-  th { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); background: #fbfdfe; }
+  .lead { font-size: 1.05rem; margin: 4px 0; }
+  .bijgewerkt { font-size: .85rem; margin: 0 0 16px; }
+
+  .hero { background: var(--accent); color: #fff; border-radius: 20px; padding: 20px 20px 14px; margin-bottom: 14px; }
+  .hero p { margin: 0; }
+  .status { font-size: .78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--on-accent); margin-bottom: 8px !important; }
+  .hero-top { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 10px; }
+  .hlabel { font-size: .85rem; color: var(--on-accent); }
+  .hgroot { font-family: var(--kop); font-size: clamp(2.6rem, 11vw, 3.4rem); font-weight: 700; line-height: 1; margin: 4px 0 4px !important; font-variant-numeric: tabular-nums; }
+  .hmidden { font-size: 1.5rem; font-weight: 650; line-height: 1.1; margin: 4px 0 4px !important; font-variant-numeric: tabular-nums; }
+  .hsub { font-size: .88rem; color: var(--on-accent); }
+  .rechts { text-align: right; }
+  .hsub span { white-space: nowrap; }
+  .ext { white-space: nowrap; }
+  .ext strong { font-weight: 600; }
+  .ext .muted { font-size: .85em; }
+  @media (max-width: 520px) {
+    th, td { padding: 9px 8px; font-size: .9rem; }
+    th:first-child, td:first-child { padding-left: 12px; }
+    .hsub span { display: block; }
+    .hmidden { font-size: 1.3rem; }
+  }
+
+  .kaarten { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 8px; }
+  @media (max-width: 520px) { .kaarten { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .kaart { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; display: flex; flex-direction: column; min-width: 0; }
+  .kaart .label { display: flex; align-items: center; gap: 6px; font-size: .8rem; color: var(--muted); font-weight: 500; }
+  .kaart .label svg { width: 16px; height: 16px; flex: none; fill: none; stroke: var(--accent); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .kaart .waarde { font-size: clamp(1.35rem, 5vw, 1.65rem); font-weight: 700; line-height: 1.2; margin: 6px 0 2px; font-variant-numeric: tabular-nums; }
+  .kaart .sub { font-size: .82rem; color: var(--muted); }
+
+  .tabelwrap { overflow-x: auto; border-radius: var(--radius); }
+  table { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  th, td { text-align: left; padding: 11px 16px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: .8rem; font-weight: 600; color: var(--muted); background: #f8fbfd; }
   td:first-child { white-space: nowrap; font-weight: 600; }
+  tbody tr:nth-child(1) td { background: var(--accent-soft); }
   tr:last-child td { border-bottom: 0; }
   .klein { font-size: .85rem; }
-  .jaarlink { font-weight: 600; }
+  .jaarlink a { display: inline-block; font-weight: 600; text-decoration: none; padding: 6px 0; }
   .meer { font-size: .92rem; margin-top: 20px; }
+  .agendablok { background: var(--accent-soft); border-radius: 18px; padding: 4px 20px 16px; margin-top: 40px; }
+  .agendablok h2 { margin-top: 18px; }
   .agenda { display: flex; flex-wrap: wrap; gap: 8px; }
-  .knop { display: inline-block; padding: 8px 14px; border-radius: 8px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; }
+  .knop { display: inline-flex; align-items: center; min-height: 44px; padding: 10px 16px; border-radius: 10px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; }
+  .knop:hover { background: var(--accent-dark); color: #fff; }
+  .knop.licht { background: #fff; color: var(--accent); border: 1px solid #b9d7ea; }
+  .knop.licht:hover { background: #fff; color: var(--accent-dark); }
   code { font-size: .85em; word-break: break-all; }
-  details { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 8px; }
   summary { cursor: pointer; font-weight: 600; }
-  .buren { display: flex; flex-wrap: wrap; gap: 8px 18px; padding: 0; list-style: none; }
+  details p { margin: 8px 0 2px; }
+  .buren { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; }
+  .buren li a { display: inline-block; padding: 8px 14px; background: var(--card); border: 1px solid var(--line); border-radius: 999px; text-decoration: none; font-weight: 500; }
+  .buren li a:hover { border-color: var(--accent); }
+  .buren li.muted { padding: 8px 4px; }
 </style>

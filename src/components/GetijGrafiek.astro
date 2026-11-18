@@ -1,7 +1,7 @@
 ---
 // Getijcurve voor de komende 36 uur, met hoog-/laagwater gemarkeerd en een lijn voor "nu".
 import { tijd, meter } from "../lib/format.js";
-const { reeks, extremen, nu } = Astro.props;
+const { reeks, extremen, nu, hero = false } = Astro.props;
 const t0 = Date.parse(nu) - 3 * 3600e3;
 const t1 = t0 + 36 * 3600e3;
 const punten = reeks.filter((p) => { const t = Date.parse(p.t); return t >= t0 && t <= t1; });
@@ -23,7 +23,7 @@ for (let t = eerste.getTime() + 3600e3; t < t1; t += 3600e3) {
 }
 const xNu = X(nu);
 ---
-<figure class="grafiek">
+<figure class:list={["grafiek", { hero }]}>
   <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Getijcurve voor de komende 36 uur">
     {ticks.map((v) => (
       <g>
@@ -65,4 +65,15 @@ const xNu = X(nu);
   .hw { fill: var(--accent); } .lw { fill: #fff; stroke: var(--accent); stroke-width: 2; }
   .label { fill: var(--ink); font-size: 12px; font-weight: 600; }
   figcaption { font-size: .85rem; margin-top: 6px; }
+  .hero { background: transparent; border: 0; padding: 0; }
+  .hero .grid { stroke: rgba(255,255,255,.14); }
+  .hero .nul { stroke: rgba(255,255,255,.4); }
+  .hero .as { fill: var(--on-accent); }
+  .hero .lijn { stroke: #fff; }
+  .hero .vlak { fill: rgba(255,255,255,.14); }
+  .hero .nu { stroke: var(--sun); stroke-width: 1.5; }
+  .hero .nutekst { fill: var(--sun); }
+  .hero .hw { fill: #fff; } .hero .lw { fill: var(--accent); stroke: #fff; }
+  .hero .label { fill: #fff; }
+  .hero figcaption { color: var(--on-accent); }
 </style>
