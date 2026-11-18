@@ -1,7 +1,7 @@
 {
  "slug": "zandvoort",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T13:18:27.131Z",
+ "bijgewerkt": "2026-11-18T13:34:23.717Z",
  "fouten": [],
  "getij": {
   "meetpunt": "ijgeul.1",
@@ -5016,23 +5016,23 @@
   "meetpunt": "ijmuiden.buitenhaven",
   "meetpuntNaam": "IJmuiden, buitenhaven",
   "eenheid": "°C",
-  "t": "2026-11-18T12:50:00.000Z",
+  "t": "2026-11-18T13:10:00.000Z",
   "v": 10.5
  },
  "waterstand": {
   "meetpunt": "ijgeul.1",
   "meetpuntNaam": "IJGeul, 1",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T12:50:00.000Z",
-  "v": 59
+  "t": "2026-11-18T13:10:00.000Z",
+  "v": 52
  },
  "golf": {
   "meetpunt": "ijgeul.1",
   "meetpuntNaam": "IJGeul, 1",
   "km": 9.9,
-  "t": "2026-11-18T12:50:00.000Z",
-  "v": 212,
-  "min24": 169,
+  "t": "2026-11-18T13:10:00.000Z",
+  "v": 216,
+  "min24": 184,
   "max24": 366,
   "periode": 5.5
  },
@@ -5040,8 +5040,8 @@
   "meetpunt": "ijmuiden.havenhoofd.zuid",
   "meetpuntNaam": "IJmuiden, havenhoofd, zuid",
   "km": 9.9,
-  "t": "2026-11-18T13:00:00.000Z",
-  "snelheid": 9,
-  "richting": 297
+  "t": "2026-11-18T13:20:00.000Z",
+  "snelheid": 9.1,
+  "richting": 294
  }
 }

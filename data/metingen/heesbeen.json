@@ -1,13 +1,13 @@
 {
  "slug": "heesbeen",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T13:18:51.435Z",
+ "bijgewerkt": "2026-11-18T13:35:00.057Z",
  "fouten": [],
  "waterstand": {
   "meetpunt": "waalwijk",
   "meetpuntNaam": "Waalwijk",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T12:30:00.000Z",
+  "t": "2026-11-18T12:50:00.000Z",
   "v": 179,
   "reeks": [
    {
