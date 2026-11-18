@@ -1,7 +1,7 @@
 {
  "slug": "oostkapelle",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T20:58:35.756Z",
+ "bijgewerkt": "2026-11-18T21:57:03.540Z",
  "fouten": [],
  "getij": {
   "meetpunt": "oosterschelde.11",
@@ -5000,32 +5000,32 @@
   "meetpunt": "kamperland.schotsman",
   "meetpuntNaam": "Kamperland, Schotsman",
   "eenheid": "°C",
-  "t": "2026-11-18T20:40:00.000Z",
+  "t": "2026-11-18T21:20:00.000Z",
   "v": 8.8
  },
  "waterstand": {
   "meetpunt": "kamperland.schotsman",
   "meetpuntNaam": "Kamperland, Schotsman",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T20:20:00.000Z",
+  "t": "2026-11-18T21:30:00.000Z",
   "v": -29
  },
  "golf": {
   "meetpunt": "oosterschelde.11",
   "meetpuntNaam": "Oosterschelde, 11",
   "km": 8.5,
-  "t": "2026-11-18T20:30:00.000Z",
-  "v": 151,
-  "min24": 111,
+  "t": "2026-11-18T21:30:00.000Z",
+  "v": 133,
+  "min24": 113,
   "max24": 195,
-  "periode": 5.1
+  "periode": 4.8
  },
  "wind": {
   "meetpunt": "oosterschelde.4",
   "meetpuntNaam": "Oosterschelde, 4",
   "km": 14.1,
-  "t": "2026-11-18T20:40:00.000Z",
-  "snelheid": 8.5,
-  "richting": 223
+  "t": "2026-11-18T21:40:00.000Z",
+  "snelheid": 8.3,
+  "richting": 210
  }
 }
