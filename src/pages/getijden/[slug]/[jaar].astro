@@ -1,0 +1,96 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import Base from "../../../layouts/Base.astro";
+import { jarenVoor, leesJaar } from "../../../lib/jaar.js";
+import { tijd, datumKey } from "../../../lib/format.js";
+
+export function getStaticPaths() {
+  const root = process.cwd();
+  const locaties = JSON.parse(fs.readFileSync(path.join(root, "data/locaties.json"), "utf8"));
+  return locaties
+    .filter((l) => l.rws?.getij && fs.existsSync(path.join(root, `data/metingen/${l.slug}.json`)))
+    .flatMap((loc) => jarenVoor(loc.rws.getij.code).map((jaar) => ({ params: { slug: loc.slug, jaar }, props: { loc } })));
+}
+
+const { loc } = Astro.props;
+const { jaar } = Astro.params;
+const data = leesJaar(loc.rws.getij.code, jaar);
+const fmtMaand = new Intl.DateTimeFormat("nl-NL", { timeZone: "Europe/Amsterdam", month: "long" });
+const fmtDag = new Intl.DateTimeFormat("nl-NL", { timeZone: "Europe/Amsterdam", weekday: "short", day: "numeric" });
+const KORT = ["jan", "feb", "mrt", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"];
+const cm = (v) => `${v >= 0 ? "+" : "−"}${Math.abs(v)}`;
+
+// Groeperen per maand en per dag (Nederlandse tijd)
+const maanden = [];
+for (const [t, v, s] of data.ext) {
+  const key = datumKey(t);
+  if (!key.startsWith(jaar)) continue;
+  const mk = key.slice(5, 7);
+  let m = maanden.at(-1);
+  if (!m || m.key !== mk) maanden.push((m = { key: mk, naam: fmtMaand.format(new Date(t)), dagen: [] }));
+  let d = m.dagen.at(-1);
+  if (!d || d.key !== key) m.dagen.push((d = { key, label: fmtDag.format(new Date(t)), H: [], L: [] }));
+  d[s].push({ t, v });
+}
+const alleHW = data.ext.filter((e) => e[2] === "H" && datumKey(e[0]).startsWith(jaar));
+const hoogste = alleHW.reduce((a, b) => (b[1] > a[1] ? b : a), alleHW[0]);
+const titel = `Getijtabel ${loc.naam} ${jaar} – hoog- en laagwater per dag`;
+const omschrijving = `Complete getijtabel ${jaar} voor ${loc.naam}: alle tijden van hoogwater en laagwater per dag, met hoogte ten opzichte van NAP. Ook te printen.`;
+const jsonLd = [{
+  "@context": "https://schema.org", "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${Astro.site}` },
+    { "@type": "ListItem", position: 2, name: "Getijden", item: `${Astro.site}getijden/` },
+    { "@type": "ListItem", position: 3, name: loc.naam, item: `${Astro.site}getijden/${loc.slug}` },
+    { "@type": "ListItem", position: 4, name: `Getijtabel ${jaar}`, item: `${Astro.site}getijden/${loc.slug}/${jaar}` },
+  ],
+}];
+---
+<Base title={titel} description={omschrijving} canonical={`/getijden/${loc.slug}/${jaar}`} jsonLd={jsonLd}>
+  <nav class="kruimel muted geen-print"><a href="/">Home</a> › <a href="/getijden/">Getijden</a> › <a href={`/getijden/${loc.slug}`}>{loc.naam}</a> › {jaar}</nav>
+  <h1>Getijtabel {loc.naam} {jaar}</h1>
+  <p>Alle hoog- en laagwaters van {jaar} voor {loc.naam}, berekend door Rijkswaterstaat (meetpunt {loc.rws.getij.naam}). Tijden in Nederlandse tijd, hoogtes in centimeters ten opzichte van NAP.{hoogste && <> Het hoogste astronomische hoogwater van het jaar valt op {new Intl.DateTimeFormat("nl-NL", { timeZone: "Europe/Amsterdam", day: "numeric", month: "long" }).format(new Date(hoogste[0]))} ({cm(hoogste[1])} cm).</>}</p>
+  <p class="geen-print acties"><a href={`/getijden/${loc.slug}`}>← Getijden {loc.naam} vandaag</a> · <button type="button" onclick="window.print()">Printen of opslaan als pdf</button></p>
+  <nav class="maandnav geen-print">{maanden.map((m) => <a href={`#m${m.key}`}>{KORT[Number(m.key) - 1]}</a>)}</nav>
+
+  {maanden.map((m) => (
+    <section class="maand" id={`m${m.key}`}>
+      <h2>{m.naam[0].toUpperCase() + m.naam.slice(1)} {jaar}</h2>
+      <table>
+        <thead><tr><th>Dag</th><th>Hoogwater</th><th>Laagwater</th></tr></thead>
+        <tbody>
+          {m.dagen.map((d) => (
+            <tr>
+              <td>{d.label}</td>
+              <td>{d.H.map((e) => <span class="e">{tijd(e.t)} <small>{cm(e.v)}</small></span>)}</td>
+              <td>{d.L.map((e) => <span class="e">{tijd(e.t)} <small>{cm(e.v)}</small></span>)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  ))}
+  <p class="muted klein">Astronomisch getij: wind en luchtdruk kunnen de werkelijke waterstand tientallen centimeters laten afwijken. Bron: Rijkswaterstaat.</p>
+</Base>
+
+<style>
+  .kruimel { font-size: .85rem; margin-top: 18px; }
+  .kruimel a { color: var(--muted); }
+  .acties button { font: inherit; color: var(--accent); background: none; border: 0; padding: 0; text-decoration: underline; cursor: pointer; }
+  .maandnav { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 4px; position: sticky; top: 0; background: var(--bg); padding: 8px 0; z-index: 1; }
+  .maandnav a { padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; background: var(--card); text-decoration: none; font-size: .9rem; }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); }
+  th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: .75rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  td:first-child { white-space: nowrap; font-weight: 600; }
+  .e { display: inline-block; margin-right: 14px; white-space: nowrap; }
+  small { color: var(--muted); }
+  .klein { font-size: .85rem; }
+  @media print {
+    :global(header.site), :global(footer.site), .geen-print { display: none !important; }
+    .maand { break-inside: avoid; }
+    th, td { padding: 2px 6px; font-size: 10pt; }
+    h2 { margin: 12px 0 4px; }
+  }
+</style>

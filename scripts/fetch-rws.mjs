@@ -146,10 +146,28 @@ async function laatste(stationCode, grootheid) {
   return { t: l.t, v: l.v };
 }
 
+// Verloop van de gemeten waterstand (uurwaarden) voor rivier- en meerpagina's.
+async function verloop(stationCode, dagen = 7) {
+  const res = await post(P.waarnemingen, {
+    Locatie: { Code: stationCode },
+    AquoPlusWaarnemingMetadata: { AquoMetadata: { Compartiment: { Code: "OW" }, Grootheid: { Code: "WATHTE" }, ProcesType: "meting" } },
+    Periode: { Begindatumtijd: iso(new Date(Date.now() - dagen * 864e5)), Einddatumtijd: iso(new Date()) },
+  });
+  const perUur = new Map();
+  for (const m of metingen(res)) {
+    if (m.v === null) continue;
+    perUur.set(m.t.slice(0, 13), { t: m.t.slice(0, 13) + ":00:00.000Z", v: Math.round(m.v) });
+  }
+  const reeks = [...perUur.values()].sort((a, b) => a.t.localeCompare(b.t));
+  if (reeks.length < 24) throw new Error("te weinig metingen voor het verloop");
+  return reeks;
+}
+
 async function locatie(loc) {
   const bestand = path.join(OUT, `${loc.slug}.json`);
   const vorig = fs.existsSync(bestand) ? JSON.parse(fs.readFileSync(bestand, "utf8")) : {};
   const data = { ...vorig, slug: loc.slug, voorbeeld: false, bijgewerkt: new Date().toISOString(), fouten: [] };
+  for (const thema of ["getij", "temperatuur", "waterstand"]) if (!loc.rws[thema]) delete data[thema];
 
   if (loc.rws.getij) {
     try {
@@ -161,6 +179,10 @@ async function locatie(loc) {
     try {
       data[thema] = { meetpunt: rwsCode(loc.rws[thema]), meetpuntNaam: loc.rws[thema].naam, eenheid, ...(await laatste(rwsCode(loc.rws[thema]), grootheid)) };
     } catch (e) { data.fouten.push(`${thema}: ${e.message}`); }
+  }
+  if (!loc.rws.getij && loc.rws.waterstand && data.waterstand) {
+    try { data.waterstand.reeks = await verloop(rwsCode(loc.rws.waterstand)); }
+    catch (e) { data.fouten.push(`verloop: ${e.message}`); }
   }
   fs.writeFileSync(bestand, JSON.stringify(data, null, 1));
   console.log(`${loc.slug}: ${data.fouten.length ? "met fouten -> " + data.fouten.join(" | ") : "ok"}`);

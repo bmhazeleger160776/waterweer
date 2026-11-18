@@ -22,7 +22,8 @@
       "nijmegen",
       "deventer"
     ],
-    "regioSlug": "rivieren"
+    "regioSlug": "rivieren",
+    "intro": "Bij Lobith komt de Rijn Nederland binnen. De waterstand hier is het ijkpunt voor hoog en laag water op de grote rivieren: als het nieuws het over de stand bij Lobith heeft, gaat het om dit meetpunt. Wat hier stijgt, bereikt een tot twee dagen later ook de Waal, de Nederrijn en de IJssel."
   },
   {
     "slug": "vlissingen",
@@ -619,7 +620,8 @@
       "lobith",
       "nijmegen"
     ],
-    "regioSlug": "rivieren"
+    "regioSlug": "rivieren",
+    "intro": "Deventer ligt aan de IJssel, die bij Arnhem van de Rijn aftakt. Bij hoog water lopen de uiterwaarden rond de stad onder en kan de kade aan de IJssel overstromen. Bij laag water liggen er juist zandplaten droog."
   },
   {
     "slug": "ameland",
@@ -869,7 +871,8 @@
       "harlingen",
       "den-helder"
     ],
-    "regioSlug": "ijsselmeer"
+    "regioSlug": "ijsselmeer",
+    "intro": "Het IJsselmeer heeft geen getij: Rijkswaterstaat regelt het peil via de spuisluizen in de Afsluitdijk. Wind kan het water wel flink scheef zetten. Bij harde wind stijgt het aan de ene oever en daalt het aan de andere. Deze waterstand is gemeten bij Krabbersgat, bij Enkhuizen."
   },
   {
     "slug": "yerseke",
@@ -1354,11 +1357,6 @@
     "lat": 51.85,
     "lon": 5.865,
     "rws": {
-      "temperatuur": {
-        "code": "grave.boven",
-        "naam": "Grave, boven",
-        "km": 13.0
-      },
       "waterstand": {
         "code": "nijmegen.waal",
         "naam": "Nijmegen, Waal",
@@ -1369,6 +1367,7 @@
       "lobith",
       "deventer"
     ],
-    "regioSlug": "rivieren"
+    "regioSlug": "rivieren",
+    "intro": "Nijmegen ligt aan de Waal, de drukste vaarweg van Nederland. Bij hoog water stroomt een deel van de Waal door de nevengeul bij Lent, aangelegd om de stad te beschermen. De waterstand hier volgt die bij Lobith met enige vertraging."
   }
 ]

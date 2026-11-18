@@ -1,0 +1,52 @@
+---
+// Verloop van de gemeten waterstand (uurwaarden), standaard de laatste 7 dagen.
+import { meter } from "../lib/format.js";
+const { reeks } = Astro.props;
+const W = 760, H = 240, L = 64, R = 16, T = 20, B = 34;
+const t0 = Date.parse(reeks[0].t), t1 = Date.parse(reeks.at(-1).t);
+const vals = reeks.map((p) => p.v);
+const span = Math.max(Math.max(...vals) - Math.min(...vals), 40);
+const mid = (Math.max(...vals) + Math.min(...vals)) / 2;
+const vmin = mid - span * 0.65, vmax = mid + span * 0.65;
+const X = (t) => L + ((Date.parse(t) - t0) / (t1 - t0 || 1)) * (W - L - R);
+const Y = (v) => T + (1 - (v - vmin) / (vmax - vmin)) * (H - T - B);
+const lijn = reeks.map((p, i) => `${i ? "L" : "M"}${X(p.t).toFixed(1)} ${Y(p.v).toFixed(1)}`).join(" ");
+const vlak = `${lijn} L${X(reeks.at(-1).t).toFixed(1)} ${H - B} L${X(reeks[0].t).toFixed(1)} ${H - B} Z`;
+const stap = [10, 20, 25, 50, 100, 200].find((s) => (vmax - vmin) / s <= 5) ?? 500;
+const ticks = [];
+for (let v = Math.ceil(vmin / stap) * stap; v <= vmax; v += stap) ticks.push(v);
+const fmt = new Intl.DateTimeFormat("nl-NL", { timeZone: "Europe/Amsterdam", weekday: "short", day: "numeric" });
+const uurFmt = new Intl.DateTimeFormat("nl-NL", { timeZone: "Europe/Amsterdam", hour: "numeric" });
+const dagen = reeks.filter((p) => Number(uurFmt.format(new Date(p.t))) === 0);
+const laatste = reeks.at(-1);
+---
+<figure class="grafiek">
+  <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Verloop van de waterstand in de afgelopen dagen">
+    {ticks.map((v) => (
+      <g>
+        <line x1={L} x2={W - R} y1={Y(v)} y2={Y(v)} class="grid" />
+        <text x={L - 8} y={Y(v) + 4} text-anchor="end" class="as">{(v / 100).toFixed(stap < 100 ? 1 : 0).replace(".", ",")} m</text>
+      </g>
+    ))}
+    {dagen.map((p) => (
+      <g>
+        <line x1={X(p.t)} x2={X(p.t)} y1={T} y2={H - B} class="grid" />
+        <text x={X(p.t) + 4} y={H - B + 18} class="as">{fmt.format(new Date(p.t))}</text>
+      </g>
+    ))}
+    <path d={vlak} class="vlak" />
+    <path d={lijn} class="lijn" />
+    <circle cx={X(laatste.t)} cy={Y(laatste.v)} r="4.5" class="punt" />
+  </svg>
+  <figcaption class="muted">Gemeten waterstand in m t.o.v. NAP, uurwaarden van de afgelopen 7 dagen. Laatste meting: {meter(laatste.v)}.</figcaption>
+</figure>
+<style>
+  .grafiek { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
+  svg { width: 100%; height: auto; display: block; }
+  .grid { stroke: var(--line); stroke-width: 1; }
+  .as { fill: var(--muted); font-size: 12px; }
+  .lijn { fill: none; stroke: var(--accent); stroke-width: 2.5; }
+  .vlak { fill: var(--accent-soft); }
+  .punt { fill: var(--accent); stroke: #fff; stroke-width: 2; }
+  figcaption { font-size: .85rem; margin-top: 6px; }
+</style>

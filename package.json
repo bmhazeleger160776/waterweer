@@ -6,8 +6,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "fetch-data": "node scripts/fetch-rws.mjs",
-    "sample-data": "node scripts/make-sample.mjs"
+    "fetch-data": "node scripts/fetch-rws.mjs && node scripts/fetch-jaar.mjs",
+    "sample-data": "node scripts/make-sample.mjs",
+    "fetch-jaar": "node scripts/fetch-jaar.mjs"
   },
   "dependencies": {
     "astro": "^7.4.12"

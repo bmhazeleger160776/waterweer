@@ -3,12 +3,18 @@ import fs from "node:fs";
 import path from "node:path";
 import Base from "../layouts/Base.astro";
 const root = process.cwd();
+const alle = JSON.parse(fs.readFileSync(path.join(root, "data/locaties.json"), "utf8"));
+const rivieren = alle.filter((l) => !l.rws?.getij && l.rws?.waterstand && fs.existsSync(path.join(root, `data/metingen/${l.slug}.json`)));
 const locaties = JSON.parse(fs.readFileSync(path.join(root, "data/locaties.json"), "utf8"))
   .filter((l) => l.rws?.getij && fs.existsSync(path.join(root, `data/metingen/${l.slug}.json`)));
 ---
 <Base title="Waterweer – getijden, watertemperatuur en waterstanden in Nederland" description="Actuele getijden, eb en vloed, watertemperatuur en waterstanden voor de Nederlandse kust, meren en rivieren. Elk uur bijgewerkt met data van Rijkswaterstaat." canonical="/">
   <h1>Getijden en watertemperatuur in Nederland</h1>
   <p>Actuele getijden, watertemperatuur en waterstanden per kustplaats, meer en rivier. Elk uur bijgewerkt met open data van Rijkswaterstaat.</p>
-  <h2>Locaties</h2>
+  <h2>Getijden per regio</h2>
+  <ul><li><a href="/getijden/zeeland">Zeeland</a></li><li><a href="/getijden/zuid-holland">Zuid-Holland</a></li><li><a href="/getijden/noord-holland">Noord-Holland</a></li><li><a href="/getijden/wadden">Waddeneilanden en Waddenzee</a></li></ul>
+  {rivieren.length > 0 && <><h2><a href="/waterstand/">Waterstanden rivieren en IJsselmeer</a></h2>
+  <ul>{rivieren.map((l) => <li><a href={`/waterstand/${l.slug}`}>Waterstand {l.naam}</a></li>)}</ul></>}
+  <h2>Getijden per plaats</h2>
   <ul>{locaties.map((l) => <li><a href={`/getijden/${l.slug}`}>Getijden {l.naam}</a> <span class="muted">({l.regio})</span></li>)}</ul>
 </Base>

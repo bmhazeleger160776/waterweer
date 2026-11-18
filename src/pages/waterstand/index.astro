@@ -1,0 +1,25 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import Base from "../../layouts/Base.astro";
+import { meter, tijd } from "../../lib/format.js";
+const root = process.cwd();
+const rijen = JSON.parse(fs.readFileSync(path.join(root, "data/locaties.json"), "utf8"))
+  .filter((l) => !l.rws?.getij && l.rws?.waterstand && fs.existsSync(path.join(root, `data/metingen/${l.slug}.json`)))
+  .map((l) => ({ l, ws: JSON.parse(fs.readFileSync(path.join(root, `data/metingen/${l.slug}.json`), "utf8")).waterstand }));
+---
+<Base title="Waterstanden rivieren en IJsselmeer – actueel" description="Actuele waterstanden van de Rijn bij Lobith, de Waal bij Nijmegen, de IJssel bij Deventer en het IJsselmeer, met verloop van de afgelopen week." canonical="/waterstand/">
+  <h1>Waterstanden rivieren en IJsselmeer</h1>
+  <p>Actuele waterstanden op de grote rivieren en het IJsselmeer, elk uur bijgewerkt met metingen van Rijkswaterstaat. Voor eb en vloed aan de kust, zie <a href="/getijden/">getijden per plaats</a>.</p>
+  <table>
+    <thead><tr><th>Plaats</th><th>Waterstand</th><th>Gemeten</th></tr></thead>
+    <tbody>{rijen.map(({ l, ws }) => <tr><td><a href={`/waterstand/${l.slug}`}>{l.naam}</a></td><td>{ws ? meter(ws.v) : "–"}</td><td>{ws ? tijd(ws.t) : "–"}</td></tr>)}</tbody>
+  </table>
+</Base>
+<style>
+  table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+  th { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  td:first-child { font-weight: 600; }
+  tr:last-child td { border-bottom: 0; }
+</style>

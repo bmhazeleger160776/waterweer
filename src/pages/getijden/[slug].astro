@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import Base from "../../layouts/Base.astro";
 import GetijGrafiek from "../../components/GetijGrafiek.astro";
+import { jarenVoor } from "../../lib/jaar.js";
 import { tijd, dag, dagKort, datumKey, meter, graden, metTijd } from "../../lib/format.js";
 
 export function getStaticPaths() {
@@ -97,6 +98,7 @@ const jsonLd = [
     mainEntity: faq.map((f) => ({ "@type": "Question", name: f.v, acceptedAnswer: { "@type": "Answer", text: f.a } })),
   },
 ];
+const jaartabellen = jarenVoor(loc.rws.getij.code);
 const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
 ---
 <Base title={titel} description={omschrijving} canonical={`/getijden/${loc.slug}`} jsonLd={jsonLd}>
@@ -139,6 +141,7 @@ const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
     </table>
   </div>
   <p class="muted klein">Hoogte ten opzichte van NAP. Wind en luchtdruk kunnen de werkelijke waterstand tientallen centimeters laten afwijken.</p>
+  {jaartabellen.length > 0 && <p class="jaarlink">{jaartabellen.map((j) => <a href={`/getijden/${loc.slug}/${j}`}>Getijtabel {loc.naam} {j} (heel jaar, printbaar) →</a>)}</p>}
 
   {loc.intro && <><h2>Over het water bij {loc.naam}</h2><p>{loc.intro}</p></>}
 
@@ -183,6 +186,7 @@ const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
   td:first-child { white-space: nowrap; font-weight: 600; }
   tr:last-child td { border-bottom: 0; }
   .klein { font-size: .85rem; }
+  .jaarlink { font-weight: 600; }
   details { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
   summary { cursor: pointer; font-weight: 600; }
   .buren { display: flex; flex-wrap: wrap; gap: 8px 18px; padding: 0; list-style: none; }
