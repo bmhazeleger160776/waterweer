@@ -1,7 +1,7 @@
 {
  "slug": "texel",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T10:18:50.018Z",
+ "bijgewerkt": "2026-11-18T10:25:28.460Z",
  "fouten": [],
  "getij": {
   "meetpunt": "texel.oudeschild",
@@ -5048,14 +5048,14 @@
   "meetpunt": "denhoorntexel.waddenzee.gatvandestier",
   "meetpuntNaam": "Den Hoorn Texel Waddenzee Gat van de Stier",
   "eenheid": "°C",
-  "t": "2026-11-18T09:50:00.000Z",
+  "t": "2026-11-18T10:00:00.000Z",
   "v": 9.5
  },
  "waterstand": {
   "meetpunt": "texel.oudeschild",
   "meetpuntNaam": "Texel, Oudeschild",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T09:50:00.000Z",
-  "v": 105
+  "t": "2026-11-18T10:00:00.000Z",
+  "v": 108
  }
 }
