@@ -10,13 +10,14 @@ const volgendeSpring = dichtbij ? lijst.find((x) => x.soort === "springtij") : n
 const kop = dichtbij ? "Eerstvolgende springtij en doodtij" : `Springtij en doodtij begin ${lijst[0]?.k.slice(0, 4)}`;
 const faq = [
   volgendeSpring && { v: "Wanneer is het weer springtij?", a: `Het eerstvolgende springtij in Vlissingen valt rond ${fmt(volgendeSpring.k)}. Langs de rest van de kust valt springtij rond dezelfde dagen.` },
+  { v: "Hoe heet de periode waarin het verschil tussen eb en vloed minimaal is?", a: "Dat is doodtij. Het valt rond eerste en laatste kwartier van de maan, als zon en maan haaks op elkaar staan en elkaars aantrekkingskracht deels opheffen. Het tegenovergestelde, met een extra groot verschil, is springtij." },
   { v: "Hoe vaak is het springtij?", a: "Ongeveer elke twee weken: rond volle maan en rond nieuwe maan. Daartussen, rond eerste en laatste kwartier, is het doodtij." },
   { v: "Is springtij gevaarlijk?", a: "Springtij alleen niet: het hoogwater is dan hooguit enkele tientallen centimeters hoger dan normaal. Gevaarlijk wordt het als springtij samenvalt met een zware storm uit het noordwesten. Dat gebeurde bij de watersnoodramp van 1953." },
 ].filter(Boolean);
 ---
 <Uitleg slug="springtij-en-doodtij" title="Springtij en doodtij – wat is het en wanneer is het?" description="Wat is springtij, wat is doodtij en wanneer is het volgende springtij? Uitleg over de invloed van zon en maan, met de eerstvolgende data voor de Nederlandse kust." faq={faq}>
   <h1>Wat is springtij en doodtij?</h1>
-  <p><strong>Springtij</strong> is het getij met een extra groot verschil tussen eb en vloed: het hoogwater is hoger en het laagwater lager dan normaal. Bij <strong>doodtij</strong> is het verschil juist klein. Ze wisselen elkaar ongeveer elke week af.</p>
+  <p><strong>Springtij</strong> is het getij met een extra groot verschil tussen eb en vloed: het hoogwater is hoger en het laagwater lager dan normaal. Bij <strong>doodtij</strong> is het verschil juist klein: dat is de periode waarin het verschil tussen eb en vloed minimaal is. Ze wisselen elkaar ongeveer elke week af.</p>
 
   <h2>Hoe ontstaat springtij?</h2>
   <p>Zowel de maan als de zon trekken aan het zeewater. Bij nieuwe maan en bij volle maan staan zon, maan en aarde ongeveer op één lijn. De twee krachten versterken elkaar en het getij wordt groter: springtij. Bij eerste en laatste kwartier staan zon en maan haaks op elkaar en werken ze elkaar deels tegen: doodtij.</p>

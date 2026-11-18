@@ -14,6 +14,9 @@ const golf = getijgolf([
 ], tabel[0]?.v.jaar ? `${tabel[0].v.jaar}-03-01` : "");
 const grootste = tabel[0], kleinste = tabel.at(-1);
 const faq = [
+  { v: "Welk hemellichaam heeft invloed op eb en vloed?", a: "Vooral de maan. Haar aantrekkingskracht trekt het zeewater een beetje naar zich toe, waardoor twee keer per dag hoogwater ontstaat. De zon heeft ook invloed, maar die is ongeveer half zo sterk. Samen bepalen ze of het springtij of doodtij is." },
+  { v: "Hoe ontstaan eb en vloed?", a: "Door de aantrekkingskracht van de maan (en in mindere mate de zon) ontstaan aan twee kanten van de aarde bulten zeewater. De aarde draait daar elke dag onderdoor, dus op elke plek komt het water twee keer per dag op (vloed) en zakt het twee keer weg (eb)." },
+  { v: "Hoe heet het moment tussen eb en vloed?", a: "Dat heet de kentering, of stil water: het korte moment rond hoog- en laagwater waarop de stroming omdraait en even bijna stilvalt. Duikers en vissers plannen hun activiteiten vaak rond de kentering." },
   { v: "Hoe vaak per dag is het hoogwater?", a: "Bijna overal aan de Nederlandse kust twee keer per dag. Omdat een getijperiode ongeveer 12 uur en 25 minuten duurt, valt hoogwater elke dag zo'n 50 minuten later dan de dag ervoor." },
   { v: "Wat is het verschil tussen vloed en hoogwater?", a: "Vloed is de periode waarin het water stijgt. Hoogwater is het moment waarop het water zijn hoogste stand bereikt. Eb en laagwater zijn het omgekeerde: het dalen van het water en de laagste stand." },
   grootste && { v: "Waar is het verschil tussen eb en vloed het grootst?", a: `In Zeeland, vooral in de Westerschelde. Bij ${grootste.l.naam} is het gemiddelde verschil ongeveer ${m(grootste.v.cm)}, bij ${kleinste.l.naam} maar ${m(kleinste.v.cm)}.` },
@@ -21,7 +24,7 @@ const faq = [
 ---
 <Uitleg slug="eb-en-vloed" title="Eb en vloed uitgelegd – hoe werkt het getij in Nederland?" description="Waarom is het twee keer per dag eb en vloed, waarom schuift hoogwater elke dag op en waar in Nederland is het getijverschil het grootst? Met actuele cijfers per plaats." faq={faq}>
   <h1>Hoe werken eb en vloed?</h1>
-  <p>Aan de Nederlandse kust stijgt en daalt de zee twee keer per dag. Als het water stijgt heet dat <strong>vloed</strong>, als het daalt <strong>eb</strong>. Het hoogste punt is <strong>hoogwater</strong>, het laagste <strong>laagwater</strong>.</p>
+  <p>Eb en vloed ontstaan vooral door de aantrekkingskracht van de <strong>maan</strong>, en in mindere mate van de zon. Aan de Nederlandse kust stijgt en daalt de zee daardoor twee keer per dag. Als het water stijgt heet dat <strong>vloed</strong>, als het daalt <strong>eb</strong>. Het hoogste punt is <strong>hoogwater</strong>, het laagste <strong>laagwater</strong>.</p>
 
   <h2>Waardoor ontstaat het getij?</h2>
   <p>Het getij ontstaat vooral door de aantrekkingskracht van de maan. Aan de kant van de aarde die naar de maan gericht is, wordt het zeewater een beetje naar de maan toe getrokken. Aan de andere kant ontstaat ook een bult water, doordat aarde en maan samen om een gemeenschappelijk zwaartepunt draaien. De aarde draait elke dag onder die twee bulten door. Daardoor krijg je twee keer per dag hoogwater en twee keer laagwater.</p>

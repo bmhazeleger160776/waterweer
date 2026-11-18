@@ -36,6 +36,7 @@ const vwDagen = [...vw.reduce((m, p) => { const k = dagKey(p.t); const d = m.get
 const vwPiek = vw.length ? vw.reduce((a, b) => (b.v > a.v ? b : a)) : null;
 const vwEind = vw.at(-1);
 const vwTrend = ws && vwEind ? (Math.abs(vwEind.v - ws.v) < 10 ? "ongeveer gelijk blijven" : vwEind.v > ws.v ? `stijgen naar ${meter(vwEind.v)}` : `dalen naar ${meter(vwEind.v)}`) : null;
+const HUB = { Rijn: "rijn", Waal: "waal", Nederrijn: "lek", Lek: "lek", IJssel: "ijssel", Maas: "maas", "Bergsche Maas": "maas" };
 const temp = data.temperatuur;
 const tempBij = temp && loc.rws?.temperatuur?.km > 2 ? (temp.meetpuntNaam || loc.rws.temperatuur.naam) : null;
 const isMeer = loc.type === "meer";
@@ -113,6 +114,7 @@ const jsonLd = [
 
   {zelfdeRivier.length > 0 && <><h2>Meer waterstanden {["IJssel", "Lek", "Waal", "Maas", "Rijn", "Nederrijn", "Bergsche Maas"].includes(loc.rivier) ? `langs de ${loc.rivier}` : ""}</h2><ul class="buren">{zelfdeRivier.map((l) => <li><a href={`/waterstand/${l.slug}`}>{l.naam}</a></li>)}</ul></>}
   {buren.length > 0 && <><h2>In de buurt</h2><ul class="buren">{buren.map((l) => <li><a href={`/waterstand/${l.slug}`}>{l.naam}{l.rivier && <span class="muted"> · {l.rivier}</span>}</a></li>)}</ul></>}
+  {HUB[loc.rivier] && <p class="meer"><a href={`/waterstand/${HUB[loc.rivier]}`}>Waterstand {HUB[loc.rivier] === "lek" ? "Nederrijn en Lek" : loc.rivier === "Bergsche Maas" ? "Maas" : loc.rivier}: alle meetpunten →</a></p>}
   <p class="meer"><a href="/waterstand/" data-umami-event="alle-waterstanden">Alle waterstanden per rivier →</a></p>
 </Base>
 

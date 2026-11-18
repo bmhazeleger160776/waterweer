@@ -25,6 +25,7 @@ const groepen = VOLGORDE
   .filter((g) => g.rijen.length);
 const overig = rijen.filter((x) => !VOLGORDE.includes(x.l.rivier ?? x.l.naam));
 if (overig.length) groepen.push({ rivier: "Overig", rijen: overig });
+const HUB = { Rijn: "rijn", Waal: "waal", Nederrijn: "lek", Lek: "lek", IJssel: "ijssel", Maas: "maas", "Bergsche Maas": "maas" };
 const pijl = (d) => (d === null ? "" : Math.abs(d) < 5 ? "→" : d > 0 ? "↑" : "↓");
 ---
 <Base title="Waterstanden rivieren actueel – Rijn, Waal, IJssel, Maas en Lek" description="Actuele waterstanden van Rijn, Waal, Nederrijn, Lek, IJssel, Maas en het IJsselmeer per meetpunt, met trend en verloop van de afgelopen week. Elk uur bijgewerkt met data van Rijkswaterstaat." canonical="/waterstand/">
@@ -34,7 +35,7 @@ const pijl = (d) => (d === null ? "" : Math.abs(d) < 5 ? "→" : d > 0 ? "↑" :
 
   {groepen.map((g) => (
     <section id={g.rivier.toLowerCase().replace(/\s+/g, "-")}>
-      <h2>{g.rivier === "IJsselmeer" || g.rivier === "Overig" ? g.rivier : `Waterstand ${g.rivier}`}</h2>
+      <h2>{HUB[g.rivier] ? <a href={`/waterstand/${HUB[g.rivier]}`}>Waterstand {g.rivier}</a> : g.rivier}</h2>
       <div class="tabelwrap">
         <table>
           <thead><tr><th>Meetpunt</th><th>Waterstand</th><th>24 uur</th><th>Gemeten</th></tr></thead>

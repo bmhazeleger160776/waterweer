@@ -1,0 +1,110 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import Base from "../layouts/Base.astro";
+import WaterstandGrafiek from "./WaterstandGrafiek.astro";
+import { RIVIEREN } from "../lib/rivieren.js";
+import { meter, tijd, dagKort } from "../lib/format.js";
+
+const { rivierSlug } = Astro.props;
+const rivier = RIVIEREN[rivierSlug];
+const root = process.cwd();
+const alle = JSON.parse(fs.readFileSync(path.join(root, "data/locaties.json"), "utf8"));
+const lees = (slug) => {
+  const l = alle.find((x) => x.slug === slug);
+  const f = path.join(root, `data/metingen/${slug}.json`);
+  if (!l || !fs.existsSync(f)) return null;
+  const ws = JSON.parse(fs.readFileSync(f, "utf8")).waterstand;
+  if (!ws) return null;
+  const r = ws.reeks ?? [];
+  let delta = null;
+  if (r.length) {
+    const doel = Date.parse(ws.t) - 864e5;
+    const p = r.reduce((a, b) => (Math.abs(Date.parse(b.t) - doel) < Math.abs(Date.parse(a.t) - doel) ? b : a));
+    if (Math.abs(Date.parse(p.t) - doel) < 3 * 3600e3) delta = Math.round(ws.v - p.v);
+  }
+  const vw = (ws.verwachting ?? []).filter((p) => Date.parse(p.t) > Date.parse(ws.t));
+  const piek = vw.length ? vw.reduce((a, b) => (b.v > a.v ? b : a)) : null;
+  const eind = vw.at(-1) ?? null;
+  return { l, ws, delta, piek, eind, reeks: r, vw };
+};
+const rijen = rivier.plaatsen.map(lees).filter(Boolean);
+const hoofd = rijen[0];
+const trend = (d) => (d === null ? null : Math.abs(d) < 5 ? "stabiel" : d > 0 ? "stijgend" : "dalend");
+const pijl = (d) => (d === null ? "" : Math.abs(d) < 5 ? "→" : d > 0 ? "↑" : "↓");
+const cmTekst = (d) => `${d > 0 ? "+" : d < 0 ? "−" : ""}${Math.abs(d)} cm`;
+const zijtakken = (rivier.zijtakken ?? []).map((s) => ({ s, r: RIVIEREN[s], eerste: lees(RIVIEREN[s].plaatsen[0]) }));
+const andere = Object.entries(RIVIEREN).filter(([s]) => s !== rivierSlug);
+const st = (slug) => { const x = rijen.find((r) => r.l.slug === slug); return x ? `${meter(x.ws.v)} (${dagKort(x.ws.t)} om ${tijd(x.ws.t)})` : null; };
+const faq = rivier.faq(st).filter(Boolean);
+
+const omschrijving = `Actuele waterstand van de ${rivier.naam}${hoofd ? ` bij ${rivier.plaatsen.length > 1 ? rijen.map((x) => x.l.naam).slice(0, 3).join(", ") : hoofd.l.naam}` : ""}: stand, trend van 24 uur en de verwachting van Rijkswaterstaat. Elk uur bijgewerkt.`;
+const jsonLd = [
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${Astro.site}` },
+    { "@type": "ListItem", position: 2, name: "Waterstanden", item: `${Astro.site}waterstand/` },
+    { "@type": "ListItem", position: 3, name: rivier.naam, item: `${Astro.site}waterstand/${rivierSlug}` },
+  ] },
+  ...(faq.length ? [{ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.v, acceptedAnswer: { "@type": "Answer", text: f.a } })) }] : []),
+];
+---
+<Base title={rivier.titel} description={omschrijving} canonical={`/waterstand/${rivierSlug}`} jsonLd={jsonLd}>
+  <nav class="kruimel muted"><a href="/">Home</a> › <a href="/waterstand/">Waterstanden</a> › {rivier.naam}</nav>
+  <h1>{rivier.h1}</h1>
+  {hoofd && <p class="lead">Bij {hoofd.l.naam} staat de {rivier.naam === "Nederrijn en Lek" ? "Nederrijn" : rivier.naam} nu op <strong>{meter(hoofd.ws.v)}</strong>{trend(hoofd.delta) && <>, {trend(hoofd.delta)}{hoofd.delta !== null && trend(hoofd.delta) !== "stabiel" && <> ({cmTekst(hoofd.delta)} in 24 uur)</>}</>}.{rivier.oordeel && <> {rivier.oordeel(hoofd.ws.v)}</>}{hoofd.piek && hoofd.piek.v > hoofd.ws.v + 10 && <> Rijkswaterstaat verwacht een stijging tot {meter(hoofd.piek.v)} op {dagKort(hoofd.piek.t)}.</>}</p>}
+  {hoofd && <p class="muted klein">Gemeten om {tijd(hoofd.ws.t)} · bron: Rijkswaterstaat</p>}
+
+  {hoofd && hoofd.reeks.length >= 24 && (
+    <section class="hero">
+      <p class="hlabel">Waterstand {rivier.naam === "Nederrijn en Lek" ? "Nederrijn" : rivier.naam} bij {hoofd.l.naam}, afgelopen week{hoofd.vw.length ? " en verwachting" : ""}</p>
+      <WaterstandGrafiek hero reeks={hoofd.reeks} verwachting={hoofd.vw} />
+    </section>
+  )}
+
+  <h2>{rijen.length > 1 ? `Waterstanden langs de ${rivier.naam}` : `Waterstand ${rivier.naam} per meetpunt`}</h2>
+  <div class="tabelwrap">
+    <table>
+      <thead><tr><th>Meetpunt</th><th>Stand</th><th>24 uur</th><th>Verwachting</th></tr></thead>
+      <tbody>{rijen.map((x) => (
+        <tr>
+          <td><a href={`/waterstand/${x.l.slug}`}>{x.l.naam}</a>{x.l.rivier !== rivier.naam && rivier.naam !== "Nederrijn en Lek" && <span class="muted"> · {x.l.rivier}</span>}</td>
+          <td>{meter(x.ws.v).replace(" NAP", "")}</td>
+          <td>{x.delta === null ? "–" : <><span aria-hidden="true">{pijl(x.delta)}</span> {cmTekst(x.delta)}</>}</td>
+          <td>{x.eind ? <>{meter(x.eind.v).replace(" NAP", "")} <span class="muted">· {dagKort(x.eind.t)}</span></> : <span class="muted">–</span>}</td>
+        </tr>
+      ))}</tbody>
+    </table>
+  </div>
+  <p class="muted klein">Stand in meters ten opzichte van NAP, van boven- naar benedenstrooms. "Verwachting" is de verwachte stand aan het eind van de verwachting van Rijkswaterstaat (ongeveer 2 dagen vooruit). Klik op een meetpunt voor het verloop van de week.</p>
+
+  {zijtakken.length > 0 && (
+    <>
+      <h2>Waar gaat het Rijnwater heen?</h2>
+      <ul class="tegels">{zijtakken.map((z) => (
+        <li><a href={`/waterstand/${z.s}`}>
+          <strong>Waterstand {z.r.naam}</strong>
+          <span class="muted">{z.eerste ? `${z.eerste.l.naam}: ${meter(z.eerste.ws.v)}` : z.r.plaatsen.join(", ")}</span>
+          <span class="verder">{z.r.plaatsen.length} meetpunten →</span>
+        </a></li>
+      ))}</ul>
+    </>
+  )}
+
+  <h2>Over de {rivier.naam}</h2>
+  {rivier.intro.map((t) => <p>{t}</p>)}
+  {(rivier.secties ?? []).map((s) => <><h2>{s.kop}</h2><p>{s.tekst}</p></>)}
+
+  {faq.length > 0 && <><h2>Veelgestelde vragen</h2>{faq.map((f) => <details><summary>{f.v}</summary><p>{f.a}</p></details>)}</>}
+
+  <h2>Andere rivieren</h2>
+  <ul class="chips">{andere.map(([s, r]) => <li><a href={`/waterstand/${s}`}>Waterstand {r.naam}</a></li>)}<li><a href="/waterstand/">Alle waterstanden</a></li></ul>
+  {rivier.secties && <p class="muted klein bron">Records: Rijkswaterstaat, KNMI en Weeronline.</p>}
+</Base>
+<style>
+  .lead { font-size: 1.05rem; margin: 4px 0; }
+  .hero { background: var(--accent); color: #fff; border-radius: 20px; padding: 18px 20px 12px; margin: 14px 0 4px; }
+  .hlabel { margin: 0 0 6px; font-size: .85rem; color: var(--on-accent); }
+  td:first-child { font-weight: 600; }
+  td { white-space: nowrap; }
+  .bron { margin-top: 20px; }
+</style>
