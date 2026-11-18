@@ -11,11 +11,16 @@ export function getStaticPaths() {
   const metPagina = locaties.filter((l) => !l.rws?.getij && l.rws?.waterstand && fs.existsSync(path.join(root, `data/metingen/${l.slug}.json`)));
   return metPagina.map((loc) => ({
     params: { slug: loc.slug },
-    props: { loc, data: JSON.parse(fs.readFileSync(path.join(root, `data/metingen/${loc.slug}.json`), "utf8")), andere: metPagina.filter((l) => l.slug !== loc.slug) },
+    props: {
+      loc,
+      data: JSON.parse(fs.readFileSync(path.join(root, `data/metingen/${loc.slug}.json`), "utf8")),
+      zelfdeRivier: metPagina.filter((l) => l.slug !== loc.slug && l.rivier && l.rivier === loc.rivier),
+      buren: (loc.dichtbij ?? []).map((s) => metPagina.find((l) => l.slug === s)).filter((l) => l && l.rivier !== loc.rivier),
+    },
   }));
 }
 
-const { loc, data, andere } = Astro.props;
+const { loc, data, zelfdeRivier, buren } = Astro.props;
 const ws = data.waterstand;
 const reeks = ws?.reeks ?? [];
 const nu = ws ? Date.parse(ws.t) : null;
@@ -27,7 +32,8 @@ const weekMax = reeks.length ? reeks.reduce((a, b) => (b.v > a.v ? b : a)) : nul
 const temp = data.temperatuur;
 const tempBij = temp && loc.rws?.temperatuur?.km > 2 ? (temp.meetpuntNaam || loc.rws.temperatuur.naam) : null;
 const isMeer = loc.type === "meer";
-const titel = `Waterstand ${loc.naam} vandaag – actueel ${isMeer ? "peil" : "en verloop"}`;
+const opRivier = loc.rivier && !isMeer ? ` (${loc.rivier})` : "";
+const titel = `Waterstand ${loc.naam}${opRivier} vandaag – actueel ${isMeer ? "peil" : "en verloop"}`;
 const omschrijving = ws
   ? `Waterstand ${loc.naam}: ${meter(ws.v)} (gemeten ${tijd(ws.t)})${trend ? `, ${trend}` : ""}. Verloop van de afgelopen 7 dagen, elk uur bijgewerkt met data van Rijkswaterstaat.`
   : `Actuele waterstand ${loc.naam}, elk uur bijgewerkt met data van Rijkswaterstaat.`;
@@ -40,25 +46,43 @@ const jsonLd = [
   { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: `${Astro.site}` },
     { "@type": "ListItem", position: 2, name: "Waterstanden", item: `${Astro.site}waterstand/` },
-    { "@type": "ListItem", position: 3, name: loc.naam, item: `${Astro.site}waterstand/${loc.slug}` },
+    { "@type": "ListItem", position: 3, name: `${loc.naam}${opRivier}`, item: `${Astro.site}waterstand/${loc.slug}` },
   ] },
   { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.v, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
 ];
 ---
 <Base title={titel} description={omschrijving} canonical={`/waterstand/${loc.slug}`} jsonLd={jsonLd}>
   <nav class="kruimel muted"><a href="/">Home</a> › <a href="/waterstand/">Waterstanden</a> › {loc.naam}</nav>
-  <h1>Waterstand {loc.naam}</h1>
+  <h1>Waterstand {loc.naam}{opRivier && <span class="rivier">{loc.rivier}</span>}</h1>
   {ws && <p class="lead">Nu: <strong>{meter(ws.v)}</strong>{trend && <>, {trend}{delta !== null && trend !== "stabiel" && <> ({delta > 0 ? "+" : "−"}{Math.abs(delta)} cm in 24 uur)</>}</>}.</p>}
   {ws && <p class="muted bijgewerkt">Gemeten {dag(ws.t)} om {tijd(ws.t)} · bron: Rijkswaterstaat, meetpunt {ws.meetpuntNaam}</p>}
 
+  {ws && (
+    <section class="hero" aria-label={`Waterstand ${loc.naam} nu`}>
+      <p class="status">{trend ? `Nu: ${trend}` : "Laatste meting"}</p>
+      <div class="hero-top">
+        <div>
+          <p class="hlabel">Waterstand {isMeer ? "" : `${loc.rivier ?? ""} `}bij {loc.naam}</p>
+          <p class="hgroot">{meter(ws.v).replace(" NAP", "")}</p>
+          <p class="hsub">t.o.v. NAP · {tijd(ws.t)}</p>
+        </div>
+        {delta !== null && (
+          <div class="rechts">
+            <p class="hlabel">Afgelopen 24 uur</p>
+            <p class="hmidden">{delta > 0 ? "+" : delta < 0 ? "−" : ""}{Math.abs(delta)} cm</p>
+            <p class="hsub">{trend}</p>
+          </div>
+        )}
+      </div>
+      {reeks.length >= 24 && <WaterstandGrafiek hero reeks={reeks} />}
+    </section>
+  )}
+
   <section class="kaarten">
-    {ws && <div class="kaart"><span class="label">Waterstand nu</span><span class="waarde">{meter(ws.v).replace(" NAP", "")}</span><span class="sub">t.o.v. NAP · {tijd(ws.t)}</span></div>}
-    {delta !== null && <div class="kaart"><span class="label">Afgelopen 24 uur</span><span class="waarde">{delta > 0 ? "+" : delta < 0 ? "−" : ""}{Math.abs(delta)} cm</span><span class="sub">{trend}</span></div>}
+    {weekMin && <div class="kaart"><span class="label">Laagste deze week</span><span class="waarde">{meter(weekMin.v).replace(" NAP", "")}</span><span class="sub">t.o.v. NAP</span></div>}
+    {weekMax && <div class="kaart"><span class="label">Hoogste deze week</span><span class="waarde">{meter(weekMax.v).replace(" NAP", "")}</span><span class="sub">t.o.v. NAP</span></div>}
     {temp && <div class="kaart"><span class="label">Watertemperatuur</span><span class="waarde">{graden(temp.v)}</span><span class="sub">gemeten {metTijd(temp.t)}{tempBij && <> · bij {tempBij}</>}</span></div>}
   </section>
-
-  {reeks.length >= 24 && <WaterstandGrafiek reeks={reeks} />}
-  {weekMin && <p class="muted klein">Afgelopen 7 dagen: laagste {meter(weekMin.v)}, hoogste {meter(weekMax.v)}.</p>}
 
   {loc.intro && <><h2>Over het water bij {loc.naam}</h2><p>{loc.intro}</p></>}
 
@@ -67,21 +91,38 @@ const jsonLd = [
 
   <p class="muted">Wat betekent een waterstand in m NAP? Lees <a href="/uitleg/nap">wat NAP is</a>.</p>
 
-  {andere.length > 0 && <><h2>Andere waterstanden</h2><ul class="buren">{andere.map((l) => <li><a href={`/waterstand/${l.slug}`}>{l.naam}</a></li>)}</ul></>}
+  {zelfdeRivier.length > 0 && <><h2>Meer waterstanden {["IJssel", "Lek", "Waal", "Maas", "Rijn", "Nederrijn", "Bergsche Maas"].includes(loc.rivier) ? `langs de ${loc.rivier}` : ""}</h2><ul class="buren">{zelfdeRivier.map((l) => <li><a href={`/waterstand/${l.slug}`}>{l.naam}</a></li>)}</ul></>}
+  {buren.length > 0 && <><h2>In de buurt</h2><ul class="buren">{buren.map((l) => <li><a href={`/waterstand/${l.slug}`}>{l.naam}{l.rivier && <span class="muted"> · {l.rivier}</span>}</a></li>)}</ul></>}
+  <p class="meer"><a href="/waterstand/">Alle waterstanden per rivier →</a></p>
 </Base>
 
 <style>
   .kruimel { font-size: .85rem; margin-top: 18px; }
   .kruimel a { color: var(--muted); }
-  .lead { font-size: 1.1rem; margin: 4px 0; }
-  .bijgewerkt { font-size: .85rem; margin: 0 0 18px; }
-  .kaarten { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 16px; }
-  .kaart { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; }
-  .kaart .label { font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
-  .kaart .waarde { font-size: clamp(1.4rem, 5vw, 1.7rem); font-weight: 700; line-height: 1.2; margin: 4px 0 2px; }
-  .kaart .sub { font-size: .85rem; color: var(--muted); }
+  h1 .rivier { display: inline-block; vertical-align: middle; margin-left: 10px; font-family: "Inter", sans-serif; font-size: .9rem; font-weight: 600; letter-spacing: 0; color: var(--accent-dark); background: var(--accent-soft); padding: 4px 10px; border-radius: 999px; }
+  .lead { font-size: 1.05rem; margin: 4px 0; }
+  .bijgewerkt { font-size: .85rem; margin: 0 0 16px; }
+  .hero { background: var(--accent); color: #fff; border-radius: 20px; padding: 20px 20px 14px; margin-bottom: 14px; }
+  .hero p { margin: 0; }
+  .status { font-size: .78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--on-accent); margin-bottom: 8px !important; }
+  .hero-top { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 10px; }
+  .hlabel { font-size: .85rem; color: var(--on-accent); }
+  .hgroot { font-family: var(--kop); font-size: clamp(2.4rem, 10vw, 3.2rem); font-weight: 700; line-height: 1; margin: 4px 0 !important; font-variant-numeric: tabular-nums; }
+  .hmidden { font-size: 1.4rem; font-weight: 650; line-height: 1.1; margin: 4px 0 !important; font-variant-numeric: tabular-nums; }
+  .hsub { font-size: .88rem; color: var(--on-accent); }
+  .rechts { text-align: right; }
+  .kaarten { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 8px; }
+  @media (max-width: 520px) { .kaarten { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .kaart { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; display: flex; flex-direction: column; min-width: 0; }
+  .kaart .label { font-size: .8rem; color: var(--muted); font-weight: 500; }
+  .kaart .waarde { font-size: clamp(1.35rem, 5vw, 1.65rem); font-weight: 700; line-height: 1.2; margin: 6px 0 2px; font-variant-numeric: tabular-nums; }
+  .kaart .sub { font-size: .82rem; color: var(--muted); }
   .klein { font-size: .85rem; }
-  details { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+  .meer { margin-top: 18px; font-weight: 600; }
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 8px; }
   summary { cursor: pointer; font-weight: 600; }
-  .buren { display: flex; flex-wrap: wrap; gap: 8px 18px; padding: 0; list-style: none; }
+  details p { margin: 8px 0 2px; }
+  .buren { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; }
+  .buren li a { display: inline-block; padding: 8px 14px; background: var(--card); border: 1px solid var(--line); border-radius: 999px; text-decoration: none; font-weight: 500; }
+  .buren li a:hover { border-color: var(--accent); }
 </style>

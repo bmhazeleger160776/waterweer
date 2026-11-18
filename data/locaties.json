@@ -10,7 +10,7 @@
       "temperatuur": {
         "code": "lobith.ponton",
         "naam": "Lobith, ponton",
-        "km": 2.0
+        "km": 2
       },
       "waterstand": {
         "code": "lobith.bovenrijn.tolkamer",
@@ -19,11 +19,13 @@
       }
     },
     "dichtbij": [
+      "doesburg",
       "nijmegen",
-      "deventer"
+      "arnhem"
     ],
     "regioSlug": "rivieren",
-    "intro": "Bij Lobith komt de Rijn Nederland binnen. De waterstand hier is het ijkpunt voor hoog en laag water op de grote rivieren: als het nieuws het over de stand bij Lobith heeft, gaat het om dit meetpunt. Wat hier stijgt, bereikt een tot twee dagen later ook de Waal, de Nederrijn en de IJssel."
+    "intro": "Bij Lobith komt de Rijn Nederland binnen. De waterstand hier is het ijkpunt voor hoog en laag water op de grote rivieren: als het nieuws het over de stand bij Lobith heeft, gaat het om dit meetpunt. Wat hier stijgt, bereikt een tot twee dagen later ook de Waal, de Nederrijn en de IJssel.",
+    "rivier": "Rijn"
   },
   {
     "slug": "vlissingen",
@@ -69,7 +71,7 @@
       "getij": {
         "code": "scheveningen",
         "naam": "Scheveningen",
-        "km": 1.0
+        "km": 1
       },
       "temperatuur": {
         "code": "hollandsekust.zuid.alpha",
@@ -79,7 +81,7 @@
       "waterstand": {
         "code": "scheveningen",
         "naam": "Scheveningen",
-        "km": 1.0
+        "km": 1
       }
     },
     "dichtbij": [
@@ -140,12 +142,12 @@
       "temperatuur": {
         "code": "hollandsekust.zuid.alpha",
         "naam": "Hollandse Kust Zuid platform Alpha",
-        "km": 14.0
+        "km": 14
       },
       "waterstand": {
         "code": "hollandsekust.zuid.alpha",
         "naam": "Hollandse Kust Zuid platform Alpha",
-        "km": 14.0
+        "km": 14
       }
     },
     "dichtbij": [
@@ -234,12 +236,12 @@
       "temperatuur": {
         "code": "velsen.velserkom",
         "naam": "Velserkom",
-        "km": 17.0
+        "km": 17
       },
       "waterstand": {
         "code": "ijmuiden.noordersluis.west",
         "naam": "IJmuiden, noordersluis, west",
-        "km": 17.0
+        "km": 17
       }
     },
     "dichtbij": [
@@ -389,7 +391,7 @@
     "type": "oosterschelde",
     "regio": "Zeeland",
     "lat": 51.52,
-    "lon": 4.0,
+    "lon": 4,
     "rws": {
       "getij": {
         "code": "yerseke",
@@ -432,7 +434,7 @@
       "waterstand": {
         "code": "ijmuiden.noordersluis.west",
         "naam": "IJmuiden, noordersluis, west",
-        "km": 3.0
+        "km": 3
       }
     },
     "dichtbij": [
@@ -597,7 +599,7 @@
       "waterstand": {
         "code": "cadzand.1",
         "naam": "Cadzand, 1",
-        "km": 2.0
+        "km": 2
       }
     },
     "dichtbij": [
@@ -624,11 +626,13 @@
       }
     },
     "dichtbij": [
-      "lobith",
-      "nijmegen"
+      "olst",
+      "zutphen",
+      "wijhe"
     ],
     "regioSlug": "rivieren",
-    "intro": "Deventer ligt aan de IJssel, die bij Arnhem van de Rijn aftakt. Bij hoog water lopen de uiterwaarden rond de stad onder en kan de kade aan de IJssel overstromen. Bij laag water liggen er juist zandplaten droog."
+    "intro": "Deventer ligt aan de IJssel, die bij Arnhem van de Rijn aftakt. Bij hoog water lopen de uiterwaarden rond de stad onder en kan de kade aan de IJssel overstromen. Bij laag water liggen er juist zandplaten droog.",
+    "rivier": "IJssel"
   },
   {
     "slug": "ameland",
@@ -707,17 +711,17 @@
       "getij": {
         "code": "westkapelle",
         "naam": "Westkapelle",
-        "km": 1.0
+        "km": 1
       },
       "temperatuur": {
         "code": "vlaktevanderaan",
         "naam": "Vlakte van de Raan",
-        "km": 14.0
+        "km": 14
       },
       "waterstand": {
         "code": "westkapelle",
         "naam": "Westkapelle",
-        "km": 1.0
+        "km": 1
       }
     },
     "dichtbij": [
@@ -806,7 +810,7 @@
       "temperatuur": {
         "code": "ijmuiden.buitenhaven",
         "naam": "IJmuiden, buitenhaven",
-        "km": 10.0
+        "km": 10
       },
       "waterstand": {
         "code": "ijgeul.1",
@@ -876,13 +880,13 @@
       }
     },
     "dichtbij": [
-      "callantsoog",
-      "texel",
-      "harlingen",
-      "den-helder"
+      "kampen",
+      "wijhe",
+      "olst"
     ],
     "regioSlug": "ijsselmeer",
-    "intro": "Het IJsselmeer heeft geen getij: Rijkswaterstaat regelt het peil via de spuisluizen in de Afsluitdijk. Wind kan het water wel flink scheef zetten. Bij harde wind stijgt het aan de ene oever en daalt het aan de andere. Deze waterstand is gemeten bij Krabbersgat, bij Enkhuizen."
+    "intro": "Het IJsselmeer heeft geen getij: Rijkswaterstaat regelt het peil via de spuisluizen in de Afsluitdijk. Wind kan het water wel flink scheef zetten. Bij harde wind stijgt het aan de ene oever en daalt het aan de andere. Deze waterstand is gemeten bij Krabbersgat, bij Enkhuizen.",
+    "rivier": "IJsselmeer"
   },
   {
     "slug": "yerseke",
@@ -1225,12 +1229,12 @@
       "getij": {
         "code": "stavenisse",
         "naam": "Stavenisse",
-        "km": 1.0
+        "km": 1
       },
       "waterstand": {
         "code": "stavenisse",
         "naam": "Stavenisse",
-        "km": 1.0
+        "km": 1
       }
     },
     "dichtbij": [
@@ -1347,7 +1351,7 @@
     "type": "westerschelde",
     "regio": "Zeeland",
     "lat": 51.445,
-    "lon": 4.0,
+    "lon": 4,
     "rws": {
       "getij": {
         "code": "hansweert",
@@ -1389,10 +1393,403 @@
       }
     },
     "dichtbij": [
-      "lobith",
-      "deventer"
+      "grave",
+      "arnhem",
+      "lobith"
     ],
     "regioSlug": "rivieren",
-    "intro": "Nijmegen ligt aan de Waal, de drukste vaarweg van Nederland. Bij hoog water stroomt een deel van de Waal door de nevengeul bij Lent, aangelegd om de stad te beschermen. De waterstand hier volgt die bij Lobith met enige vertraging."
+    "intro": "Nijmegen ligt aan de Waal, de drukste vaarweg van Nederland. Bij hoog water stroomt een deel van de Waal door de nevengeul bij Lent, aangelegd om de stad te beschermen. De waterstand hier volgt die bij Lobith met enige vertraging.",
+    "rivier": "Waal"
+  },
+  {
+    "slug": "tiel",
+    "naam": "Tiel",
+    "type": "rivier",
+    "rivier": "Waal",
+    "regio": "Rivieren",
+    "regioSlug": "rivieren",
+    "lat": 51.886,
+    "lon": 5.428,
+    "rws": {
+      "waterstand": {
+        "code": "tiel.sluis.waal",
+        "naam": "Tiel Sluis, Waal",
+        "km": 2.4
+      }
+    },
+    "intro": "Tiel ligt aan de Waal, tussen Nijmegen en Zaltbommel. Een stijging bij Lobith is hier met enige vertraging terug te zien. Bij hoog water lopen de uiterwaarden langs de stad onder, bij laag water komen de kribvakken en zandstrandjes droog te liggen.",
+    "dichtbij": [
+      "lith",
+      "zaltbommel",
+      "hagestein"
+    ]
+  },
+  {
+    "slug": "zaltbommel",
+    "naam": "Zaltbommel",
+    "type": "rivier",
+    "rivier": "Waal",
+    "regio": "Rivieren",
+    "regioSlug": "rivieren",
+    "lat": 51.813,
+    "lon": 5.253,
+    "rws": {
+      "waterstand": {
+        "code": "zaltbommel",
+        "naam": "Zaltbommel",
+        "km": 0.6
+      }
+    },
+    "intro": "Zaltbommel ligt aan de Waal, met de bekende spoorbrug en de Martinus Nijhoffbrug van de A2. Voor de scheepvaart is de diepte hier belangrijk: bij een lage waterstand moeten binnenvaartschepen minder lading meenemen.",
+    "dichtbij": [
+      "lith",
+      "tiel",
+      "heesbeen"
+    ]
+  },
+  {
+    "slug": "arnhem",
+    "naam": "Arnhem",
+    "type": "rivier",
+    "rivier": "Nederrijn",
+    "regio": "Rivieren",
+    "regioSlug": "rivieren",
+    "lat": 51.978,
+    "lon": 5.903,
+    "rws": {
+      "waterstand": {
+        "code": "arnhem.nederrijn",
+        "naam": "Arnhem, Nederrijn",
+        "km": 0.7
+      }
+    },
+    "intro": "Arnhem ligt aan de Nederrijn, kort nadat de Rijn zich bij de Pannerdensche Kop splitst. De Nederrijn wordt geregeld met stuwen, waaronder die bij Driel. Daardoor schommelt de waterstand hier minder dan op de Waal, al stijgt ook de Nederrijn flink bij hoog water.",
+    "dichtbij": [
+      "nijmegen",
+      "doesburg",
+      "lobith"
+    ]
+  },
+  {
+    "slug": "hagestein",
+    "naam": "Hagestein",
+    "type": "rivier",
+    "rivier": "Lek",
+    "regio": "Rivieren",
+    "regioSlug": "rivieren",
+    "lat": 51.977,
+    "lon": 5.118,
+    "rws": {
+      "waterstand": {
+        "code": "hagestein.boven",
+        "naam": "Hagestein, boven",
+        "km": 1.8
+      }
+    },
+    "intro": "Bij Hagestein ligt een van de stuwen in de Lek. Met de stuwen in de Nederrijn en Lek regelt Rijkswaterstaat hoeveel Rijnwater naar de IJssel gaat. Benedenstrooms van de stuw is de invloed van eb en vloed al merkbaar.",
+    "dichtbij": [
+      "schoonhoven",
+      "zaltbommel",
+      "tiel"
+    ]
+  },
+  {
+    "slug": "schoonhoven",
+    "naam": "Schoonhoven",
+    "type": "rivier",
+    "rivier": "Lek",
+    "regio": "Rivieren",
+    "regioSlug": "rivieren",
+    "lat": 51.946,
+    "lon": 4.85,
+    "rws": {
+      "waterstand": {
+        "code": "schoonhoven",
+        "naam": "Schoonhoven",
+        "km": 0.4
+      }
+    },
+    "intro": "Schoonhoven ligt aan de Lek, op het stuk waar het getij uit zee nog goed merkbaar is. De waterstand gaat hier twee keer per dag op en neer. Bij een hoge rivierafvoer of een storm uit het noordwesten kan het water hoger komen dan normaal.",
+    "dichtbij": [
+      "hagestein",
+      "keizersveer",
+      "heesbeen"
+    ]
+  },
+  {
+    "slug": "doesburg",
+    "naam": "Doesburg",
+    "type": "rivier",
+    "rivier": "IJssel",
+    "regio": "Rivieren",
+    "regioSlug": "rivieren",
+    "lat": 52.012,
+    "lon": 6.135,
+    "rws": {
+      "waterstand": {
+        "code": "doesburg.ijssel",
+        "naam": "Doesburg, IJssel",
+        "km": 0.9
+      }
+    },
+    "intro": "De Hanzestad Doesburg ligt aan de IJssel, niet ver van de plek waar de IJssel bij Arnhem van de Rijn aftakt. Een stijging van de Rijn is hier daardoor snel terug te zien. Bij hoog water lopen de uiterwaarden rond de stad onder.",
+    "dichtbij": [
+      "zutphen",
+      "arnhem",
+      "lobith"
+    ]
+  },
+  {
+    "slug": "zutphen",
+    "naam": "Zutphen",
+    "type": "rivier",
+    "rivier": "IJssel",
+    "regio": "Rivieren",
+    "regioSlug": "rivieren",
+    "lat": 52.142,
+    "lon": 6.192,
+    "rws": {
+      "waterstand": {
+        "code": "zutphen.ijssel",
+        "naam": "Zutphen, IJssel",
+        "km": 1.5
+      }
+    },
+    "intro": "Zutphen ligt aan de IJssel, waar de Berkel in de rivier uitkomt. Bij hoog water staan de uiterwaarden aan de overkant van de stad blank. Bij laag water is de IJssel hier smal en ondiep, wat de scheepvaart merkt.",
+    "dichtbij": [
+      "deventer",
+      "doesburg",
+      "olst"
+    ]
+  },
+  {
+    "slug": "olst",
+    "naam": "Olst",
+    "type": "rivier",
+    "rivier": "IJssel",
+    "regio": "Rivieren",
+    "regioSlug": "rivieren",
+    "lat": 52.337,
+    "lon": 6.108,
+    "rws": {
+      "waterstand": {
+        "code": "olst",
+        "naam": "Olst",
+        "km": 0.6
+      }
+    },
+    "intro": "Olst ligt aan de IJssel tussen Deventer en Zwolle. Het meetpunt hier geeft een goed beeld van de waterstand op dit deel van de rivier. Bij hoog water vullen de uiterwaarden langs de dijk zich met water.",
+    "dichtbij": [
+      "wijhe",
+      "deventer",
+      "zutphen"
+    ]
+  },
+  {
+    "slug": "wijhe",
+    "naam": "Wijhe",
+    "type": "rivier",
+    "rivier": "IJssel",
+    "regio": "Rivieren",
+    "regioSlug": "rivieren",
+    "lat": 52.386,
+    "lon": 6.128,
+    "rws": {
+      "waterstand": {
+        "code": "wijhe",
+        "naam": "Wijhe",
+        "km": 0.1
+      }
+    },
+    "intro": "Wijhe ligt aan de IJssel, iets stroomafwaarts van Olst. De uiterwaarden langs de rivier lopen bij hoog water onder. De waterstand volgt die bij Deventer met enige vertraging.",
+    "dichtbij": [
+      "olst",
+      "deventer",
+      "kampen"
+    ]
+  },
+  {
+    "slug": "kampen",
+    "naam": "Kampen",
+    "type": "rivier",
+    "rivier": "IJssel",
+    "regio": "Rivieren",
+    "regioSlug": "rivieren",
+    "lat": 52.555,
+    "lon": 5.912,
+    "rws": {
+      "waterstand": {
+        "code": "kampen.ijssel",
+        "naam": "Kampen, IJssel",
+        "km": 1
+      }
+    },
+    "intro": "Bij Kampen stroomt de IJssel het Ketelmeer in. De waterstand hangt hier niet alleen af van de rivierafvoer, maar ook van de wind: bij een noordwesterstorm wordt water vanuit het IJsselmeer opgestuwd. De balgstuw bij Ramspol beschermt het gebied daartegen.",
+    "dichtbij": [
+      "wijhe",
+      "olst",
+      "deventer"
+    ]
+  },
+  {
+    "slug": "borgharen",
+    "naam": "Borgharen",
+    "type": "rivier",
+    "rivier": "Maas",
+    "regio": "Rivieren",
+    "regioSlug": "rivieren",
+    "lat": 50.877,
+    "lon": 5.687,
+    "rws": {
+      "waterstand": {
+        "code": "maastricht.borgharen.maas.beneden",
+        "naam": "Borgharen Dorp",
+        "km": 0.6
+      }
+    },
+    "intro": "Borgharen ligt aan de Maas net ten noorden van Maastricht. Hier begint de Grensmaas, het vrij stromende stuk langs de Belgische grens. De waterstand bij Borgharen is een belangrijk ijkpunt voor hoog water op de Maas, zoals in juli 2021.",
+    "dichtbij": [
+      "roermond",
+      "venlo",
+      "grave"
+    ]
+  },
+  {
+    "slug": "roermond",
+    "naam": "Roermond",
+    "type": "rivier",
+    "rivier": "Maas",
+    "regio": "Rivieren",
+    "regioSlug": "rivieren",
+    "lat": 51.193,
+    "lon": 5.973,
+    "rws": {
+      "waterstand": {
+        "code": "roermond.boven",
+        "naam": "Roermond, boven",
+        "km": 1
+      }
+    },
+    "intro": "Bij Roermond komt de Roer in de Maas uit, midden in het gebied van de Maasplassen. Een stuw in de Maas houdt het peil hier op hoogte voor de scheepvaart. Bij hoog water stijgt de Maas hier snel.",
+    "dichtbij": [
+      "venlo",
+      "borgharen",
+      "grave"
+    ]
+  },
+  {
+    "slug": "venlo",
+    "naam": "Venlo",
+    "type": "rivier",
+    "rivier": "Maas",
+    "regio": "Rivieren",
+    "regioSlug": "rivieren",
+    "lat": 51.371,
+    "lon": 6.175,
+    "rws": {
+      "waterstand": {
+        "code": "venlo",
+        "naam": "Venlo",
+        "km": 1.2
+      }
+    },
+    "intro": "Venlo ligt aan de Maas, met de kade en de boulevard direct aan het water. De Maas is een regenrivier: na veel regen in België en Frankrijk kan het water hier binnen een paar dagen flink stijgen.",
+    "dichtbij": [
+      "roermond",
+      "grave",
+      "lobith"
+    ]
+  },
+  {
+    "slug": "grave",
+    "naam": "Grave",
+    "type": "rivier",
+    "rivier": "Maas",
+    "regio": "Rivieren",
+    "regioSlug": "rivieren",
+    "lat": 51.763,
+    "lon": 5.739,
+    "rws": {
+      "waterstand": {
+        "code": "grave.boven",
+        "naam": "Grave, boven",
+        "km": 0.4
+      }
+    },
+    "intro": "Bij Grave ligt een stuw in de Maas, met een sluis ernaast voor de scheepvaart. De stuw houdt het water stroomopwaarts op peil. Bij hoog water gaan de stuwen open en stroomt de Maas vrij.",
+    "dichtbij": [
+      "nijmegen",
+      "lith",
+      "tiel"
+    ]
+  },
+  {
+    "slug": "lith",
+    "naam": "Lith",
+    "type": "rivier",
+    "rivier": "Maas",
+    "regio": "Rivieren",
+    "regioSlug": "rivieren",
+    "lat": 51.807,
+    "lon": 5.437,
+    "rws": {
+      "waterstand": {
+        "code": "lith.beneden",
+        "naam": "Lith beneden",
+        "km": 0.5
+      }
+    },
+    "intro": "Lith ligt aan de Maas, met de laatste stuw van de Maas in Nederland. Stroomafwaarts van Lith gaat de rivier geleidelijk over in het benedenrivierengebied, waar ook de invloed van de zee meespeelt.",
+    "dichtbij": [
+      "tiel",
+      "zaltbommel",
+      "grave"
+    ]
+  },
+  {
+    "slug": "heesbeen",
+    "naam": "Heesbeen",
+    "type": "rivier",
+    "rivier": "Bergsche Maas",
+    "regio": "Rivieren",
+    "regioSlug": "rivieren",
+    "lat": 51.735,
+    "lon": 5.018,
+    "rws": {
+      "waterstand": {
+        "code": "waalwijk",
+        "naam": "Waalwijk",
+        "km": 4.7
+      }
+    },
+    "intro": "Bij Heesbeen stroomt de Bergsche Maas, het gegraven deel van de Maas richting Hollands Diep. De waterstand hangt hier af van de Maasafvoer en een beetje van het getij. Bij hoog water komen de uiterwaarden langs de dijk onder water.",
+    "dichtbij": [
+      "keizersveer",
+      "zaltbommel",
+      "schoonhoven"
+    ]
+  },
+  {
+    "slug": "keizersveer",
+    "naam": "Keizersveer",
+    "type": "rivier",
+    "rivier": "Bergsche Maas",
+    "regio": "Rivieren",
+    "regioSlug": "rivieren",
+    "lat": 51.716,
+    "lon": 4.889,
+    "rws": {
+      "waterstand": {
+        "code": "hank.bergschemaas",
+        "naam": "Keizersveer",
+        "km": 0.5
+      }
+    },
+    "intro": "Bij Keizersveer gaat de A27 over de Bergsche Maas. Op dit deel van de rivier spelen de Maasafvoer en het getij allebei mee, waardoor de waterstand in de loop van de dag op en neer gaat.",
+    "dichtbij": [
+      "heesbeen",
+      "schoonhoven",
+      "zaltbommel"
+    ]
   }
 ]

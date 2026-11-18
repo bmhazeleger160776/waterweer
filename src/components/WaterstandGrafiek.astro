@@ -1,7 +1,7 @@
 ---
 // Verloop van de gemeten waterstand (uurwaarden), standaard de laatste 7 dagen.
 import { meter } from "../lib/format.js";
-const { reeks } = Astro.props;
+const { reeks, hero = false } = Astro.props;
 const W = 760, H = 240, L = 64, R = 16, T = 20, B = 34;
 const t0 = Date.parse(reeks[0].t), t1 = Date.parse(reeks.at(-1).t);
 const vals = reeks.map((p) => p.v);
@@ -20,7 +20,7 @@ const uurFmt = new Intl.DateTimeFormat("nl-NL", { timeZone: "Europe/Amsterdam", 
 const dagen = reeks.filter((p) => Number(uurFmt.format(new Date(p.t))) === 0);
 const laatste = reeks.at(-1);
 ---
-<figure class="grafiek">
+<figure class:list={["grafiek", { hero }]}>
   <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Verloop van de waterstand in de afgelopen dagen">
     {ticks.map((v) => (
       <g>
@@ -49,4 +49,11 @@ const laatste = reeks.at(-1);
   .vlak { fill: var(--accent-soft); }
   .punt { fill: var(--accent); stroke: #fff; stroke-width: 2; }
   figcaption { font-size: .85rem; margin-top: 6px; }
+  .hero { background: transparent; border: 0; padding: 0; }
+  .hero .grid { stroke: rgba(255,255,255,.14); }
+  .hero .as { fill: var(--on-accent); }
+  .hero .lijn { stroke: #fff; }
+  .hero .vlak { fill: rgba(255,255,255,.14); }
+  .hero .punt { fill: var(--sun); stroke: var(--accent); }
+  .hero figcaption { color: var(--on-accent); }
 </style>

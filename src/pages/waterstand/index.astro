@@ -6,20 +6,63 @@ import { meter, tijd } from "../../lib/format.js";
 const root = process.cwd();
 const rijen = JSON.parse(fs.readFileSync(path.join(root, "data/locaties.json"), "utf8"))
   .filter((l) => !l.rws?.getij && l.rws?.waterstand && fs.existsSync(path.join(root, `data/metingen/${l.slug}.json`)))
-  .map((l) => ({ l, ws: JSON.parse(fs.readFileSync(path.join(root, `data/metingen/${l.slug}.json`), "utf8")).waterstand }));
+  .map((l) => {
+    const ws = JSON.parse(fs.readFileSync(path.join(root, `data/metingen/${l.slug}.json`), "utf8")).waterstand;
+    const r = ws?.reeks ?? [];
+    let delta = null;
+    if (ws && r.length) {
+      const doel = Date.parse(ws.t) - 864e5;
+      const p = r.reduce((a, b) => (Math.abs(Date.parse(b.t) - doel) < Math.abs(Date.parse(a.t) - doel) ? b : a));
+      if (Math.abs(Date.parse(p.t) - doel) < 3 * 3600e3) delta = Math.round(ws.v - p.v);
+    }
+    return { l, ws, delta };
+  });
+// Volgorde: van boven- naar benedenstrooms
+const VOLGORDE = ["Rijn", "Waal", "Nederrijn", "Lek", "IJssel", "Maas", "Bergsche Maas", "IJsselmeer"];
+const NOORD_ZUID = (a, b) => (["IJssel", "Maas"].includes(a.l.rivier) ? a.l.lat - b.l.lat : b.l.lon - a.l.lon);
+const groepen = VOLGORDE
+  .map((rivier) => ({ rivier, rijen: rijen.filter((x) => (x.l.rivier ?? x.l.naam) === rivier).sort(NOORD_ZUID) }))
+  .filter((g) => g.rijen.length);
+const overig = rijen.filter((x) => !VOLGORDE.includes(x.l.rivier ?? x.l.naam));
+if (overig.length) groepen.push({ rivier: "Overig", rijen: overig });
+const pijl = (d) => (d === null ? "" : Math.abs(d) < 5 ? "→" : d > 0 ? "↑" : "↓");
 ---
-<Base title="Waterstanden rivieren en IJsselmeer – actueel" description="Actuele waterstanden van de Rijn bij Lobith, de Waal bij Nijmegen, de IJssel bij Deventer en het IJsselmeer, met verloop van de afgelopen week." canonical="/waterstand/">
-  <h1>Waterstanden rivieren en IJsselmeer</h1>
-  <p>Actuele waterstanden op de grote rivieren en het IJsselmeer, elk uur bijgewerkt met metingen van Rijkswaterstaat. Voor eb en vloed aan de kust, zie <a href="/getijden/">getijden per plaats</a>.</p>
-  <table>
-    <thead><tr><th>Plaats</th><th>Waterstand</th><th>Gemeten</th></tr></thead>
-    <tbody>{rijen.map(({ l, ws }) => <tr><td><a href={`/waterstand/${l.slug}`}>{l.naam}</a></td><td>{ws ? meter(ws.v) : "–"}</td><td>{ws ? tijd(ws.t) : "–"}</td></tr>)}</tbody>
-  </table>
+<Base title="Waterstanden rivieren actueel – Rijn, Waal, IJssel, Maas en Lek" description="Actuele waterstanden van Rijn, Waal, Nederrijn, Lek, IJssel, Maas en het IJsselmeer per meetpunt, met trend en verloop van de afgelopen week. Elk uur bijgewerkt met data van Rijkswaterstaat." canonical="/waterstand/">
+  <h1>Waterstanden rivieren</h1>
+  <p>Actuele waterstanden op de grote rivieren en het IJsselmeer, elk uur bijgewerkt met metingen van Rijkswaterstaat. De pijl geeft aan of het water de afgelopen 24 uur steeg of daalde. Voor eb en vloed aan de kust, zie <a href="/getijden/">getijden per plaats</a>.</p>
+  <nav class="snel" aria-label="Naar rivier">{groepen.map((g) => <a href={`#${g.rivier.toLowerCase().replace(/\s+/g, "-")}`}>{g.rivier}</a>)}</nav>
+
+  {groepen.map((g) => (
+    <section id={g.rivier.toLowerCase().replace(/\s+/g, "-")}>
+      <h2>{g.rivier === "IJsselmeer" || g.rivier === "Overig" ? g.rivier : `Waterstand ${g.rivier}`}</h2>
+      <div class="tabelwrap">
+        <table>
+          <thead><tr><th>Meetpunt</th><th>Waterstand</th><th>24 uur</th><th>Gemeten</th></tr></thead>
+          <tbody>{g.rijen.map(({ l, ws, delta }) => (
+            <tr>
+              <td><a href={`/waterstand/${l.slug}`}>{l.naam}</a></td>
+              <td class="getal">{ws ? meter(ws.v).replace(" NAP", "") : "–"}</td>
+              <td class="getal">{delta === null ? "–" : <><span aria-hidden="true">{pijl(delta)}</span> {delta > 0 ? "+" : delta < 0 ? "−" : ""}{Math.abs(delta)} cm</>}</td>
+              <td class="muted">{ws ? tijd(ws.t) : "–"}</td>
+            </tr>
+          ))}</tbody>
+        </table>
+      </div>
+    </section>
+  ))}
+  <p class="muted klein">Waterstanden in meters ten opzichte van NAP. <a href="/uitleg/nap">Wat is NAP?</a></p>
 </Base>
 <style>
-  table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
-  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); }
-  th { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  .snel { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 4px; }
+  .snel a { padding: 8px 14px; background: var(--card); border: 1px solid var(--line); border-radius: 999px; text-decoration: none; font-weight: 500; }
+  .snel a:hover { border-color: var(--accent); }
+  .tabelwrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  th, td { text-align: left; padding: 11px 16px; border-bottom: 1px solid var(--line); }
+  th { font-size: .8rem; font-weight: 600; color: var(--muted); background: #f8fbfd; white-space: nowrap; }
   td:first-child { font-weight: 600; }
+  td.getal { font-variant-numeric: tabular-nums; white-space: nowrap; }
   tr:last-child td { border-bottom: 0; }
+  .klein { font-size: .85rem; margin-top: 18px; }
+  @media (max-width: 520px) { th, td { padding: 9px 8px; font-size: .9rem; } th:first-child, td:first-child { padding-left: 12px; } }
 </style>
