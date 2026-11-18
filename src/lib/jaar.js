@@ -31,3 +31,17 @@ export function extremenTussen(code, actueel, van, tot) {
 export function leesJaar(code, jaar) {
   return JSON.parse(fs.readFileSync(path.join(process.cwd(), "data/metingen/jaar", String(jaar), `${code}.json`), "utf8"));
 }
+
+// Jaren waarvoor een landelijke getijtabel-pagina (/getijtabel/<jaar>) bestaat: minstens 10 complete meetpunten
+let hubCache;
+export function hubJaren() {
+  if (hubCache) return hubCache;
+  const map = path.join(process.cwd(), "data/metingen/jaar");
+  if (!fs.existsSync(map)) return [];
+  const huidig = new Date().getUTCFullYear();
+  const hub = fs.readdirSync(map).filter((j) => /^\d{4}$/.test(j) && Number(j) >= huidig).filter((j) =>
+    fs.readdirSync(path.join(map, j)).filter((f) => f.endsWith(".json")).filter((f) => JSON.parse(fs.readFileSync(path.join(map, j, f), "utf8")).compleet).length >= 10
+  ).sort();
+  hubCache = hub;
+  return hub;
+}

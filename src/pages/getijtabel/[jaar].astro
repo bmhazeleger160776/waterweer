@@ -1,0 +1,126 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import Base from "../../layouts/Base.astro";
+import { REGIOS } from "../../lib/regios.js";
+import { jarenVoor, leesJaar, hubJaren } from "../../lib/jaar.js";
+import { datumKey } from "../../lib/format.js";
+
+function plaatsenMetJaar() {
+  const root = process.cwd();
+  return JSON.parse(fs.readFileSync(path.join(root, "data/locaties.json"), "utf8"))
+    .filter((l) => l.rws?.getij && fs.existsSync(path.join(root, `data/metingen/${l.slug}.json`)))
+    .map((l) => ({ l, jaren: jarenVoor(l.rws.getij.code) }));
+}
+
+export function getStaticPaths() {
+  return hubJaren().map((jaar) => ({ params: { jaar } }));
+}
+
+const { jaar } = Astro.params;
+const alleJaren = hubJaren();
+const fmtDatum = new Intl.DateTimeFormat("nl-NL", { timeZone: "Europe/Amsterdam", day: "numeric", month: "long" });
+const fmtKort = new Intl.DateTimeFormat("nl-NL", { timeZone: "Europe/Amsterdam", weekday: "short", day: "numeric", month: "short" });
+const cm = (v) => `${v >= 0 ? "+" : "−"}${(Math.abs(v) / 100).toFixed(2).replace(".", ",")} m`;
+
+// Per plaats: hoogste hoogwater en laagste laagwater van het jaar
+const cache = new Map();
+const jaarData = (code) => { if (!cache.has(code)) cache.set(code, leesJaar(code, jaar).ext.filter((e) => datumKey(e[0]).startsWith(jaar))); return cache.get(code); };
+const rijen = plaatsenMetJaar().filter((x) => x.jaren.includes(jaar)).map(({ l }) => {
+  const ext = jaarData(l.rws.getij.code);
+  const hw = ext.filter((e) => e[2] === "H"), lw = ext.filter((e) => e[2] === "L");
+  return {
+    l,
+    hoog: hw.reduce((a, b) => (b[1] > a[1] ? b : a), hw[0]),
+    laag: lw.reduce((a, b) => (b[1] < a[1] ? b : a), lw[0]),
+  };
+});
+const regios = Object.entries(REGIOS).map(([slug, r]) => ({ slug, ...r, rijen: rijen.filter((x) => x.l.regioSlug === slug).sort((a, b) => a.l.naam.localeCompare(b.l.naam, "nl")) })).filter((r) => r.rijen.length);
+
+// Springtij en doodtij in het jaar, op basis van Vlissingen (de dagen gelden langs de hele kust, met een dag speling)
+const ref = rijen.find((x) => x.l.slug === "vlissingen") ?? rijen[0];
+const perDag = new Map();
+for (const [t, v] of jaarData(ref.l.rws.getij.code)) {
+  const k = datumKey(t);
+  if (!perDag.has(k)) perDag.set(k, { t, v: [] });
+  perDag.get(k).v.push(v);
+}
+const dagen = [...perDag.values()].filter((d) => d.v.length >= 3).map((d) => ({ t: d.t, r: Math.max(...d.v) - Math.min(...d.v) }));
+const spring = [], dood = [];
+for (let i = 0; i < dagen.length; i++) {
+  const venster = dagen.slice(Math.max(0, i - 5), i + 6).map((d) => d.r);
+  if (dagen[i].r === Math.max(...venster)) spring.push(dagen[i]);
+  else if (dagen[i].r === Math.min(...venster)) dood.push(dagen[i]);
+}
+const perMaand = (lijst) => {
+  const m = new Map();
+  for (const d of lijst) { const k = datumKey(d.t).slice(5, 7); if (!m.has(k)) m.set(k, []); m.get(k).push(d); }
+  return m;
+};
+const MAANDEN = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"];
+const springM = perMaand(spring), doodM = perMaand(dood);
+const hoogsteLand = rijen.reduce((a, b) => (b.hoog[1] > a.hoog[1] ? b : a), rijen[0]);
+
+const titel = `Getijtabel ${jaar} – eb en vloed per plaats in Nederland`;
+const omschrijving = `Getijtabellen ${jaar} van Rijkswaterstaat voor ${rijen.length} plaatsen langs de Nederlandse kust: alle hoog- en laagwaters per dag, springtij en doodtij in ${jaar}, en printbaar als pdf.`;
+const jsonLd = [{
+  "@context": "https://schema.org", "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${Astro.site}` },
+    { "@type": "ListItem", position: 2, name: "Getijden", item: `${Astro.site}getijden/` },
+    { "@type": "ListItem", position: 3, name: `Getijtabel ${jaar}`, item: `${Astro.site}getijtabel/${jaar}` },
+  ],
+}];
+---
+<Base title={titel} description={omschrijving} canonical={`/getijtabel/${jaar}`} jsonLd={jsonLd}>
+  <nav class="kruimel muted"><a href="/">Home</a> › <a href="/getijden/">Getijden</a> › Getijtabel {jaar}</nav>
+  <h1>Getijtabel {jaar}</h1>
+  <p>De complete getijtabellen van {jaar} voor {rijen.length} plaatsen langs de Nederlandse kust, de Oosterschelde, de Westerschelde en de Waddenzee. Per plaats vind je alle tijden van hoog- en laagwater, voor elke dag van het jaar, berekend door Rijkswaterstaat. Elke tabel kun je printen of opslaan als pdf.</p>
+  {alleJaren.length > 1 && <nav class="chips jaren" aria-label="Kies een jaar">{alleJaren.map((j) => j === jaar ? <span class="actief">{j}</span> : <a href={`/getijtabel/${j}`}>{j}</a>)}</nav>}
+
+  {regios.map((r) => (
+    <section>
+      <h2>Getijtabel {jaar} {r.naam === "Wadden" ? "Waddengebied" : r.naam}</h2>
+      <div class="tabelwrap">
+        <table>
+          <thead><tr><th>Plaats</th><th>Hoogste hoogwater</th><th>Laagste laagwater</th></tr></thead>
+          <tbody>{r.rijen.map((x) => (
+            <tr>
+              <td><a href={`/getijden/${x.l.slug}/${jaar}`}>{x.l.naam} {jaar}</a></td>
+              <td>{x.hoog ? <>{cm(x.hoog[1])} <span class="muted">· {fmtKort.format(new Date(x.hoog[0]))}</span></> : "–"}</td>
+              <td>{x.laag ? <>{cm(x.laag[1])} <span class="muted">· {fmtKort.format(new Date(x.laag[0]))}</span></> : "–"}</td>
+            </tr>
+          ))}</tbody>
+        </table>
+      </div>
+    </section>
+  ))}
+  <p class="muted klein">Hoogtes ten opzichte van NAP. Dit zijn astronomische voorspellingen: door wind en luchtdruk kan de werkelijke waterstand tientallen centimeters afwijken.{hoogsteLand && <> Het hoogste astronomische hoogwater van {jaar} staat in {hoogsteLand.l.naam}: {cm(hoogsteLand.hoog[1])} NAP op {fmtDatum.format(new Date(hoogsteLand.hoog[0]))}.</>}</p>
+
+  <h2>Springtij en doodtij {jaar}</h2>
+  <p>Rond nieuwe en volle maan is het verschil tussen eb en vloed het grootst (springtij), rond het eerste en laatste kwartier het kleinst (doodtij). Deze dagen zijn berekend uit de getijtabel van {ref.l.naam}; langs de rest van de kust vallen ze op dezelfde dag of een dag later. <a href="/uitleg/springtij-en-doodtij">Meer over springtij en doodtij</a>.</p>
+  <div class="tabelwrap">
+    <table>
+      <thead><tr><th>Maand</th><th>Springtij</th><th>Doodtij</th></tr></thead>
+      <tbody>{MAANDEN.map((naam, i) => {
+        const k = String(i + 1).padStart(2, "0");
+        return (springM.has(k) || doodM.has(k)) && (
+          <tr>
+            <td>{naam[0].toUpperCase() + naam.slice(1)}</td>
+            <td>{(springM.get(k) ?? []).map((d) => fmtDatum.format(new Date(d.t)).replace(` ${naam}`, "")).join(" en ") || "–"}</td>
+            <td>{(doodM.get(k) ?? []).map((d) => fmtDatum.format(new Date(d.t)).replace(` ${naam}`, "")).join(" en ") || "–"}</td>
+          </tr>
+        );
+      })}</tbody>
+    </table>
+  </div>
+
+  <h2>Getijden vandaag</h2>
+  <p>Wil je alleen weten wanneer het vandaag of de komende dagen eb en vloed is? Bekijk dan de <a href="/getijden/">getijden per plaats</a>, elk uur bijgewerkt met de actuele waterstand en watertemperatuur.</p>
+</Base>
+<style>
+  .jaren { margin: 8px 0 4px; }
+  .jaren .actief { display: inline-block; padding: 8px 14px; border-radius: 999px; background: var(--accent); color: #fff; font-weight: 600; }
+  td:first-child { font-weight: 600; white-space: nowrap; }
+  td { white-space: nowrap; }
+</style>

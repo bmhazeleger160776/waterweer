@@ -2,6 +2,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import Base from "../layouts/Base.astro";
+import { hubJaren } from "../lib/jaar.js";
+const getijJaar = hubJaren().at(-1);
 const root = process.cwd();
 const alle = JSON.parse(fs.readFileSync(path.join(root, "data/locaties.json"), "utf8"));
 const heeftData = (l) => fs.existsSync(path.join(root, `data/metingen/${l.slug}.json`));
@@ -43,6 +45,8 @@ const regios = [
     ))}
   </ul>
 
+  {getijJaar && <p class="jaarlink"><a href={`/getijtabel/${getijJaar}`}>Getijtabel {getijJaar} – alle hoog- en laagwaters van het jaar per plaats →</a></p>}
+
   <h2>Getijden per plaats</h2>
   <ul class="chips">{locaties.map((l) => <li><a href={`/getijden/${l.slug}`}>{l.naam}</a></li>)}</ul>
 
@@ -72,6 +76,9 @@ const regios = [
 </Base>
 
 <style>
+  .jaarlink { margin: 16px 0 0; }
+  .jaarlink a { display: block; padding: 14px 16px; background: var(--accent-soft); border: 1px solid #c6e0f0; border-radius: var(--radius); font-weight: 600; text-decoration: none; }
+  .jaarlink a:hover { border-color: var(--accent); }
   .intro { background: var(--accent); color: #fff; border-radius: 22px; padding: 28px 24px 26px; margin-top: 22px; }
   .intro h1 { margin: 0 0 10px; }
   .intro p { margin: 0 0 20px; color: var(--on-accent); max-width: 560px; }

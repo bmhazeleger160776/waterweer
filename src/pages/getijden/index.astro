@@ -3,22 +3,33 @@ import fs from "node:fs";
 import path from "node:path";
 import Base from "../../layouts/Base.astro";
 import { REGIOS } from "../../lib/regios.js";
+import { hubJaren } from "../../lib/jaar.js";
+import { tijd, dagKort, datumKey } from "../../lib/format.js";
 const root = process.cwd();
 const locaties = JSON.parse(fs.readFileSync(path.join(root, "data/locaties.json"), "utf8"))
   .filter((l) => l.rws?.getij && fs.existsSync(path.join(root, `data/metingen/${l.slug}.json`)))
-  .sort((a, b) => a.naam.localeCompare(b.naam, "nl"));
+  .sort((a, b) => a.naam.localeCompare(b.naam, "nl"))
+  .map((l) => {
+    const d = JSON.parse(fs.readFileSync(path.join(root, `data/metingen/${l.slug}.json`), "utf8"));
+    const ext = d.getij?.extremen ?? [];
+    return { l, nu: d.bijgewerkt, hw: ext.find((e) => e.soort === "HW" && e.t >= d.bijgewerkt), lw: ext.find((e) => e.soort === "LW" && e.t >= d.bijgewerkt) };
+  });
+const bijgewerkt = locaties.map((r) => r.nu).sort().at(-1);
+const vandaagKey = bijgewerkt ? datumKey(bijgewerkt) : null;
+const wanneer = (e) => (e ? `${tijd(e.t)}${datumKey(e.t) !== vandaagKey ? ` (${dagKort(e.t)})` : ""}` : "–");
 const SUB = {
   zeeland: "Grootste getijverschil van Nederland",
-  "zuid-holland": "Scheveningen, Hoek van Holland en meer",
+  "zuid-holland": "Van Katwijk tot Goeree",
   "noord-holland": "Van Zandvoort tot Den Helder",
   wadden: "Eilanden, Waddenzee en wadlopen",
 };
-const regios = Object.entries(REGIOS).map(([slug, r]) => ({ slug, ...r, lijst: locaties.filter((l) => l.regioSlug === slug) }));
+const regios = Object.entries(REGIOS).map(([slug, r]) => ({ slug, ...r, lijst: locaties.filter((x) => x.l.regioSlug === slug) }));
+const getijJaar = hubJaren().at(-1);
 ---
-<Base title="Getijden Nederland – eb en vloed per plaats" description="Getijtabellen met hoog- en laagwater voor de hele Nederlandse kust, per plaats en elk uur bijgewerkt met data van Rijkswaterstaat." canonical="/getijden/">
+<Base title="Getijden vandaag – eb en vloed per plaats in Nederland" description={`Getijden en eb en vloed vandaag voor ${locaties.length} plaatsen langs de Nederlandse kust: eerstvolgend hoog- en laagwater per plaats, elk uur bijgewerkt met data van Rijkswaterstaat.`} canonical="/getijden/">
   <nav class="kruimel muted"><a href="/">Home</a> › Getijden</nav>
-  <h1>Getijden per plaats</h1>
-  <p>Hoog- en laagwater voor {locaties.length} plaatsen langs de Nederlandse kust, met watertemperatuur en de actuele waterstand. Elk uur bijgewerkt met data van Rijkswaterstaat. Kies een regio of ga direct naar een plaats.</p>
+  <h1>Getijden vandaag: eb en vloed per plaats</h1>
+  <p>Het eerstvolgende hoog- en laagwater voor {locaties.length} plaatsen langs de Nederlandse kust, de Zeeuwse wateren en de Waddenzee. Elk uur bijgewerkt met data van Rijkswaterstaat. Klik op een plaats voor de getijtabel van 7 dagen, de waterstand en de watertemperatuur.</p>
 
   <ul class="tegels">
     {regios.map((r) => (
@@ -30,15 +41,29 @@ const regios = Object.entries(REGIOS).map(([slug, r]) => ({ slug, ...r, lijst: l
     ))}
   </ul>
 
+  {getijJaar && <p class="jaarlink"><a href={`/getijtabel/${getijJaar}`}>Getijtabel {getijJaar}: alle hoog- en laagwaters van het hele jaar, per plaats →</a></p>}
+
   {regios.filter((r) => r.lijst.length).map((r) => (
     <section>
-      <h2><a href={`/getijden/${r.slug}`}>{r.h1}</a></h2>
-      <ul class="chips">{r.lijst.map((l) => <li><a href={`/getijden/${l.slug}`}>{l.naam}</a></li>)}</ul>
+      <h2><a href={`/getijden/${r.slug}`}>Eb en vloed {r.naam === "Wadden" ? "Waddengebied" : r.naam}</a></h2>
+      <div class="tabelwrap">
+        <table>
+          <thead><tr><th>Plaats</th><th>Hoogwater</th><th>Laagwater</th></tr></thead>
+          <tbody>{r.lijst.map((x) => (
+            <tr><td><a href={`/getijden/${x.l.slug}`}>{x.l.naam}</a></td><td>{wanneer(x.hw)}</td><td>{wanneer(x.lw)}</td></tr>
+          ))}</tbody>
+        </table>
+      </div>
     </section>
   ))}
+  {bijgewerkt && <p class="muted klein">Eerstvolgend hoog- en laagwater, bijgewerkt om {tijd(bijgewerkt)}. Bron: Rijkswaterstaat.</p>}
 
   <p class="meer muted">Op zoek naar de waterstand van een rivier? Bekijk de <a href="/waterstand/">waterstanden van Rijn, Waal, IJssel en Maas</a>.</p>
 </Base>
 <style>
+  td:first-child { font-weight: 600; }
+  .jaarlink { margin: 16px 0 0; }
+  .jaarlink a { display: block; padding: 14px 16px; background: var(--accent-soft); border: 1px solid #c6e0f0; border-radius: var(--radius); font-weight: 600; text-decoration: none; }
+  .jaarlink a:hover { border-color: var(--accent); }
   .meer { margin-top: 32px; }
 </style>

@@ -66,14 +66,14 @@ const getijVerschil = (() => {
   return Math.round(Math.max(...hw.map((e) => e.v)) - Math.min(...lw.map((e) => e.v)));
 })();
 
-const titel = data.waterstand ? `Getijden & waterstand ${loc.naam} – eb, vloed, watertemperatuur` : `Getijden ${loc.naam} vandaag – eb, vloed en watertemperatuur`;
+const titel = data.waterstand ? `Getijden ${loc.naam} – eb en vloed, waterstand en watertemperatuur` : `Getijden ${loc.naam} vandaag – eb en vloed en watertemperatuur`;
 const omschrijving = volgendHW
-  ? `Hoogwater ${loc.naam}: ${dagKort(volgendHW.t)} om ${tijd(volgendHW.t)}. Getijtabel voor 7 dagen, actuele waterstand, watertemperatuur${data.golf ? ", golfhoogte en wind" : ""}, elk uur bijgewerkt.`
+  ? `Eb en vloed ${loc.naam}: hoogwater ${dagKort(volgendHW.t)} om ${tijd(volgendHW.t)}${volgendLW ? `, laagwater om ${tijd(volgendLW.t)}` : ""}. Getijtabel voor 7 dagen, actuele waterstand, watertemperatuur${data.golf ? ", golfhoogte en wind" : ""}, elk uur bijgewerkt.`
   : `Getijden, eb en vloed en watertemperatuur in ${loc.naam}, elk uur bijgewerkt met data van Rijkswaterstaat.`;
 
 const faq = [
   volgendHW && {
-    v: `Wanneer is het hoogwater in ${loc.naam}?`,
+    v: `Wanneer is het eb en vloed in ${loc.naam}?`,
     a: `Het volgende hoogwater in ${loc.naam} is ${dag(volgendHW.t)} om ${tijd(volgendHW.t)} (${meter(volgendHW.v)}).${volgendLW ? ` Het volgende laagwater is om ${tijd(volgendLW.t)} (${meter(volgendLW.v)}).` : ""}`,
   },
   temp && {
@@ -159,7 +159,7 @@ const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
       <span class="sub">{afwijking === null ? `gemeten ${tijd(data.waterstand.t)}` : afwijking === 0 ? "precies volgens voorspelling" : `${Math.abs(afwijking)} cm ${afwijking > 0 ? "hoger" : "lager"} dan voorspeld`}</span></div>}
   </section>
 
-  <h2>Getijtabel {loc.naam} – komende 7 dagen</h2>
+  <h2>Eb en vloed {loc.naam} – getijtabel komende 7 dagen</h2>
   <div class="tabelwrap">
     <table>
       <thead><tr><th>Dag</th><th>Hoogwater</th><th>Laagwater</th></tr></thead>
@@ -175,7 +175,17 @@ const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
     </table>
   </div>
   <p class="muted klein">Hoogte in meters ten opzichte van NAP. Wind en luchtdruk kunnen de werkelijke waterstand tientallen centimeters laten afwijken.</p>
-  {jaartabellen.length > 0 && <p class="jaarlink">{jaartabellen.map((j) => <a href={`/getijden/${loc.slug}/${j}`} data-umami-event="jaartabel-openen" data-umami-event-plaats={loc.slug}>Getijtabel {loc.naam} {j} (heel jaar, printbaar) →</a>)}</p>}
+  {jaartabellen.length > 0 && (
+    <div class="jaarblok">
+      {[...jaartabellen].reverse().map((j, i) => (
+        <a class:list={["jaarkaart", { tweede: i > 0 }]} href={`/getijden/${loc.slug}/${j}`} data-umami-event="jaartabel-openen" data-umami-event-plaats={loc.slug} data-umami-event-jaar={j}>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+          <span><strong>Getijtabel {loc.naam} {j}</strong><span class="muted">Alle hoog- en laagwaters van {j}, ook te printen als pdf</span></span>
+        </a>
+      ))}
+      <a class="allejaren" href={`/getijtabel/${jaartabellen.at(-1)}`}>Alle getijtabellen {jaartabellen.at(-1)} →</a>
+    </div>
+  )}
 
   {data.waterstand && (
     <>
@@ -277,7 +287,14 @@ const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
   tbody tr:nth-child(1) td { background: var(--accent-soft); }
   tr:last-child td { border-bottom: 0; }
   .klein { font-size: .85rem; }
-  .jaarlink a { display: inline-block; font-weight: 600; text-decoration: none; padding: 6px 0; }
+  .jaarblok { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
+  .jaarkaart { display: flex; align-items: center; gap: 12px; padding: 14px 16px; background: var(--accent-soft); border: 1px solid #c6e0f0; border-radius: var(--radius); text-decoration: none; color: var(--ink); }
+  .jaarkaart:hover { border-color: var(--accent); color: var(--ink); }
+  .jaarkaart.tweede { background: var(--card); border-color: var(--line); }
+  .jaarkaart svg { width: 26px; height: 26px; flex: none; fill: none; stroke: var(--accent); stroke-width: 2; stroke-linecap: round; }
+  .jaarkaart > span { display: flex; flex-direction: column; }
+  .jaarkaart .muted { font-size: .88rem; }
+  .allejaren { font-weight: 600; font-size: .92rem; text-decoration: none; }
   .meer { font-size: .92rem; margin-top: 20px; }
   .agendablok { background: var(--accent-soft); border-radius: 18px; padding: 4px 20px 16px; margin-top: 40px; }
   .agendablok h2 { margin-top: 18px; }

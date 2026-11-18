@@ -1,4 +1,5 @@
 ---
+const UUR = new Intl.DateTimeFormat("nl-NL", { timeZone: "Europe/Amsterdam", hour: "numeric" });
 // Getijcurve voor de komende 36 uur, met hoog-/laagwater gemarkeerd en een lijn voor "nu".
 import { tijd, meter } from "../lib/format.js";
 const { reeks, extremen, nu, hero = false } = Astro.props;
@@ -18,7 +19,7 @@ for (let v = Math.ceil(vmin / 100) * 100; v <= vmax; v += 100) ticks.push(v);
 const uren = [];
 const eerste = new Date(t0); eerste.setUTCMinutes(0, 0, 0);
 for (let t = eerste.getTime() + 3600e3; t < t1; t += 3600e3) {
-  const u = Number(new Intl.DateTimeFormat("nl-NL", { timeZone: "Europe/Amsterdam", hour: "numeric" }).format(t));
+  const u = Number(UUR.format(t));
   if (u % 6 === 0) uren.push({ t: new Date(t).toISOString(), u });
 }
 const xNu = X(nu);

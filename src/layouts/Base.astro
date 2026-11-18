@@ -1,4 +1,6 @@
 ---
+import { hubJaren } from "../lib/jaar.js";
+const getijJaar = hubJaren().at(-1);
 const { title, description, canonical, jsonLd = [] } = Astro.props;
 const site = Astro.site?.toString().replace(/\/$/, "") ?? "";
 const url = canonical ? site + canonical : undefined;
@@ -117,6 +119,7 @@ const url = canonical ? site + canonical : undefined;
         <li><a href="/waterstand/">Waterstanden</a></li><li><a href="/getijden/zuid-holland">Zuid-Holland</a></li>
         <li><a href="/uitleg/">Uitleg</a></li><li><a href="/getijden/noord-holland">Noord-Holland</a></li>
         <li><a href="/widget/">Gratis widget</a></li><li><a href="/getijden/wadden">Wadden</a></li>
+        {getijJaar && <li><a href={`/getijtabel/${getijJaar}`}>Getijtabel {getijJaar}</a></li>}
       </ul>
     </div></footer>
   </body>
