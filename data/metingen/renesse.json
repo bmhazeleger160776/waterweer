@@ -1,7 +1,7 @@
 {
  "slug": "renesse",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T09:55:27.573Z",
+ "bijgewerkt": "2026-11-18T10:03:48.039Z",
  "fouten": [],
  "getij": {
   "meetpunt": "brouwersdam.brouwershavensegat.8",
@@ -4996,14 +4996,14 @@
   "meetpunt": "brouwershavensche.gat.08",
   "meetpuntNaam": "Brouwershavensche Gat 08",
   "eenheid": "°C",
-  "t": "2026-11-18T09:30:00.000Z",
+  "t": "2026-11-18T09:40:00.000Z",
   "v": 10
  },
  "waterstand": {
   "meetpunt": "brouwershavensche.gat.08",
   "meetpuntNaam": "Brouwershavensche Gat 08",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T09:30:00.000Z",
-  "v": 107
+  "t": "2026-11-18T09:40:00.000Z",
+  "v": 102
  }
 }

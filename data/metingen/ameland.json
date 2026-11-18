@@ -1,7 +1,7 @@
 {
  "slug": "ameland",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T09:55:30.103Z",
+ "bijgewerkt": "2026-11-18T10:03:49.767Z",
  "fouten": [],
  "getij": {
   "meetpunt": "ameland.nes",
@@ -4894,7 +4894,7 @@
   "meetpunt": "ameland.nes",
   "meetpuntNaam": "Ameland, Nes",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T09:30:00.000Z",
-  "v": 51
+  "t": "2026-11-18T09:40:00.000Z",
+  "v": 54
  }
 }
