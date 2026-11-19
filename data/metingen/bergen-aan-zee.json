@@ -1,7 +1,7 @@
 {
  "slug": "bergen-aan-zee",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T01:17:14.171Z",
+ "bijgewerkt": "2026-11-19T02:57:50.769Z",
  "fouten": [
   "golf: geen recente meting"
  ],
@@ -5034,22 +5034,22 @@
   "meetpunt": "velsen.velserkom",
   "meetpuntNaam": "Velserkom",
   "eenheid": "°C",
-  "t": "2026-11-19T00:30:00.000Z",
-  "v": 10.6
+  "t": "2026-11-19T02:30:00.000Z",
+  "v": 10.5
  },
  "waterstand": {
   "meetpunt": "ijmuiden.buitenhaven",
   "meetpuntNaam": "IJmuiden, buitenhaven",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T00:40:00.000Z",
-  "v": 46
+  "t": "2026-11-19T02:40:00.000Z",
+  "v": 9
  },
  "wind": {
   "meetpunt": "ijmuiden.buitenhaven",
   "meetpuntNaam": "IJmuiden, buitenhaven",
   "km": 22.5,
-  "t": "2026-11-19T00:20:00.000Z",
-  "snelheid": 11.5,
-  "richting": 213
+  "t": "2026-11-19T02:30:00.000Z",
+  "snelheid": 4.5,
+  "richting": 165
  }
 }
