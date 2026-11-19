@@ -1,7 +1,7 @@
 {
  "slug": "texel",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:42:25.488Z",
+ "bijgewerkt": "2026-11-19T12:49:36.994Z",
  "fouten": [],
  "getij": {
   "meetpunt": "texel.oudeschild",
@@ -5051,8 +5051,8 @@
   "meetpunt": "texel.oudeschild",
   "meetpuntNaam": "Texel, Oudeschild",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T11:20:00.000Z",
-  "v": 57
+  "t": "2026-11-19T12:30:00.000Z",
+  "v": 67
  },
  "golf": {
   "meetpunt": "denhoorntexel.waddenzee.gatvandestier",
@@ -5062,14 +5062,14 @@
   "v": 19,
   "min24": 6,
   "max24": 36,
-  "periode": 2.8
+  "periode": 2.6
  },
  "wind": {
   "meetpunt": "texel.hors",
   "meetpuntNaam": "Texelhors",
   "km": 10,
-  "t": "2026-11-19T11:00:00.000Z",
-  "snelheid": 4.4,
+  "t": "2026-11-19T12:10:00.000Z",
+  "snelheid": 3.5,
   "richting": 351
  }
 }

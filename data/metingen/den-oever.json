@@ -1,7 +1,7 @@
 {
  "slug": "den-oever",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:43:44.890Z",
+ "bijgewerkt": "2026-11-19T12:51:19.319Z",
  "fouten": [],
  "getij": {
   "meetpunt": "denoever.waddenzee.voorhaven",
@@ -5051,8 +5051,8 @@
   "meetpunt": "denoever.waddenzee.voorhaven",
   "meetpuntNaam": "Den Oever, Waddenzee voorhaven",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T11:20:00.000Z",
-  "v": 62
+  "t": "2026-11-19T12:30:00.000Z",
+  "v": 78
  },
  "golf": {
   "meetpunt": "denhoorntexel.waddenzee.gatvandestier",
@@ -5062,14 +5062,14 @@
   "v": 19,
   "min24": 6,
   "max24": 36,
-  "periode": 2.8
+  "periode": 2.6
  },
  "wind": {
   "meetpunt": "denhelder.dekooy",
   "meetpuntNaam": "Den Helder, De Kooy",
   "km": 16.7,
-  "t": "2026-11-19T11:10:00.000Z",
-  "snelheid": 4,
-  "richting": 9
+  "t": "2026-11-19T12:20:00.000Z",
+  "snelheid": 2.3,
+  "richting": 335
  }
 }

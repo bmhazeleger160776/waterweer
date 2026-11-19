@@ -1,7 +1,7 @@
 {
  "slug": "walsoorden",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:43:28.249Z",
+ "bijgewerkt": "2026-11-19T12:50:58.682Z",
  "fouten": [],
  "getij": {
   "meetpunt": "walsoorden",
@@ -5052,8 +5052,8 @@
   "meetpunt": "hansweert",
   "meetpuntNaam": "Hansweert",
   "km": 7.8,
-  "t": "2026-11-19T12:20:00.000Z",
-  "snelheid": 8.8,
-  "richting": 226
+  "t": "2026-11-19T12:30:00.000Z",
+  "snelheid": 7.4,
+  "richting": 227
  }
 }

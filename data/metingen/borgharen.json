@@ -1,7 +1,7 @@
 {
  "slug": "borgharen",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:43:10.602Z",
+ "bijgewerkt": "2026-11-19T12:50:35.449Z",
  "fouten": [],
  "waterstand": {
   "meetpunt": "maastricht.borgharen.maas.beneden",
@@ -10,10 +10,6 @@
   "t": "2026-11-19T12:10:00.000Z",
   "v": 4235,
   "reeks": [
-   {
-    "t": "2026-11-12T12:00:00.000Z",
-    "v": 4011
-   },
    {
     "t": "2026-11-12T13:00:00.000Z",
     "v": 4011

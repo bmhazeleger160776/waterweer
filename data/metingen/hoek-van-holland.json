@@ -1,7 +1,7 @@
 {
  "slug": "hoek-van-holland",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:42:33.699Z",
+ "bijgewerkt": "2026-11-19T12:49:47.314Z",
  "fouten": [],
  "getij": {
   "meetpunt": "hoekvanholland",
@@ -4970,7 +4970,7 @@
   "v": 26,
   "min24": 8,
   "max24": 27,
-  "periode": 3.2
+  "periode": 2.1
  },
  "wind": {
   "meetpunt": "hoekvanholland",

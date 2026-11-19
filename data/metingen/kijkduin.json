@@ -1,7 +1,7 @@
 {
  "slug": "kijkduin",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:43:33.465Z",
+ "bijgewerkt": "2026-11-19T12:51:05.225Z",
  "fouten": [],
  "getij": {
   "meetpunt": "scheveningen",
@@ -5035,8 +5035,8 @@
   "meetpunt": "scheveningen",
   "meetpuntNaam": "Scheveningen",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T11:10:00.000Z",
-  "v": 70
+  "t": "2026-11-19T12:30:00.000Z",
+  "v": 24
  },
  "golf": {
   "meetpunt": "hoekvanholland.maeslantkering.beneden.noord",
@@ -5046,7 +5046,7 @@
   "v": 26,
   "min24": 8,
   "max24": 27,
-  "periode": 3.2
+  "periode": 2.1
  },
  "wind": {
   "meetpunt": "hoekvanholland",
@@ -5054,6 +5054,6 @@
   "km": 12.2,
   "t": "2026-11-19T11:10:00.000Z",
   "snelheid": 8.6,
-  "richting": 259
+  "richting": 274
  }
 }

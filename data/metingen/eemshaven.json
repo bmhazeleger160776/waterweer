@@ -1,7 +1,7 @@
 {
  "slug": "eemshaven",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:43:47.100Z",
+ "bijgewerkt": "2026-11-19T12:51:21.985Z",
  "fouten": [],
  "getij": {
   "meetpunt": "eemshaven.haven",
@@ -5043,13 +5043,6 @@
   "t": "2026-11-19T12:20:00.000Z",
   "v": 7.6
  },
- "waterstand": {
-  "meetpunt": "uithuizerwad",
-  "meetpuntNaam": "Uithuizerwad",
-  "eenheid": "cm NAP",
-  "t": "2026-11-19T12:20:00.000Z",
-  "v": 52
- },
  "golf": {
   "meetpunt": "eemshaven.waddenzee",
   "meetpuntNaam": "Eemshaven, Waddenzee",
@@ -5057,7 +5050,7 @@
   "t": "2026-11-19T12:20:00.000Z",
   "v": 30,
   "min24": 12,
-  "max24": 91,
+  "max24": 90,
   "periode": 2.7
  },
  "wind": {

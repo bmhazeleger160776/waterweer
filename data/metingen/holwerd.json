@@ -1,7 +1,7 @@
 {
  "slug": "holwerd",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:43:49.998Z",
+ "bijgewerkt": "2026-11-19T12:51:25.414Z",
  "fouten": [],
  "getij": {
   "meetpunt": "holwerd.veersteiger",
@@ -5039,8 +5039,8 @@
   "meetpunt": "holwerd.vaargeul",
   "meetpuntNaam": "Holwerd vaargeul",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T11:20:00.000Z",
-  "v": -56
+  "t": "2026-11-19T12:30:00.000Z",
+  "v": -3
  },
  "golf": {
   "meetpunt": "holwerd.vaargeul",
