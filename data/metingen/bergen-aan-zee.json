@@ -1,9 +1,13 @@
 {
  "slug": "bergen-aan-zee",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:08:21.334Z",
+ "bijgewerkt": "2026-11-19T12:19:39.599Z",
  "fouten": [
-  "golf: geen recente meting"
+  "getij: HTTP 404: 404 page not found\n",
+  "temperatuur: HTTP 404: 404 page not found\n",
+  "waterstand: HTTP 404: 404 page not found\n",
+  "golf: geen recente meting",
+  "wind: geen recente meting"
  ],
  "getij": {
   "meetpunt": "ijmuiden.buitenhaven",

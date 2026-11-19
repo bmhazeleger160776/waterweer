@@ -1,8 +1,14 @@
 {
  "slug": "den-helder",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:07:14.118Z",
- "fouten": [],
+ "bijgewerkt": "2026-11-19T12:17:59.877Z",
+ "fouten": [
+  "getij: HTTP 404: 404 page not found\n",
+  "temperatuur: HTTP 404: 404 page not found\n",
+  "waterstand: HTTP 404: 404 page not found\n",
+  "golf: geen recente meting",
+  "wind: geen recente meting"
+ ],
  "getij": {
   "meetpunt": "denhelder.marsdiep",
   "eenheid": "cm NAP",

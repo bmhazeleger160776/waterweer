@@ -1,8 +1,14 @@
 {
  "slug": "westkapelle",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:07:12.821Z",
- "fouten": [],
+ "bijgewerkt": "2026-11-19T12:17:57.097Z",
+ "fouten": [
+  "getij: HTTP 404: 404 page not found\n",
+  "temperatuur: HTTP 404: 404 page not found\n",
+  "waterstand: HTTP 404: 404 page not found\n",
+  "golf: geen recente meting",
+  "wind: geen recente meting"
+ ],
  "getij": {
   "meetpunt": "westkapelle",
   "eenheid": "cm NAP",

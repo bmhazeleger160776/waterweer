@@ -1,8 +1,14 @@
 {
  "slug": "burgh-haamstede",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:07:32.365Z",
- "fouten": [],
+ "bijgewerkt": "2026-11-19T12:18:27.481Z",
+ "fouten": [
+  "getij: HTTP 404: 404 page not found\n",
+  "temperatuur: HTTP 404: 404 page not found\n",
+  "waterstand: HTTP 404: 404 page not found\n",
+  "golf: geen recente meting",
+  "wind: geen recente meting"
+ ],
  "getij": {
   "meetpunt": "oosterschelde.14",
   "eenheid": "cm NAP",

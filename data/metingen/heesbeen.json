@@ -1,8 +1,11 @@
 {
  "slug": "heesbeen",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:07:50.730Z",
- "fouten": [],
+ "bijgewerkt": "2026-11-19T12:18:39.434Z",
+ "fouten": [
+  "waterstand: HTTP 404: 404 page not found\n",
+  "verloop: HTTP 404: 404 page not found\n"
+ ],
  "waterstand": {
   "meetpunt": "waalwijk",
   "meetpuntNaam": "Waalwijk",

@@ -1,9 +1,13 @@
 {
  "slug": "egmond-aan-zee",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:06:56.360Z",
+ "bijgewerkt": "2026-11-19T12:17:30.111Z",
  "fouten": [
-  "golf: geen recente meting"
+  "getij: HTTP 404: 404 page not found\n",
+  "temperatuur: HTTP 404: 404 page not found\n",
+  "waterstand: HTTP 404: 404 page not found\n",
+  "golf: geen recente meting",
+  "wind: geen recente meting"
  ],
  "getij": {
   "meetpunt": "ijmuiden.buitenhaven",

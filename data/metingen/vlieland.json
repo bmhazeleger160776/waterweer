@@ -1,8 +1,13 @@
 {
  "slug": "vlieland",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:07:15.429Z",
- "fouten": [],
+ "bijgewerkt": "2026-11-19T12:18:02.130Z",
+ "fouten": [
+  "getij: HTTP 404: 404 page not found\n",
+  "waterstand: HTTP 404: 404 page not found\n",
+  "golf: geen recente meting",
+  "wind: geen recente meting"
+ ],
  "getij": {
   "meetpunt": "vlieland.haven",
   "eenheid": "cm NAP",

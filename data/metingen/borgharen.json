@@ -1,8 +1,11 @@
 {
  "slug": "borgharen",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:07:45.408Z",
- "fouten": [],
+ "bijgewerkt": "2026-11-19T12:18:36.771Z",
+ "fouten": [
+  "waterstand: HTTP 404: 404 page not found\n",
+  "verloop: HTTP 404: 404 page not found\n"
+ ],
  "waterstand": {
   "meetpunt": "maastricht.borgharen.maas.beneden",
   "meetpuntNaam": "Borgharen Dorp",

@@ -1,8 +1,14 @@
 {
  "slug": "walsoorden",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:08:07.269Z",
- "fouten": [],
+ "bijgewerkt": "2026-11-19T12:19:10.791Z",
+ "fouten": [
+  "getij: HTTP 404: 404 page not found\n",
+  "temperatuur: HTTP 404: 404 page not found\n",
+  "waterstand: HTTP 404: 404 page not found\n",
+  "golf: geen recente meting",
+  "wind: geen recente meting"
+ ],
  "getij": {
   "meetpunt": "walsoorden",
   "eenheid": "cm NAP",

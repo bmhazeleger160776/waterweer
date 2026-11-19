@@ -1,8 +1,14 @@
 {
  "slug": "monster",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:08:15.133Z",
- "fouten": [],
+ "bijgewerkt": "2026-11-19T12:19:27.233Z",
+ "fouten": [
+  "getij: HTTP 404: 404 page not found\n",
+  "temperatuur: HTTP 404: 404 page not found\n",
+  "waterstand: HTTP 404: 404 page not found\n",
+  "golf: geen recente meting",
+  "wind: geen recente meting"
+ ],
  "getij": {
   "meetpunt": "hoekvanholland",
   "eenheid": "cm NAP",

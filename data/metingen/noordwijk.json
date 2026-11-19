@@ -1,8 +1,14 @@
 {
  "slug": "noordwijk",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:06:53.943Z",
- "fouten": [],
+ "bijgewerkt": "2026-11-19T12:17:25.853Z",
+ "fouten": [
+  "getij: HTTP 404: 404 page not found\n",
+  "temperatuur: HTTP 404: 404 page not found\n",
+  "waterstand: HTTP 404: 404 page not found\n",
+  "golf: geen recente meting",
+  "wind: geen recente meting"
+ ],
  "getij": {
   "meetpunt": "scheveningen",
   "eenheid": "cm NAP",

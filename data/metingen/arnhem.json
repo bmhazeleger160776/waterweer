@@ -1,8 +1,11 @@
 {
  "slug": "arnhem",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:07:37.314Z",
- "fouten": [],
+ "bijgewerkt": "2026-11-19T12:18:32.528Z",
+ "fouten": [
+  "waterstand: HTTP 404: 404 page not found\n",
+  "verloop: HTTP 404: 404 page not found\n"
+ ],
  "waterstand": {
   "meetpunt": "arnhem.nederrijn",
   "meetpuntNaam": "Arnhem, Nederrijn",

@@ -1,8 +1,14 @@
 {
  "slug": "domburg",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:07:11.396Z",
- "fouten": [],
+ "bijgewerkt": "2026-11-19T12:17:54.315Z",
+ "fouten": [
+  "getij: HTTP 404: 404 page not found\n",
+  "temperatuur: HTTP 404: 404 page not found\n",
+  "waterstand: HTTP 404: 404 page not found\n",
+  "golf: geen recente meting",
+  "wind: geen recente meting"
+ ],
  "getij": {
   "meetpunt": "westkapelle",
   "eenheid": "cm NAP",

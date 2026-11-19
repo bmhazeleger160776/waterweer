@@ -1,8 +1,14 @@
 {
  "slug": "brouwersdam",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:07:59.467Z",
- "fouten": [],
+ "bijgewerkt": "2026-11-19T12:18:54.459Z",
+ "fouten": [
+  "getij: HTTP 404: 404 page not found\n",
+  "temperatuur: HTTP 404: 404 page not found\n",
+  "waterstand: HTTP 404: 404 page not found\n",
+  "golf: geen recente meting",
+  "wind: geen recente meting"
+ ],
  "getij": {
   "meetpunt": "brouwersdam.brouwershavensegat.8",
   "eenheid": "cm NAP",

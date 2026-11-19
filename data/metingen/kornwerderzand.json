@@ -1,9 +1,13 @@
 {
  "slug": "kornwerderzand",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:08:31.349Z",
+ "bijgewerkt": "2026-11-19T12:19:54.100Z",
  "fouten": [
-  "golf: geen recente meting"
+  "getij: HTTP 404: 404 page not found\n",
+  "temperatuur: HTTP 404: 404 page not found\n",
+  "waterstand: HTTP 404: 404 page not found\n",
+  "golf: geen recente meting",
+  "wind: geen recente meting"
  ],
  "getij": {
   "meetpunt": "kornwerderzand.waddenzee.buitenhaven",

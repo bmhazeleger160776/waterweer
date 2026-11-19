@@ -1,8 +1,14 @@
 {
  "slug": "westenschouwen",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:07:58.137Z",
- "fouten": [],
+ "bijgewerkt": "2026-11-19T12:18:51.683Z",
+ "fouten": [
+  "getij: HTTP 404: 404 page not found\n",
+  "temperatuur: HTTP 404: 404 page not found\n",
+  "waterstand: HTTP 404: 404 page not found\n",
+  "golf: geen recente meting",
+  "wind: geen recente meting"
+ ],
  "getij": {
   "meetpunt": "oosterschelde.4",
   "eenheid": "cm NAP",

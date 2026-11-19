@@ -1,8 +1,12 @@
 {
  "slug": "lauwersoog",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:07:21.230Z",
- "fouten": [],
+ "bijgewerkt": "2026-11-19T12:18:09.282Z",
+ "fouten": [
+  "getij: HTTP 404: 404 page not found\n",
+  "temperatuur: HTTP 404: 404 page not found\n",
+  "waterstand: HTTP 404: 404 page not found\n"
+ ],
  "getij": {
   "meetpunt": "lauwersoog.waddenzee",
   "eenheid": "cm NAP",
