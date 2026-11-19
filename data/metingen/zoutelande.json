@@ -1,7 +1,7 @@
 {
  "slug": "zoutelande",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:49:45.931Z",
+ "bijgewerkt": "2026-11-19T12:58:50.144Z",
  "fouten": [],
  "getij": {
   "meetpunt": "westkapelle",
@@ -5018,8 +5018,8 @@
   "meetpunt": "wielingen.noord",
   "meetpuntNaam": "Wielingen, noord",
   "km": 8.7,
-  "t": "2026-11-19T12:20:00.000Z",
-  "v": 64,
+  "t": "2026-11-19T12:40:00.000Z",
+  "v": 68,
   "min24": 45,
   "max24": 119,
   "periode": 3.8
@@ -5028,8 +5028,8 @@
   "meetpunt": "vlissingen",
   "meetpuntNaam": "Vlissingen",
   "km": 10.5,
-  "t": "2026-11-19T12:00:00.000Z",
-  "snelheid": 8.4,
+  "t": "2026-11-19T12:20:00.000Z",
+  "snelheid": 7.9,
   "richting": 225
  }
 }

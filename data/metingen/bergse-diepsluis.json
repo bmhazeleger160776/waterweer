@@ -1,7 +1,7 @@
 {
  "slug": "bergse-diepsluis",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:51:02.537Z",
+ "bijgewerkt": "2026-11-19T12:59:42.567Z",
  "fouten": [],
  "getij": {
   "meetpunt": "marollegat",
@@ -5042,7 +5042,7 @@
   "meetpunt": "rilland.bath",
   "meetpuntNaam": "Rilland, Bath",
   "km": 12,
-  "t": "2026-11-19T12:20:00.000Z",
+  "t": "2026-11-19T12:40:00.000Z",
   "v": 23,
   "min24": 14,
   "max24": 39,
@@ -5054,6 +5054,6 @@
   "km": 2.7,
   "t": "2026-11-19T12:30:00.000Z",
   "snelheid": 8,
-  "richting": 235
+  "richting": 230
  }
 }

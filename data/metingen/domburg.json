@@ -1,7 +1,7 @@
 {
  "slug": "domburg",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:49:58.469Z",
+ "bijgewerkt": "2026-11-19T12:58:58.421Z",
  "fouten": [],
  "getij": {
   "meetpunt": "westkapelle",
@@ -5018,8 +5018,8 @@
   "meetpunt": "oosterschelde.11",
   "meetpuntNaam": "Oosterschelde, 11",
   "km": 8.7,
-  "t": "2026-11-19T12:20:00.000Z",
-  "v": 103,
+  "t": "2026-11-19T12:40:00.000Z",
+  "v": 104,
   "min24": 85,
   "max24": 182,
   "periode": 4.3
@@ -5028,8 +5028,8 @@
   "meetpunt": "vlissingen",
   "meetpuntNaam": "Vlissingen",
   "km": 15.5,
-  "t": "2026-11-19T12:00:00.000Z",
-  "snelheid": 8.4,
+  "t": "2026-11-19T12:20:00.000Z",
+  "snelheid": 7.9,
   "richting": 225
  }
 }

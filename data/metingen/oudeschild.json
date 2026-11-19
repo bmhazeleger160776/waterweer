@@ -1,7 +1,7 @@
 {
  "slug": "oudeschild",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:51:20.659Z",
+ "bijgewerkt": "2026-11-19T12:59:54.619Z",
  "fouten": [],
  "getij": {
   "meetpunt": "texel.oudeschild",
@@ -5058,7 +5058,7 @@
   "meetpunt": "denhoorntexel.waddenzee.gatvandestier",
   "meetpuntNaam": "Den Hoorn Texel Waddenzee Gat van de Stier",
   "km": 4.7,
-  "t": "2026-11-19T12:20:00.000Z",
+  "t": "2026-11-19T12:40:00.000Z",
   "v": 19,
   "min24": 6,
   "max24": 36,
@@ -5070,6 +5070,6 @@
   "km": 10,
   "t": "2026-11-19T12:10:00.000Z",
   "snelheid": 3.5,
-  "richting": 351
+  "richting": 358
  }
 }

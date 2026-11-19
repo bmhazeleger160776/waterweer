@@ -1,7 +1,7 @@
 {
  "slug": "colijnsplaat",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:50:54.844Z",
+ "bijgewerkt": "2026-11-19T12:59:37.416Z",
  "fouten": [],
  "getij": {
   "meetpunt": "kats.zandkreeksluis",
@@ -5019,7 +5019,7 @@
   "meetpunt": "roggenplaat",
   "meetpuntNaam": "Roggenplaat",
   "km": 5.2,
-  "t": "2026-11-19T11:20:00.000Z",
+  "t": "2026-11-19T12:30:00.000Z",
   "v": 34,
   "min24": 5,
   "max24": 99999,

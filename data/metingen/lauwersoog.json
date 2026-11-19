@@ -1,7 +1,7 @@
 {
  "slug": "lauwersoog",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:50:08.816Z",
+ "bijgewerkt": "2026-11-19T12:59:05.276Z",
  "fouten": [],
  "getij": {
   "meetpunt": "lauwersoog.waddenzee",
@@ -5031,7 +5031,7 @@
   "meetpunt": "lauwersoog.waddenzee",
   "meetpuntNaam": "Lauwersoog, Waddenzee",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T11:20:00.000Z",
-  "v": -35
+  "t": "2026-11-19T12:30:00.000Z",
+  "v": 17
  }
 }

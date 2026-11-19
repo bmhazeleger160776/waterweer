@@ -1,7 +1,7 @@
 {
  "slug": "renesse",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:49:51.776Z",
+ "bijgewerkt": "2026-11-19T12:58:54.017Z",
  "fouten": [],
  "getij": {
   "meetpunt": "brouwersdam.brouwershavensegat.8",
@@ -5012,8 +5012,8 @@
   "meetpunt": "oosterschelde.4",
   "meetpuntNaam": "Oosterschelde, 4",
   "km": 10.1,
-  "t": "2026-11-19T12:30:00.000Z",
-  "snelheid": 8.4,
-  "richting": 239
+  "t": "2026-11-19T12:40:00.000Z",
+  "snelheid": 8.7,
+  "richting": 240
  }
 }

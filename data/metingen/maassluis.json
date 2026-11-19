@@ -1,7 +1,7 @@
 {
  "slug": "maassluis",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:51:10.670Z",
+ "bijgewerkt": "2026-11-19T12:59:47.977Z",
  "fouten": [],
  "getij": {
   "meetpunt": "maassluis",
@@ -4978,11 +4978,11 @@
   "meetpunt": "hoekvanholland.maeslantkering.beneden.noord",
   "meetpuntNaam": "Hoek van Holland, Maeslantkering, Beneden, noord",
   "km": 7.5,
-  "t": "2026-11-19T12:20:00.000Z",
-  "v": 26,
+  "t": "2026-11-19T12:40:00.000Z",
+  "v": 22,
   "min24": 8,
   "max24": 27,
-  "periode": 2.1
+  "periode": 3.1
  },
  "wind": {
   "meetpunt": "botlek.geulhaven",
