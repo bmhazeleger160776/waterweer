@@ -1,7 +1,7 @@
 {
  "slug": "eemshaven",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T19:04:35.354Z",
+ "bijgewerkt": "2026-11-19T20:10:04.067Z",
  "fouten": [],
  "getij": {
   "meetpunt": "eemshaven.haven",
@@ -5036,25 +5036,25 @@
   "meetpunt": "eemshaven.waddenzee",
   "meetpuntNaam": "Eemshaven, Waddenzee",
   "eenheid": "°C",
-  "t": "2026-11-19T18:30:00.000Z",
+  "t": "2026-11-19T19:40:00.000Z",
   "v": 7.6
  },
  "golf": {
   "meetpunt": "eemshaven.waddenzee",
   "meetpuntNaam": "Eemshaven, Waddenzee",
   "km": 3,
-  "t": "2026-11-19T18:40:00.000Z",
-  "v": 15,
-  "min24": 12,
+  "t": "2026-11-19T19:50:00.000Z",
+  "v": 14,
+  "min24": 10,
   "max24": 58,
-  "periode": 3
+  "periode": 3.2
  },
  "wind": {
   "meetpunt": "eemshaven.waddenzee",
   "meetpuntNaam": "Eemshaven, Waddenzee",
   "km": 3,
-  "t": "2026-11-19T18:40:00.000Z",
-  "snelheid": 2.1,
-  "richting": 62
+  "t": "2026-11-19T19:30:00.000Z",
+  "snelheid": 6.9,
+  "richting": 33
  }
 }
