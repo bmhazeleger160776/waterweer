@@ -1,7 +1,7 @@
 {
  "slug": "vlieland",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T07:21:25.668Z",
+ "bijgewerkt": "2026-11-19T09:09:42.783Z",
  "fouten": [],
  "getij": {
   "meetpunt": "vlieland.haven",
@@ -4887,25 +4887,25 @@
   "meetpunt": "vlieland.haven",
   "meetpuntNaam": "Vlieland, haven",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T06:50:00.000Z",
-  "v": -27
+  "t": "2026-11-19T08:50:00.000Z",
+  "v": -39
  },
  "golf": {
   "meetpunt": "stortemelk.oost",
   "meetpuntNaam": "Stortemelk, oost",
   "km": 3.8,
-  "t": "2026-11-19T07:00:00.000Z",
-  "v": 35,
-  "min24": 35,
-  "max24": 194,
-  "periode": 4.5
+  "t": "2026-11-19T08:40:00.000Z",
+  "v": 40,
+  "min24": 33,
+  "max24": 190,
+  "periode": 4
  },
  "wind": {
   "meetpunt": "vlieland.west",
   "meetpuntNaam": "Vlieland, west",
   "km": 11.2,
-  "t": "2026-11-19T06:50:00.000Z",
-  "snelheid": 4.8,
-  "richting": 164
+  "t": "2026-11-19T08:30:00.000Z",
+  "snelheid": 2.1,
+  "richting": 38
  }
 }
