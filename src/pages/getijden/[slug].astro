@@ -42,9 +42,10 @@ for (const e of ext) {
 }
 const dagen = [...perDag.values()].slice(0, 7);
 
-// Gemeten vs voorspeld: verschil zegt iets over wind-opzet
+// Gemeten vs voorspeld: verschil zegt iets over wind-opzet.
+// Alleen als meting en voorspelling van hetzelfde meetpunt komen; anders zit er faseverschil in.
 let afwijking = null;
-if (data.waterstand && data.getij?.reeks?.length) {
+if (data.waterstand && data.getij?.reeks?.length && loc.rws.waterstand?.code === loc.rws.getij?.code) {
   const tm = Date.parse(data.waterstand.t);
   const dichtst = data.getij.reeks.reduce((a, b) => (Math.abs(Date.parse(b.t) - tm) < Math.abs(Date.parse(a.t) - tm) ? b : a));
   if (Math.abs(Date.parse(dichtst.t) - tm) < 30 * 60e3) afwijking = Math.round(data.waterstand.v - dichtst.v);
