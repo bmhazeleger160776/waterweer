@@ -1,7 +1,7 @@
 {
  "slug": "harlingen",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T22:54:09.112Z",
+ "bijgewerkt": "2026-11-19T23:49:33.537Z",
  "fouten": [],
  "getij": {
   "meetpunt": "harlingen.waddenzee",
@@ -5039,7 +5039,7 @@
   "meetpunt": "harlingen.waddenzee",
   "meetpuntNaam": "Harlingen, Waddenzee",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T22:10:00.000Z",
-  "v": -48
+  "t": "2026-11-19T23:20:00.000Z",
+  "v": -10
  }
 }

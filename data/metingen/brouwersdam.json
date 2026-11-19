@@ -1,7 +1,7 @@
 {
  "slug": "brouwersdam",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T22:55:20.098Z",
+ "bijgewerkt": "2026-11-19T23:50:20.254Z",
  "fouten": [],
  "getij": {
   "meetpunt": "brouwersdam.brouwershavensegat.8",
@@ -5007,25 +5007,25 @@
   "meetpunt": "brouwershavensche.gat.08",
   "meetpuntNaam": "Brouwershavensche Gat 08",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T22:30:00.000Z",
-  "v": 134
+  "t": "2026-11-19T23:20:00.000Z",
+  "v": 105
  },
  "golf": {
   "meetpunt": "roggenplaat",
   "meetpuntNaam": "Roggenplaat",
   "km": 13.9,
-  "t": "2026-11-19T22:20:00.000Z",
-  "v": 3,
+  "t": "2026-11-19T23:20:00.000Z",
+  "v": 4,
   "min24": 3,
   "max24": 99999,
-  "periode": 4
+  "periode": 2.4
  },
  "wind": {
   "meetpunt": "zierikzee.zeelandbrug",
   "meetpuntNaam": "Zierikzee Zeelandbrug",
   "km": 15.2,
-  "t": "2026-11-19T22:20:00.000Z",
-  "snelheid": 3.2,
-  "richting": 217
+  "t": "2026-11-19T23:30:00.000Z",
+  "snelheid": 2.8,
+  "richting": 216
  }
 }
