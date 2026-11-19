@@ -1,7 +1,7 @@
 {
  "slug": "walsoorden",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-18T23:55:20.890Z",
+ "bijgewerkt": "2026-11-19T01:17:00.218Z",
  "fouten": [],
  "getij": {
   "meetpunt": "walsoorden",
@@ -5028,32 +5028,32 @@
   "meetpunt": "ossenisse",
   "meetpuntNaam": "Ossenisse",
   "eenheid": "°C",
-  "t": "2026-11-18T23:30:00.000Z",
+  "t": "2026-11-19T01:00:00.000Z",
   "v": 9.7
  },
  "waterstand": {
   "meetpunt": "walsoorden",
   "meetpuntNaam": "Walsoorden",
   "eenheid": "cm NAP",
-  "t": "2026-11-18T23:30:00.000Z",
-  "v": 38
+  "t": "2026-11-19T01:00:00.000Z",
+  "v": -72
  },
  "golf": {
   "meetpunt": "nieuwnamen.overloopvanvalkenisse",
   "meetpuntNaam": "Nieuwnamen Overloop van Valkenisse",
   "km": 7.1,
-  "t": "2026-11-18T23:30:00.000Z",
-  "v": 6,
+  "t": "2026-11-19T01:00:00.000Z",
+  "v": 5,
   "min24": 3,
   "max24": 30,
-  "periode": 2.7
+  "periode": 3.8
  },
  "wind": {
   "meetpunt": "hansweert",
   "meetpuntNaam": "Hansweert",
   "km": 7.8,
-  "t": "2026-11-18T23:40:00.000Z",
-  "snelheid": 7.1,
-  "richting": 188
+  "t": "2026-11-19T01:00:00.000Z",
+  "snelheid": 6,
+  "richting": 149
  }
 }
