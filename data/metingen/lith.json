@@ -1,13 +1,13 @@
 {
  "slug": "lith",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:59:26.975Z",
+ "bijgewerkt": "2026-11-19T13:27:51.072Z",
  "fouten": [],
  "waterstand": {
   "meetpunt": "lith.beneden",
   "meetpuntNaam": "Lith beneden",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T12:30:00.000Z",
+  "t": "2026-11-19T12:50:00.000Z",
   "v": 163,
   "reeks": [
    {
@@ -878,6 +878,10 @@
    },
    {
     "t": "2026-11-21T12:00:00.000Z",
+    "v": 184
+   },
+   {
+    "t": "2026-11-21T13:00:00.000Z",
     "v": 184
    }
   ]

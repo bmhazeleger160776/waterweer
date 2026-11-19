@@ -1,13 +1,13 @@
 {
  "slug": "grave",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:59:26.114Z",
+ "bijgewerkt": "2026-11-19T13:27:50.213Z",
  "fouten": [],
  "waterstand": {
   "meetpunt": "grave.boven",
   "meetpuntNaam": "Grave, boven",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T12:30:00.000Z",
+  "t": "2026-11-19T12:50:00.000Z",
   "v": 785,
   "reeks": [
    {

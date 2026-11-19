@@ -1,7 +1,7 @@
 {
  "slug": "lobith",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:58:39.784Z",
+ "bijgewerkt": "2026-11-19T13:27:04.189Z",
  "fouten": [
   "temperatuur: laatste meting is oud (2026-11-17T09:00:00.000Z)"
  ],
@@ -16,8 +16,8 @@
   "meetpunt": "lobith.bovenrijn.tolkamer",
   "meetpuntNaam": "Lobith, Bovenrijn, Tolkamer",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T12:30:00.000Z",
-  "v": 772,
+  "t": "2026-11-19T13:10:00.000Z",
+  "v": 775,
   "reeks": [
    {
     "t": "2026-11-12T13:00:00.000Z",
@@ -689,7 +689,11 @@
    },
    {
     "t": "2026-11-19T12:00:00.000Z",
-    "v": 772
+    "v": 773
+   },
+   {
+    "t": "2026-11-19T13:00:00.000Z",
+    "v": 775
    }
   ],
   "verwachting": [
