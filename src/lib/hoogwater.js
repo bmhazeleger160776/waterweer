@@ -34,7 +34,9 @@ export function hoogwaterStatus() {
   }).filter(Boolean);
 
   const alle = JSON.parse(fs.readFileSync(path.join(root, "data/locaties.json"), "utf8"));
-  const kust = alle.filter((l) => l.rws?.getij).map((l) => {
+  // Alleen plaatsen waar waterstand en getijvoorspelling van hetzelfde meetpunt komen.
+  // Anders vergelijk je appels met peren (bijv. een wadmeetpunt dat bij eb droogvalt).
+  const kust = alle.filter((l) => l.rws?.getij && l.rws?.waterstand?.code === l.rws.getij.code).map((l) => {
     const d = lees(l.slug);
     if (!d?.waterstand || !d.getij?.reeks?.length) return null;
     const tm = Date.parse(d.waterstand.t);
@@ -44,10 +46,12 @@ export function hoogwaterStatus() {
     return { l, ws: d.waterstand, opzet: Math.round(d.waterstand.v - p.v) };
   }).filter(Boolean).sort((a, b) => b.opzet - a.opzet);
   const kustHoog = kust.filter((k) => k.opzet >= KUST_OPZET);
+  // Eén afwijkend meetpunt is eerder een storing dan storm: pas melden bij minstens 2 meetpunten.
+  const kustActief = new Set(kustHoog.map((k) => k.l.rws.getij.code)).size >= 2;
 
   const rivierActief = rivieren.filter((r) => r.verwacht !== "normaal");
-  const actief = rivierActief.length > 0 || kustHoog.length > 0;
-  const onderwerpen = [...rivierActief.map((r) => r.rivier), ...(kustHoog.length ? ["kust"] : [])];
-  cache = { actief, rivieren, rivierActief, kust, kustHoog, onderwerpen, grens: KUST_OPZET };
+  const actief = rivierActief.length > 0 || kustActief;
+  const onderwerpen = [...rivierActief.map((r) => r.rivier), ...(kustActief ? ["kust"] : [])];
+  cache = { actief, rivieren, rivierActief, kust, kustHoog, kustActief, onderwerpen, grens: KUST_OPZET };
   return cache;
 }
