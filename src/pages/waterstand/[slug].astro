@@ -116,6 +116,7 @@ const jsonLd = [
   {buren.length > 0 && <><h2>In de buurt</h2><ul class="buren">{buren.map((l) => <li><a href={`/waterstand/${l.slug}`}>{l.naam}{l.rivier && <span class="muted"> · {l.rivier}</span>}</a></li>)}</ul></>}
   {HUB[loc.rivier] && <p class="meer"><a href={`/waterstand/${HUB[loc.rivier]}`}>Waterstand {HUB[loc.rivier] === "lek" ? "Nederrijn en Lek" : loc.rivier === "Bergsche Maas" ? "Maas" : loc.rivier}: alle meetpunten →</a></p>}
   <p class="meer"><a href="/waterstand/" data-umami-event="alle-waterstanden">Alle waterstanden per rivier →</a></p>
+  <p class="muted klein">Bron: Rijkswaterstaat, elk uur bijgewerkt. Meetpunt: {loc.rws.waterstand.naam}{loc.rws.temperatuur && <>; temperatuur {loc.rws.temperatuur.naam}{loc.rws.temperatuur.km > 1 && ` (${String(loc.rws.temperatuur.km).replace(".", ",")} km)`}</>}. <a href="/over">Over deze data</a></p>
 </Base>
 
 <style>

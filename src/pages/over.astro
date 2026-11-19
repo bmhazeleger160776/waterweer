@@ -1,0 +1,48 @@
+---
+import Base from "../layouts/Base.astro";
+import fs from "node:fs";
+import path from "node:path";
+const alle = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data/locaties.json"), "utf8"));
+const kust = alle.filter((l) => l.rws?.getij).length;
+const rivier = alle.filter((l) => !l.rws?.getij && l.rws?.waterstand).length;
+const MAIL = "matthijshazeleger@live.nl";
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: "Over waterweer.nl",
+    url: "https://waterweer.nl/over",
+    mainEntity: {
+      "@type": "WebSite",
+      name: "waterweer.nl",
+      url: "https://waterweer.nl/",
+      inLanguage: "nl-NL",
+      creator: { "@type": "Person", name: "Matthijs Hazeleger", email: `mailto:${MAIL}` },
+    },
+  },
+];
+---
+<Base title="Over waterweer.nl – wie erachter zit en waar de data vandaan komt" description="waterweer.nl is gemaakt door Matthijs Hazeleger. Lees waar de getijden, waterstanden en watertemperaturen vandaan komen, hoe vaak ze worden bijgewerkt en hoe je contact opneemt." canonical="/over" jsonLd={jsonLd}>
+  <nav class="kruimel muted"><a href="/">Home</a> › Over waterweer</nav>
+  <h1>Over waterweer.nl</h1>
+  <p>waterweer.nl is gemaakt door <strong>Matthijs Hazeleger</strong>. Het doel is simpel: de getijden, waterstanden en watertemperaturen van Nederland op één plek, snel te vinden en makkelijk te lezen. Of je nu wilt zwemmen, wadlopen, vissen, varen of gewoon wilt weten hoe hoog het water staat.</p>
+
+  <h2>Waar komt de data vandaan?</h2>
+  <p>Alle cijfers komen uit de <strong>open data van Rijkswaterstaat</strong>, dezelfde metingen en voorspellingen die je ook op Waterinfo vindt. waterweer.nl haalt ze <strong>elk uur</strong> op en zet ze om in tabellen en grafieken.</p>
+  <ul>
+    <li><strong>Getijden</strong>: de astronomische voorspelling van hoog- en laagwater van Rijkswaterstaat, voor {kust} kustplaatsen.</li>
+    <li><strong>Waterstanden</strong>: de laatst gemeten stand, en voor de rivieren ook de verwachting voor de komende dagen, voor {rivier} punten langs Rijn, Waal, Lek, IJssel en Maas.</li>
+    <li><strong>Watertemperatuur</strong>: de laatste meting van het dichtstbijzijnde meetpunt dat op dat moment data levert.</li>
+  </ul>
+  <p>Niet elke plaats heeft een eigen meetpunt. Dan gebruikt waterweer.nl het dichtstbijzijnde meetpunt dat in hetzelfde water ligt. Op elke plaatspagina staat welk meetpunt dat is en hoe ver het weg ligt.</p>
+
+  <h2>Waar moet je rekening mee houden?</h2>
+  <p>Getijden zijn voorspellingen op basis van de stand van zon en maan. Door wind en luchtdruk kan het water tientallen centimeters hoger of lager staan, en kan hoog- of laagwater eerder of later vallen. Metingen kunnen soms ontbreken of even vertraagd binnenkomen.</p>
+  <p class="kaartblok"><strong>Gebruik waterweer.nl niet als enige bron voor navigatie of je veiligheid.</strong> Volg altijd de aanwijzingen van de reddingsbrigade, de havendienst en Rijkswaterstaat. Bij gevaar op of aan het water: bel 112.</p>
+
+  <h2>Contact</h2>
+  <p>Zie je een fout, mis je een plaats, of wil je de <a href="/widget/">gratis widget</a> op je eigen site zetten en heb je een vraag? Mail naar <a href={`mailto:${MAIL}`} data-umami-event="contact-mail">{MAIL}</a>. Ik lees alles en reageer meestal binnen een paar dagen.</p>
+
+  <h2>Privacy</h2>
+  <p>waterweer.nl gebruikt geen cookies, geen advertenties en geen accounts. Hoe de bezoekersstatistieken werken, lees je in de <a href="/privacy">privacyverklaring</a>.</p>
+</Base>

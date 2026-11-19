@@ -243,6 +243,14 @@ const naamVan = (slug) => alle.find((l) => l.slug === slug)?.naam ?? slug;
       </ul>
     </>
   )}
+  <p class="muted klein bronregel">Bron: Rijkswaterstaat, elk uur bijgewerkt. Meetpunten: {[
+    loc.rws.getij && `getij ${loc.rws.getij.naam}`,
+    loc.rws.waterstand && `waterstand ${loc.rws.waterstand.naam}`,
+    loc.rws.temperatuur && `temperatuur ${loc.rws.temperatuur.naam}`,
+  ].filter(Boolean).map((t, i, a) => {
+    const k = [loc.rws.getij, loc.rws.waterstand, loc.rws.temperatuur].filter(Boolean)[i].km;
+    return `${t}${k > 1 ? ` (${String(k).replace(".", ",")} km)` : ""}`;
+  }).join(" · ")}. <a href="/over">Over deze data</a></p>
 </Base>
 
 <style>
