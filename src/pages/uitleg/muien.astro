@@ -1,0 +1,50 @@
+---
+import Uitleg from "../../layouts/Uitleg.astro";
+const stranden = [["zandvoort", "Zandvoort"], ["egmond-aan-zee", "Egmond aan Zee"], ["bergen-aan-zee", "Bergen aan Zee"], ["callantsoog", "Callantsoog"], ["scheveningen", "Scheveningen"], ["katwijk", "Katwijk"], ["domburg", "Domburg"], ["renesse", "Renesse"]];
+const faq = [
+  { v: "Wat is een mui?", a: "Een mui is een geul tussen twee zandbanken, dwars op de kust. Het water dat de golven op het strand brengen, stroomt door die geul met kracht terug naar zee. Wie daar zwemt, wordt van de kust af gevoerd." },
+  { v: "Trekt een mui je onder water?", a: "Nee. Een muistroom trekt je niet naar beneden, maar voert je van het strand af. Verder op zee, voorbij de zandbanken, wordt de stroming weer zwakker." },
+  { v: "Wat moet je doen als je in een mui terechtkomt?", a: "Blijf rustig en zwem niet tegen de stroming in. Laat je meevoeren tot de stroming minder wordt, zwem dan evenwijdig aan het strand de mui uit en daarna via de brekende golven terug naar de kant. Trek de aandacht van de reddingsbrigade of andere strandgasten als het niet lukt." },
+  { v: "Hoe herken je een mui?", a: "Op de plek van een mui breken de golven minder of niet, het water is vaak donkerder en soms zie je schuim, zand of drijvend afval naar zee stromen. Bij weinig wind is een mui bijna niet te zien. Vraag het de reddingsbrigade als je twijfelt." },
+];
+---
+<Uitleg slug="muien" title="Muien in zee – herkennen en wat te doen als je erin terechtkomt" description="Wat is een mui, hoe herken je hem en wat doe je als je erin terechtkomt? Uitleg over muien en veilig zwemmen in de Noordzee, met de getijden per strand." faq={faq}>
+  <h1>Muien: veilig zwemmen bij eb en vloed</h1>
+  <p>Een <strong>mui</strong> is een geul tussen twee zandbanken, dwars op de kust, waar het water met kracht terug naar zee stroomt. Muien zorgen voor de meeste problemen bij het zwemmen in de Noordzee. De belangrijkste regel: <strong>zwem nooit tegen de stroming van een mui in</strong>, maar laat je meevoeren en zwem daarna evenwijdig aan het strand de mui uit.</p>
+
+  <h2>Hoe ontstaat een mui?</h2>
+  <p>Voor de hele Nederlandse kust liggen zandbanken. De golven brengen steeds water over die banken richting het strand. Dat water moet ook weer terug naar zee, en dat gebeurt via de diepere geulen tussen de zandbanken: de muien. Daar kan de stroming zo sterk zijn dat je in korte tijd tientallen meters de zee in drijft. Hoe sterk een mui stroomt, hangt af van de golven, de wind en het getij. Rond laagwater, als er minder water over de zandbanken staat, loopt er vaak meer water door de geulen.</p>
+
+  <h2>Zo herken je een mui</h2>
+  <ul>
+    <li>De golven breken op die plek minder of helemaal niet, terwijl ze ernaast wel breken.</li>
+    <li>Het water is er donkerder, omdat het dieper is.</li>
+    <li>Soms zie je schuim, zand, wier of drijvend afval naar zee stromen.</li>
+    <li>Bij weinig wind en een gladde zee is een mui bijna niet te zien.</li>
+  </ul>
+  <p>De reddingsbrigade weet waar de muien liggen en waarschuwt met vlaggen. Twijfel je, vraag het dan aan de strandwacht.</p>
+
+  <h2>Wat te doen als je in een mui terechtkomt</h2>
+  <ol>
+    <li><strong>Blijf rustig.</strong> Een mui trekt je niet onder water, maar voert je van de kust af.</li>
+    <li><strong>Zwem niet tegen de stroming in.</strong> Dat houdt niemand lang vol.</li>
+    <li><strong>Laat je meevoeren</strong> tot de stroming minder wordt, voorbij de zandbanken.</li>
+    <li><strong>Zwem evenwijdig aan het strand</strong> de mui uit, naar de plek waar de golven wel breken. Daar is het ondieper.</li>
+    <li><strong>Ga met de golven mee terug</strong> naar het strand.</li>
+    <li><strong>Lukt het niet?</strong> Steek je arm op en roep om hulp, zodat de reddingsbrigade of andere strandgasten je zien.</li>
+  </ol>
+  <p class="kader">Zie je iemand in de problemen? Ga niet zomaar zelf het water in: daarbij komen elk jaar ook redders om. Waarschuw de reddingsbrigade, laat iemand 112 bellen en houd de drenkeling in het oog. Ga je toch, neem dan iets mee dat drijft.</p>
+
+  <h2>Veilig zwemmen in zee</h2>
+  <ul>
+    <li>Zwem bij voorkeur bij een bewaakte post en let op de vlaggen.</li>
+    <li>Zwem nooit alleen en zorg dat iemand op het strand je in de gaten houdt.</li>
+    <li>Blijf liever in ondiep water, tot je knieën of heupen, en zwem langs de kust in plaats van de zee in.</li>
+    <li>Pas op met luchtbedden en opblaasbanden bij aflandige wind: die drijven snel af.</li>
+  </ul>
+
+  <h2>Getijden en golven per strand</h2>
+  <p>Op de pagina's van de badplaatsen zie je wanneer het hoog- en laagwater is, hoe hoog de golven zijn en waar de wind vandaan komt.</p>
+  <ul class="chips">{stranden.map(([s, n]) => <li><a href={`/getijden/${s}`}>{n}</a></li>)}</ul>
+  <p class="klein">Deze uitleg is algemene informatie, gebaseerd op adviezen van de reddingsbrigades. Volg op het strand altijd de aanwijzingen van de reddingsbrigade.</p>
+</Uitleg>

@@ -1,0 +1,31 @@
+---
+import Uitleg from "../../layouts/Uitleg.astro";
+const plekken = [["zeelandbrug", "Zeelandbrug"], ["burghsluis", "Burghsluis"], ["colijnsplaat", "Colijnsplaat"], ["bergse-diepsluis", "Bergse Diepsluis"], ["westenschouwen", "Westenschouwen"], ["den-oever", "Den Oever"]];
+const faq = [
+  { v: "Wat is de kentering?", a: "De kentering is het moment waarop de getijstroom omdraait: van eb naar vloed of van vloed naar eb. Rond dat moment staat er bijna geen stroming. Het wordt ook wel stil water of stil tij genoemd." },
+  { v: "Valt de kentering samen met hoog- of laagwater?", a: "Niet precies. Op veel plekken draait de stroming pas enige tijd na hoog- of laagwater om, en dat verschil is per plaats anders. In zeegaten en smalle geulen kan het flink afwijken. Gebruik voor duiken of varen daarom een stroomtabel of duikgetijdentabel voor die specifieke plek." },
+  { v: "Hoe lang duurt de kentering?", a: "Meestal kort: de stroming is vaak maar een half uur tot een uur zwak genoeg om rustig te duiken. Bij springtij is de periode korter en de stroming daarna sterker, bij doodtij langer en rustiger." },
+];
+---
+<Uitleg slug="kentering" title="Kentering – het moment tussen eb en vloed (stil water)" description="Wat is de kentering, wanneer valt die en waarom is het voor duikers, vissers en schippers belangrijk? Uitleg over stil water tussen eb en vloed, met getijden per plaats." faq={faq}>
+  <h1>Kentering: het moment tussen eb en vloed</h1>
+  <p>De <strong>kentering</strong> is het moment waarop de getijstroom omdraait: van eb (afgaand water) naar vloed (opkomend water), of andersom. Rond de kentering staat er even bijna geen stroming. Daarom heet het ook wel <strong>stil water</strong>. Voor duikers, sportvissers en schippers is dat het belangrijkste moment van het getij.</p>
+
+  <h2>Kentering is niet hetzelfde als hoog- of laagwater</h2>
+  <p>Hoogwater en laagwater gaan over de <em>hoogte</em> van het water. De kentering gaat over de <em>stroming</em>. Die twee lopen niet precies gelijk op: op veel plekken blijft het water nog een tijd doorstromen nadat het hoogste of laagste punt bereikt is. Hoeveel later de kentering valt, verschilt per plek. In zeegaten, smalle geulen en bij dammen kan dat flink afwijken van het tijdstip van hoog- of laagwater.</p>
+  <p>Een getijtabel is dus een goed startpunt: de kentering valt <em>rond</em> hoog- en laagwater. Voor de precieze tijd op een duikstek of in een vaargeul heb je een stroomtabel of duikgetijdentabel van die plek nodig.</p>
+
+  <h2>Waarom duikers op de kentering wachten</h2>
+  <p>In de Oosterschelde stroomt het water bij elk getij met kracht in en uit. Tussen de kenteringen is de stroming op veel duikstekken te sterk om veilig te duiken. Duikers gaan daarom vlak voor de kentering het water in en komen eruit voordat de stroming weer aantrekt. Bij springtij is dat venster korter en de stroming daarna sterker, bij doodtij heb je meer tijd.</p>
+  <p>Er zijn ook stekken zonder stroming, zoals de Bergse Diepsluis bij Tholen, waar je los van het getij kunt duiken.</p>
+
+  <h2>Vissers en schippers</h2>
+  <ul>
+    <li><strong>Sportvissers</strong> merken dat vis vaak actief wordt als de stroming na de kentering weer op gang komt, en dat lood bij volle stroming moeilijk op de bodem blijft liggen.</li>
+    <li><strong>Schippers</strong> plannen doorvaarten door zeegaten en sluizen rond de kentering, of varen juist met de stroom mee om tijd en brandstof te sparen.</li>
+  </ul>
+
+  <h2>Getijden van bekende duik- en visplekken</h2>
+  <ul class="chips">{plekken.map(([s, n]) => <li><a href={`/getijden/${s}`}>{n}</a></li>)}</ul>
+  <p class="klein">Deze uitleg is algemene informatie. Plan een duik altijd met een actuele duikgetijdentabel en volg de regels van je duikvereniging of duikcentrum.</p>
+</Uitleg>

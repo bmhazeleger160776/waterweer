@@ -1,0 +1,36 @@
+---
+import Uitleg from "../../layouts/Uitleg.astro";
+const plekken = [["bruinisse", "Bruinisse"], ["zierikzee", "Zierikzee"], ["yerseke", "Yerseke"], ["kamperland", "Kamperland"], ["oesterdam", "Oesterdam"], ["harlingen", "Harlingen"], ["oudeschild", "Oudeschild"], ["texel", "Texel"]];
+const faq = [
+  { v: "Wanneer kun je het best krabben vangen op het strand?", a: "Rond laagwater. Begin ongeveer anderhalf tot twee uur voor laagwater: dan ligt het meeste strand, de dijkvoet of de getijdenpoelen droog of ondiep, en heb je nog tijd voordat het water terugkomt. Bekijk de getijtabel van de plaats waar je bent." },
+  { v: "Hoe vang je krabbetjes vanaf een steiger of in de haven?", a: "Knoop een stukje aas, bijvoorbeeld een mossel of een stukje spek, aan een touwtje, laat het zakken en trek het na een paar minuten langzaam op. De krabben houden zich aan het aas vast. Leg ze in een emmer met zeewater en zet ze daarna terug. In de haven kan dit bij elk getij, maar bij heel laag water liggen de krabben soms buiten bereik." },
+  { v: "Mag je krabben en garnalen meenemen?", a: "Voor kinderen die even met een schepnet vissen gelden geen strenge regels, maar zet de dieren na het bekijken altijd terug op de plek waar je ze vond. In natuurgebieden zoals Nationaal Park Oosterschelde en de Waddenzee gelden extra regels: volg de borden en blijf van afgesloten slikken en kwelders." },
+];
+---
+<Uitleg slug="krabben-vangen" title="Krabben vangen en garnalen scheppen bij laagwater – tips en getijden" description="Wanneer en waar vang je krabben, garnalen en ander zeeleven bij laagwater? Tips voor het strand, de dijk en de haven, met de getijden per plaats." faq={faq}>
+  <h1>Krabben vangen en garnalen scheppen bij laagwater</h1>
+  <p>De beste tijd om krabben te vangen, garnalen te scheppen of in getijdenpoelen te zoeken is <strong>rond laagwater</strong>. Begin ongeveer <strong>anderhalf tot twee uur voor laagwater</strong>: dan ligt veel van het strand, de dijkvoet en de poeltjes droog of ondiep, en heb je nog ruim tijd voordat het water terugkomt. In de haven of vanaf een steiger kun je met een touwtje en wat aas bij bijna elk getij krabbetjes vangen.</p>
+
+  <h2>Waar vind je krabben en garnalen?</h2>
+  <ul>
+    <li><strong>Getijdenpoelen en stenen dijken.</strong> Tussen de basaltblokken en stenen langs de Zeeuwse dijken en in de poeltjes die bij laagwater achterblijven, zitten krabben, garnalen, zeesterren en kleine visjes.</li>
+    <li><strong>Het strand bij laagwater.</strong> Met een schepnet of garnalennet in het ondiepe water vang je garnalen, kleine krabben en soms jonge platvisjes.</li>
+    <li><strong>Havens en steigers.</strong> Klassiek met kinderen: krabbetjes vangen met een touwtje en een mossel of stukje spek als aas.</li>
+    <li><strong>De Oosterschelde</strong> is in Nederland een van de rijkste plekken voor zeeleven. Bij laagwater komen hier uitgestrekte slikken en zandplaten droog.</li>
+  </ul>
+
+  <h2>Zo pak je het aan</h2>
+  <ol>
+    <li><strong>Bekijk de getijden</strong> van de plaats waar je bent, en plan je bezoek rond laagwater.</li>
+    <li><strong>Neem mee:</strong> een schepnet of garnalennet, een emmer of bak met zeewater, laarzen of waterschoenen.</li>
+    <li><strong>Pak krabben voorzichtig van achteren</strong>, bovenop het schild, dan kunnen ze je niet knijpen.</li>
+    <li><strong>Houd de emmer koel en niet te vol</strong>, en ververs het water af en toe.</li>
+    <li><strong>Zet alles weer terug</strong> op de plek waar je het vond.</li>
+  </ol>
+
+  <p class="kader">Let op het opkomende water. Op vlakke stranden en slikken komt het water sneller terug dan je denkt, en geulen die eerst droog lagen lopen snel vol. Op zachte slikken kun je bovendien wegzakken. Blijf dicht bij de vaste kant, houd kinderen in het oog en volg de borden in natuurgebieden.</p>
+
+  <h2>Getijden van goede plekken</h2>
+  <ul class="chips">{plekken.map(([s, n]) => <li><a href={`/getijden/${s}`}>{n}</a></li>)}</ul>
+  <p>Wil je verder het wad op? Dat kan alleen met een gids: lees meer over <a href="/uitleg/wadlopen">wadlopen</a>.</p>
+</Uitleg>

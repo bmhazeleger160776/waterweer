@@ -97,7 +97,7 @@ const jsonLd = [
   {faq.length > 0 && <><h2>Veelgestelde vragen</h2>{faq.map((f) => <details><summary>{f.v}</summary><p>{f.a}</p></details>)}</>}
 
   <h2>Andere rivieren</h2>
-  <ul class="chips">{andere.map(([s, r]) => <li><a href={`/waterstand/${s}`}>Waterstand {r.naam}</a></li>)}<li><a href="/waterstand/">Alle waterstanden</a></li></ul>
+  <ul class="chips">{andere.map(([s, r]) => <li><a href={`/waterstand/${s}`}>Waterstand {r.naam}</a></li>)}<li><a href="/waterstand/">Alle waterstanden</a></li><li><a href="/hoogwater">Hoogwater nu</a></li></ul>
   {rivier.secties && <p class="muted klein bron">Records: Rijkswaterstaat, KNMI en Weeronline.</p>}
 </Base>
 <style>

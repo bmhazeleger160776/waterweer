@@ -1,0 +1,77 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import Uitleg from "../../layouts/Uitleg.astro";
+import { meter, tijd, dagKort } from "../../lib/format.js";
+const root = process.cwd();
+const lees = (slug) => {
+  const f = path.join(root, `data/metingen/${slug}.json`);
+  return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : null;
+};
+// Meetpunten met (waar bekend) het sluitpeil van de kering die daar bij hoort
+const PUNTEN = [
+  { slug: "rotterdam", naam: "Rotterdam", kering: "Maeslantkering en Hartelkering", peil: 300 },
+  { slug: "dordrecht", naam: "Dordrecht", kering: "Maeslantkering en Hartelkering", peil: 290 },
+  { slug: "hoek-van-holland", naam: "Hoek van Holland" },
+  { slug: "vlissingen", naam: "Vlissingen" },
+  { slug: "den-helder", naam: "Den Helder" },
+  { slug: "harlingen", naam: "Harlingen" },
+  { slug: "delfzijl", naam: "Delfzijl" },
+];
+const rijen = PUNTEN.map((p) => {
+  const d = lees(p.slug);
+  if (!d) return null;
+  const nu = d.bijgewerkt;
+  const hw = (d.getij?.extremen ?? []).filter((e) => e.soort === "HW" && e.t >= nu);
+  const hoogste = hw.length ? hw.reduce((a, b) => (b.v > a.v ? b : a)) : null;
+  return { ...p, ws: d.waterstand, hoogste };
+}).filter(Boolean);
+const faq = [
+  { v: "Wanneer gaat de Maeslantkering dicht?", a: "De Maeslantkering en de Hartelkering sluiten automatisch als het water naar verwachting 3 meter boven NAP komt bij Rotterdam, of 2,90 meter boven NAP bij Dordrecht. Op 21 december 2023, tijdens storm Pia, gebeurde dat voor het eerst echt door hoogwater." },
+  { v: "Wanneer gaat de Oosterscheldekering dicht?", a: "De Oosterscheldekering sluit als een waterstand van 3 meter boven NAP wordt verwacht. Dat gebeurt alleen bij een zware storm uit het westen of noordwesten." },
+  { v: "Wat is een stormvloed?", a: "Een stormvloed is een uitzonderlijk hoge waterstand doordat een zware storm het zeewater tegen de kust opstuwt. Valt dat samen met hoogwater, en zeker met springtij, dan kan het water meters hoger komen dan normaal." },
+  { v: "Waar is het water bij storm het hoogst?", a: "Bij een noordwesterstorm wordt het water het verst opgestuwd in de oostelijke Waddenzee en de Eems. In Delfzijl kwam het tijdens storm Pia in december 2023 tot 4,12 meter boven NAP." },
+];
+---
+<Uitleg slug="stormvloed" title="Stormvloed – wanneer gaan de Maeslantkering en Oosterscheldekering dicht?" description="Wanneer sluiten de Maeslantkering, Hartelkering en Oosterscheldekering bij storm? Uitleg over stormvloed en sluitpeilen, met de actuele waterstanden langs de kust." faq={faq}>
+  <h1>Stormvloed: wanneer gaan de keringen dicht?</h1>
+  <p>Bij een <strong>stormvloed</strong> stuwt een zware storm het zeewater zo hoog op tegen de kust dat het water meters boven het normale hoogwater kan komen. De <strong>Maeslantkering</strong> bij Hoek van Holland sluit automatisch bij een verwachte waterstand van <strong>3 meter boven NAP bij Rotterdam</strong> (of 2,90 meter bij Dordrecht). De <strong>Oosterscheldekering</strong> sluit bij een verwachte waterstand van <strong>3 meter boven NAP</strong>.</p>
+
+  <h2>Waterstand nu</h2>
+  <p>De actuele gemeten waterstand op een paar belangrijke punten langs de kust, en het hoogste hoogwater dat het getij de komende dagen voorspelt. Bij storm kan het werkelijke water flink hoger komen dan die voorspelling.</p>
+  <div class="tabelwrap">
+    <table>
+      <thead><tr><th>Meetpunt</th><th>Nu</th><th>Hoogste getij komende dagen</th><th>Sluitpeil</th></tr></thead>
+      <tbody>{rijen.map((r) => (
+        <tr>
+          <td><a href={`/getijden/${r.slug}`}>{r.naam}</a></td>
+          <td>{r.ws ? <>{meter(r.ws.v).replace(" NAP", "")} <span class="muted">· {tijd(r.ws.t)}</span></> : "–"}</td>
+          <td>{r.hoogste ? <>{meter(r.hoogste.v).replace(" NAP", "")} <span class="muted">· {dagKort(r.hoogste.t)}</span></> : "–"}</td>
+          <td>{r.peil ? `${(r.peil / 100).toFixed(2).replace(".", ",")} m` : <span class="muted">–</span>}</td>
+        </tr>
+      ))}</tbody>
+    </table>
+  </div>
+  <p class="klein">In meters ten opzichte van NAP. Het sluitpeil geldt voor de verwachte waterstand; Rijkswaterstaat besluit op basis van de stormverwachting, niet van één meting.</p>
+
+  <h2>De stormvloedkeringen</h2>
+  <ul>
+    <li><strong>Maeslantkering en Hartelkering</strong> (samen de Europoortkering): beschermen Rotterdam en omgeving. Ze sluiten automatisch bij een verwachte waterstand van 3,00 m boven NAP bij Rotterdam of 2,90 m bij Dordrecht. Op 21 december 2023 gebeurde dat voor het eerst door een echte storm, storm Pia.</li>
+    <li><strong>Oosterscheldekering</strong>: het grootste Deltawerk. De kering staat normaal open, zodat het getij in de Oosterschelde blijft, en sluit bij een verwachte waterstand van 3 m boven NAP.</li>
+    <li><strong>Hollandsche IJsselkering</strong> bij Krimpen aan den IJssel: beschermt het lage land achter de Hollandse IJssel.</li>
+    <li><strong>Balgstuw Ramspol</strong> bij Kampen: houdt bij noordwesterstorm het opgestuwde water uit het IJsselmeer en Ketelmeer tegen.</li>
+    <li><strong>Haringvlietsluizen</strong>: sluiten bij storm het Haringvliet af van de zee.</li>
+  </ul>
+  <p>Tijdens storm Pia, op 21 december 2023, waren voor het eerst alle grote stormvloedkeringen van Nederland op dezelfde dag dicht.</p>
+
+  <h2>Waarom storm en getij samen gevaarlijk zijn</h2>
+  <p>Het getij bepaalt hoe hoog het water normaal komt. Een zware storm uit het westen of noordwesten stuwt daar nog eens een of meer meters water bovenop. Valt de top van de storm samen met hoogwater, en dan vooral met <a href="/uitleg/springtij-en-doodtij">springtij</a>, dan wordt het extra hoog. Dat gebeurde in de nacht van 31 januari op 1 februari 1953, bij de watersnoodramp. Daarna zijn de Deltawerken gebouwd.</p>
+  <p>Bij een noordwesterstorm komt het water het hoogst in de oostelijke Waddenzee en de Eems. In Delfzijl kwam het tijdens storm Pia tot 4,12 meter boven NAP.</p>
+
+  <p class="kader">Bij dreigend hoogwater geeft Rijkswaterstaat waarschuwingen via de officiële kanalen en het waterberichtgeving-portaal. Volg bij gevaar altijd de aanwijzingen van Rijkswaterstaat, de gemeente en de veiligheidsregio.</p>
+  <p class="klein">Bronnen: Rijkswaterstaat, NOS en Weeronline. Waterstanden: Rijkswaterstaat, elk uur bijgewerkt.</p>
+</Uitleg>
+<style>
+  td:first-child { font-weight: 600; }
+  td { white-space: nowrap; }
+</style>

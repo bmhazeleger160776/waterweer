@@ -1,0 +1,74 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import Uitleg from "../../layouts/Uitleg.astro";
+import { REGIOS } from "../../lib/regios.js";
+import { graden, dagKort, tijd } from "../../lib/format.js";
+const root = process.cwd();
+const alle = JSON.parse(fs.readFileSync(path.join(root, "data/locaties.json"), "utf8"));
+const rijen = alle.filter((l) => l.rws?.getij).map((l) => {
+  const f = path.join(root, `data/metingen/${l.slug}.json`);
+  if (!fs.existsSync(f)) return null;
+  const t = JSON.parse(fs.readFileSync(f, "utf8")).temperatuur;
+  return t && Date.now() - Date.parse(t.t) < 3 * 864e5 ? { l, t } : null;
+}).filter(Boolean);
+const regios = Object.entries(REGIOS).map(([slug, r]) => ({ slug, ...r, rijen: rijen.filter((x) => x.l.regioSlug === slug).sort((a, b) => b.t.v - a.t.v) })).filter((r) => r.rijen.length);
+const warmst = rijen.length ? rijen.reduce((a, b) => (b.t.v > a.t.v ? b : a)) : null;
+const koudst = rijen.length ? rijen.reduce((a, b) => (b.t.v < a.t.v ? b : a)) : null;
+const gem = rijen.length ? rijen.reduce((s, x) => s + x.t.v, 0) / rijen.length : null;
+const oordeel = (v) => (v < 12 ? "koud: wetsuit aan" : v < 16 ? "fris" : v < 19 ? "redelijk" : "lekker voor de Noordzee");
+const MAANDEN = [
+  ["Januari", "5–7"], ["Februari", "4–6"], ["Maart", "5–7"], ["April", "8–10"], ["Mei", "11–14"], ["Juni", "15–17"],
+  ["Juli", "17–20"], ["Augustus", "18–21"], ["September", "16–19"], ["Oktober", "13–16"], ["November", "9–12"], ["December", "6–9"],
+];
+const faq = [
+  { v: "Hoe warm is de Noordzee nu?", a: gem !== null ? `Gemiddeld over ${rijen.length} meetpunten langs de Nederlandse kust is het zeewater nu ${graden(gem)}. Het warmst is het bij ${warmst.l.naam} (${graden(warmst.t.v)}), het koudst bij ${koudst.l.naam} (${graden(koudst.t.v)}).` : "De actuele temperaturen per plaats staan in de tabel op deze pagina." },
+  { v: "Wanneer is de Noordzee het warmst?", a: "Eind juli en in augustus. Dan is het water langs de Nederlandse kust meestal tussen de 17 en 21 graden, in warme zomers soms meer. Het koudst is de zee in februari en begin maart." },
+  { v: "Vanaf welke watertemperatuur kun je zwemmen in zee?", a: "Onder de 12 graden is zwemmen zonder wetsuit alleen voor geoefende koudwaterzwemmers. Tussen de 15 en 18 graden voelt het fris maar goed te doen, en vanaf ongeveer 18 graden vinden de meeste mensen het prettig. Ga in koud water altijd rustig het water in." },
+];
+---
+<Uitleg slug="watertemperatuur-noordzee" title="Watertemperatuur Noordzee nu – per plaats en per maand" description={`Hoe warm is de Noordzee nu? Actuele watertemperatuur per kustplaats${gem !== null ? ` (gemiddeld ${graden(gem)})` : ""}, elk uur bijgewerkt, en wat je per maand kunt verwachten.`} faq={faq}>
+  <h1>Watertemperatuur Noordzee: nu en per maand</h1>
+  {gem !== null && <p>Het zeewater langs de Nederlandse kust is nu gemiddeld <strong>{graden(gem)}</strong>. Het warmst is het bij <a href={`/getijden/${warmst.l.slug}`}>{warmst.l.naam}</a> ({graden(warmst.t.v)}), het koudst bij <a href={`/getijden/${koudst.l.slug}`}>{koudst.l.naam}</a> ({graden(koudst.t.v)}). Gemiddeld is dat {oordeel(gem)}. De metingen komen van Rijkswaterstaat en worden elk uur bijgewerkt.</p>}
+
+  <h2>Watertemperatuur per plaats</h2>
+  {regios.map((r) => (
+    <>
+      <h3>{r.naam}</h3>
+      <div class="tabelwrap">
+        <table>
+          <thead><tr><th>Plaats</th><th>Water</th><th>Gemeten</th></tr></thead>
+          <tbody>{r.rijen.map((x) => (
+            <tr><td><a href={`/getijden/${x.l.slug}`}>{x.l.naam}</a></td><td>{graden(x.t.v)}</td><td class="muted">{tijd(x.t.t)}</td></tr>
+          ))}</tbody>
+        </table>
+      </div>
+    </>
+  ))}
+  <p class="klein">Gemeten door Rijkswaterstaat op het dichtstbijzijnde meetpunt van elke plaats. Vlak bij het strand kan het water op een zonnige dag een paar graden warmer zijn.</p>
+
+  <h2>Watertemperatuur per maand</h2>
+  <p>Zo warm is het zeewater langs de Nederlandse kust ongeveer, per maand. Het verschilt per jaar en per plek: de Waddenzee en de Zeeuwse wateren warmen in de zomer sneller op en koelen in de winter sneller af dan de open Noordzee.</p>
+  <div class="tabelwrap">
+    <table>
+      <thead><tr><th>Maand</th><th>Watertemperatuur (ongeveer)</th></tr></thead>
+      <tbody>{MAANDEN.map(([m, t]) => <tr><td>{m}</td><td>{t} °C</td></tr>)}</tbody>
+    </table>
+  </div>
+
+  <h2>Een zee die opwarmt</h2>
+  <p>De Noordzee is de afgelopen veertig jaar ongeveer 1,7 graad warmer geworden, volgens het KNMI. Voor de Nederlandse kust gaat het om zo'n 0,4 graad per tien jaar, en zowel de warmste als de koudste dagen van het jaar worden warmer. Daardoor komen mariene hittegolven vaker voor: in juli 2026 liep het zeewater bij Lichteiland Goeree op tot 20,1 graden, hoger dan ooit gemeten voor die tijd van het jaar.</p>
+
+  <h2>Zwemmen in koud water</h2>
+  <ul>
+    <li><strong>Onder de 12 graden</strong> is het koud: zwem alleen met wetsuit of als je gewend bent aan koud water.</li>
+    <li><strong>12 tot 16 graden</strong> is fris. Ga rustig het water in, zodat je ademhaling kan wennen.</li>
+    <li><strong>Vanaf 18 graden</strong> vinden de meeste mensen het prettig om te zwemmen.</li>
+  </ul>
+  <p>Koud water en <a href="/uitleg/muien">muien</a> zijn samen gevaarlijk: in koud water raak je sneller vermoeid. Zwem bij voorkeur bij een bewaakte post.</p>
+  <p class="klein">Bron trend en record: KNMI. Actuele metingen: Rijkswaterstaat.</p>
+</Uitleg>
+<style>
+  td:first-child { font-weight: 600; }
+  h3 { margin: 22px 0 8px; font-size: 1.05rem; }
+</style>
