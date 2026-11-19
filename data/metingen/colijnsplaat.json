@@ -1,7 +1,7 @@
 {
  "slug": "colijnsplaat",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T05:11:40.162Z",
+ "bijgewerkt": "2026-11-19T07:22:01.626Z",
  "fouten": [],
  "getij": {
   "meetpunt": "kats.zandkreeksluis",
@@ -5020,25 +5020,25 @@
   "meetpunt": "stavenisse",
   "meetpuntNaam": "Stavenisse",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T04:40:00.000Z",
-  "v": -29
+  "t": "2026-11-19T07:00:00.000Z",
+  "v": 96
  },
  "golf": {
   "meetpunt": "roggenplaat",
   "meetpuntNaam": "Roggenplaat",
   "km": 5.2,
-  "t": "2026-11-19T04:40:00.000Z",
-  "v": 14,
+  "t": "2026-11-19T06:50:00.000Z",
+  "v": 23,
   "min24": 5,
   "max24": 59,
-  "periode": 2.2
+  "periode": 2.3
  },
  "wind": {
   "meetpunt": "zierikzee.zeelandbrug",
   "meetpuntNaam": "Zierikzee Zeelandbrug",
   "km": 5.8,
-  "t": "2026-11-19T04:50:00.000Z",
-  "snelheid": 8.8,
-  "richting": 188
+  "t": "2026-11-19T07:00:00.000Z",
+  "snelheid": 10.6,
+  "richting": 221
  }
 }
