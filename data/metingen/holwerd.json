@@ -1,7 +1,7 @@
 {
  "slug": "holwerd",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T20:10:06.308Z",
+ "bijgewerkt": "2026-11-19T21:56:45.927Z",
  "fouten": [],
  "getij": {
   "meetpunt": "holwerd.veersteiger",
@@ -5024,31 +5024,31 @@
   "meetpunt": "holwerd.vaargeul",
   "meetpuntNaam": "Holwerd vaargeul",
   "eenheid": "°C",
-  "t": "2026-11-19T19:40:00.000Z",
-  "v": 6.5
+  "t": "2026-11-19T21:10:00.000Z",
+  "v": 6.6
  },
  "waterstand": {
   "meetpunt": "holwerd.vaargeul",
   "meetpuntNaam": "Holwerd vaargeul",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T19:30:00.000Z",
-  "v": 29
+  "t": "2026-11-19T21:20:00.000Z",
+  "v": -17
  },
  "golf": {
   "meetpunt": "holwerd.vaargeul",
   "meetpuntNaam": "Holwerd vaargeul",
   "km": 0.2,
-  "t": "2026-11-19T19:30:00.000Z",
-  "v": 1,
+  "t": "2026-11-19T21:20:00.000Z",
+  "v": 99999,
   "min24": 1,
-  "max24": 18
+  "max24": 99999
  },
  "wind": {
   "meetpunt": "ameland.nes",
   "meetpuntNaam": "Ameland, Nes",
   "km": 8.6,
-  "t": "2026-11-19T19:30:00.000Z",
-  "snelheid": 3.5,
-  "richting": 99
+  "t": "2026-11-19T21:30:00.000Z",
+  "snelheid": 2.4,
+  "richting": 85
  }
 }
