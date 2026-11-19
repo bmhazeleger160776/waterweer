@@ -1,12 +1,8 @@
 {
  "slug": "rotterdam",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:17:32.770Z",
- "fouten": [
-  "getij: HTTP 404: 404 page not found\n",
-  "temperatuur: HTTP 404: 404 page not found\n",
-  "waterstand: HTTP 404: 404 page not found\n"
- ],
+ "bijgewerkt": "2026-11-19T12:33:39.362Z",
+ "fouten": [],
  "getij": {
   "meetpunt": "parksluis",
   "eenheid": "cm NAP",

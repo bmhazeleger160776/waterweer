@@ -1,14 +1,8 @@
 {
  "slug": "zeelandbrug",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:18:59.892Z",
- "fouten": [
-  "getij: HTTP 404: 404 page not found\n",
-  "temperatuur: HTTP 404: 404 page not found\n",
-  "waterstand: HTTP 404: 404 page not found\n",
-  "golf: geen recente meting",
-  "wind: geen recente meting"
- ],
+ "bijgewerkt": "2026-11-19T12:34:34.831Z",
+ "fouten": [],
  "getij": {
   "meetpunt": "stavenisse",
   "eenheid": "cm NAP",
@@ -5047,15 +5041,15 @@
   "t": "2026-11-19T11:10:00.000Z",
   "v": 36,
   "min24": 3,
-  "max24": 54,
+  "max24": 49,
   "periode": 2.6
  },
  "wind": {
   "meetpunt": "stavenisse",
   "meetpuntNaam": "Stavenisse",
   "km": 2.8,
-  "t": "2026-11-19T11:20:00.000Z",
-  "snelheid": 7.3,
+  "t": "2026-11-19T12:10:00.000Z",
+  "snelheid": 7.2,
   "richting": 229
  }
 }

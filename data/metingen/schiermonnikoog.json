@@ -1,14 +1,8 @@
 {
  "slug": "schiermonnikoog",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:18:09.946Z",
- "fouten": [
-  "getij: HTTP 404: 404 page not found\n",
-  "temperatuur: HTTP 404: 404 page not found\n",
-  "waterstand: HTTP 404: 404 page not found\n",
-  "golf: geen recente meting",
-  "wind: geen recente meting"
- ],
+ "bijgewerkt": "2026-11-19T12:33:58.392Z",
+ "fouten": [],
  "getij": {
   "meetpunt": "schiermonnikoog.waddenzee",
   "eenheid": "cm NAP",
@@ -5052,11 +5046,11 @@
   "meetpunt": "schiermonnikoog.waddenzee",
   "meetpuntNaam": "Schiermonnikoog, Waddenzee",
   "km": 2.8,
-  "t": "2026-11-19T11:00:00.000Z",
-  "v": 8,
+  "t": "2026-11-19T12:10:00.000Z",
+  "v": 9,
   "min24": 1,
   "max24": 14,
-  "periode": 3.3
+  "periode": 3
  },
  "wind": {
   "meetpunt": "lauwersoog.waddenzee",

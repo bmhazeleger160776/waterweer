@@ -1,11 +1,8 @@
 {
  "slug": "stavenisse",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:18:24.024Z",
- "fouten": [
-  "getij: HTTP 404: 404 page not found\n",
-  "waterstand: HTTP 404: 404 page not found\n"
- ],
+ "bijgewerkt": "2026-11-19T12:34:04.194Z",
+ "fouten": [],
  "getij": {
   "meetpunt": "stavenisse",
   "eenheid": "cm NAP",

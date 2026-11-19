@@ -1,12 +1,8 @@
 {
  "slug": "oesterdam",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:17:47.862Z",
- "fouten": [
-  "getij: HTTP 404: 404 page not found\n",
-  "temperatuur: HTTP 404: 404 page not found\n",
-  "waterstand: HTTP 404: 404 page not found\n"
- ],
+ "bijgewerkt": "2026-11-19T12:33:46.435Z",
+ "fouten": [],
  "getij": {
   "meetpunt": "marollegat",
   "eenheid": "cm NAP",
@@ -5039,7 +5035,7 @@
   "meetpunt": "marollegat",
   "meetpuntNaam": "Marollegat",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T11:00:00.000Z",
-  "v": 115
+  "t": "2026-11-19T12:20:00.000Z",
+  "v": 38
  }
 }

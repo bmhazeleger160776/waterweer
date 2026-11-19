@@ -1,11 +1,8 @@
 {
  "slug": "wemeldinge",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:17:39.697Z",
- "fouten": [
-  "getij: HTTP 404: 404 page not found\n",
-  "waterstand: HTTP 404: 404 page not found\n"
- ],
+ "bijgewerkt": "2026-11-19T12:33:42.455Z",
+ "fouten": [],
  "getij": {
   "meetpunt": "yerseke",
   "eenheid": "cm NAP",

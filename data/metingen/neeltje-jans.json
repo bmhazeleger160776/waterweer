@@ -1,12 +1,8 @@
 {
  "slug": "neeltje-jans",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:18:26.817Z",
- "fouten": [
-  "getij: HTTP 404: 404 page not found\n",
-  "temperatuur: HTTP 404: 404 page not found\n",
-  "waterstand: HTTP 404: 404 page not found\n"
- ],
+ "bijgewerkt": "2026-11-19T12:34:06.385Z",
+ "fouten": [],
  "getij": {
   "meetpunt": "oosterschelde.roompotsluis.binnen",
   "eenheid": "cm NAP",

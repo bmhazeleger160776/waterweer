@@ -1,13 +1,8 @@
 {
  "slug": "colijnsplaat",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:19:02.678Z",
- "fouten": [
-  "getij: HTTP 404: 404 page not found\n",
-  "waterstand: HTTP 404: 404 page not found\n",
-  "golf: geen recente meting",
-  "wind: geen recente meting"
- ],
+ "bijgewerkt": "2026-11-19T12:34:35.894Z",
+ "fouten": [],
  "getij": {
   "meetpunt": "kats.zandkreeksluis",
   "eenheid": "cm NAP",

@@ -1,14 +1,8 @@
 {
  "slug": "maassluis",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:19:35.464Z",
- "fouten": [
-  "getij: HTTP 404: 404 page not found\n",
-  "temperatuur: HTTP 404: 404 page not found\n",
-  "waterstand: HTTP 404: 404 page not found\n",
-  "golf: geen recente meting",
-  "wind: geen recente meting"
- ],
+ "bijgewerkt": "2026-11-19T12:34:48.542Z",
+ "fouten": [],
  "getij": {
   "meetpunt": "maassluis",
   "eenheid": "cm NAP",
@@ -4984,18 +4978,18 @@
   "meetpunt": "hoekvanholland.maeslantkering.beneden.noord",
   "meetpuntNaam": "Hoek van Holland, Maeslantkering, Beneden, noord",
   "km": 7.5,
-  "t": "2026-11-19T11:00:00.000Z",
-  "v": 17,
+  "t": "2026-11-19T12:20:00.000Z",
+  "v": 26,
   "min24": 8,
-  "max24": 28,
+  "max24": 27,
   "periode": 2
  },
  "wind": {
   "meetpunt": "botlek.geulhaven",
   "meetpuntNaam": "Botlek Geulhaven",
   "km": 5.2,
-  "t": "2026-11-19T10:50:00.000Z",
-  "snelheid": 8.3,
-  "richting": 250
+  "t": "2026-11-19T12:10:00.000Z",
+  "snelheid": 7.3,
+  "richting": 249
  }
 }

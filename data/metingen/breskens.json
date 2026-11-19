@@ -1,12 +1,8 @@
 {
  "slug": "breskens",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:17:47.194Z",
- "fouten": [
-  "getij: HTTP 404: 404 page not found\n",
-  "temperatuur: HTTP 404: 404 page not found\n",
-  "waterstand: HTTP 404: 404 page not found\n"
- ],
+ "bijgewerkt": "2026-11-19T12:33:45.963Z",
+ "fouten": [],
  "getij": {
   "meetpunt": "breskens.veerhaven",
   "eenheid": "cm NAP",
@@ -5023,7 +5019,7 @@
   "meetpunt": "breskens.handelshaven",
   "meetpuntNaam": "Breskens, Handelshaven",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T11:00:00.000Z",
-  "v": 74
+  "t": "2026-11-19T12:10:00.000Z",
+  "v": -6
  }
 }

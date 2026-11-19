@@ -1,14 +1,8 @@
 {
  "slug": "zandvoort",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:18:03.590Z",
- "fouten": [
-  "getij: HTTP 404: 404 page not found\n",
-  "temperatuur: HTTP 404: 404 page not found\n",
-  "waterstand: HTTP 404: 404 page not found\n",
-  "golf: geen recente meting",
-  "wind: geen recente meting"
- ],
+ "bijgewerkt": "2026-11-19T12:33:54.074Z",
+ "fouten": [],
  "getij": {
   "meetpunt": "ijgeul.1",
   "eenheid": "cm NAP",
@@ -5021,8 +5015,8 @@
   "meetpunt": "ijgeul.1",
   "meetpuntNaam": "IJGeul, 1",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T10:50:00.000Z",
-  "v": 85
+  "t": "2026-11-19T12:10:00.000Z",
+  "v": 54
  },
  "golf": {
   "meetpunt": "ijgeul.1",
@@ -5038,8 +5032,8 @@
   "meetpunt": "ijmuiden.havenhoofd.zuid",
   "meetpuntNaam": "IJmuiden, havenhoofd, zuid",
   "km": 9.9,
-  "t": "2026-11-19T11:00:00.000Z",
-  "snelheid": 7.8,
+  "t": "2026-11-19T12:10:00.000Z",
+  "snelheid": 6.2,
   "richting": 322
  }
 }

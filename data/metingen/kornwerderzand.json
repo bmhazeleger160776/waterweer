@@ -1,13 +1,9 @@
 {
  "slug": "kornwerderzand",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:19:54.100Z",
+ "bijgewerkt": "2026-11-19T12:34:58.416Z",
  "fouten": [
-  "getij: HTTP 404: 404 page not found\n",
-  "temperatuur: HTTP 404: 404 page not found\n",
-  "waterstand: HTTP 404: 404 page not found\n",
-  "golf: geen recente meting",
-  "wind: geen recente meting"
+  "golf: geen recente meting"
  ],
  "getij": {
   "meetpunt": "kornwerderzand.waddenzee.buitenhaven",
@@ -5042,8 +5038,8 @@
   "meetpunt": "kornwerderzand.waddenzee.voorhaven.kolk",
   "meetpuntNaam": "Kornwerderzand, Waddenzee voorhaven kolk",
   "eenheid": "°C",
-  "t": "2026-11-19T10:50:00.000Z",
-  "v": 7.3
+  "t": "2026-11-19T12:10:00.000Z",
+  "v": 7.4
  },
  "waterstand": {
   "meetpunt": "kornwerderzand.waddenzee.buitenhaven",
@@ -5058,6 +5054,6 @@
   "km": 24.3,
   "t": "2026-11-19T11:10:00.000Z",
   "snelheid": 5.5,
-  "richting": 51
+  "richting": 3
  }
 }

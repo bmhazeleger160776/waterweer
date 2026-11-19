@@ -1,14 +1,8 @@
 {
  "slug": "domburg",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:17:54.315Z",
- "fouten": [
-  "getij: HTTP 404: 404 page not found\n",
-  "temperatuur: HTTP 404: 404 page not found\n",
-  "waterstand: HTTP 404: 404 page not found\n",
-  "golf: geen recente meting",
-  "wind: geen recente meting"
- ],
+ "bijgewerkt": "2026-11-19T12:33:49.872Z",
+ "fouten": [],
  "getij": {
   "meetpunt": "westkapelle",
   "eenheid": "cm NAP",
@@ -5034,8 +5028,8 @@
   "meetpunt": "vlissingen",
   "meetpuntNaam": "Vlissingen",
   "km": 15.5,
-  "t": "2026-11-19T10:50:00.000Z",
-  "snelheid": 6.4,
+  "t": "2026-11-19T12:00:00.000Z",
+  "snelheid": 8.4,
   "richting": 225
  }
 }

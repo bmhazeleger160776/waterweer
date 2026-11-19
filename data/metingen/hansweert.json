@@ -1,12 +1,8 @@
 {
  "slug": "hansweert",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:18:30.272Z",
- "fouten": [
-  "getij: HTTP 404: 404 page not found\n",
-  "temperatuur: HTTP 404: 404 page not found\n",
-  "waterstand: HTTP 404: 404 page not found\n"
- ],
+ "bijgewerkt": "2026-11-19T12:34:07.920Z",
+ "fouten": [],
  "getij": {
   "meetpunt": "hansweert",
   "eenheid": "cm NAP",
@@ -5016,8 +5012,8 @@
   "meetpunt": "ossenisse",
   "meetpuntNaam": "Ossenisse",
   "eenheid": "°C",
-  "t": "2026-11-19T11:00:00.000Z",
-  "v": 9.7
+  "t": "2026-11-19T12:10:00.000Z",
+  "v": 9.8
  },
  "waterstand": {
   "meetpunt": "hansweert",

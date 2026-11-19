@@ -1,12 +1,8 @@
 {
  "slug": "zierikzee",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:18:05.839Z",
- "fouten": [
-  "getij: HTTP 404: 404 page not found\n",
-  "temperatuur: HTTP 404: 404 page not found\n",
-  "waterstand: HTTP 404: 404 page not found\n"
- ],
+ "bijgewerkt": "2026-11-19T12:33:55.135Z",
+ "fouten": [],
  "getij": {
   "meetpunt": "stavenisse",
   "eenheid": "cm NAP",

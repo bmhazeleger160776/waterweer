@@ -1,14 +1,8 @@
 {
  "slug": "ameland",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:17:51.795Z",
- "fouten": [
-  "getij: HTTP 404: 404 page not found\n",
-  "temperatuur: HTTP 404: 404 page not found\n",
-  "waterstand: HTTP 404: 404 page not found\n",
-  "golf: geen recente meting",
-  "wind: geen recente meting"
- ],
+ "bijgewerkt": "2026-11-19T12:33:48.813Z",
+ "fouten": [],
  "getij": {
   "meetpunt": "ameland.nes",
   "eenheid": "cm NAP",
@@ -5056,8 +5050,8 @@
   "meetpunt": "ameland.nes",
   "meetpuntNaam": "Ameland, Nes",
   "km": 1.5,
-  "t": "2026-11-19T11:00:00.000Z",
-  "v": 8,
+  "t": "2026-11-19T12:10:00.000Z",
+  "v": 11,
   "min24": 6,
   "max24": 41,
   "periode": 3

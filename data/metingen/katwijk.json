@@ -1,14 +1,8 @@
 {
  "slug": "katwijk",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:17:23.329Z",
- "fouten": [
-  "getij: HTTP 404: 404 page not found\n",
-  "temperatuur: HTTP 404: 404 page not found\n",
-  "waterstand: HTTP 404: 404 page not found\n",
-  "golf: geen recente meting",
-  "wind: geen recente meting"
- ],
+ "bijgewerkt": "2026-11-19T12:33:34.339Z",
+ "fouten": [],
  "getij": {
   "meetpunt": "scheveningen",
   "eenheid": "cm NAP",
@@ -5034,8 +5028,8 @@
   "meetpunt": "hollandsekust.zuid.alpha",
   "meetpuntNaam": "Hollandse Kust Zuid platform Alpha",
   "eenheid": "°C",
-  "t": "2026-11-19T11:00:00.000Z",
-  "v": 12
+  "t": "2026-11-19T12:10:00.000Z",
+  "v": 12.1
  },
  "waterstand": {
   "meetpunt": "hollandsekust.zuid.alpha",

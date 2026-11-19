@@ -1,17 +1,14 @@
 {
  "slug": "borgharen",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:18:36.771Z",
- "fouten": [
-  "waterstand: HTTP 404: 404 page not found\n",
-  "verloop: HTTP 404: 404 page not found\n"
- ],
+ "bijgewerkt": "2026-11-19T12:34:19.461Z",
+ "fouten": [],
  "waterstand": {
   "meetpunt": "maastricht.borgharen.maas.beneden",
   "meetpuntNaam": "Borgharen Dorp",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T11:00:00.000Z",
-  "v": 4242,
+  "t": "2026-11-19T12:10:00.000Z",
+  "v": 4235,
   "reeks": [
    {
     "t": "2026-11-12T12:00:00.000Z",
@@ -683,7 +680,11 @@
    },
    {
     "t": "2026-11-19T11:00:00.000Z",
-    "v": 4242
+    "v": 4239
+   },
+   {
+    "t": "2026-11-19T12:00:00.000Z",
+    "v": 4235
    }
   ]
  }

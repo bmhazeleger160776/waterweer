@@ -1,14 +1,8 @@
 {
  "slug": "holwerd",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:19:56.219Z",
- "fouten": [
-  "getij: HTTP 404: 404 page not found\n",
-  "temperatuur: HTTP 404: 404 page not found\n",
-  "waterstand: HTTP 404: 404 page not found\n",
-  "golf: geen recente meting",
-  "wind: geen recente meting"
- ],
+ "bijgewerkt": "2026-11-19T12:35:00.192Z",
+ "fouten": [],
  "getij": {
   "meetpunt": "holwerd.veersteiger",
   "eenheid": "cm NAP",
@@ -5052,8 +5046,8 @@
   "meetpunt": "holwerd.vaargeul",
   "meetpuntNaam": "Holwerd vaargeul",
   "km": 0.2,
-  "t": "2026-11-19T11:00:00.000Z",
-  "v": 3,
+  "t": "2026-11-19T12:20:00.000Z",
+  "v": 6,
   "min24": 1,
   "max24": 30
  },

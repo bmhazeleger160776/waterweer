@@ -1,14 +1,8 @@
 {
  "slug": "hoek-van-holland",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:17:36.902Z",
- "fouten": [
-  "getij: HTTP 404: 404 page not found\n",
-  "temperatuur: HTTP 404: 404 page not found\n",
-  "waterstand: HTTP 404: 404 page not found\n",
-  "golf: geen recente meting",
-  "wind: geen recente meting"
- ],
+ "bijgewerkt": "2026-11-19T12:33:41.374Z",
+ "fouten": [],
  "getij": {
   "meetpunt": "hoekvanholland",
   "eenheid": "cm NAP",
@@ -4972,10 +4966,10 @@
   "meetpunt": "hoekvanholland.maeslantkering.beneden.noord",
   "meetpuntNaam": "Hoek van Holland, Maeslantkering, Beneden, noord",
   "km": 3.7,
-  "t": "2026-11-19T11:00:00.000Z",
-  "v": 17,
+  "t": "2026-11-19T12:20:00.000Z",
+  "v": 26,
   "min24": 8,
-  "max24": 28,
+  "max24": 27,
   "periode": 2
  },
  "wind": {

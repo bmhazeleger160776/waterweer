@@ -1,14 +1,8 @@
 {
  "slug": "westkapelle",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:17:57.097Z",
- "fouten": [
-  "getij: HTTP 404: 404 page not found\n",
-  "temperatuur: HTTP 404: 404 page not found\n",
-  "waterstand: HTTP 404: 404 page not found\n",
-  "golf: geen recente meting",
-  "wind: geen recente meting"
- ],
+ "bijgewerkt": "2026-11-19T12:33:50.998Z",
+ "fouten": [],
  "getij": {
   "meetpunt": "westkapelle",
   "eenheid": "cm NAP",
@@ -5027,15 +5021,15 @@
   "t": "2026-11-19T11:00:00.000Z",
   "v": 110,
   "min24": 78,
-  "max24": 174,
+  "max24": 170,
   "periode": 4
  },
  "wind": {
   "meetpunt": "vlaktevanderaan",
   "meetpuntNaam": "Vlakte van de Raan",
   "km": 14,
-  "t": "2026-11-19T11:00:00.000Z",
-  "snelheid": 8.8,
+  "t": "2026-11-19T12:10:00.000Z",
+  "snelheid": 8.6,
   "richting": 221
  }
 }
