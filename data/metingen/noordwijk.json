@@ -1,7 +1,7 @@
 {
  "slug": "noordwijk",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:33:35.397Z",
+ "bijgewerkt": "2026-11-19T12:42:27.707Z",
  "fouten": [],
  "getij": {
   "meetpunt": "scheveningen",
@@ -5052,8 +5052,8 @@
   "meetpunt": "hollandsekust.zuid.alpha.1",
   "meetpuntNaam": "Hollandse Kust Zuid platform Alpha 1",
   "km": 15.6,
-  "t": "2026-11-19T11:20:00.000Z",
-  "snelheid": 7.3,
-  "richting": 300
+  "t": "2026-11-19T12:20:00.000Z",
+  "snelheid": 4.9,
+  "richting": 297
  }
 }

@@ -1,7 +1,7 @@
 {
  "slug": "dordrecht",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:34:02.701Z",
+ "bijgewerkt": "2026-11-19T12:42:55.936Z",
  "fouten": [],
  "getij": {
   "meetpunt": "dordrecht.oudemaas.benedenmerwede",
@@ -4810,7 +4810,7 @@
   "meetpunt": "dordrecht.oudemaas.benedenmerwede",
   "meetpuntNaam": "Dordrecht Oude Maas, Beneden Merwede",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T11:10:00.000Z",
-  "v": 112
+  "t": "2026-11-19T12:20:00.000Z",
+  "v": 97
  }
 }

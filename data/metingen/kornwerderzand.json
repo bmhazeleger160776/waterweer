@@ -1,7 +1,7 @@
 {
  "slug": "kornwerderzand",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:34:58.416Z",
+ "bijgewerkt": "2026-11-19T12:43:48.169Z",
  "fouten": [
   "golf: geen recente meting"
  ],
@@ -5045,8 +5045,8 @@
   "meetpunt": "kornwerderzand.waddenzee.buitenhaven",
   "meetpuntNaam": "Kornwerderzand Waddenzee buitenhaven",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T11:00:00.000Z",
-  "v": 16
+  "t": "2026-11-19T12:20:00.000Z",
+  "v": 66
  },
  "wind": {
   "meetpunt": "stavoren.ijsselmeer",

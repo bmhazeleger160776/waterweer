@@ -1,7 +1,7 @@
 {
  "slug": "den-oever",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:34:55.253Z",
+ "bijgewerkt": "2026-11-19T12:43:44.890Z",
  "fouten": [],
  "getij": {
   "meetpunt": "denoever.waddenzee.voorhaven",
@@ -5044,8 +5044,8 @@
   "meetpunt": "denoever.waddenzee.voorhaven.kolk",
   "meetpuntNaam": "Den Oever, Waddenzee voorhaven kolk",
   "eenheid": "°C",
-  "t": "2026-11-19T11:10:00.000Z",
-  "v": 7.3
+  "t": "2026-11-19T12:20:00.000Z",
+  "v": 7.2
  },
  "waterstand": {
   "meetpunt": "denoever.waddenzee.voorhaven",
@@ -5058,8 +5058,8 @@
   "meetpunt": "denhoorntexel.waddenzee.gatvandestier",
   "meetpuntNaam": "Den Hoorn Texel Waddenzee Gat van de Stier",
   "km": 15.6,
-  "t": "2026-11-19T11:00:00.000Z",
-  "v": 24,
+  "t": "2026-11-19T12:20:00.000Z",
+  "v": 19,
   "min24": 6,
   "max24": 36,
   "periode": 2.8

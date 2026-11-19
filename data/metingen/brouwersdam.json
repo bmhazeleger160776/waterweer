@@ -1,7 +1,7 @@
 {
  "slug": "brouwersdam",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:34:32.636Z",
+ "bijgewerkt": "2026-11-19T12:43:21.867Z",
  "fouten": [],
  "getij": {
   "meetpunt": "brouwersdam.brouwershavensegat.8",
@@ -4988,7 +4988,7 @@
   "meetpunt": "brouwershavensche.gat.08",
   "meetpuntNaam": "Brouwershavensche Gat 08",
   "eenheid": "°C",
-  "t": "2026-11-19T11:10:00.000Z",
+  "t": "2026-11-19T12:20:00.000Z",
   "v": 10.2
  },
  "waterstand": {
@@ -5014,6 +5014,6 @@
   "km": 15.2,
   "t": "2026-11-19T11:20:00.000Z",
   "snelheid": 7.2,
-  "richting": 223
+  "richting": 225
  }
 }

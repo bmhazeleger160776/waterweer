@@ -1,7 +1,7 @@
 {
  "slug": "castricum-aan-zee",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:34:01.658Z",
+ "bijgewerkt": "2026-11-19T12:42:54.828Z",
  "fouten": [],
  "getij": {
   "meetpunt": "ijmuiden.buitenhaven",
@@ -5023,18 +5023,18 @@
   "meetpunt": "ijmuiden.noordersluis.west",
   "meetpuntNaam": "IJmuiden, noordersluis, west",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T11:10:00.000Z",
-  "v": 75
+  "t": "2026-11-19T12:20:00.000Z",
+  "v": 50
  },
  "golf": {
   "meetpunt": "ijgeul.1",
   "meetpuntNaam": "IJGeul, 1",
   "km": 11.9,
-  "t": "2026-11-19T11:00:00.000Z",
-  "v": 144,
+  "t": "2026-11-19T12:20:00.000Z",
+  "v": 128,
   "min24": 87,
   "max24": 222,
-  "periode": 4.2
+  "periode": 4.3
  },
  "wind": {
   "meetpunt": "ijmuiden.buitenhaven",
@@ -5042,6 +5042,6 @@
   "km": 10.9,
   "t": "2026-11-19T11:10:00.000Z",
   "snelheid": 8.1,
-  "richting": 314
+  "richting": 300
  }
 }

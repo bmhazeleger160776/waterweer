@@ -1,7 +1,7 @@
 {
  "slug": "bergen-aan-zee",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:34:50.360Z",
+ "bijgewerkt": "2026-11-19T12:43:39.802Z",
  "fouten": [
   "golf: geen recente meting"
  ],
@@ -5034,6 +5034,6 @@
   "km": 22.5,
   "t": "2026-11-19T11:10:00.000Z",
   "snelheid": 8.1,
-  "richting": 314
+  "richting": 300
  }
 }

@@ -1,7 +1,7 @@
 {
  "slug": "kamperland",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:34:30.391Z",
+ "bijgewerkt": "2026-11-19T12:43:19.706Z",
  "fouten": [],
  "getij": {
   "meetpunt": "oosterschelde.roompotsluis.binnen",
@@ -5034,11 +5034,11 @@
   "meetpunt": "oosterschelde.roompotsluis.buiten",
   "meetpuntNaam": "Oosterschelde Roompotsluis buiten",
   "km": 5.1,
-  "t": "2026-11-19T11:10:00.000Z",
+  "t": "2026-11-19T12:20:00.000Z",
   "v": 4,
   "min24": 2,
   "max24": 8,
-  "periode": 4.2
+  "periode": 3.9
  },
  "wind": {
   "meetpunt": "oosterschelde.4",
@@ -5046,6 +5046,6 @@
   "km": 8.9,
   "t": "2026-11-19T12:10:00.000Z",
   "snelheid": 8.9,
-  "richting": 229
+  "richting": 239
  }
 }

@@ -1,7 +1,7 @@
 {
  "slug": "tholen",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T12:34:43.277Z",
+ "bijgewerkt": "2026-11-19T12:43:32.380Z",
  "fouten": [],
  "getij": {
   "meetpunt": "marollegat",
@@ -5054,6 +5054,6 @@
   "km": 3.8,
   "t": "2026-11-19T11:20:00.000Z",
   "snelheid": 7.4,
-  "richting": 225
+  "richting": 235
  }
 }
