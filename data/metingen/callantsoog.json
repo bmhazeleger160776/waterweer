@@ -1,7 +1,7 @@
 {
  "slug": "callantsoog",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-20T20:04:53.154Z",
+ "bijgewerkt": "2026-11-20T20:56:50.993Z",
  "fouten": [
   "golf: geen recente meting"
  ],
@@ -4897,22 +4897,22 @@
   "meetpunt": "denhelder.marsdiep",
   "meetpuntNaam": "Den Helder, Marsdiep",
   "eenheid": "°C",
-  "t": "2026-11-20T19:40:00.000Z",
-  "v": 9.3
+  "t": "2026-11-20T20:40:00.000Z",
+  "v": 9
  },
  "waterstand": {
   "meetpunt": "denhelder.marsdiep",
   "meetpuntNaam": "Den Helder, Marsdiep",
   "eenheid": "cm NAP",
-  "t": "2026-11-20T19:40:00.000Z",
-  "v": -33
+  "t": "2026-11-20T20:30:00.000Z",
+  "v": -38
  },
  "wind": {
   "meetpunt": "denhelder.dekooy",
   "meetpuntNaam": "Den Helder, De Kooy",
   "km": 11.1,
-  "t": "2026-11-20T19:30:00.000Z",
-  "snelheid": 2.4,
-  "richting": 301
+  "t": "2026-11-20T20:20:00.000Z",
+  "snelheid": 2.6,
+  "richting": 318
  }
 }

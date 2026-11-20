@@ -1,7 +1,7 @@
 {
  "slug": "westkapelle",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-20T20:04:41.401Z",
+ "bijgewerkt": "2026-11-20T20:56:39.106Z",
  "fouten": [],
  "getij": {
   "meetpunt": "westkapelle",
@@ -4996,22 +4996,22 @@
   "meetpunt": "vlaktevanderaan",
   "meetpuntNaam": "Vlakte van de Raan",
   "eenheid": "°C",
-  "t": "2026-11-20T19:40:00.000Z",
-  "v": 9.9
+  "t": "2026-11-20T20:40:00.000Z",
+  "v": 10.5
  },
  "waterstand": {
   "meetpunt": "westkapelle",
   "meetpuntNaam": "Westkapelle",
   "eenheid": "cm NAP",
-  "t": "2026-11-20T19:40:00.000Z",
-  "v": 84
+  "t": "2026-11-20T20:30:00.000Z",
+  "v": 157
  },
  "golf": {
   "meetpunt": "domburgerrassen",
   "meetpuntNaam": "Domburger Rassen",
   "km": 10.3,
-  "t": "2026-11-20T19:40:00.000Z",
-  "v": 57,
+  "t": "2026-11-20T20:40:00.000Z",
+  "v": 55,
   "min24": 48,
   "max24": 111,
   "periode": 3.8
@@ -5020,8 +5020,8 @@
   "meetpunt": "vlaktevanderaan",
   "meetpuntNaam": "Vlakte van de Raan",
   "km": 14,
-  "t": "2026-11-20T19:40:00.000Z",
-  "snelheid": 1.8,
-  "richting": 232
+  "t": "2026-11-20T20:40:00.000Z",
+  "snelheid": 1.7,
+  "richting": 14
  }
 }

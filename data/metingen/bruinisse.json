@@ -1,7 +1,7 @@
 {
  "slug": "bruinisse",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-20T20:05:18.972Z",
+ "bijgewerkt": "2026-11-20T20:57:16.957Z",
  "fouten": [],
  "getij": {
   "meetpunt": "krammersluizen.west",
@@ -5020,32 +5020,32 @@
   "meetpunt": "bommenede",
   "meetpuntNaam": "Bommenede",
   "eenheid": "°C",
-  "t": "2026-11-20T19:40:00.000Z",
+  "t": "2026-11-20T20:40:00.000Z",
   "v": 8.5
  },
  "waterstand": {
   "meetpunt": "bruinisse.krammersluis.oosterschelde.2",
   "meetpuntNaam": "Bruinisse Krammersluis, Oosterschelde",
   "eenheid": "cm NAP",
-  "t": "2026-11-20T19:40:00.000Z",
-  "v": -11
+  "t": "2026-11-20T20:30:00.000Z",
+  "v": 45
  },
  "golf": {
   "meetpunt": "stavenisse.keeten",
   "meetpuntNaam": "Stavenisse, keeten",
   "km": 8.7,
-  "t": "2026-11-20T19:40:00.000Z",
-  "v": 2,
+  "t": "2026-11-20T20:30:00.000Z",
+  "v": 6,
   "min24": 1,
   "max24": 25,
-  "periode": 3
+  "periode": 2.9
  },
  "wind": {
   "meetpunt": "bruinisse.grevelingensluis",
   "meetpuntNaam": "Bruinisse Grevelingensluis",
   "km": 0.6,
-  "t": "2026-11-20T19:40:00.000Z",
-  "snelheid": 2,
-  "richting": 275
+  "t": "2026-11-20T20:40:00.000Z",
+  "snelheid": 2.4,
+  "richting": 270
  }
 }
