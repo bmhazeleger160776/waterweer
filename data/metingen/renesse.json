@@ -1,7 +1,7 @@
 {
  "slug": "renesse",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-20T03:57:35.433Z",
+ "bijgewerkt": "2026-11-20T05:05:12.330Z",
  "fouten": [],
  "getij": {
   "meetpunt": "brouwersdam.brouwershavensegat.8",
@@ -5007,25 +5007,25 @@
   "meetpunt": "brouwershavensche.gat.08",
   "meetpuntNaam": "Brouwershavensche Gat 08",
   "eenheid": "cm NAP",
-  "t": "2026-11-20T03:20:00.000Z",
-  "v": -30
+  "t": "2026-11-20T04:40:00.000Z",
+  "v": -22
  },
  "golf": {
   "meetpunt": "oosterschelde.4",
   "meetpuntNaam": "Oosterschelde, 4",
   "km": 10.1,
-  "t": "2026-11-20T03:30:00.000Z",
-  "v": 32,
+  "t": "2026-11-20T04:30:00.000Z",
+  "v": 34,
   "min24": 27,
   "max24": 99999,
-  "periode": 3.8
+  "periode": 3.5
  },
  "wind": {
   "meetpunt": "oosterschelde.4",
   "meetpuntNaam": "Oosterschelde, 4",
   "km": 10.1,
-  "t": "2026-11-20T03:40:00.000Z",
-  "snelheid": 4.6,
-  "richting": 220
+  "t": "2026-11-20T04:50:00.000Z",
+  "snelheid": 2.7,
+  "richting": 237
  }
 }
