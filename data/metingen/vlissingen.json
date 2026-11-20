@@ -1,7 +1,7 @@
 {
  "slug": "vlissingen",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-20T19:02:31.952Z",
+ "bijgewerkt": "2026-11-20T20:04:24.804Z",
  "fouten": [],
  "getij": {
   "meetpunt": "vlissingen",
@@ -4988,32 +4988,32 @@
   "meetpunt": "vlissingen",
   "meetpuntNaam": "Vlissingen",
   "eenheid": "°C",
-  "t": "2026-11-20T18:40:00.000Z",
-  "v": 10.2
+  "t": "2026-11-20T19:40:00.000Z",
+  "v": 10.3
  },
  "waterstand": {
   "meetpunt": "vlissingen",
   "meetpuntNaam": "Vlissingen",
   "eenheid": "cm NAP",
-  "t": "2026-11-20T18:30:00.000Z",
-  "v": -27
+  "t": "2026-11-20T19:40:00.000Z",
+  "v": 70
  },
  "golf": {
   "meetpunt": "vlissingen.honte",
   "meetpuntNaam": "Vlissingen Honte",
   "km": 6.7,
-  "t": "2026-11-20T18:40:00.000Z",
-  "v": 11,
+  "t": "2026-11-20T19:40:00.000Z",
+  "v": 27,
   "min24": 6,
-  "max24": 33,
-  "periode": 2.9
+  "max24": 32,
+  "periode": 2.8
  },
  "wind": {
   "meetpunt": "vlissingen",
   "meetpuntNaam": "Vlissingen",
   "km": 0.3,
-  "t": "2026-11-20T18:20:00.000Z",
-  "snelheid": 1,
-  "richting": 356
+  "t": "2026-11-20T19:30:00.000Z",
+  "snelheid": 2.1,
+  "richting": 253
  }
 }
