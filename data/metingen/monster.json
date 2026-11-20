@@ -1,7 +1,7 @@
 {
  "slug": "monster",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-19T23:50:31.028Z",
+ "bijgewerkt": "2026-11-20T01:10:14.688Z",
  "fouten": [],
  "getij": {
   "meetpunt": "hoekvanholland",
@@ -4956,32 +4956,32 @@
   "meetpunt": "hoekvanholland",
   "meetpuntNaam": "Hoek van Holland",
   "eenheid": "°C",
-  "t": "2026-11-19T23:30:00.000Z",
+  "t": "2026-11-20T00:40:00.000Z",
   "v": 11
  },
  "waterstand": {
   "meetpunt": "hoekvanholland",
   "meetpuntNaam": "Hoek van Holland",
   "eenheid": "cm NAP",
-  "t": "2026-11-19T23:20:00.000Z",
-  "v": 113
+  "t": "2026-11-20T00:50:00.000Z",
+  "v": 61
  },
  "golf": {
   "meetpunt": "hoekvanholland.maeslantkering.beneden.noord",
   "meetpuntNaam": "Hoek van Holland, Maeslantkering, Beneden, noord",
   "km": 7.6,
-  "t": "2026-11-19T23:30:00.000Z",
-  "v": 11,
+  "t": "2026-11-20T00:40:00.000Z",
+  "v": 7,
   "min24": 5,
   "max24": 27,
-  "periode": 2
+  "periode": 2.2
  },
  "wind": {
   "meetpunt": "hoekvanholland",
   "meetpuntNaam": "Hoek van Holland",
   "km": 6.2,
-  "t": "2026-11-19T23:20:00.000Z",
-  "snelheid": 6.1,
-  "richting": 98
+  "t": "2026-11-20T00:40:00.000Z",
+  "snelheid": 5,
+  "richting": 84
  }
 }
