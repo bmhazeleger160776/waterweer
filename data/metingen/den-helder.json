@@ -1,7 +1,7 @@
 {
  "slug": "den-helder",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-20T22:52:24.468Z",
+ "bijgewerkt": "2026-11-20T23:52:16.577Z",
  "fouten": [],
  "getij": {
   "meetpunt": "denhelder.marsdiep",
@@ -5044,32 +5044,32 @@
   "meetpunt": "denhelder.marsdiep",
   "meetpuntNaam": "Den Helder, Marsdiep",
   "eenheid": "°C",
-  "t": "2026-11-20T22:30:00.000Z",
-  "v": 8.5
+  "t": "2026-11-20T23:30:00.000Z",
+  "v": 8.6
  },
  "waterstand": {
   "meetpunt": "denhelder.marsdiep",
   "meetpuntNaam": "Den Helder, Marsdiep",
   "eenheid": "cm NAP",
-  "t": "2026-11-20T22:30:00.000Z",
-  "v": 12
+  "t": "2026-11-20T23:30:00.000Z",
+  "v": 59
  },
  "golf": {
   "meetpunt": "denhelder.waddenzee.mondingnieuwehaven",
   "meetpuntNaam": "Den Helder Waddenzee Monding Nieuwe Haven",
   "km": 3.3,
-  "t": "2026-11-20T22:30:00.000Z",
-  "v": 8,
-  "min24": 3,
+  "t": "2026-11-20T23:30:00.000Z",
+  "v": 12,
+  "min24": 2,
   "max24": 20,
-  "periode": 2.6
+  "periode": 2.8
  },
  "wind": {
   "meetpunt": "texel.hors",
   "meetpuntNaam": "Texelhors",
   "km": 3.7,
-  "t": "2026-11-20T22:20:00.000Z",
-  "snelheid": 1.3,
-  "richting": 353
+  "t": "2026-11-20T23:20:00.000Z",
+  "snelheid": 6.1,
+  "richting": 322
  }
 }
