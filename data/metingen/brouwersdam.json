@@ -1,7 +1,7 @@
 {
  "slug": "brouwersdam",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-21T08:44:28.297Z",
+ "bijgewerkt": "2026-11-21T08:56:11.382Z",
  "fouten": [],
  "getij": {
   "meetpunt": "brouwersdam.brouwershavensegat.8",
@@ -5018,14 +5018,14 @@
   "v": 4,
   "min24": 2,
   "max24": 99999,
-  "periode": 3.1
+  "periode": 3.2
  },
  "wind": {
   "meetpunt": "zierikzee.zeelandbrug",
   "meetpuntNaam": "Zierikzee Zeelandbrug",
   "km": 15.2,
-  "t": "2026-11-21T08:20:00.000Z",
-  "snelheid": 5.1,
+  "t": "2026-11-21T08:40:00.000Z",
+  "snelheid": 4.6,
   "richting": 218
  }
 }

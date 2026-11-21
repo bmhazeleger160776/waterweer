@@ -1,7 +1,7 @@
 {
  "slug": "krimpen-aan-den-ijssel",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-21T08:44:46.589Z",
+ "bijgewerkt": "2026-11-21T08:56:28.779Z",
  "fouten": [
   "golf: geen recente meting"
  ],
@@ -5009,15 +5009,15 @@
   "meetpunt": "krimpenaandeijssel.hollandscheijssel",
   "meetpuntNaam": "Krimpen aan de IJssel, Hollandsche IJssel",
   "eenheid": "cm NAP",
-  "t": "2026-11-21T08:20:00.000Z",
+  "t": "2026-11-21T08:30:00.000Z",
   "v": 10
  },
  "wind": {
   "meetpunt": "rotterdam.luchthaven",
   "meetpuntNaam": "Rotterdam, luchthaven",
   "km": 10.6,
-  "t": "2026-11-21T08:10:00.000Z",
-  "snelheid": 3.6,
+  "t": "2026-11-21T08:20:00.000Z",
+  "snelheid": 2.8,
   "richting": 211
  }
 }

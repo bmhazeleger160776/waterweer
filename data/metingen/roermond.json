@@ -1,19 +1,15 @@
 {
  "slug": "roermond",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-21T08:44:16.997Z",
+ "bijgewerkt": "2026-11-21T08:56:00.992Z",
  "fouten": [],
  "waterstand": {
   "meetpunt": "roermond.boven",
   "meetpuntNaam": "Roermond, boven",
   "eenheid": "cm NAP",
-  "t": "2026-11-21T08:20:00.000Z",
+  "t": "2026-11-21T08:30:00.000Z",
   "v": 1677,
   "reeks": [
-   {
-    "t": "2026-11-14T08:00:00.000Z",
-    "v": 1684
-   },
    {
     "t": "2026-11-14T09:00:00.000Z",
     "v": 1684
@@ -688,10 +684,6 @@
    }
   ],
   "verwachting": [
-   {
-    "t": "2026-11-21T07:00:00.000Z",
-    "v": 1682
-   },
    {
     "t": "2026-11-21T08:00:00.000Z",
     "v": 1676

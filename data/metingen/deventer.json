@@ -1,19 +1,15 @@
 {
  "slug": "deventer",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-21T08:43:43.620Z",
+ "bijgewerkt": "2026-11-21T08:55:32.346Z",
  "fouten": [],
  "waterstand": {
   "meetpunt": "deventer",
   "meetpuntNaam": "Deventer",
   "eenheid": "cm NAP",
-  "t": "2026-11-21T08:20:00.000Z",
+  "t": "2026-11-21T08:30:00.000Z",
   "v": 194,
   "reeks": [
-   {
-    "t": "2026-11-14T08:00:00.000Z",
-    "v": 43
-   },
    {
     "t": "2026-11-14T09:00:00.000Z",
     "v": 44
@@ -688,10 +684,6 @@
    }
   ],
   "verwachting": [
-   {
-    "t": "2026-11-21T07:00:00.000Z",
-    "v": 193
-   },
    {
     "t": "2026-11-21T08:00:00.000Z",
     "v": 195

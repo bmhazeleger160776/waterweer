@@ -1,7 +1,7 @@
 {
  "slug": "delfzijl",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-21T08:43:53.693Z",
+ "bijgewerkt": "2026-11-21T08:55:40.514Z",
  "fouten": [],
  "getij": {
   "meetpunt": "delfzijl",
@@ -5031,7 +5031,7 @@
   "meetpunt": "delfzijl",
   "meetpuntNaam": "Delfzijl",
   "eenheid": "cm NAP",
-  "t": "2026-11-21T08:20:00.000Z",
-  "v": 155
+  "t": "2026-11-21T08:30:00.000Z",
+  "v": 149
  }
 }
