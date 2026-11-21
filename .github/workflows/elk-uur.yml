@@ -16,11 +16,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build-deploy:
+  # Stap 1: data ophalen, site bouwen en klaarzetten
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -43,6 +41,23 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
+
+  # Stap 2: publiceren, in een aparte job zodat het klaargezette pakket altijd te vinden is
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url || steps.opnieuw.outputs.page_url }}
+    steps:
       - name: Publiceren op GitHub Pages
         id: deployment
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Even wachten en opnieuw proberen
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 30
+      - name: Publiceren (tweede poging)
+        id: opnieuw
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
