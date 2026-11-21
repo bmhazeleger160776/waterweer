@@ -1,7 +1,7 @@
 {
  "slug": "terneuzen",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-21T08:55:40.137Z",
+ "bijgewerkt": "2026-11-21T09:52:52.414Z",
  "fouten": [],
  "getij": {
   "meetpunt": "terneuzen",
@@ -4988,14 +4988,14 @@
   "meetpunt": "terneuzen.westsluis.buiten",
   "meetpuntNaam": "Terneuzen, westsluis, buiten",
   "eenheid": "°C",
-  "t": "2026-11-21T08:30:00.000Z",
+  "t": "2026-11-21T09:30:00.000Z",
   "v": 9.9
  },
  "waterstand": {
   "meetpunt": "terneuzen",
   "meetpuntNaam": "Terneuzen",
   "eenheid": "cm NAP",
-  "t": "2026-11-21T08:40:00.000Z",
-  "v": 84
+  "t": "2026-11-21T09:30:00.000Z",
+  "v": 171
  }
 }
