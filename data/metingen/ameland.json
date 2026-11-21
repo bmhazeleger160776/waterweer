@@ -1,7 +1,7 @@
 {
  "slug": "ameland",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-21T16:51:27.867Z",
+ "bijgewerkt": "2026-11-21T17:47:48.153Z",
  "fouten": [],
  "getij": {
   "meetpunt": "ameland.nes",
@@ -5012,32 +5012,32 @@
   "meetpunt": "ameland.nes",
   "meetpuntNaam": "Ameland, Nes",
   "eenheid": "°C",
-  "t": "2026-11-21T16:20:00.000Z",
-  "v": 6.5
+  "t": "2026-11-21T17:20:00.000Z",
+  "v": 6.4
  },
  "waterstand": {
   "meetpunt": "ameland.nes",
   "meetpuntNaam": "Ameland, Nes",
   "eenheid": "cm NAP",
-  "t": "2026-11-21T16:30:00.000Z",
-  "v": 60
+  "t": "2026-11-21T17:30:00.000Z",
+  "v": 85
  },
  "golf": {
   "meetpunt": "ameland.nes",
   "meetpuntNaam": "Ameland, Nes",
   "km": 1.5,
-  "t": "2026-11-21T16:30:00.000Z",
+  "t": "2026-11-21T17:30:00.000Z",
   "v": 9,
   "min24": 3,
   "max24": 12,
-  "periode": 3.4
+  "periode": 3.3
  },
  "wind": {
   "meetpunt": "ameland.nes",
   "meetpuntNaam": "Ameland, Nes",
   "km": 1.5,
-  "t": "2026-11-21T16:30:00.000Z",
-  "snelheid": 5,
-  "richting": 263
+  "t": "2026-11-21T17:30:00.000Z",
+  "snelheid": 7.8,
+  "richting": 309
  }
 }
