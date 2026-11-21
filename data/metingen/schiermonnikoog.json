@@ -1,7 +1,7 @@
 {
  "slug": "schiermonnikoog",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-21T01:13:08.920Z",
+ "bijgewerkt": "2026-11-21T02:54:20.916Z",
  "fouten": [],
  "getij": {
   "meetpunt": "schiermonnikoog.waddenzee",
@@ -4996,32 +4996,32 @@
   "meetpunt": "schiermonnikoog.noord",
   "meetpuntNaam": "Schiermonnikoog, noord",
   "eenheid": "°C",
-  "t": "2026-11-21T00:50:00.000Z",
+  "t": "2026-11-21T02:30:00.000Z",
   "v": 10.5
  },
  "waterstand": {
   "meetpunt": "schiermonnikoog.waddenzee",
   "meetpuntNaam": "Schiermonnikoog, Waddenzee",
   "eenheid": "cm NAP",
-  "t": "2026-11-21T01:00:00.000Z",
-  "v": -38
+  "t": "2026-11-21T02:30:00.000Z",
+  "v": 40
  },
  "golf": {
   "meetpunt": "schiermonnikoog.waddenzee",
   "meetpuntNaam": "Schiermonnikoog, Waddenzee",
   "km": 2.8,
-  "t": "2026-11-21T00:50:00.000Z",
-  "v": 3,
+  "t": "2026-11-21T02:20:00.000Z",
+  "v": 5,
   "min24": 1,
   "max24": 10,
-  "periode": 3.5
+  "periode": 3.3
  },
  "wind": {
   "meetpunt": "lauwersoog.waddenzee",
   "meetpuntNaam": "Lauwersoog, Waddenzee",
   "km": 8.2,
-  "t": "2026-11-21T00:40:00.000Z",
-  "snelheid": 6.1,
-  "richting": 278
+  "t": "2026-11-21T02:20:00.000Z",
+  "snelheid": 2.9,
+  "richting": 223
  }
 }
