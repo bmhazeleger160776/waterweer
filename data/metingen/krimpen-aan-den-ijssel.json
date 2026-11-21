@@ -1,7 +1,7 @@
 {
  "slug": "krimpen-aan-den-ijssel",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-21T02:55:19.515Z",
+ "bijgewerkt": "2026-11-21T03:57:49.576Z",
  "fouten": [
   "golf: geen recente meting"
  ],
@@ -5034,22 +5034,22 @@
   "meetpunt": "kinderdijk.lek",
   "meetpuntNaam": "Kinderdijk Lek",
   "eenheid": "°C",
-  "t": "2026-11-21T02:30:00.000Z",
-  "v": 8.8
+  "t": "2026-11-21T03:30:00.000Z",
+  "v": 8.6
  },
  "waterstand": {
   "meetpunt": "krimpenaandeijssel.hollandscheijssel",
   "meetpuntNaam": "Krimpen aan de IJssel, Hollandsche IJssel",
   "eenheid": "cm NAP",
-  "t": "2026-11-21T02:40:00.000Z",
-  "v": 75
+  "t": "2026-11-21T03:30:00.000Z",
+  "v": 54
  },
  "wind": {
   "meetpunt": "rotterdam.luchthaven",
   "meetpuntNaam": "Rotterdam, luchthaven",
   "km": 10.6,
-  "t": "2026-11-21T02:30:00.000Z",
-  "snelheid": 0.4,
-  "richting": 201
+  "t": "2026-11-21T03:20:00.000Z",
+  "snelheid": 3.5,
+  "richting": 212
  }
 }
