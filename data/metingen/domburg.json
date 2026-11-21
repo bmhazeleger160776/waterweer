@@ -1,7 +1,7 @@
 {
  "slug": "domburg",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-21T22:46:28.707Z",
+ "bijgewerkt": "2026-11-21T23:43:51.322Z",
  "fouten": [],
  "getij": {
   "meetpunt": "westkapelle",
@@ -4996,32 +4996,32 @@
   "meetpunt": "vlaktevanderaan",
   "meetpuntNaam": "Vlakte van de Raan",
   "eenheid": "°C",
-  "t": "2026-11-21T22:20:00.000Z",
+  "t": "2026-11-21T23:20:00.000Z",
   "v": 10.2
  },
  "waterstand": {
   "meetpunt": "westkapelle",
   "meetpuntNaam": "Westkapelle",
   "eenheid": "cm NAP",
-  "t": "2026-11-21T22:20:00.000Z",
-  "v": 190
+  "t": "2026-11-21T23:20:00.000Z",
+  "v": 166
  },
  "golf": {
   "meetpunt": "oosterschelde.11",
   "meetpuntNaam": "Oosterschelde, 11",
   "km": 8.7,
-  "t": "2026-11-21T22:30:00.000Z",
-  "v": 70,
+  "t": "2026-11-21T23:20:00.000Z",
+  "v": 73,
   "min24": 63,
   "max24": 96,
-  "periode": 5.6
+  "periode": 5.9
  },
  "wind": {
   "meetpunt": "vlissingen",
   "meetpuntNaam": "Vlissingen",
   "km": 15.5,
-  "t": "2026-11-21T22:10:00.000Z",
-  "snelheid": 2.3,
-  "richting": 117
+  "t": "2026-11-21T23:10:00.000Z",
+  "snelheid": 2.2,
+  "richting": 89
  }
 }
