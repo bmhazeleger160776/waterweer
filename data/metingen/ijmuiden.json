@@ -1,7 +1,7 @@
 {
  "slug": "ijmuiden",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-21T03:56:28.224Z",
+ "bijgewerkt": "2026-11-21T04:59:31.945Z",
  "fouten": [],
  "getij": {
   "meetpunt": "ijmuiden.buitenhaven",
@@ -5008,32 +5008,32 @@
   "meetpunt": "ijmuiden.buitenhaven",
   "meetpuntNaam": "IJmuiden, buitenhaven",
   "eenheid": "°C",
-  "t": "2026-11-21T03:30:00.000Z",
-  "v": 9.7
+  "t": "2026-11-21T04:30:00.000Z",
+  "v": 10
  },
  "waterstand": {
   "meetpunt": "ijmuiden.buitenhaven",
   "meetpuntNaam": "IJmuiden, buitenhaven",
   "eenheid": "cm NAP",
-  "t": "2026-11-21T03:30:00.000Z",
-  "v": 31
+  "t": "2026-11-21T04:40:00.000Z",
+  "v": 3
  },
  "golf": {
   "meetpunt": "ijgeul.1",
   "meetpuntNaam": "IJGeul, 1",
   "km": 2.5,
-  "t": "2026-11-21T03:30:00.000Z",
-  "v": 100,
+  "t": "2026-11-21T04:40:00.000Z",
+  "v": 104,
   "min24": 42,
-  "max24": 105,
-  "periode": 4.2
+  "max24": 106,
+  "periode": 4.3
  },
  "wind": {
   "meetpunt": "ijmuiden.buitenhaven",
   "meetpuntNaam": "IJmuiden, buitenhaven",
   "km": 0.1,
-  "t": "2026-11-21T03:20:00.000Z",
-  "snelheid": 6.7,
-  "richting": 336
+  "t": "2026-11-21T04:30:00.000Z",
+  "snelheid": 5.7,
+  "richting": 302
  }
 }
