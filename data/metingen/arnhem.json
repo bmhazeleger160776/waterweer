@@ -1,14 +1,14 @@
 {
  "slug": "arnhem",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-22T19:54:00.931Z",
+ "bijgewerkt": "2026-11-22T20:49:43.725Z",
  "fouten": [],
  "waterstand": {
   "meetpunt": "arnhem.nederrijn",
   "meetpuntNaam": "Arnhem, Nederrijn",
   "eenheid": "cm NAP",
-  "t": "2026-11-22T19:30:00.000Z",
-  "v": 850,
+  "t": "2026-11-22T20:30:00.000Z",
+  "v": 849,
   "reeks": [
    {
     "t": "2026-11-15T20:00:00.000Z",
@@ -680,7 +680,11 @@
    },
    {
     "t": "2026-11-22T19:00:00.000Z",
-    "v": 851
+    "v": 850
+   },
+   {
+    "t": "2026-11-22T20:00:00.000Z",
+    "v": 849
    }
   ]
  }

@@ -1,14 +1,14 @@
 {
  "slug": "nijmegen",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-22T19:53:58.732Z",
+ "bijgewerkt": "2026-11-22T20:49:41.120Z",
  "fouten": [],
  "waterstand": {
   "meetpunt": "nijmegen.waal",
   "meetpuntNaam": "Nijmegen, Waal",
   "eenheid": "cm NAP",
-  "t": "2026-11-22T19:30:00.000Z",
-  "v": 707,
+  "t": "2026-11-22T20:30:00.000Z",
+  "v": 710,
   "reeks": [
    {
     "t": "2026-11-15T20:00:00.000Z",
@@ -681,6 +681,10 @@
    {
     "t": "2026-11-22T19:00:00.000Z",
     "v": 707
+   },
+   {
+    "t": "2026-11-22T20:00:00.000Z",
+    "v": 710
    }
   ],
   "verwachting": [
