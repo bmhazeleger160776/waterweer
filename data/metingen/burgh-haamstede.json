@@ -1,7 +1,7 @@
 {
  "slug": "burgh-haamstede",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-22T05:02:16.300Z",
+ "bijgewerkt": "2026-11-22T06:00:33.317Z",
  "fouten": [],
  "getij": {
   "meetpunt": "oosterschelde.14",
@@ -4996,22 +4996,22 @@
   "meetpunt": "oosterschelde.4",
   "meetpuntNaam": "Oosterschelde, 4",
   "eenheid": "°C",
-  "t": "2026-11-22T04:40:00.000Z",
-  "v": 9.7
+  "t": "2026-11-22T05:40:00.000Z",
+  "v": 9.6
  },
  "waterstand": {
   "meetpunt": "oosterschelde.14",
   "meetpuntNaam": "Oosterschelde, 14",
   "eenheid": "cm NAP",
-  "t": "2026-11-22T04:40:00.000Z",
-  "v": -88
+  "t": "2026-11-22T05:40:00.000Z",
+  "v": -83
  },
  "golf": {
   "meetpunt": "oosterschelde.4",
   "meetpuntNaam": "Oosterschelde, 4",
   "km": 5.7,
-  "t": "2026-11-22T04:30:00.000Z",
-  "v": 14,
+  "t": "2026-11-22T05:40:00.000Z",
+  "v": 18,
   "min24": 14,
   "max24": 58,
   "periode": 4
@@ -5020,8 +5020,8 @@
   "meetpunt": "oosterschelde.4",
   "meetpuntNaam": "Oosterschelde, 4",
   "km": 5.7,
-  "t": "2026-11-22T04:40:00.000Z",
-  "snelheid": 4.1,
-  "richting": 86
+  "t": "2026-11-22T05:40:00.000Z",
+  "snelheid": 4.9,
+  "richting": 83
  }
 }

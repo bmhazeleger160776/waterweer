@@ -1,7 +1,7 @@
 {
  "slug": "julianadorp",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-22T05:03:10.910Z",
+ "bijgewerkt": "2026-11-22T06:01:25.003Z",
  "fouten": [],
  "getij": {
   "meetpunt": "denhelder.marsdiep",
@@ -5028,32 +5028,32 @@
   "meetpunt": "denhelder.marsdiep",
   "meetpuntNaam": "Den Helder, Marsdiep",
   "eenheid": "°C",
-  "t": "2026-11-22T04:30:00.000Z",
-  "v": 9
+  "t": "2026-11-22T05:30:00.000Z",
+  "v": 9.3
  },
  "waterstand": {
   "meetpunt": "denhelder.marsdiep",
   "meetpuntNaam": "Den Helder, Marsdiep",
   "eenheid": "cm NAP",
-  "t": "2026-11-22T04:40:00.000Z",
-  "v": 74
+  "t": "2026-11-22T05:30:00.000Z",
+  "v": 60
  },
  "golf": {
   "meetpunt": "denhelder.waddenzee.mondingnieuwehaven",
   "meetpuntNaam": "Den Helder Waddenzee Monding Nieuwe Haven",
   "km": 9.7,
-  "t": "2026-11-22T04:30:00.000Z",
-  "v": 5,
+  "t": "2026-11-22T05:40:00.000Z",
+  "v": 7,
   "min24": 4,
-  "max24": 19,
-  "periode": 4.2
+  "max24": 13,
+  "periode": 4.6
  },
  "wind": {
   "meetpunt": "denhelder.dekooy",
   "meetpuntNaam": "Den Helder, De Kooy",
   "km": 5.9,
-  "t": "2026-11-22T04:30:00.000Z",
-  "snelheid": 0.7,
-  "richting": 213
+  "t": "2026-11-22T05:30:00.000Z",
+  "snelheid": 1.1,
+  "richting": 200
  }
 }
