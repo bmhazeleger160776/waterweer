@@ -1,14 +1,14 @@
 {
  "slug": "doesburg",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-22T22:50:28.047Z",
+ "bijgewerkt": "2026-11-22T23:48:17.085Z",
  "fouten": [],
  "waterstand": {
   "meetpunt": "doesburg.ijssel",
   "meetpuntNaam": "Doesburg, IJssel",
   "eenheid": "cm NAP",
-  "t": "2026-11-22T22:20:00.000Z",
-  "v": 596,
+  "t": "2026-11-22T23:30:00.000Z",
+  "v": 597,
   "reeks": [
    {
     "t": "2026-11-15T23:00:00.000Z",
@@ -680,7 +680,11 @@
    },
    {
     "t": "2026-11-22T22:00:00.000Z",
-    "v": 596
+    "v": 597
+   },
+   {
+    "t": "2026-11-22T23:00:00.000Z",
+    "v": 597
    }
   ],
   "verwachting": [

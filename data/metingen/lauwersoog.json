@@ -1,7 +1,7 @@
 {
  "slug": "lauwersoog",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-22T22:50:08.086Z",
+ "bijgewerkt": "2026-11-22T23:48:00.034Z",
  "fouten": [],
  "getij": {
   "meetpunt": "lauwersoog.waddenzee",
@@ -4992,14 +4992,14 @@
   "meetpunt": "schiermonnikoog.noord",
   "meetpuntNaam": "Schiermonnikoog, noord",
   "eenheid": "°C",
-  "t": "2026-11-22T22:30:00.000Z",
-  "v": 10.3
+  "t": "2026-11-22T23:20:00.000Z",
+  "v": 10.1
  },
  "waterstand": {
   "meetpunt": "lauwersoog.waddenzee",
   "meetpuntNaam": "Lauwersoog, Waddenzee",
   "eenheid": "cm NAP",
-  "t": "2026-11-22T22:30:00.000Z",
-  "v": -4
+  "t": "2026-11-22T23:20:00.000Z",
+  "v": -45
  }
 }

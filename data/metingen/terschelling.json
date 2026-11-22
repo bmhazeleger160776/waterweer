@@ -1,7 +1,7 @@
 {
  "slug": "terschelling",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-22T22:49:41.174Z",
+ "bijgewerkt": "2026-11-22T23:47:37.432Z",
  "fouten": [],
  "getij": {
   "meetpunt": "terschelling.west",
@@ -4996,25 +4996,25 @@
   "meetpunt": "terschelling.west",
   "meetpuntNaam": "Terschelling, west",
   "eenheid": "cm NAP",
-  "t": "2026-11-22T22:30:00.000Z",
-  "v": -47
+  "t": "2026-11-22T23:30:00.000Z",
+  "v": -79
  },
  "golf": {
   "meetpunt": "stortemelk.oost",
   "meetpuntNaam": "Stortemelk, oost",
   "km": 8.9,
-  "t": "2026-11-22T22:20:00.000Z",
-  "v": 29,
-  "min24": 27,
+  "t": "2026-11-22T23:20:00.000Z",
+  "v": 26,
+  "min24": 25,
   "max24": 80,
-  "periode": 4.8
+  "periode": 5.1
  },
  "wind": {
   "meetpunt": "terschelling.hoorn",
   "meetpuntNaam": "Terschelling, Hoorn",
   "km": 9,
-  "t": "2026-11-22T22:20:00.000Z",
-  "snelheid": 5,
-  "richting": 60
+  "t": "2026-11-22T23:20:00.000Z",
+  "snelheid": 2.2,
+  "richting": 79
  }
 }

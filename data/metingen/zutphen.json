@@ -1,14 +1,14 @@
 {
  "slug": "zutphen",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-22T22:50:29.301Z",
+ "bijgewerkt": "2026-11-22T23:48:18.060Z",
  "fouten": [],
  "waterstand": {
   "meetpunt": "zutphen.ijssel",
   "meetpuntNaam": "Zutphen, IJssel",
   "eenheid": "cm NAP",
-  "t": "2026-11-22T22:20:00.000Z",
-  "v": 397,
+  "t": "2026-11-22T23:30:00.000Z",
+  "v": 398,
   "reeks": [
    {
     "t": "2026-11-15T23:00:00.000Z",
@@ -681,6 +681,10 @@
    {
     "t": "2026-11-22T22:00:00.000Z",
     "v": 397
+   },
+   {
+    "t": "2026-11-22T23:00:00.000Z",
+    "v": 398
    }
   ],
   "verwachting": [

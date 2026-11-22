@@ -1,14 +1,14 @@
 {
  "slug": "hagestein",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-22T22:50:25.524Z",
+ "bijgewerkt": "2026-11-22T23:48:15.069Z",
  "fouten": [],
  "waterstand": {
   "meetpunt": "hagestein.boven",
   "meetpuntNaam": "Hagestein, boven",
   "eenheid": "cm NAP",
-  "t": "2026-11-22T22:20:00.000Z",
-  "v": 291,
+  "t": "2026-11-22T23:30:00.000Z",
+  "v": 296,
   "reeks": [
    {
     "t": "2026-11-15T23:00:00.000Z",
@@ -680,7 +680,11 @@
    },
    {
     "t": "2026-11-22T22:00:00.000Z",
-    "v": 291
+    "v": 294
+   },
+   {
+    "t": "2026-11-22T23:00:00.000Z",
+    "v": 296
    }
   ],
   "verwachting": [

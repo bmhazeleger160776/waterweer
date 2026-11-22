@@ -1,7 +1,7 @@
 {
  "slug": "sint-annaland",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-22T22:50:59.965Z",
+ "bijgewerkt": "2026-11-22T23:48:43.536Z",
  "fouten": [],
  "getij": {
   "meetpunt": "sintannaland.havensteiger",
@@ -5016,32 +5016,32 @@
   "meetpunt": "sintphilipsland.slaak.zuid",
   "meetpuntNaam": "Sint Philipsland Slaak zuid",
   "eenheid": "°C",
-  "t": "2026-11-22T22:30:00.000Z",
-  "v": 8.2
+  "t": "2026-11-22T23:20:00.000Z",
+  "v": 8.5
  },
  "waterstand": {
   "meetpunt": "sintannaland.oosterschelde",
   "meetpuntNaam": "Sint Annaland haven",
   "eenheid": "cm NAP",
-  "t": "2026-11-22T22:30:00.000Z",
-  "v": 20
+  "t": "2026-11-22T23:30:00.000Z",
+  "v": 111
  },
  "golf": {
   "meetpunt": "stavenisse.keeten",
   "meetpuntNaam": "Stavenisse, keeten",
   "km": 6.6,
-  "t": "2026-11-22T22:20:00.000Z",
-  "v": 13,
+  "t": "2026-11-22T23:20:00.000Z",
+  "v": 21,
   "min24": 1,
-  "max24": 19,
-  "periode": 2.3
+  "max24": 21,
+  "periode": 2.6
  },
  "wind": {
   "meetpunt": "bruinisse.grevelingensluis",
   "meetpuntNaam": "Bruinisse Grevelingensluis",
   "km": 6.6,
-  "t": "2026-11-22T22:30:00.000Z",
-  "snelheid": 7,
-  "richting": 64
+  "t": "2026-11-22T23:30:00.000Z",
+  "snelheid": 6.2,
+  "richting": 68
  }
 }
