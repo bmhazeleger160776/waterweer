@@ -1,7 +1,7 @@
 {
  "slug": "borssele",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-22T21:48:55.000Z",
+ "bijgewerkt": "2026-11-22T22:50:56.278Z",
  "fouten": [],
  "getij": {
   "meetpunt": "gatvanborssele",
@@ -5004,22 +5004,22 @@
   "meetpunt": "vlissingen",
   "meetpuntNaam": "Vlissingen",
   "eenheid": "°C",
-  "t": "2026-11-22T21:20:00.000Z",
+  "t": "2026-11-22T22:20:00.000Z",
   "v": 9.8
  },
  "waterstand": {
   "meetpunt": "borssele",
   "meetpuntNaam": "Borssele",
   "eenheid": "cm NAP",
-  "t": "2026-11-22T21:30:00.000Z",
-  "v": 16
+  "t": "2026-11-22T22:30:00.000Z",
+  "v": 163
  },
  "golf": {
   "meetpunt": "vlissingen.honte",
   "meetpuntNaam": "Vlissingen Honte",
   "km": 3.8,
-  "t": "2026-11-22T21:20:00.000Z",
-  "v": 7,
+  "t": "2026-11-22T22:30:00.000Z",
+  "v": 8,
   "min24": 3,
   "max24": 22,
   "periode": 2.9
@@ -5028,8 +5028,8 @@
   "meetpunt": "vlissingen",
   "meetpuntNaam": "Vlissingen",
   "km": 9.8,
-  "t": "2026-11-22T21:20:00.000Z",
-  "snelheid": 4.8,
-  "richting": 64
+  "t": "2026-11-22T22:20:00.000Z",
+  "snelheid": 3.8,
+  "richting": 54
  }
 }

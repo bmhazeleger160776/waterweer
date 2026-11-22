@@ -1,7 +1,7 @@
 {
  "slug": "stavenisse",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-22T21:48:24.019Z",
+ "bijgewerkt": "2026-11-22T22:50:15.517Z",
  "fouten": [],
  "getij": {
   "meetpunt": "stavenisse",
@@ -5012,7 +5012,7 @@
   "meetpunt": "stavenisse",
   "meetpuntNaam": "Stavenisse",
   "eenheid": "cm NAP",
-  "t": "2026-11-22T21:30:00.000Z",
-  "v": -42
+  "t": "2026-11-22T22:30:00.000Z",
+  "v": 30
  }
 }
