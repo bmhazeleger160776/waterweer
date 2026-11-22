@@ -1,7 +1,7 @@
 {
  "slug": "vrouwenpolder",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-22T12:58:11.654Z",
+ "bijgewerkt": "2026-11-22T14:01:35.329Z",
  "fouten": [],
  "getij": {
   "meetpunt": "oosterschelde.roompotsluis.binnen",
@@ -5004,32 +5004,32 @@
   "meetpunt": "vlaktevanderaan",
   "meetpuntNaam": "Vlakte van de Raan",
   "eenheid": "°C",
-  "t": "2026-11-22T12:40:00.000Z",
-  "v": 10.1
+  "t": "2026-11-22T13:40:00.000Z",
+  "v": 9.7
  },
  "waterstand": {
   "meetpunt": "oosterschelde.roompotsluis.binnen",
   "meetpuntNaam": "Oosterschelde Roompotsluis binnen",
   "eenheid": "cm NAP",
-  "t": "2026-11-22T12:40:00.000Z",
-  "v": 121
+  "t": "2026-11-22T13:40:00.000Z",
+  "v": 85
  },
  "golf": {
   "meetpunt": "oosterschelde.roompotsluis.buiten",
   "meetpuntNaam": "Oosterschelde Roompotsluis buiten",
   "km": 5.7,
-  "t": "2026-11-22T12:40:00.000Z",
-  "v": 3,
+  "t": "2026-11-22T13:40:00.000Z",
+  "v": 2,
   "min24": 1,
   "max24": 99999,
-  "periode": 5.6
+  "periode": 4.5
  },
  "wind": {
   "meetpunt": "oosterschelde.4",
   "meetpuntNaam": "Oosterschelde, 4",
   "km": 9.2,
-  "t": "2026-11-22T12:40:00.000Z",
-  "snelheid": 5.6,
+  "t": "2026-11-22T13:40:00.000Z",
+  "snelheid": 5.7,
   "richting": 79
  }
 }
