@@ -1,7 +1,7 @@
 {
  "slug": "westenschouwen",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-22T14:01:38.834Z",
+ "bijgewerkt": "2026-11-22T14:55:33.189Z",
  "fouten": [],
  "getij": {
   "meetpunt": "oosterschelde.4",
@@ -5000,32 +5000,32 @@
   "meetpunt": "oosterschelde.4",
   "meetpuntNaam": "Oosterschelde, 4",
   "eenheid": "°C",
-  "t": "2026-11-22T13:40:00.000Z",
+  "t": "2026-11-22T14:40:00.000Z",
   "v": 9.6
  },
  "waterstand": {
   "meetpunt": "oosterschelde.4",
   "meetpuntNaam": "Oosterschelde, 4",
   "eenheid": "cm NAP",
-  "t": "2026-11-22T13:30:00.000Z",
-  "v": 66
+  "t": "2026-11-22T14:30:00.000Z",
+  "v": -6
  },
  "golf": {
   "meetpunt": "oosterschelde.4",
   "meetpuntNaam": "Oosterschelde, 4",
   "km": 1.9,
-  "t": "2026-11-22T13:40:00.000Z",
-  "v": 19,
+  "t": "2026-11-22T14:30:00.000Z",
+  "v": 16,
   "min24": 14,
   "max24": 43,
-  "periode": 5.3
+  "periode": 4.7
  },
  "wind": {
   "meetpunt": "oosterschelde.4",
   "meetpuntNaam": "Oosterschelde, 4",
   "km": 1.9,
-  "t": "2026-11-22T13:40:00.000Z",
-  "snelheid": 5.7,
-  "richting": 79
+  "t": "2026-11-22T14:30:00.000Z",
+  "snelheid": 7,
+  "richting": 71
  }
 }
