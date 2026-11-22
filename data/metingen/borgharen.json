@@ -1,19 +1,15 @@
 {
  "slug": "borgharen",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-22T15:51:05.707Z",
+ "bijgewerkt": "2026-11-22T16:51:40.198Z",
  "fouten": [],
  "waterstand": {
   "meetpunt": "maastricht.borgharen.maas.beneden",
   "meetpuntNaam": "Borgharen Dorp",
   "eenheid": "cm NAP",
-  "t": "2026-11-22T15:30:00.000Z",
-  "v": 4204,
+  "t": "2026-11-22T16:30:00.000Z",
+  "v": 3973,
   "reeks": [
-   {
-    "t": "2026-11-15T16:00:00.000Z",
-    "v": 4029
-   },
    {
     "t": "2026-11-15T17:00:00.000Z",
     "v": 4021
@@ -680,7 +676,11 @@
    },
    {
     "t": "2026-11-22T15:00:00.000Z",
-    "v": 4204
+    "v": 4205
+   },
+   {
+    "t": "2026-11-22T16:00:00.000Z",
+    "v": 4206
    }
   ],
   "verwachting": [

@@ -1,7 +1,7 @@
 {
  "slug": "rockanje",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-22T15:51:32.038Z",
+ "bijgewerkt": "2026-11-22T16:52:03.128Z",
  "fouten": [],
  "getij": {
   "meetpunt": "stellendam.buitenhaven",
@@ -4996,32 +4996,32 @@
   "meetpunt": "stellendam.buiten",
   "meetpuntNaam": "Stellendam, buiten",
   "eenheid": "°C",
-  "t": "2026-11-22T15:30:00.000Z",
-  "v": 8.7
+  "t": "2026-11-22T16:30:00.000Z",
+  "v": 8.6
  },
  "waterstand": {
   "meetpunt": "stellendam.buitenhaven",
   "meetpuntNaam": "Stellendam, buitenhaven",
   "eenheid": "cm NAP",
-  "t": "2026-11-22T15:30:00.000Z",
-  "v": -42
+  "t": "2026-11-22T16:20:00.000Z",
+  "v": -80
  },
  "golf": {
   "meetpunt": "hoekvanholland.maeslantkering.beneden.noord",
   "meetpuntNaam": "Hoek van Holland, Maeslantkering, Beneden, noord",
   "km": 12.9,
-  "t": "2026-11-22T15:20:00.000Z",
-  "v": 10,
+  "t": "2026-11-22T16:30:00.000Z",
+  "v": 13,
   "min24": 2,
   "max24": 18,
-  "periode": 1.9
+  "periode": 2
  },
  "wind": {
   "meetpunt": "stellendam.haringvlietsluizen.schuif1",
   "meetpuntNaam": "Stellendam, Haringvlietsluizen, schuif 1",
   "km": 4.6,
-  "t": "2026-11-22T15:30:00.000Z",
-  "snelheid": 3.5,
-  "richting": 56
+  "t": "2026-11-22T16:30:00.000Z",
+  "snelheid": 3.9,
+  "richting": 55
  }
 }
