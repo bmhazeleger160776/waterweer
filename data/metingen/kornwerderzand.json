@@ -1,7 +1,7 @@
 {
  "slug": "kornwerderzand",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-22T01:11:07.991Z",
+ "bijgewerkt": "2026-11-22T02:56:52.887Z",
  "fouten": [
   "golf: geen recente meting"
  ],
@@ -4998,22 +4998,22 @@
   "meetpunt": "kornwerderzand.waddenzee.voorhaven.kolk",
   "meetpuntNaam": "Kornwerderzand, Waddenzee voorhaven kolk",
   "eenheid": "°C",
-  "t": "2026-11-22T00:50:00.000Z",
+  "t": "2026-11-22T02:30:00.000Z",
   "v": 7.2
  },
  "waterstand": {
   "meetpunt": "kornwerderzand.waddenzee.buitenhaven",
   "meetpuntNaam": "Kornwerderzand Waddenzee buitenhaven",
   "eenheid": "cm NAP",
-  "t": "2026-11-22T00:50:00.000Z",
-  "v": -60
+  "t": "2026-11-22T02:30:00.000Z",
+  "v": 28
  },
  "wind": {
   "meetpunt": "stavoren.ijsselmeer",
   "meetpuntNaam": "Stavoren IJsselmeer",
   "km": 24.3,
-  "t": "2026-11-22T00:30:00.000Z",
-  "snelheid": 1.9,
-  "richting": 186
+  "t": "2026-11-22T02:30:00.000Z",
+  "snelheid": 1.1,
+  "richting": 255
  }
 }
