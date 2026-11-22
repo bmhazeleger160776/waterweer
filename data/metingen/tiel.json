@@ -1,13 +1,13 @@
 {
  "slug": "tiel",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-22T16:51:32.416Z",
+ "bijgewerkt": "2026-11-22T17:47:00.358Z",
  "fouten": [],
  "waterstand": {
   "meetpunt": "tiel.sluis.waal",
   "meetpuntNaam": "Tiel Sluis, Waal",
   "eenheid": "cm NAP",
-  "t": "2026-11-22T16:20:00.000Z",
+  "t": "2026-11-22T17:20:00.000Z",
   "v": 433,
   "reeks": [
    {
@@ -680,7 +680,11 @@
    },
    {
     "t": "2026-11-22T16:00:00.000Z",
-    "v": 434
+    "v": 435
+   },
+   {
+    "t": "2026-11-22T17:00:00.000Z",
+    "v": 433
    }
   ],
   "verwachting": [
