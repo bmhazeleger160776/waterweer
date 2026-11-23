@@ -1,7 +1,7 @@
 {
  "slug": "oostkapelle",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-22T23:48:05.581Z",
+ "bijgewerkt": "2026-11-23T01:15:55.585Z",
  "fouten": [],
  "getij": {
   "meetpunt": "oosterschelde.11",
@@ -4992,32 +4992,32 @@
   "meetpunt": "vlaktevanderaan",
   "meetpuntNaam": "Vlakte van de Raan",
   "eenheid": "°C",
-  "t": "2026-11-22T23:30:00.000Z",
-  "v": 10.3
+  "t": "2026-11-23T00:50:00.000Z",
+  "v": 10.2
  },
  "waterstand": {
   "meetpunt": "westkapelle",
   "meetpuntNaam": "Westkapelle",
   "eenheid": "cm NAP",
-  "t": "2026-11-22T23:30:00.000Z",
-  "v": 180
+  "t": "2026-11-23T00:50:00.000Z",
+  "v": 126
  },
  "golf": {
   "meetpunt": "oosterschelde.11",
   "meetpuntNaam": "Oosterschelde, 11",
   "km": 8.5,
-  "t": "2026-11-22T23:30:00.000Z",
-  "v": 105,
+  "t": "2026-11-23T00:50:00.000Z",
+  "v": 97,
   "min24": 54,
-  "max24": 105,
-  "periode": 4.3
+  "max24": 109,
+  "periode": 4.5
  },
  "wind": {
   "meetpunt": "oosterschelde.4",
   "meetpuntNaam": "Oosterschelde, 4",
   "km": 14.1,
-  "t": "2026-11-22T23:30:00.000Z",
-  "snelheid": 9.2,
-  "richting": 70
+  "t": "2026-11-23T00:50:00.000Z",
+  "snelheid": 7.4,
+  "richting": 80
  }
 }
