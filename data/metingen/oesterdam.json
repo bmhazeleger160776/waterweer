@@ -1,7 +1,7 @@
 {
  "slug": "oesterdam",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-23T04:10:54.401Z",
+ "bijgewerkt": "2026-11-23T06:10:26.568Z",
  "fouten": [],
  "getij": {
   "meetpunt": "marollegat",
@@ -5008,14 +5008,14 @@
   "meetpunt": "rilland.bathsespuikanaal.inloop",
   "meetpuntNaam": "Rilland, Bathse Spuikanaal, inloop",
   "eenheid": "°C",
-  "t": "2026-11-23T03:40:00.000Z",
-  "v": 7.6
+  "t": "2026-11-23T05:40:00.000Z",
+  "v": 7.7
  },
  "waterstand": {
   "meetpunt": "marollegat",
   "meetpuntNaam": "Marollegat",
   "eenheid": "cm NAP",
-  "t": "2026-11-23T03:40:00.000Z",
-  "v": 39
+  "t": "2026-11-23T05:50:00.000Z",
+  "v": -108
  }
 }
