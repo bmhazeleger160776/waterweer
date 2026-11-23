@@ -1,7 +1,7 @@
 {
  "slug": "texel",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-23T02:59:49.274Z",
+ "bijgewerkt": "2026-11-23T04:10:38.233Z",
  "fouten": [],
  "getij": {
   "meetpunt": "texel.oudeschild",
@@ -4992,32 +4992,32 @@
   "meetpunt": "denhoorntexel.waddenzee.gatvandestier",
   "meetpuntNaam": "Den Hoorn Texel Waddenzee Gat van de Stier",
   "eenheid": "°C",
-  "t": "2026-11-23T02:40:00.000Z",
-  "v": 7.4
+  "t": "2026-11-23T03:30:00.000Z",
+  "v": 7.8
  },
  "waterstand": {
   "meetpunt": "texel.oudeschild",
   "meetpuntNaam": "Texel, Oudeschild",
   "eenheid": "cm NAP",
-  "t": "2026-11-23T02:40:00.000Z",
-  "v": 36
+  "t": "2026-11-23T03:30:00.000Z",
+  "v": 51
  },
  "golf": {
   "meetpunt": "denhoorntexel.waddenzee.gatvandestier",
   "meetpuntNaam": "Den Hoorn Texel Waddenzee Gat van de Stier",
   "km": 4.7,
-  "t": "2026-11-23T02:40:00.000Z",
-  "v": 4,
+  "t": "2026-11-23T03:50:00.000Z",
+  "v": 2,
   "min24": 2,
   "max24": 59,
-  "periode": 3.1
+  "periode": 3.2
  },
  "wind": {
   "meetpunt": "texel.hors",
   "meetpuntNaam": "Texelhors",
   "km": 10,
-  "t": "2026-11-23T02:30:00.000Z",
-  "snelheid": 0.1,
-  "richting": 177
+  "t": "2026-11-23T03:40:00.000Z",
+  "snelheid": 1.3,
+  "richting": 282
  }
 }

@@ -1,7 +1,7 @@
 {
  "slug": "dishoek",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-23T03:00:54.512Z",
+ "bijgewerkt": "2026-11-23T04:11:41.951Z",
  "fouten": [],
  "getij": {
   "meetpunt": "vlissingen",
@@ -5000,32 +5000,32 @@
   "meetpunt": "vlissingen",
   "meetpuntNaam": "Vlissingen",
   "eenheid": "°C",
-  "t": "2026-11-23T02:40:00.000Z",
-  "v": 9.7
+  "t": "2026-11-23T03:50:00.000Z",
+  "v": 9.3
  },
  "waterstand": {
   "meetpunt": "vlissingen",
   "meetpuntNaam": "Vlissingen",
   "eenheid": "cm NAP",
-  "t": "2026-11-23T02:40:00.000Z",
-  "v": 17
+  "t": "2026-11-23T03:50:00.000Z",
+  "v": -87
  },
  "golf": {
   "meetpunt": "wielingen.noord",
   "meetpuntNaam": "Wielingen, noord",
   "km": 8.8,
-  "t": "2026-11-23T02:40:00.000Z",
-  "v": 31,
+  "t": "2026-11-23T03:40:00.000Z",
+  "v": 23,
   "min24": 17,
   "max24": 61,
-  "periode": 3
+  "periode": 3.8
  },
  "wind": {
   "meetpunt": "vlissingen",
   "meetpuntNaam": "Vlissingen",
   "km": 6.6,
-  "t": "2026-11-23T02:30:00.000Z",
-  "snelheid": 4.6,
-  "richting": 69
+  "t": "2026-11-23T03:40:00.000Z",
+  "snelheid": 5,
+  "richting": 62
  }
 }
