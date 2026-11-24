@@ -1,7 +1,7 @@
 {
  "slug": "maassluis",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-24T12:04:18.500Z",
+ "bijgewerkt": "2026-11-24T13:22:58.450Z",
  "fouten": [],
  "getij": {
   "meetpunt": "maassluis",
@@ -5028,32 +5028,32 @@
   "meetpunt": "hoekvanholland",
   "meetpuntNaam": "Hoek van Holland",
   "eenheid": "°C",
-  "t": "2026-11-24T11:40:00.000Z",
-  "v": 9.6
+  "t": "2026-11-24T12:50:00.000Z",
+  "v": 11.3
  },
  "waterstand": {
   "meetpunt": "maassluis",
   "meetpuntNaam": "Maassluis",
   "eenheid": "cm NAP",
-  "t": "2026-11-24T11:30:00.000Z",
-  "v": -15
+  "t": "2026-11-24T13:00:00.000Z",
+  "v": 89
  },
  "golf": {
   "meetpunt": "hoekvanholland.maeslantkering.beneden.noord",
   "meetpuntNaam": "Hoek van Holland, Maeslantkering, Beneden, noord",
   "km": 7.5,
-  "t": "2026-11-24T11:40:00.000Z",
-  "v": 17,
+  "t": "2026-11-24T12:50:00.000Z",
+  "v": 10,
   "min24": 6,
   "max24": 20,
-  "periode": 2.1
+  "periode": 3.1
  },
  "wind": {
   "meetpunt": "botlek.geulhaven",
   "meetpuntNaam": "Botlek Geulhaven",
   "km": 5.2,
-  "t": "2026-11-24T11:30:00.000Z",
-  "snelheid": 4.4,
-  "richting": 125
+  "t": "2026-11-24T12:50:00.000Z",
+  "snelheid": 5.4,
+  "richting": 96
  }
 }
