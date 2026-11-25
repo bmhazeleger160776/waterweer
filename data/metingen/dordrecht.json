@@ -1,7 +1,7 @@
 {
  "slug": "dordrecht",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-24T23:54:59.189Z",
+ "bijgewerkt": "2026-11-25T01:19:52.376Z",
  "fouten": [],
  "getij": {
   "meetpunt": "dordrecht.oudemaas.benedenmerwede",
@@ -5016,14 +5016,14 @@
   "meetpunt": "kinderdijk.lek",
   "meetpuntNaam": "Kinderdijk Lek",
   "eenheid": "°C",
-  "t": "2026-11-24T23:30:00.000Z",
-  "v": 6.3
+  "t": "2026-11-25T00:50:00.000Z",
+  "v": 6.2
  },
  "waterstand": {
   "meetpunt": "dordrecht.oudemaas.benedenmerwede",
   "meetpuntNaam": "Dordrecht Oude Maas, Beneden Merwede",
   "eenheid": "cm NAP",
-  "t": "2026-11-24T23:30:00.000Z",
-  "v": -1
+  "t": "2026-11-25T00:50:00.000Z",
+  "v": -5
  }
 }
