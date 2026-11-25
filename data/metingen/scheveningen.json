@@ -1,7 +1,7 @@
 {
  "slug": "scheveningen",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-25T07:27:08.567Z",
+ "bijgewerkt": "2026-11-25T09:14:59.297Z",
  "fouten": [],
  "getij": {
   "meetpunt": "scheveningen",
@@ -5028,32 +5028,32 @@
   "meetpunt": "hollandsekust.zuid.alpha",
   "meetpuntNaam": "Hollandse Kust Zuid platform Alpha",
   "eenheid": "°C",
-  "t": "2026-11-25T06:00:00.000Z",
-  "v": 10.6
+  "t": "2026-11-25T09:00:00.000Z",
+  "v": 10.3
  },
  "waterstand": {
   "meetpunt": "scheveningen",
   "meetpuntNaam": "Scheveningen",
   "eenheid": "cm NAP",
-  "t": "2026-11-25T06:00:00.000Z",
-  "v": -59
+  "t": "2026-11-25T08:50:00.000Z",
+  "v": -81
  },
  "golf": {
   "meetpunt": "hollandsekust.zuid.alpha",
   "meetpuntNaam": "Hollandse Kust Zuid platform Alpha",
   "km": 14.8,
-  "t": "2026-11-25T07:10:00.000Z",
-  "v": 107,
-  "min24": 63,
+  "t": "2026-11-25T09:00:00.000Z",
+  "v": 119,
+  "min24": 64,
   "max24": 126,
-  "periode": 3.3
+  "periode": 3.8
  },
  "wind": {
   "meetpunt": "hollandsekust.zuid.alpha.1",
   "meetpuntNaam": "Hollandse Kust Zuid platform Alpha 1",
   "km": 14.8,
-  "t": "2026-11-25T07:10:00.000Z",
-  "snelheid": 10.4,
-  "richting": 82
+  "t": "2026-11-25T09:00:00.000Z",
+  "snelheid": 11.1,
+  "richting": 81
  }
 }
