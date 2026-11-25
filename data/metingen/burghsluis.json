@@ -1,7 +1,7 @@
 {
  "slug": "burghsluis",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-25T18:58:14.867Z",
+ "bijgewerkt": "2026-11-25T20:01:36.273Z",
  "fouten": [],
  "getij": {
   "meetpunt": "oosterschelde.14",
@@ -4891,32 +4891,32 @@
   "meetpunt": "oosterschelde.4",
   "meetpuntNaam": "Oosterschelde, 4",
   "eenheid": "°C",
-  "t": "2026-11-25T18:30:00.000Z",
-  "v": 8.1
+  "t": "2026-11-25T19:40:00.000Z",
+  "v": 8
  },
  "waterstand": {
   "meetpunt": "oosterschelde.14",
   "meetpuntNaam": "Oosterschelde, 14",
   "eenheid": "cm NAP",
-  "t": "2026-11-25T18:30:00.000Z",
-  "v": -135
+  "t": "2026-11-25T19:40:00.000Z",
+  "v": -152
  },
  "golf": {
   "meetpunt": "oosterschelde.4",
   "meetpuntNaam": "Oosterschelde, 4",
   "km": 5.1,
-  "t": "2026-11-25T18:40:00.000Z",
-  "v": 14,
-  "min24": 11,
+  "t": "2026-11-25T19:50:00.000Z",
+  "v": 18,
+  "min24": 12,
   "max24": 41,
-  "periode": 2.7
+  "periode": 2.6
  },
  "wind": {
   "meetpunt": "oosterschelde.4",
   "meetpuntNaam": "Oosterschelde, 4",
   "km": 5.1,
-  "t": "2026-11-25T18:40:00.000Z",
-  "snelheid": 11.7,
-  "richting": 85
+  "t": "2026-11-25T19:50:00.000Z",
+  "snelheid": 12.4,
+  "richting": 84
  }
 }
