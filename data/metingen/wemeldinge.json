@@ -1,7 +1,7 @@
 {
  "slug": "wemeldinge",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-25T11:02:32.399Z",
+ "bijgewerkt": "2026-11-25T12:07:47.969Z",
  "fouten": [],
  "getij": {
   "meetpunt": "yerseke",
@@ -5032,7 +5032,7 @@
   "meetpunt": "yerseke",
   "meetpuntNaam": "Yerseke",
   "eenheid": "cm NAP",
-  "t": "2026-11-25T10:40:00.000Z",
-  "v": -95
+  "t": "2026-11-25T11:40:00.000Z",
+  "v": -48
  }
 }
