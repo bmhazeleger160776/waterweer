@@ -1,7 +1,7 @@
 {
  "slug": "yerseke",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-25T06:04:58.365Z",
+ "bijgewerkt": "2026-11-25T07:27:27.434Z",
  "fouten": [],
  "getij": {
   "meetpunt": "yerseke",
@@ -5036,14 +5036,14 @@
   "meetpunt": "marollegat",
   "meetpuntNaam": "Marollegat",
   "eenheid": "°C",
-  "t": "2026-11-25T05:40:00.000Z",
-  "v": 6.4
+  "t": "2026-11-25T06:00:00.000Z",
+  "v": 6.1
  },
  "waterstand": {
   "meetpunt": "yerseke",
   "meetpuntNaam": "Yerseke",
   "eenheid": "cm NAP",
-  "t": "2026-11-25T05:40:00.000Z",
-  "v": -27
+  "t": "2026-11-25T06:00:00.000Z",
+  "v": -50
  }
 }
