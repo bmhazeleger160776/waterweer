@@ -1,7 +1,7 @@
 {
  "slug": "zeelandbrug",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-25T16:15:39.773Z",
+ "bijgewerkt": "2026-11-25T17:56:23.869Z",
  "fouten": [],
  "getij": {
   "meetpunt": "stavenisse",
@@ -5028,22 +5028,22 @@
   "meetpunt": "bommenede",
   "meetpuntNaam": "Bommenede",
   "eenheid": "°C",
-  "t": "2026-11-25T16:00:00.000Z",
+  "t": "2026-11-25T17:30:00.000Z",
   "v": 6.4
  },
  "waterstand": {
   "meetpunt": "stavenisse",
   "meetpuntNaam": "Stavenisse",
   "eenheid": "cm NAP",
-  "t": "2026-11-25T15:50:00.000Z",
-  "v": 128
+  "t": "2026-11-25T17:40:00.000Z",
+  "v": 0
  },
  "golf": {
   "meetpunt": "stavenisse.keeten",
   "meetpuntNaam": "Stavenisse, keeten",
   "km": 3.5,
-  "t": "2026-11-25T16:00:00.000Z",
-  "v": 38,
+  "t": "2026-11-25T17:40:00.000Z",
+  "v": 41,
   "min24": 2,
   "max24": 49,
   "periode": 2.4
@@ -5052,8 +5052,8 @@
   "meetpunt": "stavenisse",
   "meetpuntNaam": "Stavenisse",
   "km": 2.8,
-  "t": "2026-11-25T16:00:00.000Z",
-  "snelheid": 8.6,
-  "richting": 80
+  "t": "2026-11-25T17:40:00.000Z",
+  "snelheid": 11.1,
+  "richting": 77
  }
 }
