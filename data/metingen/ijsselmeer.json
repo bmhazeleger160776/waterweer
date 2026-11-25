@@ -1,26 +1,22 @@
 {
  "slug": "ijsselmeer",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-25T22:59:44.817Z",
+ "bijgewerkt": "2026-11-25T23:55:58.557Z",
  "fouten": [],
  "temperatuur": {
   "meetpunt": "andijk",
   "meetpuntNaam": "Andijk",
   "eenheid": "°C",
-  "t": "2026-11-25T22:40:00.000Z",
+  "t": "2026-11-25T23:30:00.000Z",
   "v": 2.9
  },
  "waterstand": {
   "meetpunt": "krabbersgat.ijsselmeer",
   "meetpuntNaam": "Krabbersgat, IJsselmeer",
   "eenheid": "cm NAP",
-  "t": "2026-11-25T22:40:00.000Z",
-  "v": -35,
+  "t": "2026-11-25T23:30:00.000Z",
+  "v": -34,
   "reeks": [
-   {
-    "t": "2026-11-18T23:00:00.000Z",
-    "v": -27
-   },
    {
     "t": "2026-11-19T00:00:00.000Z",
     "v": -28
@@ -687,14 +683,14 @@
    },
    {
     "t": "2026-11-25T22:00:00.000Z",
+    "v": -36
+   },
+   {
+    "t": "2026-11-25T23:00:00.000Z",
     "v": -35
    }
   ],
   "verwachting": [
-   {
-    "t": "2026-11-25T22:00:00.000Z",
-    "v": -35
-   },
    {
     "t": "2026-11-25T23:00:00.000Z",
     "v": -35

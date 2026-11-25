@@ -1,7 +1,7 @@
 {
  "slug": "egmond-aan-zee",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-25T22:59:23.204Z",
+ "bijgewerkt": "2026-11-25T23:55:21.932Z",
  "fouten": [
   "golf: geen recente meting"
  ],
@@ -5038,22 +5038,22 @@
   "meetpunt": "velsen.velserkom",
   "meetpuntNaam": "Velserkom",
   "eenheid": "°C",
-  "t": "2026-11-25T22:40:00.000Z",
-  "v": 8.9
+  "t": "2026-11-25T23:30:00.000Z",
+  "v": 8.7
  },
  "waterstand": {
   "meetpunt": "ijmuiden.noordersluis.west",
   "meetpuntNaam": "IJmuiden, noordersluis, west",
   "eenheid": "cm NAP",
-  "t": "2026-11-25T22:40:00.000Z",
-  "v": -102
+  "t": "2026-11-25T23:40:00.000Z",
+  "v": -98
  },
  "wind": {
   "meetpunt": "ijmuiden.buitenhaven",
   "meetpuntNaam": "IJmuiden, buitenhaven",
   "km": 18.1,
-  "t": "2026-11-25T22:30:00.000Z",
-  "snelheid": 10.3,
-  "richting": 87
+  "t": "2026-11-25T23:30:00.000Z",
+  "snelheid": 8.7,
+  "richting": 90
  }
 }
