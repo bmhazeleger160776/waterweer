@@ -1,7 +1,7 @@
 {
  "slug": "neeltje-jans",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-26T19:04:24.889Z",
+ "bijgewerkt": "2026-11-26T20:12:37.269Z",
  "fouten": [],
  "getij": {
   "meetpunt": "oosterschelde.roompotsluis.binnen",
@@ -5032,14 +5032,14 @@
   "meetpunt": "oosterschelde.4",
   "meetpuntNaam": "Oosterschelde, 4",
   "eenheid": "°C",
-  "t": "2026-11-26T18:30:00.000Z",
-  "v": 7.4
+  "t": "2026-11-26T19:50:00.000Z",
+  "v": 7.5
  },
  "waterstand": {
   "meetpunt": "oosterschelde.roompotsluis.binnen",
   "meetpuntNaam": "Oosterschelde Roompotsluis binnen",
   "eenheid": "cm NAP",
-  "t": "2026-11-26T18:30:00.000Z",
-  "v": -12
+  "t": "2026-11-26T19:50:00.000Z",
+  "v": -98
  }
 }
