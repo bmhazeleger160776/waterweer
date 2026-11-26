@@ -1,7 +1,7 @@
 {
  "slug": "hansweert",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-26T05:22:33.631Z",
+ "bijgewerkt": "2026-11-26T07:25:23.922Z",
  "fouten": [],
  "getij": {
   "meetpunt": "hansweert",
@@ -5032,14 +5032,14 @@
   "meetpunt": "ossenisse",
   "meetpuntNaam": "Ossenisse",
   "eenheid": "°C",
-  "t": "2026-11-26T05:00:00.000Z",
-  "v": 7.7
+  "t": "2026-11-26T07:00:00.000Z",
+  "v": 7.5
  },
  "waterstand": {
   "meetpunt": "hansweert",
   "meetpuntNaam": "Hansweert",
   "eenheid": "cm NAP",
-  "t": "2026-11-26T05:00:00.000Z",
-  "v": 88
+  "t": "2026-11-26T07:00:00.000Z",
+  "v": -115
  }
 }
