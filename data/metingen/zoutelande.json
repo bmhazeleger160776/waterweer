@@ -1,7 +1,7 @@
 {
  "slug": "zoutelande",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-26T01:19:31.087Z",
+ "bijgewerkt": "2026-11-26T02:59:37.941Z",
  "fouten": [],
  "getij": {
   "meetpunt": "westkapelle",
@@ -4871,32 +4871,32 @@
   "meetpunt": "vlissingen",
   "meetpuntNaam": "Vlissingen",
   "eenheid": "°C",
-  "t": "2026-11-26T00:50:00.000Z",
-  "v": 8.4
+  "t": "2026-11-26T02:30:00.000Z",
+  "v": 8.3
  },
  "waterstand": {
   "meetpunt": "westkapelle",
   "meetpuntNaam": "Westkapelle",
   "eenheid": "cm NAP",
-  "t": "2026-11-26T00:50:00.000Z",
-  "v": 201
+  "t": "2026-11-26T02:30:00.000Z",
+  "v": 156
  },
  "golf": {
   "meetpunt": "wielingen.noord",
   "meetpuntNaam": "Wielingen, noord",
   "km": 8.7,
-  "t": "2026-11-26T01:00:00.000Z",
-  "v": 82,
+  "t": "2026-11-26T02:40:00.000Z",
+  "v": 63,
   "min24": 20,
   "max24": 91,
-  "periode": 4.2
+  "periode": 3.3
  },
  "wind": {
   "meetpunt": "vlissingen",
   "meetpuntNaam": "Vlissingen",
   "km": 10.5,
-  "t": "2026-11-26T00:50:00.000Z",
+  "t": "2026-11-26T02:30:00.000Z",
   "snelheid": 7.4,
-  "richting": 68
+  "richting": 62
  }
 }
