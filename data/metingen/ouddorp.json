@@ -1,7 +1,7 @@
 {
  "slug": "ouddorp",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-26T20:12:31.143Z",
+ "bijgewerkt": "2026-11-26T22:00:14.657Z",
  "fouten": [],
  "getij": {
   "meetpunt": "haringvliet.10",
@@ -4883,32 +4883,32 @@
   "meetpunt": "stellendam.buiten",
   "meetpuntNaam": "Stellendam, buiten",
   "eenheid": "°C",
-  "t": "2026-11-26T19:50:00.000Z",
-  "v": 6.6
+  "t": "2026-11-26T21:30:00.000Z",
+  "v": 6.5
  },
  "waterstand": {
   "meetpunt": "haringvliet.10",
   "meetpuntNaam": "Haringvliet, punt 10",
   "eenheid": "cm NAP",
-  "t": "2026-11-26T19:50:00.000Z",
-  "v": -118
+  "t": "2026-11-26T21:30:00.000Z",
+  "v": -100
  },
  "golf": {
   "meetpunt": "maasgeul.2",
   "meetpuntNaam": "Maasgeul 2",
   "km": 19.8,
-  "t": "2026-11-26T19:50:00.000Z",
-  "v": 57,
+  "t": "2026-11-26T21:40:00.000Z",
+  "v": 55,
   "min24": 46,
-  "max24": 118,
-  "periode": 4.1
+  "max24": 105,
+  "periode": 3.7
  },
  "wind": {
   "meetpunt": "stellendam.haringvlietsluizen.schuif1",
   "meetpuntNaam": "Stellendam, Haringvlietsluizen, schuif 1",
   "km": 10,
-  "t": "2026-11-26T20:00:00.000Z",
-  "snelheid": 4.5,
-  "richting": 101
+  "t": "2026-11-26T21:40:00.000Z",
+  "snelheid": 6,
+  "richting": 93
  }
 }
