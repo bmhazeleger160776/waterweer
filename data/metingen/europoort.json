@@ -1,7 +1,7 @@
 {
  "slug": "europoort",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-26T03:00:29.665Z",
+ "bijgewerkt": "2026-11-26T04:07:35.577Z",
  "fouten": [],
  "getij": {
   "meetpunt": "hoekvanholland",
@@ -4911,32 +4911,32 @@
   "meetpunt": "hoekvanholland",
   "meetpuntNaam": "Hoek van Holland",
   "eenheid": "°C",
-  "t": "2026-11-26T02:30:00.000Z",
-  "v": 10.8
+  "t": "2026-11-26T03:40:00.000Z",
+  "v": 10.7
  },
  "waterstand": {
   "meetpunt": "hoekvanholland",
   "meetpuntNaam": "Hoek van Holland",
   "eenheid": "cm NAP",
-  "t": "2026-11-26T02:30:00.000Z",
-  "v": 111
+  "t": "2026-11-26T03:40:00.000Z",
+  "v": 84
  },
  "golf": {
   "meetpunt": "hoekvanholland.maeslantkering.beneden.noord",
   "meetpuntNaam": "Hoek van Holland, Maeslantkering, Beneden, noord",
   "km": 2,
-  "t": "2026-11-26T02:40:00.000Z",
-  "v": 14,
+  "t": "2026-11-26T03:50:00.000Z",
+  "v": 5,
   "min24": 5,
   "max24": 23,
-  "periode": 2.6
+  "periode": 1.9
  },
  "wind": {
   "meetpunt": "hoekvanholland.maeslantkering",
   "meetpuntNaam": "Hoek van Holland Maeslantkering",
   "km": 1.8,
-  "t": "2026-11-26T02:40:00.000Z",
-  "snelheid": 5.8,
-  "richting": 59
+  "t": "2026-11-26T03:50:00.000Z",
+  "snelheid": 5.6,
+  "richting": 67
  }
 }
