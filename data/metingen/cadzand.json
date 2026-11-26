@@ -1,7 +1,7 @@
 {
  "slug": "cadzand",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-26T04:06:47.276Z",
+ "bijgewerkt": "2026-11-26T05:22:08.646Z",
  "fouten": [],
  "getij": {
   "meetpunt": "cadzand.2",
@@ -5040,32 +5040,32 @@
   "meetpunt": "vlissingen",
   "meetpuntNaam": "Vlissingen",
   "eenheid": "°C",
-  "t": "2026-11-26T03:40:00.000Z",
-  "v": 8.3
+  "t": "2026-11-26T05:00:00.000Z",
+  "v": 8.2
  },
  "waterstand": {
   "meetpunt": "cadzand.1",
   "meetpuntNaam": "Cadzand, 1",
   "eenheid": "cm NAP",
-  "t": "2026-11-26T03:40:00.000Z",
-  "v": 85
+  "t": "2026-11-26T05:00:00.000Z",
+  "v": -42
  },
  "golf": {
   "meetpunt": "cadzand.2",
   "meetpuntNaam": "Cadzand, 2",
   "km": 0.8,
-  "t": "2026-11-26T03:40:00.000Z",
-  "v": 60,
-  "min24": 15,
+  "t": "2026-11-26T05:00:00.000Z",
+  "v": 42,
+  "min24": 16,
   "max24": 98,
-  "periode": 3.2
+  "periode": 2.8
  },
  "wind": {
   "meetpunt": "cadzand.1",
   "meetpuntNaam": "Cadzand, 1",
   "km": 2,
-  "t": "2026-11-26T03:50:00.000Z",
-  "snelheid": 6.8,
-  "richting": 83
+  "t": "2026-11-26T05:10:00.000Z",
+  "snelheid": 6.5,
+  "richting": 82
  }
 }
