@@ -1,7 +1,7 @@
 {
  "slug": "breskens",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-26T12:06:36.933Z",
+ "bijgewerkt": "2026-11-26T13:30:50.413Z",
  "fouten": [],
  "getij": {
   "meetpunt": "breskens.veerhaven",
@@ -5044,14 +5044,14 @@
   "meetpunt": "vlissingen",
   "meetpuntNaam": "Vlissingen",
   "eenheid": "°C",
-  "t": "2026-11-26T11:40:00.000Z",
-  "v": 8.2
+  "t": "2026-11-26T13:10:00.000Z",
+  "v": 8.1
  },
  "waterstand": {
   "meetpunt": "breskens.handelshaven",
   "meetpuntNaam": "Breskens, Handelshaven",
   "eenheid": "cm NAP",
-  "t": "2026-11-26T11:50:00.000Z",
-  "v": -18
+  "t": "2026-11-26T13:00:00.000Z",
+  "v": 184
  }
 }
