@@ -1,7 +1,7 @@
 {
  "slug": "petten",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-26T22:00:56.010Z",
+ "bijgewerkt": "2026-11-26T23:03:51.200Z",
  "fouten": [
   "golf: geen recente meting"
  ],
@@ -5014,22 +5014,22 @@
   "meetpunt": "denhelder.marsdiep",
   "meetpuntNaam": "Den Helder, Marsdiep",
   "eenheid": "°C",
-  "t": "2026-11-26T21:30:00.000Z",
-  "v": 7.7
+  "t": "2026-11-26T22:30:00.000Z",
+  "v": 7.8
  },
  "waterstand": {
   "meetpunt": "denhelder.marsdiep",
   "meetpuntNaam": "Den Helder, Marsdiep",
   "eenheid": "cm NAP",
-  "t": "2026-11-26T21:40:00.000Z",
-  "v": 4
+  "t": "2026-11-26T22:30:00.000Z",
+  "v": -36
  },
  "wind": {
   "meetpunt": "denhelder.dekooy",
   "meetpuntNaam": "Den Helder, De Kooy",
   "km": 19.4,
-  "t": "2026-11-26T21:30:00.000Z",
-  "snelheid": 3.8,
-  "richting": 97
+  "t": "2026-11-26T22:30:00.000Z",
+  "snelheid": 3.7,
+  "richting": 106
  }
 }
