@@ -1,7 +1,7 @@
 {
  "slug": "harlingen",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-27T03:00:25.511Z",
+ "bijgewerkt": "2026-11-27T04:09:02.899Z",
  "fouten": [],
  "getij": {
   "meetpunt": "harlingen.waddenzee",
@@ -5012,14 +5012,14 @@
   "meetpunt": "kornwerderzand.waddenzee.voorhaven.kolk",
   "meetpuntNaam": "Kornwerderzand, Waddenzee voorhaven kolk",
   "eenheid": "°C",
-  "t": "2026-11-27T02:30:00.000Z",
-  "v": 4.2
+  "t": "2026-11-27T03:40:00.000Z",
+  "v": 4.1
  },
  "waterstand": {
   "meetpunt": "harlingen.waddenzee",
   "meetpuntNaam": "Harlingen, Waddenzee",
   "eenheid": "cm NAP",
-  "t": "2026-11-27T02:30:00.000Z",
-  "v": -60
+  "t": "2026-11-27T03:40:00.000Z",
+  "v": -109
  }
 }
