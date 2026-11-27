@@ -1,7 +1,7 @@
 {
  "slug": "goese-sas",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-27T18:00:11.907Z",
+ "bijgewerkt": "2026-11-27T19:02:56.310Z",
  "fouten": [],
  "getij": {
   "meetpunt": "kats.zandkreeksluis",
@@ -5040,25 +5040,25 @@
   "meetpunt": "stavenisse",
   "meetpuntNaam": "Stavenisse",
   "eenheid": "cm NAP",
-  "t": "2026-11-27T17:30:00.000Z",
-  "v": 117
+  "t": "2026-11-27T18:40:00.000Z",
+  "v": 38
  },
  "golf": {
   "meetpunt": "stavenisse.keeten",
   "meetpuntNaam": "Stavenisse, keeten",
   "km": 9.2,
-  "t": "2026-11-27T17:30:00.000Z",
-  "v": 8,
+  "t": "2026-11-27T18:40:00.000Z",
+  "v": 9,
   "min24": 2,
   "max24": 22,
-  "periode": 2.5
+  "periode": 2.6
  },
  "wind": {
   "meetpunt": "wilhelminadorp",
   "meetpuntNaam": "Wilhelminadorp",
   "km": 3.3,
-  "t": "2026-11-27T17:30:00.000Z",
-  "snelheid": 2.7,
-  "richting": 122
+  "t": "2026-11-27T18:40:00.000Z",
+  "snelheid": 5,
+  "richting": 120
  }
 }
