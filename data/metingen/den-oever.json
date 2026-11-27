@@ -1,7 +1,7 @@
 {
  "slug": "den-oever",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-27T00:01:49.555Z",
+ "bijgewerkt": "2026-11-27T01:25:51.030Z",
  "fouten": [],
  "getij": {
   "meetpunt": "denoever.waddenzee.voorhaven",
@@ -5008,23 +5008,23 @@
   "meetpunt": "denoever.waddenzee.voorhaven.kolk",
   "meetpuntNaam": "Den Oever, Waddenzee voorhaven kolk",
   "eenheid": "°C",
-  "t": "2026-11-26T23:30:00.000Z",
-  "v": 4.2
+  "t": "2026-11-27T01:00:00.000Z",
+  "v": 4.1
  },
  "waterstand": {
   "meetpunt": "denoever.waddenzee.voorhaven",
   "meetpuntNaam": "Den Oever, Waddenzee voorhaven",
   "eenheid": "cm NAP",
-  "t": "2026-11-26T23:30:00.000Z",
-  "v": -14
+  "t": "2026-11-27T01:00:00.000Z",
+  "v": -77
  },
  "golf": {
   "meetpunt": "denhoorntexel.waddenzee.gatvandestier",
   "meetpuntNaam": "Den Hoorn Texel Waddenzee Gat van de Stier",
   "km": 15.6,
-  "t": "2026-11-26T23:40:00.000Z",
-  "v": 21,
-  "min24": 16,
+  "t": "2026-11-27T01:10:00.000Z",
+  "v": 12,
+  "min24": 12,
   "max24": 67,
   "periode": 2.2
  },
@@ -5032,8 +5032,8 @@
   "meetpunt": "denhelder.dekooy",
   "meetpuntNaam": "Den Helder, De Kooy",
   "km": 16.7,
-  "t": "2026-11-26T23:40:00.000Z",
-  "snelheid": 3.7,
-  "richting": 101
+  "t": "2026-11-27T01:00:00.000Z",
+  "snelheid": 3.5,
+  "richting": 114
  }
 }
