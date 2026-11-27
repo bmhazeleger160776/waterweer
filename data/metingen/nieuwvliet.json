@@ -1,7 +1,7 @@
 {
  "slug": "nieuwvliet",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-27T04:09:52.169Z",
+ "bijgewerkt": "2026-11-27T06:09:31.616Z",
  "fouten": [],
  "getij": {
   "meetpunt": "cadzand.2",
@@ -5052,32 +5052,32 @@
   "meetpunt": "vlissingen",
   "meetpuntNaam": "Vlissingen",
   "eenheid": "°C",
-  "t": "2026-11-27T03:40:00.000Z",
+  "t": "2026-11-27T05:40:00.000Z",
   "v": 7.8
  },
  "waterstand": {
   "meetpunt": "cadzand.1",
   "meetpuntNaam": "Cadzand, 1",
   "eenheid": "cm NAP",
-  "t": "2026-11-27T03:40:00.000Z",
-  "v": 121
+  "t": "2026-11-27T05:40:00.000Z",
+  "v": -43
  },
  "golf": {
   "meetpunt": "cadzand.2",
   "meetpuntNaam": "Cadzand, 2",
   "km": 5.5,
-  "t": "2026-11-27T03:50:00.000Z",
-  "v": 27,
-  "min24": 17,
+  "t": "2026-11-27T05:40:00.000Z",
+  "v": 13,
+  "min24": 13,
   "max24": 69,
-  "periode": 3.4
+  "periode": 3.8
  },
  "wind": {
   "meetpunt": "cadzand.1",
   "meetpuntNaam": "Cadzand, 1",
   "km": 6,
-  "t": "2026-11-27T03:50:00.000Z",
-  "snelheid": 2.4,
-  "richting": 122
+  "t": "2026-11-27T05:50:00.000Z",
+  "snelheid": 3.9,
+  "richting": 102
  }
 }

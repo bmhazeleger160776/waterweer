@@ -1,7 +1,7 @@
 {
  "slug": "kijkduin",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-27T04:10:08.134Z",
+ "bijgewerkt": "2026-11-27T06:09:49.343Z",
  "fouten": [],
  "getij": {
   "meetpunt": "scheveningen",
@@ -4847,32 +4847,32 @@
   "meetpunt": "hollandsekust.zuid.alpha",
   "meetpuntNaam": "Hollandse Kust Zuid platform Alpha",
   "eenheid": "°C",
-  "t": "2026-11-27T03:40:00.000Z",
-  "v": 10.3
+  "t": "2026-11-27T05:40:00.000Z",
+  "v": 10.4
  },
  "waterstand": {
   "meetpunt": "scheveningen",
   "meetpuntNaam": "Scheveningen",
   "eenheid": "cm NAP",
-  "t": "2026-11-27T03:40:00.000Z",
-  "v": 78
+  "t": "2026-11-27T05:40:00.000Z",
+  "v": 10
  },
  "golf": {
   "meetpunt": "hoekvanholland.maeslantkering.beneden.noord",
   "meetpuntNaam": "Hoek van Holland, Maeslantkering, Beneden, noord",
   "km": 12.8,
-  "t": "2026-11-27T03:50:00.000Z",
-  "v": 11,
+  "t": "2026-11-27T05:50:00.000Z",
+  "v": 4,
   "min24": 4,
   "max24": 20,
-  "periode": 2.4
+  "periode": 1.8
  },
  "wind": {
   "meetpunt": "hoekvanholland",
   "meetpuntNaam": "Hoek van Holland",
   "km": 12.2,
-  "t": "2026-11-27T03:40:00.000Z",
-  "snelheid": 5.6,
-  "richting": 92
+  "t": "2026-11-27T05:40:00.000Z",
+  "snelheid": 4.5,
+  "richting": 105
  }
 }
