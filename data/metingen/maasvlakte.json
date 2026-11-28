@@ -1,7 +1,7 @@
 {
  "slug": "maasvlakte",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-28T11:53:28.813Z",
+ "bijgewerkt": "2026-11-28T13:03:10.618Z",
  "fouten": [],
  "getij": {
   "meetpunt": "maasvlakte.amaliahaven",
@@ -5040,22 +5040,22 @@
   "meetpunt": "hoekvanholland",
   "meetpuntNaam": "Hoek van Holland",
   "eenheid": "°C",
-  "t": "2026-11-28T11:30:00.000Z",
-  "v": 7.7
+  "t": "2026-11-28T12:40:00.000Z",
+  "v": 7.5
  },
  "waterstand": {
   "meetpunt": "maasvlakte.amaliahaven",
   "meetpuntNaam": "Maasvlakte Amaliahaven",
   "eenheid": "cm NAP",
-  "t": "2026-11-28T11:30:00.000Z",
-  "v": -107
+  "t": "2026-11-28T12:40:00.000Z",
+  "v": -110
  },
  "golf": {
   "meetpunt": "maasgeul.2",
   "meetpuntNaam": "Maasgeul 2",
   "km": 3.8,
-  "t": "2026-11-28T11:40:00.000Z",
-  "v": 25,
+  "t": "2026-11-28T12:50:00.000Z",
+  "v": 22,
   "min24": 15,
   "max24": 41,
   "periode": 4.6
@@ -5064,8 +5064,8 @@
   "meetpunt": "hoekvanholland.lagelicht",
   "meetpuntNaam": "Hoek van Holland, lage licht",
   "km": 5.4,
-  "t": "2026-11-28T11:40:00.000Z",
-  "snelheid": 7.1,
-  "richting": 141
+  "t": "2026-11-28T12:50:00.000Z",
+  "snelheid": 8.1,
+  "richting": 142
  }
 }
