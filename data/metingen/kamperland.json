@@ -1,7 +1,7 @@
 {
  "slug": "kamperland",
  "voorbeeld": false,
- "bijgewerkt": "2026-11-28T05:06:32.118Z",
+ "bijgewerkt": "2026-11-28T06:09:23.727Z",
  "fouten": [],
  "getij": {
   "meetpunt": "oosterschelde.roompotsluis.binnen",
@@ -4883,21 +4883,21 @@
   "meetpunt": "kamperland.schotsman",
   "meetpuntNaam": "Kamperland, Schotsman",
   "eenheid": "°C",
-  "t": "2026-11-28T04:50:00.000Z",
-  "v": 5.5
+  "t": "2026-11-28T05:40:00.000Z",
+  "v": 5.4
  },
  "waterstand": {
   "meetpunt": "oosterschelde.roompotsluis.binnen",
   "meetpuntNaam": "Oosterschelde Roompotsluis binnen",
   "eenheid": "cm NAP",
-  "t": "2026-11-28T04:40:00.000Z",
-  "v": 109
+  "t": "2026-11-28T05:40:00.000Z",
+  "v": 80
  },
  "golf": {
   "meetpunt": "oosterschelde.roompotsluis.buiten",
   "meetpuntNaam": "Oosterschelde Roompotsluis buiten",
   "km": 5.1,
-  "t": "2026-11-28T04:50:00.000Z",
+  "t": "2026-11-28T05:50:00.000Z",
   "v": 2,
   "min24": 1,
   "max24": 3,
@@ -4907,8 +4907,8 @@
   "meetpunt": "oosterschelde.4",
   "meetpuntNaam": "Oosterschelde, 4",
   "km": 8.9,
-  "t": "2026-11-28T04:50:00.000Z",
-  "snelheid": 6.9,
-  "richting": 136
+  "t": "2026-11-28T05:50:00.000Z",
+  "snelheid": 7.4,
+  "richting": 137
  }
 }
